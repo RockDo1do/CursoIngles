@@ -1,0 +1,40 @@
+Torre do Inglês
+Copyright (c) 2026 RockDo1do. Todos os direitos não concedidos abaixo são reservados.
+
+LICENÇA: Creative Commons Atribuição-NãoComercial-CompartilhaIgual 4.0 Internacional (CC BY-NC-SA 4.0)
+Texto legal completo: https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode.pt
+Resumo:               https://creativecommons.org/licenses/by-nc-sa/4.0/deed.pt-br
+
+Esta obra (história, personagens, ilustrações, textos das lições, exercícios, áudios
+gerados e o código deste repositório) está licenciada sob a CC BY-NC-SA 4.0.
+
+Você PODE, de graça:
+  - usar o curso para estudar e ensinar;
+  - copiar e compartilhar;
+  - adaptar e criar versões,
+desde que cumpra TODAS as condições abaixo:
+
+  - Atribuição: dê o crédito ("Torre do Inglês, por RockDo1do"), inclua o link
+    para a licença e indique se fez mudanças.
+  - NãoComercial: é PROIBIDO usar esta obra, ou versões dela, para fins comerciais.
+    Isso inclui, por exemplo: vender o curso ou cópias dele; cobrar acesso, assinatura
+    ou matrícula; colocar em plataformas pagas; incluir em produtos ou serviços pagos;
+    exibir anúncios para lucrar com ele; ou republicar como se fosse um produto seu.
+  - CompartilhaIgual: quem adaptar deve distribuir a versão nova sob esta mesma licença.
+  - Sem restrições adicionais: ninguém pode aplicar termos ou medidas técnicas que
+    impeçam outras pessoas de fazer o que esta licença permite.
+
+Uso comercial só com autorização prévia e por escrito do titular dos direitos.
+Para pedir autorização, abra uma "issue" em https://github.com/RockDo1do/CursoIngles
+
+COMPONENTES DE TERCEIROS (mantêm as licenças originais, que prevalecem sobre esta):
+  - whisper.cpp (pasta whisper/, arquivo whisper.wasm): MIT, (c) The ggml authors
+    https://github.com/ggml-org/whisper.cpp
+  - Modelo Whisper tiny.en (whisper/model.bin.*): MIT, (c) OpenAI
+    https://github.com/openai/whisper
+  - Vozes geradas com Kokoro-82M: Apache License 2.0, (c) hexgrad
+    https://huggingface.co/hexgrad/Kokoro-82M
+  - Fontes Atkinson Hyperlegible, Black Han Sans, DotGothic16 e Jua: SIL Open Font
+    License 1.1 (carregadas do Google Fonts)
+
+A OBRA É FORNECIDA "COMO ESTÁ", SEM GARANTIAS DE QUALQUER TIPO.

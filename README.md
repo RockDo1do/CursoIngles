@@ -31,7 +31,13 @@ Não precisa de servidor nem de configuração extra. O progresso de cada pessoa
 
 Ao trocar arquivos de áudio mantendo o mesmo nome, mude `MEDIA` em `sw.js` (por exemplo `torre-media-v2`) para os aparelhos baixarem a versão nova.
 
-## Créditos e licenças
+## Licença
+
+[![CC BY-NC-SA 4.0](https://img.shields.io/badge/licen%C3%A7a-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.pt-br)
+
+O curso é gratuito para estudar, ensinar e compartilhar, com crédito. **É proibido usar para fins comerciais**, como vender, cobrar acesso ou colocar em plataformas pagas. Versões adaptadas precisam manter esta mesma licença. Uso comercial só com autorização por escrito. Veja o arquivo [LICENSE](LICENSE).
+
+## Créditos e licenças de terceiros
 
 - Reconhecimento de fala: [whisper.cpp](https://github.com/ggml-org/whisper.cpp) (MIT) e o modelo [Whisper](https://github.com/openai/whisper) da OpenAI (MIT)
 - Vozes: [Kokoro-82M](https://huggingface.co/hexgrad/Kokoro-82M) (Apache 2.0), fonemas por [eSpeak NG](https://github.com/espeak-ng/espeak-ng)
