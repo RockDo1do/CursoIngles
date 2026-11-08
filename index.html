@@ -2888,7 +2888,8 @@ function reader(i){
  <div class="chap-open"><div class="no">${bonus?'HISTÓRIA EXTRA '+(i-99):`CAPÍTULO ${String(i+1).padStart(2,'0')} DE ${CH.length}`} · <span class="lvl">${ch.lv}</span>${ch.boss?' · <span class="lvl boss">CHEFE DO ARCO</span>':''}</div><h1>${ch.t}</h1><p>${ch.topic}</p></div>`;
  ch.p.forEach((p,pi)=>h+=panelHTML(p,ch,pi,i));
  h+=`<div class="sysw" id="quiz"><div class="tag">[ TESTE DO PORTAL ]</div><h3>${ch.boss?'Batalha final: '+R.qs.length+' perguntas de revisão':'Responda para liberar o próximo andar'}</h3><p style="font-size:13px;margin-bottom:4px">As perguntas mudam a cada vez que você refaz o capítulo.</p>`;
- const items=R.qs.map(qi=>({mc:qi})); (R.ex||[]).forEach(x=>items.splice(1+Math.floor(Math.random()*items.length),0,{ex:x}));
+ const items=R.qs.map(qi=>({mc:qi}));
+ shuffle(R.ex||[]).forEach(x=>items.splice(1+Math.floor(Math.random()*items.length),0,{ex:x}));
  items.forEach((it,nq)=>{
   if(it.ex){h+=qxHTML(it.ex,nq+1);return;}
   const qi=it.mc, q=ch.q[qi], opts=shuffle(q.o.map((t,k)=>({t,k})));
@@ -2910,10 +2911,11 @@ function pickExtras(i,ch){
  if(!ch||ch.lv==='A1') return [];
  const bank=lineBank(ch).filter(x=>{const n=wordsOf(x.en).length;return n>=3&&n<=10&&!/_{2,}|\.\.\.|…/.test(x.en);});
  if(!bank.length) return [];
- const sh=shuffle(bank), out=[];
- const w=sh[0]; out.push({id:'w',t:'write',mode:canHear()&&Math.random()<.6?'dict':'tr',x:w});
- const sp=sh.find(x=>x!==w&&wordsOf(x.en).length<=9);
- if(sp&&canTalk()) out.push({id:'s',t:'speak',x:sp});
+ const hi=/^(B1|B2|C1|C2)$/.test(ch.lv), nW=(hi?3:2)+(ch.boss?1:0), nS=canTalk()?(hi?3:2)+(ch.boss?1:0):0;
+ const used=new Set(), out=[], take=f=>{const x=shuffle(bank).find(y=>!used.has(y.en)&&f(y));if(x) used.add(x.en);return x;};
+ let dict=Math.random()<.5;
+ for(let k=0;k<nW;k++){const x=take(()=>true);if(!x) break;out.push({id:'w'+k,t:'write',mode:canHear()&&dict?'dict':'tr',x});dict=!dict;}
+ for(let k=0;k<nS;k++){const x=take(y=>wordsOf(y.en).length<=9);if(!x) break;out.push({id:'s'+k,t:'speak',x});}
  return out;
 }
 function fuzzyEq(a,b){
@@ -2939,14 +2941,14 @@ function qxHTML(x,nq){
  const L=x.x;
  if(x.t==='write'){
   const dict=x.mode==='dict';
-  return `<div class="q qx" data-qx="w"><div class="qt">${nq}. <span class="qtag">ESCRITA</span> ${dict?'Ouça e escreva em inglês o que foi dito.':'Escreva em inglês: “'+esc(L.pt)+'”'}</div>
+  return `<div class="q qx" data-qx="w" data-id="${x.id}"><div class="qt">${nq}. <span class="qtag">ESCRITA</span> ${dict?'Ouça e escreva em inglês o que foi dito.':'Escreva em inglês: “'+esc(L.pt)+'”'}</div>
   ${dict?`<div class="row" style="justify-content:flex-start;margin-bottom:8px"><button class="btn ghost sm" data-qsay="${esc(L.en)}" data-who="${L.who}">Ouvir</button><button class="btn ghost sm" data-qsay="${esc(L.en)}" data-who="${L.who}" data-slow="1">Ouvir devagar</button></div>`:`<p class="qhint">Dica: ${wordsOf(L.en).length} palavras. Pode usar a frase do capítulo.</p>`}
   <div class="qwrite"><input class="field" type="text" autocomplete="off" autocapitalize="sentences" spellcheck="false" enterkeyhint="done" aria-label="Sua resposta em inglês" placeholder="Digite em inglês"><button class="btn" data-qcheck>Conferir</button></div>
   <div class="why" hidden></div></div>`;
  }
- return `<div class="q qx" data-qx="s"><div class="qt">${nq}. <span class="qtag">PRONÚNCIA</span> Leia a frase em voz alta.</div>
+ return `<div class="q qx" data-qx="s" data-id="${x.id}"><div class="qt">${nq}. <span class="qtag">PRONÚNCIA</span> Leia a frase em voz alta.</div>
   <div class="bubble l qbub" tabindex="0" data-who="${voiceWho(L.who)==='rafa_f'?'rafa':L.who}" data-qx="s"><span class="who">VOCÊ</span><span class="en">${esc(L.en)}</span><span class="hint">${esc(L.pt)}</span><button class="say" data-say="${esc(L.en)}" data-who="${L.who}" aria-label="Ouvir em inglês">${ICON.speak}</button><button class="mic" aria-label="Falar a frase" aria-pressed="false">${ICON.mic}</button><div class="pron" hidden></div></div>
-  <p class="qhint">Toque no microfone e fale. Acertando 70% ou mais, conta como certo. Você tem 3 tentativas.</p>
+  <p class="qhint">Toque no microfone e fale. Acertando 70% ou mais, conta como certo. Você tem 3 tentativas. Sem poder falar agora? O botão abaixo pula todas as questões de fala deste teste.</p>
   <div class="row" style="justify-content:flex-start"><button class="btn ghost sm" data-qskip>Agora não posso falar</button></div>
   <div class="why" hidden></div></div>`;
 }
@@ -2958,18 +2960,18 @@ function qxSet(id,val,el,html){
  if(Object.keys(answers).length===R.qs.length+(R.ex||[]).length) finish();
 }
 function qxCheck(el){
- const x=(R.ex||[]).find(e=>e.id==='w'); const inp=el.querySelector('input'); if(!x||!inp) return;
+ const x=(R.ex||[]).find(e=>e.id===el.dataset.id); const inp=el.querySelector('input'); if(!x||!inp||answers[x.id]!=null) return;
  const v=inp.value.trim(); if(!v){inp.focus();inp.classList.add('need');return;}
  const r=checkWritten(x.x.en,v);
  inp.disabled=true; const b=el.querySelector('[data-qcheck]'); if(b) b.disabled=true;
  const marked=r.toks.map((t,k)=>`<span class="${r.ok[k]?'w-ok':'w-no'}">${esc(t)}</span>`).join(' ');
- qxSet('w',r.pass,el,`<b class="${r.pass?'':'no'}">${r.pass?(r.acc>=.999?'Certo!':'Certo! Só um detalhe:'):'Quase.'}</b> Resposta: <span class="pw">${marked}</span>${x.mode==='tr'&&!r.pass?'<br><small>Outras traduções também podem estar certas. Aqui vale a frase usada no capítulo.</small>':''}`);
+ qxSet(x.id,r.pass,el,`<b class="${r.pass?'':'no'}">${r.pass?(r.acc>=.999?'Certo!':'Certo! Só um detalhe:'):'Quase.'}</b> Resposta: <span class="pw">${marked}</span>${x.mode==='tr'&&!r.pass?'<br><small>Outras traduções também podem estar certas. Aqui vale a frase usada no capítulo.</small>':''}`);
 }
 function qxSpoke(bub,acc){
- const el=bub.closest('.qx'); if(!el||answers.s!=null) return;
+ const el=bub.closest('.qx'); if(!el) return; const id=el.dataset.id; if(answers[id]!=null) return;
  const n=(+el.dataset.tries||0)+1; el.dataset.tries=n;
- if(acc>=70) qxSet('s',true,el,`<b>Certo!</b> Boa pronúncia: ${acc}%.`);
- else if(n>=3) qxSet('s',false,el,`<b class="no">Quase.</b> Continue treinando esta frase no Treino extra.`);
+ if(acc>=70) qxSet(id,true,el,`<b>Certo!</b> Boa pronúncia: ${acc}%.`);
+ else if(n>=3) qxSet(id,false,el,`<b class="no">Quase.</b> Continue treinando esta frase no Treino extra.`);
  else{const h=el.querySelector('.qhint');if(h) h.textContent=`Tentativa ${n} de 3: ${acc}%. Ouça a frase e tente de novo.`;}
 }
 
@@ -2990,7 +2992,7 @@ function finish(){
  const vals=Object.entries(answers).filter(([k,v])=>v!=='skip'), tot=vals.length;
  const score=vals.filter(([k,v])=>v===true).length, ratio=tot?score/tot:0;
  const mcScore=R.qs.filter(qi=>answers[qi]===true).length;
- let exGain=0; (R.ex||[]).forEach(x=>{const k=cur+'-99-'+(x.id==='w'?1:2);if(answers[x.id]===true&&!S.spoken[k]){S.spoken[k]=1;exGain+=5;}});
+ let exGain=0; (R.ex||[]).forEach((x,xi)=>{const k=cur+'-99-'+(xi+1);if(answers[x.id]===true&&!S.spoken[k]){S.spoken[k]=1;exGain+=5;}});
  S.bdone=S.bdone||{};
  const store=bonus?S.bdone:S.done, prev=store[cur], first=prev==null;
  const gain=(first?20:0)+Math.max(0,mcScore-(prev||0))*10+exGain;
@@ -3085,7 +3087,7 @@ app.addEventListener('click',e=>{
  const pk=e.target.closest('button[data-pk]'); if(pk){if(!pk.disabled) placeAnswer(pk);return;}
  if(e.target.closest('button[data-fromzero]')){S.start=0;save();reader(0);return;}
  const qck=e.target.closest('[data-qcheck]'); if(qck){qxCheck(qck.closest('.qx'));return;}
- const qsk=e.target.closest('[data-qskip]'); if(qsk){const el=qsk.closest('.qx');stopListening();qsk.disabled=true;qxSet('s','skip',el,'<b>Tudo bem.</b> Esta não conta na nota. Treine a fala quando puder.');return;}
+ const qsk=e.target.closest('[data-qskip]'); if(qsk){stopListening();document.querySelectorAll('#quiz .qx[data-qx=s]').forEach(el=>{if(answers[el.dataset.id]!=null) return;el.querySelectorAll('[data-qskip]').forEach(b=>b.disabled=true);qxSet(el.dataset.id,'skip',el,'<b>Tudo bem.</b> As questões de fala deste teste não contam na nota. Treine quando puder.');});return;}
  const qsy=e.target.closest('[data-qsay]'); if(qsy){e.stopPropagation();const o=S.slow;if(qsy.dataset.slow) S.slow=true;speak(qsy.dataset.qsay,qsy,qsy.dataset.who);S.slow=o;return;}
  const mic=e.target.closest('.mic');
  if(mic){e.stopPropagation();listen(mic.closest('.bubble'));return;}
@@ -3132,7 +3134,7 @@ initCloud();
 </script>
 
 <script>
-if('serviceWorker' in navigator&&location.protocol==='https:'){window.addEventListener('load',()=>{navigator.serviceWorker.register('sw.js?v=47804e768a').catch(()=>{});});}
+if('serviceWorker' in navigator&&location.protocol==='https:'){window.addEventListener('load',()=>{navigator.serviceWorker.register('sw.js?v=5e92b359e6').catch(()=>{});});}
 </script>
 </body>
 </html>
