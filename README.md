@@ -1,0 +1,38 @@
+# Torre do Inglês
+
+Curso de inglês do básico ao avançado em formato de manhwa (webtoon vertical). Você é o protagonista e sobe a torre ao lado da Mina, aprendendo com diálogos do dia a dia.
+
+## O que tem
+
+- 48 capítulos em 7 arcos, do A1 ao C1, mais 4 histórias extras
+- Vozes naturais gravadas (Kokoro-82M) com o nome do aluno nos diálogos
+- Treino de fala com **Whisper** (whisper.cpp compilado para WebAssembly), rodando no próprio aparelho: nada é enviado para a internet e funciona em qualquer navegador moderno, inclusive Safari e Firefox
+- Revisão espaçada, treino extra, baú semanal com recompensas
+- Ajustes de acessibilidade: TDAH (modo calmo), TPAC (fala clara, destaque de palavras, repetição) e leitura confortável
+- Funciona como app (PWA): pode ser instalado na tela inicial e funciona offline depois do primeiro uso
+
+## Como publicar no GitHub Pages
+
+1. Envie todos os arquivos desta pasta para a raiz de um repositório público.
+2. No repositório: **Settings → Pages → Build and deployment → Source: Deploy from a branch**, escolha `main` e a pasta `/ (root)`, e salve.
+3. Em 1 a 2 minutos o site fica em `https://SEU-USUARIO.github.io/NOME-DO-REPO/`.
+
+Não precisa de servidor nem de configuração extra. O progresso de cada pessoa fica salvo no navegador dela, e pode ser levado para outro aparelho com o "código de progresso" (tela Conta e progresso).
+
+## Estrutura
+
+| Pasta/arquivo | O que é |
+|---|---|
+| `index.html` | O curso inteiro (história, exercícios, lógica) |
+| `audio/` | Falas gravadas (sprites MP3) e o índice `index.json` |
+| `whisper/` | Reconhecimento de fala: `whisper.wasm`, o worker e o modelo `tiny.en` (q5_1, 32 MB, dividido em 3 partes) |
+| `sw.js` | Service worker: cache para funcionar offline |
+| `manifest.webmanifest`, `icons/` | Dados para instalar como app |
+
+Ao trocar arquivos de áudio mantendo o mesmo nome, mude `MEDIA` em `sw.js` (por exemplo `torre-media-v2`) para os aparelhos baixarem a versão nova.
+
+## Créditos e licenças
+
+- Reconhecimento de fala: [whisper.cpp](https://github.com/ggml-org/whisper.cpp) (MIT) e o modelo [Whisper](https://github.com/openai/whisper) da OpenAI (MIT)
+- Vozes: [Kokoro-82M](https://huggingface.co/hexgrad/Kokoro-82M) (Apache 2.0), fonemas por [eSpeak NG](https://github.com/espeak-ng/espeak-ng)
+- Fontes: Atkinson Hyperlegible, Black Han Sans, DotGothic16 e Jua (Google Fonts, OFL)
