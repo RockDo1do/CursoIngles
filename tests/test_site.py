@@ -16,7 +16,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 VIEWS = ['home()', 'wizard(0)', 'wizard(1)', 'wizard(2)', 'wizard(3)', 'wizard(4)', 'placement()',
          'weekView()', 'collectionView()', 'reviewView()', 'acctView()', 'earView()', 'pronView()',
          'home();openSettings()', 'trainView(12)', 'lsnList()', 'lsnView("l1")', 'readList()', 'readView("r1")',
-         'vocList()', 'vocStart(0)', 'wrtList()', 'wrtView("w1")', 'certView(0)']
+         'vocList()', 'vocStart(0)', 'wrtList()', 'wrtView("w1")', 'certView(0)', 'tourStart(false)', 'tourGo(8,1)', 'tourEnd()']
 
 CHECK_DATA = r'''(()=>{
  const P=[], src=HERO_SRC||{ch:CH,bonus:BONUS};

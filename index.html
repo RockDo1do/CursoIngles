@@ -114,6 +114,26 @@ h1,h2{font-family:var(--f-display);font-weight:400;letter-spacing:.01em;text-wra
 .pron .ph{font-size:15px}
 .pron .pw{font-family:var(--f-bubble);font-size:18px;margin-top:2px}
 .w-ok{color:#11744a}.w-no{color:#c0223e;text-decoration:underline wavy;text-underline-offset:3px}
+/* tutorial: balões flutuantes */
+#tour{position:fixed;inset:0;z-index:1000;pointer-events:none}
+#tour .tour-block{position:fixed;inset:0;pointer-events:auto}
+#tour.dim .tour-block{background:rgba(10,8,20,.62)}
+#tour .tour-hole{position:fixed;border-radius:10px;border:3px solid var(--accent);box-shadow:0 0 0 200vmax rgba(10,8,20,.62);transition:top .25s,left .25s,width .25s,height .25s;pointer-events:none}
+#tour .tour-tip{box-sizing:border-box;position:fixed;pointer-events:auto;background:var(--paper);color:var(--paper-ink);border:3px solid #000;border-radius:18px;padding:14px 16px 12px;box-shadow:4px 4px 0 #000;font-family:var(--f-body);transition:top .25s,left .25s}
+#tour .tour-tip:focus{outline:none}
+#tour .tour-n{font-family:var(--f-sys);font-size:11px;letter-spacing:.14em;color:var(--paper-muted);margin-bottom:4px}
+#tour .tour-tip b{display:block;font-family:var(--f-bubble);font-size:20px;line-height:1.2;margin-bottom:4px}
+#tour .tour-tip p{margin:0 0 12px;font-size:16px;line-height:1.45}
+#tour .tour-act{display:flex;gap:8px;justify-content:flex-end}
+#tour .tour-act .btn{padding:9px 16px;font-size:15px;min-height:44px}
+#tour .tour-act .btn.ghost{color:var(--paper-ink);border-color:#bdb7cf}
+#tour .tour-skip{display:block;margin:8px auto 0;color:var(--paper-muted);font-size:14px;min-height:32px}
+#tour .tour-arr{position:absolute;width:18px;height:18px;background:var(--paper);border:3px solid #000;transform:translateX(-50%) rotate(45deg)}
+#tour .tour-arr.up{top:-11px;border-right:0;border-bottom:0}
+#tour .tour-arr.down{bottom:-11px;border-left:0;border-top:0}
+#tour [hidden]{display:none!important}
+@media (prefers-reduced-motion: reduce){#tour .tour-hole,#tour .tour-tip{transition:none}}
+:root[data-calm] #tour .tour-hole,:root[data-calm] #tour .tour-tip{transition:none}
 .w-snd{color:#8a4b00;text-decoration:underline dotted;text-decoration-thickness:2px;text-underline-offset:3px}
 .pnotas{margin:6px 0 0;padding-left:18px;font-size:14px}.pnotas li{margin:2px 0}
 .pron .ph2{color:var(--paper-muted);font-size:13px;margin-top:3px}
@@ -491,7 +511,7 @@ h1,h2{font-family:var(--f-display);font-weight:400;letter-spacing:.01em;text-wra
 <script>
 /* Carrega a história e as questões (pasta conteudo/) e depois o código do curso (app.js).
    TORRE_V muda sozinho a cada publicação (tools/site/build_site.py), para o aparelho baixar a versão nova. */
-const TORRE_V='ef574c8fa3';
+const TORRE_V='4b8382ae27';
 (async function(){
  const el=document.getElementById('app');
  function falha(e){
@@ -542,7 +562,7 @@ if('serviceWorker' in navigator&&location.protocol==='https:'){
   d.innerHTML='Nova versão do curso disponível. <button style="font:inherit;font-weight:700;padding:8px 12px;border-radius:8px;border:0;background:#ff8a3d;color:#111">Atualizar</button>';
   d.querySelector('button').onclick=()=>location.reload(); document.body.appendChild(d);
  });
- window.addEventListener('load',()=>{navigator.serviceWorker.register('sw.js?v=ef574c8fa3').catch(()=>{});});
+ window.addEventListener('load',()=>{navigator.serviceWorker.register('sw.js?v=4b8382ae27').catch(()=>{});});
 }
 </script>
 <!-- /só no site -->

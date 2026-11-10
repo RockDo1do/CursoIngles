@@ -1192,7 +1192,7 @@ function home(){
   <div class="sub">Um manhwa para aprender inglês do zero ao avançado. ${CH.length} capítulos curtos, do A1 ao C1, com missões do mundo real.</div>
   <div class="chr l">${av('me','happy')}</div><div class="chr r">${av('mina','happy')}</div>
  </div>
- <div class="sysw">
+ <div class="sysw" data-tour="status">
   <div class="tag">[ STATUS ]</div>
   <div class="who-row"><div class="me">${av('me','happy')}</div><div class="who-t"><small>${esc(titleLabel())}</small><b class="nm">${esc(S.name||'Visitante')}</b></div><button class="tog" data-prof>Perfil</button></div>
   <div class="cloudrow" id="cloudchip">${cloudChipHTML()}</div>
@@ -1204,7 +1204,7 @@ function home(){
   <div class="xpbar"><i style="width:${(xpIn/80*100).toFixed(0)}%"></i></div>
   <div class="xpl"><span>XP ${S.xp}</span><span>${80-xpIn} XP para o nível ${level()+1}</span></div>
   <div class="row" style="margin-top:14px"><button class="btn" data-open="${n}">${allDone?'Reler o último capítulo':(doneCount()?'Continuar':'Começar')}: Cap. ${n+1}</button></div>
-  <div class="row" style="margin-top:10px"><button class="btn ghost" data-gloss>Glossário</button><button class="btn ghost" data-pron>Minha pronúncia</button><button class="btn ghost" data-place>${S.placed?'Refazer nivelamento':'Nivelamento'}</button></div>
+  <div class="row" style="margin-top:10px" data-tour="tools"><button class="btn ghost" data-gloss>Glossário</button><button class="btn ghost" data-pron>Minha pronúncia</button><button class="btn ghost" data-place>${S.placed?'Refazer nivelamento':'Nivelamento'}</button></div>
  </div>`;
  h+=officialSite();
  h+=practiceCard();
@@ -1235,7 +1235,7 @@ function home(){
   <li><span>09</span><div><b>Treino extra.</b> No fim de cada capítulo: montar frases, completar, ouvir e falar. É opcional e leva uns 5 minutos.</div></li>
   <li><span>10</span><div><b>Prática.</b> Diálogos longos para ouvir, textos para ler, cartões de vocabulário e escrita guiada, no quadro Prática do início.</div></li>
   <li><span>11</span><div><b>Ajustes sempre à mão.</b> O botão Ajustes, no topo de cada tela, tem perfis prontos para TDAH, TPAC e leitura confortável.</div></li>
- </ul></details>
+ </ul><div class="row" style="justify-content:flex-start;margin:4px 0 8px"><button class="btn ghost" data-tour-start>Ver o tutorial de novo</button></div></details>
  <div class="sysw" style="margin-top:22px"><div class="tag">[ AJUSTES ]</div><h3>Do seu jeito</h3><p>Perfil atual: <b>${profLabel()}</b>. Tamanho do texto, tema, fala clara, vozes e microfone.</p><div class="row" style="justify-content:flex-start;margin-top:12px"><button class="btn" data-settings>${ICON.gear} Abrir ajustes</button></div></div>
  <p class="foot" id="cloudfoot">${cloudFootText()}</p><p class="foot" style="font-size:12px">© 2026 RockDo1do · Torre do Inglês · gratuito para estudar e compartilhar, proibido vender ou cobrar. Licença <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.pt-br" target="_blank" rel="noopener license">CC BY-NC-SA 4.0</a> · <a href="privacy.html" target="_blank" rel="noopener">Privacidade</a></p></div>`;
  app.innerHTML=h;
@@ -1244,11 +1244,12 @@ function home(){
 
 /* ===================== BOAS-VINDAS E PERFIL ===================== */
 /* ===================== PRIMEIRO ACESSO: passo a passo ===================== */
-const WZ_STEPS=['intro','name','avatar','style','start'];
+const WZ_STEPS=['intro','name','avatar','style','start','tour'];   /* o passo 6 é o tutorial com balões (tourStart) */
 let WZ=0;
 function wizard(n){
  stopListening(); cur=null; closeSettings();
  WZ=Math.max(0,Math.min(WZ_STEPS.length-1,n));
+ if(WZ_STEPS[WZ]==='tour'){tourStart(true);return;}
  const step=WZ_STEPS[WZ], total=WZ_STEPS.length;
  const hi='Hi! Welcome to the English Tower.';
  let body='', next='Continuar';
@@ -1283,7 +1284,7 @@ function wizard(n){
   next='';
   body=`<h1 class="wz-h">Você já sabe um pouco de inglês?</h1>
   <p class="wz-p">Assim o curso começa no ponto certo para você.</p>
-  <div class="opts wz-opts"><button class="opt big" data-start="zero"><b>Estou começando do zero</b><span>Começa no capítulo 1.</span></button><button class="opt big" data-start="place"><b>Já sei um pouco</b><span>Teste rápido: 10 perguntas, cerca de 2 minutos.</span></button></div>
+  <div class="opts wz-opts"><button class="opt big" data-start="zero"><b>Estou começando do zero</b><span>Começa no capítulo 1.</span></button><button class="opt big" data-start="place"><b>Já sei um pouco</b><span>Teste rápido de até 20 perguntas, cerca de 4 minutos.</span></button></div>
   <p class="wz-p" style="margin-top:18px">Já usou o curso em outro aparelho? <button class="linkb" data-acct>Carregar meu progresso</button></p>`;
  }
  app.innerHTML=`<div class="wrap wz">
@@ -1325,7 +1326,7 @@ function welcome(edit){
   <div class="profs" data-profrow>${profilesHTML()}</div><p class="set-note">Dá para mudar tudo depois, no botão Ajustes.</p></div>
  ${edit?`<div class="row"><button class="btn" data-saveprof>Salvar e voltar</button></div>`
  :`<div class="sysw"><div class="tag">[ PONTO DE PARTIDA ]</div><h3>Você já sabe um pouco de inglês?</h3>
-  <div class="opts"><button class="opt big" data-start="zero"><b>Estou começando do zero</b><span>Começa no capítulo 1.</span></button><button class="opt big" data-start="place"><b>Já sei um pouco</b><span>Teste rápido: 10 perguntas, cerca de 2 minutos.</span></button></div>
+  <div class="opts"><button class="opt big" data-start="zero"><b>Estou começando do zero</b><span>Começa no capítulo 1.</span></button><button class="opt big" data-start="place"><b>Já sei um pouco</b><span>Teste rápido de até 20 perguntas, cerca de 4 minutos.</span></button></div>
   <p style="margin-top:14px;font-size:14px">Já usou o curso em outro aparelho? <button class="linkb" data-acct>Carregar meu progresso</button></p></div>`}
  </div>`;
  window.scrollTo(0,0);
@@ -1391,7 +1392,7 @@ function placeResult(){
 /* ===================== PRÁTICA: ESCUTA, LEITURA, VOCABULÁRIO E ESCRITA ===================== */
 function practiceCard(){
  const ln=Object.keys(S.lsn||{}).length, rd=Object.keys(S.rd||{}).length, wr=Object.keys(S.wr||{}).length, vc=Object.keys(S.voc||{}).length, due=vocDue().length;
- return `<div class="sysw"><div class="tag">[ PRÁTICA ]</div><h3>Treine além dos capítulos</h3>
+ return `<div class="sysw" data-tour="pratica"><div class="tag">[ PRÁTICA ]</div><h3>Treine além dos capítulos</h3>
  <div class="prgrid">
   <button class="prb" data-lsn><b>Ouvir e responder</b><span>${ln}/${LISTEN.length} diálogos</span></button>
   <button class="prb" data-read><b>Leitura</b><span>${rd}/${READ.length} textos</span></button>
@@ -1691,6 +1692,102 @@ function officialSite(){
  if(!claudeRt()) return '';
  return `<div class="sysw"><div class="tag">[ VERSÃO OFICIAL ]</div><p style="margin:6px 0 10px">A versão oficial do curso agora é o site, com reconhecimento de voz no aparelho, modo sem internet e todas as novidades. Para levar seu progresso, gere o código em Conta e progresso e carregue no site.</p><div class="row" style="justify-content:flex-start"><a class="btn" href="https://rockdo1do.github.io/CursoIngles/" target="_blank" rel="noopener">Abrir o site</a><button class="btn ghost" data-acct>Levar meu progresso</button></div></div>`;
 }
+/* ===================== TUTORIAL (passo 6 das boas-vindas) =====================
+   Balões flutuantes que apontam cada ferramenta: primeiro na tela inicial, depois no capítulo 1.
+   No fim, o curso começa do jeito escolhido no passo 5 (capítulo 1 ou nivelamento). */
+const TOUR_STOPS=[
+ {scr:'home',sel:'.topbar [data-settings]',t:'Ajustes',d:'Tamanho do texto, tema, perfis para TDAH e TPAC, vozes e microfone. Este botão fica no topo de toda tela.'},
+ {scr:'home',sel:'[data-tour=status] .stats',t:'Seu painel',d:'Nível, categoria e andares subidos. Cada capítulo e cada revisão dão XP.'},
+ {scr:'home',sel:'[data-tour=status] [data-open]',t:'Começar',d:'Este botão abre o próximo capítulo. Cada um leva de 3 a 5 minutos, e parar no meio também vale.'},
+ {scr:'home',sel:'[data-tour=tools]',t:'Glossário, pronúncia e nível',d:'O Glossário reúne todas as regras, com busca. Minha pronúncia mostra seu relatório de fala. O Nivelamento pode ser refeito quando quiser.'},
+ {scr:'home',sel:'[data-tour=pratica]',t:'Prática',d:'Além dos capítulos: diálogos para ouvir, textos para ler, cartões de vocabulário e escrita guiada.'},
+ {scr:'home',sel:'[data-tour=semana]',t:'Baú da semana',d:'Estude alguns dias por semana e abra baús com roupas, cartas e histórias extras.'},
+ {scr:'home',sel:'details.arc summary',t:'Capítulos',d:'São 9 arcos, do A1 ao C1. O último capítulo de cada arco é um chefe; vencendo, você ganha um certificado.'},
+ {scr:'rd',sel:'#rd .panel .bubble',t:'Balões da história',d:'Leia em inglês e toque no balão para ver a tradução. O botão “PT sempre” mostra todas de uma vez.'},
+ {scr:'rd',sel:'#rd .panel .bubble .say',t:'Ouvir',d:'O alto-falante lê a fala com voz natural. Ouça e repita em voz alta.'},
+ {scr:'rd',sel:'#rd .panel .bubble .mic',t:'Falar',d:'Toque no microfone e leia a frase. O curso confere sua pronúncia, palavra por palavra.'},
+ {scr:'rd',sel:'#quiz',t:'Teste do Portal',d:'No fim do capítulo, responda às perguntas para liberar o próximo andar e ganhar XP.'},
+ {scr:'rd',sel:null,t:'Pronto!',d:'Agora é com você. Boa subida na torre!'}
+];
+let TOUR=null;
+function tourStart(fromWizard){
+ stopListening(); closeSettings();
+ TOUR={i:0,fromWizard,raf:0};
+ document.getElementById('tour')?.remove();
+ const el=document.createElement('div'); el.id='tour'; el.setAttribute('role','dialog'); el.setAttribute('aria-modal','true'); el.setAttribute('aria-labelledby','tour-t'); el.setAttribute('aria-describedby','tour-d');
+ el.innerHTML='<div class="tour-block"></div><div class="tour-hole" hidden></div><div class="tour-tip" tabindex="-1"><div class="tour-n" id="tour-n"></div><b id="tour-t"></b><p id="tour-d"></p><div class="tour-act"><button class="btn ghost" data-tback>Voltar</button><button class="btn" data-tnext>Seguir</button></div><button class="linkb tour-skip" data-tskip>Pular tutorial</button><i class="tour-arr"></i></div>';
+ el.addEventListener('click',ev=>{
+  ev.stopPropagation();
+  if(ev.target.closest('[data-tnext]')) tourGo(TOUR.i+1,1);
+  else if(ev.target.closest('[data-tback]')) tourGo(TOUR.i-1,-1);
+  else if(ev.target.closest('[data-tskip]')) tourEnd();
+ });
+ document.body.appendChild(el);
+ window.addEventListener('resize',tourPlaceSoon); window.addEventListener('scroll',tourPlaceSoon,{passive:true}); document.addEventListener('keydown',tourKey,true);
+ home(); tourGo(0,1);
+}
+function tourKey(e){
+ if(!TOUR) return;
+ if(e.key==='Escape'){e.preventDefault();tourEnd();}
+ else if(e.key==='ArrowRight'){e.preventDefault();tourGo(TOUR.i+1,1);}
+ else if(e.key==='ArrowLeft'){e.preventDefault();tourGo(TOUR.i-1,-1);}
+ else if(e.key==='Tab'){const f=[...document.querySelectorAll('#tour button')].filter(b=>!b.hidden);const k=f.indexOf(document.activeElement);e.preventDefault();f[(k+(e.shiftKey?-1:1)+f.length)%f.length].focus();}
+}
+function tourGo(i,dir){
+ if(!TOUR) return;
+ if(i<0){ if(TOUR.fromWizard){tourClose();wizard(WZ_STEPS.indexOf('start'));} return; }
+ if(i>=TOUR_STOPS.length){tourEnd();return;}
+ const st=TOUR_STOPS[i];
+ if(st.scr==='home'&&!document.querySelector('.topbar [data-settings]')) home();
+ if(st.scr==='rd'&&(cur!==0||!document.getElementById('rd'))) reader(0);
+ if(st.sel&&!document.querySelector(st.sel)){tourGo(i+dir,dir);return;}   /* ferramenta indisponível neste aparelho: pula */
+ TOUR.i=i;
+ document.getElementById('tour-n').textContent=(TOUR.fromWizard?'PASSO 6 DE 6 · ':'')+'TUTORIAL '+(i+1)+'/'+TOUR_STOPS.length;
+ document.getElementById('tour-t').textContent=st.t;
+ document.getElementById('tour-d').textContent=st.d;
+ const last=i===TOUR_STOPS.length-1;
+ document.querySelector('#tour [data-tnext]').textContent=last?(TOUR.fromWizard?(S.startPlan==='place'?'Fazer o nivelamento':'Começar o curso'):'Concluir'):'Seguir';
+ document.querySelector('#tour [data-tback]').hidden=i===0&&!TOUR.fromWizard;
+ document.querySelector('#tour [data-tskip]').hidden=last;
+ const el=st.sel&&document.querySelector(st.sel);
+ if(el){
+  const r=el.getBoundingClientRect(), vh=innerHeight;
+  window.scrollBy(0,r.height>vh*.42?r.top-90:(r.top+r.height/2)-vh*.36);
+ } else window.scrollTo(0,0);
+ tourPlace();
+ try{document.querySelector('#tour [data-tnext]').focus({preventScroll:true});}catch(e){}
+}
+function tourPlaceSoon(){if(TOUR&&!TOUR.raf) TOUR.raf=requestAnimationFrame(()=>{if(TOUR){TOUR.raf=0;tourPlace();}});}
+function tourPlace(){
+ if(!TOUR) return;
+ const st=TOUR_STOPS[TOUR.i], el=st.sel&&document.querySelector(st.sel), box=document.getElementById('tour');
+ const hole=box.querySelector('.tour-hole'), tip=box.querySelector('.tour-tip'), arr=tip.querySelector('.tour-arr');
+ const vw=document.documentElement.clientWidth, vh=innerHeight, tw=Math.min(340,vw-24);
+ tip.style.width=tw+'px';
+ const th=tip.offsetHeight;
+ if(!el){hole.hidden=true;box.classList.add('dim');tip.style.left=(vw-tw)/2+'px';tip.style.top=Math.max(12,(vh-th)/2)+'px';arr.hidden=true;return;}
+ box.classList.remove('dim');
+ const r=el.getBoundingClientRect(), pad=6;
+ const top=Math.max(6,r.top-pad), left=Math.max(4,r.left-pad), right=Math.min(vw-4,r.right+pad);
+ const bottom=Math.min(r.bottom+pad,top+Math.max(48,vh*.42),vh-6);
+ hole.hidden=false; Object.assign(hole.style,{top:top+'px',left:left+'px',width:(right-left)+'px',height:Math.max(0,bottom-top)+'px'});
+ const cx=(left+right)/2; let ty, up;
+ if(vh-bottom>=th+18){ty=bottom+12;up=true;} else if(top>=th+18){ty=top-th-12;up=false;} else {ty=vh-th-12;up=null;}
+ const tx=Math.max(12,Math.min(vw-tw-12,cx-tw/2));
+ tip.style.left=tx+'px'; tip.style.top=ty+'px';
+ arr.hidden=up===null; arr.className='tour-arr '+(up?'up':'down'); arr.style.left=Math.max(18,Math.min(tw-18,cx-tx))+'px';
+}
+function tourClose(){
+ document.getElementById('tour')?.remove();
+ window.removeEventListener('resize',tourPlaceSoon); window.removeEventListener('scroll',tourPlaceSoon); document.removeEventListener('keydown',tourKey,true);
+ TOUR=null;
+}
+function tourEnd(){
+ const fw=TOUR&&TOUR.fromWizard; tourClose(); S.tourDone=true; save();
+ if(!fw){home();return;}
+ if(S.startPlan==='place') placement(); else {if(cur!==0||!document.getElementById('rd')) reader(0); window.scrollTo(0,0);}
+}
+
 /* Voz do nome: se o nome do aluno ainda não tem voz gravada, oferece pedir a gravação (fila automática:
    o primeiro nome vai para uma planilha, o GitHub grava a voz e publica no site; ver tools/vozes/nomes.py) */
 function nmTemVoz(){const nm=REC.man&&REC.man.nm;return !nm||heroName()==='Rafa'||!!(nm.names.mina||{})[nmNorm(heroName())];}
@@ -1723,7 +1820,7 @@ function backupNudge(){
 }
 function weekCardHTML(){
  const w=S.week, d=daysDone(w), g=S.goal||4, cl=claimable(w), dn=dueCards().length;
- return `<div class="sysw"><div class="tag">[ BAÚ DO PORTAL ]</div><h3>${cl?'Você tem um baú para abrir!':`${Math.min(d,7)} de ${g} dias nesta semana`}</h3>${dotsHTML(w)}
+ return `<div class="sysw" data-tour="semana"><div class="tag">[ BAÚ DO PORTAL ]</div><h3>${cl?'Você tem um baú para abrir!':`${Math.min(d,7)} de ${g} dias nesta semana`}</h3>${dotsHTML(w)}
  <p style="margin-top:10px;font-size:14px">Missões: ${missionsDone(w)} de 3 · Sequência: ${S.streak||0} semana(s)${dn?` · <b>Revisão de hoje: ${dn}</b>`:''}</p>
  <div class="row" style="margin-top:12px;justify-content:flex-start">${dn&&!cl?`<button class="btn" data-review>Revisar agora (${dn})</button>`:''}<button class="btn${cl?'':' ghost'}" data-week>${cl?'Abrir o baú':'Ver baús e missões'}</button><button class="btn ghost" data-coll>Coleção</button></div></div>`;
 }
@@ -1917,6 +2014,7 @@ function sanitizeState(o){
  r.audioMode=o.audioMode==='tts'?'tts':'rec';
  r.asr=['auto','whisper','browser'].includes(o.asr)?o.asr:'auto'; r.fon=!!o.fon;
  r.lastBackup=clampN(o.lastBackup,0,1e14,0);
+ r.tourDone=!!o.tourDone; r.startPlan=o.startPlan==='place'?'place':'zero';
  r.nmVoz=o.nmVoz&&typeof o.nmVoz.k==='string'&&['pedido','nao','pronto'].includes(o.nmVoz.st)?{k:o.nmVoz.k.slice(0,20),st:o.nmVoz.st,t:clampN(o.nmVoz.t,0,1e14,0)}:null;
  r.xmis=(Array.isArray(o.xmis)?o.xmis:[]).filter(x=>x&&typeof x.en==='string'&&typeof x.pt==='string').slice(-20).map(x=>({c:clampN(x.c,0,999,0),en:x.en.slice(0,200),pt:x.pt.slice(0,200),who:/^[a-z_]{2,8}$/.test(x.who)?x.who:'narr'}));
  r.avSex=o.avSex==='m'||o.avSex==='f'?o.avSex:'';
@@ -2438,7 +2536,8 @@ app.addEventListener('click',e=>{
  if(e.target.closest('button[data-calm]')){S.calm=!S.calm;save();applyLook();syncComfort();return;}
  if(e.target.closest('#aa')){const k=ZOOMS.findIndex(z=>z[0]===(S.zoom||1));S.zoom=ZOOMS[(k+1)%ZOOMS.length][0];save();applyLook();return;}
  const avb=e.target.closest('button[data-av]'); if(avb){setTimeout(()=>{const pv=document.getElementById('avprev');if(pv){pv.innerHTML=av('me','happy');const p=pv.previousElementSibling;if(p&&p.classList.contains('wz-p')) p.textContent='Ele vai ser o(a) protagonista da história, com voz '+(heroSex()==='f'?'feminina':'masculina')+'.';}},0);S.avatar=+avb.dataset.av;save();document.querySelectorAll('button[data-av]').forEach(b=>b.setAttribute('aria-pressed',String(b===avb)));return;}
- const stb=e.target.closest('button[data-start]'); if(stb){saveName();if(stb.dataset.start==='place') placement(); else {S.start=0;save();reader(0);} return;}
+ const stb=e.target.closest('button[data-start]'); if(stb){saveName();S.startPlan=stb.dataset.start==='place'?'place':'zero';if(S.startPlan==='zero') S.start=0;save();wizard(WZ_STEPS.indexOf('tour'));return;}
+ if(e.target.closest('button[data-tour-start]')){tourStart(false);return;}
  if(e.target.closest('button[data-saveprof]')){saveName();home();return;}
  if(e.target.closest('button[data-prof]')){welcome(true);return;}
  if(e.target.closest('button[data-gloss]')){gloss();return;}
