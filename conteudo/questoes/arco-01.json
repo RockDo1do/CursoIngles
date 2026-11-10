@@ -1,0 +1,87 @@
+[
+ {
+  "capitulo": "O Despertar",
+  "perguntas": [
+   {"q": "Como se diz \"Prazer em te conhecer\"?", "o": ["Nice to meet you", "Nice to see your", "Good meet you"], "a": 0, "why": "\"Nice to meet you\" é a frase fixa para quando você conhece alguém."},
+   {"q": "Complete: \"___ name is Rafa.\"", "o": ["My", "I", "Me"], "a": 0, "why": "\"My\" = meu/minha. \"My name\" = meu nome."},
+   {"q": "\"Where are you from?\" significa:", "o": ["De onde você é?", "Onde você está?", "Para onde você vai?"], "a": 0, "why": "\"From\" indica origem. Responda com \"I'm from...\""},
+   {"q": "Como responder a 'How are you?'", "o": ["I'm fine, thanks.", "I'm 22.", "I'm from Brazil."], "a": 0, "why": "'How are you?' pergunta como você está."},
+   {"q": "'See you!' significa:", "o": ["Até mais!", "Olhe para você!", "Estou vendo você!"], "a": 0, "why": "É uma despedida informal muito comum."},
+   {"q": "Complete: 'I ___ Rafa.'", "o": ["am", "is", "are"], "a": 0, "why": "Com I, sempre AM."},
+   {"q": "Qual pergunta tem a resposta 'My name is Ana'?", "o": ["What's your name?", "How are you?", "Where are you from?"], "a": 0, "why": "What's your name? = Qual é o seu nome?"},
+   {"q": "'Hello' e 'Hi' servem para:", "o": ["dizer oi", "dizer tchau", "agradecer"], "a": 0, "why": "Hi é mais informal que Hello."},
+   {"q": "Resposta para 'Nice to meet you':", "o": ["Nice to meet you too.", "Goodbye, see you.", "I'm sorry."], "a": 0, "why": "Too = também."}
+  ]
+ },
+ {
+  "capitulo": "O Verbo Lendário",
+  "perguntas": [
+   {"q": "She ___ my friend.", "o": ["is", "am", "are"], "a": 0, "why": "He / She / It usam \"is\"."},
+   {"q": "Negativo de \"They are happy\":", "o": ["They aren't happy.", "They not are happy.", "They isn't happy."], "a": 0, "why": "They + are + not = aren't."},
+   {"q": "Como perguntar \"Você está pronto?\"", "o": ["Are you ready?", "You are ready?", "Is you ready?"], "a": 0, "why": "Na pergunta, o verbo TO BE vem antes da pessoa."},
+   {"q": "We ___ friends.", "o": ["are", "is", "am"], "a": 0, "why": "We usa ARE."},
+   {"q": "It ___ cold today.", "o": ["is", "are", "am"], "a": 0, "why": "It usa IS."},
+   {"q": "Forma curta de 'You are':", "o": ["You're", "Your", "You'r"], "a": 0, "why": "Your = seu/sua. You're = você é/está."},
+   {"q": "'Is she here?' Resposta negativa curta:", "o": ["No, she isn't.", "No, she not.", "No, she don't."], "a": 0, "why": "Resposta curta repete o verbo: she isn't."},
+   {"q": "I ___ not tired.", "o": ["am", "is", "are"], "a": 0, "why": "I am not = I'm not."},
+   {"q": "'Eles estão em casa.'", "o": ["They are at home.", "They is at home.", "They at home."], "a": 0, "why": "They + are. O verbo não pode sumir."}
+  ]
+ },
+ {
+  "capitulo": "Números da Torre",
+  "perguntas": [
+   {"q": "Em inglês, 22 é:", "o": ["twenty-two", "twelve-two", "two-twenty"], "a": 0, "why": "De 21 a 99: dezena + hífen + unidade."},
+   {"q": "\"Tenho 30 anos\":", "o": ["I'm thirty.", "I have thirty years.", "I'm thirteen."], "a": 0, "why": "Idade usa TO BE. E 30 é thirty (13 é thirteen)."},
+   {"q": "15 é:", "o": ["fifteen", "fifty", "fiveteen"], "a": 0, "why": "Fifteen = 15. Fifty = 50."},
+   {"q": "40 em inglês:", "o": ["forty", "fourty", "fourteen"], "a": 0, "why": "Forty não tem U, apesar de four ter."},
+   {"q": "13 é:", "o": ["thirteen", "thirty", "threeteen"], "a": 0, "why": "Thirteen = 13. Thirty = 30."},
+   {"q": "'How much is it?' pergunta:", "o": ["o preço", "a idade", "a hora"], "a": 0, "why": "How much = quanto (custa)."},
+   {"q": "100 é:", "o": ["one hundred", "one thousand", "ten ten"], "a": 0, "why": "Hundred = cem. Thousand = mil."},
+   {"q": "'Quantos anos ela tem?'", "o": ["How old is she?", "How many years she has?", "How age is she?"], "a": 0, "why": "Idade: How old + TO BE."},
+   {"q": "99 é:", "o": ["ninety-nine", "nineteen-nine", "ninety-ninety"], "a": 0, "why": "Ninety (90) + nine (9)."}
+  ]
+ },
+ {
+  "capitulo": "Inventário",
+  "perguntas": [
+   {"q": "Complete: \"___ hour\"", "o": ["an", "a"], "a": 0, "why": "O \"h\" de hour não é pronunciado. O som começa com vogal, então \"an\"."},
+   {"q": "He ___ a dog.", "o": ["has", "have"], "a": 0, "why": "He / She / It usam \"has\"."},
+   {"q": "Plural de \"child\":", "o": ["children", "childs", "childes"], "a": 0, "why": "Child → children é irregular. Vale decorar."},
+   {"q": "Complete: '___ umbrella'", "o": ["an", "a"], "a": 0, "why": "Umbrella começa com som de vogal → an."},
+   {"q": "Complete: '___ book'", "o": ["a", "an"], "a": 0, "why": "Book começa com som de consoante → a."},
+   {"q": "Plural de 'box':", "o": ["boxes", "boxs", "boxies"], "a": 0, "why": "Depois de X, o plural ganha -ES."},
+   {"q": "Plural de 'man':", "o": ["men", "mans", "mens"], "a": 0, "why": "Man → men é irregular."},
+   {"q": "'Aquelas espadas' (longe):", "o": ["those swords", "these swords", "this swords"], "a": 0, "why": "Those = aqueles(as), longe e no plural."},
+   {"q": "They ___ three potions.", "o": ["have", "has"], "a": 0, "why": "They usa HAVE."}
+  ]
+ },
+ {
+  "capitulo": "O Clube",
+  "perguntas": [
+   {"q": "\"O nome dela é Bia.\"", "o": ["Her name is Bia.", "His name is Bia.", "She name is Bia."], "a": 0, "why": "Dela = her."},
+   {"q": "\"A espada do Jin\"", "o": ["Jin's sword", "Sword Jin's", "The sword of Jin's"], "a": 0, "why": "Dono + 's + coisa."},
+   {"q": "\"parents\" significa:", "o": ["pais (pai e mãe)", "parentes", "padrinhos"], "a": 0, "why": "Parentes em inglês é \"relatives\"."},
+   {"q": "'Nossa casa'", "o": ["our house", "we house", "us house"], "a": 0, "why": "Nosso/nossa = our."},
+   {"q": "'O carro deles'", "o": ["their car", "they car", "there car"], "a": 0, "why": "Their = deles. There = lá."},
+   {"q": "'A espada da Mina', de forma natural:", "o": ["Mina's sword", "Sword's Mina", "Mina sword's"], "a": 0, "why": "Dono + 's + coisa."},
+   {"q": "'His' significa:", "o": ["dele", "dela", "deles"], "a": 0, "why": "His = dele. Her = dela."},
+   {"q": "'Grandmother' é:", "o": ["avó", "avô", "neta"], "a": 0, "why": "Grandfather = avô."},
+   {"q": "This is my sister. ___ name is Bia.", "o": ["Her", "His", "She"], "a": 0, "why": "A irmã é ela → her (dela)."}
+  ]
+ },
+ {
+  "capitulo": "Mapa da Cidade",
+  "perguntas": [
+   {"q": "\"Tem três monstros na sala.\"", "o": ["There are three monsters in the room.", "Have three monsters in the room.", "There is three monsters in the room."], "a": 0, "why": "Plural → there are."},
+   {"q": "\"on the table\":", "o": ["em cima da mesa", "embaixo da mesa", "ao lado da mesa"], "a": 0, "why": "On = sobre, tocando a superfície."},
+   {"q": "They ___ from Japan.", "o": ["are", "is", "am"], "a": 0, "why": "They + are."},
+   {"q": "\"O irmão dela\"", "o": ["her brother", "his brother", "she brother"], "a": 0, "why": "Dela = her."},
+   {"q": "\"an\" vem antes de:", "o": ["som de vogal", "qualquer palavra", "palavras no plural"], "a": 0, "why": "An apple, an hour, an idea."},
+   {"q": "'Tem um café ao lado do banco.'", "o": ["There is a café next to the bank.", "Have a café next to the bank.", "There are a café next to the bank."], "a": 0, "why": "Singular → there is. Next to = ao lado de."},
+   {"q": "'behind' significa:", "o": ["atrás de", "na frente de", "entre"], "a": 0, "why": "In front of = na frente de."},
+   {"q": "___ there any portals here?", "o": ["Are", "Is", "Have"], "a": 0, "why": "Portals é plural → Are there...?"},
+   {"q": "The book is ___ the table. (em cima)", "o": ["on", "in", "under"], "a": 0, "why": "On = sobre, tocando a superfície."},
+   {"q": "'in front of the school' significa:", "o": ["na frente da escola", "atrás da escola", "dentro da escola"], "a": 0, "why": "In front of = na frente de."}
+  ]
+ }
+]

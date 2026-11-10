@@ -1,0 +1,132 @@
+[
+ {
+  "capitulo": "Armadilhas",
+  "perguntas": [
+   {"q": "\"actually\" significa:", "o": ["na verdade", "atualmente", "realmente atual"], "a": 0, "why": "Atualmente = currently / nowadays."},
+   {"q": "\"Eu percebi o erro\"", "o": ["I realized the mistake.", "I pretended the mistake.", "I noticed of the mistake."], "a": 0, "why": "Realize = perceber, se dar conta."},
+   {"q": "\"library\" é:", "o": ["biblioteca", "livraria", "livreiro"], "a": 0, "why": "Livraria = bookstore."},
+   {"q": "'sensible' significa:", "o": ["sensato", "sensível", "sensorial"], "a": 0, "why": "Sensível = sensitive."},
+   {"q": "'push' numa porta significa:", "o": ["empurre", "puxe", "aperte o botão"], "a": 0, "why": "Pull = puxe."},
+   {"q": "'college' significa:", "o": ["faculdade", "colégio", "coleção"], "a": 0, "why": "Colégio = school."},
+   {"q": "'Eu pretendo estudar.'", "o": ["I intend to study.", "I pretend to study.", "I attend to study."], "a": 0, "why": "Pretend = fingir."},
+   {"q": "'eventually' significa:", "o": ["no fim, mais cedo ou mais tarde", "às vezes", "imediatamente"], "a": 0, "why": "Às vezes = sometimes / occasionally."},
+   {"q": "'lunch' é:", "o": ["almoço", "lanche", "jantar"], "a": 0, "why": "Lanche = snack."}
+  ]
+ },
+ {
+  "capitulo": "Fala de Gente Fluente",
+  "perguntas": [
+   {"q": "___ it was raining, we went out.", "o": ["Although", "Despite", "However"], "a": 0, "why": "Frase completa depois → although."},
+   {"q": "He was tired. ___, he kept training.", "o": ["However", "Although", "Despite"], "a": 0, "why": "Início de frase com vírgula → however."},
+   {"q": "\"Portanto\"", "o": ["Therefore", "Moreover", "Whereas"], "a": 0, "why": "Therefore = portanto."},
+   {"q": "We won. ___, nobody was hurt. (Além disso)", "o": ["Moreover", "Although", "Despite"], "a": 0, "why": "Moreover = além disso."},
+   {"q": "In spite of ___ tired, she studied.", "o": ["being", "she was", "be"], "a": 0, "why": "In spite of + ING."},
+   {"q": "I study every day ___ improve my English.", "o": ["in order to", "therefore", "although"], "a": 0, "why": "In order to = para (objetivo)."},
+   {"q": "He is tall, ___ his brother is short.", "o": ["whereas", "therefore", "moreover"], "a": 0, "why": "Whereas = enquanto (contraste)."},
+   {"q": "'on the other hand' significa:", "o": ["por outro lado", "em outras palavras", "de qualquer forma"], "a": 0, "why": "Usado para mostrar o outro lado."},
+   {"q": "It was raining. ___, the game was canceled.", "o": ["Therefore", "Although", "Whereas"], "a": 0, "why": "Therefore = portanto (resultado)."}
+  ],
+  "frases_extras": [
+   ["Although it was late, we kept working.", "Embora fosse tarde, continuamos trabalhando."],
+   ["I was tired. However, I finished the report.", "Eu estava cansad{o|a}. Porém, terminei o relatório."],
+   ["Despite the rain, the game continued.", "Apesar da chuva, o jogo continuou."],
+   ["He studied hard. Therefore, he passed.", "Ele estudou muito. Portanto, passou."],
+   ["She likes tea, whereas I prefer coffee.", "Ela gosta de chá, enquanto eu prefiro café."],
+   ["I save money in order to travel.", "Eu economizo dinheiro para viajar."]
+  ]
+ },
+ {
+  "capitulo": "Ênfase",
+  "perguntas": [
+   {
+    "q": "\"Nunca vi algo assim\" (com inversão):",
+    "o": ["Never have I seen anything like this.", "Never I have seen anything like this.", "Never I saw anything like this."],
+    "a": 0,
+    "why": "Never + have + I + particípio."
+   },
+   {"q": "\"O que eu quero é dormir.\"", "o": ["What I want is to sleep.", "That I want is sleep.", "What I want it is sleep."], "a": 0, "why": "What + frase + is..."},
+   {"q": "Not only is she smart, but she ___ kind.", "o": ["is also", "also is being", "also are"], "a": 0, "why": "Not only... but she is also..."},
+   {"q": "'Foi a Mina que venceu.'", "o": ["It was Mina who won.", "It was Mina which won.", "Was Mina who won."], "a": 0, "why": "It was + pessoa + who."},
+   {"q": "Rarely ___ we see such talent.", "o": ["do", "we", "are"], "a": 0, "why": "Inversão: rarely + do + we."},
+   {"q": "I ___ like your idea! (ênfase)", "o": ["do", "am", "does"], "a": 0, "why": "DO reforça o verbo."},
+   {"q": "Not only ___ fast, but he is also strong.", "o": ["is he", "he is", "does he"], "a": 0, "why": "Inversão depois de not only."},
+   {"q": "'What I love is...' serve para:", "o": ["dar ênfase", "fazer uma pergunta", "negar algo"], "a": 0, "why": "Destaca o que vem depois."},
+   {"q": "Never ___ such a big monster!", "o": ["have I seen", "I have seen", "I seen"], "a": 0, "why": "Never + have + I + particípio."}
+  ],
+  "frases_extras": [
+   ["What I really need is a vacation.", "Do que eu realmente preciso é de férias."],
+   ["It was Mina who solved the puzzle.", "Foi a Mina que resolveu o enigma."],
+   ["Never have I seen such a view.", "Nunca vi uma vista como esta."],
+   ["I do believe in you.", "Eu acredito, sim, em você."],
+   ["Rarely do we see stars here.", "Raramente vemos estrelas aqui."],
+   ["Not only is he smart, but he's also kind.", "Ele não só é inteligente, como também é gentil."]
+  ]
+ },
+ {
+  "capitulo": "Formal x Informal",
+  "perguntas": [
+   {"q": "Qual é mais formal?", "o": ["I would like to request information.", "I wanna get info.", "Gimme info."], "a": 0, "why": "Would like + request = registro formal."},
+   {"q": "\"gonna\" =", "o": ["going to", "got to", "want to"], "a": 0, "why": "Gonna = going to (fala informal)."},
+   {"q": "\"Would you mind closing the door?\" Para aceitar:", "o": ["No, not at all.", "Yes, I mind.", "Yes, close."], "a": 0, "why": "\"Mind\" = se importar. \"Não me importo\" = aceito."},
+   {"q": "Despedida formal de e-mail:", "o": ["Kind regards", "Cheers", "See ya"], "a": 0, "why": "Kind regards = atenciosamente."},
+   {"q": "Mais formal que 'get':", "o": ["receive", "gimme", "grab"], "a": 0, "why": "Receive = receber."},
+   {"q": "'wanna' =", "o": ["want to", "going to", "got to"], "a": 0, "why": "Gonna = going to. Gotta = got to."},
+   {"q": "Pedido mais educado:", "o": ["Could you help me, please?", "Help me.", "You help me?"], "a": 0, "why": "Could you...? é educado."},
+   {"q": "'I apologize for the delay' é:", "o": ["um pedido formal de desculpas", "um agradecimento", "uma reclamação"], "a": 0, "why": "Apologize = pedir desculpas (formal)."},
+   {"q": "'Dear Mr. Smith,' é usado em:", "o": ["e-mails e cartas formais", "mensagens entre amigos", "anúncios de rua"], "a": 0, "why": "Dear = prezado(a)."}
+  ],
+  "frases_extras": [
+   ["I would like to request a refund.", "Gostaria de solicitar um reembolso."],
+   ["Could you send me the details, please?", "Poderia me enviar os detalhes, por favor?"],
+   ["I apologize for the late reply.", "Peço desculpas pela demora na resposta."],
+   ["Would you mind closing the window?", "Você se importaria de fechar a janela?"],
+   ["I'm gonna grab a coffee.", "Vou pegar um café."],
+   ["Please find the file attached.", "Segue o arquivo em anexo."]
+  ]
+ },
+ {
+  "capitulo": "Expressões do Mundo Real",
+  "perguntas": [
+   {"q": "\"Cometer um erro\"", "o": ["make a mistake", "do a mistake", "take a mistake"], "a": 0, "why": "Collocation fixa: make a mistake."},
+   {"q": "\"under the weather\" significa:", "o": ["meio doente", "debaixo da chuva", "com raiva"], "a": 0, "why": "Expressão para indisposição leve."},
+   {"q": "\"Muito raramente\"", "o": ["once in a blue moon", "piece of cake", "break a leg"], "a": 0, "why": "Lua azul acontece raramente."},
+   {"q": "'take a photo' significa:", "o": ["tirar uma foto", "pegar uma foto", "fazer uma foto falsa"], "a": 0, "why": "Collocation: take a photo."},
+   {"q": "'Break a leg!' se diz:", "o": ["para desejar boa sorte", "quando alguém se machuca", "para mandar alguém embora"], "a": 0, "why": "Muito usado antes de apresentações."},
+   {"q": "'Fazer a lição de casa'", "o": ["do homework", "make homework", "take homework"], "a": 0, "why": "Tarefa → do."},
+   {"q": "'Dar o seu melhor'", "o": ["do your best", "make your best", "take your best"], "a": 0, "why": "Collocation: do your best."},
+   {"q": "'The ball is in your court' significa:", "o": ["a decisão é sua", "a bola é sua", "você perdeu"], "a": 0, "why": "Agora é com você."},
+   {"q": "'cost an arm and a leg' significa:", "o": ["custar os olhos da cara", "se machucar", "ser barato"], "a": 0, "why": "Algo muito caro."}
+  ],
+  "frases_extras": [
+   ["Don't worry, it's a piece of cake.", "Não se preocupe, é moleza."],
+   ["I make my bed every morning.", "Eu arrumo minha cama toda manhã."],
+   ["Let's take a short break.", "Vamos fazer uma pausa curta."],
+   ["You need to make a decision.", "Você precisa tomar uma decisão."],
+   ["I do the dishes after dinner.", "Eu lavo a louça depois do jantar."],
+   ["That phone cost an arm and a leg.", "Aquele celular custou os olhos da cara."]
+  ]
+ },
+ {
+  "capitulo": "O Último Andar",
+  "perguntas": [
+   {"q": "\"Os livros foram escritos por ela.\"", "o": ["The books were written by her.", "The books wrote by her.", "The books was write by her."], "a": 0, "why": "Passiva: were + particípio."},
+   {"q": "___ the rain, we played.", "o": ["Despite", "Although"], "a": 0, "why": "\"The rain\" é substantivo → despite."},
+   {"q": "Revisão: \"actually\" quer dizer:", "o": ["na verdade", "atualmente"], "a": 0, "why": "Falso cognato clássico."},
+   {"q": "Never ___ I seen such a tall tower.", "o": ["have", "I have", "did"], "a": 0, "why": "Inversão: never + have + I."},
+   {"q": "\"It's a piece of cake\" quer dizer:", "o": ["É moleza", "É um pedaço de bolo", "É um problema"], "a": 0, "why": "Expressão: algo muito fácil."},
+   {"q": "'Inglês é falado no mundo todo.'", "o": ["English is spoken all over the world.", "English speaks all over the world.", "English is speak all over the world."], "a": 0, "why": "Passiva: is + particípio."},
+   {"q": "She said she ___ come later.", "o": ["would", "will", "is"], "a": 0, "why": "Discurso indireto: will → would."},
+   {"q": "'Although' vem antes de:", "o": ["uma frase completa", "só um substantivo", "um verbo com -ING"], "a": 0, "why": "Although it was hard..."},
+   {"q": "If I hadn't studied, I ___ here now.", "o": ["wouldn't be", "won't be", "am not"], "a": 0, "why": "Passado irreal com resultado no presente → wouldn't be."},
+   {"q": "'hit the books' significa:", "o": ["estudar pra valer", "bater nos livros", "jogar livros fora"], "a": 0, "why": "Expressão idiomática."}
+  ],
+  "frases_extras": [
+   ["The tower was built long ago.", "A torre foi construída há muito tempo."],
+   ["She said she would never give up.", "Ela disse que nunca desistiria."],
+   ["Despite the danger, we went inside.", "Apesar do perigo, nós entramos."],
+   ["If I hadn't tried, I wouldn't be here.", "Se eu não tivesse tentado, não estaria aqui."],
+   ["Never have I felt so proud.", "Nunca me senti tão orgulhos{o|a}."],
+   ["Although it was hard, I kept going.", "Embora tenha sido difícil, eu continuei."]
+  ]
+ }
+]

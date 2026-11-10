@@ -1,0 +1,111 @@
+[
+ {
+  "capitulo": "Agora Mesmo",
+  "perguntas": [
+   {"q": "Agora: \"They ___ (come).\"", "o": ["are coming", "come", "comes"], "a": 0, "why": "Ação acontecendo agora → are + coming."},
+   {"q": "\"I drink coffee every morning.\" é:", "o": ["Hábito", "Ação de agora"], "a": 0, "why": "\"Every morning\" mostra rotina → presente simples."},
+   {"q": "swim + ing =", "o": ["swimming", "swiming", "swimeing"], "a": 0, "why": "Consoante-vogal-consoante no fim: dobra a última letra."},
+   {"q": "Look! It ___ raining.", "o": ["is", "are", "am"], "a": 0, "why": "It + is + ING."},
+   {"q": "make + ing =", "o": ["making", "makeing", "makking"], "a": 0, "why": "Tira o E final."},
+   {"q": "'Estamos estudando agora.'", "o": ["We're studying now.", "We study now.", "We studying now."], "a": 0, "why": "Agora → are + ING."},
+   {"q": "Qual expressão pede -ING?", "o": ["right now", "every day", "always"], "a": 0, "why": "Right now = agora mesmo."},
+   {"q": "She ___ TV every night. (hábito)", "o": ["watches", "is watching", "watching"], "a": 0, "why": "Hábito → presente simples."},
+   {"q": "What ___ you doing?", "o": ["are", "is", "do"], "a": 0, "why": "You + are + ING."}
+  ]
+ },
+ {
+  "capitulo": "Memórias do Passado",
+  "perguntas": [
+   {"q": "Passado de \"go\":", "o": ["went", "goed", "gone"], "a": 0, "why": "Go → went é irregular."},
+   {"q": "Did you ___ the movie?", "o": ["see", "saw", "seen"], "a": 0, "why": "Depois de \"did\", o verbo fica na forma normal."},
+   {"q": "They ___ tired yesterday.", "o": ["were", "was"], "a": 0, "why": "They / you / we usam \"were\"."},
+   {"q": "Passado de 'eat':", "o": ["ate", "eated", "eaten"], "a": 0, "why": "Eat → ate. Eaten é particípio."},
+   {"q": "Passado de 'study':", "o": ["studied", "studyed", "studed"], "a": 0, "why": "Consoante + Y → IED."},
+   {"q": "'Eu não fui à escola.'", "o": ["I didn't go to school.", "I didn't went to school.", "I not went to school."], "a": 0, "why": "Didn't + verbo normal."},
+   {"q": "She ___ at home yesterday.", "o": ["was", "were"], "a": 0, "why": "She → was."},
+   {"q": "Passado de 'see':", "o": ["saw", "seed", "seen"], "a": 0, "why": "See → saw. Seen é particípio."},
+   {"q": "'Did you sleep well?' Resposta curta positiva:", "o": ["Yes, I did.", "Yes, I slept.", "Yes, I do."], "a": 0, "why": "Responde com o auxiliar: did."}
+  ]
+ },
+ {
+  "capitulo": "O Mercado Negro",
+  "perguntas": [
+   {"q": "How ___ money do you have?", "o": ["much", "many"], "a": 0, "why": "Money é incontável → much."},
+   {"q": "\"Algumas informações\"", "o": ["some information", "some informations", "any informations"], "a": 0, "why": "Information não tem plural."},
+   {"q": "I don't have ___ gold.", "o": ["any", "some", "many"], "a": 0, "why": "Negativa → any."},
+   {"q": "How ___ potions?", "o": ["many", "much"], "a": 0, "why": "Potions é contável → many."},
+   {"q": "'Um pouco de água'", "o": ["a little water", "a few water", "a many water"], "a": 0, "why": "Incontável → a little."},
+   {"q": "'Alguns amigos' (poucos)", "o": ["a few friends", "a little friends", "a much friends"], "a": 0, "why": "Contável → a few."},
+   {"q": "Do you have ___ questions?", "o": ["any", "much", "a little"], "a": 0, "why": "Pergunta → any."},
+   {"q": "'Conselhos' em inglês:", "o": ["some advice", "some advices", "an advices"], "a": 0, "why": "Advice não tem plural."},
+   {"q": "'a lot of' serve para:", "o": ["contáveis e incontáveis", "só contáveis", "só incontáveis"], "a": 0, "why": "A lot of friends, a lot of water."}
+  ],
+  "frases_extras": [
+   ["How many apples do we have?", "Quantas maçãs nós temos?"],
+   ["There isn't much milk in the fridge.", "Não tem muito leite na geladeira."],
+   ["Do you have any questions?", "Você tem alguma pergunta?"],
+   ["I need a little sugar, please.", "Preciso de um pouco de açúcar, por favor."],
+   ["She has a few good friends.", "Ela tem alguns bons amigos."],
+   ["We don't have any time today.", "Não temos tempo nenhum hoje."]
+  ]
+ },
+ {
+  "capitulo": "Interrompido!",
+  "perguntas": [
+   {"q": "I ___ TV when she arrived.", "o": ["was watching", "watched", "am watching"], "a": 0, "why": "Ação longa interrompida → was + ING."},
+   {"q": "They ___ playing.", "o": ["were", "was"], "a": 0, "why": "They → were."},
+   {"q": "\"while\" significa:", "o": ["enquanto", "quando", "depois"], "a": 0, "why": "While = enquanto."},
+   {"q": "We ___ sleeping.", "o": ["were", "was"], "a": 0, "why": "We → were."},
+   {"q": "What ___ she doing at 9?", "o": ["was", "were", "did"], "a": 0, "why": "She → was + ING."},
+   {"q": "'Enquanto eu cozinhava, ele ligou.'", "o": ["While I was cooking, he called.", "While I cooked, he was call.", "While I am cooking, he called."], "a": 0, "why": "Ação longa (was cooking) + ação curta (called)."},
+   {"q": "I was reading ___ the lights went out.", "o": ["when", "while", "during"], "a": 0, "why": "Ação curta que interrompe → when."},
+   {"q": "Negativo de 'They were listening':", "o": ["They weren't listening.", "They didn't listening.", "They wasn't listening."], "a": 0, "why": "Were + not = weren't."},
+   {"q": "O passado contínuo mostra:", "o": ["uma ação em andamento no passado", "um hábito de hoje", "um plano futuro"], "a": 0, "why": "Was / were + ING."}
+  ],
+  "frases_extras": [
+   ["I was cooking when you called.", "Eu estava cozinhando quando você ligou."],
+   ["They were watching a movie at nine.", "Eles estavam vendo um filme às nove."],
+   ["What were you doing last night?", "O que você estava fazendo ontem à noite?"],
+   ["It was raining when we left.", "Estava chovendo quando saímos."],
+   ["She wasn't listening to the teacher.", "Ela não estava ouvindo a professora."],
+   ["While he was sleeping, the phone rang.", "Enquanto ele dormia, o telefone tocou."]
+  ]
+ },
+ {
+  "capitulo": "Planos de Batalha",
+  "perguntas": [
+   {"q": "O telefone toca e você decide na hora: \"Eu atendo!\"", "o": ["I'll get it!", "I'm going to get it!"], "a": 0, "why": "Decisão no momento → will."},
+   {"q": "Plano já decidido: \"Vou estudar na Coreia ano que vem.\"", "o": ["I'm going to study in Korea next year.", "I study in Korea next year."], "a": 0, "why": "Plano decidido antes → going to."},
+   {"q": "\"won't\" significa:", "o": ["não vai / não vou", "queria", "não quer"], "a": 0, "why": "Won't = will not."},
+   {"q": "'Acho que vai chover.' (opinião)", "o": ["I think it will rain.", "I think it rains.", "I think it raining."], "a": 0, "why": "Opinião sobre o futuro → will."},
+   {"q": "Oferta na hora: 'Eu te ajudo!'", "o": ["I'll help you!", "I help you!", "I going to help you!"], "a": 0, "why": "Decisão no momento → will."},
+   {"q": "She ___ going to travel next month.", "o": ["is", "are", "will"], "a": 0, "why": "She + is + going to."},
+   {"q": "'Ele não vai vir.'", "o": ["He won't come.", "He willn't come.", "He not will come."], "a": 0, "why": "Will not = won't."},
+   {"q": "Nuvens escuras: 'Vai chover!'", "o": ["It's going to rain!", "It will raining!", "It rains!"], "a": 0, "why": "Previsão com evidência → going to."},
+   {"q": "'next week' significa:", "o": ["semana que vem", "semana passada", "esta semana"], "a": 0, "why": "Last week = semana passada."}
+  ]
+ },
+ {
+  "capitulo": "O Mais Forte",
+  "perguntas": [
+   {"q": "Comparativo de \"good\":", "o": ["better", "gooder", "more good"], "a": 0, "why": "Good → better → the best."},
+   {"q": "She is ___ (intelligent) than me.", "o": ["more intelligent", "intelligenter", "most intelligent"], "a": 0, "why": "Palavra longa → more."},
+   {"q": "I ___ when you called.", "o": ["was sleeping", "slept", "am sleeping"], "a": 0, "why": "Ação em andamento interrompida → passado contínuo."},
+   {"q": "How ___ potions do you need?", "o": ["many", "much"], "a": 0, "why": "Potions é contável → many."},
+   {"q": "Did you ___ my message?", "o": ["read", "readed", "reading"], "a": 0, "why": "Depois de did, verbo normal."},
+   {"q": "Superlativo de 'bad':", "o": ["the worst", "the baddest", "the most bad"], "a": 0, "why": "Bad → worse → the worst."},
+   {"q": "This tower is ___ than that one.", "o": ["taller", "more tall", "tallest"], "a": 0, "why": "Curto → +ER + than."},
+   {"q": "'Tão rápido quanto'", "o": ["as fast as", "so fast than", "as fast than"], "a": 0, "why": "Igualdade: as ... as."},
+   {"q": "They ___ playing when I arrived.", "o": ["were", "was", "are"], "a": 0, "why": "They → were + ING."},
+   {"q": "Yesterday she ___ a new sword.", "o": ["bought", "buyed", "buys"], "a": 0, "why": "Buy → bought."}
+  ],
+  "frases_extras": [
+   ["My brother is taller than me.", "Meu irmão é mais alto que eu."],
+   ["This is the best day of my life.", "Este é o melhor dia da minha vida."],
+   ["English is easier than I thought.", "O inglês é mais fácil do que eu pensava."],
+   ["She is as fast as Jin.", "Ela é tão rápida quanto o Jin."],
+   ["Today is colder than yesterday.", "Hoje está mais frio que ontem."],
+   ["That was the worst movie ever.", "Aquele foi o pior filme de todos."]
+  ]
+ }
+]

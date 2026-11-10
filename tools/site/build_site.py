@@ -1,81 +1,169 @@
-import os, re, shutil, json, hashlib, subprocess
-SRC='torre-do-ingles.html'; OUT='/home/claude/site'
-s=open(SRC).read()
-s=s.replace('<title>Torre do Inglês</title>\n','',1).replace('<meta name="claude:viewport-fit-sides" content="cover">\n','',1)
-ver=hashlib.sha1(s.encode()).hexdigest()[:10]
-head=f'''<!doctype html>
-<!--
-  Torre do Inglês · © 2026 RockDo1do · https://github.com/RockDo1do/CursoIngles
-  Licença CC BY-NC-SA 4.0: uso livre para estudar e compartilhar com crédito; proibido o uso comercial.
-  https://creativecommons.org/licenses/by-nc-sa/4.0/deed.pt-br
--->
-<html lang="pt-BR">
-<head>
-<meta name="author" content="RockDo1do">
-<meta name="copyright" content="© 2026 RockDo1do · CC BY-NC-SA 4.0">
-<link rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Torre do Inglês · Inglês em formato de manhwa</title>
-<meta name="description" content="Curso de inglês do básico ao avançado contado como um manhwa. Vozes naturais, treino de fala com Whisper no aparelho e ajustes para TDAH e TPAC.">
-<meta name="theme-color" content="#0f0e17">
-<link rel="manifest" href="manifest.webmanifest">
-<link rel="icon" href="icons/icon-192.png" type="image/png">
-<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-title" content="Torre do Inglês">
-<meta property="og:title" content="Torre do Inglês">
-<meta property="og:description" content="Aprenda inglês do básico ao avançado lendo um manhwa.">
-<meta property="og:type" content="website">
-<meta property="og:image" content="https://rockdo1do.github.io/CursoIngles/og.png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta property="og:url" content="https://rockdo1do.github.io/CursoIngles/">
-<link rel="canonical" href="https://rockdo1do.github.io/CursoIngles/">
-<link rel="preload" href="fonts/AtkinsonHyperlegible-Regular.woff" as="font" type="font/woff" crossorigin>
-<meta name="twitter:card" content="summary_large_image">
-<style>html{{background:#0f0e17}}@media (prefers-color-scheme: light){{html{{background:#f3f1f8}}}}body{{margin:0}}</style>
-</head>
-<body>
-'''
-tail=f'''
-<script>
-try{{if(navigator.storage&&navigator.storage.persist) navigator.storage.persisted().then(p=>{{if(!p) navigator.storage.persist();}});}}catch(e){{}}
-if('serviceWorker' in navigator&&location.protocol==='https:'){{
- const had=!!navigator.serviceWorker.controller;
- navigator.serviceWorker.addEventListener('controllerchange',()=>{{
-  if(!had||document.getElementById('upd')) return;
-  const d=document.createElement('div');d.id='upd';d.setAttribute('role','status');
-  d.style.cssText='position:fixed;left:50%;bottom:16px;transform:translateX(-50%);z-index:99;background:#1a1826;color:#fff;border:2px solid #62d6ff;border-radius:12px;padding:10px 14px;font:15px system-ui;display:flex;gap:12px;align-items:center;max-width:calc(100% - 32px)';
-  d.innerHTML='Nova versão do curso disponível. <button style="font:inherit;font-weight:700;padding:8px 12px;border-radius:8px;border:0;background:#ff8a3d;color:#111">Atualizar</button>';
-  d.querySelector('button').onclick=()=>location.reload(); document.body.appendChild(d);
- }});
- window.addEventListener('load',()=>{{navigator.serviceWorker.register('sw.js?v={ver}').catch(()=>{{}});}});
-}}
-</script>
-</body>
-</html>
-'''
-os.makedirs(OUT,exist_ok=True)
-open(f'{OUT}/index.html','w').write(head+s+tail)
-# áudio
-if os.path.exists(f'{OUT}/audio'): shutil.rmtree(f'{OUT}/audio')
-shutil.copytree('tts/out/audio',f'{OUT}/audio')
-# versão no nome do arquivo de áudio: se um arquivo mudar, o aparelho baixa de novo
-idx=json.load(open(f'{OUT}/audio/index.json'))
-for g,fs in idx['files'].items():
-    for kk,u in list(fs.items()):
-        if isinstance(u,str):
-            h=hashlib.sha1(open(f'{OUT}/'+u.split('?')[0],'rb').read()).hexdigest()[:8]
-            fs[kk]=u.split('?')[0]+'?v='+h
-json.dump(idx,open(f'{OUT}/audio/index.json','w'),ensure_ascii=False,separators=(',',':'))
-shutil.copy('privacy.html',f'{OUT}/privacy.html')
-if os.path.isdir('/home/claude/site/fonts') and OUT!='/home/claude/site': shutil.copytree('/home/claude/site/fonts',f'{OUT}/fonts',dirs_exist_ok=True)
-open(f'{OUT}/.nojekyll','w').write('')
-man={"name":"Torre do Inglês","short_name":"Torre do Inglês","description":"Curso de inglês do básico ao avançado em formato de manhwa.","lang":"pt-BR","start_url":"./","scope":"./","display":"standalone","orientation":"portrait","background_color":"#0f0e17","theme_color":"#0f0e17","categories":["education"],
- "icons":[{"src":"icons/icon-192.png","sizes":"192x192","type":"image/png"},{"src":"icons/icon-512.png","sizes":"512x512","type":"image/png"},{"src":"icons/maskable-512.png","sizes":"512x512","type":"image/png","purpose":"maskable"}]}
-json.dump(man,open(f'{OUT}/manifest.webmanifest','w'),ensure_ascii=False,indent=1)
-sw=open('sw-template.js').read().replace('__VER__',ver)
-open(f'{OUT}/sw.js','w').write(sw)
-print('built',ver)
+"""Prepara a Torre do Inglês para publicar.
+
+Uso (de qualquer pasta):
+  python3 tools/site/build_site.py                 confere o conteúdo e atualiza as marcas de versão do site
+  python3 tools/site/build_site.py --verificar     só confere (não muda nada); falha se faltar rodar o build
+  python3 tools/site/build_site.py --artefato DIR  também monta em DIR a cópia para o Claude
+  python3 tools/site/build_site.py --audio DIR     também copia os áudios gravados de DIR (com index.json)
+
+O que fica onde:
+  index.html   a página: aparência (CSS) e o carregador do conteúdo
+  app.js       o código do curso
+  conteudo/    a história e as questões (veja conteudo/LEIA-ME.md)
+"""
+import argparse, hashlib, json, os, re, shutil, sys
+
+ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+HERE = os.path.dirname(os.path.abspath(__file__))
+C = os.path.join(ROOT, 'conteudo')
+PRATICA = ['escuta', 'leitura', 'vocabulario', 'escrita', 'nivelamento', 'sons']
+SITE_ONLY = re.compile(r'<!-- só no site -->.*?<!-- /só no site -->\n?', re.S)
+
+
+def rd(p):
+    with open(p, encoding='utf-8') as f:
+        return f.read()
+
+
+def wr(p, s):
+    with open(p, 'w', encoding='utf-8') as f:
+        f.write(s)
+
+
+def load(rel):
+    p = os.path.join(C, rel + '.json')
+    try:
+        return json.loads(rd(p))
+    except FileNotFoundError:
+        sys.exit(f'ERRO: falta o arquivo conteudo/{rel}.json')
+    except json.JSONDecodeError as e:
+        sys.exit(f'ERRO: conteudo/{rel}.json tem um erro de formatação na linha {e.lineno}, coluna {e.colno}: {e.msg}')
+
+
+def validar():
+    """Confere a estrutura do conteúdo. Devolve a lista de arquivos que a página carrega."""
+    erros, files = [], ['indice']
+    ind = load('indice')
+    pares = [(a, f'historia/{a}', f'questoes/{a}') for a in ind['arcos']] + [('bonus', 'historia/bonus', 'questoes/bonus')]
+    for nome, hp, qp in pares:
+        h, q = load(hp), load(qp)
+        files += [hp, qp]
+        caps = h.get('capitulos', [])
+        if nome != 'bonus':
+            for k in ('nome', 'descricao', 'agora_voce_consegue'):
+                if k not in h:
+                    erros.append(f'{hp}: falta "{k}"')
+        if len(caps) != len(q):
+            erros.append(f'{nome}: a história tem {len(caps)} capítulos, mas as questões têm {len(q)}')
+        for i, (c, x) in enumerate(zip(caps, q), 1):
+            onde = f'{nome}, capítulo {i} ("{c.get("t")}")'
+            if x.get('capitulo') != c.get('t'):
+                erros.append(f'{onde}: nas questões o título é "{x.get("capitulo")}"')
+            for k in ('t', 'lv', 'topic', 'bg', 'hero', 'p'):
+                if k not in c:
+                    erros.append(f'{onde}: falta "{k}" na história')
+            for j, p in enumerate(c.get('p', []), 1):
+                for l in p.get('l', []) or []:
+                    if not (isinstance(l, list) and len(l) == 3):
+                        erros.append(f'{onde}, quadro {j}: fala fora do formato [personagem, inglês, português]: {l}')
+            for j, pq in enumerate(x.get('perguntas', []), 1):
+                o = pq.get('o', [])
+                if not (isinstance(pq.get('a'), int) and 0 <= pq['a'] < len(o)):
+                    erros.append(f'{onde}, pergunta {j}: "a" precisa ser a posição da resposta certa (0 = primeira opção)')
+                if len(set(t.strip() for t in o)) != len(o):
+                    erros.append(f'{onde}, pergunta {j}: há opções repetidas')
+            for f in x.get('frases_extras', []) or []:
+                if not (isinstance(f, list) and len(f) == 2):
+                    erros.append(f'{onde}: frase extra fora do formato [inglês, português]: {f}')
+    for n in PRATICA:
+        load(f'pratica/{n}')
+        files.append(f'pratica/{n}')
+    if erros:
+        print('O conteúdo tem problemas:')
+        for e in erros:
+            print(' -', e)
+        sys.exit(1)
+    return files
+
+
+def carimbar_audio():
+    """Põe ?v=<marca> no endereço de cada áudio: se um arquivo mudar, o aparelho baixa de novo."""
+    p = os.path.join(ROOT, 'audio', 'index.json')
+    idx = json.loads(rd(p))
+    for fs in idx['files'].values():
+        for k, u in list(fs.items()):
+            if isinstance(u, str):
+                base = u.split('?')[0]
+                with open(os.path.join(ROOT, base), 'rb') as f:
+                    fs[k] = base + '?v=' + hashlib.sha1(f.read()).hexdigest()[:8]
+    return json.dumps(idx, ensure_ascii=False, separators=(',', ':'))
+
+
+def montar(files):
+    """Devolve {caminho: texto} de tudo o que o build escreve."""
+    out = {}
+    out['audio/index.json'] = carimbar_audio()
+    page = rd(os.path.join(ROOT, 'index.html'))
+    neutra = re.sub(r"const TORRE_V='[^']*'", "const TORRE_V=''", page)
+    neutra = re.sub(r"sw\.js\?v=[0-9a-f]*", 'sw.js?v=', neutra)
+    h = hashlib.sha1(neutra.encode())
+    for rel in ['app.js'] + [f'conteudo/{f}.json' for f in sorted(files)] + ['audio/index.json']:
+        h.update(rel.encode())
+        h.update(out[rel].encode() if rel in out else open(os.path.join(ROOT, rel), 'rb').read())
+    ver = h.hexdigest()[:10]
+    out['index.html'] = neutra.replace("const TORRE_V=''", f"const TORRE_V='{ver}'", 1).replace('sw.js?v=', f'sw.js?v={ver}', 1)
+    pre = ['./', 'index.html', f'app.js?v={ver}'] + [f'conteudo/{f}.json?v={ver}' for f in files] + [
+        'manifest.webmanifest', 'icons/icon-192.png', 'icons/icon-512.png', 'audio/index.json',
+        'whisper/whisper-core.js', 'whisper/whisper-worker.js', 'whisper/whisper.wasm', 'privacy.html',
+        'fonts/AtkinsonHyperlegible-Regular.woff', 'fonts/AtkinsonHyperlegible-Bold.woff', 'fonts/LilitaOne-Regular.woff',
+        'fonts/DotGothic16-Regular.woff', 'fonts/Fredoka-Medium.woff']
+    out['sw.js'] = rd(os.path.join(HERE, 'sw-template.js')).replace('__VER__', ver).replace('__PRE__', json.dumps(pre, ensure_ascii=False))
+    man = {"name": "Torre do Inglês", "short_name": "Torre do Inglês", "description": "Curso de inglês do básico ao avançado em formato de manhwa.",
+           "lang": "pt-BR", "start_url": "./", "scope": "./", "display": "standalone", "orientation": "portrait",
+           "background_color": "#0f0e17", "theme_color": "#0f0e17", "categories": ["education"],
+           "icons": [{"src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png"},
+                     {"src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png"},
+                     {"src": "icons/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable"}]}
+    out['manifest.webmanifest'] = json.dumps(man, ensure_ascii=False, indent=1)
+    out['.nojekyll'] = ''
+    return ver, out
+
+
+def artefato(dest, page):
+    """Cópia para o Claude: mesma página, sem as partes que só fazem sentido no site."""
+    os.makedirs(dest, exist_ok=True)
+    s = SITE_ONLY.sub('', page)
+    s = re.sub(r'<title>.*?</title>', '<title>Torre do Inglês</title>\n<meta name="claude:viewport-fit-sides" content="cover">', s, count=1)
+    wr(os.path.join(dest, 'index.html'), s)
+    shutil.copy(os.path.join(ROOT, 'app.js'), os.path.join(dest, 'app.js'))
+    if os.path.exists(os.path.join(dest, 'conteudo')):
+        shutil.rmtree(os.path.join(dest, 'conteudo'))
+    shutil.copytree(C, os.path.join(dest, 'conteudo'), ignore=shutil.ignore_patterns('*.md'))
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument('--verificar', action='store_true')
+    ap.add_argument('--artefato')
+    ap.add_argument('--audio')
+    a = ap.parse_args()
+    files = validar()
+    if a.audio and not a.verificar:
+        shutil.rmtree(os.path.join(ROOT, 'audio'))
+        shutil.copytree(a.audio, os.path.join(ROOT, 'audio'))
+    ver, out = montar(files)
+    if a.verificar:
+        velhos = [p for p, s in out.items() if not os.path.exists(os.path.join(ROOT, p)) or rd(os.path.join(ROOT, p)) != s]
+        if velhos:
+            sys.exit('Falta rodar "python3 tools/site/build_site.py": desatualizados: ' + ', '.join(velhos))
+        print('conteúdo ok, versão', ver)
+        return
+    for p, s in out.items():
+        wr(os.path.join(ROOT, p), s)
+    if a.artefato:
+        artefato(a.artefato, out['index.html'])
+    print('conteúdo ok, versão', ver)
+
+
+if __name__ == '__main__':
+    main()

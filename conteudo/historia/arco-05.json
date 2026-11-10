@@ -1,0 +1,307 @@
+{
+ "nome": "Arco 5 · Os Andares Altos",
+ "descricao": "Intermediário avançado · B2 · passiva, discurso indireto, arrependimento",
+ "agora_voce_consegue": ["Usar a voz passiva e o discurso indireto", "Falar de arrependimentos e do passado imaginário", "Usar phrasal verbs comuns"],
+ "capitulos": [
+  {
+   "t": "Sonhos Impossíveis",
+   "lv": "B2",
+   "topic": "Segunda condicional e wish",
+   "bg": "sky",
+   "hero": "rafa",
+   "p": [
+    {
+     "bg": "sky",
+     "m": {"rafa": "happy", "mina": "normal"},
+     "l": [
+      ["rafa", "If I could speak perfect English, I would travel the world.", "Se eu falasse inglês perfeitamente, viajaria pelo mundo."],
+      ["mina", "Where would you go first?", "Pra onde você iria primeiro?"]
+     ]
+    },
+    {
+     "bg": "sky",
+     "m": {"rafa": "happy", "mina": "det"},
+     "l": [
+      ["rafa", "Seoul. If I lived there, I would eat street food every day.", "Seul. Se eu morasse lá, comeria comida de rua todo dia."],
+      ["mina", "If I were you, I would start saving money.", "Se eu fosse você, começaria a juntar dinheiro."]
+     ]
+    },
+    {
+     "sys": "Imaginando",
+     "r": [
+      ["If I had money, I would travel.", "2ª: imaginário (if + passado, would)"],
+      ["If I were you...", "Se eu fosse você (conselho)"],
+      ["I wish I spoke Korean.", "Queria falar coreano (agora)"],
+      ["I wish I had studied more.", "Queria ter estudado mais (passado)"],
+      ["If only I knew!", "Se ao menos eu soubesse!"],
+      ["I'd = I would", "Forma curta"]
+     ],
+     "tip": "Com IF e WISH no imaginário, use WERE para todos: \"If I were\", \"I wish she were here\"."
+    },
+    {
+     "bg": "sky",
+     "m": {"rafa": "sad", "mina": "happy"},
+     "l": [
+      ["rafa", "I wish I spoke like Jin.", "Queria falar como o Jin."],
+      ["mina", "I wish you believed in yourself more.", "Queria que você acreditasse mais em si mesm{o|a}."]
+     ]
+    }
+   ]
+  },
+  {
+   "t": "Feito Por Eles",
+   "lv": "B2",
+   "topic": "Voz passiva",
+   "bg": "street",
+   "hero": "jin",
+   "p": [
+    {
+     "bg": "street",
+     "m": {"jin": "det", "rafa": "shock"},
+     "c": "Notícia urgente do Clube.",
+     "l": [
+      ["jin", "A new portal was discovered this morning.", "Um novo portal foi descoberto hoje de manhã."],
+      ["rafa", "By whom?", "Por quem?"],
+      ["jin", "It was found by a kid. The area is being protected now.", "Foi encontrado por uma criança. A área está sendo protegida agora."]
+     ]
+    },
+    {
+     "bg": "street",
+     "m": {"rafa": "normal", "jin": "det"},
+     "l": [
+      ["rafa", "Will we be sent there?", "Nós vamos ser mandados pra lá?"],
+      ["jin", "Yes. The orders have already been given.", "Sim. As ordens já foram dadas."]
+     ]
+    },
+    {
+     "sys": "Voz passiva",
+     "r": [
+      ["English is spoken here.", "Presente: é falado"],
+      ["The portal was discovered.", "Passado: foi descoberto"],
+      ["The area is being protected.", "Contínuo: está sendo protegida"],
+      ["We will be sent.", "Futuro: seremos mandados"],
+      ["The orders have been given.", "Perfeito: foram dadas"],
+      ["by + quem fez", "por (agente)"]
+     ],
+     "tip": "Use a passiva quando a ação importa mais do que quem fez. É muito comum em notícias e textos formais."
+    },
+    {
+     "bg": "cafe",
+     "m": {"mina": "happy", "rafa": "normal"},
+     "l": [
+      ["mina", "Remember: mistakes are made by everyone.", "Lembre: erros são cometidos por todo mundo."],
+      ["rafa", "Even by you?", "Até por você?"],
+      ["mina", "Mostly by Jin.", "Principalmente pelo Jin."]
+     ]
+    }
+   ]
+  },
+  {
+   "t": "Ele Disse Que...",
+   "lv": "B2",
+   "topic": "Discurso indireto (reported speech)",
+   "bg": "cafe",
+   "hero": "mina",
+   "p": [
+    {
+     "bg": "cafe",
+     "m": {"rafa": "normal", "mina": "happy"},
+     "l": [
+      ["rafa", "Jin said that he was the strongest explorer.", "O Jin disse que era o explorador mais forte."],
+      ["mina", "Ha! He told me he was afraid of spiders.", "Rá! Ele me disse que tinha medo de aranhas."]
+     ]
+    },
+    {
+     "bg": "cafe",
+     "m": {"rafa": "happy", "mina": "normal"},
+     "l": [
+      ["rafa", "He said he would train with me tomorrow.", "Ele disse que treinaria comigo amanhã."],
+      ["mina", "He asked me if you were ready.", "Ele me perguntou se você estava pront{o|a}."]
+     ]
+    },
+    {
+     "sys": "Contando o que alguém disse",
+     "r": [
+      ["\"I am tired.\" → He said he was tired.", "am → was"],
+      ["\"I will help.\" → She said she would help.", "will → would"],
+      ["\"I saw it.\" → He said he had seen it.", "passado → had + particípio"],
+      ["He said that... / He told me that...", "SAY sem pessoa · TELL + pessoa"],
+      ["She asked if I was ready.", "Pergunta de sim/não → if"],
+      ["He told me to wait.", "Ordem → tell + pessoa + TO"]
+     ],
+     "tip": "Se a frase ainda é verdade, dá pra manter o tempo: \"She said she likes coffee.\""
+    },
+    {
+     "bg": "cafe",
+     "m": {"jin": "normal", "rafa": "sad"},
+     "l": [
+      ["jin", "Did Mina tell you anything about me?", "A Mina te contou algo sobre mim?"],
+      ["rafa", "She said you were... very brave.", "Ela disse que você era... muito corajoso."]
+     ]
+    }
+   ]
+  },
+  {
+   "t": "Antes de Tudo",
+   "lv": "B2",
+   "topic": "Past perfect e present perfect contínuo",
+   "bg": "dungeon",
+   "hero": "rafa",
+   "p": [
+    {
+     "bg": "dungeon",
+     "m": {"jin": "det", "rafa": "shock"},
+     "c": "Portal difícil. Quando o time chegou...",
+     "l": [
+      ["jin", "The monsters had already left when we arrived.", "Os monstros já tinham ido embora quando chegamos."],
+      ["rafa", "Someone had cleared the dungeon before us!", "Alguém tinha limpado a masmorra antes de nós!"]
+     ]
+    },
+    {
+     "bg": "dungeon",
+     "m": {"mina": "normal", "rafa": "sad"},
+     "l": [
+      ["mina", "How long have you been waiting?", "Há quanto tempo você está esperando?"],
+      ["rafa", "I've been waiting for an hour. I've been training all morning.", "Estou esperando há uma hora. Estou treinando a manhã toda."]
+     ]
+    },
+    {
+     "sys": "Linha do tempo",
+     "r": [
+      ["had + particípio", "Passado antes de outro passado"],
+      ["When I arrived, the movie had started.", "Quando cheguei, o filme já tinha começado"],
+      ["already, before, by the time", "Palavras comuns com past perfect"],
+      ["have / has been + ING", "Começou e continua (foco na duração)"],
+      ["I've been studying for 2 hours.", "Estou estudando há 2 horas"],
+      ["I've read 3 chapters. / I've been reading all day.", "Resultado / processo"]
+     ]
+    },
+    {
+     "bg": "dungeon",
+     "m": {"mina": "det", "rafa": "sad"},
+     "l": [
+      ["mina", "You look tired. Have you been sleeping well?", "Você parece cansad{o|a}. Tem dormido bem?"],
+      ["rafa", "I had never felt this tired before.", "Eu nunca tinha me sentido tão cansad{o|a} antes."]
+     ]
+    }
+   ]
+  },
+  {
+   "t": "Habilidades Ocultas",
+   "lv": "B2",
+   "topic": "Phrasal verbs essenciais",
+   "bg": "street",
+   "hero": "mina",
+   "p": [
+    {"sys": "Habilidade oculta desbloqueada", "text": "PHRASAL VERBS: verbo + partícula que muda o sentido."},
+    {
+     "bg": "street",
+     "m": {"mina": "happy", "rafa": "shock"},
+     "l": [
+      ["mina", "I ran into an old friend today.", "Encontrei um velho amigo por acaso hoje."],
+      ["rafa", "Ran into? Like... crashed?", "Ran into? Tipo... bateu?"]
+     ]
+    },
+    {
+     "bg": "street",
+     "m": {"mina": "normal", "rafa": "sad"},
+     "l": [
+      ["mina", "No! \"Run into\" means to meet someone by chance.", "Não! \"Run into\" é encontrar alguém por acaso."],
+      ["rafa", "English is full of traps.", "O inglês é cheio de armadilhas."]
+     ]
+    },
+    {
+     "sys": "Phrasal verbs essenciais",
+     "r": [
+      ["give up", "desistir"],
+      ["figure out", "descobrir, entender"],
+      ["run into", "encontrar por acaso"],
+      ["put off", "adiar (procrastinar)"],
+      ["look forward to + ING", "estar ansioso(a) por algo bom"],
+      ["get over", "superar"],
+      ["come up with", "ter (uma ideia)"],
+      ["find out", "descobrir (uma informação)"],
+      ["look after", "cuidar de"],
+      ["turn down", "recusar"]
+     ],
+     "tip": "Aprenda phrasal verbs em frases, não em listas soltas. A frase inteira fica na memória."
+    },
+    {
+     "bg": "cafe",
+     "m": {"rafa": "sad", "mina": "det"},
+     "l": [
+      ["rafa", "I always put off my studies...", "Eu sempre adio meus estudos..."],
+      ["mina", "Then let's figure out a system that works for your brain.", "Então vamos descobrir um sistema que funcione pro seu cérebro."]
+     ]
+    },
+    {
+     "bg": "cafe",
+     "m": {"rafa": "happy", "mina": "happy"},
+     "l": [
+      ["rafa", "I came up with an idea: one chapter a day.", "Tive uma ideia: um capítulo por dia."],
+      ["mina", "I'm looking forward to seeing your progress.", "Estou ansiosa pra ver seu progresso."]
+     ]
+    }
+   ]
+  },
+  {
+   "t": "O Arrependimento",
+   "lv": "B2",
+   "topic": "Terceira condicional, should have, must have",
+   "bg": "dungeon",
+   "hero": "monster",
+   "mon": "ARREPENDIMENTO",
+   "boss": true,
+   "p": [
+    {
+     "bg": "dungeon",
+     "m": {"rafa": "sad"},
+     "c": "Chefe do Arco 5. Um monstro feito das memórias d{o|a} Rafa.",
+     "l": [
+      ["monster", "If you had studied at school, you would have passed that exam.", "Se você tivesse estudado na escola, teria passado naquela prova."],
+      ["rafa", "Maybe. But I can't change the past.", "Talvez. Mas não posso mudar o passado."]
+     ]
+    },
+    {
+     "bg": "dungeon",
+     "m": {"rafa": "det"},
+     "l": [
+      ["monster", "You should have tried harder!", "Você deveria ter se esforçado mais!"],
+      ["rafa", "I did fail back then. But I must have learned something from it.", "Eu falhei mesmo naquela época. Mas devo ter aprendido alguma coisa com isso."]
+     ]
+    },
+    {
+     "sys": "Falando do passado que não aconteceu",
+     "r": [
+      ["If I had studied, I would have passed.", "3ª condicional: passado imaginário"],
+      ["should have + particípio", "deveria ter (mas não aconteceu)"],
+      ["could have + particípio", "poderia ter"],
+      ["might have + particípio", "talvez tenha"],
+      ["must have + particípio", "deve ter (quase certeza)"],
+      ["can't have + particípio", "não pode ter (impossível)"]
+     ],
+     "tip": "Na fala, vira should've, could've, would've. Soa quase como \"shoulda\", \"coulda\", \"woulda\"."
+    },
+    {
+     "bg": "action",
+     "m": {"mina": "det", "rafa": "det"},
+     "l": [
+      ["mina", "If I hadn't met you, I wouldn't have become a teacher.", "Se eu não tivesse te conhecido, não teria me tornado professora."],
+      ["rafa", "Then let's win this together!", "Então vamos vencer isso {juntos|juntas}!"]
+     ]
+    },
+    {"sys": "Arco 5 completo", "text": "Nível B2. O passado não manda mais em você. Falta só o topo."},
+    {
+     "sys": "Inglês americano x britânico",
+     "r": [
+      ["realize / realise", "perceber (com z ou s)"],
+      ["traveling / travelling", "viajando (um ou dois l)"],
+      ["center / centre", "centro"],
+      ["gas / petrol", "gasolina"]
+     ],
+     "tip": "Este curso usa o inglês americano. Os dois são corretos: o importante é ser consistente e reconhecer as diferenças."
+    }
+   ]
+  }
+ ]
+}

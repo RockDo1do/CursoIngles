@@ -1,0 +1,172 @@
+[
+ [
+  "Casa",
+  [
+   ["kitchen", "cozinha", "I'm cooking in the kitchen."],
+   ["bedroom", "quarto", "My bedroom is small but cozy."],
+   ["bathroom", "banheiro", "The bathroom is upstairs."],
+   ["living room", "sala de estar", "We watch TV in the living room."],
+   ["couch", "sofá", "The cat is sleeping on the couch."],
+   ["fridge", "geladeira", "There's milk in the fridge."],
+   ["stairs", "escada", "Be careful on the stairs."],
+   ["window", "janela", "Please open the window."],
+   ["floor", "chão", "Don't leave your shoes on the floor."],
+   ["roof", "telhado", "The roof needs to be fixed."],
+   ["neighbor", "vizinho, vizinha", "My neighbor has a big dog."],
+   ["rent", "aluguel", "The rent is due on Monday."]
+  ]
+ ],
+ [
+  "Comida",
+  [
+   ["breakfast", "café da manhã", "I have breakfast at seven."],
+   ["lunch", "almoço", "Let's have lunch together."],
+   ["dinner", "jantar", "Dinner is ready!"],
+   ["bread", "pão", "I buy fresh bread every morning."],
+   ["cheese", "queijo", "This cheese is delicious."],
+   ["chicken", "frango", "I'd like the chicken, please."],
+   ["rice", "arroz", "I eat rice and beans every day."],
+   ["vegetables", "legumes e verduras", "You should eat more vegetables."],
+   ["spicy", "apimentado", "This soup is too spicy."],
+   ["hungry", "com fome", "I'm hungry. Let's eat."],
+   ["thirsty", "com sede", "Can I have some water? I'm thirsty."],
+   ["recipe", "receita", "My grandmother's recipe is the best."]
+  ]
+ ],
+ [
+  "Trabalho",
+  [
+   ["job", "emprego", "She found a new job."],
+   ["boss", "chefe", "My boss is very kind."],
+   ["coworker", "colega de trabalho", "My coworkers are friendly."],
+   ["meeting", "reunião", "The meeting starts at ten."],
+   ["deadline", "prazo", "The deadline is Friday."],
+   ["salary", "salário", "He asked for a higher salary."],
+   ["skills", "habilidades", "What skills do you have?"],
+   ["hire", "contratar", "They want to hire two people."],
+   ["quit", "pedir demissão, largar", "She quit her job last year."],
+   ["schedule", "agenda, horário", "My schedule is very busy."],
+   ["office", "escritório", "I work in an office downtown."],
+   ["remote work", "trabalho remoto", "Remote work saves a lot of time."]
+  ]
+ ],
+ [
+  "Viagem",
+  [
+   ["passport", "passaporte", "Don't forget your passport."],
+   ["luggage", "bagagem", "My luggage is too heavy."],
+   ["ticket", "passagem, ingresso", "I bought a ticket to Rome."],
+   ["flight", "voo", "The flight takes six hours."],
+   ["delay", "atraso", "Sorry for the delay."],
+   ["abroad", "no exterior", "Have you ever lived abroad?"],
+   ["sightseeing", "passeio turístico", "We went sightseeing all day."],
+   ["map", "mapa", "Can you show me on the map?"],
+   ["souvenir", "lembrancinha", "I bought a souvenir for my mom."],
+   ["trip", "viagem", "How was your trip?"],
+   ["booking", "reserva", "I have a booking for two nights."],
+   ["currency", "moeda", "What currency do they use here?"]
+  ]
+ ],
+ [
+  "Saúde",
+  [
+   ["headache", "dor de cabeça", "I have a terrible headache."],
+   ["fever", "febre", "She has a high fever."],
+   ["cough", "tosse", "My cough is getting worse."],
+   ["medicine", "remédio", "Take this medicine after meals."],
+   ["pharmacy", "farmácia", "Is there a pharmacy near here?"],
+   ["appointment", "consulta marcada", "I have a doctor's appointment."],
+   ["pain", "dor", "Where is the pain?"],
+   ["sore", "dolorido", "My legs are sore after the run."],
+   ["healthy", "saudável", "Eating well keeps you healthy."],
+   ["rest", "descansar", "You need to rest."],
+   ["injury", "lesão", "He had a knee injury."],
+   ["sneeze", "espirrar", "I can't stop sneezing."]
+  ]
+ ],
+ [
+  "Sentimentos",
+  [
+   ["happy", "feliz", "I'm happy to see you."],
+   ["sad", "triste", "Why are you sad?"],
+   ["angry", "com raiva", "Please don't be angry with me."],
+   ["scared", "com medo", "I'm scared of the dark."],
+   ["tired", "cansado", "I'm too tired to go out."],
+   ["excited", "animado", "We're excited about the trip."],
+   ["worried", "preocupado", "My mom is worried about me."],
+   ["bored", "entediado", "I'm bored. Let's do something."],
+   ["proud", "orgulhoso", "I'm proud of you."],
+   ["embarrassed", "com vergonha", "I felt embarrassed in class."],
+   ["nervous", "nervoso", "I'm nervous about the interview."],
+   ["relieved", "aliviado", "I'm relieved the test is over."]
+  ]
+ ],
+ [
+  "Cidade",
+  [
+   ["downtown", "centro da cidade", "Let's meet downtown."],
+   ["street", "rua", "I live on this street."],
+   ["corner", "esquina", "The bank is on the corner."],
+   ["traffic", "trânsito", "The traffic is terrible today."],
+   ["subway", "metrô", "I take the subway to work."],
+   ["bus stop", "ponto de ônibus", "The bus stop is over there."],
+   ["crosswalk", "faixa de pedestres", "Always use the crosswalk."],
+   ["library", "biblioteca", "The library closes at eight."],
+   ["square", "praça", "There's a market in the square."],
+   ["neighborhood", "bairro", "This neighborhood is quiet."],
+   ["building", "prédio", "My office is in that building."],
+   ["sidewalk", "calçada", "Walk on the sidewalk."]
+  ]
+ ],
+ [
+  "Tempo e clima",
+  [
+   ["weather", "tempo, clima", "What's the weather like today?"],
+   ["sunny", "ensolarado", "It's sunny and warm."],
+   ["cloudy", "nublado", "It's cloudy, but it isn't raining."],
+   ["rain", "chuva", "Take an umbrella. It might rain."],
+   ["snow", "neve", "We had a lot of snow last winter."],
+   ["wind", "vento", "The wind is very strong today."],
+   ["hot", "quente", "It's too hot to work outside."],
+   ["cold", "frio", "It's cold. Wear a jacket."],
+   ["storm", "tempestade", "A storm is coming."],
+   ["season", "estação do ano", "Summer is my favorite season."],
+   ["forecast", "previsão do tempo", "The forecast says rain tomorrow."],
+   ["umbrella", "guarda-chuva", "I forgot my umbrella."]
+  ]
+ ],
+ [
+  "Tecnologia",
+  [
+   ["phone", "celular, telefone", "My phone is dead."],
+   ["charger", "carregador", "Can I borrow your charger?"],
+   ["password", "senha", "Don't share your password."],
+   ["download", "baixar", "Download the app for free."],
+   ["screen", "tela", "The screen is broken."],
+   ["battery", "bateria", "My battery is low."],
+   ["laptop", "notebook", "I work on my laptop."],
+   ["email", "e-mail", "I'll send you an email."],
+   ["app", "aplicativo", "This app helps me study."],
+   ["update", "atualizar", "Update your phone tonight."],
+   ["account", "conta", "Create an account first."],
+   ["Wi-Fi", "wi-fi", "What's the Wi-Fi password?"]
+  ]
+ ],
+ [
+  "Dinheiro e compras",
+  [
+   ["price", "preço", "What's the price of this shirt?"],
+   ["cheap", "barato", "This store is cheap."],
+   ["expensive", "caro", "It's too expensive for me."],
+   ["discount", "desconto", "Is there a discount?"],
+   ["receipt", "recibo, nota fiscal", "Can I have the receipt?"],
+   ["cash", "dinheiro vivo", "Do you accept cash?"],
+   ["card", "cartão", "I'll pay by card."],
+   ["change", "troco", "Here's your change."],
+   ["refund", "reembolso", "I'd like a refund, please."],
+   ["sale", "promoção", "Everything is on sale."],
+   ["budget", "orçamento", "We need a budget for the trip."],
+   ["save money", "economizar", "I'm trying to save money."]
+  ]
+ ]
+]

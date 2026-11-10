@@ -1,0 +1,87 @@
+[
+ {
+  "capitulo": "Rotina do Explorador",
+  "perguntas": [
+   {"q": "She ___ every day.", "o": ["trains", "train", "training"], "a": 0, "why": "Com she, o verbo ganha S."},
+   {"q": "Negativo de \"He likes coffee\":", "o": ["He doesn't like coffee.", "He don't like coffee.", "He doesn't likes coffee."], "a": 0, "why": "Depois de doesn't, o verbo volta sem S."},
+   {"q": "Qual frase está certa?", "o": ["I always study at night.", "I study at night always.", "Always I at night study."], "a": 0, "why": "Advérbios de frequência ficam antes do verbo principal."},
+   {"q": "He ___ (study) every night.", "o": ["studies", "studys", "study"], "a": 0, "why": "Consoante + Y → IES."},
+   {"q": "___ she work on Sundays?", "o": ["Does", "Do", "Is"], "a": 0, "why": "She usa DOES na pergunta."},
+   {"q": "'Eu nunca tomo café.'", "o": ["I never drink coffee.", "I drink never coffee.", "Never I drink coffee."], "a": 0, "why": "Never vem antes do verbo."},
+   {"q": "She ___ (go) to school by bus.", "o": ["goes", "gos", "go"], "a": 0, "why": "Go → goes com he/she/it."},
+   {"q": "'usually' significa:", "o": ["geralmente", "nunca", "às vezes"], "a": 0, "why": "Sometimes = às vezes."},
+   {"q": "They ___ like spicy food.", "o": ["don't", "doesn't", "not"], "a": 0, "why": "They usa DON'T."}
+  ]
+ },
+ {
+  "capitulo": "O Relógio da Torre",
+  "perguntas": [
+   {"q": "\"Na segunda-feira\"", "o": ["on Monday", "in Monday", "at Monday"], "a": 0, "why": "Dias da semana usam ON."},
+   {"q": "7:30 é:", "o": ["half past seven", "half to seven", "seven and half o'clock"], "a": 0, "why": "Half past = meia hora depois."},
+   {"q": "\"Em março\"", "o": ["in March", "on March", "at March"], "a": 0, "why": "Meses usam IN."},
+   {"q": "'À meia-noite'", "o": ["at midnight", "in midnight", "on midnight"], "a": 0, "why": "Momento exato → AT."},
+   {"q": "'Em 2026'", "o": ["in 2026", "on 2026", "at 2026"], "a": 0, "why": "Anos → IN."},
+   {"q": "7:45 é:", "o": ["quarter to eight", "quarter past seven", "half past seven"], "a": 0, "why": "Faltam 15 para as 8 → quarter to eight."},
+   {"q": "'Na quinta-feira'", "o": ["on Thursday", "in Thursday", "at Thursday"], "a": 0, "why": "Dias → ON."},
+   {"q": "'What time is it?' pergunta:", "o": ["as horas", "o dia", "o clima"], "a": 0, "why": "Time = hora."},
+   {"q": "'in the morning' significa:", "o": ["de manhã", "à noite", "à tarde"], "a": 0, "why": "At night = à noite. In the afternoon = à tarde."}
+  ]
+ },
+ {
+  "capitulo": "Perguntas Poderosas",
+  "perguntas": [
+   {"q": "\"Por que\" na pergunta é:", "o": ["Why", "Because", "How"], "a": 0, "why": "Why = por quê. Because = porque (na resposta)."},
+   {"q": "\"Quantos portais existem?\"", "o": ["How many portals are there?", "How much portals are there?", "What many portals are there?"], "a": 0, "why": "How many + coisas contáveis."},
+   {"q": "Qual a ordem certa?", "o": ["Where do you live?", "Where you live?", "Where live you?"], "a": 0, "why": "Palavra + do + pessoa + verbo."},
+   {"q": "'Quando é a missão?'", "o": ["When is the mission?", "Where is the mission?", "Who is the mission?"], "a": 0, "why": "When = quando."},
+   {"q": "'Quem' é:", "o": ["Who", "Where", "What"], "a": 0, "why": "Who = quem."},
+   {"q": "'Which' é usado para:", "o": ["escolher entre opções", "perguntar o lugar", "perguntar a hora"], "a": 0, "why": "Which one? = Qual deles?"},
+   {"q": "Ordem certa:", "o": ["What do you want?", "What you do want?", "What want you?"], "a": 0, "why": "Palavra + do + pessoa + verbo."},
+   {"q": "'How long' pergunta:", "o": ["quanto tempo", "quantos", "quão alto"], "a": 0, "why": "How long does it take? = Quanto tempo leva?"},
+   {"q": "'Por quê? Porque estou cansado.'", "o": ["Why? Because I'm tired.", "Because? Why I'm tired.", "How? Because I'm tired."], "a": 0, "why": "Why pergunta, because responde."}
+  ]
+ },
+ {
+  "capitulo": "Habilidades",
+  "perguntas": [
+   {"q": "She ___ speak Korean.", "o": ["can", "cans", "can to"], "a": 0, "why": "Can não muda e não usa \"to\"."},
+   {"q": "\"Posso entrar?\"", "o": ["Can I come in?", "I can come in?", "Can I to come in?"], "a": 0, "why": "Pergunta: Can + pessoa + verbo."},
+   {"q": "Passado de can:", "o": ["could", "canned", "can't"], "a": 0, "why": "Can → could."},
+   {"q": "'Ela não sabe nadar.'", "o": ["She can't swim.", "She don't can swim.", "She can't swims."], "a": 0, "why": "Can't + verbo puro."},
+   {"q": "'Can you help me?' é:", "o": ["um pedido", "uma ordem", "uma frase no passado"], "a": 0, "why": "Can you...? é um pedido educado."},
+   {"q": "'Eu sabia nadar aos cinco anos.'", "o": ["I could swim when I was five.", "I can swim when I was five.", "I could swam when I was five."], "a": 0, "why": "Passado de can = could + verbo puro."},
+   {"q": "'cannot' é o mesmo que:", "o": ["can't", "could", "can"], "a": 0, "why": "Cannot = can't."},
+   {"q": "___ I open the window? (pedindo permissão)", "o": ["Can", "Do", "Am"], "a": 0, "why": "Can I...? = Posso...?"},
+   {"q": "They can ___ English.", "o": ["speak", "speaks", "to speak"], "a": 0, "why": "Depois de can, verbo puro."}
+  ]
+ },
+ {
+  "capitulo": "Gostos e Desgostos",
+  "perguntas": [
+   {"q": "I love ___ manhwa.", "o": ["reading", "read", "to reading"], "a": 0, "why": "Love + verbo-ING."},
+   {"q": "\"Ajude-nos!\"", "o": ["Help us!", "Help we!", "Help our!"], "a": 0, "why": "Depois do verbo: us."},
+   {"q": "\"Eu gosto dele\"", "o": ["I like him.", "I like he.", "I like his."], "a": 0, "why": "Depois do verbo: him."},
+   {"q": "She hates ___ up early.", "o": ["waking", "wake", "to waking"], "a": 0, "why": "Hate + verbo-ING."},
+   {"q": "'Você pode vir com a gente?'", "o": ["Can you come with us?", "Can you come with we?", "Can you come with our?"], "a": 0, "why": "Depois de preposição: us."},
+   {"q": "'Eu não a conheço.'", "o": ["I don't know her.", "I don't know she.", "I don't know hers."], "a": 0, "why": "Depois do verbo: her."},
+   {"q": "'I don't mind waiting' significa:", "o": ["Não me importo de esperar", "Não quero esperar", "Não posso esperar"], "a": 0, "why": "Mind = se importar."},
+   {"q": "This gift is for ___ (eles).", "o": ["them", "they", "their"], "a": 0, "why": "Depois de for: them."},
+   {"q": "Do you like ___ games?", "o": ["playing", "play to", "played"], "a": 0, "why": "Like + verbo-ING."}
+  ]
+ },
+ {
+  "capitulo": "Ordens do Capitão",
+  "perguntas": [
+   {"q": "Imperativo negativo:", "o": ["Don't touch it!", "No touch it!", "Not touch it!"], "a": 0, "why": "Don't + verbo."},
+   {"q": "\"Vamos estudar!\"", "o": ["Let's study!", "Let us to study!", "We study let!"], "a": 0, "why": "Let's + verbo."},
+   {"q": "He ___ swim very well.", "o": ["can", "cans", "can to"], "a": 0, "why": "Can não muda."},
+   {"q": "She ___ in Lisbon.", "o": ["lives", "live", "living"], "a": 0, "why": "She + verbo com S."},
+   {"q": "The meeting is ___ Friday.", "o": ["on", "in", "at"], "a": 0, "why": "Dias da semana: ON."},
+   {"q": "'Não corra!'", "o": ["Don't run!", "No run!", "Not run!"], "a": 0, "why": "Don't + verbo."},
+   {"q": "'Sente-se, por favor.'", "o": ["Sit down, please.", "You sit down please.", "Sitting down, please."], "a": 0, "why": "Imperativo = verbo puro."},
+   {"q": "Does he ___ coffee?", "o": ["like", "likes", "liking"], "a": 0, "why": "Depois de does, o verbo volta sem S."},
+   {"q": "'Abra a porta.'", "o": ["Open the door.", "Opens the door.", "To open the door."], "a": 0, "why": "Ordem começa com o verbo puro."},
+   {"q": "I wake up ___ seven.", "o": ["at", "on", "in"], "a": 0, "why": "Horas → AT."}
+  ]
+ }
+]

@@ -1,17 +1,16 @@
 # Ferramentas da Torre do Inglês
 
-Esta pasta guarda tudo o que é preciso para refazer o curso: o arquivo-fonte da página, os scripts que gravam as vozes e os que preparam o reconhecimento de fala. Os arquivos grandes (modelos de voz, bibliotecas) não ficam no repositório. Abaixo está de onde baixar cada um.
+Esta pasta guarda os scripts que gravam as vozes e os que preparam o reconhecimento de fala. Os arquivos grandes (modelos de voz, bibliotecas) não ficam no repositório. Abaixo está de onde baixar cada um.
 
 ## Estrutura
 
 | Pasta | O que tem |
 |---|---|
-| `site/` | `build_site.py` (gera o site a partir do arquivo-fonte), `sw-template.js` (service worker), `privacy.html` |
-| `conteudo/` | Conteúdo em Python que já foi incorporado ao curso: Arco 7, questões extras, frases extras por capítulo |
+| `site/` | `build_site.py` (confere o conteúdo e prepara a publicação) e `sw-template.js` (modelo do service worker) |
 | `vozes/` | Geração das falas gravadas com Kokoro-82M |
 | `whisper/` | Conversão do modelo Whisper tiny.en e o código em C que vira `whisper.wasm` |
 
-O arquivo-fonte do curso é o `index.html` publicado, sem o cabeçalho que o `build_site.py` acrescenta. Para editar, use a cópia em `site/torre-do-ingles.html`.
+Não existe mais um arquivo-fonte separado: os arquivos publicados são os próprios fontes. `index.html` tem a aparência, `app.js` o código e `conteudo/` a história e as questões (veja `conteudo/LEIA-ME.md`).
 
 ## Refazer as vozes
 
@@ -34,7 +33,11 @@ Vozes usadas: Mina `af_heart`, protagonista masculino `am_michael`, protagonista
 
 ## Publicar
 
-`python3 site/build_site.py` gera o site. Ao trocar um áudio, o script coloca no endereço do arquivo uma marca da versão (`?v=...`), e os aparelhos baixam o arquivo novo.
+`python3 site/build_site.py` (ou `python3 tools/site/build_site.py`, a partir da raiz) confere o conteúdo, atualiza a marca de versão em `index.html`, gera o `sw.js` e põe no endereço de cada áudio uma marca da versão (`?v=...`), para os aparelhos baixarem os arquivos novos.
+
+- `--audio PASTA` copia antes os áudios gravados de uma pasta com `index.json`.
+- `--artefato PASTA` monta a cópia para o Claude: a mesma página, sem as partes marcadas `<!-- só no site -->`, junto com `app.js` e `conteudo/`.
+- `--verificar` só confere, sem mudar nada. O teste do GitHub usa essa opção para avisar se alguém esqueceu de rodar o build.
 
 ## Testes
 

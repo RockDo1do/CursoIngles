@@ -1,0 +1,46 @@
+[
+ {
+  "capitulo": "Vogais e Sílaba Forte",
+  "perguntas": [
+   {"q": "Em sheep, o som de ee é:", "o": ["longo", "curto", "mudo"], "a": 0, "why": "sheep tem i longo; ship tem i curto."},
+   {"q": "Onde fica a força em banana?", "o": ["ba-NA-na", "BA-na-na", "ba-na-NA"], "a": 0, "why": "A sílaba do meio é a forte."},
+   {"q": "record com força no começo (REC-ord) é:", "o": ["um nome: registro, disco", "um verbo: gravar", "um advérbio"], "a": 0, "why": "Nomes costumam ter a força no começo."},
+   {"q": "Qual par tem vogal curta e vogal longa?", "o": ["live / leave", "cat / cats", "run / running"], "a": 0, "why": "live é curto; leave é longo."},
+   {"q": "present com força no fim significa:", "o": ["apresentar", "um presente", "o tempo presente"], "a": 0, "why": "Verbo: força no fim."},
+   {"q": "Em photography, a força cai em:", "o": ["pho-TOG-ra-phy", "PHO-to-gra-phy", "pho-to-gra-PHY"], "a": 0, "why": "A força muda de lugar em relação a photograph."},
+   {"q": "No dia a dia, chocolate costuma ter:", "o": ["duas ou três sílabas", "quatro sílabas", "cinco sílabas"], "a": 0, "why": "CHOC-lit ou CHOC-o-lit."},
+   {"q": "Sílabas fracas em inglês são:", "o": ["curtas e rápidas", "mais altas", "mais longas"], "a": 0, "why": "Só a sílaba forte se destaca."},
+   {"q": "full e fool se diferenciam:", "o": ["pela duração da vogal", "pela primeira letra", "pela última letra"], "a": 0, "why": "fool tem u longo."}
+  ],
+  "frases_extras": [
+   ["The sheep is on the ship.", "A ovelha está no navio."],
+   ["Please sit in this seat.", "Por favor, sente-se neste assento."],
+   ["Don't leave, I live here.", "Não vá embora, eu moro aqui."],
+   ["This photograph is beautiful.", "Esta fotografia é linda."],
+   ["I love photography.", "Eu amo fotografia."],
+   ["She bought a banana and a computer.", "Ela comprou uma banana e um computador."]
+  ]
+ },
+ {
+  "capitulo": "Fala Ligada",
+  "perguntas": [
+   {"q": "wanna é a forma rápida de:", "o": ["want to", "want them", "wanted"], "a": 0, "why": "want to → wanna."},
+   {"q": "Em an apple, o som do n:", "o": ["se liga à vogal seguinte", "desaparece", "vira m"], "a": 0, "why": "a-napple."},
+   {"q": "Numa pergunta de sim ou não, a voz geralmente:", "o": ["sobe no fim", "desce no fim", "fica igual"], "a": 0, "why": "You're coming? ↗"},
+   {"q": "Em “Where are you going?”, a voz:", "o": ["desce no fim", "sobe no fim", "para no meio"], "a": 0, "why": "Perguntas com where, what, why descem."},
+   {"q": "didja é a forma rápida de:", "o": ["did you", "did I", "do you"], "a": 0, "why": "did you → didja."},
+   {"q": "gonna é a forma rápida de:", "o": ["going to", "got to", "want to"], "a": 0, "why": "going to → gonna."},
+   {"q": "Em “I'm SO tired”, a força em SO mostra:", "o": ["ênfase", "uma pergunta", "dúvida"], "a": 0, "why": "A palavra importante ganha força."},
+   {"q": "Pedir para repetir com educação:", "o": ["Sorry? Could you say that again?", "What?!", "Repeat."], "a": 0, "why": "Sorry? + Could you...?"},
+   {"q": "Na fala rápida, turn off soa como:", "o": ["tur-noff", "turn-of", "tur-off"], "a": 0, "why": "O n se liga à vogal de off."}
+  ],
+  "frases_extras": [
+   ["Do you want to grab a bite?", "Você quer comer alguma coisa?"],
+   ["I'm going to call her later.", "Vou ligar para ela mais tarde."],
+   ["Turn off the lights, please.", "Apague as luzes, por favor."],
+   ["Did you see that movie?", "Você viu aquele filme?"],
+   ["Could you say that again?", "Pode repetir?"],
+   ["I'm so tired today.", "Estou tão cansad{o|a} hoje."]
+  ]
+ }
+]

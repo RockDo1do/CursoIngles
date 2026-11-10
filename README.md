@@ -25,13 +25,17 @@ Não precisa de servidor nem de configuração extra. O progresso de cada pessoa
 
 | Pasta/arquivo | O que é |
 |---|---|
-| `index.html` | O curso inteiro (história, exercícios, lógica) |
+| `index.html` | A página: aparência (CSS) e o carregador do conteúdo |
+| `app.js` | O código do curso |
+| `conteudo/` | A história e as questões, em arquivos JSON separados por arco. Como editar: [conteudo/LEIA-ME.md](conteudo/LEIA-ME.md) |
 | `audio/` | Falas gravadas (sprites MP3) e o índice `index.json` |
 | `whisper/` | Reconhecimento de fala: `whisper.wasm`, o worker e o modelo `tiny.en` (q5_1, 32 MB, dividido em 3 partes) |
 | `sw.js` | Service worker: cache para funcionar offline |
 | `manifest.webmanifest`, `icons/` | Dados para instalar como app |
+| `tools/` | Scripts para publicar, gravar as vozes e preparar o Whisper |
+| `tests/` | Teste automático que abre o curso inteiro num navegador |
 
-Ao trocar arquivos de áudio mantendo o mesmo nome, mude `MEDIA` em `sw.js` (por exemplo `torre-media-v2`) para os aparelhos baixarem a versão nova.
+Depois de mudar o conteúdo, o código ou os áudios, rode `python3 tools/site/build_site.py`. Ele confere o conteúdo e atualiza as marcas de versão, para os aparelhos baixarem a versão nova.
 
 ## Licença
 

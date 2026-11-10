@@ -1,0 +1,58 @@
+[
+ {
+  "id": "w1",
+  "t": "Convite para um Amigo",
+  "lv": "A1",
+  "kind": "Mensagem",
+  "text": "Hi Ana! How [are|estar] you? I'm [at|em] home now. Do you [want|querer] to go to the cinema [on|em (dia da semana)] Saturday? The movie [starts|começa] at seven. See [you|você] soon!"
+ },
+ {
+  "id": "w2",
+  "t": "Cartão-Postal",
+  "lv": "A2",
+  "kind": "Cartão-postal",
+  "text": "Dear Mom, I [arrived|cheguei] in London yesterday. The weather [is|está] cold, but the city is beautiful. Today I [visited|visitei] a museum and [ate|comi] fish and chips. Tomorrow I'm [going|vou] to see the river. I [miss|sinto falta de] you! Love, your favorite child."
+ },
+ {
+  "id": "w3",
+  "t": "Reserva de Hotel",
+  "lv": "B1",
+  "kind": "E-mail",
+  "text": "Dear Sir or Madam, I [would|(gostaria)] like to book a double room [for|por] three nights, [from|de] May 10 to May 13. Could you [tell|dizer] me if breakfast is [included|incluído]? I look [forward|(aguardo)] to [hearing|ter notícias] from you. Kind [regards|(despedida)],"
+ },
+ {
+  "id": "w4",
+  "t": "Reclamação Educada",
+  "lv": "B1",
+  "kind": "E-mail",
+  "text": "Dear Customer Service, I am writing to [complain|reclamar] about my order. I [received|recebi] the package yesterday, but the headphones [don't|não (auxiliar)] work. I [have|(auxiliar do present perfect)] tried two different phones. I would like a [refund|reembolso] or a [replacement|troca]. Thank you [in|(em)] advance."
+ },
+ {
+  "id": "w5",
+  "t": "Pedido de Folga",
+  "lv": "B2",
+  "kind": "Mensagem ao chefe",
+  "text": "Hi Sarah, I [was|(estava)] wondering if I [could|poderia] take Friday off. My sister is getting [married|casada] and I'd [like|gostaria] to help her. I've already [finished|terminei] the report, so the project won't be [affected|afetado]. Please let me [know|saber] if that's okay. Thanks!"
+ },
+ {
+  "id": "w6",
+  "t": "Carta de Apresentação",
+  "lv": "B2",
+  "kind": "Candidatura",
+  "text": "Dear Hiring Manager, I am [writing|escrevendo] to apply for the position of assistant. I [have|(auxiliar)] been working in customer service [for|há (duração)] three years. I am good [at|em (habilidade)] solving problems, and I enjoy [working|trabalhar] in a team. I would [welcome|gostaria muito de ter] the opportunity to discuss my application. Sincerely,"
+ },
+ {
+  "id": "w7",
+  "t": "Proposta Formal",
+  "lv": "C1",
+  "kind": "E-mail formal",
+  "text": "Dear Director, I am writing to [propose|propor] a change to our schedule. It has [become|se tornado] clear that the current model may not be [meeting|atendendo] our needs. I would therefore [recommend|recomendar] that each team [have|tenha (subjuntivo)] a weekly meeting. It is [essential|essencial] that everyone [be|esteja (subjuntivo)] informed. I would be happy to [discuss|discutir] this at your convenience."
+ },
+ {
+  "id": "w8",
+  "t": "Resumo de Reunião",
+  "lv": "C1",
+  "kind": "E-mail para a equipe",
+  "text": "Hi team, here's a quick [summary|resumo] of today's meeting. [First|Primeiro], we agreed to delay the launch by two weeks. [However|Porém], the budget will stay the same. It [seems|parece] that the new tools will arrive [on|em (dia da semana)] Monday. To [sum|(resumir)] up: new date, same budget. Let me know if I [missed|esqueci, deixei passar] anything."
+ }
+]

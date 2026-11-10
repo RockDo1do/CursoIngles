@@ -1,0 +1,312 @@
+{
+ "nome": "Arco 4 · O Meio da Torre",
+ "descricao": "Intermediário · B1 · regras, experiências, condições",
+ "agora_voce_consegue": ["Falar de regras, conselhos e experiências", "Usar condições reais", "Ligar ideias com who, which e where"],
+ "capitulos": [
+  {
+   "t": "Regras do Clube",
+   "lv": "B1",
+   "topic": "Must, have to, should, might",
+   "bg": "cafe",
+   "hero": "jin",
+   "p": [
+    {"sys": "Regras do Clube", "text": "Todo explorador novo precisa aprender as regras."},
+    {
+     "bg": "cafe",
+     "m": {"jin": "det", "rafa": "normal"},
+     "l": [
+      ["jin", "You must carry your club card at all times.", "Você deve andar com seu cartão do clube o tempo todo."],
+      ["rafa", "Do I have to train every day?", "Eu tenho que treinar todo dia?"]
+     ]
+    },
+    {
+     "bg": "cafe",
+     "m": {"jin": "det", "rafa": "shock"},
+     "l": [
+      ["jin", "You don't have to, but you should.", "Não é obrigatório, mas você deveria."],
+      ["jin", "And you mustn't enter a portal alone.", "E você não pode entrar num portal sozinh{o|a}."]
+     ]
+    },
+    {
+     "sys": "Obrigação e conselho",
+     "r": [
+      ["must", "dever (regra forte)"],
+      ["have to", "ter que (obrigação externa)"],
+      ["mustn't", "proibido! não pode"],
+      ["don't have to", "não precisa (é opcional)"],
+      ["should / shouldn't", "deveria / não deveria (conselho)"],
+      ["might / may", "talvez (possibilidade)"]
+     ],
+     "tip": "Cuidado: mustn't = proibido. Don't have to = não é necessário. São muito diferentes!"
+    },
+    {
+     "bg": "cafe",
+     "m": {"rafa": "normal", "jin": "happy"},
+     "l": [
+      ["rafa", "Should I ask Mina about the rules?", "Devo perguntar à Mina sobre as regras?"],
+      ["jin", "She wrote the rules. You might want to be careful.", "Ela escreveu as regras. Talvez seja bom tomar cuidado."]
+     ]
+    }
+   ]
+  },
+  {
+   "t": "Desde Sempre",
+   "lv": "B1",
+   "topic": "Present perfect, for / since",
+   "bg": "cafe",
+   "hero": "mina",
+   "p": [
+    {
+     "bg": "cafe",
+     "m": {"mina": "happy", "rafa": "normal"},
+     "c": "Seis meses depois.",
+     "l": [
+      ["mina", "Have you ever been to Seoul?", "Você já foi a Seul?"],
+      ["rafa", "No, I've never been there. But I've watched a lot of K-dramas.", "Não, nunca fui. Mas já vi muitos doramas."]
+     ]
+    },
+    {
+     "bg": "cafe",
+     "m": {"mina": "normal", "rafa": "happy"},
+     "l": [
+      ["mina", "How long have you studied English?", "Há quanto tempo você estuda inglês?"],
+      ["rafa", "I've studied for six months. Since April.", "Estudo há seis meses. Desde abril."]
+     ]
+    },
+    {
+     "sys": "Present perfect",
+     "r": [
+      ["have / has + particípio", "been, seen, done, eaten, studied"],
+      ["Have you ever...? / I've never...", "Experiência na vida"],
+      ["I've lived here for 3 years.", "Começou no passado e continua"],
+      ["for two hours", "FOR = duração"],
+      ["since Monday, since 2023", "SINCE = ponto de início"],
+      ["I went to Rio in 2020.", "Com data → passado simples"],
+      ["I've been to Rio.", "Sem data → present perfect"],
+      ["I've just finished. / Have you finished yet?", "just = acabei de · yet = já? (pergunta) / ainda não (negativa)"]
+     ]
+    },
+    {
+     "bg": "street",
+     "m": {"mina": "normal", "rafa": "happy"},
+     "l": [
+      ["mina", "Have you finished the quest yet?", "Você já terminou a missão?"],
+      ["rafa", "I've just finished it!", "Acabei de terminar!"]
+     ]
+    },
+    {
+     "bg": "sky",
+     "m": {"mina": "happy", "rafa": "normal"},
+     "l": [
+      ["mina", "You've changed, Rafa.", "Você mudou, Rafa."],
+      ["rafa", null, "...Eu mudei mesmo."]
+     ]
+    }
+   ]
+  },
+  {
+   "t": "Antigamente",
+   "lv": "B1",
+   "topic": "Used to e be used to",
+   "bg": "sky",
+   "hero": "mina",
+   "p": [
+    {
+     "bg": "sky",
+     "m": {"mina": "sad", "rafa": "shock"},
+     "c": "Noite. Mina conta uma história.",
+     "l": [
+      ["mina", "I used to be very shy.", "Eu era muito tímida."],
+      ["rafa", "You? No way!", "Você? Não acredito!"]
+     ]
+    },
+    {
+     "bg": "sky",
+     "m": {"mina": "normal", "rafa": "normal"},
+     "l": [
+      ["mina", "I used to hide in the library. I didn't use to talk to anyone.", "Eu me escondia na biblioteca. Não falava com ninguém."],
+      ["rafa", "What changed?", "O que mudou?"]
+     ]
+    },
+    {
+     "bg": "sky",
+     "m": {"mina": "happy"},
+     "l": [
+      ["mina", "I got used to speaking English. Little by little.", "Eu me acostumei a falar inglês. Pouco a pouco."]
+     ]
+    },
+    {
+     "sys": "Used to",
+     "r": [
+      ["I used to play.", "Eu jogava (hábito antigo, acabou)"],
+      ["I didn't use to read.", "Negativo: didn't use to"],
+      ["Did you use to...?", "Pergunta"],
+      ["I'm used to waking up early.", "Estou acostumado(a) a (be used to + ING)"],
+      ["I got used to it.", "Eu me acostumei"]
+     ],
+     "tip": "USED TO fala de hábitos do passado que acabaram. Em português usamos o imperfeito: \"eu jogava\", \"eu morava\"."
+    },
+    {
+     "bg": "sky",
+     "m": {"rafa": "det", "mina": "happy"},
+     "l": [
+      ["rafa", "I used to give up. Now I don't.", "Eu desistia. Agora não."],
+      ["mina", "Good.", "Boa."]
+     ]
+    }
+   ]
+  },
+  {
+   "t": "E Se... (Parte 1)",
+   "lv": "B1",
+   "topic": "Condicional zero e primeira condicional",
+   "bg": "sky",
+   "hero": "rafa",
+   "p": [
+    {
+     "bg": "sky",
+     "m": {"rafa": "sad", "mina": "normal"},
+     "c": "Noite antes do exame de nível. Terraço da Torre.",
+     "l": [
+      ["rafa", "If I fail the exam, what happens?", "Se eu não passar no exame, o que acontece?"],
+      ["mina", "If you fail, you'll try again.", "Se você não passar, vai tentar de novo."]
+     ]
+    },
+    {
+     "bg": "sky",
+     "m": {"mina": "happy", "rafa": "normal"},
+     "l": [
+      ["mina", "If you heat ice, it melts. If you study, you learn. Simple.", "Se você esquenta gelo, ele derrete. Se você estuda, aprende. Simples."],
+      ["rafa", "You make it sound easy.", "Você faz parecer fácil."]
+     ]
+    },
+    {
+     "sys": "Condições reais",
+     "r": [
+      ["If you heat ice, it melts.", "Zero: verdade geral (if + presente, presente)"],
+      ["If it rains, I'll stay home.", "1ª: possível (if + presente, will)"],
+      ["Unless you hurry, you'll be late.", "Unless = a menos que"],
+      ["As soon as I arrive, I'll call you.", "Assim que eu chegar..."],
+      ["When I get home...", "When = vai acontecer com certeza"],
+      ["If I get home...", "If = talvez aconteça"]
+     ],
+     "tip": "Depois de IF não se usa WILL: \"If it rains\" (nunca \"if it will rain\")."
+    },
+    {
+     "bg": "sky",
+     "m": {"rafa": "happy", "mina": "happy"},
+     "l": [
+      ["rafa", "If I pass, will you buy me ramen?", "Se eu passar, você me paga um lámen?"],
+      ["mina", "If you pass, I'll buy you two. Unless you're late.", "Se passar, te pago dois. A menos que você se atrase."]
+     ]
+    }
+   ]
+  },
+  {
+   "t": "Quem Foi?",
+   "lv": "B1",
+   "topic": "Who, which, that, where, whose",
+   "bg": "street",
+   "hero": "jin",
+   "p": [
+    {
+     "bg": "street",
+     "m": {"jin": "det", "rafa": "shock"},
+     "c": "Alguém roubou o Cristal do Clube.",
+     "l": [
+      ["jin", "The explorer who stole the crystal wore a red mask.", "O explorador que roubou o cristal usava uma máscara vermelha."],
+      ["rafa", "The crystal which was in the main hall?", "O cristal que estava no salão principal?"]
+     ]
+    },
+    {
+     "bg": "street",
+     "m": {"jin": "normal", "rafa": "det"},
+     "l": [
+      ["jin", "Yes. This is the place where it happened.", "Sim. Este é o lugar onde aconteceu."],
+      ["rafa", "And the guard whose sword is broken?", "E o guarda cuja espada está quebrada?"]
+     ]
+    },
+    {
+     "sys": "Ligando frases",
+     "r": [
+      ["who", "que (para pessoas)"],
+      ["which", "que (para coisas)"],
+      ["that", "que (pessoas ou coisas, mais informal)"],
+      ["where", "onde (lugares)"],
+      ["whose", "cujo / de quem"],
+      ["The man (that) I saw was tall.", "Pode tirar o THAT quando ele é objeto"]
+     ],
+     "tip": "Com vírgulas, a informação é extra e não se usa THAT: \"Mina, who is my teacher, is strong.\""
+    },
+    {
+     "bg": "action",
+     "m": {"mina": "happy", "rafa": "shock"},
+     "l": [
+      ["mina", "I know the person who did it.", "Eu sei quem fez isso."],
+      ["rafa", "Who?!", "Quem?!"],
+      ["mina", "The one who is holding it right now. Me. It was a test.", "Quem está com ele na mão agora. Eu. Era um teste."]
+     ]
+    }
+   ]
+  },
+  {
+   "t": "O Juiz",
+   "lv": "B1",
+   "topic": "Verbo + TO ou verbo + ING e revisão do arco",
+   "bg": "dungeon",
+   "hero": "monster",
+   "mon": "O JUIZ",
+   "boss": true,
+   "p": [
+    {
+     "bg": "dungeon",
+     "m": {"rafa": "det"},
+     "c": "Chefe do Arco 4. O Juiz decide quem passa.",
+     "l": [
+      ["monster", "Do you want to pass? Then stop talking and start fighting.", "Quer passar? Então pare de falar e comece a lutar."],
+      ["rafa", "I decided to fight. I enjoy fighting now.", "Decidi lutar. Agora eu curto lutar."]
+     ]
+    },
+    {
+     "bg": "dungeon",
+     "m": {"rafa": "sad"},
+     "l": [
+      ["monster", "You promised to quit English!", "Você prometeu largar o inglês!"],
+      ["rafa", "I remember saying that. I regret saying it.", "Lembro de ter dito isso. E me arrependo."]
+     ]
+    },
+    {
+     "sys": "TO ou ING?",
+     "r": [
+      ["want, decide, hope, promise, need + TO", "querer, decidir, esperar, prometer, precisar"],
+      ["enjoy, finish, avoid, mind, keep + ING", "curtir, terminar, evitar, se importar, continuar"],
+      ["like, love, start, begin + TO ou ING", "os dois funcionam"],
+      ["stop smoking", "parar de fumar"],
+      ["stop to smoke", "parar (o que fazia) para fumar"],
+      ["remember to call / remember calling", "lembrar de ligar / lembrar de ter ligado"]
+     ],
+     "tip": "Depois de preposição, sempre -ING: \"good at speaking\", \"before leaving\"."
+    },
+    {
+     "bg": "action",
+     "m": {"mina": "det", "rafa": "det"},
+     "l": [
+      ["mina", "Keep going! Avoid looking at his hammer!", "Continue! Evite olhar pro martelo dele!"],
+      ["rafa", "I need to win this!", "Preciso vencer isso!"]
+     ]
+    },
+    {"sys": "Arco 4 completo", "text": "Nível B1 alcançado. Você já se vira em viagens, conversas do dia a dia e conta histórias."},
+    {
+     "sys": "Inglês americano x britânico",
+     "r": [
+      ["Do you have...? / Have you got...?", "Você tem...?"],
+      ["math / maths", "matemática"],
+      ["line / queue", "fila"],
+      ["check / bill", "a conta do restaurante"]
+     ],
+     "tip": "Este curso usa o inglês americano. Os dois são corretos: o importante é ser consistente e reconhecer as diferenças."
+    }
+   ]
+  }
+ ]
+}

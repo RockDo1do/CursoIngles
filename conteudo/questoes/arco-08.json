@@ -1,0 +1,150 @@
+[
+ {
+  "capitulo": "Se Eu Tivesse...",
+  "perguntas": [
+   {"q": "If I ___ harder at school, I would speak French now.", "o": ["had studied", "studied", "would study"], "a": 0, "why": "Passado imaginário (had studied) com resultado no presente (would speak)."},
+   {"q": "If she weren't so shy, she ___ to the party yesterday.", "o": ["would have gone", "would go", "had gone"], "a": 0, "why": "Característica do presente (weren't shy) com resultado no passado (would have gone)."},
+   {
+    "q": "“If I hadn't missed the bus, I'd be home now” significa:",
+    "o": ["Se eu não tivesse perdido o ônibus, estaria em casa agora", "Se eu não perder o ônibus, estarei em casa", "Eu perdi o ônibus, mas cheguei em casa"],
+    "a": 0,
+    "why": "had + particípio = passado imaginário; I'd be = resultado agora."
+   },
+   {
+    "q": "Qual frase liga o passado ao presente?",
+    "o": ["If I had taken the job, I would live in London now.", "If I take the job, I will live in London.", "If I took the job, I would live in London."],
+    "a": 0,
+    "why": "had taken (passado) + would live (agora)."
+   },
+   {
+    "q": "If I spoke Japanese, I ___ the movie last night without subtitles.",
+    "o": ["would have understood", "would understand", "had understood"],
+    "a": 0,
+    "why": "Habilidade no presente (spoke) com resultado no passado (would have understood)."
+   },
+   {"q": "If we ___ the map, we wouldn't be lost now.", "o": ["had brought", "have brought", "would bring"], "a": 0, "why": "had + particípio para o passado que não aconteceu."},
+   {"q": "Em “I'd be home now”, I'd é:", "o": ["I would", "I had", "I did"], "a": 0, "why": "Antes de verbo puro (be), I'd = I would."},
+   {"q": "If you ___ me earlier, I would have helped you.", "o": ["had told", "told", "have told"], "a": 0, "why": "Terceira condicional: if + had + particípio."},
+   {"q": "A condicional mista serve para:", "o": ["ligar tempos diferentes na condição e no resultado", "falar só do futuro", "dar ordens"], "a": 0, "why": "Uma metade no passado e a outra no presente, ou o contrário."}
+  ],
+  "frases_extras": [
+   ["If I had saved money, I would be rich now.", "Se eu tivesse economizado, estaria ric{o|a} agora."],
+   ["If she were taller, she would have reached it.", "Se ela fosse mais alta, teria alcançado."],
+   ["If we had left early, we'd be there now.", "Se tivéssemos saído cedo, já estaríamos lá."],
+   ["If I weren't afraid, I would have jumped.", "Se eu não tivesse medo, teria pulado."],
+   ["If he had trained, he would be stronger.", "Se ele tivesse treinado, estaria mais forte."],
+   ["If I knew French, I'd have read that book.", "Se eu soubesse francês, teria lido aquele livro."]
+  ]
+ },
+ {
+  "capitulo": "A Proposta",
+  "perguntas": [
+   {"q": "The teacher suggested that he ___ more.", "o": ["study", "studies", "studied"], "a": 0, "why": "Depois de suggest that: verbo puro, sem S."},
+   {"q": "It's essential that she ___ on time.", "o": ["be", "is", "was"], "a": 0, "why": "Subjuntivo: be para todas as pessoas."},
+   {"q": "I'd rather you ___ smoke here.", "o": ["didn't", "don't", "won't"], "a": 0, "why": "I'd rather + pessoa + passado: didn't."},
+   {"q": "It's time we ___.", "o": ["left", "leave", "leaving"], "a": 0, "why": "It's time + pessoa + passado."},
+   {"q": "“They demanded that he apologize” significa:", "o": ["Exigiram que ele pedisse desculpas", "Eles pediram desculpas a ele", "Ele exigiu desculpas"], "a": 0, "why": "demand that = exigir que."},
+   {"q": "Qual frase é formal?", "o": ["I recommend that the meeting be postponed.", "Let's push the meeting, ok?", "Meeting later, yeah?"], "a": 0, "why": "recommend that + be = registro formal."},
+   {"q": "We insist that everyone ___ the rules.", "o": ["follow", "follows", "following"], "a": 0, "why": "Verbo puro depois de insist that."},
+   {"q": "Outra forma correta de “I suggest that he study”:", "o": ["I suggest that he should study.", "I suggest he to study.", "I suggest him studying."], "a": 0, "why": "Com should também é correto."},
+   {"q": "If I ___ you, I would accept the offer.", "o": ["were", "am", "be"], "a": 0, "why": "Subjuntivo: were para todas as pessoas."}
+  ],
+  "frases_extras": [
+   ["I suggest that she call the client.", "Sugiro que ela ligue para o cliente."],
+   ["It's important that he be honest.", "É importante que ele seja honesto."],
+   ["They insisted that we stay for dinner.", "Eles insistiram que ficássemos para o jantar."],
+   ["I'd rather you came with me.", "Eu preferiria que você viesse comigo."],
+   ["It's time we went home.", "Está na hora de irmos para casa."],
+   ["The doctor recommended that I rest.", "O médico recomendou que eu descansasse."]
+  ]
+ },
+ {
+  "capitulo": "Talvez, Quem Sabe",
+  "perguntas": [
+   {"q": "Forma mais cautelosa de “The plan is wrong”:", "o": ["It seems that the plan might be wrong.", "The plan is totally wrong.", "The plan wrong is."], "a": 0, "why": "It seems + might = cautela."},
+   {"q": "“Monsters tend to appear at night” significa:", "o": ["Os monstros costumam aparecer à noite", "Os monstros aparecem só à noite", "Os monstros tentam aparecer à noite"], "a": 0, "why": "tend to = costumar."},
+   {"q": "It's ___ that it will rain tomorrow. (provável)", "o": ["likely", "like", "liking"], "a": 0, "why": "likely = provável."},
+   {"q": "“To some extent” significa:", "o": ["até certo ponto", "de jeito nenhum", "em todo lugar"], "a": 0, "why": "Expressão para concordar só em parte."},
+   {"q": "Qual frase NÃO é cautelosa?", "o": ["This is definitely the best solution.", "This could be a good solution.", "I'd say this is a good solution."], "a": 0, "why": "definitely = certeza total."},
+   {"q": "People ___ to sleep less when they are stressed.", "o": ["tend", "tends", "tending"], "a": 0, "why": "People é plural → tend."},
+   {"q": "“It appears that” é parecido com:", "o": ["It seems that", "It's clear that", "It never happens that"], "a": 0, "why": "Os dois significam “parece que”."},
+   {"q": "The results ___ that the method works.", "o": ["suggest", "suggests to", "are suggest"], "a": 0, "why": "results é plural → suggest."},
+   {"q": "Por que usar linguagem cautelosa?", "o": ["para não afirmar o que não se sabe com certeza", "para parecer inseguro", "para falar mais rápido"], "a": 0, "why": "Ela mostra cuidado, não insegurança."}
+  ],
+  "frases_extras": [
+   ["It seems that the train is late.", "Parece que o trem está atrasado."],
+   ["Prices tend to rise in summer.", "Os preços costumam subir no verão."],
+   ["It's unlikely that he will come.", "É improvável que ele venha."],
+   ["I'd say we need more time.", "Eu diria que precisamos de mais tempo."],
+   ["The data suggests a different answer.", "Os dados sugerem outra resposta."],
+   ["This might be the wrong door.", "Pode ser que esta seja a porta errada."]
+  ]
+ },
+ {
+  "capitulo": "A Apresentação",
+  "perguntas": [
+   {"q": "Para começar uma apresentação:", "o": ["Today I'd like to talk about...", "To sum up...", "Any questions?"], "a": 0, "why": "Abertura: diga o tema."},
+   {"q": "“Moving on to the next point” significa:", "o": ["Passando para o próximo ponto", "Voltando ao começo", "Terminando a apresentação"], "a": 0, "why": "move on = seguir em frente."},
+   {"q": "Para concluir:", "o": ["To sum up,", "First of all,", "Let me start with"], "a": 0, "why": "To sum up = resumindo."},
+   {"q": "“As you can see in this chart” serve para:", "o": ["mostrar um gráfico", "fazer uma pergunta", "pedir desculpas"], "a": 0, "why": "chart = gráfico."},
+   {"q": "Pedido educado durante a apresentação:", "o": ["Could you go back to the last slide?", "Go back slide.", "You go back now."], "a": 0, "why": "Could you...? é educado."},
+   {"q": "Ordem certa:", "o": ["First, then, finally", "Finally, first, then", "Then, finally, first"], "a": 0, "why": "Primeiro, depois, por fim."},
+   {"q": "“Let me give you an example” significa:", "o": ["Vou dar um exemplo", "Me dê um exemplo", "Deixe o exemplo"], "a": 0, "why": "Let me = deixe-me, vou."},
+   {"q": "Are there ___ questions?", "o": ["any", "some", "much"], "a": 0, "why": "Em perguntas: any."},
+   {"q": "Por que resumir no fim?", "o": ["para o público lembrar os pontos principais", "para a apresentação ficar mais longa", "para não responder perguntas"], "a": 0, "why": "O resumo fixa a mensagem."}
+  ],
+  "frases_extras": [
+   ["Today I'd like to talk about safety.", "Hoje eu gostaria de falar sobre segurança."],
+   ["First, let's look at the numbers.", "Primeiro, vamos olhar os números."],
+   ["Moving on to the next point.", "Passando para o próximo ponto."],
+   ["As you can see, sales went up.", "Como vocês podem ver, as vendas subiram."],
+   ["To sum up, the plan works.", "Resumindo, o plano funciona."],
+   ["Thank you for listening.", "Obrigad{o|a} pela atenção."]
+  ]
+ },
+ {
+  "capitulo": "Concordo, Mas...",
+  "perguntas": [
+   {"q": "Discordar com educação:", "o": ["I see your point, but...", "You're wrong.", "No way, that's stupid."], "a": 0, "why": "Reconheça a ideia antes de discordar."},
+   {"q": "“Sorry to interrupt” significa:", "o": ["Desculpe interromper", "Desculpe o atraso", "Desculpe, não entendi"], "a": 0, "why": "interrupt = interromper."},
+   {"q": "Para pedir um esclarecimento:", "o": ["What do you mean by that?", "I mean that.", "That is what."], "a": 0, "why": "What do you mean by...? = O que você quer dizer com...?"},
+   {"q": "“What if we wait?” significa:", "o": ["E se esperarmos?", "O que esperamos?", "Por que esperamos?"], "a": 0, "why": "What if = e se."},
+   {"q": "Concordar totalmente:", "o": ["Exactly.", "I'm not sure.", "Maybe not."], "a": 0, "why": "Exactly = exatamente."},
+   {"q": "“So, what you're saying is...” serve para:", "o": ["confirmar se você entendeu", "mudar de assunto", "encerrar a reunião"], "a": 0, "why": "Você repete a ideia com suas palavras."},
+   {"q": "I'm not sure ___ a good idea.", "o": ["that's", "that", "it"], "a": 0, "why": "I'm not sure that's... = não tenho certeza de que isso é..."},
+   {"q": "Could I ___ something?", "o": ["add", "adding", "to add"], "a": 0, "why": "Could + verbo puro."},
+   {"q": "Qual frase reconhece a ideia do outro?", "o": ["That's a fair point. However...", "Whatever.", "Stop talking."], "a": 0, "why": "fair point = argumento justo."}
+  ],
+  "frases_extras": [
+   ["I agree with you completely.", "Concordo totalmente com você."],
+   ["I see your point, but I disagree.", "Entendo seu ponto, mas discordo."],
+   ["Sorry to interrupt, but it's important.", "Desculpe interromper, mas é importante."],
+   ["What do you mean by that?", "O que você quer dizer com isso?"],
+   ["What if we try another way?", "E se tentarmos de outro jeito?"],
+   ["Let's take a vote.", "Vamos votar."]
+  ]
+ },
+ {
+  "capitulo": "A Última Porta",
+  "perguntas": [
+   {"q": "If I ___ the map, we wouldn't be lost now.", "o": ["had checked", "checked", "check"], "a": 0, "why": "Passado imaginário com resultado agora."},
+   {"q": "She suggested that he ___ a break.", "o": ["take", "takes", "took"], "a": 0, "why": "Subjuntivo: verbo puro."},
+   {"q": "Forma cautelosa:", "o": ["It appears that the data is incomplete.", "The data is garbage.", "Data incomplete."], "a": 0, "why": "It appears that = parece que."},
+   {"q": "Para concluir uma apresentação:", "o": ["To sum up,", "Moving on to,", "First of all,"], "a": 0, "why": "To sum up = resumindo."},
+   {"q": "Discordar com educação:", "o": ["I see your point, but...", "No.", "You don't know anything."], "a": 0, "why": "Reconheça antes de discordar."},
+   {"q": "It's time we ___ home.", "o": ["went", "go", "going"], "a": 0, "why": "It's time + pessoa + passado."},
+   {"q": "If he were braver, he ___ the dragon yesterday.", "o": ["would have fought", "would fight", "fought"], "a": 0, "why": "Característica do presente, resultado no passado."},
+   {"q": "“To some extent” =", "o": ["até certo ponto", "sem dúvida", "de vez em quando"], "a": 0, "why": "Concordância parcial."},
+   {"q": "I'd rather you ___ tell anyone.", "o": ["didn't", "don't", "not"], "a": 0, "why": "I'd rather + pessoa + passado."},
+   {"q": "Could you ___ what you mean?", "o": ["explain", "explaining", "to explain"], "a": 0, "why": "Could + verbo puro."}
+  ],
+  "frases_extras": [
+   ["If I hadn't tried, I'd still be afraid.", "Se eu não tivesse tentado, ainda estaria com medo."],
+   ["It's essential that we be clear.", "É essencial que sejamos claros."],
+   ["It seems that the door is open.", "Parece que a porta está aberta."],
+   ["To sum up, we did it.", "Resumindo, nós conseguimos."],
+   ["I see your point, but I'm staying.", "Entendo seu ponto, mas vou ficar."],
+   ["Let me give you an example.", "Vou dar um exemplo."]
+  ]
+ }
+]

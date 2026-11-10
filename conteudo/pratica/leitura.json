@@ -1,0 +1,138 @@
+[
+ {
+  "id": "r1",
+  "t": "Regras para Novos Membros",
+  "lv": "B1",
+  "kind": "Aviso do Clube",
+  "p": ["Welcome to the Explorers' Club! We are happy to have you with us. Before your first mission, please read these rules carefully. They have been written to keep everyone safe.", "First, you must always carry your club card. If you lose it, tell the front desk immediately. Second, you mustn't enter a portal alone. Even experienced explorers work in pairs. Third, you should check the weather before every mission, because storms can make portals unstable.", "New members don't have to buy their own equipment. The club lends helmets, maps and radios for free. However, you have to return them within three days. If you damage something, you might have to pay for it.", "Finally, remember that asking for help is not a weakness. Our trainers have helped hundreds of explorers since the club opened in 2010. Good luck, and enjoy the climb!"],
+  "g": {
+   "carefully": "com atenção",
+   "front desk": "recepção",
+   "immediately": "imediatamente",
+   "pairs": "duplas",
+   "weather": "tempo, clima",
+   "unstable": "instáveis",
+   "lends": "empresta",
+   "helmets": "capacetes",
+   "within": "dentro do prazo de",
+   "damage": "danificar",
+   "weakness": "fraqueza",
+   "trainers": "treinadores",
+   "climb": "subida"
+  },
+  "q": [
+   {"q": "O que fazer se perder o cartão?", "o": ["Avisar a recepção na hora", "Comprar outro", "Esperar três dias"], "a": 0},
+   {"q": "Por que verificar o tempo antes da missão?", "o": ["Tempestades deixam os portais instáveis", "Para escolher a roupa", "Porque é proibido sair com chuva"], "a": 0},
+   {"q": "Os novos membros precisam comprar equipamento?", "o": ["Não, o clube empresta", "Sim, sempre", "Só o capacete"], "a": 0},
+   {"q": "Em quanto tempo é preciso devolver o equipamento?", "o": ["Em até três dias", "Em uma semana", "No fim do mês"], "a": 0}
+  ]
+ },
+ {
+  "id": "r2",
+  "t": "Avaliação de Hotel",
+  "lv": "B1",
+  "kind": "Avaliação na internet",
+  "p": ["I stayed at the Grand River Hotel for five nights last month, and overall I had a great time. The location is excellent: it's a ten-minute walk from Central Park, and there's a subway station right across the street.", "My room was clean and comfortable, but it was smaller than it looked in the photos. On the second night, the air conditioning stopped working. I called the front desk, and they sent someone within fifteen minutes, which I really appreciated.", "Breakfast is included and served from seven to ten. There's a good choice of fresh fruit, eggs and bread, although the coffee could be better. The staff was always friendly and helpful, especially the receptionist, who gave me great tips about the city.", "Would I stay here again? Yes, definitely. Just don't expect a big room."],
+  "g": {
+   "overall": "no geral",
+   "location": "localização",
+   "subway": "metrô",
+   "across the street": "do outro lado da rua",
+   "comfortable": "confortável",
+   "appreciated": "gostei muito",
+   "included": "incluído",
+   "choice": "variedade",
+   "staff": "equipe",
+   "especially": "principalmente",
+   "tips": "dicas",
+   "expect": "esperar"
+  },
+  "q": [
+   {"q": "Por que a localização é boa?", "o": ["Fica perto do Central Park e do metrô", "Tem vista para o rio", "Fica no aeroporto"], "a": 0},
+   {"q": "Qual foi o problema no quarto?", "o": ["O ar-condicionado parou", "O chuveiro quebrou", "Estava sujo"], "a": 0},
+   {"q": "O que não estava tão bom no café da manhã?", "o": ["O café", "As frutas", "O pão"], "a": 0},
+   {"q": "A pessoa voltaria ao hotel?", "o": ["Sim, com certeza", "Não", "Só se o quarto fosse maior"], "a": 0}
+  ]
+ },
+ {
+  "id": "r3",
+  "t": "Mistério na Ponte",
+  "lv": "B2",
+  "kind": "Notícia",
+  "p": ["A strange light was seen under the old bridge last Tuesday night. According to local residents, the light had appeared several times before, but nobody had reported it.", "The Explorers' Club was contacted on Wednesday morning, and a team was sent to investigate. The team leader, Jin, said that the light had been caused by a small, inactive portal. He explained that portals like this are usually harmless, although they should always be checked.", "Residents were told that the area would be closed for two days. Some shop owners complained that they had lost customers, but most people agreed that safety came first.", "The portal was officially closed on Friday. The club has asked residents to report anything unusual as soon as possible, rather than waiting."],
+  "g": {
+   "residents": "moradores",
+   "several": "várias",
+   "reported": "comunicado",
+   "investigate": "investigar",
+   "harmless": "inofensivos",
+   "complained": "reclamaram",
+   "customers": "clientes",
+   "safety came first": "a segurança vinha em primeiro lugar",
+   "unusual": "fora do comum",
+   "rather than": "em vez de"
+  },
+  "q": [
+   {"q": "Quando a luz foi vista?", "o": ["Na terça à noite", "Na quarta de manhã", "Na sexta"], "a": 0},
+   {"q": "O que causou a luz?", "o": ["Um portal pequeno e inativo", "Uma lâmpada quebrada", "Um incêndio"], "a": 0},
+   {"q": "Por que alguns comerciantes reclamaram?", "o": ["Perderam clientes", "Não foram avisados", "O portal danificou as lojas"], "a": 0},
+   {"q": "O que o clube pede aos moradores?", "o": ["Que avisem logo sobre algo estranho", "Que não passem pela ponte", "Que fechem as lojas"], "a": 0}
+  ]
+ },
+ {
+  "id": "r4",
+  "t": "Adultos Aprendem Idiomas?",
+  "lv": "C1",
+  "kind": "Artigo",
+  "p": ["Many adults believe that they are simply too old to learn a new language. Although it is true that children tend to acquire accents more easily, research suggests that adults have important advantages of their own.", "Adults usually understand grammar faster, since they can compare it with their first language. Moreover, they are often more motivated, because they learn for a clear reason, such as work or travel. What they tend to lack is not ability, but time and consistency.", "Studies indicate that short daily sessions are far more effective than long, occasional ones. In other words, ten minutes a day may well be better than two hours on a Sunday. Not only does regular practice strengthen memory, but it also reduces the anxiety that many learners feel.", "Therefore, the question is not whether adults can learn, but how they can build a habit that fits their lives. As one teacher put it, fluency is not a talent. It's a routine."],
+  "g": {
+   "acquire": "adquirir",
+   "advantages": "vantagens",
+   "since": "já que",
+   "motivated": "motivados",
+   "lack": "falta",
+   "consistency": "constância",
+   "occasional": "esporádicas",
+   "may well be": "pode muito bem ser",
+   "strengthen": "fortalece",
+   "anxiety": "ansiedade",
+   "learners": "alunos",
+   "fits": "se encaixa em",
+   "put it": "disse"
+  },
+  "q": [
+   {"q": "Segundo o texto, em que as crianças levam vantagem?", "o": ["No sotaque", "Na gramática", "Na motivação"], "a": 0},
+   {"q": "O que normalmente falta aos adultos?", "o": ["Tempo e constância", "Capacidade", "Inteligência"], "a": 0},
+   {"q": "O que é mais eficaz, segundo os estudos?", "o": ["Sessões curtas todos os dias", "Duas horas no domingo", "Estudar só gramática"], "a": 0},
+   {"q": "Qual é a ideia da frase final?", "o": ["A fluência vem da rotina", "A fluência é um talento", "A fluência vem só com viagens"], "a": 0}
+  ]
+ },
+ {
+  "id": "r5",
+  "t": "Proposta à Diretora",
+  "lv": "C1",
+  "kind": "E-mail formal",
+  "p": ["Dear Director, I am writing to propose a change to our training schedule. Over the past three months, it has become clear that our current model may not be meeting the needs of new members.", "According to our records, nearly half of new explorers stop attending after the first month. While there could be several reasons for this, the feedback suggests that the sessions are too long and too infrequent.", "I would therefore recommend that we replace the weekly three-hour session with three shorter sessions of one hour. It is essential that each session have a clear goal, so that members can see their progress. If we had adopted this model earlier, I believe we would have kept more members.", "I would be happy to discuss this proposal at your convenience. Thank you for your time and consideration. Kind regards, The Planning Team."],
+  "g": {
+   "propose": "propor",
+   "schedule": "cronograma",
+   "over the past": "ao longo dos últimos",
+   "meeting the needs": "atendendo às necessidades",
+   "records": "registros",
+   "nearly": "quase",
+   "attending": "frequentar",
+   "feedback": "opiniões recebidas",
+   "infrequent": "pouco frequentes",
+   "replace": "substituir",
+   "adopted": "adotado",
+   "at your convenience": "quando for conveniente para você",
+   "consideration": "atenção"
+  },
+  "q": [
+   {"q": "Qual é o objetivo do e-mail?", "o": ["Propor uma mudança nos treinos", "Reclamar de um colega", "Pedir férias"], "a": 0},
+   {"q": "Qual é o problema apontado?", "o": ["Quase metade dos novos membros desiste no primeiro mês", "Os treinos são caros", "Faltam treinadores"], "a": 0},
+   {"q": "O que a equipe recomenda?", "o": ["Três sessões de uma hora por semana", "Uma sessão de três horas", "Treinos só aos domingos"], "a": 0},
+   {"q": "Qual frase usa o subjuntivo?", "o": ["It is essential that each session have a clear goal", "I am writing to propose a change", "Thank you for your time"], "a": 0}
+  ]
+ }
+]

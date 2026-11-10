@@ -3,7 +3,8 @@
 Abre o site num Chromium automático e confere:
 - se todas as telas abrem sem erro de JavaScript;
 - se as questões têm resposta válida e opções diferentes;
-- se toda fala e toda frase extra tem áudio gravado.
+- se toda fala e toda frase extra tem áudio gravado;
+- se um arquivo de conteúdo quebrado mostra o aviso de erro em vez de uma tela vazia.
 
 Uso: python3 tests/test_site.py   (na raiz do repositório; precisa do pacote playwright)
 """
@@ -64,7 +65,11 @@ async def main():
         await page.add_init_script('delete window.SpeechRecognition;delete window.webkitSpeechRecognition;'
                                    'localStorage.setItem("torre-ingles-v2",JSON.stringify({name:"Ana",welcomed:true}))')
         await page.goto(url)
-        await page.wait_for_function("typeof REC !== 'undefined' && !!REC.man", timeout=20000)
+        await page.wait_for_function("window.TORRE_ERRO || (typeof REC !== 'undefined' && !!REC.man)", timeout=20000)
+        erro = await page.evaluate('window.TORRE_ERRO || ""')
+        if erro:
+            print('PROBLEMA: o conteúdo não carregou:', erro)
+            sys.exit(1)
         n = await page.evaluate('CH.length')
         for i in range(n):
             await page.evaluate(f'reader({i})')
@@ -74,6 +79,16 @@ async def main():
         width = await page.evaluate('document.documentElement.scrollWidth - document.documentElement.clientWidth')
         if width > 1:
             problems.append(f'a página rola para o lado ({width}px)')
+        # arquivo de conteúdo com título trocado: a página tem que avisar, não ficar vazia
+        bad = await browser.new_page()
+        async def troca(route):
+            r = await route.fetch(); d = await r.json(); d[0]['capitulo'] = 'Outro título'
+            await route.fulfill(response=r, json=d)
+        await bad.route('**/conteudo/questoes/arco-01.json*', troca)
+        await bad.goto(url)
+        await bad.wait_for_function('!!window.TORRE_ERRO', timeout=20000)
+        if not await bad.locator('[role=alert]').count():
+            problems.append('conteúdo quebrado não mostrou o aviso de erro')
         await browser.close()
     srv.shutdown()
     for p in problems:

@@ -1,0 +1,135 @@
+[
+ {
+  "capitulo": "Regras do Clube",
+  "perguntas": [
+   {"q": "\"Você não pode fumar aqui\" (é proibido):", "o": ["You mustn't smoke here.", "You don't have to smoke here."], "a": 0, "why": "Mustn't = proibição."},
+   {"q": "\"Você deveria descansar.\"", "o": ["You should rest.", "You must to rest.", "You should to rest."], "a": 0, "why": "Should + verbo puro, sem \"to\"."},
+   {"q": "\"You don't have to come\" significa:", "o": ["Você não precisa vir.", "Você não pode vir.", "Você não deve vir."], "a": 0, "why": "Don't have to = não é necessário."},
+   {"q": "'should' expressa:", "o": ["conselho", "proibição", "certeza"], "a": 0, "why": "You should rest = você deveria descansar."},
+   {"q": "'Talvez eu chegue tarde.'", "o": ["I might be late.", "I must be late.", "I should be late."], "a": 0, "why": "Might = talvez."},
+   {"q": "'Eu tenho que trabalhar amanhã.'", "o": ["I have to work tomorrow.", "I have work tomorrow to.", "I must to work tomorrow."], "a": 0, "why": "Have to + verbo."},
+   {"q": "You ___ touch that! It's dangerous.", "o": ["mustn't", "don't have to", "might"], "a": 0, "why": "Proibição → mustn't."},
+   {"q": "'Ela não precisa pagar.'", "o": ["She doesn't have to pay.", "She mustn't pay.", "She doesn't must pay."], "a": 0, "why": "Não é necessário → doesn't have to."},
+   {"q": "He ___ to wear a uniform.", "o": ["has", "have", "must"], "a": 0, "why": "He → has to."}
+  ],
+  "frases_extras": [
+   ["You should drink more water.", "Você deveria beber mais água."],
+   ["We have to leave at six.", "Nós temos que sair às seis."],
+   ["You mustn't use your phone here.", "Você não pode usar o celular aqui."],
+   ["She doesn't have to work tomorrow.", "Ela não precisa trabalhar amanhã."],
+   ["It might rain this afternoon.", "Pode ser que chova hoje à tarde."],
+   ["Do I have to wear a uniform?", "Eu tenho que usar uniforme?"]
+  ]
+ },
+ {
+  "capitulo": "Desde Sempre",
+  "perguntas": [
+   {"q": "I've lived here ___ 2020.", "o": ["since", "for"], "a": 0, "why": "2020 é um ponto de início → since."},
+   {"q": "I ___ to Paris last year.", "o": ["went", "have gone"], "a": 0, "why": "\"Last year\" é tempo específico → passado simples."},
+   {"q": "Have you ever ___ sushi?", "o": ["eaten", "ate", "eat"], "a": 0, "why": "Present perfect usa o particípio: eat → eaten."},
+   {"q": "She has ___ to Japan.", "o": ["been", "be", "was"], "a": 0, "why": "Particípio de be = been."},
+   {"q": "'Acabei de comer.'", "o": ["I've just eaten.", "I've just ate.", "I just have eat."], "a": 0, "why": "Have + just + particípio."},
+   {"q": "Have you finished ___?", "o": ["yet", "since", "ago"], "a": 0, "why": "Yet = já? (na pergunta)."},
+   {"q": "I've known him ___ ten years.", "o": ["for", "since", "ago"], "a": 0, "why": "Duração → for."},
+   {"q": "'Nunca vi esse filme.'", "o": ["I've never seen this movie.", "I never have saw this movie.", "I've never saw this movie."], "a": 0, "why": "Have + never + particípio (seen)."},
+   {"q": "Particípio de 'do':", "o": ["done", "did", "doed"], "a": 0, "why": "Do → did → done."}
+  ],
+  "frases_extras": [
+   ["I have never been to London.", "Eu nunca fui a Londres."],
+   ["She has lived here since 2020.", "Ela mora aqui desde 2020."],
+   ["Have you ever eaten Korean food?", "Você já comeu comida coreana?"],
+   ["We have known each other for years.", "Nós nos conhecemos há anos."],
+   ["I have just finished my homework.", "Acabei de terminar minha lição de casa."],
+   ["He hasn't called me yet.", "Ele ainda não me ligou."]
+  ]
+ },
+ {
+  "capitulo": "Antigamente",
+  "perguntas": [
+   {"q": "\"Eu morava em Lisboa\" (não moro mais):", "o": ["I used to live in Lisbon.", "I use to live in Lisbon.", "I am used to live in Lisbon."], "a": 0, "why": "Hábito antigo → used to + verbo."},
+   {"q": "I'm used to ___ early.", "o": ["waking up", "wake up", "woke up"], "a": 0, "why": "Be used to + ING."},
+   {"q": "Negativo correto:", "o": ["I didn't use to like coffee.", "I didn't used to liked coffee.", "I not used to like coffee."], "a": 0, "why": "Depois de didn't: use (sem d)."},
+   {"q": "Did you ___ play football?", "o": ["use to", "used to", "using to"], "a": 0, "why": "Depois de did: use to."},
+   {"q": "'Eu me acostumei com o frio.'", "o": ["I got used to the cold.", "I used to the cold.", "I get use to the cold."], "a": 0, "why": "Get used to = acostumar-se."},
+   {"q": "'I used to smoke' significa:", "o": ["Eu fumava (não fumo mais)", "Eu fumo agora", "Estou acostumado a fumar"], "a": 0, "why": "Used to = hábito antigo."},
+   {"q": "She is used to ___ alone.", "o": ["living", "live", "lived"], "a": 0, "why": "Be used to + ING."},
+   {"q": "'Nós morávamos perto da praia.'", "o": ["We used to live near the beach.", "We use to live near the beach.", "We were used to live near the beach."], "a": 0, "why": "Used to + verbo."},
+   {"q": "Qual está certa?", "o": ["He used to read a lot.", "He used to reads a lot.", "He use to reading a lot."], "a": 0, "why": "Used to + verbo puro."}
+  ],
+  "frases_extras": [
+   ["I used to play soccer every day.", "Eu jogava futebol todo dia."],
+   ["She used to live in Porto.", "Ela morava no Porto."],
+   ["Did you use to read comics?", "Você costumava ler quadrinhos?"],
+   ["We didn't use to have a car.", "Nós não tínhamos carro."],
+   ["I'm used to waking up early.", "Já estou acostumad{o|a} a acordar cedo."],
+   ["He got used to the cold weather.", "Ele se acostumou com o frio."]
+  ]
+ },
+ {
+  "capitulo": "E Se... (Parte 1)",
+  "perguntas": [
+   {"q": "If it ___ tomorrow, we will stay home.", "o": ["rains", "will rain", "rained"], "a": 0, "why": "Depois de \"if\" vem presente."},
+   {"q": "If you heat water, it ___.", "o": ["boils", "will boiled", "boiling"], "a": 0, "why": "Verdade geral → presente nos dois lados."},
+   {"q": "\"Unless\" significa:", "o": ["a menos que", "embora", "até que"], "a": 0, "why": "Unless = if not."},
+   {"q": "If you ___ hard, you'll pass.", "o": ["study", "will study", "studied"], "a": 0, "why": "If + presente, will."},
+   {"q": "'unless you hurry' significa:", "o": ["a menos que você se apresse", "se você se apressar", "porque você se apressa"], "a": 0, "why": "Unless = if not."},
+   {"q": "If it ___ sunny, we'll go to the beach.", "o": ["is", "will be", "was"], "a": 0, "why": "Depois de if, presente."},
+   {"q": "As soon as I ___, I'll call you.", "o": ["arrive", "will arrive", "arrived"], "a": 0, "why": "As soon as + presente."},
+   {"q": "If you mix red and blue, you ___ purple.", "o": ["get", "will got", "got"], "a": 0, "why": "Verdade geral → presente nos dois lados."},
+   {"q": "Escolha a frase correta:", "o": ["If I see her, I'll tell her.", "If I will see her, I tell her.", "If I'll see her, I'll tell her."], "a": 0, "why": "Nada de will depois de if."}
+  ],
+  "frases_extras": [
+   ["If you heat water, it boils.", "Se você esquenta água, ela ferve."],
+   ["If it rains, we will stay home.", "Se chover, vamos ficar em casa."],
+   ["If you study, you will pass.", "Se você estudar, vai passar."],
+   ["I'll call you as soon as I arrive.", "Eu te ligo assim que chegar."],
+   ["Unless you hurry, you'll miss the bus.", "A menos que você se apresse, vai perder o ônibus."],
+   ["What will you do if she says no?", "O que você vai fazer se ela disser não?"]
+  ]
+ },
+ {
+  "capitulo": "Quem Foi?",
+  "perguntas": [
+   {"q": "The girl ___ helped me is Mina.", "o": ["who", "which", "where"], "a": 0, "why": "Pessoa → who."},
+   {"q": "This is the city ___ I was born.", "o": ["where", "which", "who"], "a": 0, "why": "Lugar → where."},
+   {"q": "The book ___ I bought is great.", "o": ["that", "who", "whose"], "a": 0, "why": "Coisa → that ou which."},
+   {"q": "The man ___ car is red is my uncle.", "o": ["whose", "who", "which"], "a": 0, "why": "Whose = cujo."},
+   {"q": "The sword ___ I bought is sharp.", "o": ["that", "who", "where"], "a": 0, "why": "Coisa → that / which."},
+   {"q": "This is the café ___ we met.", "o": ["where", "which", "who"], "a": 0, "why": "Lugar → where."},
+   {"q": "Mina, ___ is my teacher, is very strong.", "o": ["who", "that", "which"], "a": 0, "why": "Com vírgulas e pessoa → who (nunca that)."},
+   {"q": "'who' é usado para:", "o": ["pessoas", "coisas", "lugares"], "a": 0, "why": "Which = coisas. Where = lugares."},
+   {"q": "The people ___ live here are friendly.", "o": ["who", "which", "whose"], "a": 0, "why": "Pessoas → who."}
+  ],
+  "frases_extras": [
+   ["The woman who lives here is a doctor.", "A mulher que mora aqui é médica."],
+   ["This is the book that I bought.", "Este é o livro que eu comprei."],
+   ["That's the café where we met.", "Aquele é o café onde nos conhecemos."],
+   ["I have a friend whose father is a pilot.", "Tenho um amigo cujo pai é piloto."],
+   ["The phone which I lost was new.", "O celular que eu perdi era novo."],
+   ["He is the man who helped me.", "Ele é o homem que me ajudou."]
+  ]
+ },
+ {
+  "capitulo": "O Juiz",
+  "perguntas": [
+   {"q": "I enjoy ___ manhwa.", "o": ["reading", "to read"], "a": 0, "why": "Enjoy + ING."},
+   {"q": "She decided ___ abroad.", "o": ["to study", "studying"], "a": 0, "why": "Decide + TO."},
+   {"q": "\"Ele parou de fumar\"", "o": ["He stopped smoking.", "He stopped to smoke."], "a": 0, "why": "Stop + ING = parar de fazer."},
+   {"q": "You ___ enter alone. It's forbidden.", "o": ["mustn't", "don't have to"], "a": 0, "why": "Proibido → mustn't."},
+   {"q": "I've known her ___ ten years.", "o": ["for", "since"], "a": 0, "why": "Duração → for."},
+   {"q": "I hope ___ you soon.", "o": ["to see", "seeing", "see"], "a": 0, "why": "Hope + TO."},
+   {"q": "Would you mind ___ the window?", "o": ["closing", "to close", "close"], "a": 0, "why": "Mind + ING."},
+   {"q": "'Lembre-se de ligar para ela.'", "o": ["Remember to call her.", "Remember calling her.", "Remember call her."], "a": 0, "why": "Remember to = lembrar de fazer (no futuro)."},
+   {"q": "She's good at ___.", "o": ["singing", "sing", "to sing"], "a": 0, "why": "Depois de preposição (at) → ING."},
+   {"q": "You ___ wear a seatbelt. It's the law.", "o": ["must", "might", "don't have to"], "a": 0, "why": "Regra forte → must."}
+  ],
+  "frases_extras": [
+   ["I enjoy cooking for my friends.", "Eu gosto de cozinhar para meus amigos."],
+   ["She decided to learn Japanese.", "Ela decidiu aprender japonês."],
+   ["We need to talk about it.", "Precisamos conversar sobre isso."],
+   ["He stopped smoking last year.", "Ele parou de fumar no ano passado."],
+   ["Remember to lock the door.", "Lembre-se de trancar a porta."],
+   ["They avoid driving at night.", "Eles evitam dirigir à noite."]
+  ]
+ }
+]

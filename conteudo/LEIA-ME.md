@@ -1,0 +1,74 @@
+# Conteúdo da Torre do Inglês
+
+Esta pasta tem toda a história e todas as questões do curso. O código (`app.js`) não tem nenhum texto de conteúdo: ele lê estes arquivos ao abrir.
+
+## Regra de ouro: só acrescente no fim
+
+O progresso de cada aluno fica guardado pela **posição** do capítulo e da pergunta (capítulo 12, pergunta 3...). Por isso:
+
+- **Capítulo novo:** entra no fim do último arco ou num arco novo, nunca no meio.
+- **Pergunta nova:** entra no fim da lista `perguntas` do capítulo.
+- **Não apague nem troque de lugar** capítulos ou perguntas que já existem. Corrigir o texto de uma pergunta pode; trocar a ordem, não.
+
+Mudar o meio da lista faz o curso marcar como feitos os capítulos errados para quem já estudou.
+
+## Arquivos
+
+| Arquivo | O que tem |
+|---|---|
+| `indice.json` | A ordem dos arcos. Para criar um arco, acrescente o nome dele no fim da lista. |
+| `historia/arco-NN.json` | Nome e descrição do arco, a lista "agora você consegue" do certificado e os capítulos com os quadros da história. |
+| `questoes/arco-NN.json` | As perguntas e as frases extras de cada capítulo, na mesma ordem dos capítulos da história. |
+| `historia/bonus.json` e `questoes/bonus.json` | As histórias bônus, no mesmo formato. |
+| `pratica/escuta.json` | Diálogos da prática de escuta. |
+| `pratica/leitura.json` | Textos da prática de leitura, com glossário. |
+| `pratica/vocabulario.json` | Temas de vocabulário: `[tema, [[palavra, tradução, frase de exemplo], ...]]`. |
+| `pratica/escrita.json` | Textos com lacunas da prática de escrita. |
+| `pratica/nivelamento.json` | Perguntas do teste de nível. A resposta certa é sempre a **primeira** opção; o curso embaralha na hora de mostrar. |
+| `pratica/sons.json` | Pares de palavras do treino de sons e a tradução de cada palavra. |
+
+## Formato de um capítulo (história)
+
+```json
+{
+ "t": "O Despertar",              título (precisa ser igual ao "capitulo" nas questões)
+ "lv": "A1",                      nível
+ "topic": "Cumprimentos",         assunto, aparece embaixo do título
+ "bg": "gate",                    cenário de abertura
+ "hero": "rafa",                  quem aparece na abertura
+ "mon": "ERRO", "boss": true,     só em capítulos com monstro ou chefe
+ "p": [ quadros ]
+}
+```
+
+Tipos de quadro:
+
+- **Cena com falas:** `{"bg": "street", "m": {"mina": "happy"}, "c": "legenda opcional", "l": [["mina", "Hi!", "Oi!"]]}`
+  - Cada fala é `[personagem, inglês, português]`.
+  - Use `null` no inglês para um pensamento só em português.
+  - O protagonista se chama `rafa` nos arquivos, e o curso troca pelo nome do aluno. Escreva "Rafa" no texto onde o nome do aluno deve aparecer.
+  - Para palavras que mudam com o gênero do aluno, use `{o|a}`: `cansad{o|a}`.
+- **Quadro da Torre (explicação):** `{"sys": "Título", "text": "texto"}`. Pode ter `"r": [["inglês", "português"], ...]` para uma tabela e `"tip": "dica"`.
+
+## Formato das questões
+
+```json
+{
+ "capitulo": "O Despertar",
+ "perguntas": [
+  {"q": "Pergunta", "o": ["certa", "errada", "errada"], "a": 0, "why": "explicação"}
+ ],
+ "frases_extras": [["How are you?", "Como você está?"]]
+}
+```
+
+- **`"a"`:** a posição da resposta certa em `"o"`, contando do zero (`0` = primeira opção). O curso embaralha as opções na tela.
+- **`frases_extras`:** frases usadas nos exercícios de ditado, tradução e fala. São opcionais.
+
+## Depois de editar
+
+1. Rode `python3 tools/site/build_site.py`. Ele confere os arquivos (avisa se faltar um título, se a resposta não existir, se houver opção repetida) e atualiza a marca de versão, para os aparelhos baixarem o conteúdo novo.
+2. Rode `python3 tests/test_site.py`. Ele abre o curso inteiro e confere, entre outras coisas, se toda fala nova tem áudio gravado.
+3. Falas novas precisam de áudio: veja "Refazer as vozes" em `tools/README.md`. Sem o áudio gravado, o curso usa a voz do aparelho.
+
+Se um arquivo tiver erro de formatação (uma vírgula ou aspas faltando), o curso mostra "Não consegui carregar o curso" com o nome do arquivo, em vez de abrir pela metade.

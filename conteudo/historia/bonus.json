@@ -1,0 +1,216 @@
+{
+ "capitulos": [
+  {
+   "t": "O Passado do Jin",
+   "lv": "A2",
+   "topic": "Used to e contar a própria história",
+   "bg": "street",
+   "hero": "jin",
+   "p": [
+    {
+     "bg": "cafe",
+     "m": {"jin": "normal", "rafa": "normal"},
+     "c": "História extra. Uma noite tranquila no Clube.",
+     "l": [
+      ["rafa", "Jin, why did you come to Seoul?", "Jin, por que você veio para Seul?"],
+      ["jin", "I used to live in Chicago. My family moved here when I was twelve.", "Eu morava em Chicago. Minha família se mudou pra cá quando eu tinha doze anos."]
+     ]
+    },
+    {
+     "bg": "street",
+     "m": {"jin": "sad"},
+     "c": "Flashback. Seul, dez anos atrás.",
+     "l": [
+      ["jin", "I didn't speak any Korean. I felt lost.", "Eu não falava nada de coreano. Eu me sentia perdido."]
+     ]
+    },
+    {
+     "bg": "street",
+     "m": {"jin": "shock", "mina": "happy"},
+     "l": [
+      ["mina", "Hi! Are you new? I'm Mina.", "Oi! Você é novo? Eu sou a Mina."],
+      ["jin", "You speak English?", "Você fala inglês?"],
+      ["mina", "A little. I can teach you Korean, and you can teach me English!", "Um pouco. Eu te ensino coreano e você me ensina inglês!"]
+     ]
+    },
+    {
+     "sys": "Contando a própria história",
+     "r": [
+      ["I used to live in Chicago.", "Eu morava em Chicago (não moro mais)"],
+      ["My family moved here.", "Minha família se mudou pra cá"],
+      ["when I was twelve", "quando eu tinha doze anos"],
+      ["I felt lost.", "Eu me sentia perdido"],
+      ["I didn't speak Korean.", "Eu não falava coreano"],
+      ["We became friends.", "Nós ficamos amigos"]
+     ],
+     "tip": "Para falar de idade no passado, use WAS: \"when I was twelve\" (nunca \"when I had twelve\")."
+    },
+    {
+     "bg": "cafe",
+     "m": {"jin": "happy", "rafa": "happy"},
+     "l": [
+      ["rafa", "So Mina was your first friend here?", "Então a Mina foi sua primeira amiga aqui?"],
+      ["jin", "Yes. And she still corrects my Korean every day.", "Foi. E ela ainda corrige meu coreano todo dia."]
+     ]
+    }
+   ]
+  },
+  {
+   "t": "O Primeiro Dia da Mina",
+   "lv": "A2",
+   "topic": "Could, was / were e sentimentos",
+   "bg": "room",
+   "hero": "mina",
+   "p": [
+    {
+     "bg": "room",
+     "m": {"mina": "normal", "rafa": "happy"},
+     "c": "História extra. Rafa encontra uma foto antiga.",
+     "l": [
+      ["rafa", "Is this you? You look so small!", "Essa é você? Você parece tão pequena!"],
+      ["mina", "That was my first day at the Explorer Academy. I was ten.", "Foi meu primeiro dia na Academia de Exploradores. Eu tinha dez anos."]
+     ]
+    },
+    {
+     "bg": "dungeon",
+     "m": {"mina": "sad"},
+     "c": "Flashback. A Academia.",
+     "l": [
+      ["mina", "I couldn't lift the training sword. Everyone was laughing.", "Eu não conseguia levantar a espada de treino. Todo mundo estava rindo."]
+     ]
+    },
+    {
+     "bg": "dungeon",
+     "m": {"mina": "det"},
+     "l": [
+      ["mina", "I was nervous, but I wasn't going to quit.", "Eu estava nervosa, mas não ia desistir."]
+     ]
+    },
+    {
+     "sys": "Sentimentos no passado",
+     "r": [
+      ["I was nervous / scared / excited", "Eu estava nervosa / com medo / animada"],
+      ["I couldn't lift it.", "Eu não conseguia levantar"],
+      ["Everyone was laughing.", "Todo mundo estava rindo"],
+      ["I was ten.", "Eu tinha dez anos"],
+      ["proud of / afraid of", "orgulhosa de / com medo de"],
+      ["embarrassed", "com vergonha (não é \"embaraçado\")"]
+     ],
+     "tip": "\"Embarrassed\" é um falso amigo: significa com vergonha. E \"pregnant\" é que significa grávida."
+    },
+    {
+     "bg": "sky",
+     "m": {"mina": "happy", "rafa": "happy"},
+     "l": [
+      ["rafa", "And now you are the strongest explorer I know.", "E agora você é a exploradora mais forte que eu conheço."],
+      ["mina", "I'm proud of that little girl.", "Tenho orgulho daquela menininha."]
+     ]
+    }
+   ]
+  },
+  {
+   "t": "Festival do Clube",
+   "lv": "B1",
+   "topic": "Pedir comida e fazer pedidos educados",
+   "bg": "cafe",
+   "hero": "rafa",
+   "p": [
+    {
+     "bg": "street",
+     "m": {"rafa": "happy", "jin": "happy"},
+     "c": "História extra. O festival anual do Clube.",
+     "l": [
+      ["jin", "Let's get something to eat. I'm starving!", "Vamos comer algo. Estou morrendo de fome!"],
+      ["rafa", "Me too. What do they have?", "Eu também. O que eles têm?"]
+     ]
+    },
+    {
+     "bg": "cafe",
+     "m": {"rafa": "normal"},
+     "l": [
+      ["rafa", "Hi! I'd like two orders of tteokbokki, please.", "Oi! Eu gostaria de duas porções de tteokbokki, por favor."],
+      ["rafa", "Could I have it mild, please?", "Poderia ser sem pimenta, por favor?"]
+     ]
+    },
+    {
+     "bg": "cafe",
+     "m": {"jin": "shock", "rafa": "sad"},
+     "l": [
+      ["jin", "Mild? That's not tteokbokki!", "Sem pimenta? Isso não é tteokbokki!"],
+      ["rafa", "My mouth is not a dungeon, Jin.", "Minha boca não é uma masmorra, Jin."]
+     ]
+    },
+    {
+     "sys": "No restaurante",
+     "r": [
+      ["I'd like... (I would like)", "Eu gostaria de..."],
+      ["Could I have...?", "Poderia me trazer...?"],
+      ["Can I get the menu, please?", "Pode me dar o cardápio?"],
+      ["For here or to go?", "Para comer aqui ou para levar?"],
+      ["What do you recommend?", "O que você recomenda?"],
+      ["Could we have the bill, please?", "A conta, por favor"],
+      ["I'm starving!", "Estou morrendo de fome!"],
+      ["spicy / sweet / salty", "apimentado / doce / salgado"]
+     ],
+     "tip": "\"I want\" pode soar seco num restaurante. \"I'd like\" ou \"Could I have\" soam bem mais educados."
+    },
+    {
+     "bg": "sky",
+     "m": {"mina": "happy", "rafa": "happy"},
+     "c": "Fogos de artifício sobre a Torre.",
+     "l": [
+      ["mina", "Did you enjoy the festival?", "Você curtiu o festival?"],
+      ["rafa", "Best day of the year. And I ordered everything in English!", "Melhor dia do ano. E eu pedi tudo em inglês!"]
+     ]
+    }
+   ]
+  },
+  {
+   "t": "Uma Carta da Torre",
+   "lv": "B1",
+   "topic": "Perguntas indiretas, might e may",
+   "bg": "gate",
+   "hero": "rafa",
+   "p": [
+    {"sys": "Mensagem não identificada", "text": "Uma nova janela aparece no meio da noite. Ela não tem nome."},
+    {
+     "bg": "room",
+     "m": {"rafa": "shock"},
+     "l": [
+      ["rafa", "Who are you? Can you tell me who created you?", "Quem é você? Pode me dizer quem te criou?"]
+     ]
+    },
+    {"sys": "Resposta da Torre", "text": "\"I can't tell you who I am yet. You might find out when you reach the top.\" (Ainda não posso dizer quem eu sou. Talvez você descubra quando chegar ao topo.)"},
+    {
+     "bg": "room",
+     "m": {"rafa": "det"},
+     "l": [
+      ["rafa", "Do you know why you chose me?", "Você sabe por que me escolheu?"],
+      ["rafa", null, "...Não houve resposta. Mas a janela mostrou uma frase nova."]
+     ]
+    },
+    {
+     "sys": "Perguntas indiretas e possibilidade",
+     "r": [
+      ["Who are you?", "Pergunta direta"],
+      ["Can you tell me who you are?", "Indireta: a ordem vira normal (you are)"],
+      ["Do you know why you chose me?", "Você sabe por que me escolheu?"],
+      ["I wonder where it came from.", "Eu me pergunto de onde veio"],
+      ["You might find out.", "Talvez você descubra"],
+      ["It may be dangerous.", "Pode ser perigoso"],
+      ["I'll find out.", "Vou descobrir"]
+     ],
+     "tip": "Na pergunta indireta não se inverte: \"Can you tell me where the station is?\" (e não \"where is the station\")."
+    },
+    {
+     "bg": "gate",
+     "m": {"rafa": "det", "mina": "normal"},
+     "l": [
+      ["mina", "Rafa? Why are you awake?", "Rafa? Por que você está acordad{o|a}?"],
+      ["rafa", "I'll tell you tomorrow. I think the Tower has a secret.", "Te conto amanhã. Acho que a Torre tem um segredo."]
+     ]
+    }
+   ]
+  }
+ ]
+}

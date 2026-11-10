@@ -1,0 +1,39 @@
+[
+ {
+  "capitulo": "O Passado do Jin",
+  "perguntas": [
+   {"q": "\"Eu morava em Chicago\" (não moro mais):", "o": ["I used to live in Chicago.", "I use to live in Chicago.", "I living in Chicago."], "a": 0, "why": "Situação antiga que acabou → used to + verbo."},
+   {"q": "\"Quando eu tinha doze anos\"", "o": ["when I was twelve", "when I had twelve", "when I have twelve"], "a": 0, "why": "Idade usa TO BE: I was twelve."},
+   {"q": "Passado de \"feel\":", "o": ["felt", "feeled", "fell"], "a": 0, "why": "Feel → felt. Fell é o passado de fall (cair)."}
+  ]
+ },
+ {
+  "capitulo": "O Primeiro Dia da Mina",
+  "perguntas": [
+   {"q": "\"Eu não conseguia levantar a espada.\"", "o": ["I couldn't lift the sword.", "I can't lifted the sword.", "I didn't could lift the sword."], "a": 0, "why": "Could é o passado de can. Negativo: couldn't + verbo."},
+   {"q": "\"embarrassed\" significa:", "o": ["com vergonha", "grávida", "enrolado"], "a": 0, "why": "Falso amigo clássico."},
+   {"q": "Everyone ___ laughing.", "o": ["was", "were"], "a": 0, "why": "Everyone é singular em inglês → was."}
+  ]
+ },
+ {
+  "capitulo": "Festival do Clube",
+  "perguntas": [
+   {"q": "Qual é o pedido mais educado num café?", "o": ["I'd like a coffee, please.", "Give me coffee.", "I want coffee now."], "a": 0, "why": "I'd like = eu gostaria. Educado e natural."},
+   {"q": "\"A conta, por favor\"", "o": ["Could we have the bill, please?", "Could we have the count?", "Give the account."], "a": 0, "why": "Conta de restaurante = bill (nos EUA também se diz check)."},
+   {"q": "\"I'm starving\" significa:", "o": ["Estou morrendo de fome", "Estou cansado", "Estou com sede"], "a": 0, "why": "Starving = faminto. É o exagero comum para \"estou com muita fome\"."}
+  ]
+ },
+ {
+  "capitulo": "Uma Carta da Torre",
+  "perguntas": [
+   {
+    "q": "Pergunta indireta correta:",
+    "o": ["Can you tell me where the station is?", "Can you tell me where is the station?", "Can you tell me where the station it is?"],
+    "a": 0,
+    "why": "Depois de \"Can you tell me\", a ordem volta ao normal."
+   },
+   {"q": "\"Talvez você descubra.\"", "o": ["You might find out.", "You might to find out.", "You might finding out."], "a": 0, "why": "Might + verbo puro, sem \"to\"."},
+   {"q": "\"I wonder\" significa:", "o": ["Eu me pergunto", "Eu me admiro", "Eu espero"], "a": 0, "why": "I wonder why... = eu me pergunto por quê..."}
+  ]
+ }
+]

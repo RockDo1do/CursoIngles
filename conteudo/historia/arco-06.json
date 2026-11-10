@@ -1,0 +1,325 @@
+{
+ "nome": "Arco 6 · O Topo",
+ "descricao": "Avançado · C1 · nuance, estilo e inglês de verdade",
+ "agora_voce_consegue": ["Evitar falsos cognatos", "Organizar ideias com conectores", "Ajustar o tom entre formal e informal"],
+ "capitulos": [
+  {
+   "t": "Armadilhas",
+   "lv": "C1",
+   "topic": "Falsos cognatos para quem fala português",
+   "bg": "street",
+   "hero": "jin",
+   "p": [
+    {
+     "bg": "street",
+     "m": {"rafa": "happy", "jin": "shock"},
+     "l": [
+      ["rafa", "I pretend to travel to Korea next year.", "(Rafa quis dizer: pretendo viajar para a Coreia no ano que vem)"],
+      ["jin", "You pretend? So it's fake?", "Você finge? Então é mentira?"]
+     ]
+    },
+    {
+     "bg": "street",
+     "m": {"rafa": "shock", "jin": "normal"},
+     "l": [
+      ["rafa", "No! I intend to travel!", "Não! Eu pretendo viajar!"],
+      ["jin", "Actually, that's a really common mistake.", "Na verdade, esse é um erro muito comum."]
+     ]
+    },
+    {
+     "bg": "street",
+     "m": {"rafa": "normal", "jin": "happy"},
+     "l": [
+      ["rafa", "Actually means \"atualmente\", right?", "Actually significa \"atualmente\", né?"],
+      ["jin", "Nope. It means \"in fact\". \"Atualmente\" is \"currently\".", "Não. Significa \"na verdade\". \"Atualmente\" é \"currently\"."]
+     ]
+    },
+    {
+     "sys": "Falsos amigos",
+     "r": [
+      ["pretend", "fingir (pretender = intend)"],
+      ["actually", "na verdade (atualmente = currently)"],
+      ["push / pull", "empurrar / puxar"],
+      ["library", "biblioteca (livraria = bookstore)"],
+      ["realize", "perceber (realizar = achieve)"],
+      ["eventually", "no fim, mais cedo ou mais tarde (eventualmente = occasionally)"],
+      ["sensible", "sensato (sensível = sensitive)"],
+      ["exquisite", "refinado (esquisito = weird)"],
+      ["college", "faculdade (colégio = school)"],
+      ["lunch", "almoço (lanche = snack)"]
+     ]
+    },
+    {
+     "bg": "action",
+     "m": {"rafa": "det", "jin": "happy"},
+     "l": [
+      ["rafa", "I'm pushing the door! Why isn't it opening?", "Tô empurrando a porta! Por que não abre?"],
+      ["jin", "It says PULL.", "Tá escrito PUXE."]
+     ]
+    }
+   ]
+  },
+  {
+   "t": "Fala de Gente Fluente",
+   "lv": "C1",
+   "topic": "Conectores: although, however, therefore",
+   "bg": "cafe",
+   "hero": "mina",
+   "p": [
+    {"sys": "Missão", "text": "Escrever o relatório da última batalha em inglês."},
+    {
+     "bg": "cafe",
+     "m": {"rafa": "happy", "mina": "normal"},
+     "l": [
+      ["rafa", "The battle was hard. But we won. And Jin cried.", "A batalha foi difícil. Mas vencemos. E o Jin chorou."],
+      ["mina", "Correct, but too simple. Let's connect the ideas.", "Certo, mas simples demais. Vamos conectar as ideias."]
+     ]
+    },
+    {
+     "bg": "cafe",
+     "m": {"mina": "det", "rafa": "happy"},
+     "l": [
+      ["mina", "Although the battle was hard, we won. Moreover, nobody was hurt.", "Embora a batalha tenha sido difícil, vencemos. Além disso, ninguém se feriu."],
+      ["rafa", "However, Jin cried. Therefore, he owes us ramen.", "Porém, o Jin chorou. Portanto, ele nos deve lámen."]
+     ]
+    },
+    {
+     "sys": "Conectores",
+     "r": [
+      ["although / even though + frase", "embora"],
+      ["despite / in spite of + substantivo ou -ING", "apesar de"],
+      ["However, ...", "Porém, ... (início de frase)"],
+      ["whereas", "enquanto (contraste)"],
+      ["therefore / as a result", "portanto / como resultado"],
+      ["moreover / furthermore", "além disso"],
+      ["on the other hand", "por outro lado"],
+      ["in order to", "para (objetivo)"]
+     ]
+    },
+    {
+     "bg": "cafe",
+     "m": {"mina": "happy", "rafa": "happy"},
+     "l": [
+      ["mina", "Perfect. Whereas Jin is strong, you are smart.", "Perfeito. Enquanto o Jin é forte, você é espert{o|a}."]
+     ]
+    }
+   ]
+  },
+  {
+   "t": "Ênfase",
+   "lv": "C1",
+   "topic": "Cleft sentences e inversão",
+   "bg": "gate",
+   "hero": "rafa",
+   "p": [
+    {
+     "bg": "gate",
+     "m": {"mina": "det", "rafa": "shock"},
+     "c": "Para abrir este portão, é preciso falar com força.",
+     "l": [
+      ["mina", "Normal sentences won't work. Use emphasis.", "Frases normais não vão funcionar. Use ênfase."],
+      ["rafa", "Emphasis?", "Ênfase?"]
+     ]
+    },
+    {
+     "bg": "gate",
+     "m": {"rafa": "det", "mina": "happy"},
+     "l": [
+      ["rafa", "What I need is courage!", "Do que eu preciso é coragem!"],
+      ["mina", "Good! More!", "Boa! Mais!"]
+     ]
+    },
+    {
+     "bg": "action",
+     "m": {"rafa": "det"},
+     "l": [
+      ["rafa", "Never have I worked so hard! Not only will I open this gate, but I will also reach the top!", "Nunca trabalhei tanto! Não só vou abrir este portão, como também vou chegar ao topo!"]
+     ]
+    },
+    {
+     "sys": "Técnicas de ênfase",
+     "r": [
+      ["What I need is...", "Do que eu preciso é..."],
+      ["It was Jin who broke it.", "Foi o Jin que quebrou"],
+      ["Never have I seen...", "Inversão depois de expressão negativa"],
+      ["Not only... but also...", "Não só... como também..."],
+      ["Rarely do we...", "Raramente nós..."],
+      ["I DO like it.", "DO / DOES / DID para reforçar"]
+     ],
+     "tip": "A inversão (Never have I...) é formal e dramática. No dia a dia, diga simplesmente \"I've never seen...\"."
+    },
+    {
+     "bg": "gate",
+     "m": {"mina": "happy", "rafa": "happy"},
+     "l": [
+      ["mina", "It was you who opened it.", "Foi você quem abriu."],
+      ["rafa", "I did open it!", "Eu abri mesmo!"]
+     ]
+    }
+   ]
+  },
+  {
+   "t": "Formal x Informal",
+   "lv": "C1",
+   "topic": "Registro: e-mails, pedidos educados e gírias",
+   "bg": "room",
+   "hero": "mina",
+   "p": [
+    {
+     "bg": "room",
+     "m": {"rafa": "happy", "mina": "shock"},
+     "c": "Rafa precisa escrever um e-mail para a Diretora do Clube.",
+     "l": [
+      ["rafa", "\"Hey! Gimme a mission. Thx.\"", "\"E aí! Me dá uma missão. Vlw.\""],
+      ["mina", "No, no, no. She is the Club Director!", "Não, não, não. Ela é a Diretora do Clube!"]
+     ]
+    },
+    {
+     "bg": "room",
+     "m": {"mina": "det", "rafa": "normal"},
+     "l": [
+      ["mina", "Try: \"Dear Club Director, I would like to request a new mission.\"", "Tente: \"Prezada Diretora, gostaria de solicitar uma nova missão.\""],
+      ["rafa", "\"Could you let me know if one is available?\"", "\"Poderia me informar se há alguma disponível?\""]
+     ]
+    },
+    {
+     "sys": "Escolha o tom",
+     "r": [
+      ["Hi / Hey → Dear ...", "Saudação"],
+      ["I want → I would like", "Querer"],
+      ["Can you...? → Could you...? / Would you mind + ING?", "Pedidos"],
+      ["get → receive", "Receber"],
+      ["ask for → request", "Pedir"],
+      ["Sorry → I apologize for...", "Desculpas"],
+      ["Thanks! / Cheers → Kind regards", "Despedida"],
+      ["gonna, wanna, gotta", "going to, want to, got to (só na fala informal)"]
+     ],
+     "tip": "\"Would you mind waiting?\" Para aceitar, responda \"No, not at all.\" (= não me importo)."
+    },
+    {
+     "bg": "cafe",
+     "m": {"jin": "happy", "rafa": "happy"},
+     "l": [
+      ["jin", "Yo, wanna grab some food? I'm gonna get ramen.", "E aí, quer comer algo? Vou pegar um lámen."],
+      ["rafa", "Sure! I gotta finish this email first.", "Claro! Tenho que terminar esse e-mail primeiro."]
+     ]
+    }
+   ]
+  },
+  {
+   "t": "Expressões do Mundo Real",
+   "lv": "C1",
+   "topic": "Idioms e collocations (make, do, take)",
+   "bg": "cafe",
+   "hero": "jin",
+   "p": [
+    {
+     "bg": "cafe",
+     "m": {"jin": "normal", "rafa": "sad"},
+     "l": [
+      ["jin", "You look under the weather.", "Você parece meio doente."],
+      ["rafa", "I'm fine. I hit the books all night.", "Tô bem. Estudei pra valer a noite toda."]
+     ]
+    },
+    {
+     "bg": "cafe",
+     "m": {"jin": "det", "rafa": "normal"},
+     "l": [
+      ["jin", "Make sure you take a break. Don't burn out.", "Não deixe de fazer uma pausa. Não se esgote."],
+      ["rafa", "I know. I make mistakes, but I do my best.", "Eu sei. Eu cometo erros, mas dou o meu melhor."]
+     ]
+    },
+    {
+     "sys": "Expressões",
+     "r": [
+      ["under the weather", "meio doente, indisposto"],
+      ["hit the books", "estudar pra valer"],
+      ["piece of cake", "moleza"],
+      ["break a leg", "boa sorte (antes de uma apresentação)"],
+      ["once in a blue moon", "muito raramente"],
+      ["cost an arm and a leg", "custar os olhos da cara"],
+      ["the ball is in your court", "a decisão é sua"],
+      ["make a mistake / a decision", "cometer um erro / tomar uma decisão"],
+      ["do homework / do your best", "fazer lição / dar o seu melhor"],
+      ["take a break / a photo", "fazer uma pausa / tirar uma foto"]
+     ],
+     "tip": "MAKE costuma ser criar algo. DO costuma ser tarefa ou atividade. Mas muitas combinações só se aprendem ouvindo."
+    },
+    {
+     "bg": "cafe",
+     "m": {"jin": "happy", "rafa": "shock"},
+     "l": [
+      ["jin", "This sword cost an arm and a leg.", "Essa espada custou os olhos da cara."],
+      ["rafa", "I buy swords once in a blue moon.", "Eu compro espada muito de vez em quando."]
+     ]
+    }
+   ]
+  },
+  {
+   "t": "O Último Andar",
+   "lv": "C1",
+   "topic": "Revisão final: passiva, discurso indireto, conectores e expressões",
+   "bg": "gate",
+   "hero": "monster",
+   "mon": "GUARDIÃO",
+   "boss": true,
+   "p": [
+    {
+     "bg": "dungeon",
+     "m": {"rafa": "det"},
+     "c": "Andar 100. O Guardião da Fluência.",
+     "l": [
+      ["monster", "This tower was built to stop people like you.", "Esta torre foi construída para parar pessoas como você."],
+      ["rafa", "Although I'm scared, I won't back down.", "Embora eu esteja com medo, não vou recuar."]
+     ]
+    },
+    {
+     "bg": "dungeon",
+     "m": {"rafa": "det"},
+     "l": [
+      ["monster", "You said you would quit. You always said that.", "Você disse que desistiria. Você sempre disse isso."],
+      ["rafa", "That was then. Despite everything, I'm still here.", "Isso foi antes. Apesar de tudo, ainda estou aqui."]
+     ]
+    },
+    {
+     "sys": "Tudo o que você aprendeu",
+     "r": [
+      ["The tower was built in 1900.", "Voz passiva"],
+      ["He said he would quit.", "Discurso indireto"],
+      ["Although it was hard, I continued.", "Although + frase"],
+      ["Despite being tired...", "Despite + ING"],
+      ["If I had given up, I wouldn't be here.", "Condicional"],
+      ["Never have I felt so ready.", "Inversão para ênfase"]
+     ]
+    },
+    {
+     "bg": "action",
+     "m": {"mina": "det", "rafa": "happy"},
+     "l": [
+      ["mina", "Rafa! Break a leg!", "Rafa! Boa sorte!"],
+      ["rafa", "Thanks! This is a piece of cake!", "Valeu! Isso é moleza!"]
+     ]
+    },
+    {"sys": "Classe alterada", "text": "Novo título: FALANTE DE INGLÊS. Um novo portal se abre."},
+    {
+     "bg": "gate",
+     "m": {"mina": "happy", "rafa": "det"},
+     "l": [
+      ["mina", "So... what now?", "E agora?"],
+      ["rafa", "Now I keep going. Every day. One chapter at a time.", "Agora eu continuo. Todo dia. Um capítulo de cada vez."]
+     ]
+    },
+    {
+     "sys": "Inglês americano x britânico",
+     "r": [
+      ["The team is / The team are", "grupo: singular nos EUA, plural comum no Reino Unido"],
+      ["Sincerely / Yours sincerely", "despedida de carta"],
+      ["awesome / brilliant", "ótimo (informal)"],
+      ["I'll / I shall", "futuro (shall é raro nos EUA)"]
+     ],
+     "tip": "Este curso usa o inglês americano. Os dois são corretos: o importante é ser consistente e reconhecer as diferenças."
+    }
+   ]
+  }
+ ]
+}

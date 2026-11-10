@@ -1,0 +1,192 @@
+[
+ {
+  "id": "l1",
+  "t": "No Café",
+  "lv": "A1",
+  "arc": 0,
+  "lines": [
+   ["jin", "Hi! Is this seat free?", "Oi! Este lugar está livre?"],
+   ["rafa", "Yes, it is. Sit down, please.", "Sim, está. Sente-se, por favor."],
+   ["jin", "Thanks. I'm Jin. I'm from Chicago.", "Obrigado. Eu sou o Jin. Sou de Chicago."],
+   ["rafa", "Nice to meet you. I'm from Brazil.", "Prazer. Eu sou do Brasil."],
+   ["jin", "Cool! What do you do?", "Legal! O que você faz?"],
+   ["rafa", "I'm a student. I study English every day.", "Sou estudante. Estudo inglês todo dia."],
+   ["jin", "Me too. I have a class at nine.", "Eu também. Tenho aula às nove."],
+   ["rafa", "What time is it now?", "Que horas são agora?"],
+   ["jin", "It's eight forty-five.", "São oito e quarenta e cinco."],
+   ["rafa", "Oh no! My class is at nine too!", "Ah, não! Minha aula também é às nove!"],
+   ["jin", "Then let's go together. The school is next to the bank.", "Então vamos juntos. A escola fica ao lado do banco."]
+  ],
+  "q": [
+   {"q": "De onde o Jin é?", "o": ["Chicago", "Brasil", "Seul"], "a": 0},
+   {"q": "O que a outra pessoa faz?", "o": ["É estudante", "É professora", "Trabalha num banco"], "a": 0},
+   {"q": "Que horas são?", "o": ["8:45", "9:00", "8:15"], "a": 0},
+   {"q": "Onde fica a escola?", "o": ["Ao lado do banco", "Atrás do café", "Em frente ao parque"], "a": 0}
+  ]
+ },
+ {
+  "id": "l2",
+  "t": "Planos de Domingo",
+  "lv": "A1",
+  "arc": 1,
+  "lines": [
+   ["mina", "Hello? Are you busy?", "Alô? Você está ocupad{o|a}?"],
+   ["rafa", "No, I'm not. I'm at home.", "Não. Estou em casa."],
+   ["mina", "Do you want to go to the park on Sunday?", "Quer ir ao parque no domingo?"],
+   ["rafa", "Sure! What time?", "Claro! Que horas?"],
+   ["mina", "At ten in the morning. I always run on Sundays.", "Às dez da manhã. Eu sempre corro aos domingos."],
+   ["rafa", "I can't run very well, but I can walk.", "Não consigo correr muito bem, mas consigo caminhar."],
+   ["mina", "That's fine. After that, we can have lunch.", "Tudo bem. Depois, podemos almoçar."],
+   ["rafa", "Great. I love Japanese food.", "Ótimo. Eu amo comida japonesa."],
+   ["mina", "Me too! There's a good restaurant near the park.", "Eu também! Tem um restaurante bom perto do parque."],
+   ["rafa", "Perfect. See you on Sunday!", "Perfeito. Até domingo!"]
+  ],
+  "q": [
+   {"q": "Quando eles vão ao parque?", "o": ["No domingo", "No sábado", "Na segunda"], "a": 0},
+   {"q": "A que horas?", "o": ["Às dez da manhã", "Às duas da tarde", "Às oito da noite"], "a": 0},
+   {"q": "O que a Mina sempre faz aos domingos?", "o": ["Corre", "Cozinha", "Estuda"], "a": 0},
+   {"q": "Que comida eles vão comer?", "o": ["Japonesa", "Italiana", "Brasileira"], "a": 0}
+  ]
+ },
+ {
+  "id": "l3",
+  "t": "O Fim de Semana do Jin",
+  "lv": "A2",
+  "arc": 2,
+  "lines": [
+   ["mina", "How was your weekend, Jin?", "Como foi seu fim de semana, Jin?"],
+   ["jin", "It was great! I went to the beach with my brother.", "Foi ótimo! Fui à praia com meu irmão."],
+   ["rafa", "Lucky you! Was it hot?", "Que sorte! Estava calor?"],
+   ["jin", "Very hot. We swam a lot and ate fish for lunch.", "Muito calor. Nadamos muito e comemos peixe no almoço."],
+   ["mina", "I stayed home. I was studying for the exam.", "Eu fiquei em casa. Estava estudando para a prova."],
+   ["rafa", "What about next weekend? Do you have any plans?", "E no próximo fim de semana? Vocês têm planos?"],
+   ["jin", "I'm going to visit my parents. They live in Busan.", "Vou visitar meus pais. Eles moram em Busan."],
+   ["mina", "I'm going to rest. I'm too tired!", "Eu vou descansar. Estou cansada demais!"],
+   ["rafa", "I think I'll go to the beach too. It sounds fun.", "Acho que também vou à praia. Parece divertido."],
+   ["jin", "You should! But take a lot of water.", "Deveria! Mas leve bastante água."]
+  ],
+  "q": [
+   {"q": "Com quem o Jin foi à praia?", "o": ["Com o irmão", "Com a Mina", "Com os pais"], "a": 0},
+   {"q": "O que a Mina fez no fim de semana?", "o": ["Estudou em casa", "Foi à praia", "Visitou os pais"], "a": 0},
+   {"q": "Onde moram os pais do Jin?", "o": ["Em Busan", "Em Seul", "Em Chicago"], "a": 0},
+   {"q": "Que conselho o Jin dá?", "o": ["Levar bastante água", "Ir de manhã cedo", "Não nadar"], "a": 0}
+  ]
+ },
+ {
+  "id": "l4",
+  "t": "A Entrevista da Mina",
+  "lv": "B1",
+  "arc": 3,
+  "lines": [
+   ["jin", "Mina, how did your interview go?", "Mina, como foi sua entrevista?"],
+   ["mina", "I think it went well. They asked me lots of questions.", "Acho que foi bem. Eles me fizeram muitas perguntas."],
+   ["rafa", "What kind of questions?", "Que tipo de perguntas?"],
+   ["mina", "They asked how long I've been teaching. I said six years.", "Perguntaram há quanto tempo eu dou aula. Eu disse que há seis anos."],
+   ["jin", "Have you ever worked abroad?", "Você já trabalhou no exterior?"],
+   ["mina", "Yes, I have. I worked in London for a year.", "Sim. Trabalhei em Londres por um ano."],
+   ["rafa", "When will you know the answer?", "Quando você vai saber a resposta?"],
+   ["mina", "They said they would call me by Friday.", "Disseram que me ligariam até sexta."],
+   ["jin", "If they offer you the job, will you accept it?", "Se oferecerem a vaga, você vai aceitar?"],
+   ["mina", "It depends. I'd have to move to another city.", "Depende. Eu teria que me mudar para outra cidade."],
+   ["rafa", "We'd miss you! But you should do what's best for you.", "Sentiríamos sua falta! Mas você deveria fazer o que for melhor para você."]
+  ],
+  "q": [
+   {"q": "Há quanto tempo a Mina dá aula?", "o": ["Seis anos", "Um ano", "Dois anos"], "a": 0},
+   {"q": "Onde a Mina trabalhou no exterior?", "o": ["Em Londres", "Em Nova York", "Em Tóquio"], "a": 0},
+   {"q": "Quando ela vai saber a resposta?", "o": ["Até sexta", "Amanhã", "No mês que vem"], "a": 0},
+   {"q": "Qual é a dificuldade de aceitar a vaga?", "o": ["Ela teria que se mudar", "O salário é baixo", "O horário é ruim"], "a": 0}
+  ]
+ },
+ {
+  "id": "l5",
+  "t": "Notícia no Rádio",
+  "lv": "B2",
+  "arc": 4,
+  "lines": [
+   ["narr", "Good evening. A new portal was discovered near the river this morning.", "Boa noite. Um novo portal foi descoberto perto do rio hoje de manhã."],
+   ["narr", "The area has been closed, and residents have been asked to stay inside.", "A área foi fechada, e os moradores foram orientados a ficar em casa."],
+   ["narr", "According to the police, nobody was hurt.", "Segundo a polícia, ninguém se feriu."],
+   ["jin", "Did you hear that? Near the river!", "Você ouviu isso? Perto do rio!"],
+   ["mina", "Yes. The Director told me the team would be sent tomorrow.", "Ouvi. A Diretora me disse que a equipe seria enviada amanhã."],
+   ["rafa", "Did she say who would lead it?", "Ela disse quem ia liderar?"],
+   ["mina", "She said she hadn't decided yet.", "Ela disse que ainda não tinha decidido."],
+   ["jin", "If I had known, I would have trained harder this week.", "Se eu soubesse, teria treinado mais esta semana."],
+   ["mina", "You always say that.", "Você sempre diz isso."]
+  ],
+  "q": [
+   {"q": "Onde o portal foi descoberto?", "o": ["Perto do rio", "No centro", "Na ponte"], "a": 0},
+   {"q": "O que pediram aos moradores?", "o": ["Que ficassem em casa", "Que saíssem da cidade", "Que fossem ao rio"], "a": 0},
+   {"q": "Quando a equipe vai ser enviada?", "o": ["Amanhã", "Hoje à noite", "Na semana que vem"], "a": 0},
+   {"q": "Quem vai liderar a equipe?", "o": ["Ainda não foi decidido", "O Jin", "A Mina"], "a": 0}
+  ]
+ },
+ {
+  "id": "l6",
+  "t": "Debate no Clube",
+  "lv": "C1",
+  "arc": 5,
+  "lines": [
+   ["mina", "Today's topic: should explorers work alone or in teams?", "Tema de hoje: exploradores devem trabalhar sozinhos ou em equipe?"],
+   ["jin", "Although working alone is faster, it's far more dangerous.", "Embora trabalhar sozinho seja mais rápido, é muito mais perigoso."],
+   ["rafa", "I agree. Moreover, teams can share ideas.", "Concordo. Além disso, equipes podem compartilhar ideias."],
+   ["mina", "However, some people simply work better alone.", "Porém, algumas pessoas simplesmente trabalham melhor sozinhas."],
+   ["jin", "What really matters is safety, not speed.", "O que realmente importa é a segurança, não a velocidade."],
+   ["rafa", "Not only are teams safer, but they're also more fun.", "Equipes não só são mais seguras, como também mais divertidas."],
+   ["mina", "Fair point. Therefore, I suggest that new explorers work in teams.", "Bom argumento. Portanto, sugiro que exploradores novos trabalhem em equipe."],
+   ["jin", "And experienced ones?", "E os experientes?"],
+   ["mina", "They can choose, as long as they tell someone where they are.", "Podem escolher, desde que avisem alguém onde estão."]
+  ],
+  "q": [
+   {"q": "Segundo o Jin, qual é a vantagem de trabalhar sozinho?", "o": ["É mais rápido", "É mais seguro", "É mais divertido"], "a": 0},
+   {"q": "Para o Jin, o que realmente importa?", "o": ["A segurança", "A velocidade", "O dinheiro"], "a": 0},
+   {"q": "O que a Mina sugere para os exploradores novos?", "o": ["Trabalhar em equipe", "Trabalhar sozinhos", "Não trabalhar à noite"], "a": 0},
+   {"q": "Qual é a condição para os experientes escolherem?", "o": ["Avisar alguém onde estão", "Ter cinco anos de clube", "Levar um mapa"], "a": 0}
+  ]
+ },
+ {
+  "id": "l7",
+  "t": "Mudança de Portão",
+  "lv": "A2",
+  "arc": 6,
+  "lines": [
+   ["narr", "Attention, please. Flight 82 to New York is now boarding at gate C14.", "Atenção, por favor. O voo 82 para Nova York está embarcando no portão C14."],
+   ["rafa", "C14? My boarding pass says B12!", "C14? Meu cartão de embarque diz B12!"],
+   ["jin", "The gate changed. Let's hurry, it's on the other side.", "O portão mudou. Vamos depressa, fica do outro lado."],
+   ["narr", "Passengers with small children may board first.", "Passageiros com crianças pequenas podem embarcar primeiro."],
+   ["rafa", "Excuse me, is this the line for New York?", "Com licença, esta é a fila para Nova York?"],
+   ["jin", "Yes. And we're in group three, so we have to wait a bit.", "É. E estamos no grupo três, então temos que esperar um pouco."],
+   ["narr", "We now invite passengers in groups one and two to board.", "Agora convidamos os passageiros dos grupos um e dois para embarcar."],
+   ["rafa", "Phew. Do I have time to buy some water?", "Ufa. Dá tempo de comprar água?"],
+   ["jin", "Yes, but be quick. The café is just behind us.", "Dá, mas seja rápid{o|a}. O café fica bem atrás de nós."]
+  ],
+  "q": [
+   {"q": "Qual é o portão certo?", "o": ["C14", "B12", "C12"], "a": 0},
+   {"q": "Quem pode embarcar primeiro?", "o": ["Passageiros com crianças pequenas", "Passageiros do grupo três", "Todos ao mesmo tempo"], "a": 0},
+   {"q": "Em que grupo eles estão?", "o": ["Grupo três", "Grupo um", "Grupo dois"], "a": 0},
+   {"q": "Onde fica o café?", "o": ["Logo atrás deles", "No portão C14", "No andar de cima"], "a": 0}
+  ]
+ },
+ {
+  "id": "l8",
+  "t": "A Reunião Decisiva",
+  "lv": "C1",
+  "arc": 7,
+  "lines": [
+   ["mina", "Let's begin. The main question is whether we open the new portal this month.", "Vamos começar. A questão principal é se abrimos o novo portal este mês."],
+   ["jin", "I'd say we're ready. The team has trained for weeks.", "Eu diria que estamos prontos. A equipe treinou por semanas."],
+   ["rafa", "I see your point, but the data suggests that the portal is still unstable.", "Entendo seu ponto, mas os dados sugerem que o portal ainda está instável."],
+   ["mina", "What do you mean by unstable?", "O que você quer dizer com instável?"],
+   ["rafa", "It tends to change size at night. It might close while we're inside.", "Ele costuma mudar de tamanho à noite. Pode fechar enquanto estivermos lá dentro."],
+   ["jin", "If we had better tools, that wouldn't be a problem.", "Se tivéssemos ferramentas melhores, isso não seria um problema."],
+   ["mina", "Then I recommend that we buy new tools and wait two weeks.", "Então recomendo que compremos ferramentas novas e esperemos duas semanas."],
+   ["jin", "Fine. It's time we invested in better equipment anyway.", "Tá bom. Já está na hora de investirmos em equipamento melhor, de qualquer jeito."],
+   ["mina", "To sum up: new tools, two weeks, and then we decide again.", "Resumindo: ferramentas novas, duas semanas, e depois decidimos de novo."]
+  ],
+  "q": [
+   {"q": "Qual é a questão principal da reunião?", "o": ["Se abrem o portal este mês", "Quem vai liderar a equipe", "Quanto custa o equipamento"], "a": 0},
+   {"q": "Por que o portal preocupa?", "o": ["Muda de tamanho à noite e pode fechar", "É muito longe", "Tem muitos monstros"], "a": 0},
+   {"q": "O que a Mina recomenda?", "o": ["Comprar ferramentas e esperar duas semanas", "Abrir o portal hoje", "Cancelar a missão"], "a": 0},
+   {"q": "Como a Mina encerra a reunião?", "o": ["Com um resumo", "Com uma pergunta", "Com uma votação"], "a": 0}
+  ]
+ }
+]

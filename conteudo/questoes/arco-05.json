@@ -1,0 +1,137 @@
+[
+ {
+  "capitulo": "Sonhos Impossíveis",
+  "perguntas": [
+   {"q": "\"Se eu fosse rico...\"", "o": ["If I were rich...", "If I am rich...", "If I will be rich..."], "a": 0, "why": "Imaginário → if + passado (were)."},
+   {"q": "I wish I ___ taller.", "o": ["were", "am", "will be"], "a": 0, "why": "Wish sobre o presente → passado."},
+   {"q": "\"Queria ter estudado mais\"", "o": ["I wish I had studied more.", "I wish I studied more.", "I wish I have studied more."], "a": 0, "why": "Arrependimento do passado → had + particípio."},
+   {"q": "If I ___ a dragon, I would fly.", "o": ["had", "have", "will have"], "a": 0, "why": "Imaginário → if + passado."},
+   {"q": "'Eu queria que fosse sexta.'", "o": ["I wish it were Friday.", "I wish it is Friday.", "I wish it will be Friday."], "a": 0, "why": "Wish sobre o presente → passado (were)."},
+   {"q": "What would you do if you ___ the lottery?", "o": ["won", "win", "will win"], "a": 0, "why": "If + passado, would."},
+   {"q": "'I'd go' significa:", "o": ["eu iria", "eu fui", "eu vou"], "a": 0, "why": "I'd go = I would go."},
+   {"q": "If I were you, I ___ talk to her.", "o": ["would", "will", "am"], "a": 0, "why": "Conselho: If I were you, I would..."},
+   {"q": "'If only I knew' significa:", "o": ["Se ao menos eu soubesse", "Só eu sei", "Se eu souber"], "a": 0, "why": "If only = se ao menos."}
+  ],
+  "frases_extras": [
+   ["If I had more time, I would travel.", "Se eu tivesse mais tempo, viajaria."],
+   ["If I were you, I would accept.", "Se eu fosse você, aceitaria."],
+   ["I wish I lived near the beach.", "Queria morar perto da praia."],
+   ["What would you do with a million dollars?", "O que você faria com um milhão de dólares?"],
+   ["I wish I had studied more.", "Queria ter estudado mais."],
+   ["She would help if she could.", "Ela ajudaria se pudesse."]
+  ]
+ },
+ {
+  "capitulo": "Feito Por Eles",
+  "perguntas": [
+   {"q": "\"O portal foi descoberto\"", "o": ["The portal was discovered.", "The portal discovered.", "The portal is discover."], "a": 0, "why": "Was + particípio."},
+   {"q": "The bridge ___ built in 1966.", "o": ["was", "is", "were"], "a": 0, "why": "Passado, singular → was built."},
+   {"q": "Passiva de \"They will send us\":", "o": ["We will be sent.", "We will sent.", "We are will sent."], "a": 0, "why": "Will + be + particípio."},
+   {"q": "Spanish ___ spoken in Mexico.", "o": ["is", "are", "was been"], "a": 0, "why": "Presente passivo: is + particípio."},
+   {"q": "The cake was ___ by my mother.", "o": ["made", "make", "making"], "a": 0, "why": "Was + particípio."},
+   {"q": "'A janela está sendo limpa.'", "o": ["The window is being cleaned.", "The window is cleaning.", "The window is been cleaned."], "a": 0, "why": "Is being + particípio."},
+   {"q": "The letters ___ sent yesterday.", "o": ["were", "was", "are"], "a": 0, "why": "Plural no passado → were."},
+   {"q": "Passiva de 'Someone stole my bike':", "o": ["My bike was stolen.", "My bike stole.", "My bike was steal."], "a": 0, "why": "Steal → stole → stolen."},
+   {"q": "Em 'written by Tolkien', 'by' indica:", "o": ["quem fez", "quando foi", "onde foi"], "a": 0, "why": "By = por (agente)."}
+  ],
+  "frases_extras": [
+   ["This house was built in 1950.", "Esta casa foi construída em 1950."],
+   ["English is spoken in many countries.", "O inglês é falado em muitos países."],
+   ["The letter was sent yesterday.", "A carta foi enviada ontem."],
+   ["The road is being repaired now.", "A estrada está sendo consertada agora."],
+   ["The results will be announced tomorrow.", "Os resultados serão anunciados amanhã."],
+   ["My bike was stolen last week.", "Minha bicicleta foi roubada na semana passada."]
+  ]
+ },
+ {
+  "capitulo": "Ele Disse Que...",
+  "perguntas": [
+   {"q": "\"I am hungry,\" he said. →", "o": ["He said he was hungry.", "He said he is hunger.", "He told he was hungry."], "a": 0, "why": "Am → was. E \"told\" precisaria de uma pessoa."},
+   {"q": "She ___ me to wait.", "o": ["told", "said"], "a": 0, "why": "Tell + pessoa."},
+   {"q": "\"Will you come?\" → She asked if I ___ come.", "o": ["would", "will", "did"], "a": 0, "why": "Will → would."},
+   {"q": "'I can swim,' she said. →", "o": ["She said she could swim.", "She said she can swam.", "She told she could swim."], "a": 0, "why": "Can → could."},
+   {"q": "He ___ me that he was busy.", "o": ["told", "said", "asked"], "a": 0, "why": "Tell + pessoa."},
+   {"q": "'Are you tired?' he asked. →", "o": ["He asked if I was tired.", "He asked was I tired.", "He asked if was I tired."], "a": 0, "why": "Pergunta indireta: if + ordem normal."},
+   {"q": "'Wait here,' she said. →", "o": ["She told me to wait here.", "She said me wait here.", "She told me wait here."], "a": 0, "why": "Ordem → tell + pessoa + TO."},
+   {"q": "'I like pizza,' he said. (ainda é verdade)", "o": ["He said he likes pizza.", "He said he like pizza.", "He told he likes pizza."], "a": 0, "why": "Se ainda é verdade, o tempo pode ficar."},
+   {"q": "'I have finished,' she said. →", "o": ["She said she had finished.", "She said she has finish.", "She said she finishing."], "a": 0, "why": "Have finished → had finished."}
+  ],
+  "frases_extras": [
+   ["She said she was tired.", "Ela disse que estava cansada."],
+   ["He told me to wait outside.", "Ele me disse para esperar lá fora."],
+   ["They asked if I was ready.", "Eles perguntaram se eu estava pront{o|a}."],
+   ["She said she would call later.", "Ela disse que ligaria mais tarde."],
+   ["He said he had seen the movie.", "Ele disse que tinha visto o filme."],
+   ["I told him that I was busy.", "Eu disse a ele que estava ocupad{o|a}."]
+  ]
+ },
+ {
+  "capitulo": "Antes de Tudo",
+  "perguntas": [
+   {"q": "When I arrived, the bus ___ left.", "o": ["had", "has", "was"], "a": 0, "why": "Passado antes do passado → had left."},
+   {"q": "I've ___ studying all day.", "o": ["been", "be", "being"], "a": 0, "why": "Have been + ING."},
+   {"q": "\"I've read three chapters.\" mostra:", "o": ["Resultado", "Processo"], "a": 0, "why": "Sem -ING e com número → resultado."},
+   {"q": "By the time we arrived, the movie ___.", "o": ["had started", "has started", "starts"], "a": 0, "why": "Passado antes do passado → had + particípio."},
+   {"q": "'Ela trabalha aqui há 3 anos.' (e continua)", "o": ["She has been working here for 3 years.", "She is working here for 3 years.", "She works here since 3 years."], "a": 0, "why": "Have been + ING + for."},
+   {"q": "I ___ never seen snow before that trip.", "o": ["had", "have", "was"], "a": 0, "why": "Antes de um ponto no passado → had."},
+   {"q": "How long have you ___ waiting?", "o": ["been", "being", "be"], "a": 0, "why": "Have been + ING."},
+   {"q": "Past perfect =", "o": ["had + particípio", "have + ING", "was + particípio"], "a": 0, "why": "I had seen, she had gone."},
+   {"q": "They were tired because they ___ all day.", "o": ["had been running", "have running", "were run"], "a": 0, "why": "Causa anterior no passado → had been + ING."}
+  ],
+  "frases_extras": [
+   ["The train had left when we arrived.", "O trem já tinha partido quando chegamos."],
+   ["I had never seen snow before.", "Eu nunca tinha visto neve antes."],
+   ["She has been working all day.", "Ela está trabalhando o dia todo."],
+   ["How long have you been waiting?", "Há quanto tempo você está esperando?"],
+   ["We had already eaten dinner.", "Nós já tínhamos jantado."],
+   ["It has been raining since this morning.", "Está chovendo desde hoje de manhã."]
+  ]
+ },
+ {
+  "capitulo": "Habilidades Ocultas",
+  "perguntas": [
+   {"q": "\"put off\" significa:", "o": ["adiar", "apagar", "vestir"], "a": 0, "why": "Put off = adiar. Put on = vestir."},
+   {"q": "\"Não desista!\"", "o": ["Don't give up!", "Don't give in up!", "Don't get up!"], "a": 0, "why": "Give up = desistir. Get up = levantar."},
+   {"q": "I'm looking forward to ___ you.", "o": ["seeing", "see", "saw"], "a": 0, "why": "Aqui \"to\" é preposição, então o verbo vai com -ING."},
+   {"q": "'Descobri a verdade.'", "o": ["I found out the truth.", "I found up the truth.", "I looked out the truth."], "a": 0, "why": "Find out = descobrir."},
+   {"q": "'look after' significa:", "o": ["cuidar de", "procurar", "olhar para trás"], "a": 0, "why": "Look after the kids = cuidar das crianças."},
+   {"q": "'turn down an offer' significa:", "o": ["recusar uma oferta", "aumentar uma oferta", "aceitar uma oferta"], "a": 0, "why": "Turn down = recusar."},
+   {"q": "She came ___ with a great idea.", "o": ["up", "out", "in"], "a": 0, "why": "Come up with = ter (uma ideia)."},
+   {"q": "'get over a cold' significa:", "o": ["se recuperar de um resfriado", "pegar um resfriado", "ignorar um resfriado"], "a": 0, "why": "Get over = superar, se recuperar."},
+   {"q": "Can you figure ___ this puzzle?", "o": ["out", "up", "on"], "a": 0, "why": "Figure out = descobrir, entender."}
+  ],
+  "frases_extras": [
+   ["Don't give up on your dreams.", "Não desista dos seus sonhos."],
+   ["I ran into an old friend.", "Encontrei um velho amigo por acaso."],
+   ["Can you look after my dog?", "Você pode cuidar do meu cachorro?"],
+   ["She turned down the job offer.", "Ela recusou a oferta de emprego."],
+   ["We need to figure out a plan.", "Precisamos bolar um plano."],
+   ["I'm looking forward to the weekend.", "Estou ansios{o|a} pelo fim de semana."]
+  ]
+ },
+ {
+  "capitulo": "O Arrependimento",
+  "perguntas": [
+   {"q": "If I ___ known, I would have helped.", "o": ["had", "have", "would"], "a": 0, "why": "3ª condicional: if + had + particípio."},
+   {"q": "\"Você deveria ter me contado.\"", "o": ["You should have told me.", "You should told me.", "You must told me."], "a": 0, "why": "Should have + particípio."},
+   {"q": "The portal ___ discovered yesterday.", "o": ["was", "is"], "a": 0, "why": "Passiva no passado."},
+   {"q": "She said she ___ tired.", "o": ["was", "is being"], "a": 0, "why": "Discurso indireto: am → was."},
+   {"q": "\"Get over\" significa:", "o": ["superar", "pegar", "passar por cima de alguém"], "a": 0, "why": "Get over a breakup = superar um término."},
+   {"q": "'Ela deve ter esquecido.' (quase certeza)", "o": ["She must have forgotten.", "She must forgot.", "She should forgotten."], "a": 0, "why": "Must have + particípio."},
+   {"q": "If we had left earlier, we ___ the train.", "o": ["would have caught", "would catch", "will have caught"], "a": 0, "why": "3ª condicional → would have + particípio."},
+   {"q": "'Ele não pode ter feito isso.' (impossível)", "o": ["He can't have done that.", "He mustn't have do that.", "He can't did that."], "a": 0, "why": "Can't have + particípio."},
+   {"q": "'could have' significa:", "o": ["poderia ter", "deveria ter", "deve ter"], "a": 0, "why": "Should have = deveria ter."},
+   {"q": "The letter ___ written in 1920.", "o": ["was", "is being", "were"], "a": 0, "why": "Passiva no passado, singular → was."}
+  ],
+  "frases_extras": [
+   ["If I had known, I would have come.", "Se eu soubesse, teria vindo."],
+   ["You should have told me earlier.", "Você deveria ter me contado antes."],
+   ["She must have forgotten the meeting.", "Ela deve ter esquecido a reunião."],
+   ["He can't have finished already.", "Não é possível que ele já tenha terminado."],
+   ["We could have won the game.", "Nós poderíamos ter ganhado o jogo."],
+   ["If we had left earlier, we wouldn't have missed it.", "Se tivéssemos saído mais cedo, não teríamos perdido."],
+   ["I shouldn't have eaten so much.", "Eu não deveria ter comido tanto."],
+   ["They might have taken the wrong bus.", "Eles podem ter pegado o ônibus errado."]
+  ]
+ }
+]

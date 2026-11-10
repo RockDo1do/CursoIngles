@@ -1,0 +1,252 @@
+[
+ {
+  "capitulo": "Rumo a Nova York",
+  "perguntas": [
+   {"q": "'boarding pass' é:", "o": ["cartão de embarque", "passaporte", "portão de embarque"], "a": 0, "why": "Boarding = embarque. Pass = passe, cartão."},
+   {"q": "Ao entregar algo: 'Aqui está.'", "o": ["Here you are.", "Here are you.", "Here is you."], "a": 0, "why": "Expressão fixa: Here you are."},
+   {"q": "'My flight is delayed' significa:", "o": ["Meu voo está atrasado", "Meu voo foi cancelado", "Meu voo está lotado"], "a": 0, "why": "Delayed = atrasado."},
+   {"q": "'bags to check' são:", "o": ["malas para despachar", "malas para revisar", "malas de mão"], "a": 0, "why": "Check a bag = despachar uma mala."},
+   {"q": "'Assento no corredor'", "o": ["aisle seat", "window seat", "hall seat"], "a": 0, "why": "Aisle (pronuncia-se 'ail') = corredor."},
+   {"q": "Boa resposta para 'What's the purpose of your visit?'", "o": ["I'm here on vacation.", "I'm here since Monday.", "I'm here by plane."], "a": 0, "why": "Purpose = motivo."},
+   {"q": "'gate B12' é:", "o": ["o portão B12", "a bagagem B12", "o assento B12"], "a": 0, "why": "Gate = portão."},
+   {"q": "'Boarding starts at 9:40' significa:", "o": ["O embarque começa às 9:40", "O voo chega às 9:40", "O check-in fecha às 9:40"], "a": 0, "why": "Boarding = embarque."},
+   {"q": "'canceled' significa:", "o": ["cancelado", "atrasado", "confirmado"], "a": 0, "why": "Canceled = cancelado."}
+  ]
+ },
+ {
+  "capitulo": "O Hotel",
+  "perguntas": [
+   {
+    "q": "'Tenho uma reserva no nome de Ana.'",
+    "o": ["I have a reservation under the name Ana.", "I have a reservation in the name of Ana's.", "I have reservation on Ana."],
+    "a": 0,
+    "why": "Expressão fixa: under the name..."
+   },
+   {"q": "'double room' é:", "o": ["quarto de casal", "dois quartos", "quarto duplo de solteiro"], "a": 0, "why": "Double = de casal. Single = de solteiro."},
+   {"q": "'Is breakfast included?' pergunta:", "o": ["se o café da manhã está incluído", "onde é o café", "quando é o almoço"], "a": 0, "why": "Included = incluído."},
+   {"q": "'O chuveiro não está funcionando.'", "o": ["The shower isn't working.", "The shower doesn't works.", "The shower not working."], "a": 0, "why": "Isn't working = não está funcionando."},
+   {"q": "Pedido educado:", "o": ["Could I have an extra towel?", "Give me towel.", "I want towel now."], "a": 0, "why": "Could I have...? é educado."},
+   {"q": "'key card' é:", "o": ["cartão-chave", "cartão de crédito", "cartão de visita"], "a": 0, "why": "O cartão que abre a porta do quarto."},
+   {"q": "Em 'I'm afraid the TV is broken', 'I'm afraid':", "o": ["suaviza a reclamação", "quer dizer que estou com medo", "é uma ameaça"], "a": 0, "why": "Aqui significa 'infelizmente'."},
+   {"q": "'How was your stay?' significa:", "o": ["Como foi sua estadia?", "Quanto tempo você fica?", "Onde você ficou?"], "a": 0, "why": "Stay = estadia."},
+   {"q": "'check-out' é:", "o": ["a saída do hotel", "a entrada no hotel", "o pagamento antecipado"], "a": 0, "why": "Check-in = entrada."}
+  ],
+  "frases_extras": [
+   ["I'd like a room for two nights.", "Eu gostaria de um quarto para duas noites."],
+   ["What time is check-out?", "A que horas é o check-out?"],
+   ["Could I have an extra pillow?", "Poderia me dar um travesseiro extra?"],
+   ["The Wi-Fi isn't working in my room.", "O Wi-Fi não está funcionando no meu quarto."],
+   ["Is there a gym in the hotel?", "Tem academia no hotel?"],
+   ["Can I leave my bags here?", "Posso deixar minhas malas aqui?"]
+  ]
+ },
+ {
+  "capitulo": "Perdidos em Manhattan",
+  "perguntas": [
+   {"q": "'Siga reto.'", "o": ["Go straight.", "Go right.", "Go back straight."], "a": 0, "why": "Straight = reto."},
+   {"q": "'Vire à esquerda.'", "o": ["Turn left.", "Turn right.", "Turn the left."], "a": 0, "why": "Left = esquerda. Right = direita."},
+   {"q": "'across from the bank' significa:", "o": ["em frente ao banco, do outro lado", "dentro do banco", "atrás do banco"], "a": 0, "why": "Across from = do outro lado, em frente."},
+   {"q": "Para chamar um desconhecido:", "o": ["Excuse me,", "Sorry me,", "Hey you,"], "a": 0, "why": "Excuse me é educado."},
+   {"q": "'It's a ten-minute walk' significa:", "o": ["São dez minutos a pé", "Fica a dez quarteirões", "Abre em dez minutos"], "a": 0, "why": "Walk = caminhada."},
+   {"q": "'at the corner'", "o": ["na esquina", "no centro", "no fim da rua"], "a": 0, "why": "Corner = esquina."},
+   {"q": "'You can't miss it' significa:", "o": ["Não tem como errar", "Você não pode perder isso", "Você não pode ir"], "a": 0, "why": "É fácil de achar."},
+   {"q": "'Como eu chego ao museu?'", "o": ["How do I get to the museum?", "How I get to the museum?", "How do I arrive the museum?"], "a": 0, "why": "How do I get to...?"},
+   {"q": "'block' em direções é:", "o": ["quarteirão", "bloqueio", "prédio"], "a": 0, "why": "Two blocks = dois quarteirões."}
+  ]
+ },
+ {
+  "capitulo": "Compras na Quinta Avenida",
+  "perguntas": [
+   {"q": "'Caro demais'", "o": ["too expensive", "expensive enough", "enough expensive"], "a": 0, "why": "Too + adjetivo."},
+   {"q": "'Grande o suficiente'", "o": ["big enough", "enough big", "too enough big"], "a": 0, "why": "Adjetivo + enough."},
+   {"q": "'Não tenho dinheiro suficiente.'", "o": ["I don't have enough money.", "I don't have money enough.", "I don't have too money."], "a": 0, "why": "Enough + substantivo."},
+   {"q": "'Posso experimentar?' (uma roupa)", "o": ["Can I try it on?", "Can I try on it?", "Can I prove it?"], "a": 0, "why": "Com pronome: try it on."},
+   {"q": "'fitting room' é:", "o": ["provador", "academia", "depósito"], "a": 0, "why": "Fit = servir (roupa)."},
+   {"q": "'It's on sale' significa:", "o": ["Está em promoção", "Está à venda, só isso", "Está esgotado"], "a": 0, "why": "On sale = em promoção."},
+   {"q": "'I'm just looking' significa:", "o": ["Só estou olhando", "Estou procurando algo", "Estou com pressa"], "a": 0, "why": "Frase útil quando o vendedor oferece ajuda."},
+   {"q": "She is ___ young to drive.", "o": ["too", "enough", "so"], "a": 0, "why": "Too young = jovem demais."},
+   {"q": "'medium' em roupas é:", "o": ["tamanho M", "tamanho G", "tamanho P"], "a": 0, "why": "Small, medium, large."}
+  ]
+ },
+ {
+  "capitulo": "No Médico",
+  "perguntas": [
+   {"q": "'Estou com dor de cabeça.'", "o": ["I have a headache.", "I am headache.", "I have a head pain ache."], "a": 0, "why": "Have + headache."},
+   {"q": "'sore throat' é:", "o": ["dor de garganta", "garganta seca", "tosse"], "a": 0, "why": "Sore = dolorido. Throat = garganta."},
+   {"q": "'Minhas costas doem.'", "o": ["My back hurts.", "My back hurt me is.", "My back is hurts."], "a": 0, "why": "Back = costas. Hurts = dói."},
+   {"q": "'twice a day' significa:", "o": ["duas vezes por dia", "a cada dois dias", "dois dias"], "a": 0, "why": "Once = uma vez. Twice = duas vezes."},
+   {"q": "'Get well soon!' serve para:", "o": ["desejar melhoras", "dar parabéns", "dizer adeus"], "a": 0, "why": "Melhoras!"},
+   {"q": "'fever' é:", "o": ["febre", "fervura", "favor"], "a": 0, "why": "I have a fever = estou com febre."},
+   {"q": "Conselho médico correto:", "o": ["You should drink more water.", "You should to drink more water.", "You should drinking more water."], "a": 0, "why": "Should + verbo puro."},
+   {"q": "'pharmacy' é:", "o": ["farmácia", "fazenda", "hospital"], "a": 0, "why": "Nos EUA também se diz drugstore."},
+   {"q": "'I don't feel well' significa:", "o": ["Não estou me sentindo bem", "Não sinto nada", "Não me sinto à vontade com isso"], "a": 0, "why": "Feel well = sentir-se bem."}
+  ],
+  "frases_extras": [
+   ["I have a terrible headache.", "Estou com uma dor de cabeça terrível."],
+   ["My stomach hurts a lot.", "Meu estômago dói muito."],
+   ["I've had a cough for three days.", "Estou com tosse há três dias."],
+   ["You should stay in bed.", "Você deveria ficar de cama."],
+   ["Take two pills after each meal.", "Tome dois comprimidos depois de cada refeição."],
+   ["Do I need a prescription?", "Preciso de receita?"]
+  ]
+ },
+ {
+  "capitulo": "Alô? Quem Fala?",
+  "perguntas": [
+   {"q": "Ao atender: 'Aqui é o Rafa.'", "o": ["Rafa speaking.", "Here is Rafa.", "I am Rafa here."], "a": 0, "why": "Nome + speaking."},
+   {"q": "'Hold on, please' significa:", "o": ["Aguarde, por favor", "Desligue, por favor", "Segure isto"], "a": 0, "why": "Hold on = esperar na linha."},
+   {"q": "'Posso anotar um recado?'", "o": ["Can I take a message?", "Can I make a message?", "Can I write you message?"], "a": 0, "why": "Take a message = anotar um recado."},
+   {"q": "'call me back' significa:", "o": ["me ligar de volta", "me chamar para trás", "me mandar mensagem"], "a": 0, "why": "Back = de volta."},
+   {"q": "'You're breaking up' significa:", "o": ["Está cortando (a ligação)", "Você está terminando comigo", "Você está quebrando algo"], "a": 0, "why": "Em ligação, breaking up = sinal ruim."},
+   {"q": "'Could you speak up?' pede para:", "o": ["falar mais alto", "falar mais devagar", "parar de falar"], "a": 0, "why": "Speak up = falar mais alto."},
+   {"q": "'Poderia falar com a Mina?'", "o": ["Could I speak to Mina?", "Could I speak Mina?", "Could I talk with to Mina?"], "a": 0, "why": "Speak to + pessoa."},
+   {"q": "'She's not available' significa:", "o": ["Ela não está disponível", "Ela não é válida", "Ela não existe"], "a": 0, "why": "Available = disponível."},
+   {"q": "'I'll put you through' significa:", "o": ["Vou transferir a ligação", "Vou desligar", "Vou te deixar esperando"], "a": 0, "why": "Put through = transferir."}
+  ],
+  "frases_extras": [
+   ["Could I speak to the manager, please?", "Eu poderia falar com o gerente, por favor?"],
+   ["Can I take a message?", "Posso anotar um recado?"],
+   ["Sorry, I think you have the wrong number.", "Desculpe, acho que você ligou para o número errado."],
+   ["Could you speak a little slower?", "Você poderia falar um pouco mais devagar?"],
+   ["I'll call you back in ten minutes.", "Eu te ligo de volta em dez minutos."],
+   ["Please hold the line.", "Por favor, aguarde na linha."]
+  ]
+ },
+ {
+  "capitulo": "Conversa Fiada",
+  "perguntas": [
+   {"q": "It's cold today, ___?", "o": ["isn't it", "is it", "doesn't it"], "a": 0, "why": "Positiva → tag negativa com o mesmo verbo."},
+   {"q": "You aren't tired, ___?", "o": ["are you", "aren't you", "do you"], "a": 0, "why": "Negativa → tag positiva."},
+   {"q": "She can drive, ___?", "o": ["can't she", "can she", "doesn't she"], "a": 0, "why": "Can → can't."},
+   {"q": "It was ___ a good movie!", "o": ["such", "so", "very such"], "a": 0, "why": "Such + a + adjetivo + nome."},
+   {"q": "The movie was ___ good!", "o": ["so", "such", "such a"], "a": 0, "why": "So + adjetivo sozinho."},
+   {"q": "'What do you do?' pergunta:", "o": ["sua profissão", "o que está fazendo agora", "o que você quer"], "a": 0, "why": "Agora seria 'What are you doing?'."},
+   {"q": "'How's it going?' significa:", "o": ["Como vão as coisas?", "Para onde você vai?", "Como você vai embora?"], "a": 0, "why": "Cumprimento informal."},
+   {"q": "They live here, ___?", "o": ["don't they", "aren't they", "do they"], "a": 0, "why": "Presente simples → tag com do."},
+   {"q": "'Have a good one!' é:", "o": ["uma despedida informal", "um pedido", "uma pergunta"], "a": 0, "why": "Muito comum nos EUA."}
+  ],
+  "frases_extras": [
+   ["Lovely weather today, isn't it?", "Que tempo bom hoje, não é?"],
+   ["You work here, don't you?", "Você trabalha aqui, não é?"],
+   ["It's such a beautiful city!", "É uma cidade tão bonita!"],
+   ["The food was so good!", "A comida estava tão boa!"],
+   ["How's your week going?", "Como está indo a sua semana?"],
+   ["She can't swim, can she?", "Ela não sabe nadar, sabe?"]
+  ]
+ },
+ {
+  "capitulo": "O Mapa Misterioso",
+  "perguntas": [
+   {"q": "I have ___ idea!", "o": ["an", "a", "the"], "a": 0, "why": "Idea começa com som de vogal → an."},
+   {"q": "I saw a cat. ___ cat was black.", "o": ["The", "A", "An"], "a": 0, "why": "Segunda menção → the."},
+   {"q": "'A vida é bela.' (em geral)", "o": ["Life is beautiful.", "The life is beautiful.", "A life is beautiful."], "a": 0, "why": "Em geral, sem artigo."},
+   {"q": "___ sun is hot.", "o": ["The", "A", "(sem artigo)"], "a": 0, "why": "Coisa única → the."},
+   {"q": "'Ela mora no Brasil.'", "o": ["She lives in Brazil.", "She lives in the Brazil.", "She lives in a Brazil."], "a": 0, "why": "Países, em geral, sem artigo."},
+   {"q": "'Ele mora nos Estados Unidos.'", "o": ["He lives in the United States.", "He lives in United States.", "He lives in a United States."], "a": 0, "why": "Exceção: the United States."},
+   {"q": "'Eu vou de ônibus.'", "o": ["I go by bus.", "I go by the bus.", "I go by a bus."], "a": 0, "why": "By + meio de transporte, sem artigo."},
+   {"q": "'Eu amo música.' (em geral)", "o": ["I love music.", "I love the music.", "I love a music."], "a": 0, "why": "Em geral, sem artigo."},
+   {"q": "'the' é usado para:", "o": ["algo já conhecido ou único", "algo novo na conversa", "nomes de pessoas"], "a": 0, "why": "A / an apresenta algo novo."}
+  ],
+  "frases_extras": [
+   ["I saw a cat. The cat was black.", "Eu vi um gato. O gato era preto."],
+   ["Life is short.", "A vida é curta."],
+   ["She is an engineer.", "Ela é engenheira."],
+   ["The moon is beautiful tonight.", "A lua está linda hoje à noite."],
+   ["I go to school by bus.", "Eu vou para a escola de ônibus."],
+   ["Dogs are loyal animals.", "Os cachorros são animais leais."]
+  ]
+ },
+ {
+  "capitulo": "A Entrevista",
+  "perguntas": [
+   {"q": "'Fale sobre você.'", "o": ["Tell me about yourself.", "Say me about you.", "Talk me yourself."], "a": 0, "why": "Tell me about..."},
+   {"q": "'Sou bom em resolver problemas.'", "o": ["I'm good at solving problems.", "I'm good in solve problems.", "I'm good for solving problems."], "a": 0, "why": "Good at + ING."},
+   {"q": "'strengths' são:", "o": ["pontos fortes", "forças armadas", "exercícios"], "a": 0, "why": "Strength = força, ponto forte."},
+   {"q": "'Trabalho aqui há 3 anos.' (e continuo)", "o": ["I've been working here for 3 years.", "I work here since 3 years.", "I'm working here for 3 years ago."], "a": 0, "why": "Have been + ING + for."},
+   {"q": "'You're hired' significa:", "o": ["Você está contratado", "Você está cansado", "Você está demitido"], "a": 0, "why": "Demitido = fired."},
+   {"q": "'I'm a fast learner' significa:", "o": ["Aprendo rápido", "Corro rápido", "Estudo rápido demais"], "a": 0, "why": "Learner = quem aprende."},
+   {"q": "'When can you start?' pergunta:", "o": ["quando você pode começar", "quando você terminou", "quando você nasceu"], "a": 0, "why": "Start = começar."},
+   {"q": "In 2023, I ___ the Explorers' Club.", "o": ["joined", "have joined", "join"], "a": 0, "why": "Com data → passado simples."},
+   {"q": "'weaknesses' são:", "o": ["pontos fracos", "semanas", "fraquezas físicas apenas"], "a": 0, "why": "Weak = fraco."}
+  ],
+  "frases_extras": [
+   ["I'm good at solving problems.", "Sou {bom|boa} em resolver problemas."],
+   ["I've worked in sales for five years.", "Trabalho com vendas há cinco anos."],
+   ["My biggest strength is teamwork.", "Meu maior ponto forte é o trabalho em equipe."],
+   ["Why do you want this job?", "Por que você quer esta vaga?"],
+   ["I'm a fast learner.", "Aprendo rápido."],
+   ["I can start next Monday.", "Posso começar na próxima segunda."]
+  ]
+ },
+ {
+  "capitulo": "Mandei Consertar",
+  "perguntas": [
+   {"q": "'Mandei consertar meu celular.'", "o": ["I had my phone fixed.", "I fixed my phone by someone.", "I had fixed my phone."], "a": 0, "why": "Have + objeto + particípio."},
+   {"q": "'Cortei o cabelo' (no salão):", "o": ["I had my hair cut.", "I cut my hair myself.", "I had cut my hair."], "a": 0, "why": "Alguém cortou → had my hair cut."},
+   {"q": "She's ___ her nails done.", "o": ["having", "doing", "making"], "a": 0, "why": "Having + objeto + particípio."},
+   {"q": "A estrutura correta é:", "o": ["have + objeto + particípio", "have + particípio + objeto", "have + verbo-ING"], "a": 0, "why": "I had my car washed."},
+   {"q": "'I got my car washed' significa:", "o": ["Mandei lavar meu carro", "Eu lavei meu carro", "Ganhei um carro lavado"], "a": 0, "why": "Get também funciona como have aqui."},
+   {"q": "'Precisamos mandar pintar a casa.'", "o": ["We need to have the house painted.", "We need to paint the house by someone.", "We need have painted the house."], "a": 0, "why": "Have the house painted."},
+   {"q": "'I cut my hair' quer dizer:", "o": ["Eu mesmo cortei", "Alguém cortou para mim", "Vou cortar"], "a": 0, "why": "Sem have, foi você."},
+   {"q": "He had his armor ___.", "o": ["repaired", "repair", "repairing"], "a": 0, "why": "Particípio: repaired."},
+   {"q": "'blacksmith' é:", "o": ["ferreiro", "ladrão", "vendedor"], "a": 0, "why": "Quem trabalha com metal."}
+  ],
+  "frases_extras": [
+   ["I had my car washed yesterday.", "Mandei lavar meu carro ontem."],
+   ["She gets her hair cut every month.", "Ela corta o cabelo no salão todo mês."],
+   ["We need to have the roof fixed.", "Precisamos mandar consertar o telhado."],
+   ["He had his phone repaired.", "Ele mandou consertar o celular."],
+   ["Where do you get your nails done?", "Onde você faz as unhas?"],
+   ["I'm having my house painted.", "Estou mandando pintar minha casa."],
+   ["They had a new kitchen installed.", "Eles mandaram instalar uma cozinha nova."],
+   ["You should get your eyes checked.", "Você deveria fazer um exame de vista."]
+  ]
+ },
+ {
+  "capitulo": "Daqui a Um Ano",
+  "perguntas": [
+   {"q": "This time tomorrow, I ___ on the beach.", "o": ["will be lying", "will lie yesterday", "am lie"], "a": 0, "why": "Em andamento num momento futuro → will be + ING."},
+   {"q": "By June, she ___ the book.", "o": ["will have finished", "will finishing", "has finish"], "a": 0, "why": "Terminado até um momento → will have + particípio."},
+   {"q": "'by Friday' significa:", "o": ["até sexta, no máximo", "perto de sexta", "por causa de sexta"], "a": 0, "why": "By = até (prazo)."},
+   {"q": "'Vou estar trabalhando às 9.'", "o": ["I'll be working at 9.", "I'll working at 9.", "I'll have work at 9."], "a": 0, "why": "Will be + ING."},
+   {"q": "Pergunta educada sobre planos:", "o": ["Will you be using the car tonight?", "Do you will use the car tonight?", "You using the car tonight?"], "a": 0, "why": "Will you be + ING?"},
+   {"q": "'will have + particípio' indica:", "o": ["algo terminado até um momento futuro", "algo acontecendo agora", "um hábito do passado"], "a": 0, "why": "By then, I will have left."},
+   {"q": "By 2030, we ___ in Seoul for five years.", "o": ["will have lived", "will live since", "are living"], "a": 0, "why": "Duração até um ponto futuro."},
+   {"q": "'this time next year' significa:", "o": ["nesta época, ano que vem", "no ano passado", "este ano"], "a": 0, "why": "Next year = ano que vem."},
+   {"q": "Next week we ___ traveling around Japan.", "o": ["will be", "will have", "are be"], "a": 0, "why": "Will be + ING."}
+  ],
+  "frases_extras": [
+   ["This time tomorrow, I'll be flying.", "Amanhã a esta hora, estarei voando."],
+   ["By Friday, I'll have finished the report.", "Até sexta, terei terminado o relatório."],
+   ["Will you be using the car tonight?", "Você vai usar o carro hoje à noite?"],
+   ["She'll be working late tomorrow.", "Ela vai estar trabalhando até tarde amanhã."],
+   ["By 2030, we'll have moved abroad.", "Até 2030, teremos nos mudado para o exterior."],
+   ["I'll be waiting for you at the station.", "Vou estar te esperando na estação."]
+  ]
+ },
+ {
+  "capitulo": "O Eco",
+  "perguntas": [
+   {"q": "Em 'walked', o -ED soa como:", "o": ["/t/", "/id/", "/d/"], "a": 0, "why": "Depois de K, o -ED soa como /t/."},
+   {"q": "Em 'wanted', o -ED soa como:", "o": ["/id/", "/t/", "/d/"], "a": 0, "why": "Depois de T ou D vira sílaba: want-id."},
+   {"q": "Para o som de 'think':", "o": ["língua entre os dentes", "lábios fechados", "som de 'f'"], "a": 0, "why": "TH: língua entre os dentes."},
+   {"q": "Quantas sílabas tem 'played'?", "o": ["uma", "duas", "três"], "a": 0, "why": "Played = /pleɪd/, uma sílaba."},
+   {"q": "'Meu voo está atrasado.'", "o": ["My flight is delayed.", "My flight is late-ed.", "My fly is delayed."], "a": 0, "why": "Flight = voo. Delayed = atrasado."},
+   {"q": "'Vire à direita na esquina.'", "o": ["Turn right at the corner.", "Turn right in the corner of.", "Return right at corner."], "a": 0, "why": "At the corner."},
+   {"q": "It's ___ expensive. I can't buy it.", "o": ["too", "enough", "such"], "a": 0, "why": "Too = demais."},
+   {"q": "Ao atender o telefone: 'Aqui é a Ana.'", "o": ["Ana speaking.", "Here is Ana.", "Ana is me."], "a": 0, "why": "Nome + speaking."},
+   {"q": "I had my phone ___ yesterday.", "o": ["repaired", "repair", "repairing"], "a": 0, "why": "Have + objeto + particípio."},
+   {"q": "Nice weather, ___?", "o": ["isn't it", "is it", "doesn't it"], "a": 0, "why": "Positiva → tag negativa."}
+  ],
+  "frases_extras": [
+   ["Thank you for the three gifts.", "Obrigad{o|a} pelos três presentes."],
+   ["I think this is the right path.", "Acho que este é o caminho certo."],
+   ["My mother and father are there.", "Minha mãe e meu pai estão lá."],
+   ["We walked to the park yesterday.", "Nós caminhamos até o parque ontem."],
+   ["She wanted a new bike.", "Ela queria uma bicicleta nova."],
+   ["They played and laughed all night.", "Eles brincaram e riram a noite toda."],
+   ["I watched the match on Thursday.", "Eu assisti à partida na quinta-feira."],
+   ["Both brothers thought the same thing.", "Os dois irmãos pensaram a mesma coisa."]
+  ]
+ }
+]
