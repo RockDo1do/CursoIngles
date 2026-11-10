@@ -21,7 +21,7 @@ CHECK_DATA = r'''(()=>{
  [...src.ch,...src.bonus].forEach((c,i)=>{
   (c.q||[]).forEach((q,k)=>{
    if(!(q.a>=0&&q.a<q.o.length)) P.push(`cap ${i+1} q${k}: resposta inválida`);
-   const low=q.o.map(o=>o.trim().toLowerCase()); if(new Set(low).size!==low.length) P.push(`cap ${i+1} q${k}: opções repetidas`);
+   const low=q.o.map(o=>o.trim()); /* maiúsculas contam: ba-NA-na x BA-na-na */ if(new Set(low).size!==low.length) P.push(`cap ${i+1} q${k}: opções repetidas`);
   });
   c.p.forEach(p=>(p.l||[]).forEach(l=>{
    if(l[1]&&!l[2]) P.push(`cap ${i+1}: fala sem tradução`);
