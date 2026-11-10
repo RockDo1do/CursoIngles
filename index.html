@@ -114,6 +114,8 @@ h1,h2{font-family:var(--f-display);font-weight:400;letter-spacing:.01em;text-wra
 .pron .ph{font-size:15px}
 .pron .pw{font-family:var(--f-bubble);font-size:18px;margin-top:2px}
 .w-ok{color:#11744a}.w-no{color:#c0223e;text-decoration:underline wavy;text-underline-offset:3px}
+.w-snd{color:#8a4b00;text-decoration:underline dotted;text-decoration-thickness:2px;text-underline-offset:3px}
+.pnotas{margin:6px 0 0;padding-left:18px;font-size:14px}.pnotas li{margin:2px 0}
 .pron .ph2{color:var(--paper-muted);font-size:13px;margin-top:3px}
 .pxp{font-family:var(--f-sys);color:#b04a08}
 .aud{display:grid;gap:12px}
@@ -489,7 +491,7 @@ h1,h2{font-family:var(--f-display);font-weight:400;letter-spacing:.01em;text-wra
 <script>
 /* Carrega a história e as questões (pasta conteudo/) e depois o código do curso (app.js).
    TORRE_V muda sozinho a cada publicação (tools/site/build_site.py), para o aparelho baixar a versão nova. */
-const TORRE_V='f765336393';
+const TORRE_V='2923846d2d';
 (async function(){
  const el=document.getElementById('app');
  function falha(e){
@@ -540,7 +542,7 @@ if('serviceWorker' in navigator&&location.protocol==='https:'){
   d.innerHTML='Nova versão do curso disponível. <button style="font:inherit;font-weight:700;padding:8px 12px;border-radius:8px;border:0;background:#ff8a3d;color:#111">Atualizar</button>';
   d.querySelector('button').onclick=()=>location.reload(); document.body.appendChild(d);
  });
- window.addEventListener('load',()=>{navigator.serviceWorker.register('sw.js?v=f765336393').catch(()=>{});});
+ window.addEventListener('load',()=>{navigator.serviceWorker.register('sw.js?v=2923846d2d').catch(()=>{});});
 }
 </script>
 <!-- /só no site -->

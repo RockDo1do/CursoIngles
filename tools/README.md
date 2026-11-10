@@ -9,6 +9,7 @@ Esta pasta guarda os scripts que gravam as vozes e os que preparam o reconhecime
 | `site/` | `build_site.py` (confere o conteúdo e prepara a publicação) e `sw-template.js` (modelo do service worker) |
 | `vozes/` | Geração das falas gravadas com Kokoro-82M |
 | `whisper/` | Conversão do modelo Whisper tiny.en e o código em C que vira `whisper.wasm` |
+| `fonemas/` | Pronúncia som por som: o motor wav2vec2 em C, o conversor do modelo, a geração dos fonemas esperados e a calibração (veja `fonemas/LEIA-ME.md`) |
 
 Não existe mais um arquivo-fonte separado: os arquivos publicados são os próprios fontes. `index.html` tem a aparência, `app.js` o código e `conteudo/` a história e as questões (veja `conteudo/LEIA-ME.md`).
 

@@ -23,9 +23,9 @@ self.addEventListener('fetch',e=>{
   const req=e.request; if(req.method!=='GET') return;
   const u=new URL(req.url);
   if(u.origin===location.origin){
-    if(u.pathname.includes('/whisper/model.bin')) return;            // o worker do Whisper guarda o modelo
+    if(u.pathname.includes('/whisper/model.bin')||u.pathname.includes('/fonemas/modelo.bin')) return;   // os workers guardam os modelos
     if(req.mode==='navigate'||u.pathname.endsWith('/index.html')||u.pathname.endsWith('/')||u.pathname.endsWith('/app.js')||u.pathname.includes('/conteudo/')) {e.respondWith(netFirst(req));return;}
-    if(u.pathname.endsWith('audio/index.json')||u.pathname.includes('/whisper/')) {e.respondWith(netFirst(req));return;}
+    if(u.pathname.endsWith('audio/index.json')||u.pathname.includes('/whisper/')||u.pathname.includes('/fonemas/')) {e.respondWith(netFirst(req));return;}
     if(u.pathname.includes('/audio/')) {e.respondWith(cacheFirst(req,MEDIA));return;}
     e.respondWith(cacheFirst(req,SHELL)); return;
   }

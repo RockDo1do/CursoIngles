@@ -35,6 +35,13 @@ COMPONENTES DE TERCEIROS (mantêm as licenças originais, que prevalecem sobre e
     https://github.com/openai/whisper
   - Vozes geradas com Kokoro-82M: Apache License 2.0, (c) hexgrad
     https://huggingface.co/hexgrad/Kokoro-82M
+  - Modelo de fonemas (pasta fonemas/, arquivos modelo.bin.*): Apache License 2.0.
+    Versão de 6 camadas (light-model) de https://github.com/idawud/UK-Pronunciation-Coach-models,
+    destilada de facebook/wav2vec2-lv-60-espeak-cv-ft, (c) Meta Platforms.
+    Os pesos foram só reorganizados para o motor em C, sem mudar os valores.
+    Trained in part on the CSTR VCTK Corpus (University of Edinburgh), CC BY 4.0.
+  - Fonemas esperados das frases (fonemas/dados.json) gerados com eSpeak NG:
+    https://github.com/espeak-ng/espeak-ng
   - Fontes Atkinson Hyperlegible, Lilita One, DotGothic16 e Fredoka: SIL Open Font
     License 1.1 (carregadas do Google Fonts)
 

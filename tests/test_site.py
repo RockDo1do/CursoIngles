@@ -4,7 +4,8 @@ Abre o site num Chromium automático e confere:
 - se todas as telas abrem sem erro de JavaScript;
 - se as questões têm resposta válida e opções diferentes;
 - se toda fala e toda frase extra tem áudio gravado;
-- se um arquivo de conteúdo quebrado mostra o aviso de erro em vez de uma tela vazia.
+- se um arquivo de conteúdo quebrado mostra o aviso de erro em vez de uma tela vazia;
+- se toda frase que o aluno pode falar tem os fonemas esperados (pronúncia som por som).
 
 Uso: python3 tests/test_site.py   (na raiz do repositório; precisa do pacote playwright)
 """
@@ -43,6 +44,18 @@ CHECK_DATA = r'''(()=>{
  return P;})()'''
 
 
+# toda fala, frase extra, diálogo de escuta, palavra e exemplo de vocabulário precisa dos fonemas esperados
+CHECK_FONEMAS = r'''(async()=>{
+ const P=[], D=await (await fetch('fonemas/dados.json')).json(), src=HERO_SRC||{ch:CH,bonus:BONUS}, T=new Set();
+ [...src.ch,...src.bonus].forEach(c=>{c.p.forEach(p=>(p.l||[]).forEach(l=>{if(l[1]) T.add(l[1]);}));(c.xs||[]).forEach(x=>T.add(x[0]));});
+ LISTEN.forEach(L=>L.lines.forEach(l=>T.add(l[1]))); VOCAB.forEach(([th,ws])=>ws.forEach(w=>{T.add(w[0]);T.add(w[2]);}));
+ EAR_PAIRS.forEach(p=>{T.add(p[0]);T.add(p[1]);});
+ const keys=new Set([...T].map(t=>t.toLowerCase().replace(/[’‘]/g,"'").replace(/[^a-z0-9' ]+/g,' ').trim().split(/\s+/).filter(Boolean).join(' ')).filter(Boolean));
+ [...keys].forEach(k=>k.split(' ').forEach(w=>keys.add(w)));
+ keys.forEach(k=>{if(!D.frases[k]) P.push('sem fonemas (rode tools/fonemas/gerar_frases.py): '+k);});
+ return P.slice(0,20).concat(P.length>20?[`... e mais ${P.length-20} frases sem fonemas`]:[]);})()'''
+
+
 def serve():
     class Quiet(http.server.SimpleHTTPRequestHandler):
         def log_message(self, *a):
@@ -76,6 +89,7 @@ async def main():
         for v in VIEWS:
             await page.evaluate(v)
         problems += await page.evaluate(CHECK_DATA)
+        problems += await page.evaluate(CHECK_FONEMAS)
         width = await page.evaluate('document.documentElement.scrollWidth - document.documentElement.clientWidth')
         if width > 1:
             problems.append(f'a página rola para o lado ({width}px)')

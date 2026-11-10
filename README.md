@@ -9,6 +9,7 @@ Curso de inglês do básico ao avançado em formato de manhwa (webtoon vertical)
 - Nivelamento adaptativo de 20 perguntas e notas de inglês americano x britânico
 - Vozes naturais gravadas (Kokoro-82M) com o nome do aluno nos diálogos
 - Treino de fala com **Whisper** (whisper.cpp compilado para WebAssembly), rodando no próprio aparelho: nada é enviado para a internet e funciona em qualquer navegador moderno, inclusive Safari e Firefox
+- **Pronúncia som por som** (opcional, 90 MB): um modelo de fonemas wav2vec2, também no aparelho, confere os sons que mais dão problema para quem fala português (TH, V, W, H, R, NG, vogais curtas e longas, vogal a mais no fim ou antes do S) e diz qual saiu diferente
 - Revisão espaçada, treino extra, baú semanal com recompensas
 - Ajustes de acessibilidade: TDAH (modo calmo), TPAC (fala clara, destaque de palavras, repetição) e leitura confortável
 - Funciona como app (PWA): pode ser instalado na tela inicial e funciona offline depois do primeiro uso
@@ -30,9 +31,10 @@ Não precisa de servidor nem de configuração extra. O progresso de cada pessoa
 | `conteudo/` | A história e as questões, em arquivos JSON separados por arco. Como editar: [conteudo/LEIA-ME.md](conteudo/LEIA-ME.md) |
 | `audio/` | Falas gravadas (sprites MP3) e o índice `index.json` |
 | `whisper/` | Reconhecimento de fala: `whisper.wasm`, o worker e o modelo `tiny.en` (q5_1, 32 MB, dividido em 3 partes) |
+| `fonemas/` | Pronúncia som por som: o motor `fonemas.wasm`, o modelo de fonemas (89 MB, em 8 partes), a avaliação (`avaliar.js`) e os fonemas esperados de cada frase (`dados.json`) |
 | `sw.js` | Service worker: cache para funcionar offline |
 | `manifest.webmanifest`, `icons/` | Dados para instalar como app |
-| `tools/` | Scripts para publicar, gravar as vozes e preparar o Whisper |
+| `tools/` | Scripts para publicar, gravar as vozes e preparar o Whisper e o modelo de fonemas |
 | `tests/` | Teste automático que abre o curso inteiro num navegador |
 
 Depois de mudar o conteúdo, o código ou os áudios, rode `python3 tools/site/build_site.py`. Ele confere o conteúdo e atualiza as marcas de versão, para os aparelhos baixarem a versão nova.
@@ -49,4 +51,5 @@ O curso é gratuito para estudar, ensinar e compartilhar, com crédito. **É pro
 
 - Reconhecimento de fala: [whisper.cpp](https://github.com/ggml-org/whisper.cpp) (MIT) e o modelo [Whisper](https://github.com/openai/whisper) da OpenAI (MIT)
 - Vozes: [Kokoro-82M](https://huggingface.co/hexgrad/Kokoro-82M) (Apache 2.0), fonemas por [eSpeak NG](https://github.com/espeak-ng/espeak-ng)
+- Pronúncia som por som: modelo de fonemas [light-model](https://github.com/idawud/UK-Pronunciation-Coach-models) (Apache 2.0), destilado de [wav2vec2-lv-60-espeak-cv-ft](https://huggingface.co/facebook/wav2vec2-lv-60-espeak-cv-ft) da Meta. Trained in part on the CSTR VCTK Corpus (University of Edinburgh), CC BY 4.0. O motor em C foi escrito para este curso
 - Fontes: Atkinson Hyperlegible, Lilita One, DotGothic16 e Fredoka (Google Fonts, OFL)

@@ -333,7 +333,7 @@ function rewardName(r){
 function titleLabel(){return (S.title!=null&&(S.titles||[]).includes(S.title)?TITLES[S.title]:'Explorador(a)').toUpperCase();}
 
 /* ===================== ESTADO ===================== */
-function defaultS(){return {done:{},xp:0,showAll:false,slow:false,voice:'',spoken:{},name:'',avatar:0,zoom:1,look:'auto',calm:false,welcomed:false,start:0,placed:null,goal:4,week:null,lastWeek:null,recapSeen:'',streak:0,shieldMonth:'',cos:[],equip:{},cards:{},titles:[],title:null,bonus:[],bdone:{},mistakes:[],srs:{},audioMode:'rec',asr:'auto',avSex:'',pron:{n:0,sum:0,w:{},t:{},tw:{}},clear:false,karaoke:true,repeat:false,contrast:false,nudgeOff:false,ear:{n:0,ok:0,c:{}},_ts:0};}
+function defaultS(){return {done:{},xp:0,showAll:false,slow:false,voice:'',spoken:{},name:'',avatar:0,zoom:1,look:'auto',calm:false,welcomed:false,start:0,placed:null,goal:4,week:null,lastWeek:null,recapSeen:'',streak:0,shieldMonth:'',cos:[],equip:{},cards:{},titles:[],title:null,bonus:[],bdone:{},mistakes:[],srs:{},audioMode:'rec',asr:'auto',fon:false,avSex:'',pron:{n:0,sum:0,w:{},t:{},tw:{}},clear:false,karaoke:true,repeat:false,contrast:false,nudgeOff:false,ear:{n:0,ok:0,c:{}},_ts:0};}
 let S=defaultS();
 try{
  const raw=localStorage.getItem('torre-ingles-v2');
@@ -695,9 +695,74 @@ function whRun(pcm,audioCtx){
 function whStatusUI(){renderAudio();const o=document.querySelector('.pron.whload');if(o&&WH.st==='loading') o.innerHTML=`Preparando o reconhecimento de voz no aparelho: ${WH.pct}%<br><small>São 32 MB, baixados só uma vez. Depois funciona sem internet.</small>`;}
 function useWhisper(){
  if(WH.st==='off'||WH.st==='fail') return false;
+ if(fnOn()) return true;
  if(S.asr==='browser'&&SR) return false;
  if(S.asr==='whisper') return true;
  return !SR||WH.cached||WH.st==='ready'||A.blocked||A.status==='none'||A.status==='cloud'||A.status==='unavailable';
+}
+/* ===================== PRONÚNCIA SOM POR SOM (modelo de fonemas wav2vec2, no aparelho) ===================== */
+/* Opcional: baixa 90 MB uma vez. Confere os sons que mais dão problema para quem fala português. */
+const FN={st:'checking',worker:null,pct:0,cached:false,ids:0,cb:{},base:'fonemas/'};
+function fnWorker(){
+ if(FN.worker) return FN.worker;
+ const w=new Worker(FN.base+'fonemas-worker.js');
+ w.onmessage=ev=>{const m=ev.data;
+  if(m.type==='progress'){FN.pct=m.pct;FN.st='loading';fnStatusUI();}
+  else if(m.type==='ready'){FN.st='ready';FN.cached=true;fnStatusUI();(FN.cb.init||[]).forEach(f=>f(true));FN.cb.init=[];}
+  else if(m.type==='cached'){FN.cached=m.ok;if(FN.st==='checking') FN.st=m.ok?'cached':'idle';renderAudio();}
+  else if(m.type==='result'){const f=FN.cb[m.id];delete FN.cb[m.id];if(f) f(m);}
+  else if(m.type==='error'){if(m.id&&FN.cb[m.id]){const f=FN.cb[m.id];delete FN.cb[m.id];f({error:m.msg});}else{FN.st='fail';fnStatusUI();(FN.cb.init||[]).forEach(f=>f(false));FN.cb.init=[];}}
+ };
+ w.onerror=()=>{FN.st='off';FN.worker=null;renderAudio();(FN.cb.init||[]).forEach(f=>f(false));FN.cb.init=[];};
+ FN.worker=w; return w;
+}
+async function fnProbe(){
+ if(!whCan()){FN.st='off';renderAudio();return;}
+ try{const r=await fetch(FN.base+'fonemas.wasm',{method:'HEAD',cache:'no-store'});if(!r.ok) throw 0;}catch(e){FN.st='off';renderAudio();return;}
+ try{fnWorker().postMessage({type:'cached'});}catch(e){FN.st='off';renderAudio();}
+}
+function fnInit(){
+ if(FN.st==='ready') return Promise.resolve(true);
+ return new Promise(res=>{(FN.cb.init=FN.cb.init||[]).push(res);if(FN.st!=='loading'){FN.st='loading';fnStatusUI();}try{fnWorker().postMessage({type:'init'});}catch(e){res(false);}});
+}
+function fnOn(){return !!S.fon&&FN.st!=='off'&&FN.st!=='fail'&&WH.st!=='off'&&WH.st!=='fail';}
+function fnPronto(){return FN.st==='ready'||FN.cached;}
+/* mesma normalização de tools/fonemas/g2p.py; o nome do aluno volta a ser "Rafa" */
+function fnKey(t){
+ const nm=heroName(); let x=String(t);
+ if(nm!=='Rafa') x=x.replace(new RegExp('\\b'+nm.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+'\\b','g'),'Rafa');
+ return x.toLowerCase().replace(/[’‘]/g,"'").replace(/[^a-z0-9' ]+/g,' ').trim().split(/\s+/).filter(Boolean).join(' ');
+}
+function fnRun(pcm,target){
+ return new Promise(res=>{const id=++FN.ids;FN.cb[id]=m=>res(m&&!m.error?m.r:null);try{fnWorker().postMessage({type:'run',id,pcm,key:fnKey(target)},[pcm.buffer]);}catch(e){delete FN.cb[id];res(null);}});
+}
+function fnText(){
+ const m={checking:'Verificando...',idle:'Confere cada som da sua fala (TH, V, W, H, R, vogais curtas e longas...) e mostra qual saiu diferente. Baixa 90 MB uma vez e depois funciona sem internet. Usa também o Whisper.',cached:'Pronta no aparelho. Funciona até sem internet.',ready:'Pronta no aparelho. Funciona até sem internet.',loading:'Baixando o modelo de sons: '+FN.pct+'%',fail:'Não deu para preparar agora. Tente de novo mais tarde.'};
+ return m[FN.st]||'';
+}
+function fnStatusUI(){renderAudio();}
+const SOM={'θ':'TH','ð':'TH',s:'S',t:'T',f:'F',d:'D',z:'Z',v:'V',b:'B',w:'W',h:'H','ʁ':'R do português',x:'R do português','χ':'R do português','ŋ':'NG',n:'N','iː':'I longo','ɪ':'I curto','uː':'U longo','ʊ':'U curto','æ':'A de cat','ɛ':'É de bed','eɪ':'EI','ʌ':'A de cup','ɔ':'Ó',o:'Ô','ɹ':'R inglês','tʃ':'TCH','dʒ':'DJ',l:'L',u:'U'};
+/* junta o resultado dos sons ao resultado das palavras: dicas, palavras marcadas e a nota de sons */
+function fnMerge(g,fr,target){
+ if(!fr||!fr.checados) return g;
+ const map=[]; g.toks.forEach((t,i)=>{const k=fnKey(t);if(k) k.split(' ').forEach(()=>map.push(i));});
+ const own=map.length===fr.palavras.length?map:null, keyw=fnKey(target).split(' ');
+ const snd=g.toks.map(()=>false), notas=[], tips={};
+ g.tips.forEach(t=>{tips[t.k]=t;});
+ const addTip=(k,w)=>{tips[k]=tips[k]||{k,words:[]};if(w&&!tips[k].words.includes(w)) tips[k].words.push(w);};
+ fr.palavras.forEach((p,i)=>{
+  const ti=own?own[i]:null, wtxt=ti!=null?g.toks[ti].replace(/^[^A-Za-z']+|[^A-Za-z']+$/g,''):keyw[i];
+  if(ti!=null&&!g.ok[ti]) return;        /* a palavra já foi marcada como errada: não repete */
+  p.erros.forEach(e=>{
+   if(ti!=null) snd[ti]=true; addTip(e.dica,wtxt.toLowerCase());
+   notas.push(`<b>${esc(wtxt)}</b>: ${e.como?`o ${SOM[e.ph]||e.ph} saiu parecido com ${SOM[e.como]||e.como}`:`faltou o ${SOM[e.ph]||e.ph}`}`);
+  });
+  if(p.extra){if(ti!=null) snd[ti]=true; addTip(p.extra.dica,wtxt.toLowerCase()); notas.push(`<b>${esc(wtxt)}</b>: ${p.extra.onde==='antes'?'entrou uma vogal antes do S':'entrou uma vogal no final'}`);}
+ });
+ const order=['th','thv','v','w','h','lr','ing','vow','vow2','tch','sc','epi','lfin','ed','s','fin','small','flu','fast','clr','gen'];
+ g.tips=Object.values(tips).sort((a,b)=>order.indexOf(a.k)-order.indexOf(b.k));
+ g.snd=snd; g.sndNotas=notas; g.sons=Math.round(fr.certos/fr.checados*100);
+ return g;
 }
 /* Grava a fala com detecção de silêncio e converte para 16 kHz */
 async function whCapture(onLevel,ctl){
@@ -742,15 +807,18 @@ async function whListen(bubble,target,out){
  if(!cap){return;}
  stopUI();
  if(cap.nospeech){showPron(out,'warn','Não ouvi nada. Toque no microfone e fale logo em seguida.');return;}
- showPron(out,'info','Analisando sua fala...');
+ const fon=fnOn()&&fnPronto();
+ showPron(out,'info',fon?'Analisando sua fala e cada som...':'Analisando sua fala...');
+ if(fnOn()&&!fnPronto()&&FN.st!=='loading') fnInit();
  const sec=cap.pcm.length/16000, actx=Math.min(1500,Math.max(384,Math.ceil(sec*50)+96));
- const r=await whRun(cap.pcm,actx);
+ const fp=fon?fnRun(cap.pcm.slice(),target):Promise.resolve(null);
+ const [r,fr]=await Promise.all([whRun(cap.pcm,actx),fp]);
  if(r.error||!r.text){showPron(out,'warn',r.error?'Não deu para analisar agora. Tente de novo.':'Não entendi. Fale um pouco mais alto e perto do microfone.');return;}
  const who=bubble.dataset.who||((bubble.querySelector('.say')||{}).dataset||{}).who||'narr';
  let nativeSec=null; if(REC.man){const e=REC.man.k[recKey(target,voiceWho(who))];if(e) nativeSec=Math.max(.4,e[2]-.1);}
  if(!nativeSec) nativeSec=.3+.3*target.split(/\s+/).length;
  const heard=r.text.replace(/\[[^\]]*\]|\([^)]*\)/g,'').trim();
- const g=analyzeSpeech(target,heard,r.conf||0,cap.speechSec,nativeSec);
+ const g=fnMerge(analyzeSpeech(target,heard,r.conf||0,cap.speechSec,nativeSec),fr,target);
  renderGrade(bubble,out,g,'whisper');
 }
 
@@ -802,6 +870,10 @@ const PTIPS={
  ing:{t:'Final -ING',d:'Termine com um som nasal no fundo da boca, sem falar "gui" no final.'},
  lr:{t:'L e R',d:'No L, a ponta da língua encosta atrás dos dentes de cima. No R inglês, a língua não encosta em nada e fica um pouco enrolada para trás.'},
  sc:{t:'S no começo da palavra',d:'Comece direto no S: "school", não "iscool". Nada de vogal antes do S.'},
+ vow2:{t:'A e É do inglês',d:'Em cat, abra bem a boca, entre um A e um É. Em bed, é um É médio. Em cup, o A é curto e fechado, quase um "â". Trocar um pelo outro muda a palavra.'},
+ tch:{t:'T e D antes de I',d:'Antes de I, o T e o D do inglês continuam T e D: team é "tiim", não "tchiim"; did é "did", não "djid".'},
+ lfin:{t:'L no final',d:'O L final não vira U: em hotel e school, termine com a ponta da língua encostada atrás dos dentes de cima.'},
+ epi:{t:'Sem vogal no final',d:'Termine na consoante: big, não "bigui"; book, não "buki". Segure o som final sem soltar um "i".'},
  small:{t:'Palavras pequenas',d:'The, a, to, of e and são rápidas, mas precisam aparecer. Cole cada uma na palavra seguinte: "to-the-park".'},
  flu:{t:'Ritmo',d:'Tente dizer a frase de uma vez, sem pausar entre as palavras. Ouça devagar, depois acompanhe a voz na velocidade normal.'},
  fast:{t:'Calma no ritmo',d:'Fale um pouco mais devagar e abra bem a boca em cada palavra.'},
@@ -934,7 +1006,9 @@ function startRec(bubble,target,out,local){
  try{rec.start();}catch(e){stopUI();showPron(out,'warn','Não consegui ligar o microfone. Tente de novo.');}
 }
 function renderGrade(bubble,out,g,local){
- const lab=g.acc>=90?['ok','Perfeito!']:g.acc>=70?['ok','Muito bom!']:g.acc>=40?['mid','Quase lá.']:['no','Vamos de novo.'];
+ /* com a pronúncia som por som, a nota junta palavras (60%) e sons (40%); "Perfeito" só sem nada para ajustar */
+ const tot=g.sons!=null?Math.round(g.acc*.6+g.sons*.4):g.acc, temSom=!!(g.sndNotas&&g.sndNotas.length);
+ const lab=tot>=90&&!temSom?['ok','Perfeito!']:tot>=70?['ok','Muito bom!']:tot>=40?['mid','Quase lá.']:['no','Vamos de novo.'];
  if(g.acc>=70&&S.week){const tk=todayKey(),w=S.week;w.dayPhr[tk]=(w.dayPhr[tk]||0)+1;w.stats.phr++;if(w.dayPhr[tk]>=3) markDay();prog('speak10');if(g.acc>=90) prog('speak90');}
  let xp=''; const key=bubble.dataset.key;
  if(g.acc>=70&&key&&!S.spoken[key]){S.spoken[key]=1;S.xp+=2;xp=' <span class="pxp">+2 XP</span>';}
@@ -945,12 +1019,13 @@ function renderGrade(bubble,out,g,local){
  const meter=(lbl,val,txt,cls)=>`<div class="pm ${cls}"><small>${lbl}</small><i><b style="width:${Math.max(4,Math.min(100,val))}%"></b></i><span>${txt}</span></div>`;
  const meters=meter('Palavras',g.acc,g.acc+'%',g.acc>=90?'ok':g.acc>=60?'mid':'no')
   +(g.conf!=null?meter('Clareza',g.conf,g.conf>=85?'Alta':g.conf>=65?'Média':'Baixa',g.conf>=85?'ok':g.conf>=65?'mid':'no'):'')
+  +(g.sons!=null?meter('Sons',g.sons,g.sons+'%',g.sons>=90?'ok':g.sons>=70?'mid':'no'):'')
   +(rh?meter('Ritmo',rh[2],rh[1],rh[0]):'');
  const tips=g.tips.slice(0,2).map(tipHTML).join('');
- const praise=!g.tips.length&&g.acc>=90?`<div class="ptip good"><b>Dicção clara!</b><p>Agora tente dizer a frase sem olhar o texto, ou acompanhe a voz na velocidade normal.</p></div>`:'';
- showPron(out,lab[0],`<div class="ph"><b>${lab[1]}</b> ${g.acc}%${xp}</div><div class="pw">${g.toks.map((t,k)=>`<span class="${g.ok[k]?'w-ok':'w-no'}">${esc(t)}</span>`).join(' ')}</div>
- <div class="meters">${meters}</div>${tips}${praise}
- <div class="ph2">Ouvi: “${esc(g.heard)}”${local==='whisper'?' · analisado pelo Whisper no aparelho':local?' · analisado no aparelho':''}</div>
+ const praise=!g.tips.length&&g.acc>=90&&(g.sons==null||g.sons>=90)?`<div class="ptip good"><b>Dicção clara!</b><p>Agora tente dizer a frase sem olhar o texto, ou acompanhe a voz na velocidade normal.</p></div>`:'';
+ showPron(out,lab[0],`<div class="ph"><b>${lab[1]}</b> ${tot}%${xp}</div><div class="pw">${g.toks.map((t,k)=>`<span class="${!g.ok[k]?'w-no':g.snd&&g.snd[k]?'w-snd':'w-ok'}">${esc(t)}</span>`).join(' ')}</div>
+ <div class="meters">${meters}</div>${g.sndNotas&&g.sndNotas.length?`<ul class="pnotas">${g.sndNotas.slice(0,4).map(n=>`<li>${n}</li>`).join('')}</ul>`:''}${tips}${praise}
+ <div class="ph2">Ouvi: “${esc(g.heard)}”${local==='whisper'?(g.sons!=null?' · palavras pelo Whisper e sons pelo modelo de fonemas, no aparelho':' · analisado pelo Whisper no aparelho'):local?' · analisado no aparelho':''}</div>
  <div class="prow"><button class="pbtn" data-pslow>Ouvir devagar</button><button class="pbtn" data-pagain>Tentar de novo</button><button class="pbtn" data-pron>Meu relatório</button></div>`);
 }
 
@@ -998,6 +1073,8 @@ function audioHTML(){
  ${WH.st!=='off'?`<div class="set-row col"><div class="set-t"><b>Quem analisa sua fala</b><small>${whText()}</small></div>
   <div class="seg" role="group" aria-label="Reconhecimento de fala"><button class="segb" data-asr="auto" aria-pressed="${(S.asr||'auto')==='auto'}">Automático</button><button class="segb" data-asr="whisper" aria-pressed="${S.asr==='whisper'}">Whisper</button>${SR?`<button class="segb" data-asr="browser" aria-pressed="${S.asr==='browser'}">Navegador</button>`:''}</div>
   ${WH.st!=='ready'&&WH.st!=='loading'&&!WH.cached?`<div class="row" style="justify-content:flex-start;margin-top:8px"><button class="btn" id="whget">Baixar Whisper (32 MB)</button></div>`:''}</div>`:''}
+ ${FN.st!=='off'&&WH.st!=='off'?`<div class="set-row col"><div class="set-t"><b>Pronúncia som por som</b><small>${fnText()}</small></div>
+  <div class="seg" role="group" aria-label="Pronúncia som por som"><button class="segb" data-fon="1" aria-pressed="${!!S.fon}">Ligada</button><button class="segb" data-fon="0" aria-pressed="${!S.fon}">Desligada</button></div></div>`:''}
  ${useWhisper()?'':`<div class="set-row"><div class="set-t"><b>Microfone (treino de fala)</b><small>${st[2]}</small></div><span class="chip ${st[0]}">${st[1]}</span></div>
  ${A.status==='downloadable'&&!A.blocked?`<div class="row" style="justify-content:flex-start"><button class="btn" id="srinstall">Baixar inglês para o aparelho</button></div>`:''}`}
  <div class="row" style="justify-content:flex-start"><button class="btn ghost" id="castdemo">Ouvir os personagens</button></div></section>`;
@@ -1027,7 +1104,7 @@ function appSec(){
   ${INSTALL?'<div class="row" style="justify-content:flex-start;margin-top:8px"><button class="btn" id="appinstall">Instalar app</button></div>':''}</div></section>`;
 }
 function whText(){
- const m={checking:'Verificando...',idle:'O Whisper analisa sua voz no próprio aparelho, sem enviar nada para a internet. Funciona em qualquer navegador.',cached:'Whisper pronto no aparelho. Funciona até sem internet.',ready:'Whisper pronto no aparelho. Funciona até sem internet.',loading:'Baixando o Whisper: '+WH.pct+'%',fail:'Não deu para preparar o Whisper agora. Usando o navegador.'};
+ const m={checking:'Verificando...',idle:'O Whisper analisa sua voz no próprio aparelho, sem enviar nada para a internet. Funciona em qualquer navegador.',cached:'Whisper pronto no aparelho. Funciona até sem internet.',ready:'Whisper pronto no aparelho. Funciona até sem internet.',loading:'Baixando o Whisper: '+WH.pct+'%.',fail:'Não deu para preparar o Whisper agora. Usando o navegador.'};
  const now=useWhisper()?' Agora: Whisper.':SR?' Agora: navegador.':'';
  return (m[WH.st]||'')+now;
 }
@@ -1812,7 +1889,7 @@ function sanitizeState(o){
  for(const k in (o.done||{})){const i=+k;if(Number.isInteger(i)&&i>=0&&i<CH.length&&typeof o.done[k]==='number') r.done[i]=clampN(o.done[k],0,5,0);}
  for(const k in (o.bdone||{})){const i=+k;if(Number.isInteger(i)&&i>=100&&i<100+BONUS.length&&typeof o.bdone[k]==='number') r.bdone[i]=clampN(o.bdone[k],0,5,0);}
  r.audioMode=o.audioMode==='tts'?'tts':'rec';
- r.asr=['auto','whisper','browser'].includes(o.asr)?o.asr:'auto';
+ r.asr=['auto','whisper','browser'].includes(o.asr)?o.asr:'auto'; r.fon=!!o.fon;
  r.lastBackup=clampN(o.lastBackup,0,1e14,0);
  r.xmis=(Array.isArray(o.xmis)?o.xmis:[]).filter(x=>x&&typeof x.en==='string'&&typeof x.pt==='string').slice(-20).map(x=>({c:clampN(x.c,0,999,0),en:x.en.slice(0,200),pt:x.pt.slice(0,200),who:/^[a-z_]{2,8}$/.test(x.who)?x.who:'narr'}));
  r.avSex=o.avSex==='m'||o.avSex==='f'?o.avSex:'';
@@ -2031,9 +2108,9 @@ function pronView(){
  const P=S.pron||{n:0,sum:0,w:{},t:{},tw:{}}, avg=P.n?Math.round(P.sum/P.n):0;
  const tops=Object.keys(P.t).filter(k=>PTIPS[k]&&k!=='gen').sort((a,b)=>P.t[b]-P.t[a]).slice(0,4);
  const hard=Object.keys(P.w).filter(w=>P.w[w][0]>0).sort((a,b)=>{const ra=P.w[a][0]/(P.w[a][0]+P.w[a][1]),rb=P.w[b][0]/(P.w[b][0]+P.w[b][1]);return rb-ra||P.w[b][0]-P.w[a][0];}).slice(0,12);
- const mic=SR?`<button class="mic" aria-label="Falar a palavra" aria-pressed="false">${ICON.mic}</button>`:'';
+ const mic=canTalk()?`<button class="mic" aria-label="Falar a palavra" aria-pressed="false">${ICON.mic}</button>`:'';
  app.innerHTML=`<div class="wrap">${barHTML('Minha pronúncia','Seus sons e palavras para treinar')}
- ${!P.n?`<div class="row" style="justify-content:flex-start;margin-bottom:14px"><button class="btn" data-ear>Treino de sons</button></div><div class="sysw"><div class="tag">[ COMO FUNCIONA ]</div><h3>Ainda não há gravações</h3><p>Toque no microfone de qualquer balão e repita a frase. O curso avalia as palavras, a clareza e o ritmo, e mostra aqui os sons que você mais precisa treinar.</p>${SR?'':'<p style="margin-top:8px">Neste navegador o microfone não está disponível. No Chrome ou no Edge ele funciona.</p>'}</div>`:`
+ ${!P.n?`<div class="row" style="justify-content:flex-start;margin-bottom:14px"><button class="btn" data-ear>Treino de sons</button></div><div class="sysw"><div class="tag">[ COMO FUNCIONA ]</div><h3>Ainda não há gravações</h3><p>Toque no microfone de qualquer balão e repita a frase. O curso avalia as palavras, a clareza e o ritmo, e mostra aqui os sons que você mais precisa treinar.</p>${canTalk()?'':'<p style="margin-top:8px">Neste navegador o microfone não está disponível. Abra o curso pelo site, no Chrome, Edge, Firefox ou Safari atualizados.</p>'}</div>`:`
  <div class="row" style="justify-content:flex-start;margin-bottom:14px"><button class="btn" data-ear>Treino de sons</button></div>
  <div class="sysw"><div class="tag">[ RESUMO ]</div><div class="statg"><div><small>FRASES FALADAS</small><b>${P.n}</b></div><div><small>MÉDIA DE ACERTO</small><b>${avg}%</b></div></div>
  <p>${avg>=85?'Sua pronúncia está ótima. Continue treinando frases novas.':avg>=65?'Você está indo bem. Foque nos sons abaixo para subir de nível.':'Comece pelos sons abaixo, ouvindo devagar antes de falar.'}</p></div>
@@ -2112,7 +2189,7 @@ function panelHTML(p,ch,pi,ci){
  p.l.forEach(([w,en,pt],li)=>{
   const name=w==='monster'?(ch.mon||'???'):w==='rafa'?esc(heroName().toUpperCase()):w.toUpperCase();
   if(en===null){h+=`<div class="bubble thought ${side[w]}"><span class="who">${name} · pensando</span>${esc(gtxt(pt))}</div>`;return;}
-  h+=`<div class="bubble ${side[w]}${w==='monster'?' mon':''}" tabindex="0" role="button" aria-label="Mostrar tradução" data-key="${ci}-${pi}-${li}"><span class="who">${name}</span><span class="en" lang="en">${esc(en)}</span><span class="hint">toque para traduzir</span><span class="pt">${esc(gtxt(pt))}</span>${SR?`<button class="mic" aria-label="Falar a frase e treinar a pronúncia" aria-pressed="false">${ICON.mic}</button>`:''}${canSpeak?`<button class="say" data-say="${esc(en)}" data-who="${w}" aria-label="Ouvir em inglês">${ICON.speak}</button>`:''}<div class="pron" hidden></div></div>`;
+  h+=`<div class="bubble ${side[w]}${w==='monster'?' mon':''}" tabindex="0" role="button" aria-label="Mostrar tradução" data-key="${ci}-${pi}-${li}"><span class="who">${name}</span><span class="en" lang="en">${esc(en)}</span><span class="hint">toque para traduzir</span><span class="pt">${esc(gtxt(pt))}</span>${canTalk()?`<button class="mic" aria-label="Falar a frase e treinar a pronúncia" aria-pressed="false">${ICON.mic}</button>`:''}${canSpeak?`<button class="say" data-say="${esc(en)}" data-who="${w}" aria-label="Ouvir em inglês">${ICON.speak}</button>`:''}<div class="pron" hidden></div></div>`;
  });
  sp.forEach(w=>{h+=`<div class="chr ${side[w]}${w==='monster'?' mon':''}">${av(w,(p.m&&p.m[w])||'normal',MONC[ch.mon])}</div>`;});
  return h+`</div>`;
@@ -2373,6 +2450,7 @@ app.addEventListener('click',e=>{
  if(cast){speakSeq([{t:"Hi! I'm Mina, your guide.",who:'mina'},{t:`I'm ${heroName()}. Nice to meet you!`,who:'rafa'},{t:"Hey. I'm Jin.",who:'jin'},{t:'You are weak!',who:'monster'}],cast);return;}
  if(e.target.closest('#srinstall')){installSR();return;}
  if(e.target.closest('#whget')){whInit();return;}
+ const fnb=e.target.closest('button[data-fon]'); if(fnb){S.fon=fnb.dataset.fon==='1';save();renderAudio();if(S.fon){if(FN.st!=='ready') fnInit();if(WH.st!=='ready'&&!WH.cached) whInit();}return;}
  if(e.target.closest('[data-offline]')){const b=e.target.closest('[data-offline]');b.disabled=true;offlineAll();return;}
  if(e.target.closest('#appinstall')&&INSTALL){INSTALL.prompt();INSTALL.userChoice.finally(()=>{INSTALL=null;const el=document.getElementById('appsec');if(el) el.outerHTML=appSec();});return;}
  const asb=e.target.closest('button[data-asr]'); if(asb){S.asr=asb.dataset.asr;save();renderAudio();if(S.asr==='whisper'&&WH.st!=='ready') whInit();return;}
@@ -2407,4 +2485,5 @@ rollWeek();
 if(!S.welcomed) welcome(false); else if(S.lastWeek&&S.recapSeen!==S.week.id) recapView(); else home();
 checkSR();
 try{whProbe();}catch(e){}
+try{fnProbe();}catch(e){}
 initCloud();
