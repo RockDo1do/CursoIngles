@@ -478,7 +478,7 @@ function speakName(who){
 async function recPlaySplice(sp,slow,tok){
  const ctx=recCtx(); if(!ctx) return false;
  const m=slow||S.clear?'s':'n', o=m==='s'?2:0;
- let pb,nb=null; try{pb=await recBuf(REC.man.files.nm_parts[m]);if(sp.ne) nb=await recBuf(REC.man.files['nm_'+sp.who][m]);}catch(err){return false;}
+ let pb,nb=null; try{pb=await recBuf(REC.man.files.nm_parts[m]);if(sp.ne) nb=await recBuf(REC.man.files['nm_'+sp.who+(sp.ne[4]?'_'+sp.ne[4]:'')][m]);}catch(err){return false;}
  if(tok!==tokenN) return true;
  if(ctx.state!=='running'){try{await ctx.resume();}catch(err){}}
  if(sp.parts[0]){if(!await playBuf(ctx,pb,sp.parts[0][o],sp.parts[0][o+1])) return false;}
@@ -1208,6 +1208,7 @@ function home(){
  </div>`;
  h+=officialSite();
  h+=practiceCard();
+ h+=nameVoiceCard();
  h+=backupNudge();
  h+=weekCardHTML();
  ARCS.forEach(a=>{
@@ -1690,6 +1691,31 @@ function officialSite(){
  if(!claudeRt()) return '';
  return `<div class="sysw"><div class="tag">[ VERSÃO OFICIAL ]</div><p style="margin:6px 0 10px">A versão oficial do curso agora é o site, com reconhecimento de voz no aparelho, modo sem internet e todas as novidades. Para levar seu progresso, gere o código em Conta e progresso e carregue no site.</p><div class="row" style="justify-content:flex-start"><a class="btn" href="https://rockdo1do.github.io/CursoIngles/" target="_blank" rel="noopener">Abrir o site</a><button class="btn ghost" data-acct>Levar meu progresso</button></div></div>`;
 }
+/* Voz do nome: se o nome do aluno ainda não tem voz gravada, oferece pedir a gravação (fila automática:
+   o primeiro nome vai para uma planilha, o GitHub grava a voz e publica no site; ver tools/vozes/nomes.py) */
+function nmTemVoz(){const nm=REC.man&&REC.man.nm;return !nm||heroName()==='Rafa'||!!(nm.names.mina||{})[nmNorm(heroName())];}
+function nmFila(){const f=(typeof FILA_NOMES!=='undefined'&&FILA_NOMES)||{};return f.form&&f.campo?f:null;}
+function nameVoiceCard(){
+ if(!REC.man||!REC.man.nm||!S.name) return '';
+ const k=nmNorm(heroName()), st=S.nmVoz&&S.nmVoz.k===k?S.nmVoz.st:'';
+ if(nmTemVoz()){
+  if(st==='pedido'){S.nmVoz.st='pronto';save();
+   return `<div class="sysw"><div class="tag">[ SEU NOME GANHOU VOZ ]</div><p style="margin:6px 0 10px">Pronto! Agora a Mina e os outros personagens falam <b>${esc(heroName())}</b> com a própria voz.</p><div class="row" style="justify-content:flex-start"><button class="btn" data-say="Nice to meet you, ${esc(heroName())}!" data-who="mina">Ouvir a Mina</button></div></div>`;}
+  return '';
+ }
+ if(!nmFila()||st==='nao') return '';
+ if(st==='pedido'&&Date.now()-(S.nmVoz.t||0)>3*864e5) return '';
+ if(st==='pedido') return `<div class="sysw"><div class="tag">[ VOZ DO SEU NOME ]</div><p style="margin:6px 0 0">Pedido enviado. Quando a voz de <b>${esc(heroName())}</b> ficar pronta (em geral, em algumas horas), ela entra sozinha. Até lá, seu nome é dito pela voz do aparelho.</p></div>`;
+ return `<div class="sysw"><div class="tag">[ VOZ DO SEU NOME ]</div><p style="margin:6px 0 10px">Os personagens ainda não sabem falar <b>${esc(heroName())}</b> com a própria voz, então seu nome é dito pela voz do aparelho. Quer pedir a gravação? Enviamos só o primeiro nome, sem nada que identifique você.</p><div class="row" style="justify-content:flex-start"><button class="btn" data-nmpedir>Pedir a voz do meu nome</button><button class="btn ghost" data-nmnao>Agora não</button></div><p class="nmmsg" style="margin:8px 0 0;font-size:14px" aria-live="polite"></p></div>`;
+}
+async function nmPedir(btn){
+ const f=nmFila(); if(!f) return; btn.disabled=true;
+ const msg=btn.closest('.sysw').querySelector('.nmmsg');
+ try{
+  await fetch(f.form,{method:'POST',mode:'no-cors',body:new URLSearchParams({[f.campo]:heroName()})});
+  S.nmVoz={k:nmNorm(heroName()),st:'pedido',t:Date.now()};save();home();
+ }catch(e){btn.disabled=false;if(msg) msg.textContent='Sem internet agora. Tente de novo mais tarde.';}
+}
 function backupNudge(){
  if(claudeRt()||!(S.xp>0)) return '';
  if(Date.now()-(S.lastBackup||0)<14*864e5) return '';
@@ -1891,6 +1917,7 @@ function sanitizeState(o){
  r.audioMode=o.audioMode==='tts'?'tts':'rec';
  r.asr=['auto','whisper','browser'].includes(o.asr)?o.asr:'auto'; r.fon=!!o.fon;
  r.lastBackup=clampN(o.lastBackup,0,1e14,0);
+ r.nmVoz=o.nmVoz&&typeof o.nmVoz.k==='string'&&['pedido','nao','pronto'].includes(o.nmVoz.st)?{k:o.nmVoz.k.slice(0,20),st:o.nmVoz.st,t:clampN(o.nmVoz.t,0,1e14,0)}:null;
  r.xmis=(Array.isArray(o.xmis)?o.xmis:[]).filter(x=>x&&typeof x.en==='string'&&typeof x.pt==='string').slice(-20).map(x=>({c:clampN(x.c,0,999,0),en:x.en.slice(0,200),pt:x.pt.slice(0,200),who:/^[a-z_]{2,8}$/.test(x.who)?x.who:'narr'}));
  r.avSex=o.avSex==='m'||o.avSex==='f'?o.avSex:'';
  r.clear=!!o.clear; r.karaoke=o.karaoke!==false; r.repeat=!!o.repeat; r.contrast=!!o.contrast; r.nudgeOff=!!o.nudgeOff;
@@ -2386,6 +2413,8 @@ app.addEventListener('click',e=>{
  if(e.target.closest('button[data-treveal]')){const en=document.querySelector('#tbub .en');if(en) en.hidden=false;return;}
  if(e.target.closest('button[data-tnext]')){if(TR){const it=TR.items[TR.n];if(it.t==='speak'&&!TR.lock){const sc=+(document.getElementById('tbub')||{}).dataset?.score||0;if(sc>=70)TR.score++;}TR.n++;renderTrain();}return;}
  if(e.target.closest('button[data-acct]')){acctView();return;}
+ {const b=e.target.closest('button[data-nmpedir]');if(b){nmPedir(b);return;}}
+ if(e.target.closest('button[data-nmnao]')){S.nmVoz={k:nmNorm(heroName()),st:'nao',t:Date.now()};save();home();return;}
  if(e.target.closest('button[data-backuplater]')){S.lastBackup=Date.now()-7*864e5;save();home();return;}
  if(e.target.closest('button[data-sync]')){cloudPull();return;}
  if(e.target.closest('button[data-mkcode]')){packState().then(c=>{S.lastBackup=Date.now();save();const ta=document.getElementById('codeout'),bx=document.getElementById('codebox');if(ta&&bx){ta.value=c;bx.hidden=false;}});return;}

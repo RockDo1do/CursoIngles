@@ -1,0 +1,68 @@
+# Grava de novo a voz de todos os nomes quando a lista (tools/vozes/nomes.json) muda.
+# 8 tarefas em paralelo (4 vozes x 2 velocidades), depois junta tudo, publica e pede o build do site.
+name: Vozes dos nomes (lista inteira)
+on:
+  push:
+    branches: [main]
+    paths: ['tools/vozes/nomes.json']
+  workflow_dispatch:
+permissions:
+  contents: write
+  pages: write
+concurrency:
+  group: nomes
+  cancel-in-progress: false
+jobs:
+  gravar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    strategy:
+      fail-fast: true
+      matrix:
+        voz: [mina, rafa, rafa_f, narr]
+        vel: [n, s]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/cache@v4
+        with:
+          path: ~/kokoro
+          key: kokoro-v1.0-piper-2023.11.14-2
+      - name: Baixar o Kokoro e o eSpeak (os mesmos arquivos das outras falas)
+        run: bash tools/vozes/baixar_kokoro.sh ~/kokoro
+      - run: pip install onnxruntime==1.29.0 numpy==2.5.3
+      - run: which ffmpeg || (sudo apt-get update && sudo apt-get install -y ffmpeg)
+      - run: python tools/vozes/nomes.py gerar --voz ${{ matrix.voz }} --vel ${{ matrix.vel }} --saida parte
+        env:
+          KOKORO_DIR: /home/runner/kokoro
+      - uses: actions/upload-artifact@v4
+        with:
+          name: nomes-${{ matrix.voz }}-${{ matrix.vel }}
+          path: parte
+          retention-days: 3
+  juntar:
+    needs: gravar
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/download-artifact@v4
+        with:
+          path: partes
+          pattern: nomes-*
+      - run: python tools/vozes/nomes.py juntar partes/* --trocar-tudo
+      - run: python tools/site/build_site.py
+      - name: Publicar
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A audio index.html sw.js manifest.webmanifest
+          git commit -m "Vozes dos nomes: lista inteira gravada de novo" || exit 0
+          git pull --rebase origin main && git push origin main
+          gh api -X POST repos/${{ github.repository }}/pages/builds || true
+        env:
+          GH_TOKEN: ${{ github.token }}

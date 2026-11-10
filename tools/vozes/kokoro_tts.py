@@ -1,8 +1,9 @@
 import ctypes, json, re, numpy as np, onnxruntime as ort, os
 HERE=os.path.dirname(os.path.abspath(__file__))
-LIB=ctypes.cdll.LoadLibrary(os.path.join(HERE,'piper','libespeak-ng.so.1'))
+MODELS=os.environ.get('KOKORO_DIR',HERE)   # pasta com kokoro.onnx, voices-v1.0.bin e piper/
+LIB=ctypes.cdll.LoadLibrary(os.path.join(MODELS,'piper','libespeak-ng.so.1'))
 LIB.espeak_Initialize.argtypes=[ctypes.c_int,ctypes.c_int,ctypes.c_char_p,ctypes.c_int]
-assert LIB.espeak_Initialize(2,0,os.path.join(HERE,'piper').encode(),0)>0
+assert LIB.espeak_Initialize(2,0,os.path.join(MODELS,'piper').encode(),0)>0
 LIB.espeak_SetVoiceByName.argtypes=[ctypes.c_char_p]
 LIB.espeak_SetVoiceByName(b'en-us')
 LIB.espeak_TextToPhonemes.restype=ctypes.c_char_p
@@ -28,8 +29,8 @@ SR=24000
 class Kokoro:
     def __init__(self):
         so=ort.SessionOptions(); so.intra_op_num_threads=os.cpu_count() or 4
-        self.s=ort.InferenceSession(os.path.join(HERE,'kokoro.onnx'),so,providers=['CPUExecutionProvider'])
-        self.v=np.load(os.path.join(HERE,'voices-v1.0.bin'))
+        self.s=ort.InferenceSession(os.path.join(MODELS,'kokoro.onnx'),so,providers=['CPUExecutionProvider'])
+        self.v=np.load(os.path.join(MODELS,'voices-v1.0.bin'))
         self.inp={i.name:i.type for i in self.s.get_inputs()}
         self.tok='input_ids' if 'input_ids' in self.inp else 'tokens'
     def synth(self,text,voice,speed=1.0):

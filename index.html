@@ -491,7 +491,7 @@ h1,h2{font-family:var(--f-display);font-weight:400;letter-spacing:.01em;text-wra
 <script>
 /* Carrega a história e as questões (pasta conteudo/) e depois o código do curso (app.js).
    TORRE_V muda sozinho a cada publicação (tools/site/build_site.py), para o aparelho baixar a versão nova. */
-const TORRE_V='2923846d2d';
+const TORRE_V='9516cbd02d';
 (async function(){
  const el=document.getElementById('app');
  function falha(e){
@@ -523,7 +523,7 @@ const TORRE_V='2923846d2d';
   ]);
   const CH=[],ARCS=[],CANDO=[];
   arcos.forEach(({h,caps})=>{ARCS.push({n:h.nome,d:h.descricao,from:CH.length,to:CH.length+caps.length-1});CANDO.push(h.agora_voce_consegue||[]);CH.push(...caps);});
-  Object.assign(window,{CH,ARCS,CANDO,BONUS:bonus,LISTEN:pr[0],READ:pr[1],VOCAB:pr[2],WRITE:pr[3],PLACE:pr[4],EAR_PAIRS:pr[5].pares,EAR_GLOSS:pr[5].traducao});
+  Object.assign(window,{FILA_NOMES:ind.fila_nomes||null,CH,ARCS,CANDO,BONUS:bonus,LISTEN:pr[0],READ:pr[1],VOCAB:pr[2],WRITE:pr[3],PLACE:pr[4],EAR_PAIRS:pr[5].pares,EAR_GLOSS:pr[5].traducao});
  }catch(e){falha(e);return;}
  const s=document.createElement('script'); s.src='app.js?v='+TORRE_V;
  s.onerror=()=>falha(new Error('app.js não abriu')); document.body.appendChild(s);
@@ -542,7 +542,7 @@ if('serviceWorker' in navigator&&location.protocol==='https:'){
   d.innerHTML='Nova versão do curso disponível. <button style="font:inherit;font-weight:700;padding:8px 12px;border-radius:8px;border:0;background:#ff8a3d;color:#111">Atualizar</button>';
   d.querySelector('button').onclick=()=>location.reload(); document.body.appendChild(d);
  });
- window.addEventListener('load',()=>{navigator.serviceWorker.register('sw.js?v=2923846d2d').catch(()=>{});});
+ window.addEventListener('load',()=>{navigator.serviceWorker.register('sw.js?v=9516cbd02d').catch(()=>{});});
 }
 </script>
 <!-- /só no site -->

@@ -1,0 +1,53 @@
+# A cada hora: lê os nomes que os alunos pediram (planilha em conteudo/indice.json -> fila_nomes),
+# confere cada um (só letras, sem palavrões, no máximo 40 por vez), grava a voz dos novos e publica.
+name: Vozes dos nomes (pedidos dos alunos)
+on:
+  schedule:
+    - cron: '23 * * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+  pages: write
+concurrency:
+  group: nomes
+  cancel-in-progress: false
+jobs:
+  fila:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - name: A fila está ligada?
+        id: cfg
+        run: python -c "import json,sys;c=json.load(open('conteudo/indice.json')).get('fila_nomes') or {};print('ligada='+('sim' if c.get('planilha_csv') else 'nao'))" >> $GITHUB_OUTPUT
+      - uses: actions/setup-python@v5
+        if: steps.cfg.outputs.ligada == 'sim'
+        with:
+          python-version: '3.12'
+      - uses: actions/cache@v4
+        if: steps.cfg.outputs.ligada == 'sim'
+        with:
+          path: ~/kokoro
+          key: kokoro-v1.0-piper-2023.11.14-2
+      - if: steps.cfg.outputs.ligada == 'sim'
+        run: |
+          bash tools/vozes/baixar_kokoro.sh ~/kokoro
+          pip install onnxruntime==1.29.0 numpy==2.5.3
+          which ffmpeg || (sudo apt-get update && sudo apt-get install -y ffmpeg)
+      - if: steps.cfg.outputs.ligada == 'sim'
+        run: python tools/vozes/nomes.py fila --max 40
+        env:
+          KOKORO_DIR: /home/runner/kokoro
+      - if: steps.cfg.outputs.ligada == 'sim'
+        name: Publicar
+        run: |
+          git status --porcelain | grep -q . || exit 0
+          python tools/site/build_site.py
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A audio tools/vozes/nomes.json index.html sw.js manifest.webmanifest
+          git commit -m "Vozes dos nomes: nomes pedidos pelos alunos"
+          git pull --rebase origin main && git push origin main
+          gh api -X POST repos/${{ github.repository }}/pages/builds || true
+        env:
+          GH_TOKEN: ${{ github.token }}

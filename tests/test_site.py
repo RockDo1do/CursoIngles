@@ -41,6 +41,7 @@ CHECK_DATA = r'''(()=>{
  VOCAB.forEach(([th,ws])=>ws.forEach(w=>{if(!has('narr',w[0])||!has('narr',w[2])) P.push(`vocabulário: sem áudio: ${w[0]}`);}));
  WRITE.forEach(W=>{if(!wrtParse(W.text).some(p=>p.a)) P.push(`escrita ${W.id}: sem lacunas`);});
  EAR_PAIRS.forEach(p=>[p[0],p[1]].forEach(w=>{if(REC.man&&!REC.man.w[w]) P.push(`treino de sons: sem áudio: ${w}`);}));
+ if(REC.man&&REC.man.nm) Object.entries(REC.man.nm.names).forEach(([who,ns])=>Object.entries(ns).forEach(([k,e])=>{const f=REC.man.files['nm_'+who+(e[4]?'_'+e[4]:'')];if(!f||!f.n||!f.s) P.push(`nome sem arquivo de áudio: ${who} ${k}`);}));
  return P;})()'''
 
 
