@@ -4,7 +4,9 @@ Curso de inglês do básico ao avançado em formato de manhwa (webtoon vertical)
 
 ## O que tem
 
-- 48 capítulos em 7 arcos, do A1 ao C1, mais 4 histórias extras
+- 56 capítulos em 9 arcos, do A1 ao C1, mais 4 histórias extras e um certificado ao concluir cada arco
+- Prática: 8 diálogos longos para ouvir, 5 textos para ler com glossário, 120 cartões de vocabulário e 8 escritas guiadas
+- Nivelamento adaptativo de 20 perguntas e notas de inglês americano x britânico
 - Vozes naturais gravadas (Kokoro-82M) com o nome do aluno nos diálogos
 - Treino de fala com **Whisper** (whisper.cpp compilado para WebAssembly), rodando no próprio aparelho: nada é enviado para a internet e funciona em qualquer navegador moderno, inclusive Safari e Firefox
 - Revisão espaçada, treino extra, baú semanal com recompensas
@@ -41,4 +43,4 @@ O curso é gratuito para estudar, ensinar e compartilhar, com crédito. **É pro
 
 - Reconhecimento de fala: [whisper.cpp](https://github.com/ggml-org/whisper.cpp) (MIT) e o modelo [Whisper](https://github.com/openai/whisper) da OpenAI (MIT)
 - Vozes: [Kokoro-82M](https://huggingface.co/hexgrad/Kokoro-82M) (Apache 2.0), fonemas por [eSpeak NG](https://github.com/espeak-ng/espeak-ng)
-- Fontes: Atkinson Hyperlegible, Black Han Sans, DotGothic16 e Jua (Google Fonts, OFL)
+- Fontes: Atkinson Hyperlegible, Lilita One, DotGothic16 e Fredoka (Google Fonts, OFL)

@@ -13,7 +13,8 @@ from playwright.async_api import async_playwright
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 VIEWS = ['home()', 'wizard(0)', 'wizard(1)', 'wizard(2)', 'wizard(3)', 'wizard(4)', 'placement()',
          'weekView()', 'collectionView()', 'reviewView()', 'acctView()', 'earView()', 'pronView()',
-         'home();openSettings()', 'trainView(12)']
+         'home();openSettings()', 'trainView(12)', 'lsnList()', 'lsnView("l1")', 'readList()', 'readView("r1")',
+         'vocList()', 'vocStart(0)', 'wrtList()', 'wrtView("w1")', 'certView(0)']
 
 CHECK_DATA = r'''(()=>{
  const P=[], src=HERO_SRC||{ch:CH,bonus:BONUS};
@@ -30,6 +31,14 @@ CHECK_DATA = r'''(()=>{
   }));
   (c.xs||[]).forEach(x=>{if(REC.man&&!REC.man.k['narr|'+ttsText(x[0])]) P.push(`cap ${i+1}: frase extra sem áudio: ${x[0]}`);});
  });
+ const has=(w,t)=>!REC.man||REC.man.k[w+'|'+ttsText(t)];
+ LISTEN.forEach(L=>{L.lines.forEach(l=>(l[0]==='rafa'?['rafa','rafa_f']:[l[0]]).forEach(w=>{if(!has(w,l[1])) P.push(`escuta ${L.id}: sem áudio: ${l[1]}`);}));
+  L.q.forEach((q,k)=>{if(q.a!==0||q.o.length<2) P.push(`escuta ${L.id} q${k}: resposta inválida`);});});
+ READ.forEach(R=>{R.p.forEach(t=>{if(!has('narr',t)) P.push(`leitura ${R.id}: parágrafo sem áudio`);});
+  Object.keys(R.g).forEach(k=>{if(!new RegExp('\\b'+k+'\\b','i').test(R.p.join(' '))) P.push(`leitura ${R.id}: palavra do glossário fora do texto: ${k}`);});});
+ VOCAB.forEach(([th,ws])=>ws.forEach(w=>{if(!has('narr',w[0])||!has('narr',w[2])) P.push(`vocabulário: sem áudio: ${w[0]}`);}));
+ WRITE.forEach(W=>{if(!wrtParse(W.text).some(p=>p.a)) P.push(`escrita ${W.id}: sem lacunas`);});
+ EAR_PAIRS.forEach(p=>[p[0],p[1]].forEach(w=>{if(REC.man&&!REC.man.w[w]) P.push(`treino de sons: sem áudio: ${w}`);}));
  return P;})()'''
 
 

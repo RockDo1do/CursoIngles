@@ -34,7 +34,7 @@ COMPONENTES DE TERCEIROS (mantêm as licenças originais, que prevalecem sobre e
     https://github.com/openai/whisper
   - Vozes geradas com Kokoro-82M: Apache License 2.0, (c) hexgrad
     https://huggingface.co/hexgrad/Kokoro-82M
-  - Fontes Atkinson Hyperlegible, Black Han Sans, DotGothic16 e Jua: SIL Open Font
+  - Fontes Atkinson Hyperlegible, Lilita One, DotGothic16 e Fredoka: SIL Open Font
     License 1.1 (carregadas do Google Fonts)
 
 A OBRA É FORNECIDA "COMO ESTÁ", SEM GARANTIAS DE QUALQUER TIPO.
