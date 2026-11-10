@@ -1,6 +1,14 @@
 <!doctype html>
+<!--
+  Torre do Inglês · © 2026 RockDo1do · https://github.com/RockDo1do/CursoIngles
+  Licença CC BY-NC-SA 4.0: uso livre para estudar e compartilhar com crédito; proibido o uso comercial.
+  https://creativecommons.org/licenses/by-nc-sa/4.0/deed.pt-br
+-->
 <html lang="pt-BR">
 <head>
+<meta name="author" content="RockDo1do">
+<meta name="copyright" content="© 2026 RockDo1do · CC BY-NC-SA 4.0">
+<link rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Torre do Inglês · Inglês em formato de manhwa</title>
@@ -2158,7 +2166,7 @@ function home(){
   <li><span>11</span><div><b>Ajustes sempre à mão.</b> O botão Ajustes, no topo de cada tela, tem perfis prontos para TDAH, TPAC e leitura confortável.</div></li>
  </ul></details>
  <div class="sysw" style="margin-top:22px"><div class="tag">[ AJUSTES ]</div><h3>Do seu jeito</h3><p>Perfil atual: <b>${profLabel()}</b>. Tamanho do texto, tema, fala clara, vozes e microfone.</p><div class="row" style="justify-content:flex-start;margin-top:12px"><button class="btn" data-settings>${ICON.gear} Abrir ajustes</button></div></div>
- <p class="foot" id="cloudfoot">${cloudFootText()}</p><p class="foot" style="font-size:12px">Torre do Inglês · gratuito para estudar e compartilhar, proibido vender ou cobrar. Licença <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.pt-br" target="_blank" rel="noopener license">CC BY-NC-SA 4.0</a> · <a href="privacy.html" target="_blank" rel="noopener">Privacidade</a></p></div>`;
+ <p class="foot" id="cloudfoot">${cloudFootText()}</p><p class="foot" style="font-size:12px">© 2026 RockDo1do · Torre do Inglês · gratuito para estudar e compartilhar, proibido vender ou cobrar. Licença <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.pt-br" target="_blank" rel="noopener license">CC BY-NC-SA 4.0</a> · <a href="privacy.html" target="_blank" rel="noopener">Privacidade</a></p></div>`;
  app.innerHTML=h;
  window.scrollTo(0,0);
 }
@@ -3425,7 +3433,7 @@ if('serviceWorker' in navigator&&location.protocol==='https:'){
   d.innerHTML='Nova versão do curso disponível. <button style="font:inherit;font-weight:700;padding:8px 12px;border-radius:8px;border:0;background:#ff8a3d;color:#111">Atualizar</button>';
   d.querySelector('button').onclick=()=>location.reload(); document.body.appendChild(d);
  });
- window.addEventListener('load',()=>{navigator.serviceWorker.register('sw.js?v=663ff44ded').catch(()=>{});});
+ window.addEventListener('load',()=>{navigator.serviceWorker.register('sw.js?v=40a0c09d37').catch(()=>{});});
 }
 </script>
 </body>

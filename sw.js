@@ -1,5 +1,5 @@
 /* Service worker da Torre do Inglês: funciona offline depois do primeiro uso. */
-const VER='663ff44ded', SHELL='torre-shell-'+VER, MEDIA='torre-media-v1', FONTS='torre-fonts-v1';
+const VER='40a0c09d37', SHELL='torre-shell-'+VER, MEDIA='torre-media-v1', FONTS='torre-fonts-v1';
 const PRE=['./','index.html','manifest.webmanifest','icons/icon-192.png','icons/icon-512.png','audio/index.json','whisper/whisper-core.js','whisper/whisper-worker.js','whisper/whisper.wasm','privacy.html','fonts/AtkinsonHyperlegible-Regular.woff','fonts/AtkinsonHyperlegible-Bold.woff','fonts/LilitaOne-Regular.woff','fonts/DotGothic16-Regular.woff','fonts/Fredoka-Medium.woff'];
 self.addEventListener('install',e=>{e.waitUntil(caches.open(SHELL).then(c=>c.addAll(PRE)).then(()=>self.skipWaiting()));});
 self.addEventListener('activate',e=>{e.waitUntil(caches.keys().then(ks=>Promise.all(ks.filter(k=>k.startsWith('torre-shell-')&&k!==SHELL).map(k=>caches.delete(k)))).then(()=>self.clients.claim()));});

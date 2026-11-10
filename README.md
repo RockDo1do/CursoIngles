@@ -37,7 +37,9 @@ Ao trocar arquivos de áudio mantendo o mesmo nome, mude `MEDIA` em `sw.js` (por
 
 [![CC BY-NC-SA 4.0](https://img.shields.io/badge/licen%C3%A7a-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.pt-br)
 
-O curso é gratuito para estudar, ensinar e compartilhar, com crédito. **É proibido usar para fins comerciais**, como vender, cobrar acesso ou colocar em plataformas pagas. Versões adaptadas precisam manter esta mesma licença. Uso comercial só com autorização por escrito. Veja o arquivo [LICENSE](LICENSE).
+O curso é gratuito para estudar, ensinar e compartilhar, com crédito. **É proibido usar para fins comerciais**, como vender, cobrar acesso ou colocar em plataformas pagas. Versões adaptadas precisam manter esta mesma licença. Uso comercial só com autorização por escrito. O resumo em português está em [LICENCA.md](LICENCA.md), e o texto legal completo em [LICENSE](LICENSE).
+
+© 2026 RockDo1do. Todos os direitos não concedidos pela licença são reservados.
 
 ## Créditos e licenças de terceiros
 

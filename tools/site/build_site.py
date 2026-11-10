@@ -4,8 +4,16 @@ s=open(SRC).read()
 s=s.replace('<title>Torre do Inglês</title>\n','',1).replace('<meta name="claude:viewport-fit-sides" content="cover">\n','',1)
 ver=hashlib.sha1(s.encode()).hexdigest()[:10]
 head=f'''<!doctype html>
+<!--
+  Torre do Inglês · © 2026 RockDo1do · https://github.com/RockDo1do/CursoIngles
+  Licença CC BY-NC-SA 4.0: uso livre para estudar e compartilhar com crédito; proibido o uso comercial.
+  https://creativecommons.org/licenses/by-nc-sa/4.0/deed.pt-br
+-->
 <html lang="pt-BR">
 <head>
+<meta name="author" content="RockDo1do">
+<meta name="copyright" content="© 2026 RockDo1do · CC BY-NC-SA 4.0">
+<link rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Torre do Inglês · Inglês em formato de manhwa</title>
