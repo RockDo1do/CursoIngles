@@ -16,7 +16,7 @@ import argparse, hashlib, json, os, re, shutil, sys
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 HERE = os.path.dirname(os.path.abspath(__file__))
 C = os.path.join(ROOT, 'conteudo')
-PRATICA = ['escuta', 'leitura', 'vocabulario', 'escrita', 'nivelamento', 'sons']
+PRATICA = ['escuta', 'leitura', 'vocabulario', 'escrita', 'nivelamento', 'sons', 'confusoes']
 SITE_ONLY = re.compile(r'<!-- só no site -->.*?<!-- /só no site -->\n?', re.S)
 
 
@@ -75,6 +75,16 @@ def validar():
             for f in x.get('frases_extras', []) or []:
                 if not (isinstance(f, list) and len(f) == 2):
                     erros.append(f'{onde}: frase extra fora do formato [inglês, português]: {f}')
+    nq = {}
+    for a in ind['arcos']:
+        for c, x in zip(load(f'historia/{a}').get('capitulos', []), load(f'questoes/{a}')):
+            nq[c.get('t')] = len(x.get('perguntas', []))
+    for g in load('pratica/confusoes'):
+        for t, qs in (g.get('perguntas') or {}).items():
+            if t not in nq:
+                erros.append(f'pratica/confusoes ("{g.get("nome")}"): não existe capítulo com o título "{t}"')
+            elif any(not isinstance(q, int) or not 0 <= q < nq[t] for q in qs):
+                erros.append(f'pratica/confusoes ("{g.get("nome")}"): pergunta fora do capítulo "{t}" (são {nq[t]}, contando do 0)')
     for n in PRATICA:
         load(f'pratica/{n}')
         files.append(f'pratica/{n}')

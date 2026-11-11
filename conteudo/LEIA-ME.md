@@ -26,6 +26,7 @@ Mudar o meio da lista faz o curso marcar como feitos os capítulos errados para 
 | `pratica/escrita.json` | Textos com lacunas da prática de escrita. |
 | `pratica/nivelamento.json` | Perguntas do teste de nível. A resposta certa é sempre a **primeira** opção; o curso embaralha na hora de mostrar. |
 | `pratica/sons.json` | Pares de palavras do treino de sons e a tradução de cada palavra. |
+| `pratica/confusoes.json` | Assuntos que se confundem (ex.: passado simples × present perfect). Cada grupo tem um nome, uma dica que explica a diferença e, para cada capítulo pelo título, as perguntas que são mesmo sobre o assunto (posição, contando do 0). A revisão põe uma pergunta do assunto rival logo depois, e o aquecimento do capítulo novo usa o rival. |
 
 ## Formato de um capítulo (história)
 

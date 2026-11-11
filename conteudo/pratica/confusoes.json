@@ -1,0 +1,62 @@
+[
+ {
+  "nome": "Passado simples × present perfect",
+  "dica": "Passado simples: fato terminado num momento dito ou claro (yesterday, in 2020, last week). Present perfect: do passado até agora, sem momento definido (ever, already, yet, for, since).",
+  "perguntas": {"Memórias do Passado": [1, 2, 5, 6, 8], "Desde Sempre": [0, 1, 2, 3, 4, 5, 6, 7]}
+ },
+ {
+  "nome": "Passado simples × passado contínuo",
+  "dica": "Passado contínuo (was/were + -ING): a ação que estava em andamento. Passado simples: a ação curta que interrompeu ou que terminou. I was cooking when you called.",
+  "perguntas": {"Memórias do Passado": [1, 2, 5, 6, 8], "Interrompido!": [0, 1, 3, 4, 5, 6, 7]}
+ },
+ {
+  "nome": "Presente simples × presente contínuo",
+  "dica": "Presente simples: hábitos e fatos (every day, usually). Presente contínuo: o que está acontecendo agora ou nestes dias (now, at the moment).",
+  "perguntas": {"Rotina do Explorador": [0, 1, 3, 4, 5, 6, 8], "Agora Mesmo": [0, 1, 3, 5, 6, 7, 8]}
+ },
+ {
+  "nome": "Used to × passado simples",
+  "dica": "Used to: hábito ou situação do passado que não existe mais (I used to live in Rio). Passado simples: um fato num momento (I moved to Rio in 2019).",
+  "perguntas": {"Antigamente": [0, 2, 3, 5, 7, 8], "Memórias do Passado": [1, 2, 5, 6, 8]}
+ },
+ {
+  "nome": "Past perfect × passado simples",
+  "dica": "Past perfect (had + particípio): o que aconteceu antes de outro fato do passado. When I arrived, the train had left: o trem saiu antes de eu chegar.",
+  "perguntas": {"Antes de Tudo": [0, 3, 5, 7, 8], "Memórias do Passado": [1, 2, 5, 6, 8]}
+ },
+ {
+  "nome": "Formas de futuro",
+  "dica": "Will: decisão na hora e previsão. Going to: plano já decidido. Will be + -ING: ação em andamento num momento do futuro. Will have + particípio: algo pronto até um momento do futuro.",
+  "perguntas": {"Planos de Batalha": [0, 1, 3, 4, 5, 6, 7], "Daqui a Um Ano": [0, 1, 3, 4, 5, 6, 8]}
+ },
+ {
+  "nome": "As condicionais",
+  "dica": "Zero: if + presente, presente (sempre verdade). Primeira: if + presente, will (possível). Segunda: if + passado, would (imaginário). Terceira: if + had + particípio, would have (passado que não aconteceu). Mista: junta a segunda e a terceira.",
+  "perguntas": {"E Se... (Parte 1)": [0, 1, 3, 5, 6, 7, 8], "Sonhos Impossíveis": [0, 1, 2, 3, 5, 7], "O Arrependimento": [0, 6], "Se Eu Tivesse...": [0, 1, 3, 4, 5, 7]}
+ },
+ {
+  "nome": "Preposições de tempo × de lugar",
+  "dica": "Tempo: at para horas, on para dias e datas, in para meses, anos e partes do dia. Lugar: at para um ponto, on para superfícies, in para espaços fechados.",
+  "perguntas": {"O Relógio da Torre": [0, 2, 3, 4, 6, 8], "Mapa da Cidade": [1, 5, 6, 8, 9]}
+ },
+ {
+  "nome": "Quantidades e artigos",
+  "dica": "Many com contáveis e much com incontáveis; some em afirmações e any em negativas e perguntas. A/an para algo qualquer; the para algo específico ou já citado.",
+  "perguntas": {"O Mercado Negro": [0, 1, 2, 3, 4, 5, 6, 7], "O Mapa Misterioso": [0, 1, 2, 3, 4, 5, 6, 7]}
+ },
+ {
+  "nome": "Verbo + TO ou verbo + ING",
+  "dica": "Depois de enjoy, finish, mind e avoid vem -ING. Depois de want, decide, need e hope vem TO. Like e love aceitam os dois.",
+  "perguntas": {"Gostos e Desgostos": [0, 3, 6, 8], "O Juiz": [0, 1, 2, 5, 6, 7, 8]}
+ },
+ {
+  "nome": "Voz passiva × mandar fazer",
+  "dica": "Passiva: o foco é no que sofre a ação (The car was repaired). Have something done: você pediu para alguém fazer (I had my car repaired).",
+  "perguntas": {"Feito Por Eles": [0, 1, 2, 3, 4, 5, 6, 7], "Mandei Consertar": [0, 1, 2, 4, 5, 6, 7]}
+ },
+ {
+  "nome": "Modais: presente × passado",
+  "dica": "Must, should e might falam do presente e do futuro. Should have, must have e might have + particípio falam do passado: um conselho tarde demais ou uma dedução.",
+  "perguntas": {"Regras do Clube": [0, 1, 2, 4, 5, 6, 7, 8], "O Arrependimento": [1, 5, 7, 8]}
+ }
+]

@@ -1890,6 +1890,67 @@ function collectionView(keep){
  window.scrollTo(0,y);
 }
 
+/* ===================== APRENDER MELHOR: lembrar sem olhar e misturar o que confunde =====================
+   Aquecimento: ao abrir um capítulo novo, 2 perguntas de capítulos já feitos, de memória (prática de recuperação).
+   Mistura: na revisão, uma pergunta do assunto "rival" vem logo depois (prática intercalada); os pares ficam em
+   conteudo/pratica/confusoes.json. */
+let CONF=null;
+function confGroups(){
+ /* cada grupo: capítulos (pelo título) e, em cada um, as perguntas que são mesmo sobre o assunto */
+ if(!CONF) CONF=(typeof CONFUSOES!=='undefined'&&CONFUSOES||[]).map(g=>{const qs={};Object.entries(g.perguntas||{}).forEach(([t,l])=>{const i=CH.findIndex(c=>c.t===t);if(i>=0) qs[i]=l.filter(q=>CH[i].q[q]);});return {nome:g.nome,dica:g.dica,qs,idx:Object.keys(qs).map(Number)};}).filter(g=>g.idx.length>1);
+ return CONF;
+}
+function confOf(c){return confGroups().filter(g=>g.idx.includes(c));}
+function doneOther(c){return Object.keys(S.done).map(Number).filter(i=>i<CH.length&&i!==c);}
+/* uma pergunta de um capítulo rival já feito; evita as chaves em "usadas". Com q, só vale se a pergunta q de c for do assunto */
+function rivalQ(c,usadas,q){
+ for(const g of shuffle(confOf(c).filter(g=>q==null||g.qs[c].includes(q)))){
+  const rs=shuffle(g.idx.filter(r=>r!==c&&S.done[r]!=null));
+  for(const r of rs){const qs=shuffle(g.qs[r].slice()).filter(q=>!usadas.has(r+'-'+q)); if(qs.length) return {c:r,q:qs[0],conf:g};}
+ }
+ return null;
+}
+function pickWarm(i){
+ const done=doneOther(i); if(done.length<2) return [];
+ const out=[], usadas=new Set(), add=x=>{if(x&&out.length<2&&!usadas.has(x.c+'-'+x.q)&&CH[x.c]&&CH[x.c].q[x.q]){usadas.add(x.c+'-'+x.q);out.push(x);}};
+ add(rivalQ(i,usadas));                                                     /* o assunto que se confunde com este capítulo */
+ dueCards().filter(x=>x.c!==i).forEach(x=>add({c:x.c,q:x.q}));              /* depois, o que já está na hora de revisar */
+ (S.mistakes||[]).slice().reverse().filter(m=>m.c!==i).forEach(m=>add({c:m.c,q:m.q}));
+ shuffle(done).forEach(c=>add({c,q:Math.floor(Math.random()*CH[c].q.length)}));
+ return out;
+}
+function warmHTML(){
+ if(!R.warm||!R.warm.length) return '';
+ return `<div class="sysw" id="warm"><div class="tag">[ AQUECIMENTO ]</div><h3>Antes de começar, lembre sem olhar</h3>
+ <p style="font-size:15px">${R.warm.length===1?'Uma pergunta':'Duas perguntas'} de capítulos que você já fez. Puxar da memória é o que fixa o inglês.</p>
+ ${R.warm.map((it,k)=>{const q=CH[it.c].q[it.q], opts=shuffle(q.o.map((t,j)=>({t,j})));
+  return `<div class="q" data-wi="${k}"><div class="qt"><small class="wcap">CAP. ${it.c+1}</small> ${esc(q.q)}</div><div class="opts">${opts.map(o=>`<button class="opt" data-wk="${o.j}"${enAttr(o.t)}>${esc(o.t)}</button>`).join('')}</div><div class="why" hidden></div></div>`;}).join('')}
+ <p class="set-note">Dica: leia cada balão em inglês e tente entender antes de tocar para ver a tradução.</p>
+ <button class="linkb" data-warmskip>Pular aquecimento</button></div>`;
+}
+function warmAnswer(btn){
+ const qEl=btn.closest('.q'), it=R.warm[+qEl.dataset.wi], q=CH[it.c].q[it.q], k=+btn.dataset.wk, ok=k===q.a;
+ if(it.feito) return; it.feito=true;
+ qEl.querySelectorAll('.opt').forEach(b=>{b.disabled=true;const bk=+b.dataset.wk;if(bk===q.a)b.classList.add('ok');else if(bk===k)b.classList.add('no');});
+ srsUpdate(it.c,it.q,ok);
+ S.mistakes=(S.mistakes||[]).filter(m=>!(m.c===it.c&&m.q===it.q)); if(!ok){S.mistakes.push({c:it.c,q:it.q});if(S.mistakes.length>40)S.mistakes.shift();}
+ if(ok) S.xp+=3; save();
+ const w=qEl.querySelector('.why'); w.hidden=false;
+ w.innerHTML=`<b class="${ok?'':'no'}">${ok?'Certo! +3 XP':'Quase.'}</b> ${esc(q.why)}${it.conf?`<span class="confd"><b>${esc(it.conf.nome)}.</b> ${esc(it.conf.dica)}</span>`:''}`;
+ if(R.warm.every(x=>x.feito)){const sk=document.querySelector('[data-warmskip]'); if(sk) sk.textContent='Fechar o aquecimento';}
+}
+/* revisão: cada pergunta de um assunto que se confunde ganha, logo depois, uma do assunto rival (até 2 por sessão) */
+function mixRivals(items){
+ const out=[], usadas=new Set(items.filter(x=>!x.w).map(x=>x.c+'-'+x.q)); let n=0;
+ shuffle(items).forEach(it=>{
+  out.push(it);
+  if(it.w||n>=2) return;
+  const r=rivalQ(it.c,usadas,it.q); if(!r) return;
+  usadas.add(r.c+'-'+r.q); out.push({c:r.c,q:r.q,rival:true,conf:r.conf}); n++;
+ });
+ return out;
+}
+
 /* Revisão rápida e domingo de revisão */
 let RV=null;
 function reviewView(){
@@ -1903,7 +1964,7 @@ function reviewView(){
  const extra=shuffle(src.flatMap(c=>CH[c].q.map((_,q)=>({c,q})))).filter(x=>!seen.has(x.c+'-'+x.q));
  let items=due.length>=5?due:due.concat(mis,extra).slice(0,5);
  const xw=(S.xmis||[]).slice(-2).map(x=>({w:x})); if(xw.length) items=items.slice(0,5-xw.length).concat(xw);
- RV={items:shuffle(items),i:0,score:0,lock:false,sunday:isSunday()};
+ RV={items:mixRivals(items),i:0,score:0,lock:false,sunday:isSunday()};
  renderReview();
 }
 function renderReview(){
@@ -1920,7 +1981,7 @@ function renderReview(){
  }
  const q=CH[it.c].q[it.q], opts=shuffle(q.o.map((t,k)=>({t,k})));
  app.innerHTML=`<div class="wrap">${barHTML(RV.sunday?'Domingo de revisão':'Revisão rápida',`Pergunta ${RV.i+1} de ${RV.items.length}`,'data-week')}
- <div class="chap-open"><div class="no">CAP. ${it.c+1} · ${CH[it.c].lv}${it.srs?' · REVISÃO ESPAÇADA':it.mist?' · VOCÊ ERROU ESTA ANTES':''}</div><h1 class="pq">${esc(q.q)}</h1></div>
+ <div class="chap-open"><div class="no">CAP. ${it.c+1} · ${CH[it.c].lv}${it.rival?' · ASSUNTO PARECIDO, NÃO CONFUNDA':it.srs?' · REVISÃO ESPAÇADA':it.mist?' · VOCÊ ERROU ESTA ANTES':''}</div><h1 class="pq">${esc(q.q)}</h1></div>
  <div class="sysw"><div class="opts">${opts.map(o=>`<button class="opt" data-rk="${o.k}"${enAttr(o.t)}>${esc(o.t)}</button>`).join('')}</div><div class="why" id="rwhy" hidden></div>
  <div class="row" id="rnext" hidden style="margin-top:14px"><button class="btn" data-rnext>${RV.i+1<RV.items.length?'Próxima':'Ver resultado'}</button></div></div></div>`;
  RV.lock=false; window.scrollTo(0,0);
@@ -1939,7 +2000,7 @@ function reviewAnswer(btn){
  srsUpdate(it.c,it.q,ok);
  if(ok){RV.score++; if(it.mist||it.srs) S.mistakes=(S.mistakes||[]).filter(m=>!(m.c===it.c&&m.q===it.q));}
  btn.closest('.opts').querySelectorAll('.opt').forEach(b=>{b.disabled=true;if(+b.dataset.rk===q.a)b.classList.add('ok');else if(b===btn)b.classList.add('no');});
- const w=document.getElementById('rwhy'); w.hidden=false; w.innerHTML=`<b class="${ok?'':'no'}">${ok?'Certo!':'Quase.'}</b> ${esc(q.why)}`;
+ const w=document.getElementById('rwhy'); w.hidden=false; w.innerHTML=`<b class="${ok?'':'no'}">${ok?'Certo!':'Quase.'}</b> ${esc(q.why)}${it.rival&&it.conf?`<span class="confd"><b>${esc(it.conf.nome)}.</b> ${esc(it.conf.dica)}</span>`:''}`;
  document.getElementById('rnext').hidden=false;
 }
 function reviewResult(){
@@ -2329,7 +2390,7 @@ function reader(i){
  const ch=getCh(i), bonus=i>=100;
  if(!ch){home();return;}
  if(bonus&&!(S.bonus||[]).includes(i)){collectionView();return;}
- cur=i; R={usedPT:!!S.showAll,qs:pickQs(i,ch),ex:pickExtras(i,ch)}; recPrefetch(i);
+ cur=i; R={usedPT:!!S.showAll,qs:pickQs(i,ch),ex:pickExtras(i,ch),warm:!bonus&&S.done[i]==null?pickWarm(i):[]}; recPrefetch(i);
  const back=bonus?'data-coll':'data-home';
  let h=`<div class="wrap ${S.showAll?'showall':''}" id="rd">
  <div class="bar"><button class="back" ${back} aria-label="Voltar">${ICON.back}</button>
@@ -2337,7 +2398,7 @@ function reader(i){
   <button class="tog" id="tog" aria-pressed="${S.showAll}">PT sempre</button>
   <button class="gear" data-settings aria-label="Ajustes">${ICON.gear}<span>Ajustes</span></button>
   <div class="prog" id="prog"></div></div>
- <div class="chap-open"><div class="no">${bonus?'HISTÓRIA EXTRA '+(i-99):`CAPÍTULO ${String(i+1).padStart(2,'0')} DE ${CH.length}`} · <span class="lvl">${ch.lv}</span>${ch.boss?' · <span class="lvl boss">CHEFE DO ARCO</span>':''}</div><h1>${ch.t}</h1><p>${ch.topic}</p></div>`;
+ <div class="chap-open"><div class="no">${bonus?'HISTÓRIA EXTRA '+(i-99):`CAPÍTULO ${String(i+1).padStart(2,'0')} DE ${CH.length}`} · <span class="lvl">${ch.lv}</span>${ch.boss?' · <span class="lvl boss">CHEFE DO ARCO</span>':''}</div><h1>${ch.t}</h1><p>${ch.topic}</p></div>`+warmHTML();
  ch.p.forEach((p,pi)=>h+=panelHTML(p,ch,pi,i));
  h+=`<div class="sysw" id="quiz"><div class="tag">[ TESTE DO PORTAL ]</div><h3>${ch.boss?'Batalha final: '+R.qs.length+' perguntas de revisão':'Responda para liberar o próximo andar'}</h3><p style="font-size:13px;margin-bottom:4px">As perguntas mudam a cada vez que você refaz o capítulo.</p>`;
  const items=R.qs.map(qi=>({mc:qi}));
@@ -2587,6 +2648,8 @@ app.addEventListener('click',e=>{
  const op=e.target.closest('[data-open]'); if(op){reader(+op.dataset.open);return;}
  if(e.target.closest('[data-home]')){home();return;}
  if(e.target.closest('#tog')){S.showAll=!S.showAll;if(S.showAll)R.usedPT=true;save();document.getElementById('rd').classList.toggle('showall',S.showAll);document.getElementById('tog').setAttribute('aria-pressed',S.showAll);return;}
+ {const wo=e.target.closest('#warm .opt');if(wo){if(!wo.disabled) warmAnswer(wo);return;}}
+ if(e.target.closest('[data-warmskip]')){document.getElementById('warm')?.remove();return;}
  const opt=e.target.closest('.opt'); if(opt&&!opt.disabled){answer(opt.closest('.q'),+opt.dataset.k);return;}
  const b=e.target.closest('.bubble:not(.thought)'); if(b){b.classList.toggle('open');R.usedPT=true;}
 });
