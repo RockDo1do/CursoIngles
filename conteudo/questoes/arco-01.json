@@ -52,7 +52,9 @@
    {"q": "Plural de 'box':", "o": ["boxes", "boxs", "boxies"], "a": 0, "why": "Depois de X, o plural ganha -ES."},
    {"q": "Plural de 'man':", "o": ["men", "mans", "mens"], "a": 0, "why": "Man → men é irregular."},
    {"q": "'Aquelas espadas' (longe):", "o": ["those swords", "these swords", "this swords"], "a": 0, "why": "Those = aqueles(as), longe e no plural."},
-   {"q": "They ___ three potions.", "o": ["have", "has"], "a": 0, "why": "They usa HAVE."}
+   {"q": "They ___ three potions.", "o": ["have", "has"], "a": 0, "why": "They usa HAVE."},
+   {"q": "'Eu tenho dois irmãos.'", "o": ["I have two brothers.", "I am two brothers.", "I has two brothers."], "a": 0, "why": "Ter algo (posse) é have: I have, you have, they have."},
+   {"q": "She ___ a new phone.", "o": ["has", "have", "is"], "a": 0, "why": "Com he, she e it, have vira has: She has a new phone."}
   ]
  },
  {
@@ -66,7 +68,8 @@
    {"q": "'A espada da Mina', de forma natural:", "o": ["Mina's sword", "Sword's Mina", "Mina sword's"], "a": 0, "why": "Dono + 's + coisa."},
    {"q": "'His' significa:", "o": ["dele", "dela", "deles"], "a": 0, "why": "His = dele. Her = dela."},
    {"q": "'Grandmother' é:", "o": ["avó", "avô", "neta"], "a": 0, "why": "Grandfather = avô."},
-   {"q": "This is my sister. ___ name is Bia.", "o": ["Her", "His", "She"], "a": 0, "why": "A irmã é ela → her (dela)."}
+   {"q": "This is my sister. ___ name is Bia.", "o": ["Her", "His", "She"], "a": 0, "why": "A irmã é ela → her (dela)."},
+   {"q": "This is my brother. ___ name is Leo.", "o": ["His", "Her", "He"], "a": 0, "why": "Irmão é homem: o nome dele = his name. Quem decide é o dono, não a coisa."}
   ]
  },
  {

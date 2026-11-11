@@ -1895,18 +1895,27 @@ function collectionView(keep){
    Mistura: na revisão, uma pergunta do assunto "rival" vem logo depois (prática intercalada); os pares ficam em
    conteudo/pratica/confusoes.json. */
 let CONF=null;
+/* cada grupo tem dois lados (ex.: passado simples × present perfect); cada lado lista, por capítulo (título),
+   as perguntas que são mesmo sobre ele. Um par sempre junta uma pergunta de cada lado. */
 function confGroups(){
- /* cada grupo: capítulos (pelo título) e, em cada um, as perguntas que são mesmo sobre o assunto */
- if(!CONF) CONF=(typeof CONFUSOES!=='undefined'&&CONFUSOES||[]).map(g=>{const qs={};Object.entries(g.perguntas||{}).forEach(([t,l])=>{const i=CH.findIndex(c=>c.t===t);if(i>=0) qs[i]=l.filter(q=>CH[i].q[q]);});return {nome:g.nome,dica:g.dica,qs,idx:Object.keys(qs).map(Number)};}).filter(g=>g.idx.length>1);
+ if(!CONF) CONF=(typeof CONFUSOES!=='undefined'&&CONFUSOES||[]).map(g=>{
+  const lados=(g.lados||[]).map(l=>{const qs={};Object.entries(l.perguntas||{}).forEach(([t,ls])=>{const i=CH.findIndex(c=>c.t===t);if(i>=0) qs[i]=ls.filter(q=>CH[i].q[q]);});return {nome:l.nome,qs};});
+  const idx=[...new Set(lados.flatMap(l=>Object.keys(l.qs).map(Number)))];
+  return {nome:g.nome,dica:g.dica,lados,idx};
+ }).filter(g=>g.lados.length===2&&g.lados.every(l=>Object.keys(l.qs).length));
  return CONF;
 }
 function confOf(c){return confGroups().filter(g=>g.idx.includes(c));}
+/* em que lado do grupo está a pergunta q do capítulo c (sem q: o lado do capítulo); -1 se em nenhum */
+function ladoDe(g,c,q){return g.lados.findIndex(l=>l.qs[c]&&(q==null||l.qs[c].includes(q)));}
 function doneOther(c){return Object.keys(S.done).map(Number).filter(i=>i<CH.length&&i!==c);}
-/* uma pergunta de um capítulo rival já feito; evita as chaves em "usadas". Com q, só vale se a pergunta q de c for do assunto */
+/* pergunta do OUTRO lado do assunto, de um capítulo já feito; evita as chaves em "usadas" */
+function ladoPergs(l,usadas,fora){return shuffle(Object.entries(l.qs).flatMap(([c,qs])=>(+c===fora||S.done[c]==null)?[]:qs.filter(q=>!usadas.has(c+'-'+q)).map(q=>({c:+c,q}))));}
 function rivalQ(c,usadas,q){
- for(const g of shuffle(confOf(c).filter(g=>q==null||g.qs[c].includes(q)))){
-  const rs=shuffle(g.idx.filter(r=>r!==c&&S.done[r]!=null));
-  for(const r of rs){const qs=shuffle(g.qs[r].slice()).filter(q=>!usadas.has(r+'-'+q)); if(qs.length) return {c:r,q:qs[0],conf:g};}
+ for(const g of shuffle(confOf(c))){
+  const s=ladoDe(g,c,q); if(s<0) continue;
+  const r=ladoPergs(g.lados[1-s],usadas,c)[0];
+  if(r) return {c:r.c,q:r.q,conf:g};
  }
  return null;
 }
@@ -1946,8 +1955,21 @@ function mixRivals(items){
   out.push(it);
   if(it.w||n>=2) return;
   const r=rivalQ(it.c,usadas,it.q); if(!r) return;
-  usadas.add(r.c+'-'+r.q); out.push({c:r.c,q:r.q,rival:true,conf:r.conf}); n++;
+  usadas.add(r.c+'-'+r.q); n++;
+  /* a ordem do par é sorteada: às vezes o lado rival vem antes. A dica da diferença aparece na segunda */
+  const rv={c:r.c,q:r.q,conf:r.conf}; out.pop();
+  const [x,y]=Math.random()<.5?[it,rv]:[rv,it]; x.mix=true; x.conf=r.conf; y.rival=true; y.conf=r.conf; out.push(x,y);
  });
+ if(!n){
+  /* nenhuma pergunta puxou um par: escolhe um assunto que a pessoa já estudou dos dois lados e põe o par inteiro */
+  for(const g of shuffle(confGroups())){
+   const [a,b]=shuffle([0,1]).map(k=>ladoPergs(g.lados[k],usadas)[0]);   /* um de cada lado, em ordem sorteada */
+   if(!a||!b||(a.c===b.c&&a.q===b.q)) continue;
+   const at=Math.floor(Math.random()*(out.length+1));
+   out.splice(at,0,{c:a.c,q:a.q,mix:true,conf:g},{c:b.c,q:b.q,rival:true,conf:g});
+   break;
+  }
+ }
  return out;
 }
 

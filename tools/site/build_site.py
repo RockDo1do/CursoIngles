@@ -80,7 +80,9 @@ def validar():
         for c, x in zip(load(f'historia/{a}').get('capitulos', []), load(f'questoes/{a}')):
             nq[c.get('t')] = len(x.get('perguntas', []))
     for g in load('pratica/confusoes'):
-        for t, qs in (g.get('perguntas') or {}).items():
+        if len(g.get('lados') or []) != 2:
+            erros.append(f'pratica/confusoes ("{g.get("nome")}"): cada grupo precisa de exatamente 2 lados')
+        for t, qs in [kv for l in g.get('lados') or [] for kv in (l.get('perguntas') or {}).items()]:
             if t not in nq:
                 erros.append(f'pratica/confusoes ("{g.get("nome")}"): não existe capítulo com o título "{t}"')
             elif any(not isinstance(q, int) or not 0 <= q < nq[t] for q in qs):
