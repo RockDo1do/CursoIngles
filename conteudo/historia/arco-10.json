@@ -1,0 +1,1333 @@
+{
+ "nome": "Arco 10 · Missão em Londres",
+ "descricao": "Níveis A2 a B2 · convites, opiniões, histórias, mensagens e mídia, com sotaque britânico",
+ "agora_voce_consegue": [
+  "Convidar, oferecer ajuda e sugerir programas",
+  "Dar opinião e discordar com educação",
+  "Contar uma história em ordem",
+  "Falar de hábitos do passado com used to e would",
+  "Escrever mensagens com o tom certo",
+  "Recomendar filmes, séries e livros"
+ ],
+ "capitulos": [
+  {
+   "t": "Chegada a Londres",
+   "lv": "A2",
+   "topic": "Convites, ofertas e sugestões",
+   "bg": "street",
+   "hero": "olivia",
+   "p": [
+    {
+     "sys": "Arco 10 · Missão em Londres",
+     "text": "A Torre abre um portal em Londres. Lá, a equipe conhece Olivia, uma jornalista, e o primo dela, Harry, dono de uma livraria. Ouça com atenção: aqui o sotaque é britânico."
+    },
+    {
+     "bg": "street",
+     "m": {
+      "olivia": "happy",
+      "rafa": "normal"
+     },
+     "l": [
+      [
+       "olivia",
+       "Hello! You must be the new explorer. I'm Olivia. Welcome to London!",
+       "Olá! Você deve ser {o|a} nov{o|a} explorador{|a}. Eu sou a Olivia. Bem-vind{o|a} a Londres!"
+      ],
+      [
+       "rafa",
+       "Thanks! It's raining, but I love it already.",
+       "Obrigad{o|a}! Está chovendo, mas já estou adorando."
+      ],
+      [
+       "olivia",
+       "Would you like a cup of tea? There's a nice café round the corner.",
+       "Você quer uma xícara de chá? Tem um café legal virando a esquina."
+      ],
+      [
+       "rafa",
+       "Yes, I'd love to.",
+       "Sim, eu adoraria."
+      ]
+     ]
+    },
+    {
+     "bg": "cafe",
+     "m": {
+      "harry": "happy",
+      "mina": "normal"
+     },
+     "l": [
+      [
+       "harry",
+       "Hi, I'm Harry. Shall I carry your bags? They look heavy.",
+       "Oi, eu sou o Harry. Quer que eu carregue suas malas? Parecem pesadas."
+      ],
+      [
+       "mina",
+       "That's very kind of you, thanks.",
+       "Muita gentileza sua, obrigada."
+      ],
+      [
+       "harry",
+       "Why don't we visit my bookshop tomorrow?",
+       "Por que a gente não visita a minha livraria amanhã?"
+      ]
+     ]
+    },
+    {
+     "bg": "cafe",
+     "m": {
+      "jin": "normal",
+      "harry": "normal"
+     },
+     "l": [
+      [
+       "jin",
+       "Sounds good. How about the morning?",
+       "Parece bom. Que tal de manhã?"
+      ],
+      [
+       "harry",
+       "I'm afraid I can't in the morning. Let's meet at two.",
+       "Infelizmente de manhã não posso. Vamos nos encontrar às duas."
+      ]
+     ]
+    },
+    {
+     "sys": "Convidar, oferecer e sugerir",
+     "r": [
+      [
+       "Would you like a cup of tea?",
+       "Você quer...? (convite educado)"
+      ],
+      [
+       "Would you like to come to the cinema?",
+       "Você quer vir ao cinema? (would like + TO + verbo)"
+      ],
+      [
+       "Shall I carry your bags?",
+       "Quer que eu...? (oferecer ajuda)"
+      ],
+      [
+       "Why don't we visit the museum?",
+       "Por que a gente não...? (sugestão)"
+      ],
+      [
+       "How about going by bus? / What about Friday?",
+       "Que tal...? (depois vem verbo com -ING ou um nome)"
+      ],
+      [
+       "Let's meet at two.",
+       "Vamos... (sugestão direta)"
+      ],
+      [
+       "I'd love to. / Sounds great!",
+       "Para aceitar"
+      ],
+      [
+       "I'm afraid I can't. / Thanks, but I'm busy.",
+       "Para recusar com educação"
+      ]
+     ],
+     "tip": "Para recusar, os britânicos quase nunca dizem só “no”. Use I'm afraid... ou Thanks, but... e, se puder, dê um motivo ou sugira outro dia."
+    },
+    {
+     "bg": "street",
+     "m": {
+      "rafa": "happy",
+      "olivia": "happy"
+     },
+     "l": [
+      [
+       "rafa",
+       "How about a walk by the river after tea?",
+       "Que tal uma caminhada na beira do rio depois do chá?"
+      ],
+      [
+       "olivia",
+       "Brilliant idea! Let's go.",
+       "Ótima ideia! Vamos."
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "t": "Um Dia Comum",
+   "lv": "A2",
+   "topic": "Phrasal verbs do dia a dia",
+   "bg": "room",
+   "hero": "harry",
+   "p": [
+    {
+     "sys": "Um dia comum",
+     "text": "Harry mostra a rotina da livraria. Muitos verbos do dia a dia vêm com uma partícula: up, on, off, out..."
+    },
+    {
+     "bg": "room",
+     "m": {
+      "harry": "normal",
+      "rafa": "shock"
+     },
+     "l": [
+      [
+       "harry",
+       "I get up at six, but I wake up at half past five.",
+       "Eu me levanto às seis, mas acordo às cinco e meia."
+      ],
+      [
+       "rafa",
+       "That's early! What do you do first?",
+       "Que cedo! O que você faz primeiro?"
+      ],
+      [
+       "harry",
+       "I put on my coat and pick up the newspapers.",
+       "Visto o casaco e pego os jornais."
+      ]
+     ]
+    },
+    {
+     "bg": "room",
+     "m": {
+      "olivia": "sad",
+      "harry": "normal"
+     },
+     "l": [
+      [
+       "olivia",
+       "Harry, the lights are still on. Turn them off, please.",
+       "Harry, as luzes ainda estão acesas. Apaga, por favor."
+      ],
+      [
+       "harry",
+       "Sorry! And I can't find my keys. Can you help me look for them?",
+       "Desculpa! E não acho minhas chaves. Você me ajuda a procurar?"
+      ],
+      [
+       "olivia",
+       "They're in your pocket, Harry!",
+       "Estão no seu bolso, Harry!"
+      ]
+     ]
+    },
+    {
+     "sys": "Phrasal verbs do dia a dia",
+     "r": [
+      [
+       "wake up / get up",
+       "acordar / levantar da cama"
+      ],
+      [
+       "put on / take off",
+       "vestir, pôr / tirar (roupa, sapato)"
+      ],
+      [
+       "turn on / turn off",
+       "ligar, acender / desligar, apagar"
+      ],
+      [
+       "look for",
+       "procurar"
+      ],
+      [
+       "find out",
+       "descobrir"
+      ],
+      [
+       "pick up",
+       "pegar, buscar (alguém ou algo)"
+      ],
+      [
+       "give up",
+       "desistir"
+      ],
+      [
+       "run out of",
+       "ficar sem, acabar"
+      ]
+     ],
+     "tip": "Quando o objeto é um pronome, ele fica no meio: turn it off, put them on. Não se diz “turn off it”."
+    },
+    {
+     "bg": "cafe",
+     "m": {
+      "jin": "shock",
+      "harry": "happy"
+     },
+     "l": [
+      [
+       "jin",
+       "Oh no, we've run out of milk!",
+       "Ah, não, acabou o leite!"
+      ],
+      [
+       "harry",
+       "Don't give up! I'll pick some up on the way back.",
+       "Não desista! Eu pego um pouco na volta."
+      ],
+      [
+       "jin",
+       "Did you find out who left the door open?",
+       "Você descobriu quem deixou a porta aberta?"
+      ],
+      [
+       "harry",
+       "Yes. It was me.",
+       "Sim. Fui eu."
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "t": "Na Minha Opinião",
+   "lv": "B1",
+   "topic": "Dar opinião, concordar e discordar",
+   "bg": "cafe",
+   "hero": "olivia",
+   "p": [
+    {
+     "sys": "Na minha opinião",
+     "text": "Olivia está escrevendo um artigo: “Os celulares deveriam ser proibidos nas escolas?”. Ela quer a opinião de todos."
+    },
+    {
+     "bg": "cafe",
+     "m": {
+      "olivia": "normal",
+      "jin": "det"
+     },
+     "l": [
+      [
+       "olivia",
+       "So, what do you think? Should phones be banned in schools?",
+       "Então, o que vocês acham? Os celulares deveriam ser proibidos nas escolas?"
+      ],
+      [
+       "jin",
+       "In my opinion, yes. Students can't concentrate with a phone in their pocket.",
+       "Na minha opinião, sim. Os alunos não conseguem se concentrar com um celular no bolso."
+      ]
+     ]
+    },
+    {
+     "bg": "cafe",
+     "m": {
+      "mina": "normal",
+      "jin": "normal"
+     },
+     "l": [
+      [
+       "mina",
+       "I'm not so sure. Phones can be useful for research.",
+       "Não tenho tanta certeza. O celular pode ser útil para pesquisar."
+      ],
+      [
+       "jin",
+       "That's a good point, but schools have computers for that.",
+       "É um bom argumento, mas as escolas têm computadores para isso."
+      ]
+     ]
+    },
+    {
+     "bg": "cafe",
+     "m": {
+      "rafa": "happy",
+      "olivia": "happy"
+     },
+     "l": [
+      [
+       "rafa",
+       "I reckon the best idea is to keep them in a box during lessons.",
+       "Eu acho que o melhor é guardar os celulares numa caixa durante as aulas."
+      ],
+      [
+       "olivia",
+       "I totally agree. That's a fair compromise.",
+       "Concordo totalmente. É um meio-termo justo."
+      ]
+     ]
+    },
+    {
+     "sys": "Opinião, concordar e discordar",
+     "r": [
+      [
+       "In my opinion... / I think... / I reckon...",
+       "Na minha opinião... / Acho que... (I reckon é bem britânico e informal)"
+      ],
+      [
+       "As far as I'm concerned...",
+       "No que me diz respeito... (mais formal)"
+      ],
+      [
+       "I totally agree. / Absolutely.",
+       "Concordo totalmente."
+      ],
+      [
+       "That's a good point, but...",
+       "É um bom argumento, mas... (discordar com educação)"
+      ],
+      [
+       "I'm not so sure. / I see what you mean, but...",
+       "Não tenho tanta certeza. / Entendo, mas..."
+      ],
+      [
+       "I don't agree at all.",
+       "Não concordo de jeito nenhum. (forte)"
+      ],
+      [
+       "I agree with you.",
+       "Concordo com você. (nunca “I am agree”)"
+      ]
+     ],
+     "tip": "“I am agree” não existe: agree já é verbo. Diga I agree ou I don't agree. Para discordar sem brigar, comece reconhecendo o outro lado: That's true, but..."
+    },
+    {
+     "bg": "cafe",
+     "m": {
+      "harry": "happy",
+      "mina": "happy"
+     },
+     "l": [
+      [
+       "harry",
+       "As far as I'm concerned, books are better than phones anyway!",
+       "Para mim, livros são melhores que celulares de qualquer jeito!"
+      ],
+      [
+       "mina",
+       "Spoken like a true bookshop owner.",
+       "Falou como um verdadeiro dono de livraria."
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "t": "Era Uma Vez",
+   "lv": "B1",
+   "topic": "Contar histórias: sequência e tempos do passado",
+   "bg": "cafe",
+   "hero": "harry",
+   "p": [
+    {
+     "sys": "Era uma vez",
+     "text": "À noite, num café antigo, Harry conta a história mais estranha que já aconteceu na livraria."
+    },
+    {
+     "bg": "cafe",
+     "m": {
+      "harry": "det",
+      "rafa": "normal"
+     },
+     "l": [
+      [
+       "harry",
+       "It happened last winter. I was closing the shop when the phone rang.",
+       "Aconteceu no inverno passado. Eu estava fechando a loja quando o telefone tocou."
+      ],
+      [
+       "rafa",
+       "Who was it?",
+       "Quem era?"
+      ],
+      [
+       "harry",
+       "Nobody. But when I turned around, someone had left an old book on the counter.",
+       "Ninguém. Mas quando me virei, alguém tinha deixado um livro antigo no balcão."
+      ]
+     ]
+    },
+    {
+     "bg": "cafe",
+     "m": {
+      "mina": "shock",
+      "harry": "det"
+     },
+     "l": [
+      [
+       "mina",
+       "What happened next?",
+       "E o que aconteceu depois?"
+      ],
+      [
+       "harry",
+       "First, I opened it. Then I noticed a map inside. After that, I followed the map through the city.",
+       "Primeiro, eu abri. Depois notei um mapa dentro. Em seguida, segui o mapa pela cidade."
+      ],
+      [
+       "harry",
+       "Suddenly, it started to snow. In the end, the map led me back to my own shop!",
+       "De repente, começou a nevar. No final, o mapa me levou de volta à minha própria loja!"
+      ]
+     ]
+    },
+    {
+     "sys": "Contar uma história",
+     "r": [
+      [
+       "I was closing the shop...",
+       "Passado contínuo: o cenário, o que estava acontecendo"
+      ],
+      [
+       "...when the phone rang.",
+       "Passado simples: a ação principal"
+      ],
+      [
+       "Someone had left a book.",
+       "Past perfect: algo que aconteceu ANTES de outro fato passado"
+      ],
+      [
+       "First, / Then, / After that,",
+       "Primeiro, / Depois, / Em seguida,"
+      ],
+      [
+       "While I was walking...",
+       "Enquanto eu caminhava... (ação longa)"
+      ],
+      [
+       "Suddenly, / All of a sudden,",
+       "De repente,"
+      ],
+      [
+       "Eventually, / In the end,",
+       "Por fim, / No final, (depois de muito tempo)"
+      ],
+      [
+       "At the end of the film...",
+       "No fim do filme... (o momento final de algo, com of)"
+      ]
+     ],
+     "tip": "Eventually não é “eventualmente”: significa “no fim, depois de muito tempo”. E in the end (no final da história) é diferente de at the end of (no fim de algo)."
+    },
+    {
+     "bg": "cafe",
+     "m": {
+      "jin": "happy",
+      "harry": "happy"
+     },
+     "l": [
+      [
+       "jin",
+       "So the book was a joke?",
+       "Então o livro era uma brincadeira?"
+      ],
+      [
+       "harry",
+       "Eventually, I found out that Olivia had planned the whole thing!",
+       "No fim, descobri que a Olivia tinha planejado tudo!"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "t": "Mensagens",
+   "lv": "B1",
+   "topic": "Mensagens e e-mails: abreviações e tom",
+   "bg": "room",
+   "hero": "olivia",
+   "p": [
+    {
+     "sys": "Mensagens",
+     "text": "O celular da Olivia não para. Mensagens entre amigos são curtas e cheias de abreviações; e-mails de trabalho, não."
+    },
+    {
+     "bg": "room",
+     "m": {
+      "olivia": "happy",
+      "mina": "normal"
+     },
+     "l": [
+      [
+       "mina",
+       "What does BTW mean in your message?",
+       "O que quer dizer BTW na sua mensagem?"
+      ],
+      [
+       "olivia",
+       "By the way. And ASAP means as soon as possible.",
+       "By the way: por falar nisso. E ASAP quer dizer as soon as possible, o mais rápido possível."
+      ],
+      [
+       "mina",
+       "And why do you write an x at the end?",
+       "E por que você escreve um x no final?"
+      ],
+      [
+       "olivia",
+       "It's a kiss! But never in a work email.",
+       "É um beijo! Mas nunca num e-mail de trabalho."
+      ]
+     ]
+    },
+    {
+     "bg": "room",
+     "m": {
+      "rafa": "shock",
+      "olivia": "normal"
+     },
+     "l": [
+      [
+       "rafa",
+       "My boss wrote: Please find the report attached. What does that mean?",
+       "Meu chefe escreveu: Please find the report attached. O que isso quer dizer?"
+      ],
+      [
+       "olivia",
+       "It means the report is in the email. It's formal language for work.",
+       "Quer dizer que o relatório está em anexo no e-mail. É linguagem formal de trabalho."
+      ]
+     ]
+    },
+    {
+     "sys": "Mensagens e e-mails",
+     "r": [
+      [
+       "BTW = by the way",
+       "por falar nisso"
+      ],
+      [
+       "ASAP = as soon as possible",
+       "o mais rápido possível"
+      ],
+      [
+       "tbh = to be honest",
+       "para ser sincero"
+      ],
+      [
+       "FYI = for your information",
+       "para sua informação"
+      ],
+      [
+       "Cheers! / Thanks!",
+       "Valeu! / Obrigado! (informal)"
+      ],
+      [
+       "x / xx",
+       "beijo (entre amigos e família)"
+      ],
+      [
+       "I hope you are well. / Please find... attached.",
+       "Espero que esteja bem. / Segue... em anexo. (e-mail formal)"
+      ],
+      [
+       "Best wishes, / Kind regards,",
+       "Abraços, / Atenciosamente, (despedidas de e-mail)"
+      ]
+     ],
+     "tip": "O tom muda tudo: com amigos, mensagens curtas e abreviações; no trabalho, frases completas e sem abreviações. Na dúvida, escreva por extenso."
+    },
+    {
+     "bg": "room",
+     "m": {
+      "jin": "happy",
+      "rafa": "happy"
+     },
+     "l": [
+      [
+       "jin",
+       "To be honest, I still don't understand emojis.",
+       "Para ser sincero, eu ainda não entendo emojis."
+      ],
+      [
+       "rafa",
+       "Me neither! But I love the little cat.",
+       "Nem eu! Mas adoro o gatinho."
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "t": "Filmes, Séries e Livros",
+   "lv": "B1",
+   "topic": "Falar de mídia e recomendar",
+   "bg": "room",
+   "hero": "harry",
+   "p": [
+    {
+     "sys": "Filmes, séries e livros",
+     "text": "Na livraria do Harry, todo mundo tem uma recomendação. Hora de falar de filmes, séries e livros sem contar o final."
+    },
+    {
+     "bg": "room",
+     "m": {
+      "harry": "happy",
+      "mina": "normal"
+     },
+     "l": [
+      [
+       "harry",
+       "Have you read this one? It's set in Victorian London.",
+       "Você já leu este? Ele se passa na Londres vitoriana."
+      ],
+      [
+       "mina",
+       "What's it about?",
+       "É sobre o quê?"
+      ],
+      [
+       "harry",
+       "It's about a detective who can't remember anything. The plot is brilliant.",
+       "É sobre um detetive que não consegue se lembrar de nada. O enredo é brilhante."
+      ]
+     ]
+    },
+    {
+     "bg": "room",
+     "m": {
+      "jin": "det",
+      "olivia": "happy"
+     },
+     "l": [
+      [
+       "jin",
+       "Is it the one they made into a series?",
+       "É aquele que virou série?"
+      ],
+      [
+       "olivia",
+       "Yes! The cast is amazing, and the ending... no spoilers!",
+       "Sim! O elenco é incrível, e o final... sem spoilers!"
+      ],
+      [
+       "jin",
+       "Is it worth watching?",
+       "Vale a pena assistir?"
+      ],
+      [
+       "olivia",
+       "Definitely. I'd highly recommend it.",
+       "Com certeza. Eu recomendo muito."
+      ]
+     ]
+    },
+    {
+     "sys": "Falar de filmes, séries e livros",
+     "r": [
+      [
+       "It's set in London.",
+       "Se passa em Londres."
+      ],
+      [
+       "It's about a detective who...",
+       "É sobre um detetive que..."
+      ],
+      [
+       "the plot / the main character / the cast",
+       "o enredo / o personagem principal / o elenco"
+      ],
+      [
+       "It's based on a true story.",
+       "É baseado numa história real."
+      ],
+      [
+       "It's worth watching. / It's worth reading.",
+       "Vale a pena assistir. / Vale a pena ler."
+      ],
+      [
+       "I'd highly recommend it.",
+       "Eu recomendo muito."
+      ],
+      [
+       "It was a bit slow. / It was gripping.",
+       "Foi um pouco lento. / Foi envolvente."
+      ],
+      [
+       "a series / an episode / a season",
+       "uma série / um episódio / uma temporada"
+      ]
+     ],
+     "tip": "Novela de TV em inglês é soap opera; novel é romance, o livro. E series tem S também no singular: a series, two series."
+    },
+    {
+     "bg": "room",
+     "m": {
+      "rafa": "happy",
+      "harry": "happy"
+     },
+     "l": [
+      [
+       "rafa",
+       "I'll take it! I need something gripping for the flight home.",
+       "Vou levar! Preciso de algo envolvente para o voo de volta."
+      ],
+      [
+       "harry",
+       "Good choice. But don't read the last page first!",
+       "Boa escolha. Mas não leia a última página primeiro!"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "t": "Nos Velhos Tempos",
+   "lv": "B1",
+   "topic": "Would e used to para hábitos do passado",
+   "bg": "street",
+   "hero": "harry",
+   "p": [
+    {
+     "sys": "Nos velhos tempos",
+     "text": "Num passeio por Notting Hill, Harry se lembra da infância no bairro."
+    },
+    {
+     "bg": "street",
+     "m": {
+      "harry": "happy",
+      "mina": "normal"
+     },
+     "l": [
+      [
+       "harry",
+       "When I was a kid, we used to live on this street.",
+       "Quando eu era criança, a gente morava nesta rua."
+      ],
+      [
+       "harry",
+       "Every Saturday, my grandad would take me to the market.",
+       "Todo sábado, meu avô me levava à feira."
+      ],
+      [
+       "mina",
+       "That's lovely. Did you use to have a pet?",
+       "Que lindo. Você tinha um bicho de estimação?"
+      ],
+      [
+       "harry",
+       "Yes, we used to have a dog called Biscuit.",
+       "Sim, a gente tinha um cachorro chamado Biscuit."
+      ]
+     ]
+    },
+    {
+     "bg": "street",
+     "m": {
+      "olivia": "happy",
+      "rafa": "normal"
+     },
+     "l": [
+      [
+       "olivia",
+       "And on Sundays we would play football in the park for hours.",
+       "E aos domingos a gente jogava futebol no parque por horas."
+      ],
+      [
+       "rafa",
+       "In Brazil, my family would always have lunch together on Sundays.",
+       "No Brasil, minha família sempre almoçava junta aos domingos."
+      ]
+     ]
+    },
+    {
+     "sys": "Would e used to no passado",
+     "r": [
+      [
+       "We used to live here.",
+       "A gente morava aqui. (estado ou hábito antigo)"
+      ],
+      [
+       "My grandad would take me to the market.",
+       "Meu avô me levava à feira. (ação que se repetia)"
+      ],
+      [
+       "We used to have a dog. ✓ / We would have a dog. ✗",
+       "Para estados (ter, morar, ser, gostar), só used to."
+      ],
+      [
+       "Did you use to...? / I didn't use to...",
+       "Na pergunta e na negativa: use to, sem D"
+      ],
+      [
+       "We would always... / We would often...",
+       "Would com always e often soa natural"
+      ]
+     ],
+     "tip": "Would para hábitos só funciona com ações que se repetiam (levar, jogar, almoçar). Para o que era verdade naquela época (morar, ter, gostar), use used to."
+    },
+    {
+     "bg": "street",
+     "m": {
+      "jin": "happy",
+      "harry": "happy"
+     },
+     "l": [
+      [
+       "jin",
+       "I didn't use to like vegetables, but now I love them.",
+       "Eu não gostava de legumes, mas agora adoro."
+      ],
+      [
+       "harry",
+       "And I used to hate reading. Now I sell books!",
+       "E eu odiava ler. Agora vendo livros!"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "t": "Que, Aliás...",
+   "lv": "B2",
+   "topic": "Orações explicativas, com vírgulas (which, who, whose)",
+   "bg": "gate",
+   "hero": "olivia",
+   "p": [
+    {
+     "sys": "Que, aliás...",
+     "text": "Olivia leva a equipe ao Museu Britânico. Nas placas, várias frases trazem uma informação extra entre vírgulas."
+    },
+    {
+     "bg": "gate",
+     "m": {
+      "olivia": "normal",
+      "jin": "normal"
+     },
+     "l": [
+      [
+       "olivia",
+       "This is the Rosetta Stone, which helped scholars read ancient Egyptian.",
+       "Esta é a Pedra de Roseta, que ajudou os estudiosos a ler o egípcio antigo."
+      ],
+      [
+       "jin",
+       "And who found it?",
+       "E quem a encontrou?"
+      ],
+      [
+       "olivia",
+       "French soldiers, who were in Egypt in 1799.",
+       "Soldados franceses, que estavam no Egito em 1799."
+      ]
+     ]
+    },
+    {
+     "bg": "gate",
+     "m": {
+      "mina": "happy",
+      "olivia": "happy"
+     },
+     "l": [
+      [
+       "mina",
+       "My grandmother, whose father was a historian, would love this place.",
+       "Minha avó, cujo pai era historiador, adoraria este lugar."
+      ],
+      [
+       "olivia",
+       "Then bring her to London, where there are hundreds of museums!",
+       "Então traga ela para Londres, onde há centenas de museus!"
+      ]
+     ]
+    },
+    {
+     "sys": "Orações explicativas",
+     "r": [
+      [
+       "The Rosetta Stone, which is in London, is famous.",
+       "Informação extra: vem entre vírgulas."
+      ],
+      [
+       "My brother, who lives in Leeds, is a doctor.",
+       "who para pessoas"
+      ],
+      [
+       "My aunt, whose house is huge, loves parties.",
+       "whose = cujo, cuja"
+      ],
+      [
+       "London, where I work, is expensive.",
+       "where para lugares"
+      ],
+      [
+       "✗ My car, that is red, ...",
+       "Com vírgulas, nunca use that."
+      ],
+      [
+       "She passed the exam, which surprised everyone.",
+       "which pode comentar a frase inteira (= o que)"
+      ],
+      [
+       "The man who called you is here.",
+       "Sem vírgulas, a informação é essencial: diz QUAL homem."
+      ]
+     ],
+     "tip": "Teste: se você tirar o trecho e ainda der para saber de quem ou do que se fala, ele é extra e vai entre vírgulas. Na fala, as vírgulas viram pequenas pausas."
+    },
+    {
+     "bg": "gate",
+     "m": {
+      "rafa": "happy",
+      "jin": "shock"
+     },
+     "l": [
+      [
+       "rafa",
+       "I finally understand this grammar, which is a miracle!",
+       "Finalmente entendi essa gramática, o que é um milagre!"
+      ],
+      [
+       "jin",
+       "And you didn't even need a magic stone.",
+       "E você nem precisou de uma pedra mágica."
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "t": "Não Precisava!",
+   "lv": "B2",
+   "topic": "Needn't have, didn't need to e linguagem vaga",
+   "bg": "street",
+   "hero": "mina",
+   "p": [
+    {
+     "sys": "Não precisava!",
+     "text": "Dia de piquenique no Hyde Park. Mina se preparou para tudo... até demais."
+    },
+    {
+     "bg": "street",
+     "m": {
+      "mina": "sad",
+      "olivia": "happy"
+     },
+     "l": [
+      [
+       "mina",
+       "I brought three umbrellas, but it's sunny.",
+       "Eu trouxe três guarda-chuvas, mas está sol."
+      ],
+      [
+       "olivia",
+       "You needn't have brought them! It's the first sunny day in weeks.",
+       "Você não precisava ter trazido! É o primeiro dia de sol em semanas."
+      ]
+     ]
+    },
+    {
+     "bg": "street",
+     "m": {
+      "jin": "normal",
+      "harry": "happy"
+     },
+     "l": [
+      [
+       "jin",
+       "I didn't need to buy any food, because Harry brought sandwiches.",
+       "Eu não precisei comprar comida, porque o Harry trouxe sanduíches."
+      ],
+      [
+       "harry",
+       "There are sort of a lot, actually. Twenty or so.",
+       "Tem meio que bastante, na verdade. Uns vinte, mais ou menos."
+      ],
+      [
+       "jin",
+       "So we'll eat at sevenish, then?",
+       "Então a gente come lá pelas sete?"
+      ]
+     ]
+    },
+    {
+     "sys": "Não precisava e linguagem vaga",
+     "r": [
+      [
+       "You needn't have brought umbrellas.",
+       "Você não precisava ter trazido. (mas trouxe)"
+      ],
+      [
+       "I didn't need to buy food.",
+       "Não precisei comprar comida. (e não comprei)"
+      ],
+      [
+       "sort of / kind of",
+       "meio que, tipo"
+      ],
+      [
+       "twenty or so / about twenty",
+       "uns vinte, mais ou menos"
+      ],
+      [
+       "sevenish / fortyish",
+       "lá pelas sete / uns quarenta anos"
+      ],
+      [
+       "...and stuff / ...and things like that",
+       "...e tal / ...e coisas assim"
+      ],
+      [
+       "quite good",
+       "razoável, bom (no Reino Unido, quite costuma suavizar)"
+      ]
+     ],
+     "tip": "Linguagem vaga não é preguiça: nativos usam o tempo todo para soar naturais e menos diretos. Mas evite em textos formais."
+    },
+    {
+     "bg": "street",
+     "m": {
+      "rafa": "happy",
+      "mina": "happy"
+     },
+     "l": [
+      [
+       "rafa",
+       "And I needn't have worn this coat. It's quite hot!",
+       "E eu não precisava ter vindo de casaco. Está bem quente!"
+      ],
+      [
+       "mina",
+       "Welcome to British weather. It'll rain in an hour or so.",
+       "Bem-vind{o|a} ao clima britânico. Vai chover daqui a uma hora, mais ou menos."
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "t": "Escola e Ciência",
+   "lv": "B2",
+   "topic": "Educação, ciência e tecnologia",
+   "bg": "room",
+   "hero": "jin",
+   "p": [
+    {
+     "sys": "Escola e ciência",
+     "text": "Olivia está escrevendo sobre educação e entrevista o Jin, que estudou computação."
+    },
+    {
+     "bg": "room",
+     "m": {
+      "olivia": "normal",
+      "jin": "normal"
+     },
+     "l": [
+      [
+       "olivia",
+       "Jin, you did a degree in computer science, didn't you?",
+       "Jin, você fez faculdade de ciência da computação, não fez?"
+      ],
+      [
+       "jin",
+       "Yes. In my final year, I carried out research on artificial intelligence.",
+       "Sim. No último ano, fiz uma pesquisa sobre inteligência artificial."
+      ],
+      [
+       "olivia",
+       "What were your findings?",
+       "Quais foram os resultados?"
+      ],
+      [
+       "jin",
+       "That machines learn faster when the data is clean. We made a lot of progress.",
+       "Que as máquinas aprendem mais rápido quando os dados estão limpos. A gente avançou muito."
+      ]
+     ]
+    },
+    {
+     "bg": "room",
+     "m": {
+      "mina": "normal",
+      "harry": "sad"
+     },
+     "l": [
+      [
+       "mina",
+       "Should schools teach coding from an early age?",
+       "As escolas deveriam ensinar programação desde cedo?"
+      ],
+      [
+       "harry",
+       "Maybe, but I failed my maths exam twice. I had to retake it!",
+       "Talvez, mas eu reprovei na prova de matemática duas vezes. Tive que refazer!"
+      ]
+     ]
+    },
+    {
+     "sys": "Educação, ciência e tecnologia",
+     "r": [
+      [
+       "do a degree / do a course",
+       "fazer faculdade / fazer um curso (com do, não make)"
+      ],
+      [
+       "take an exam / pass / fail / retake",
+       "fazer uma prova / passar / reprovar / refazer"
+      ],
+      [
+       "carry out research / an experiment",
+       "fazer uma pesquisa / um experimento"
+      ],
+      [
+       "findings / evidence / data",
+       "resultados / evidências / dados (research e evidence não ganham S)"
+      ],
+      [
+       "make progress / make a discovery",
+       "avançar / fazer uma descoberta"
+      ],
+      [
+       "a device / an update / to download",
+       "um aparelho / uma atualização / baixar"
+      ],
+      [
+       "primary school / secondary school",
+       "escola para 5 a 11 anos / escola para 11 a 16 ou 18 anos (Reino Unido)"
+      ],
+      [
+       "a lecture / a lecturer",
+       "uma aula expositiva na faculdade / professor universitário (não é leitura!)"
+      ]
+     ],
+     "tip": "Falsos amigos: lecture é aula na faculdade, não leitura (reading). E pass an exam é passar na prova; fazer a prova é take an exam."
+    },
+    {
+     "bg": "room",
+     "m": {
+      "rafa": "happy",
+      "jin": "happy"
+     },
+     "l": [
+      [
+       "rafa",
+       "I've got a lecture on Monday and an exam on Friday.",
+       "Tenho aula na segunda e prova na sexta."
+      ],
+      [
+       "jin",
+       "Then download the notes and get some sleep. Research says sleep helps memory.",
+       "Então baixe as anotações e durma bem. As pesquisas dizem que o sono ajuda a memória."
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "t": "A Névoa de Londres",
+   "lv": "B2",
+   "topic": "Revisão do Arco 10",
+   "bg": "action",
+   "hero": "rafa",
+   "mon": "NÉVOA",
+   "boss": true,
+   "p": [
+    {
+     "sys": "Arco 10 · A Névoa",
+     "text": "Uma névoa cinzenta cobre Londres. Dentro dela, uma criatura rouba as palavras das pessoas. Só quem usa bem o inglês consegue passar."
+    },
+    {
+     "bg": "action",
+     "m": {
+      "monster": "det",
+      "rafa": "det"
+     },
+     "l": [
+      [
+       "monster",
+       "Nobody can find their words in my fog!",
+       "Ninguém consegue achar as palavras na minha névoa!"
+      ],
+      [
+       "rafa",
+       "We'll see. Olivia, shall I go first?",
+       "Veremos. Olivia, quer que eu vá primeiro?"
+      ]
+     ]
+    },
+    {
+     "bg": "action",
+     "m": {
+      "olivia": "det",
+      "harry": "det"
+     },
+     "l": [
+      [
+       "olivia",
+       "Go on! And remember: the fog, which feeds on silence, hates good stories.",
+       "Vai! E lembre-se: a névoa, que se alimenta do silêncio, odeia boas histórias."
+      ],
+      [
+       "harry",
+       "Tell it a story, then. First the setting, then the action!",
+       "Então conte uma história. Primeiro o cenário, depois a ação!"
+      ]
+     ]
+    },
+    {
+     "bg": "action",
+     "m": {
+      "rafa": "det",
+      "monster": "det"
+     },
+     "l": [
+      [
+       "rafa",
+       "I was walking through the fog when I suddenly remembered everything I had learned.",
+       "Eu estava andando pela névoa quando, de repente, me lembrei de tudo que tinha aprendido."
+      ],
+      [
+       "monster",
+       "Stop! My fog is disappearing!",
+       "Pare! Minha névoa está sumindo!"
+      ]
+     ]
+    },
+    {
+     "sys": "Revisão do Arco 10",
+     "r": [
+      [
+       "Would you like...? / Shall I...? / How about...?",
+       "convidar, oferecer, sugerir"
+      ],
+      [
+       "put on, turn off, look for, find out, give up",
+       "phrasal verbs do dia a dia"
+      ],
+      [
+       "I reckon... / That's a good point, but...",
+       "opinião e discordância educada"
+      ],
+      [
+       "I was walking when... / I had learned",
+       "tempos do passado numa história"
+      ],
+      [
+       "We used to live... / We would play...",
+       "hábitos do passado"
+      ],
+      [
+       "London, which... / my aunt, whose...",
+       "orações explicativas"
+      ],
+      [
+       "You needn't have... / twenty or so",
+       "não precisava / linguagem vaga"
+      ]
+     ],
+     "tip": "Fim do Arco 10! No certificado, marque o que você já consegue fazer e revise o resto."
+    },
+    {
+     "bg": "street",
+     "m": {
+      "mina": "happy",
+      "olivia": "happy"
+     },
+     "l": [
+      [
+       "mina",
+       "The fog's gone! London looks beautiful.",
+       "A névoa sumiu! Londres está linda."
+      ],
+      [
+       "olivia",
+       "Brilliant work, everyone. Would you like to stay for one more cup of tea?",
+       "Trabalho brilhante, pessoal. Querem ficar para mais uma xícara de chá?"
+      ]
+     ]
+    }
+   ]
+  }
+ ]
+}

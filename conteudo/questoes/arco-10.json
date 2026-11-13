@@ -1,0 +1,1247 @@
+[
+ {
+  "capitulo": "Chegada a Londres",
+  "perguntas": [
+   {
+    "q": "Para convidar com educação: ___ a cup of tea?",
+    "o": [
+     "Would you like",
+     "Do you like",
+     "Are you like"
+    ],
+    "a": 0,
+    "why": "Would you like...? é o convite educado. Do you like...? pergunta se a pessoa gosta."
+   },
+   {
+    "q": "Para oferecer ajuda: ___ I open the window?",
+    "o": [
+     "Shall",
+     "Will",
+     "Do"
+    ],
+    "a": 0,
+    "why": "Shall I...? oferece ajuda: quer que eu...?"
+   },
+   {
+    "q": "How about ___ to the park?",
+    "o": [
+     "going",
+     "go",
+     "to go"
+    ],
+    "a": 0,
+    "why": "Depois de How about vem verbo com -ING."
+   },
+   {
+    "q": "Why don't we ___ a taxi?",
+    "o": [
+     "take",
+     "taking",
+     "to take"
+    ],
+    "a": 0,
+    "why": "Depois de Why don't we vem o verbo na forma básica."
+   },
+   {
+    "q": "Qual é uma recusa educada?",
+    "o": [
+     "I'm afraid I can't.",
+     "No.",
+     "I don't want."
+    ],
+    "a": 0,
+    "why": "I'm afraid I can't soa educado. Só No soa seco."
+   },
+   {
+    "q": "Would you like ___ to the cinema?",
+    "o": [
+     "to come",
+     "coming",
+     "come"
+    ],
+    "a": 0,
+    "why": "Would like + TO + verbo."
+   },
+   {
+    "q": "Let's ___ at two.",
+    "o": [
+     "meet",
+     "to meet",
+     "meeting"
+    ],
+    "a": 0,
+    "why": "Let's + verbo na forma básica."
+   },
+   {
+    "q": "Como aceitar um convite?",
+    "o": [
+     "I'd love to!",
+     "I'm afraid not.",
+     "Shall I?"
+    ],
+    "a": 0,
+    "why": "I'd love to = eu adoraria."
+   },
+   {
+    "q": "“Do you like tea?” pergunta:",
+    "o": [
+     "se a pessoa gosta de chá",
+     "se a pessoa quer chá agora",
+     "se a pessoa sabe fazer chá"
+    ],
+    "a": 0,
+    "why": "Para oferecer, use Would you like...?"
+   }
+  ],
+  "frases_extras": [
+   [
+    "Would you like a cup of tea?",
+    "Você quer uma xícara de chá?"
+   ],
+   [
+    "Shall I help you?",
+    "Quer que eu te ajude?"
+   ],
+   [
+    "How about going to the park?",
+    "Que tal ir ao parque?"
+   ],
+   [
+    "I'm afraid I can't tonight.",
+    "Infelizmente hoje à noite não posso."
+   ]
+  ]
+ },
+ {
+  "capitulo": "Um Dia Comum",
+  "perguntas": [
+   {
+    "q": "“I get up at seven” significa:",
+    "o": [
+     "Eu me levanto às sete.",
+     "Eu acordo às sete.",
+     "Eu subo às sete."
+    ],
+    "a": 0,
+    "why": "Wake up é acordar; get up é sair da cama."
+   },
+   {
+    "q": "Está frio. ___ your coat.",
+    "o": [
+     "Put on",
+     "Take off",
+     "Turn on"
+    ],
+    "a": 0,
+    "why": "Put on = vestir."
+   },
+   {
+    "q": "The TV is on. Please turn ___ off.",
+    "o": [
+     "it",
+     "off it",
+     "them"
+    ],
+    "a": 0,
+    "why": "Pronome no meio: turn it off."
+   },
+   {
+    "q": "I'm looking ___ my phone.",
+    "o": [
+     "for",
+     "at",
+     "up"
+    ],
+    "a": 0,
+    "why": "Look for = procurar."
+   },
+   {
+    "q": "“We've run out of bread” significa:",
+    "o": [
+     "Acabou o pão.",
+     "Saímos correndo com o pão.",
+     "Compramos pão."
+    ],
+    "a": 0,
+    "why": "Run out of = ficar sem."
+   },
+   {
+    "q": "Can you pick me ___ at the station?",
+    "o": [
+     "up",
+     "on",
+     "off"
+    ],
+    "a": 0,
+    "why": "Pick up = buscar alguém."
+   },
+   {
+    "q": "Don't give ___! You can do it.",
+    "o": [
+     "up",
+     "off",
+     "out"
+    ],
+    "a": 0,
+    "why": "Give up = desistir."
+   },
+   {
+    "q": "I want to find ___ the truth.",
+    "o": [
+     "out",
+     "up",
+     "on"
+    ],
+    "a": 0,
+    "why": "Find out = descobrir."
+   },
+   {
+    "q": "Chegou em casa: ___ your shoes, please.",
+    "o": [
+     "Take off",
+     "Put on",
+     "Pick up"
+    ],
+    "a": 0,
+    "why": "Take off = tirar (roupa, sapato)."
+   }
+  ],
+  "frases_extras": [
+   [
+    "I get up at seven every day.",
+    "Eu me levanto às sete todos os dias."
+   ],
+   [
+    "Turn off the lights, please.",
+    "Apague as luzes, por favor."
+   ],
+   [
+    "I'm looking for my keys.",
+    "Estou procurando minhas chaves."
+   ],
+   [
+    "We've run out of milk.",
+    "Acabou o leite."
+   ]
+  ]
+ },
+ {
+  "capitulo": "Na Minha Opinião",
+  "perguntas": [
+   {
+    "q": "Qual está correto?",
+    "o": [
+     "I agree with you.",
+     "I am agree with you.",
+     "I'm agree with you."
+    ],
+    "a": 0,
+    "why": "Agree é verbo: I agree."
+   },
+   {
+    "q": "Para discordar com educação:",
+    "o": [
+     "That's a good point, but...",
+     "You're wrong.",
+     "No way."
+    ],
+    "a": 0,
+    "why": "Reconheça o outro lado antes de discordar."
+   },
+   {
+    "q": "“I reckon” significa:",
+    "o": [
+     "Eu acho (informal)",
+     "Eu me lembro",
+     "Eu reconheço"
+    ],
+    "a": 0,
+    "why": "I reckon = I think, muito comum no Reino Unido."
+   },
+   {
+    "q": "“I'm not so sure” mostra:",
+    "o": [
+     "dúvida ou leve discordância",
+     "concordância total",
+     "raiva"
+    ],
+    "a": 0,
+    "why": "É um jeito suave de discordar."
+   },
+   {
+    "q": "___ my opinion, it's a great idea.",
+    "o": [
+     "In",
+     "On",
+     "For"
+    ],
+    "a": 0,
+    "why": "In my opinion."
+   },
+   {
+    "q": "Qual expressa concordância forte?",
+    "o": [
+     "Absolutely!",
+     "I see what you mean, but...",
+     "I'm not so sure."
+    ],
+    "a": 0,
+    "why": "Absolutely = com certeza."
+   },
+   {
+    "q": "“As far as I'm concerned” é:",
+    "o": [
+     "um jeito mais formal de dar opinião",
+     "um jeito de concordar",
+     "uma pergunta"
+    ],
+    "a": 0,
+    "why": "No que me diz respeito..."
+   },
+   {
+    "q": "Para pedir a opinião de alguém:",
+    "o": [
+     "What do you think?",
+     "What are you think?",
+     "How do you think?"
+    ],
+    "a": 0,
+    "why": "What do you think? Nunca How do you think?"
+   },
+   {
+    "q": "“I see what you mean, but...” serve para:",
+    "o": [
+     "mostrar que entendeu antes de discordar",
+     "concordar totalmente",
+     "mudar de assunto"
+    ],
+    "a": 0,
+    "why": "Entendo o que você quer dizer, mas..."
+   }
+  ],
+  "frases_extras": [
+   [
+    "In my opinion, it's a good idea.",
+    "Na minha opinião, é uma boa ideia."
+   ],
+   [
+    "I totally agree with you.",
+    "Concordo totalmente com você."
+   ],
+   [
+    "That's a good point, but I'm not so sure.",
+    "É um bom argumento, mas não tenho tanta certeza."
+   ],
+   [
+    "What do you think?",
+    "O que você acha?"
+   ]
+  ]
+ },
+ {
+  "capitulo": "Era Uma Vez",
+  "perguntas": [
+   {
+    "q": "I ___ the shop when the phone rang.",
+    "o": [
+     "was closing",
+     "closed",
+     "had closed"
+    ],
+    "a": 0,
+    "why": "Passado contínuo para a ação que estava acontecendo."
+   },
+   {
+    "q": "When I arrived, the film ___ already started.",
+    "o": [
+     "had",
+     "has",
+     "was"
+    ],
+    "a": 0,
+    "why": "Past perfect: aconteceu antes de eu chegar."
+   },
+   {
+    "q": "“Eventually” significa:",
+    "o": [
+     "no fim, depois de muito tempo",
+     "eventualmente, às vezes",
+     "imediatamente"
+    ],
+    "a": 0,
+    "why": "Falso cognato: eventualmente é occasionally."
+   },
+   {
+    "q": "Qual expressão anuncia algo inesperado?",
+    "o": [
+     "Suddenly,",
+     "First,",
+     "In the end,"
+    ],
+    "a": 0,
+    "why": "Suddenly = de repente."
+   },
+   {
+    "q": "___ I was walking home, I saw a fox.",
+    "o": [
+     "While",
+     "During",
+     "Then"
+    ],
+    "a": 0,
+    "why": "While + ação; during + nome (during the night)."
+   },
+   {
+    "q": "“In the end” significa:",
+    "o": [
+     "no final (da história)",
+     "no fim de algo específico",
+     "de repente"
+    ],
+    "a": 0,
+    "why": "Para o fim de algo, use at the end of."
+   },
+   {
+    "q": "Qual é a ordem natural?",
+    "o": [
+     "First, then, in the end",
+     "Then, first, in the end",
+     "In the end, first, then"
+    ],
+    "a": 0,
+    "why": "First abre, in the end fecha."
+   },
+   {
+    "q": "At the end ___ the film, everyone cried.",
+    "o": [
+     "of",
+     "in",
+     "on"
+    ],
+    "a": 0,
+    "why": "At the end of + algo."
+   },
+   {
+    "q": "She was tired because she ___ all night.",
+    "o": [
+     "had worked",
+     "has worked",
+     "works"
+    ],
+    "a": 0,
+    "why": "O past perfect explica a causa que veio antes."
+   }
+  ],
+  "frases_extras": [
+   [
+    "I was reading when the phone rang.",
+    "Eu estava lendo quando o telefone tocou."
+   ],
+   [
+    "Suddenly, the lights went out.",
+    "De repente, as luzes se apagaram."
+   ],
+   [
+    "In the end, everything was fine.",
+    "No final, deu tudo certo."
+   ],
+   [
+    "Someone had left a book on the counter.",
+    "Alguém tinha deixado um livro no balcão."
+   ]
+  ]
+ },
+ {
+  "capitulo": "Mensagens",
+  "perguntas": [
+   {
+    "q": "BTW significa:",
+    "o": [
+     "by the way",
+     "before the weekend",
+     "back to work"
+    ],
+    "a": 0,
+    "why": "Por falar nisso."
+   },
+   {
+    "q": "ASAP significa:",
+    "o": [
+     "as soon as possible",
+     "always say a phrase",
+     "at some point"
+    ],
+    "a": 0,
+    "why": "O mais rápido possível."
+   },
+   {
+    "q": "Num e-mail para o chefe, qual despedida combina?",
+    "o": [
+     "Kind regards,",
+     "xx",
+     "Cheers, mate!"
+    ],
+    "a": 0,
+    "why": "Kind regards é formal."
+   },
+   {
+    "q": "“Please find the report attached” quer dizer:",
+    "o": [
+     "o relatório está em anexo",
+     "procure o relatório",
+     "o relatório se perdeu"
+    ],
+    "a": 0,
+    "why": "Fórmula de e-mail formal."
+   },
+   {
+    "q": "tbh significa:",
+    "o": [
+     "to be honest",
+     "to be happy",
+     "too bad"
+    ],
+    "a": 0,
+    "why": "Para ser sincero."
+   },
+   {
+    "q": "Um x no fim de uma mensagem é:",
+    "o": [
+     "um beijo",
+     "um erro de digitação",
+     "uma assinatura formal"
+    ],
+    "a": 0,
+    "why": "Só entre amigos e família."
+   },
+   {
+    "q": "Qual frase é formal?",
+    "o": [
+     "I hope you are well.",
+     "Hope ur ok!",
+     "Hey, wassup?"
+    ],
+    "a": 0,
+    "why": "Frase completa, sem abreviação."
+   },
+   {
+    "q": "FYI é usado para:",
+    "o": [
+     "passar uma informação",
+     "pedir desculpas",
+     "agradecer"
+    ],
+    "a": 0,
+    "why": "For your information."
+   },
+   {
+    "q": "“Cheers!” numa mensagem informal britânica significa:",
+    "o": [
+     "Valeu! / Obrigado!",
+     "Parabéns!",
+     "Desculpa!"
+    ],
+    "a": 0,
+    "why": "Também é o brinde, mas em mensagens é agradecimento."
+   }
+  ],
+  "frases_extras": [
+   [
+    "Can you send it as soon as possible?",
+    "Você pode mandar o mais rápido possível?"
+   ],
+   [
+    "Please find the report attached.",
+    "Segue o relatório em anexo."
+   ],
+   [
+    "By the way, I'll be late.",
+    "Por falar nisso, vou me atrasar."
+   ],
+   [
+    "Thanks for your help. Cheers!",
+    "Obrigado pela ajuda. Valeu!"
+   ]
+  ]
+ },
+ {
+  "capitulo": "Filmes, Séries e Livros",
+  "perguntas": [
+   {
+    "q": "“It's set in Paris” significa:",
+    "o": [
+     "Se passa em Paris.",
+     "Foi colocado em Paris.",
+     "Foi vendido em Paris."
+    ],
+    "a": 0,
+    "why": "Be set in = se passar em (lugar ou época)."
+   },
+   {
+    "q": "Novel em inglês é:",
+    "o": [
+     "romance (o livro)",
+     "novela de TV",
+     "notícia"
+    ],
+    "a": 0,
+    "why": "Novela de TV é soap opera."
+   },
+   {
+    "q": "Is it worth ___?",
+    "o": [
+     "watching",
+     "to watch",
+     "watch"
+    ],
+    "a": 0,
+    "why": "Worth + verbo com -ING."
+   },
+   {
+    "q": "“The cast” é:",
+    "o": [
+     "o elenco",
+     "o enredo",
+     "o final"
+    ],
+    "a": 0,
+    "why": "Os atores de um filme ou série."
+   },
+   {
+    "q": "It's ___ on a true story.",
+    "o": [
+     "based",
+     "made",
+     "set"
+    ],
+    "a": 0,
+    "why": "Based on = baseado em."
+   },
+   {
+    "q": "Para recomendar com força:",
+    "o": [
+     "I'd highly recommend it.",
+     "I'd high recommend it.",
+     "I recommend you it."
+    ],
+    "a": 0,
+    "why": "Highly com -LY, antes do verbo."
+   },
+   {
+    "q": "Uma história “gripping” é:",
+    "o": [
+     "envolvente",
+     "chata",
+     "curta"
+    ],
+    "a": 0,
+    "why": "Prende a atenção."
+   },
+   {
+    "q": "O singular de series é:",
+    "o": [
+     "a series",
+     "a serie",
+     "a seri"
+    ],
+    "a": 0,
+    "why": "Series não muda."
+   },
+   {
+    "q": "“What's it about?” pergunta:",
+    "o": [
+     "o assunto da história",
+     "quanto custa",
+     "quem escreveu"
+    ],
+    "a": 0,
+    "why": "Sobre o que é?"
+   }
+  ],
+  "frases_extras": [
+   [
+    "It's set in Victorian London.",
+    "Se passa na Londres vitoriana."
+   ],
+   [
+    "It's based on a true story.",
+    "É baseado numa história real."
+   ],
+   [
+    "Is it worth watching?",
+    "Vale a pena assistir?"
+   ],
+   [
+    "I'd highly recommend it.",
+    "Eu recomendo muito."
+   ]
+  ]
+ },
+ {
+  "capitulo": "Nos Velhos Tempos",
+  "perguntas": [
+   {
+    "q": "We ___ have a cat when I was young.",
+    "o": [
+     "used to",
+     "would",
+     "use to"
+    ],
+    "a": 0,
+    "why": "Ter é estado: só used to."
+   },
+   {
+    "q": "Every summer, my dad ___ take us to the beach.",
+    "o": [
+     "would",
+     "was",
+     "is"
+    ],
+    "a": 0,
+    "why": "Ação que se repetia: would (ou used to)."
+   },
+   {
+    "q": "Did you ___ play football?",
+    "o": [
+     "use to",
+     "used to",
+     "would to"
+    ],
+    "a": 0,
+    "why": "Na pergunta, use to sem D."
+   },
+   {
+    "q": "Qual frase está ERRADA?",
+    "o": [
+     "I would live in Rio.",
+     "I used to live in Rio.",
+     "We would visit Rio every year."
+    ],
+    "a": 0,
+    "why": "Morar é estado: só used to."
+   },
+   {
+    "q": "I didn't ___ like coffee.",
+    "o": [
+     "use to",
+     "used to",
+     "would"
+    ],
+    "a": 0,
+    "why": "Na negativa, use to sem D."
+   },
+   {
+    "q": "“We would always...” descreve:",
+    "o": [
+     "um hábito que se repetia no passado",
+     "um plano para o futuro",
+     "uma condição"
+    ],
+    "a": 0,
+    "why": "Would + ação repetida."
+   },
+   {
+    "q": "Used to serve para:",
+    "o": [
+     "hábitos e estados que não existem mais",
+     "ações acontecendo agora",
+     "planos"
+    ],
+    "a": 0,
+    "why": "Era assim, não é mais."
+   },
+   {
+    "q": "She ___ be very shy, but now she's confident.",
+    "o": [
+     "used to",
+     "would",
+     "use"
+    ],
+    "a": 0,
+    "why": "Ser é estado: used to."
+   },
+   {
+    "q": "On Sundays we ___ go to my grandma's.",
+    "o": [
+     "would",
+     "use to",
+     "were"
+    ],
+    "a": 0,
+    "why": "Ação repetida: would."
+   }
+  ],
+  "frases_extras": [
+   [
+    "We used to live on this street.",
+    "A gente morava nesta rua."
+   ],
+   [
+    "My grandad would take me to the market.",
+    "Meu avô me levava à feira."
+   ],
+   [
+    "I didn't use to like vegetables.",
+    "Eu não gostava de legumes."
+   ],
+   [
+    "Did you use to have a pet?",
+    "Você tinha um bicho de estimação?"
+   ]
+  ]
+ },
+ {
+  "capitulo": "Que, Aliás...",
+  "perguntas": [
+   {
+    "q": "My sister, ___ lives in Lisbon, is a nurse.",
+    "o": [
+     "who",
+     "which",
+     "that"
+    ],
+    "a": 0,
+    "why": "Pessoa + vírgulas: who."
+   },
+   {
+    "q": "Com vírgulas, qual palavra NÃO se usa?",
+    "o": [
+     "that",
+     "which",
+     "who"
+    ],
+    "a": 0,
+    "why": "That só sem vírgulas."
+   },
+   {
+    "q": "Paris, ___ I studied, is beautiful.",
+    "o": [
+     "where",
+     "which",
+     "who"
+    ],
+    "a": 0,
+    "why": "Lugar onde algo acontece: where."
+   },
+   {
+    "q": "He failed the test, ___ was a surprise.",
+    "o": [
+     "which",
+     "who",
+     "that"
+    ],
+    "a": 0,
+    "why": "Which comenta a frase inteira."
+   },
+   {
+    "q": "My friend, ___ car was stolen, is very upset.",
+    "o": [
+     "whose",
+     "who's",
+     "which"
+    ],
+    "a": 0,
+    "why": "Whose = cujo."
+   },
+   {
+    "q": "Qual frase traz uma informação extra?",
+    "o": [
+     "My father, who is 70, still works.",
+     "The girl who called you is here.",
+     "The book that I bought is great."
+    ],
+    "a": 0,
+    "why": "A informação extra vem entre vírgulas."
+   },
+   {
+    "q": "Em “The man who called you is here”, o trecho who called you:",
+    "o": [
+     "é essencial: diz qual homem",
+     "é só um comentário",
+     "está errado"
+    ],
+    "a": 0,
+    "why": "Sem vírgulas = essencial."
+   },
+   {
+    "q": "This book, ___ I bought yesterday, is great.",
+    "o": [
+     "which",
+     "what",
+     "who"
+    ],
+    "a": 0,
+    "why": "Coisa + vírgulas: which."
+   },
+   {
+    "q": "“Whose” significa:",
+    "o": [
+     "cujo, cuja",
+     "quem é",
+     "onde"
+    ],
+    "a": 0,
+    "why": "Who's é who is."
+   }
+  ],
+  "frases_extras": [
+   [
+    "My brother, who lives in Leeds, is a doctor.",
+    "Meu irmão, que mora em Leeds, é médico."
+   ],
+   [
+    "London, where I work, is expensive.",
+    "Londres, onde eu trabalho, é cara."
+   ],
+   [
+    "She passed the exam, which surprised everyone.",
+    "Ela passou na prova, o que surpreendeu todo mundo."
+   ]
+  ]
+ },
+ {
+  "capitulo": "Não Precisava!",
+  "perguntas": [
+   {
+    "q": "“You needn't have cooked” significa:",
+    "o": [
+     "Você cozinhou, mas não era necessário.",
+     "Você não cozinhou.",
+     "Você vai cozinhar."
+    ],
+    "a": 0,
+    "why": "Needn't have + particípio: fez algo desnecessário."
+   },
+   {
+    "q": "I didn't need to ___ a taxi, because Jo drove me.",
+    "o": [
+     "take",
+     "took",
+     "have taken"
+    ],
+    "a": 0,
+    "why": "Didn't need to + verbo na forma básica."
+   },
+   {
+    "q": "“She'll arrive at sevenish” significa:",
+    "o": [
+     "lá pelas sete",
+     "às sete em ponto",
+     "sete vezes"
+    ],
+    "a": 0,
+    "why": "-ish = mais ou menos."
+   },
+   {
+    "q": "There were fifty ___ people.",
+    "o": [
+     "or so",
+     "and so",
+     "so on"
+    ],
+    "a": 0,
+    "why": "Fifty or so = umas cinquenta."
+   },
+   {
+    "q": "“Kind of” significa:",
+    "o": [
+     "meio que, tipo",
+     "muito",
+     "nunca"
+    ],
+    "a": 0,
+    "why": "Linguagem vaga."
+   },
+   {
+    "q": "Qual frase mostra que a pessoa fez algo desnecessário?",
+    "o": [
+     "I needn't have worried.",
+     "I don't need to worry.",
+     "I won't need to worry."
+    ],
+    "a": 0,
+    "why": "Needn't have: se preocupou à toa."
+   },
+   {
+    "q": "No Reino Unido, “The film was quite good” costuma significar:",
+    "o": [
+     "foi razoável, bom",
+     "foi excelente",
+     "foi péssimo"
+    ],
+    "a": 0,
+    "why": "Quite suaviza o elogio."
+   },
+   {
+    "q": "“...and stuff” no fim da frase significa:",
+    "o": [
+     "...e tal",
+     "...e mais nada",
+     "...e acabou"
+    ],
+    "a": 0,
+    "why": "Linguagem vaga informal."
+   },
+   {
+    "q": "Linguagem vaga combina mais com:",
+    "o": [
+     "conversa informal",
+     "contrato",
+     "redação de prova"
+    ],
+    "a": 0,
+    "why": "Em texto formal, seja preciso."
+   }
+  ],
+  "frases_extras": [
+   [
+    "You needn't have brought an umbrella.",
+    "Você não precisava ter trazido guarda-chuva."
+   ],
+   [
+    "I didn't need to buy food.",
+    "Eu não precisei comprar comida."
+   ],
+   [
+    "Let's meet at sevenish.",
+    "Vamos nos encontrar lá pelas sete."
+   ],
+   [
+    "There were twenty or so people.",
+    "Havia umas vinte pessoas."
+   ]
+  ]
+ },
+ {
+  "capitulo": "Escola e Ciência",
+  "perguntas": [
+   {
+    "q": "Fazer uma pesquisa:",
+    "o": [
+     "carry out research",
+     "make a research",
+     "do researches"
+    ],
+    "a": 0,
+    "why": "Research não tem plural com S e não leva a."
+   },
+   {
+    "q": "Passar na prova:",
+    "o": [
+     "pass an exam",
+     "take an exam",
+     "make an exam"
+    ],
+    "a": 0,
+    "why": "Take an exam é fazer a prova."
+   },
+   {
+    "q": "“Lecture” significa:",
+    "o": [
+     "aula expositiva na faculdade",
+     "leitura",
+     "livro didático"
+    ],
+    "a": 0,
+    "why": "Leitura é reading."
+   },
+   {
+    "q": "She ___ a degree in biology.",
+    "o": [
+     "did",
+     "made",
+     "went"
+    ],
+    "a": 0,
+    "why": "Do a degree."
+   },
+   {
+    "q": "Qual está correto?",
+    "o": [
+     "The research shows...",
+     "The researches show...",
+     "A research show..."
+    ],
+    "a": 0,
+    "why": "Research é incontável."
+   },
+   {
+    "q": "We made a lot of ___ this year.",
+    "o": [
+     "progress",
+     "progresses",
+     "progressing"
+    ],
+    "a": 0,
+    "why": "Progress é incontável."
+   },
+   {
+    "q": "“Fail an exam” significa:",
+    "o": [
+     "reprovar",
+     "faltar à prova",
+     "passar raspando"
+    ],
+    "a": 0,
+    "why": "Fail = não passar."
+   },
+   {
+    "q": "“Findings” são:",
+    "o": [
+     "os resultados de uma pesquisa",
+     "achados e perdidos",
+     "os autores"
+    ],
+    "a": 0,
+    "why": "What were your findings?"
+   },
+   {
+    "q": "No Reino Unido, a secondary school recebe alunos de mais ou menos:",
+    "o": [
+     "11 a 16 ou 18 anos",
+     "4 a 11 anos",
+     "18 a 22 anos"
+    ],
+    "a": 0,
+    "why": "Primary school vem antes, até os 11."
+   }
+  ],
+  "frases_extras": [
+   [
+    "I'm doing a degree in biology.",
+    "Estou fazendo faculdade de biologia."
+   ],
+   [
+    "She carried out an experiment.",
+    "Ela fez um experimento."
+   ],
+   [
+    "I passed the exam!",
+    "Passei na prova!"
+   ],
+   [
+    "I've got a lecture on Monday.",
+    "Tenho aula na segunda."
+   ]
+  ]
+ },
+ {
+  "capitulo": "A Névoa de Londres",
+  "perguntas": [
+   {
+    "q": "___ I carry that for you?",
+    "o": [
+     "Shall",
+     "Would",
+     "Do"
+    ],
+    "a": 0,
+    "why": "Shall I...? oferece ajuda."
+   },
+   {
+    "q": "How about ___ a film?",
+    "o": [
+     "watching",
+     "watch",
+     "to watch"
+    ],
+    "a": 0,
+    "why": "How about + -ING."
+   },
+   {
+    "q": "The lights are on. Turn ___ off.",
+    "o": [
+     "them",
+     "they",
+     "their"
+    ],
+    "a": 0,
+    "why": "Pronome objeto no meio: turn them off."
+   },
+   {
+    "q": "Qual frase está correta?",
+    "o": [
+     "I agree with you.",
+     "I'm agree with you.",
+     "I am agree."
+    ],
+    "a": 0,
+    "why": "Agree é verbo."
+   },
+   {
+    "q": "I ___ TV when the lights went out.",
+    "o": [
+     "was watching",
+     "watched",
+     "had watched"
+    ],
+    "a": 0,
+    "why": "Cenário: passado contínuo."
+   },
+   {
+    "q": "We ___ have a big garden when I was a kid.",
+    "o": [
+     "used to",
+     "would",
+     "use to"
+    ],
+    "a": 0,
+    "why": "Ter é estado: used to."
+   },
+   {
+    "q": "My uncle, ___ lives in Leeds, is a teacher.",
+    "o": [
+     "who",
+     "that",
+     "which"
+    ],
+    "a": 0,
+    "why": "Com vírgulas e pessoa: who."
+   },
+   {
+    "q": "You ___ have bought so much food!",
+    "o": [
+     "needn't",
+     "didn't need",
+     "don't need"
+    ],
+    "a": 0,
+    "why": "Needn't have + particípio."
+   },
+   {
+    "q": "Is it worth ___?",
+    "o": [
+     "reading",
+     "to read",
+     "read"
+    ],
+    "a": 0,
+    "why": "Worth + -ING."
+   },
+   {
+    "q": "“Eventually” significa:",
+    "o": [
+     "no fim, depois de muito tempo",
+     "eventualmente",
+     "de vez em quando"
+    ],
+    "a": 0,
+    "why": "Falso cognato."
+   }
+  ],
+  "frases_extras": [
+   [
+    "Shall I go first?",
+    "Quer que eu vá primeiro?"
+   ],
+   [
+    "I was walking when I suddenly remembered.",
+    "Eu estava andando quando, de repente, me lembrei."
+   ],
+   [
+    "The fog's gone!",
+    "A névoa sumiu!"
+   ]
+  ]
+ }
+]

@@ -6,9 +6,18 @@
    "pedido": "Apresente-se: diga oi, seu nome e de onde você é.",
    "min": 6,
    "precisa": [
-    ["\\b(hi|hello|hey|good (morning|afternoon|evening))\\b", "um cumprimento (hi, hello)"],
-    ["\\bmy name is\\b|\\bi'?m [a-z]+|\\bi am\\b", "seu nome (My name is... / I'm...)"],
-    ["\\bfrom\\b", "de onde você é (I'm from...)"]
+    [
+     "\\b(hi|hello|hey|good (morning|afternoon|evening))\\b",
+     "um cumprimento (hi, hello)"
+    ],
+    [
+     "\\bmy name is\\b|\\bi'?m [a-z]+|\\bi am\\b",
+     "seu nome (My name is... / I'm...)"
+    ],
+    [
+     "\\bfrom\\b",
+     "de onde você é (I'm from...)"
+    ]
    ],
    "evitar": [],
    "modelo": "Hi! My name is Bia. I'm from Brazil. Nice to meet you!"
@@ -19,8 +28,14 @@
    "pedido": "Diga como você está hoje e como é um amigo seu.",
    "min": 8,
    "precisa": [
-    ["\\bi am\\b|\\bi'm\\b", "I am / I'm"],
-    ["\\b(he|she|it)\\s+is\\b|\\b(he|she|it)'s\\b|\\b[a-z]+ is\\b", "is para outra pessoa (He is... / She is...)"]
+    [
+     "\\bi am\\b|\\bi'm\\b",
+     "I am / I'm"
+    ],
+    [
+     "\\b(he|she|it)\\s+is\\b|\\b(he|she|it)'s\\b|\\b[a-z]+ is\\b",
+     "is para outra pessoa (He is... / She is...)"
+    ]
    ],
    "evitar": [],
    "modelo": "I'm happy today. My friend Leo is tall and funny. We are good friends."
@@ -31,11 +46,20 @@
    "pedido": "Diga sua idade e quanto custou algo seu.",
    "min": 8,
    "precisa": [
-    ["\\bi'?m\\s+\\w+|\\bi am\\b", "sua idade com TO BE (I'm twenty-five)"],
-    ["\\b(cost|costs|dollars?|reais|euros?|it's|it is)\\b", "o preço (It costs... / It's ... dollars)"]
+    [
+     "\\bi'?m\\s+\\w+|\\bi am\\b",
+     "sua idade com TO BE (I'm twenty-five)"
+    ],
+    [
+     "\\b(cost|costs|dollars?|reais|euros?|it's|it is)\\b",
+     "o preço (It costs... / It's ... dollars)"
+    ]
    ],
    "evitar": [
-    ["\\bi have [\\w-]+ years\\b", "Idade em inglês usa TO BE: I'm 25, e não I have 25 years."]
+    [
+     "\\bi have [\\w-]+ years\\b",
+     "Idade em inglês usa TO BE: I'm 25, e não I have 25 years."
+    ]
    ],
    "modelo": "I'm twenty-five years old. My phone cost two hundred dollars."
   },
@@ -45,8 +69,14 @@
    "pedido": "Diga pelo menos três coisas que estão na sua bolsa ou mochila.",
    "min": 8,
    "precisa": [
-    ["\\bi have\\b|\\bi've got\\b", "I have"],
-    ["\\b(a|an)\\s+\\w+", "a ou an antes de uma coisa"]
+    [
+     "\\bi have\\b|\\bi've got\\b",
+     "I have"
+    ],
+    [
+     "\\b(a|an)\\s+\\w+",
+     "a ou an antes de uma coisa"
+    ]
    ],
    "evitar": [],
    "modelo": "I have a phone, an umbrella and two books in my bag."
@@ -57,9 +87,18 @@
    "pedido": "Fale da sua família: quem são e como se chamam.",
    "min": 10,
    "precisa": [
-    ["\\bmy\\b", "my"],
-    ["\\b(his|her|their)\\b", "his, her ou their"],
-    ["\\b(mother|father|mom|dad|sister|brother|wife|husband|son|daughter|parents|grandmother|grandfather|grandma|grandpa|aunt|uncle|cousin)\\b", "uma palavra de família"]
+    [
+     "\\bmy\\b",
+     "my"
+    ],
+    [
+     "\\b(his|her|their)\\b",
+     "his, her ou their"
+    ],
+    [
+     "\\b(mother|father|mom|dad|sister|brother|wife|husband|son|daughter|parents|grandmother|grandfather|grandma|grandpa|aunt|uncle|cousin)\\b",
+     "uma palavra de família"
+    ]
    ],
    "evitar": [],
    "modelo": "My mother's name is Rosa. I have a brother. His name is Leo, and his wife is Carla."
@@ -70,11 +109,20 @@
    "pedido": "Descreva sua rua ou seu bairro: o que existe e onde fica.",
    "min": 10,
    "precisa": [
-    ["\\bthere (is|are)\\b|\\bthere's\\b", "there is / there are"],
-    ["\\b(next to|near|in front of|behind|between|across from|opposite|on the corner)\\b", "uma preposição de lugar (next to, near...)"]
+    [
+     "\\bthere (is|are)\\b|\\bthere's\\b",
+     "there is / there are"
+    ],
+    [
+     "\\b(next to|near|in front of|behind|between|across from|opposite|on the corner)\\b",
+     "uma preposição de lugar (next to, near...)"
+    ]
    ],
    "evitar": [
-    ["(^|[.!?]\\s*)have (a|an|two|three|many|some|one)\\b", "Para dizer que algo existe, use there is/are, e não have."]
+    [
+     "(^|[.!?]\\s*)have (a|an|two|three|many|some|one)\\b",
+     "Para dizer que algo existe, use there is/are, e não have."
+    ]
    ],
    "modelo": "There is a bakery next to my house. There are two schools near the park."
   },
@@ -84,8 +132,14 @@
    "pedido": "Conte como é um dia comum seu.",
    "min": 12,
    "precisa": [
-    ["\\bi (get up|wake up|go|have|work|study|eat|take|start|finish|watch|read|play|leave|come)\\b", "um verbo no presente (I get up, I work...)"],
-    ["\\b(always|usually|often|sometimes|never|every)\\b", "um advérbio de frequência (usually, always...)"]
+    [
+     "\\bi (get up|wake up|go|have|work|study|eat|take|start|finish|watch|read|play|leave|come)\\b",
+     "um verbo no presente (I get up, I work...)"
+    ],
+    [
+     "\\b(always|usually|often|sometimes|never|every)\\b",
+     "um advérbio de frequência (usually, always...)"
+    ]
    ],
    "evitar": [],
    "modelo": "I usually get up at seven. I have breakfast, and then I go to work by bus. I never work on Sundays."
@@ -96,9 +150,18 @@
    "pedido": "Diga uma hora, um dia e um mês em que você faz algo.",
    "min": 10,
    "precisa": [
-    ["\\bat\\s+(\\d|one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|noon|night|midnight)", "at + hora (at seven)"],
-    ["\\bon\\s+(mondays?|tuesdays?|wednesdays?|thursdays?|fridays?|saturdays?|sundays?|weekends?|the weekend)\\b", "on + dia (on Monday)"],
-    ["\\bin\\s+(january|february|march|april|may|june|july|august|september|october|november|december|the morning|the afternoon|the evening|summer|winter|spring|autumn|fall)\\b", "in + mês ou parte do dia"]
+    [
+     "\\bat\\s+(\\d|one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|noon|night|midnight)",
+     "at + hora (at seven)"
+    ],
+    [
+     "\\bon\\s+(mondays?|tuesdays?|wednesdays?|thursdays?|fridays?|saturdays?|sundays?|weekends?|the weekend)\\b",
+     "on + dia (on Monday)"
+    ],
+    [
+     "\\bin\\s+(january|february|march|april|may|june|july|august|september|october|november|december|the morning|the afternoon|the evening|summer|winter|spring|autumn|fall)\\b",
+     "in + mês ou parte do dia"
+    ]
    ],
    "evitar": [],
    "modelo": "I start work at nine on Mondays. My birthday is in May, and I study in the evening."
@@ -109,8 +172,14 @@
    "pedido": "Faça três perguntas para alguém que você acabou de conhecer.",
    "min": 9,
    "precisa": [
-    ["\\b(what|where|when|who|why|how)\\b", "uma palavra de pergunta (what, where...)"],
-    ["\\b(do|does|are|is|did|can)\\s+you\\b", "uma pergunta com do you / are you"]
+    [
+     "\\b(what|where|when|who|why|how)\\b",
+     "uma palavra de pergunta (what, where...)"
+    ],
+    [
+     "\\b(do|does|are|is|did|can)\\s+you\\b",
+     "uma pergunta com do you / are you"
+    ]
    ],
    "evitar": [],
    "modelo": "What's your name? Where do you live? What do you do on weekends?"
@@ -121,8 +190,14 @@
    "pedido": "Diga duas coisas que você sabe fazer e uma que não sabe.",
    "min": 8,
    "precisa": [
-    ["\\bi can\\b(?!'t| not)", "I can"],
-    ["\\bcan'?t\\b|\\bcannot\\b|\\bcan not\\b", "can't"]
+    [
+     "\\bi can\\b(?!'t| not)",
+     "I can"
+    ],
+    [
+     "\\bcan'?t\\b|\\bcannot\\b|\\bcan not\\b",
+     "can't"
+    ]
    ],
    "evitar": [],
    "modelo": "I can cook and I can swim, but I can't sing."
@@ -133,7 +208,10 @@
    "pedido": "Fale do que você gosta e do que odeia fazer.",
    "min": 8,
    "precisa": [
-    ["\\b(like|love|enjoy|hate)\\s+\\w+ing\\b", "like/love/hate + -ING"]
+    [
+     "\\b(like|love|enjoy|hate)\\s+\\w+ing\\b",
+     "like/love/hate + -ING"
+    ]
    ],
    "evitar": [],
    "modelo": "I love reading and I like cooking, but I hate waking up early."
@@ -144,8 +222,14 @@
    "pedido": "Dê instruções para uma receita simples ou um jogo.",
    "min": 8,
    "precisa": [
-    ["(^|[.!?,]\\s*)(open|close|take|put|go|turn|add|mix|wait|listen|look|come|stop|press|cut|boil|cook|pour)\\b", "um verbo no imperativo (Take, Add...)"],
-    ["\\bdon'?t\\b|\\bdo not\\b", "don't + verbo"]
+    [
+     "(^|[.!?,]\\s*)(open|close|take|put|go|turn|add|mix|wait|listen|look|come|stop|press|cut|boil|cook|pour)\\b",
+     "um verbo no imperativo (Take, Add...)"
+    ],
+    [
+     "\\bdon'?t\\b|\\bdo not\\b",
+     "don't + verbo"
+    ]
    ],
    "evitar": [],
    "modelo": "Boil the water. Add the pasta and wait ten minutes. Don't forget the salt!"
@@ -156,7 +240,10 @@
    "pedido": "Descreva o que as pessoas ao seu redor estão fazendo agora.",
    "min": 10,
    "precisa": [
-    ["\\b(am|is|are)\\s+\\w+ing\\b|'(m|s|re)\\s+\\w+ing\\b", "am/is/are + -ING"]
+    [
+     "\\b(am|is|are)\\s+\\w+ing\\b|'(m|s|re)\\s+\\w+ing\\b",
+     "am/is/are + -ING"
+    ]
    ],
    "evitar": [],
    "modelo": "I'm sitting on the sofa. My sister is watching TV and the dog is sleeping."
@@ -167,8 +254,14 @@
    "pedido": "Conte o que você fez no último fim de semana.",
    "min": 12,
    "precisa": [
-    ["\\b(went|was|were|watched|played|visited|had|ate|saw|did|stayed|met|made|cooked|studied|worked|bought|slept|read)\\b", "um verbo no passado"],
-    ["\\b(last|yesterday|ago)\\b", "uma expressão de tempo (last weekend, yesterday)"]
+    [
+     "\\b(went|was|were|watched|played|visited|had|ate|saw|did|stayed|met|made|cooked|studied|worked|bought|slept|read)\\b",
+     "um verbo no passado"
+    ],
+    [
+     "\\b(last|yesterday|ago)\\b",
+     "uma expressão de tempo (last weekend, yesterday)"
+    ]
    ],
    "evitar": [],
    "modelo": "Last weekend I visited my grandmother. We cooked lunch and watched a movie. It was great."
@@ -179,8 +272,14 @@
    "pedido": "Diga o que tem e o que falta na sua cozinha, usando some, any, much e many.",
    "min": 12,
    "precisa": [
-    ["\\bsome\\b", "some"],
-    ["\\b(any|much|many)\\b", "any, much ou many"]
+    [
+     "\\bsome\\b",
+     "some"
+    ],
+    [
+     "\\b(any|much|many)\\b",
+     "any, much ou many"
+    ]
    ],
    "evitar": [],
    "modelo": "There is some rice, but there isn't any milk. We don't have much coffee, and there aren't many eggs."
@@ -191,8 +290,14 @@
    "pedido": "Conte um momento em que algo interrompeu o que você fazia.",
    "min": 10,
    "precisa": [
-    ["\\b(was|were)\\s+\\w+ing\\b", "was/were + -ING"],
-    ["\\bwhen\\b|\\bwhile\\b", "when ou while"]
+    [
+     "\\b(was|were)\\s+\\w+ing\\b",
+     "was/were + -ING"
+    ],
+    [
+     "\\bwhen\\b|\\bwhile\\b",
+     "when ou while"
+    ]
    ],
    "evitar": [],
    "modelo": "I was cooking dinner when the phone rang. While I was talking, the rice burned."
@@ -203,8 +308,14 @@
    "pedido": "Conte seus planos para a próxima semana e faça uma previsão.",
    "min": 10,
    "precisa": [
-    ["\\bgoing to\\b|\\bgonna\\b", "going to (plano)"],
-    ["\\bwill\\b|'ll\\b", "will (previsão)"]
+    [
+     "\\bgoing to\\b|\\bgonna\\b",
+     "going to (plano)"
+    ],
+    [
+     "\\bwill\\b|'ll\\b",
+     "will (previsão)"
+    ]
    ],
    "evitar": [],
    "modelo": "Next week I'm going to visit my parents. I think it will rain on Saturday."
@@ -215,8 +326,14 @@
    "pedido": "Compare duas cidades, pessoas ou coisas.",
    "min": 12,
    "precisa": [
-    ["\\b\\w+er than\\b|\\bmore \\w+ than\\b|\\bless \\w+ than\\b|\\bbetter than\\b|\\bworse than\\b", "um comparativo (bigger than, more... than)"],
-    ["\\bthe (\\w+est|most \\w+|best|worst)\\b", "um superlativo (the biggest, the best...)"]
+    [
+     "\\b\\w+er than\\b|\\bmore \\w+ than\\b|\\bless \\w+ than\\b|\\bbetter than\\b|\\bworse than\\b",
+     "um comparativo (bigger than, more... than)"
+    ],
+    [
+     "\\bthe (\\w+est|most \\w+|best|worst)\\b",
+     "um superlativo (the biggest, the best...)"
+    ]
    ],
    "evitar": [],
    "modelo": "São Paulo is bigger than Rio, but Rio is more beautiful. For me, Rio is the best city in Brazil."
@@ -227,8 +344,14 @@
    "pedido": "Dê conselhos e regras para alguém que começa num emprego novo.",
    "min": 12,
    "precisa": [
-    ["\\bshould\\b", "should (conselho)"],
-    ["\\b(must|have to|has to|might)\\b", "must, have to ou might"]
+    [
+     "\\bshould\\b",
+     "should (conselho)"
+    ],
+    [
+     "\\b(must|have to|has to|might)\\b",
+     "must, have to ou might"
+    ]
    ],
    "evitar": [],
    "modelo": "You should arrive early. You have to wear a badge, and you must not use your phone in meetings."
@@ -239,8 +362,14 @@
    "pedido": "Diga há quanto tempo você mora onde mora e algo que já fez na vida.",
    "min": 12,
    "precisa": [
-    ["\\b(have|has)\\s+(been|lived|worked|studied|known|had|seen|visited|done|never|ever|already)\\b|'ve\\s+\\w+", "present perfect (I have lived, I've been)"],
-    ["\\b(for|since)\\b", "for ou since"]
+    [
+     "\\b(have|has)\\s+(been|lived|worked|studied|known|had|seen|visited|done|never|ever|already)\\b|'ve\\s+\\w+",
+     "present perfect (I have lived, I've been)"
+    ],
+    [
+     "\\b(for|since)\\b",
+     "for ou since"
+    ]
    ],
    "evitar": [],
    "modelo": "I have lived in this city for ten years. I've never been to Japan, but I've visited Chile twice."
@@ -251,8 +380,14 @@
    "pedido": "Conte como era sua vida quando você era criança.",
    "min": 12,
    "precisa": [
-    ["\\bused to\\b|\\buse to\\b", "used to"],
-    ["\\bwhen i was\\b", "when I was (quando eu era)"]
+    [
+     "\\bused to\\b|\\buse to\\b",
+     "used to"
+    ],
+    [
+     "\\bwhen i was\\b",
+     "when I was (quando eu era)"
+    ]
    ],
    "evitar": [],
    "modelo": "When I was a child, I used to play football every day. I didn't use to like vegetables."
@@ -263,11 +398,20 @@
    "pedido": "Diga o que você vai fazer se chover no fim de semana.",
    "min": 12,
    "precisa": [
-    ["\\bif\\b", "if"],
-    ["\\bwill\\b|'ll\\b", "will na outra parte da frase"]
+    [
+     "\\bif\\b",
+     "if"
+    ],
+    [
+     "\\bwill\\b|'ll\\b",
+     "will na outra parte da frase"
+    ]
    ],
    "evitar": [
-    ["\\bif [^.,!?]*\\bwill\\b", "Depois de if, use o presente: If it rains, e não If it will rain."]
+    [
+     "\\bif [^.,!?]*\\bwill\\b",
+     "Depois de if, use o presente: If it rains, e não If it will rain."
+    ]
    ],
    "modelo": "If it rains this weekend, I'll stay at home and watch movies. If I have time, I'll call my friends."
   },
@@ -277,7 +421,10 @@
    "pedido": "Descreva uma pessoa e um lugar importantes para você.",
    "min": 12,
    "precisa": [
-    ["\\b(who|which|that|where|whose)\\b", "who, which, that ou where"]
+    [
+     "\\b(who|which|that|where|whose)\\b",
+     "who, which, that ou where"
+    ]
    ],
    "evitar": [],
    "modelo": "My aunt is the person who taught me to cook. The beach where we spent our holidays is my favorite place."
@@ -288,8 +435,14 @@
    "pedido": "Fale de algo que você quer fazer e de algo que gosta de fazer.",
    "min": 12,
    "precisa": [
-    ["\\b(want|wants|decided|decide|hope|need|plan|would like|'d like)\\s+to\\s+\\w+", "want/decide/hope + TO"],
-    ["\\b(enjoy|finish|mind|avoid|stop|keep)\\s+\\w+ing\\b", "enjoy/avoid/stop + -ING"]
+    [
+     "\\b(want|wants|decided|decide|hope|need|plan|would like|'d like)\\s+to\\s+\\w+",
+     "want/decide/hope + TO"
+    ],
+    [
+     "\\b(enjoy|finish|mind|avoid|stop|keep)\\s+\\w+ing\\b",
+     "enjoy/avoid/stop + -ING"
+    ]
    ],
    "evitar": [],
    "modelo": "I want to learn French this year. I enjoy traveling, but I avoid flying at night."
@@ -300,8 +453,14 @@
    "pedido": "Diga o que você faria se ganhasse na loteria.",
    "min": 12,
    "precisa": [
-    ["\\bif\\b", "if"],
-    ["\\bwould\\b|'d\\b", "would"]
+    [
+     "\\bif\\b",
+     "if"
+    ],
+    [
+     "\\bwould\\b|'d\\b",
+     "would"
+    ]
    ],
    "evitar": [],
    "modelo": "If I won the lottery, I would buy a house by the sea. I wish I had more free time."
@@ -312,8 +471,14 @@
    "pedido": "Fale de algo inventado ou fabricado: onde, quando e por quem.",
    "min": 12,
    "precisa": [
-    ["\\b(is|are|was|were|been)\\s+(made|built|invented|written|painted|discovered|produced|grown|created|designed|sold|used|called|found|eaten|played)\\b", "voz passiva (was made, is used)"],
-    ["\\bby\\b|\\bin \\d{4}\\b|\\bin (brazil|china|japan|italy|france|the)\\b", "quem fez ou onde (by..., in...)"]
+    [
+     "\\b(is|are|was|were|been)\\s+(made|built|invented|written|painted|discovered|produced|grown|created|designed|sold|used|called|found|eaten|played)\\b",
+     "voz passiva (was made, is used)"
+    ],
+    [
+     "\\bby\\b|\\bin \\d{4}\\b|\\bin (brazil|china|japan|italy|france|the)\\b",
+     "quem fez ou onde (by..., in...)"
+    ]
    ],
    "evitar": [],
    "modelo": "Coffee is grown in Brazil. The telephone was invented by Bell, and this song was written in 1985."
@@ -324,8 +489,14 @@
    "pedido": "Conte o que um amigo disse para você ontem, sem repetir as palavras dele.",
    "min": 10,
    "precisa": [
-    ["\\b(said|told)\\b", "said ou told"],
-    ["\\b(was|were|had|would|could)\\b", "o verbo um tempo para trás (was, would, had)"]
+    [
+     "\\b(said|told)\\b",
+     "said ou told"
+    ],
+    [
+     "\\b(was|were|had|would|could)\\b",
+     "o verbo um tempo para trás (was, would, had)"
+    ]
    ],
    "evitar": [],
    "modelo": "My friend told me that she was tired. She said she would call me later."
@@ -336,8 +507,14 @@
    "pedido": "Conte o que já tinha acontecido quando você chegou a algum lugar e o que você tem feito ultimamente.",
    "min": 12,
    "precisa": [
-    ["\\bhad\\s+(already\\s+|just\\s+)?\\w+(ed|en|t|ne|wn|un|ft)\\b", "past perfect (had + particípio)"],
-    ["\\b(have|has)\\s+been\\s+\\w+ing\\b|'ve been \\w+ing", "present perfect contínuo (I've been studying)"]
+    [
+     "\\bhad\\s+(already\\s+|just\\s+)?\\w+(ed|en|t|ne|wn|un|ft)\\b",
+     "past perfect (had + particípio)"
+    ],
+    [
+     "\\b(have|has)\\s+been\\s+\\w+ing\\b|'ve been \\w+ing",
+     "present perfect contínuo (I've been studying)"
+    ]
    ],
    "evitar": [],
    "modelo": "When I arrived, the movie had already started. Lately I've been studying a lot for my exams."
@@ -348,7 +525,10 @@
    "pedido": "Descreva sua manhã usando phrasal verbs.",
    "min": 12,
    "precisa": [
-    ["\\b(get|gets|got|wake|wakes|woke|turn|turns|turned|put|puts|pick|picks|picked|look|looks|looked|go|goes|went|come|comes|came|give|gave|take|takes|took|find|found|set|run|ran|work|figure|check|fill)\\s+(up|on|off|out|for|after|back|in|down|over|away|around)\\b", "um phrasal verb (wake up, turn off...)"]
+    [
+     "\\b(get|gets|got|wake|wakes|woke|turn|turns|turned|put|puts|pick|picks|picked|look|looks|looked|go|goes|went|come|comes|came|give|gave|take|takes|took|find|found|set|run|ran|work|figure|check|fill)\\s+(up|on|off|out|for|after|back|in|down|over|away|around)\\b",
+     "um phrasal verb (wake up, turn off...)"
+    ]
    ],
    "evitar": [],
    "modelo": "I wake up at six, turn off the alarm and get up. Then I put on my clothes and pick up my keys."
@@ -359,8 +539,14 @@
    "pedido": "Fale de um erro do passado: o que você deveria ter feito.",
    "min": 12,
    "precisa": [
-    ["\\bshould have\\b|\\bshould've\\b|\\bshouldn'?t have\\b", "should have + particípio"],
-    ["\\bif i had\\b|\\bif i'd\\b|\\bwould have\\b|\\bwould've\\b", "terceira condicional (If I had..., I would have...)"]
+    [
+     "\\bshould have\\b|\\bshould've\\b|\\bshouldn'?t have\\b",
+     "should have + particípio"
+    ],
+    [
+     "\\bif i had\\b|\\bif i'd\\b|\\bwould have\\b|\\bwould've\\b",
+     "terceira condicional (If I had..., I would have...)"
+    ]
    ],
    "evitar": [],
    "modelo": "I should have studied more for the test. If I had studied, I would have passed."
@@ -371,7 +557,10 @@
    "pedido": "Use pelo menos dois falsos cognatos da lição em frases certas.",
    "min": 10,
    "precisa": [
-    ["\\b(pretend|actually|push|pull|library|realize|eventually|sensible|exquisite|college|lunch)\\b", "um falso cognato da lição (actually, library...)"]
+    [
+     "\\b(pretend|actually|push|pull|library|realize|eventually|sensible|exquisite|college|lunch)\\b",
+     "um falso cognato da lição (actually, library...)"
+    ]
    ],
    "evitar": [],
    "modelo": "Actually, I don't like coffee. I went to the library to study, and I had lunch with my sister."
@@ -382,7 +571,10 @@
    "pedido": "Dê sua opinião sobre trabalhar de casa, usando although, however ou therefore.",
    "min": 14,
    "precisa": [
-    ["\\b(although|however|therefore|even though|despite|moreover)\\b", "um conector (although, however, therefore)"]
+    [
+     "\\b(although|however|therefore|even though|despite|moreover)\\b",
+     "um conector (although, however, therefore)"
+    ]
    ],
    "evitar": [],
    "modelo": "Working from home is comfortable. However, it can be lonely. Although I like it, I go to the office twice a week."
@@ -393,7 +585,10 @@
    "pedido": "Diga o que você mais precisa na vida, com ênfase.",
    "min": 12,
    "precisa": [
-    ["\\bwhat i (really )?(need|want|love|like|hate|miss)\\b|\\bit (is|was) \\w+ (who|that)\\b|\\b(never|rarely|seldom|not only|hardly|little) (have|had|do|did|does|is|was|will|can)\\b", "uma frase enfática (What I need is..., It was... who...)"]
+    [
+     "\\bwhat i (really )?(need|want|love|like|hate|miss)\\b|\\bit (is|was) \\w+ (who|that)\\b|\\b(never|rarely|seldom|not only|hardly|little) (have|had|do|did|does|is|was|will|can)\\b",
+     "uma frase enfática (What I need is..., It was... who...)"
+    ]
    ],
    "evitar": [],
    "modelo": "What I really need is more time. It was my mother who taught me that. Never have I felt so calm."
@@ -404,8 +599,14 @@
    "pedido": "Peça um dia de folga para o chefe, com educação.",
    "min": 12,
    "precisa": [
-    ["\\b(could|would|may)\\b", "could, would ou may (pedido educado)"],
-    ["\\b(please|i was wondering|would it be possible|i would like|i'd like)\\b", "uma expressão de cortesia"]
+    [
+     "\\b(could|would|may)\\b",
+     "could, would ou may (pedido educado)"
+    ],
+    [
+     "\\b(please|i was wondering|would it be possible|i would like|i'd like)\\b",
+     "uma expressão de cortesia"
+    ]
    ],
    "evitar": [],
    "modelo": "I was wondering if I could take Friday off. Would it be possible to finish my report on Thursday instead?"
@@ -416,9 +617,18 @@
    "pedido": "Conte sua semana usando make, do e take.",
    "min": 14,
    "precisa": [
-    ["\\b(make|made|making|makes)\\s+(a |an |the |some )?(\\w+ )?(decision|mistake|money|friends|progress|plans?|noise|effort|sense|dinner|lunch|breakfast|coffee|call)\\b", "make + palavra certa (make a decision)"],
-    ["\\b(do|did|doing|does)\\s+(my |the |your |some |a lot of )?(\\w+ )?(homework|exercise|shopping|dishes|laundry|best|business|work|job|favor|research)\\b", "do + palavra certa (do exercise)"],
-    ["\\b(take|took|taking|takes)\\s+(a |an |the )?(\\w+ )?(break|shower|photo|picture|bus|taxi|seat|risk|look|nap|walk|course|test|exam)\\b", "take + palavra certa (take a break)"]
+    [
+     "\\b(make|made|making|makes)\\s+(a |an |the |some )?(\\w+ )?(decision|mistake|money|friends|progress|plans?|noise|effort|sense|dinner|lunch|breakfast|coffee|call)\\b",
+     "make + palavra certa (make a decision)"
+    ],
+    [
+     "\\b(do|did|doing|does)\\s+(my |the |your |some |a lot of )?(\\w+ )?(homework|exercise|shopping|dishes|laundry|best|business|work|job|favor|research)\\b",
+     "do + palavra certa (do exercise)"
+    ],
+    [
+     "\\b(take|took|taking|takes)\\s+(a |an |the )?(\\w+ )?(break|shower|photo|picture|bus|taxi|seat|risk|look|nap|walk|course|test|exam)\\b",
+     "take + palavra certa (take a break)"
+    ]
    ],
    "evitar": [],
    "modelo": "This week I made a big decision and did a lot of exercise. Yesterday I took a long walk to relax."
@@ -429,9 +639,18 @@
    "pedido": "Conte como tem sido seu inglês até agora, com voz passiva, discurso indireto e um conector.",
    "min": 15,
    "precisa": [
-    ["\\b(was|were|is|are|been)\\s+\\w+(ed|en|t|ld)\\b", "voz passiva (I was told, it is spoken)"],
-    ["\\b(said|told)\\b", "discurso indireto (said, told)"],
-    ["\\b(although|however|therefore|moreover)\\b", "um conector"]
+    [
+     "\\b(was|were|is|are|been)\\s+\\w+(ed|en|t|ld)\\b",
+     "voz passiva (I was told, it is spoken)"
+    ],
+    [
+     "\\b(said|told)\\b",
+     "discurso indireto (said, told)"
+    ],
+    [
+     "\\b(although|however|therefore|moreover)\\b",
+     "um conector"
+    ]
    ],
    "evitar": [],
    "modelo": "I was told that English was difficult. However, I kept going, and my teacher said I had improved a lot."
@@ -442,9 +661,18 @@
    "pedido": "No check-in: peça um assento na janela e diga quantas malas você vai despachar.",
    "min": 14,
    "precisa": [
-    ["\\b(could|can|would)\\b", "um pedido (Could I...?)"],
-    ["\\b(window|aisle) seat\\b", "window seat ou aisle seat"],
-    ["\\b(bag|bags|suitcase|suitcases|luggage)\\b", "a bagagem"]
+    [
+     "\\b(could|can|would)\\b",
+     "um pedido (Could I...?)"
+    ],
+    [
+     "\\b(window|aisle) seat\\b",
+     "window seat ou aisle seat"
+    ],
+    [
+     "\\b(bag|bags|suitcase|suitcases|luggage)\\b",
+     "a bagagem"
+    ]
    ],
    "evitar": [],
    "modelo": "Hi, I'm checking in for the flight to New York. Could I have a window seat, please? I have one bag to check."
@@ -455,8 +683,14 @@
    "pedido": "Ligue para a recepção: há um problema no seu quarto.",
    "min": 12,
    "precisa": [
-    ["\\b(problem|doesn'?t work|isn'?t working|broken|not working|there is no|there's no)\\b", "o problema (doesn't work, there's no...)"],
-    ["\\b(could|can|would)\\s+(you|someone)\\b", "um pedido (Could you send someone?)"]
+    [
+     "\\b(problem|doesn'?t work|isn'?t working|broken|not working|there is no|there's no)\\b",
+     "o problema (doesn't work, there's no...)"
+    ],
+    [
+     "\\b(could|can|would)\\s+(you|someone)\\b",
+     "um pedido (Could you send someone?)"
+    ]
    ],
    "evitar": [],
    "modelo": "Hello, I'm in room 405. The air conditioning isn't working. Could you send someone to fix it, please?"
@@ -467,7 +701,10 @@
    "pedido": "Explique como ir da sua casa até o mercado mais próximo.",
    "min": 12,
    "precisa": [
-    ["\\b(turn (left|right)|go straight|take the|cross|on the (left|right)|next to|opposite|corner|block)\\b", "uma expressão de direção (turn left, go straight)"]
+    [
+     "\\b(turn (left|right)|go straight|take the|cross|on the (left|right)|next to|opposite|corner|block)\\b",
+     "uma expressão de direção (turn left, go straight)"
+    ]
    ],
    "evitar": [],
    "modelo": "Go straight for two blocks, then turn left at the bank. The supermarket is on the right, next to the pharmacy."
@@ -478,8 +715,14 @@
    "pedido": "Numa loja: a calça não serve. Explique e peça outro tamanho.",
    "min": 12,
    "precisa": [
-    ["\\btoo\\s+\\w+\\b|\\b(not|n't) \\w+ enough\\b", "too ou enough"],
-    ["\\b(size|smaller|bigger|larger|medium|large|small)\\b", "o tamanho"]
+    [
+     "\\btoo\\s+\\w+\\b|\\b(not|n't) \\w+ enough\\b",
+     "too ou enough"
+    ],
+    [
+     "\\b(size|smaller|bigger|larger|medium|large|small)\\b",
+     "o tamanho"
+    ]
    ],
    "evitar": [],
    "modelo": "These jeans are too tight, and they aren't long enough. Do you have them in a bigger size?"
@@ -490,8 +733,14 @@
    "pedido": "Descreva seus sintomas para o médico e diga desde quando.",
    "min": 12,
    "precisa": [
-    ["\\b(i have|i've had|i've got|i feel|i'm feeling|hurts?|ache)\\b", "o sintoma (I have a headache, my back hurts)"],
-    ["\\b(since|for|days|yesterday|week|weeks|morning)\\b", "há quanto tempo"]
+    [
+     "\\b(i have|i've had|i've got|i feel|i'm feeling|hurts?|ache)\\b",
+     "o sintoma (I have a headache, my back hurts)"
+    ],
+    [
+     "\\b(since|for|days|yesterday|week|weeks|morning)\\b",
+     "há quanto tempo"
+    ]
    ],
    "evitar": [],
    "modelo": "I've had a headache since Monday, and my throat hurts. I also feel very tired."
@@ -502,8 +751,14 @@
    "pedido": "Ligue para uma empresa e deixe recado para alguém que não está.",
    "min": 14,
    "precisa": [
-    ["\\b(this is|it's|speaking)\\b", "quem fala (This is...)"],
-    ["\\b(could you|can you|please) (tell|ask|give)\\b|\\bleave a message\\b|\\bcall me back\\b", "o recado (Could you tell her...?, call me back)"]
+    [
+     "\\b(this is|it's|speaking)\\b",
+     "quem fala (This is...)"
+    ],
+    [
+     "\\b(could you|can you|please) (tell|ask|give)\\b|\\bleave a message\\b|\\bcall me back\\b",
+     "o recado (Could you tell her...?, call me back)"
+    ]
    ],
    "evitar": [],
    "modelo": "Hi, this is Bia from Sol Travel. Could you tell Mr. Lee that I called? He can call me back this afternoon."
@@ -514,8 +769,14 @@
    "pedido": "Puxe conversa com um vizinho sobre o tempo ou o fim de semana.",
    "min": 12,
    "precisa": [
-    ["\\b(isn'?t it|aren'?t they|don'?t you|didn'?t you|wasn'?t it|haven'?t you|is it|was it|right)\\b", "uma question tag (isn't it?)"],
-    ["\\bso\\s+\\w+|\\bsuch (a |an )?\\w+", "so ou such"]
+    [
+     "\\b(isn'?t it|aren'?t they|don'?t you|didn'?t you|wasn'?t it|haven'?t you|is it|was it|right)\\b",
+     "uma question tag (isn't it?)"
+    ],
+    [
+     "\\bso\\s+\\w+|\\bsuch (a |an )?\\w+",
+     "so ou such"
+    ]
    ],
    "evitar": [],
    "modelo": "It's such a nice day, isn't it? It was so hot yesterday. You went to the beach, didn't you?"
@@ -526,8 +787,14 @@
    "pedido": "Conte uma viagem: aonde foi e o que viu, usando a, an e the.",
    "min": 14,
    "precisa": [
-    ["\\b(a|an)\\s+\\w+", "a ou an"],
-    ["\\bthe\\s+\\w+", "the"]
+    [
+     "\\b(a|an)\\s+\\w+",
+     "a ou an"
+    ],
+    [
+     "\\bthe\\s+\\w+",
+     "the"
+    ]
    ],
    "evitar": [],
    "modelo": "Last year I visited a small town in the mountains. The town had an old church, and the church had a beautiful bell."
@@ -538,8 +805,14 @@
    "pedido": "Numa entrevista de emprego: fale da sua experiência e dos seus pontos fortes.",
    "min": 12,
    "precisa": [
-    ["\\b(have|'ve)\\s+(worked|been|had)\\b|\\bexperience\\b|\\bi worked\\b", "sua experiência (I've worked..., I have experience in...)"],
-    ["\\b(i'm good at|i am good at|strengths?|i'm (very )?(organized|patient|creative|reliable|hardworking|responsible)|i am (very )?(organized|patient|creative|reliable|hardworking|responsible))\\b", "seus pontos fortes (I'm good at..., I'm organized)"]
+    [
+     "\\b(have|'ve)\\s+(worked|been|had)\\b|\\bexperience\\b|\\bi worked\\b",
+     "sua experiência (I've worked..., I have experience in...)"
+    ],
+    [
+     "\\b(i'm good at|i am good at|strengths?|i'm (very )?(organized|patient|creative|reliable|hardworking|responsible)|i am (very )?(organized|patient|creative|reliable|hardworking|responsible))\\b",
+     "seus pontos fortes (I'm good at..., I'm organized)"
+    ]
    ],
    "evitar": [],
    "modelo": "I've worked in sales for five years. I'm good at solving problems, and I'm very organized."
@@ -550,7 +823,10 @@
    "pedido": "Conte o que você manda fazer (cabelo, carro, conserto) usando have ou get.",
    "min": 12,
    "precisa": [
-    ["\\b(have|had|get|got|having|getting)\\s+(my|the|our|it|his|her)\\b(\\s+\\w+){0,2}\\s+(done|cut|fixed|repaired|cleaned|painted|checked|delivered|washed|changed|made)\\b", "have/get + objeto + particípio (I had my car repaired)"]
+    [
+     "\\b(have|had|get|got|having|getting)\\s+(my|the|our|it|his|her)\\b(\\s+\\w+){0,2}\\s+(done|cut|fixed|repaired|cleaned|painted|checked|delivered|washed|changed|made)\\b",
+     "have/get + objeto + particípio (I had my car repaired)"
+    ]
    ],
    "evitar": [],
    "modelo": "I have my hair cut every month. Last week I had my car repaired, and tomorrow I'm getting my eyes checked."
@@ -561,8 +837,14 @@
    "pedido": "Diga onde você estará daqui a um ano e o que já terá feito.",
    "min": 12,
    "precisa": [
-    ["\\bwill be\\s+\\w+ing\\b|'ll be \\w+ing", "will be + -ING"],
-    ["\\bwill have\\s+\\w+|'ll have\\s+\\w+(ed|en|t|ne)\\b", "will have + particípio"]
+    [
+     "\\bwill be\\s+\\w+ing\\b|'ll be \\w+ing",
+     "will be + -ING"
+    ],
+    [
+     "\\bwill have\\s+\\w+|'ll have\\s+\\w+(ed|en|t|ne)\\b",
+     "will have + particípio"
+    ]
    ],
    "evitar": [],
    "modelo": "This time next year, I'll be living in Lisbon. By then, I will have finished my course."
@@ -573,8 +855,14 @@
    "pedido": "Fale da sua semana com palavras que têm TH e verbos no passado com -ED.",
    "min": 12,
    "precisa": [
-    ["\\b(think|three|thanks|thing|things|this|that|the|those|these|thursday|mother|brother|with)\\b", "uma palavra com TH"],
-    ["\\b\\w+ed\\b", "um verbo com -ED"]
+    [
+     "\\b(think|three|thanks|thing|things|this|that|the|those|these|thursday|mother|brother|with)\\b",
+     "uma palavra com TH"
+    ],
+    [
+     "\\b\\w+ed\\b",
+     "um verbo com -ED"
+    ]
    ],
    "evitar": [],
    "modelo": "I think I worked three days this week. I wanted to rest, so I played video games on Thursday."
@@ -585,8 +873,14 @@
    "pedido": "Imagine um passado diferente: como seria sua vida hoje?",
    "min": 14,
    "precisa": [
-    ["\\bif i had\\b|\\bif i'd\\b|\\bif i hadn'?t\\b", "if + had + particípio (o passado)"],
-    ["\\bwould\\b|'d\\b", "would + verbo (o presente)"]
+    [
+     "\\bif i had\\b|\\bif i'd\\b|\\bif i hadn'?t\\b",
+     "if + had + particípio (o passado)"
+    ],
+    [
+     "\\bwould\\b|'d\\b",
+     "would + verbo (o presente)"
+    ]
    ],
    "evitar": [],
    "modelo": "If I had studied medicine, I would be a doctor now. If I hadn't moved, I wouldn't know my best friend today."
@@ -597,8 +891,14 @@
    "pedido": "Sugira mudanças no seu trabalho ou escola, de forma formal.",
    "min": 14,
    "precisa": [
-    ["\\b(suggest|recommend|propose|insist|essential|important|vital)\\b", "suggest, recommend ou it is essential"],
-    ["\\bthat\\s+(we|everyone|he|she|they|the \\w+|all \\w+)\\s+(be|have|start|use|work|stop|take|go|consider|review|arrive|receive)\\b", "verbo na forma base depois de that (that everyone be...)"]
+    [
+     "\\b(suggest|recommend|propose|insist|essential|important|vital)\\b",
+     "suggest, recommend ou it is essential"
+    ],
+    [
+     "\\bthat\\s+(we|everyone|he|she|they|the \\w+|all \\w+)\\s+(be|have|start|use|work|stop|take|go|consider|review|arrive|receive)\\b",
+     "verbo na forma base depois de that (that everyone be...)"
+    ]
    ],
    "evitar": [],
    "modelo": "I suggest that we start meetings on time. It is essential that everyone be informed about the changes."
@@ -609,7 +909,10 @@
    "pedido": "Dê uma opinião cautelosa sobre o futuro do trabalho.",
    "min": 14,
    "precisa": [
-    ["\\b(seems?|appears?|tends? to|likely|unlikely|might|may|could|perhaps|possibly|probably)\\b", "linguagem cautelosa (it seems, tend to, likely)"]
+    [
+     "\\b(seems?|appears?|tends? to|likely|unlikely|might|may|could|perhaps|possibly|probably)\\b",
+     "linguagem cautelosa (it seems, tend to, likely)"
+    ]
    ],
    "evitar": [],
    "modelo": "It seems that remote work is here to stay. Companies are likely to offer more flexible hours, although some might prefer the office."
@@ -620,8 +923,14 @@
    "pedido": "Abra uma apresentação curta sobre a sua cidade e diga como ela vai ser organizada.",
    "min": 18,
    "precisa": [
-    ["\\b(today i'?m going to|today i will|today i'd like to|i'd like to talk|i would like to talk|let me start|to begin)\\b", "uma abertura (Today I'm going to talk about...)"],
-    ["\\b(first(ly)?|then|next|after that|finally|to sum up|in conclusion|secondly)\\b", "um organizador (first, then, finally)"]
+    [
+     "\\b(today i'?m going to|today i will|today i'd like to|i'd like to talk|i would like to talk|let me start|to begin)\\b",
+     "uma abertura (Today I'm going to talk about...)"
+    ],
+    [
+     "\\b(first(ly)?|then|next|after that|finally|to sum up|in conclusion|secondly)\\b",
+     "um organizador (first, then, finally)"
+    ]
    ],
    "evitar": [],
    "modelo": "Good morning, everyone. Today I'm going to talk about my city. First, I'll show you its history. Then, I'll talk about the food, and finally about the people."
@@ -632,9 +941,18 @@
    "pedido": "Numa reunião: concorde em parte, discorde com educação e peça um esclarecimento.",
    "min": 14,
    "precisa": [
-    ["\\b(i agree|you're right|good point|that's true|i see your point|fair point)\\b", "concordar (I agree, good point)"],
-    ["\\b(i'm not sure|i see it differently|i'm afraid|i'm not convinced|i don't think)\\b", "discordar com educação (I'm not sure, I'm afraid...)"],
-    ["\\b(what do you mean|could you clarify|could you explain|do you mean)\\b", "pedir esclarecimento (What do you mean by...?)"]
+    [
+     "\\b(i agree|you're right|good point|that's true|i see your point|fair point)\\b",
+     "concordar (I agree, good point)"
+    ],
+    [
+     "\\b(i'm not sure|i see it differently|i'm afraid|i'm not convinced|i don't think)\\b",
+     "discordar com educação (I'm not sure, I'm afraid...)"
+    ],
+    [
+     "\\b(what do you mean|could you clarify|could you explain|do you mean)\\b",
+     "pedir esclarecimento (What do you mean by...?)"
+    ]
    ],
    "evitar": [],
    "modelo": "I agree with you on the budget, but I'm not sure about the deadline. What do you mean by next week, exactly?"
@@ -645,8 +963,14 @@
    "pedido": "Convença sua equipe a testar uma ideia nova, de forma formal e cautelosa.",
    "min": 14,
    "precisa": [
-    ["\\b(suggest|recommend|propose|essential)\\b", "uma sugestão formal (I'd recommend...)"],
-    ["\\b(seems?|likely|might|may|could|tends?)\\b", "linguagem cautelosa (it seems likely...)"]
+    [
+     "\\b(suggest|recommend|propose|essential)\\b",
+     "uma sugestão formal (I'd recommend...)"
+    ],
+    [
+     "\\b(seems?|likely|might|may|could|tends?)\\b",
+     "linguagem cautelosa (it seems likely...)"
+    ]
    ],
    "evitar": [],
    "modelo": "I'd recommend that we test the new app for a month. It seems likely to save time, although it might need some changes."
@@ -657,8 +981,14 @@
    "pedido": "Diga uma frase com ship e sheep, e outra com full e fool.",
    "min": 8,
    "precisa": [
-    ["\\bship\\b", "ship (I curto)"],
-    ["\\bsheep\\b", "sheep (I longo)"]
+    [
+     "\\bship\\b",
+     "ship (I curto)"
+    ],
+    [
+     "\\bsheep\\b",
+     "sheep (I longo)"
+    ]
    ],
    "evitar": [],
    "modelo": "The sheep is on the ship. My glass is full, and he isn't a fool."
@@ -669,10 +999,240 @@
    "pedido": "Diga como você está e o que vai fazer mais tarde, falando de forma natural.",
    "min": 12,
    "precisa": [
-    ["\\b(gonna|going to|wanna|want to|gotta|have to|got to)\\b", "going to ou want to (na fala, viram gonna e wanna)"]
+    [
+     "\\b(gonna|going to|wanna|want to|gotta|have to|got to)\\b",
+     "going to ou want to (na fala, viram gonna e wanna)"
+    ]
    ],
    "evitar": [],
    "modelo": "I'm doing great, thanks. I'm going to meet some friends later, and we want to grab something to eat."
+  },
+  {
+   "capitulo": "Chegada a Londres",
+   "pergunta": "A friend invites you to a party on Saturday, but you're busy. What do you say?",
+   "pedido": "Recuse o convite com educação, dê um motivo e sugira outro dia.",
+   "min": 12,
+   "precisa": [
+    [
+     "\\b(i'?m afraid|sorry|thanks,? but|thank you,? but|unfortunately)\\b",
+     "uma recusa educada (I'm afraid / Sorry)"
+    ],
+    [
+     "\\b(because|i have to|i'?ve got to|i'?m (busy|working|going|visiting))\\b",
+     "um motivo (because...)"
+    ],
+    [
+     "\\b(how about|what about|why don'?t we|shall we|let'?s|maybe)\\b",
+     "uma sugestão (How about...? / Let's...)"
+    ]
+   ],
+   "modelo": "Thanks for inviting me, but I'm afraid I can't come on Saturday, because I'm working. How about meeting for coffee on Sunday?"
+  },
+  {
+   "capitulo": "Um Dia Comum",
+   "pergunta": "What do you do in the morning before you leave home?",
+   "pedido": "Conte a sua manhã usando pelo menos dois phrasal verbs (wake up, get up, put on, turn off...).",
+   "min": 15,
+   "precisa": [
+    [
+     "\\b(wake|wakes|woke) up\\b|\\b(get|gets|got) up\\b",
+     "quando você acorda ou levanta (wake up / get up)"
+    ],
+    [
+     "\\b(put|puts|turn|turns|pick|picks|take|takes|switch|switches)\\b.{0,20}\\b(on|off|up)\\b",
+     "outro phrasal verb (put on, turn off...)"
+    ],
+    [
+     "\\b(first|then|after that|before|at (six|seven|eight|nine|\\d))\\b",
+     "uma ordem ou horário (first, then, at seven)"
+    ]
+   ],
+   "modelo": "I wake up at seven and I get up at quarter past. First, I put on my clothes and make coffee. Then I turn off the lights and leave home at eight."
+  },
+  {
+   "capitulo": "Na Minha Opinião",
+   "pergunta": "Should students wear uniforms at school? What do you think?",
+   "pedido": "Dê a sua opinião, uma razão e mostre que entende o outro lado.",
+   "min": 25,
+   "precisa": [
+    [
+     "\\b(i think|in my opinion|i reckon|i believe|personally|as far as i'?m concerned)\\b",
+     "a sua opinião (In my opinion / I reckon)"
+    ],
+    [
+     "\\b(because|since)\\b",
+     "uma razão (because)"
+    ],
+    [
+     "\\b(but|however|on the other hand|i see what you mean|it'?s true|although)\\b",
+     "o outro lado (It's true that..., but...)"
+    ]
+   ],
+   "modelo": "In my opinion, students shouldn't wear uniforms, because clothes are a way to show who you are. It's true that uniforms can be cheaper for families, but I think students learn better when they feel comfortable."
+  },
+  {
+   "capitulo": "Era Uma Vez",
+   "pergunta": "Tell me about something funny or strange that happened to you.",
+   "pedido": "Conte a história em ordem, usando sequenciadores e o passado.",
+   "min": 30,
+   "precisa": [
+    [
+     "\\b(first|then|after that|later|next)\\b",
+     "a sequência (first, then, after that)"
+    ],
+    [
+     "\\b(was|were) \\w+ing\\b",
+     "o cenário no passado contínuo (I was walking...)"
+    ],
+    [
+     "\\b(suddenly|all of a sudden|in the end|eventually|finally)\\b",
+     "um momento-chave (suddenly / in the end)"
+    ]
+   ],
+   "modelo": "Last summer I was walking in the park with my dog. First, he saw a cat. Then he ran after it and jumped into the lake. Suddenly, I was in the water too! In the end, we both went home wet, but we laughed a lot."
+  },
+  {
+   "capitulo": "Mensagens",
+   "pergunta": "A friend sends you a message: “Fancy a film tonight?” Reply.",
+   "pedido": "Responda como numa mensagem informal: aceite, combine a hora e use uma abreviação ou expressão informal.",
+   "min": 8,
+   "precisa": [
+    [
+     "\\b(yes|yeah|sure|sounds good|i'?d love to|great|brilliant|why not)\\b",
+     "aceitar (Sure! / Sounds good!)"
+    ],
+    [
+     "\\bat (\\d|six|seven|eight|nine|half)\\b|\\b\\d ?(pm|am|o'?clock)\\b",
+     "um horário (at 8)"
+    ],
+    [
+     "\\b(btw|tbh|asap|cheers|lol|x+)\\b",
+     "uma expressão informal (BTW, cheers, x)"
+    ]
+   ],
+   "modelo": "Sure, sounds good! Shall we meet at 7 at the cinema? BTW, I'll buy the popcorn. Cheers!"
+  },
+  {
+   "capitulo": "Filmes, Séries e Livros",
+   "pergunta": "What's a film, series or book you'd recommend? Why?",
+   "pedido": "Diga onde se passa ou sobre o que é, e por que vale a pena, sem contar o final.",
+   "min": 25,
+   "precisa": [
+    [
+     "\\b(set in|about|based on)\\b",
+     "onde se passa ou sobre o que é (It's set in / It's about)"
+    ],
+    [
+     "\\b(recommend|worth)\\b",
+     "a recomendação (I'd recommend / It's worth)"
+    ],
+    [
+     "\\b(because|since)\\b",
+     "por quê (because)"
+    ]
+   ],
+   "modelo": "I'd recommend Paddington 2. It's set in London and it's about a bear who looks for a present for his aunt. It's worth watching because it's funny and kind, and the cast is brilliant."
+  },
+  {
+   "capitulo": "Nos Velhos Tempos",
+   "pergunta": "What did you use to do when you were a child?",
+   "pedido": "Conte hábitos da sua infância com used to e would.",
+   "min": 25,
+   "precisa": [
+    [
+     "\\bused to\\b",
+     "used to"
+    ],
+    [
+     "\\bwould\\b|\\b\\w+'d (always|often|go|play|visit|watch)\\b",
+     "would para uma ação repetida"
+    ],
+    [
+     "\\b(when i was|as a (child|kid))\\b",
+     "quando (When I was a child...)"
+    ]
+   ],
+   "modelo": "When I was a child, I used to live near the sea. Every weekend, my family would go to the beach, and my dad would always buy ice cream. I used to have a lot of friends there."
+  },
+  {
+   "capitulo": "Que, Aliás...",
+   "pergunta": "Tell me about a person or a place that is important to you.",
+   "pedido": "Use pelo menos duas orações explicativas, com who, which, whose ou where.",
+   "min": 25,
+   "precisa": [
+    [
+     "\\b(who|which|whose|where)\\b",
+     "uma oração explicativa (who, which, whose, where)"
+    ],
+    [
+     "\\b(who|which|whose|where)\\b.*\\b(who|which|whose|where)\\b",
+     "uma segunda oração explicativa"
+    ]
+   ],
+   "modelo": "My grandmother, who is eighty, lives in a small town where everybody knows her. Her house, which has a big garden, is my favourite place in the world."
+  },
+  {
+   "capitulo": "Não Precisava!",
+   "pergunta": "Tell me about a time you prepared too much for something.",
+   "pedido": "Use needn't have e um pouco de linguagem vaga (sort of, or so, -ish).",
+   "min": 20,
+   "precisa": [
+    [
+     "\\bneedn'?t have\\b|\\bneed not have\\b",
+     "needn't have + particípio"
+    ],
+    [
+     "\\b(sort of|kind of|or so|and stuff|a bit|(one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|twenty|thirty|forty|fifty)ish)\\b",
+     "linguagem vaga (sort of, or so, -ish)"
+    ]
+   ],
+   "modelo": "Last year I studied for a test for twenty hours or so. In the end, it was sort of easy, so I needn't have studied that much. I needn't have worried either!"
+  },
+  {
+   "capitulo": "Escola e Ciência",
+   "pergunta": "Should children learn to use technology at school from an early age?",
+   "pedido": "Dê a sua opinião usando vocabulário de escola e de tecnologia.",
+   "min": 30,
+   "precisa": [
+    [
+     "\\b(i think|in my opinion|i reckon|i believe|personally)\\b",
+     "a sua opinião (I think / In my opinion)"
+    ],
+    [
+     "\\b(school|students|children|teachers|lessons?|exams?)\\b",
+     "vocabulário de escola"
+    ],
+    [
+     "\\b(technology|devices?|computers?|coding|internet|apps?|online)\\b",
+     "vocabulário de tecnologia"
+    ],
+    [
+     "\\b(because|since|for example|however|but)\\b",
+     "uma razão ou um contraste"
+    ]
+   ],
+   "modelo": "I think children should learn to use technology at school, because most jobs need it today. For example, coding lessons teach logic. However, teachers should also limit screen time, because children need to play and read books too."
+  },
+  {
+   "capitulo": "A Névoa de Londres",
+   "pergunta": "Look back at this arc. What can you do now in English that you couldn't do before?",
+   "pedido": "Fale de pelo menos duas coisas que você aprendeu, com um exemplo.",
+   "min": 25,
+   "precisa": [
+    [
+     "\\b(i can|i'?m able to|now i|i learned|i'?ve learned|i learnt|i'?ve learnt)\\b",
+     "o que você consegue agora (I can / I've learned)"
+    ],
+    [
+     "\\b(for example|for instance|like)\\b",
+     "um exemplo (for example)"
+    ],
+    [
+     "\\b(also|another|too)\\b",
+     "uma segunda coisa (also)"
+    ]
+   ],
+   "modelo": "Now I can invite people and make suggestions, for example: How about going to the cinema? I've also learned to tell a story with first, then and in the end, and I can talk about the films I like."
   }
  ],
  "escrever": [
@@ -685,13 +1245,28 @@
    "pedido": "Escreva uma mensagem para um novo colega de curso. Diga seu nome, sua idade, de onde você é e fale da sua família. Cerca de 30 palavras.",
    "min": 25,
    "precisa": [
-    ["\\bmy name is\\b|\\bi'?m [a-z]+", "seu nome"],
-    ["\\bi'?m [\\w-]+( years old)?\\b|\\bi am [\\w-]+", "sua idade com TO BE"],
-    ["\\bfrom\\b", "de onde você é"],
-    ["\\b(mother|father|mom|dad|sister|brother|wife|husband|son|daughter|parents)\\b", "alguém da família"]
+    [
+     "\\bmy name is\\b|\\bi'?m [a-z]+",
+     "seu nome"
+    ],
+    [
+     "\\bi'?m [\\w-]+( years old)?\\b|\\bi am [\\w-]+",
+     "sua idade com TO BE"
+    ],
+    [
+     "\\bfrom\\b",
+     "de onde você é"
+    ],
+    [
+     "\\b(mother|father|mom|dad|sister|brother|wife|husband|son|daughter|parents)\\b",
+     "alguém da família"
+    ]
    ],
    "evitar": [
-    ["\\bi have [\\w-]+ years\\b", "Idade usa TO BE: I'm 30, e não I have 30 years."]
+    [
+     "\\bi have [\\w-]+ years\\b",
+     "Idade usa TO BE: I'm 30, e não I have 30 years."
+    ]
    ],
    "modelo": "Hi! My name is Bia and I'm twenty-eight years old. I'm from Recife, in Brazil. I live with my husband and our son, Theo. I have a sister, Luana. She is a teacher. See you in class!"
   },
@@ -704,10 +1279,22 @@
    "pedido": "Escreva sobre um dia comum da sua semana e sobre o que você gosta de fazer no tempo livre. Cerca de 40 palavras.",
    "min": 35,
    "precisa": [
-    ["\\bi (get up|wake up|go|have|work|study|eat|take|start|finish|watch|leave)\\b", "verbos no presente (I get up, I work)"],
-    ["\\b(always|usually|often|sometimes|never|every)\\b", "um advérbio de frequência"],
-    ["\\b(at|on|in)\\s+\\w+", "at, on ou in com hora ou dia"],
-    ["\\b(like|love|enjoy|hate)\\s+\\w+ing\\b", "like ou love + -ING"]
+    [
+     "\\bi (get up|wake up|go|have|work|study|eat|take|start|finish|watch|leave)\\b",
+     "verbos no presente (I get up, I work)"
+    ],
+    [
+     "\\b(always|usually|often|sometimes|never|every)\\b",
+     "um advérbio de frequência"
+    ],
+    [
+     "\\b(at|on|in)\\s+\\w+",
+     "at, on ou in com hora ou dia"
+    ],
+    [
+     "\\b(like|love|enjoy|hate)\\s+\\w+ing\\b",
+     "like ou love + -ING"
+    ]
    ],
    "evitar": [],
    "modelo": "I usually get up at six thirty. I have coffee and go to work by bus. I work from nine to five. In the evening, I cook dinner with my family. On weekends, I love walking in the park and I like watching movies."
@@ -721,10 +1308,22 @@
    "pedido": "Escreva um e-mail para um amigo contando o que você fez nas últimas férias e o que vai fazer nas próximas. Cerca de 60 palavras.",
    "min": 50,
    "precisa": [
-    ["\\b(hi|hello|dear)\\b", "uma saudação (Hi...)"],
-    ["\\b(went|was|were|visited|stayed|saw|had|ate|swam|took)\\b", "verbos no passado"],
-    ["\\bgoing to\\b|\\bwill\\b|'ll\\b", "o futuro (going to, will)"],
-    ["\\b(love|best wishes|see you|bye|cheers|take care)\\b", "uma despedida"]
+    [
+     "\\b(hi|hello|dear)\\b",
+     "uma saudação (Hi...)"
+    ],
+    [
+     "\\b(went|was|were|visited|stayed|saw|had|ate|swam|took)\\b",
+     "verbos no passado"
+    ],
+    [
+     "\\bgoing to\\b|\\bwill\\b|'ll\\b",
+     "o futuro (going to, will)"
+    ],
+    [
+     "\\b(love|best wishes|see you|bye|cheers|take care)\\b",
+     "uma despedida"
+    ]
    ],
    "evitar": [],
    "modelo": "Hi Leo,\nHow are you? Last July I went to Salvador with my sister. We stayed in a small hotel near the beach, and we ate a lot of delicious food. It was hot and sunny every day! Next year I'm going to visit Chile. I think it will be cold, but I want to see the mountains.\nSee you soon,\nBia"
@@ -738,10 +1337,22 @@
    "pedido": "Escreva um e-mail para um amigo (cerca de 100 palavras, como no B1 Preliminary). Você se mudou para outra cidade: diga há quanto tempo, como era sua vida antes e dê um conselho para quem quer se mudar.",
    "min": 80,
    "precisa": [
-    ["\\b(have|has)\\s+(lived|been|worked|had|made|moved)\\b|'ve\\s+(lived|been|worked|had|made|moved)\\b", "present perfect (I've lived)"],
-    ["\\b(for|since)\\b", "for ou since"],
-    ["\\bused to\\b", "used to"],
-    ["\\bshould\\b", "should (conselho)"]
+    [
+     "\\b(have|has)\\s+(lived|been|worked|had|made|moved)\\b|'ve\\s+(lived|been|worked|had|made|moved)\\b",
+     "present perfect (I've lived)"
+    ],
+    [
+     "\\b(for|since)\\b",
+     "for ou since"
+    ],
+    [
+     "\\bused to\\b",
+     "used to"
+    ],
+    [
+     "\\bshould\\b",
+     "should (conselho)"
+    ]
    ],
    "evitar": [],
    "modelo": "Hi Carla,\nI'm sorry I haven't written for so long! I have lived in Curitiba since March, and I love it. I used to live in a very noisy street in São Paulo, and I used to spend two hours a day on the bus. Now I walk to work in fifteen minutes. I've made some new friends at the gym, and we often go hiking together.\nIf you want to move too, you should visit the city first and talk to people who live there. You shouldn't decide too quickly.\nWrite soon,\nBia"
@@ -755,10 +1366,22 @@
    "pedido": "Escreva um ensaio de opinião (140 a 190 palavras, como no B2 First): Todos os alunos deveriam aprender uma segunda língua na escola? Use as ideias \"trabalho\" e \"viagens\" e mais uma sua.",
    "min": 140,
    "precisa": [
-    ["\\b(in my opinion|i believe|i think|from my point of view|personally)\\b", "sua opinião (In my opinion...)"],
-    ["\\b(however|although|on the other hand|despite|whereas)\\b", "um contraste (however, although)"],
-    ["\\b(firstly|first of all|secondly|moreover|furthermore|in addition)\\b", "organização (firstly, moreover)"],
-    ["\\b(in conclusion|to sum up|all in all|to conclude)\\b", "uma conclusão (In conclusion...)"]
+    [
+     "\\b(in my opinion|i believe|i think|from my point of view|personally)\\b",
+     "sua opinião (In my opinion...)"
+    ],
+    [
+     "\\b(however|although|on the other hand|despite|whereas)\\b",
+     "um contraste (however, although)"
+    ],
+    [
+     "\\b(firstly|first of all|secondly|moreover|furthermore|in addition)\\b",
+     "organização (firstly, moreover)"
+    ],
+    [
+     "\\b(in conclusion|to sum up|all in all|to conclude)\\b",
+     "uma conclusão (In conclusion...)"
+    ]
    ],
    "evitar": [],
    "modelo": "Should every student learn a second language at school? In my opinion, the answer is yes, for several reasons.\nFirstly, a second language opens doors at work. Many companies look for people who can speak to clients from other countries, and candidates who speak English are often paid better.\nSecondly, languages make travel easier and more meaningful. If you can talk to local people, you understand their culture instead of just visiting places.\nMoreover, learning a language trains the brain. Students learn to notice patterns and to express the same idea in different ways, which helps in other subjects too.\nOn the other hand, some people argue that schools already have too many subjects, and that students should focus on maths and their own language. Although this is a fair point, a few hours of language classes a week would not take time away from other subjects.\nIn conclusion, I believe that a second language should be part of every school curriculum, because it prepares students for work, travel and life."
@@ -772,14 +1395,32 @@
    "pedido": "Escreva um e-mail formal para uma loja: o produto que você comprou chegou com defeito. Explique o problema e peça o reembolso. Cerca de 120 palavras, sem contrações.",
    "min": 100,
    "precisa": [
-    ["\\b(dear|to whom it may concern)\\b", "uma abertura formal (Dear...)"],
-    ["\\bi am writing\\b", "o motivo (I am writing to...)"],
-    ["\\b(however|therefore|furthermore|unfortunately|consequently)\\b", "um conector formal"],
-    ["\\b(refund|reimburse|money back)\\b", "o pedido de reembolso"],
-    ["\\b(sincerely|faithfully|kind regards|best regards)\\b", "um fechamento formal"]
+    [
+     "\\b(dear|to whom it may concern)\\b",
+     "uma abertura formal (Dear...)"
+    ],
+    [
+     "\\bi am writing\\b",
+     "o motivo (I am writing to...)"
+    ],
+    [
+     "\\b(however|therefore|furthermore|unfortunately|consequently)\\b",
+     "um conector formal"
+    ],
+    [
+     "\\b(refund|reimburse|money back)\\b",
+     "o pedido de reembolso"
+    ],
+    [
+     "\\b(sincerely|faithfully|kind regards|best regards)\\b",
+     "um fechamento formal"
+    ]
    ],
    "evitar": [
-    ["\\b(don't|can't|won't|isn't|wasn't|didn't|doesn't|i'm|it's|i've|i'd)\\b", "Em e-mail formal, evite contrações: I am, it is, do not."]
+    [
+     "\\b(don't|can't|won't|isn't|wasn't|didn't|doesn't|i'm|it's|i've|i'd)\\b",
+     "Em e-mail formal, evite contrações: I am, it is, do not."
+    ]
    ],
    "modelo": "Dear Sir or Madam,\nI am writing to complain about a coffee machine that I ordered from your website on 3 October (order number 48213).\nUnfortunately, when the machine arrived, the water tank was cracked and the machine did not turn on. I followed the instructions carefully, and I am certain that the damage happened before delivery. Furthermore, I contacted your customer service twice, but I have not received any reply.\nI would therefore be grateful if you could refund the full amount of 89 euros. I am happy to return the machine, provided that you send me a prepaid label.\nI look forward to hearing from you.\nYours faithfully,\nBeatriz Souza"
   },
@@ -792,10 +1433,22 @@
    "pedido": "Escreva uma avaliação de um hotel em que você ficou (cerca de 100 palavras): o quarto, o atendimento, um problema e se você recomenda.",
    "min": 80,
    "precisa": [
-    ["\\b(stayed|was|were|had|arrived|asked)\\b", "verbos no passado"],
-    ["\\btoo\\s+\\w+|\\b(not|n't) \\w+ enough\\b", "too ou enough"],
-    ["\\b(recommend|would stay|wouldn't stay|worth)\\b", "se você recomenda"],
-    ["\\b(but|however|although)\\b", "um contraste"]
+    [
+     "\\b(stayed|was|were|had|arrived|asked)\\b",
+     "verbos no passado"
+    ],
+    [
+     "\\btoo\\s+\\w+|\\b(not|n't) \\w+ enough\\b",
+     "too ou enough"
+    ],
+    [
+     "\\b(recommend|would stay|wouldn't stay|worth)\\b",
+     "se você recomenda"
+    ],
+    [
+     "\\b(but|however|although)\\b",
+     "um contraste"
+    ]
    ],
    "evitar": [],
    "modelo": "I stayed at the Blue Bay Hotel for three nights in August. The room was clean and the bed was very comfortable, but it was too small for two people, and the Wi-Fi wasn't fast enough to work. The staff were friendly and helpful. When the air conditioning stopped working, they fixed it in less than an hour. Breakfast was the best part: fresh fruit, eggs and great coffee. The hotel is a bit expensive, but the location is perfect, just five minutes from the beach. I would recommend it, especially to couples."
@@ -809,10 +1462,22 @@
    "pedido": "Escreva um resumo de uma reunião para um colega que faltou (cerca de 120 palavras): o que foi decidido, quem discordou e quais são os próximos passos.",
    "min": 100,
    "precisa": [
-    ["\\b(agreed|decided|it was decided|we decided)\\b", "as decisões (it was agreed, we decided)"],
-    ["\\b(said|suggested|argued|pointed out|disagreed|raised)\\b", "quem disse o quê (argued, pointed out)"],
-    ["\\b(seems?|likely|might|may|appears?)\\b", "linguagem cautelosa"],
-    ["\\b(next step|next steps|by (monday|tuesday|wednesday|thursday|friday|next week|the end))\\b", "próximos passos e prazos"]
+    [
+     "\\b(agreed|decided|it was decided|we decided)\\b",
+     "as decisões (it was agreed, we decided)"
+    ],
+    [
+     "\\b(said|suggested|argued|pointed out|disagreed|raised)\\b",
+     "quem disse o quê (argued, pointed out)"
+    ],
+    [
+     "\\b(seems?|likely|might|may|appears?)\\b",
+     "linguagem cautelosa"
+    ],
+    [
+     "\\b(next step|next steps|by (monday|tuesday|wednesday|thursday|friday|next week|the end))\\b",
+     "próximos passos e prazos"
+    ]
    ],
    "evitar": [],
    "modelo": "Hi Marcos,\nHere is a quick summary of today's meeting. It was agreed that the launch will be postponed to June, mainly because the new app still needs testing. Carla disagreed and argued that a delay might affect our sales, but most of the team felt it was safer to wait. Jin pointed out that the budget seems to be under control, so the delay is unlikely to cost us more.\nThe next steps are: Carla will update the marketing plan by Friday, Jin will review the budget next week, and we will meet again on 12 May.\nLet me know if you have any questions.\nBest,\nBia"
@@ -827,9 +1492,18 @@
    "texto": "FECHADO. Abrimos amanhã às 9h.",
    "pedido": "A Mina não lê português. Explique para ela, em inglês, o que diz o aviso.",
    "precisa": [
-    ["\\bclosed\\b", "que está fechado (closed)"],
-    ["\\btomorrow\\b", "amanhã (tomorrow)"],
-    ["\\b(9|nine)\\b", "a hora (nine)"]
+    [
+     "\\bclosed\\b",
+     "que está fechado (closed)"
+    ],
+    [
+     "\\btomorrow\\b",
+     "amanhã (tomorrow)"
+    ],
+    [
+     "\\b(9|nine)\\b",
+     "a hora (nine)"
+    ]
    ],
    "modelo": "It's closed now. It opens tomorrow at nine."
   },
@@ -841,10 +1515,22 @@
    "texto": "Chego às 18h. Compra pão e leite, por favor!",
    "pedido": "Seu colega de quarto, Jin, só fala inglês. Passe o recado da sua mãe para ele.",
    "precisa": [
-    ["\\b(6|six)\\b", "a hora (six)"],
-    ["\\bbread\\b", "pão (bread)"],
-    ["\\bmilk\\b", "leite (milk)"],
-    ["\\b(buy|get)\\b", "comprar (buy, get)"]
+    [
+     "\\b(6|six)\\b",
+     "a hora (six)"
+    ],
+    [
+     "\\bbread\\b",
+     "pão (bread)"
+    ],
+    [
+     "\\bmilk\\b",
+     "leite (milk)"
+    ],
+    [
+     "\\b(buy|get)\\b",
+     "comprar (buy, get)"
+    ]
    ],
    "modelo": "My mom arrives at six. She wants us to buy bread and milk, please."
   },
@@ -856,10 +1542,22 @@
    "texto": "Prato do dia: frango com arroz, R$ 25. Hoje não tem sobremesa.",
    "pedido": "Um turista no restaurante pergunta o que diz o quadro. Explique em inglês.",
    "precisa": [
-    ["\\bchicken\\b", "frango (chicken)"],
-    ["\\brice\\b", "arroz (rice)"],
-    ["\\b(25|twenty-five|twenty five)\\b", "o preço"],
-    ["\\bdessert\\b", "sobremesa (dessert)"]
+    [
+     "\\bchicken\\b",
+     "frango (chicken)"
+    ],
+    [
+     "\\brice\\b",
+     "arroz (rice)"
+    ],
+    [
+     "\\b(25|twenty-five|twenty five)\\b",
+     "o preço"
+    ],
+    [
+     "\\bdessert\\b",
+     "sobremesa (dessert)"
+    ]
    ],
    "modelo": "The dish of the day is chicken with rice. It costs twenty-five reais. There isn't any dessert today."
   },
@@ -871,11 +1569,26 @@
    "texto": "É obrigatório usar toalha. Não é permitido comer na sala de musculação. Aulas de ioga às terças, às 19h.",
    "pedido": "Uma nova aluna estrangeira quer saber as regras. Explique em inglês.",
    "precisa": [
-    ["\\btowel\\b", "a toalha (towel)"],
-    ["\\b(must|have to|has to|need to)\\b", "obrigação (must, have to)"],
-    ["\\b(can't|cannot|mustn't|not allowed|aren't allowed|isn't allowed)\\b", "proibição (can't, not allowed)"],
-    ["\\byoga\\b", "a aula de ioga"],
-    ["\\btuesdays?\\b", "o dia (Tuesday)"]
+    [
+     "\\btowel\\b",
+     "a toalha (towel)"
+    ],
+    [
+     "\\b(must|have to|has to|need to)\\b",
+     "obrigação (must, have to)"
+    ],
+    [
+     "\\b(can't|cannot|mustn't|not allowed|aren't allowed|isn't allowed)\\b",
+     "proibição (can't, not allowed)"
+    ],
+    [
+     "\\byoga\\b",
+     "a aula de ioga"
+    ],
+    [
+     "\\btuesdays?\\b",
+     "o dia (Tuesday)"
+    ]
    ],
    "modelo": "You have to use a towel, and you can't eat in the weight room. There are yoga classes on Tuesdays at seven p.m."
   },
@@ -887,11 +1600,26 @@
    "texto": "A prefeitura anunciou que o metrô vai funcionar 24 horas nos fins de semana a partir de março. A medida foi criada para diminuir os acidentes de trânsito.",
    "pedido": "Resuma a notícia em inglês, em uma ou duas frases, para um amigo que mora fora.",
    "precisa": [
-    ["\\b(subway|metro|underground)\\b", "o metrô"],
-    ["\\b(24|twenty-four|twenty four)\\b", "as 24 horas"],
-    ["\\bweekends?\\b", "os fins de semana"],
-    ["\\bmarch\\b", "quando começa (March)"],
-    ["\\baccidents?\\b", "o motivo (accidents)"]
+    [
+     "\\b(subway|metro|underground)\\b",
+     "o metrô"
+    ],
+    [
+     "\\b(24|twenty-four|twenty four)\\b",
+     "as 24 horas"
+    ],
+    [
+     "\\bweekends?\\b",
+     "os fins de semana"
+    ],
+    [
+     "\\bmarch\\b",
+     "quando começa (March)"
+    ],
+    [
+     "\\baccidents?\\b",
+     "o motivo (accidents)"
+    ]
    ],
    "modelo": "The city announced that the subway will run 24 hours a day on weekends from March. The measure was created to reduce traffic accidents."
   },
@@ -903,10 +1631,22 @@
    "texto": "Comprei o produto há 3 semanas e até agora não chegou. Quero meu dinheiro de volta!",
    "pedido": "A gerente da loja só fala inglês. Repasse a reclamação do cliente com um tom formal e calmo.",
    "precisa": [
-    ["\\b(three|3) weeks\\b", "há quanto tempo (three weeks)"],
-    ["\\b(hasn't|has not|still|yet|not arrived|never arrived)\\b", "que não chegou (still hasn't arrived)"],
-    ["\\b(refund|money back|reimburse)\\b", "o pedido de reembolso"],
-    ["\\b(would like|wishes|is requesting|requests|asked for)\\b", "o pedido em tom formal (would like)"]
+    [
+     "\\b(three|3) weeks\\b",
+     "há quanto tempo (three weeks)"
+    ],
+    [
+     "\\b(hasn't|has not|still|yet|not arrived|never arrived)\\b",
+     "que não chegou (still hasn't arrived)"
+    ],
+    [
+     "\\b(refund|money back|reimburse)\\b",
+     "o pedido de reembolso"
+    ],
+    [
+     "\\b(would like|wishes|is requesting|requests|asked for)\\b",
+     "o pedido em tom formal (would like)"
+    ]
    ],
    "modelo": "The customer bought the product three weeks ago, and it still has not arrived. He would like a full refund."
   },
@@ -918,11 +1658,26 @@
    "texto": "O voo 302 para Lisboa está atrasado 2 horas. O embarque será no portão 15.",
    "pedido": "Um passageiro estrangeiro não entendeu o anúncio. Explique em inglês.",
    "precisa": [
-    ["\\b(302|three oh two|three zero two)\\b", "o número do voo"],
-    ["\\blisbon\\b", "o destino (Lisbon)"],
-    ["\\bdelayed\\b|\\bdelay\\b|\\blate\\b", "o atraso (delayed)"],
-    ["\\b(2|two) hours\\b", "quanto tempo (two hours)"],
-    ["\\bgate\\b", "o portão (gate)"]
+    [
+     "\\b(302|three oh two|three zero two)\\b",
+     "o número do voo"
+    ],
+    [
+     "\\blisbon\\b",
+     "o destino (Lisbon)"
+    ],
+    [
+     "\\bdelayed\\b|\\bdelay\\b|\\blate\\b",
+     "o atraso (delayed)"
+    ],
+    [
+     "\\b(2|two) hours\\b",
+     "quanto tempo (two hours)"
+    ],
+    [
+     "\\bgate\\b",
+     "o portão (gate)"
+    ]
    ],
    "modelo": "Flight 302 to Lisbon is delayed by two hours. Boarding will be at gate 15."
   },
@@ -934,11 +1689,26 @@
    "texto": "Decidimos adiar o lançamento para junho. O Carlos discordou, mas a maioria aprovou. Próximo passo: revisar o orçamento.",
    "pedido": "Explique a decisão em inglês para uma colega estrangeira que faltou, em poucas frases.",
    "precisa": [
-    ["\\b(postpone|postponed|delay|delayed|push back|pushed back|put off)\\b", "o adiamento (postpone)"],
-    ["\\bjune\\b", "a nova data (June)"],
-    ["\\b(disagreed|didn't agree|was against|objected)\\b", "quem discordou"],
-    ["\\b(majority|most of|most people)\\b", "a maioria"],
-    ["\\bbudget\\b", "o orçamento (budget)"]
+    [
+     "\\b(postpone|postponed|delay|delayed|push back|pushed back|put off)\\b",
+     "o adiamento (postpone)"
+    ],
+    [
+     "\\bjune\\b",
+     "a nova data (June)"
+    ],
+    [
+     "\\b(disagreed|didn't agree|was against|objected)\\b",
+     "quem discordou"
+    ],
+    [
+     "\\b(majority|most of|most people)\\b",
+     "a maioria"
+    ],
+    [
+     "\\bbudget\\b",
+     "o orçamento (budget)"
+    ]
    ],
    "modelo": "We decided to postpone the launch to June. Carlos disagreed, but most people approved it. The next step is to review the budget."
   },
@@ -950,10 +1720,22 @@
    "texto": "Em inglês, ship tem um I curto e sheep tem um I longo. Se você trocar, muda a palavra.",
    "pedido": "Explique essa dica em inglês para um amigo que está aprendendo com você.",
    "precisa": [
-    ["\\bship\\b", "ship"],
-    ["\\bsheep\\b", "sheep"],
-    ["\\bshort\\b", "curto (short)"],
-    ["\\blong\\b", "longo (long)"]
+    [
+     "\\bship\\b",
+     "ship"
+    ],
+    [
+     "\\bsheep\\b",
+     "sheep"
+    ],
+    [
+     "\\bshort\\b",
+     "curto (short)"
+    ],
+    [
+     "\\blong\\b",
+     "longo (long)"
+    ]
    ],
    "modelo": "In English, ship has a short I sound and sheep has a long one. If you mix them up, you say a different word."
   }

@@ -151,7 +151,9 @@ function monsterSVG(tint){
 const PEOPLE={
  rafa:{sex:'m',style:'spiky',hair:'#3b2a22',top:'#e8743b',skin:'#f0c39d',deco:'lines',iris:'#7a4a28'},
  mina:{sex:'f',style:'long',hair:'#1f1d33',top:'#6f5bd6',skin:'#f7d6bf',deco:'v',clip:true,iris:'#7b5bd6'},
- jin:{sex:'m',style:'short',hair:'#d9dcea',top:'#2f6b57',skin:'#eec4a2',deco:'zip',iris:'#4d7fa8'}
+ jin:{sex:'m',style:'short',hair:'#d9dcea',top:'#2f6b57',skin:'#eec4a2',deco:'zip',iris:'#4d7fa8'},
+ olivia:{sex:'f',style:'bob',hair:'#a8432a',top:'#1f4e8c',skin:'#f6d6c6',deco:'zip',iris:'#3f7a5a',earrings:true},
+ harry:{sex:'m',style:'swept',hair:'#c9a76b',top:'#7a2e3b',skin:'#efc8a8',deco:'lines',iris:'#4a6fa5'}
 };
 const AV_PRESETS=[
  {sex:'m',style:'spiky',hair:'#2a1d17',top:'#3f8cff',skin:'#d9a066',deco:'lines',iris:'#4a2e1c'},
@@ -218,7 +220,7 @@ function av(who,mood,tint){
 /* BONUS vem de conteudo/historia/bonus.json e conteudo/questoes/bonus.json */
 
 /* ===================== BAÚ DO PORTAL: dados ===================== */
-const MONC={'SILÊNCIO':'#9fb2c8','ECO':'#ff7ab6','SOMBRA DA PONTE':'#5db8ff','CAPITÃO SOMBRIO':'#ff5d73','GOLEM':'#e0a83a','O JUIZ':'#b46bff','ARREPENDIMENTO':'#3fd68a','GUARDIÃO':'#ffcf3f'};
+const MONC={'SILÊNCIO':'#9fb2c8','ECO':'#ff7ab6','SOMBRA DA PONTE':'#5db8ff','CAPITÃO SOMBRIO':'#ff5d73','GOLEM':'#e0a83a','O JUIZ':'#b46bff','ARREPENDIMENTO':'#3fd68a','GUARDIÃO':'#ffcf3f','NÉVOA':'#b8c4d6'};
 const COSM={
  phones:{n:'Fones do Portal',kind:'acc'},
  neon:{n:'Moletom Neon',kind:'outfit',cfg:{top:'#14b8a6',deco:'lines'}},
@@ -434,14 +436,22 @@ function buildCast(){
  if(CAST.mina.v===CAST.rafa.v) CAST.mina.p=1.12;
  if(CAST.jin.v===CAST.rafa.v) CAST.jin.p=.92;
 }
+/* Olivia e Harry (Arco 10) falam com sotaque britânico; sem voz britânica, usam as vozes da Mina e do Jin com outro tom */
+function castGB(){
+ if(!CAST.narr) return;
+ const gb=S.voice?[]:usableVoices().filter(v=>/^en-gb/i.test(vLang(v))).sort((a,b)=>voiceScore(b)-voiceScore(a));
+ const f=gb.find(v=>gender(v)==='f'), m=gb.find(v=>gender(v)==='m'&&v!==f);
+ CAST.olivia=f?{v:f,p:1,r:1}:{v:CAST.mina.v,p:(CAST.mina.p||1)*1.05,r:1};
+ CAST.harry=m?{v:m,p:1,r:1}:{v:CAST.jin.v,p:(CAST.jin.p||1)*1.06,r:1};
+}
 function loadVoices(){
  if(!canSpeak) return;
  try{voices=speechSynthesis.getVoices().filter(v=>/^en([-_]|$)/i.test(v.lang));}catch(e){voices=[];}
- buildCast(); renderAudio();
+ buildCast(); castGB(); renderAudio();
 }
 function localFallback(who){
  const loc=usableVoices().filter(v=>v.localService).sort((a,b)=>voiceScore(b)-voiceScore(a));
- const g=who==='mina'?'f':(who==='rafa'||who==='jin'||who==='monster')?'m':null;
+ const g=(who==='mina'||who==='olivia')?'f':(who==='rafa'||who==='jin'||who==='harry'||who==='monster')?'m':null;
  return (g&&loc.find(v=>gender(v)===g))||loc[0]||null;
 }
 /* Motor de fala: guarda as falas vivas (evita bug do Chrome), fala em partes curtas e troca de voz se a online travar */
@@ -469,7 +479,7 @@ function playBuf(ctx,buf,st,du){
 function speakName(who){
  return new Promise(res=>{
   if(!canSpeak) return res(true);
-  try{if(!CAST.narr) buildCast();const role=CAST[who]||CAST[who==='rafa_f'?'mina':'rafa']||CAST.narr||{};
+  try{if(!CAST.narr){buildCast();castGB();}const role=CAST[who]||CAST[who==='rafa_f'?'mina':'rafa']||CAST.narr||{};
    const u=new SpeechSynthesisUtterance(heroName());u.lang='en-US';if(role.v) u.voice=role.v;u.rate=(S.slow||S.clear?.8:.95);
    let done=false;const fin=()=>{if(!done){done=true;res(true);}};u.onend=fin;u.onerror=fin;setTimeout(fin,2500);speechSynthesis.speak(u);
   }catch(e){res(true);}
@@ -1430,7 +1440,7 @@ function lsnList(){stopListening();cur=null;app.innerHTML=prList('Ouvir e respon
 function lsnView(id){
  const L=LISTEN.find(x=>x.id===id); if(!L) return lsnList(); stopListening(); cur=null;
  PQ={id,qs:L.q,ans:{},store:'lsn',back:'data-lsn'};
- const name=w=>w==='rafa'?esc(heroName()):w==='narr'?'Anúncio':w==='mina'?'Mina':'Jin';
+ const name=w=>w==='rafa'?esc(heroName()):w==='narr'?'Anúncio':esc(w.charAt(0).toUpperCase()+w.slice(1));
  app.innerHTML=`<div class="wrap">${barHTML('Ouvir e responder',esc(L.t),'data-lsn')}
  <div class="chap-open"><div class="no">DIÁLOGO · ${L.lv}</div><h1 class="pq">${esc(L.t)}</h1><p>Ouça o diálogo inteiro sem ler. Depois responda. Se precisar, ouça de novo ou veja o texto.</p></div>
  <div class="sysw"><div class="row" style="justify-content:flex-start"><button class="btn" data-lplay>Ouvir o diálogo</button><button class="btn ghost" data-lplay="slow">Ouvir devagar</button><button class="btn ghost" data-ltext aria-expanded="false">Ver o texto</button></div>
@@ -1716,7 +1726,7 @@ const TOUR_STOPS=[
  {scr:'home',sel:'[data-tour=tools]',t:'Glossário, pronúncia e nível',d:'O Glossário reúne todas as regras, com busca. Minha pronúncia mostra seu relatório de fala. O Nivelamento pode ser refeito quando quiser.'},
  {scr:'home',sel:'[data-tour=pratica]',t:'Prática',d:'Além dos capítulos: diálogos para ouvir, textos para ler, cartões de vocabulário e escrita guiada.'},
  {scr:'home',sel:'[data-tour=semana]',t:'Baú da semana',d:'Estude alguns dias por semana e abra baús com roupas, cartas e histórias extras.'},
- {scr:'home',sel:'details.arc summary',t:'Capítulos',d:'São 9 arcos, do A1 ao C1. O último capítulo de cada arco é um chefe; vencendo, você ganha um certificado.'},
+ {scr:'home',sel:'details.arc summary',t:'Capítulos',d:`São ${ARCS.length} arcos, do A1 ao C1. O último capítulo de cada arco é um chefe; vencendo, você ganha um certificado.`},
  {scr:'rd',sel:'#rd .panel .bubble',t:'Balões da história',d:'Leia em inglês e toque no balão para ver a tradução. O botão “PT sempre” mostra todas de uma vez.'},
  {scr:'rd',sel:'#rd .panel .bubble .say',t:'Ouvir',d:'O alto-falante lê a fala com voz natural. Ouça e repita em voz alta.'},
  {scr:'rd',sel:'#rd .panel .bubble .mic',t:'Falar',d:'Toque no microfone e leia a frase. O curso confere sua pronúncia, palavra por palavra.'},
@@ -2207,7 +2217,7 @@ function simPlay(){
 }
 function simTranscript(){
  const P=simById(SIM.id).partes[SIM.k], el=document.getElementById('simtx'); if(!el) return;
- const nm=w=>w==='narr'?'Apresentadora':w==='mina'?'Mina':w==='jin'?'Jin':esc(w);
+ const nm=w=>w==='narr'?'Apresentadora':esc(w.charAt(0).toUpperCase()+w.slice(1));
  el.innerHTML=P.lines.map(l=>`<div class="lline"><b>${nm(l[0])}:</b> <span lang="en">${esc(l[1])}</span></div>`).join(''); el.hidden=false;
  const b=document.querySelector('[data-simtx]'); if(b) b.hidden=true;
 }

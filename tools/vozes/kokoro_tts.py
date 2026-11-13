@@ -34,7 +34,13 @@ class Kokoro:
         self.inp={i.name:i.type for i in self.s.get_inputs()}
         self.tok='input_ids' if 'input_ids' in self.inp else 'tokens'
     def synth(self,text,voice,speed=1.0):
-        ph=phonemize(text); toks=[VOCAB[c] for c in ph if c in VOCAB][:500]
+        # vozes britânicas (bf_, bm_) leem com a fonética do inglês britânico
+        gb=voice[:1]=='b'
+        if gb: LIB.espeak_SetVoiceByName(b'en-gb-x-rp')
+        try: ph=phonemize(text)
+        finally:
+            if gb: LIB.espeak_SetVoiceByName(b'en-us')
+        toks=[VOCAB[c] for c in ph if c in VOCAB][:500]
         st=self.v[voice][min(len(toks),len(self.v[voice]))-1]
         sp=np.array([speed],dtype=np.int32 if 'int' in self.inp['speed'] else np.float32)
         a=self.s.run(None,{self.tok:np.array([[0,*toks,0]],dtype=np.int64),'style':np.asarray(st,dtype=np.float32),'speed':sp})[0]

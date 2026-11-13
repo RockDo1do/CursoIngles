@@ -1,7 +1,7 @@
 import json, os, sys, hashlib, numpy as np, time
 sys.path.insert(0,os.path.dirname(os.path.abspath(__file__)))
 from kokoro_tts import Kokoro
-VOICE={'mina':'af_heart','rafa':'am_michael','rafa_f':'af_kore','jin':'am_puck','monster':'am_fenrir','narr':'af_bella'}
+VOICE={'mina':'af_heart','rafa':'am_michael','rafa_f':'af_kore','jin':'am_puck','monster':'am_fenrir','narr':'af_bella','olivia':'bf_emma','harry':'bm_george'}
 SPEEDS={'n':1.0,'s':0.78}
 clips=json.load(open('clips.json')); os.makedirs('cache',exist_ok=True)
 k=Kokoro(); t0=time.time(); done=0

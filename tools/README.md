@@ -24,7 +24,9 @@ Não existe mais um arquivo-fonte separado: os arquivos publicados são os próp
 4. `gen_names.py` grava os nomes dos alunos (lista no início do arquivo) e as partes das frases em que o nome entra.
 5. `build.py` refaz todas as falas do zero a partir de `clips.json` (demora cerca de 1 hora).
 
-Vozes usadas: Mina `af_heart`, protagonista masculino `am_michael`, protagonista feminina `af_kore`, Jin `am_puck`, monstros `am_fenrir`, narrador `af_bella`.
+Vozes usadas: Mina `af_heart`, protagonista masculino `am_michael`, protagonista feminina `af_kore`, Jin `am_puck`, monstros `am_fenrir`, narrador `af_bella`. No Arco 10, com sotaque britânico: Olivia `bf_emma` e Harry `bm_george`. As vozes que começam com `bf_` ou `bm_` são lidas com a fonética do inglês britânico (eSpeak `en-gb-x-rp`); as outras, com a do americano.
+
+As falas do Arco 10 não usam o nome do aluno ("Rafa"), porque o curso só troca o nome dentro de uma fala gravada quando ela tem os cortes de áudio prontos. Para uma fala nova com o nome, grave também esses cortes.
 
 ## Refazer o Whisper
 

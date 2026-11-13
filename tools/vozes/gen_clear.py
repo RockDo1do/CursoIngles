@@ -1,7 +1,7 @@
 import json, os, re, sys, numpy as np, time
 sys.path.insert(0,os.path.dirname(os.path.abspath(__file__)))
 from kokoro_tts import Kokoro
-VOICE={'mina':'af_heart','rafa':'am_michael','rafa_f':'af_kore','jin':'am_puck','monster':'am_fenrir','narr':'af_bella'}
+VOICE={'mina':'af_heart','rafa':'am_michael','rafa_f':'af_kore','jin':'am_puck','monster':'am_fenrir','narr':'af_bella','olivia':'bf_emma','harry':'bm_george'}
 SR=24000; SPEED=0.86
 FUNC=set("and but or so because to with in on at for of from that which who when if than as about into after before under over near behind between during without until while".split())
 DET=set("the a an my your his her our their this that these those to".split())

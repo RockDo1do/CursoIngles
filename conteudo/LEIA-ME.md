@@ -48,7 +48,7 @@ Mudar o meio da lista faz o curso marcar como feitos os capítulos errados para 
 Tipos de quadro:
 
 - **Cena com falas:** `{"bg": "street", "m": {"mina": "happy"}, "c": "legenda opcional", "l": [["mina", "Hi!", "Oi!"]]}`
-  - Cada fala é `[personagem, inglês, português]`.
+  - Cada fala é `[personagem, inglês, português]`. Personagens: `rafa` (o aluno), `mina`, `jin`, `olivia` e `harry` (sotaque britânico, Arco 10) e `monster`. Quem fala precisa aparecer em `"m"`.
   - Use `null` no inglês para um pensamento só em português.
   - O protagonista se chama `rafa` nos arquivos, e o curso troca pelo nome do aluno. Escreva "Rafa" no texto onde o nome do aluno deve aparecer.
   - Para palavras que mudam com o gênero do aluno, use `{o|a}`: `cansad{o|a}`.

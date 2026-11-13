@@ -4,7 +4,7 @@ sys.path.insert(0,'.')
 import kokoro_tts as K
 from build_helpers import trim
 SR=24000; PAD=int(0.3*SR); GAP=np.zeros(int(0.28*SR),np.int16)
-VOICE={'mina':'af_heart','rafa':'am_michael','rafa_f':'af_kore','jin':'am_puck','narr':'af_bella','monster':'am_fenrir'}
+VOICE={'mina':'af_heart','rafa':'am_michael','rafa_f':'af_kore','jin':'am_puck','narr':'af_bella','monster':'am_fenrir','olivia':'bf_emma','harry':'bm_george'}
 d=json.load(open(sys.argv[1] if len(sys.argv)>1 else 'fix5.json'))
 k=K.Kokoro(); man=json.load(open('out/audio/index.json'))
 def i16(a): return np.clip(a*32767,-32768,32767).astype(np.int16)
