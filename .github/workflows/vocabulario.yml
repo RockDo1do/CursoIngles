@@ -59,6 +59,12 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A audio index.html sw.js
+          git add -A audio
           git commit -m "Vozes do vocabulário gravadas" || exit 0
-          git pull --rebase origin "${GITHUB_REF_NAME}" && git push origin "HEAD:${GITHUB_REF_NAME}"
+          # só o áudio entra no rebase; a marca de versão é refeita depois, sobre a versão mais nova da branch
+          git checkout -- index.html sw.js
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          python tools/site/build_site.py
+          git add -A index.html sw.js
+          git commit -m "Marca de versão" || true
+          git push origin "HEAD:${GITHUB_REF_NAME}"
