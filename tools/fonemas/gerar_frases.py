@@ -26,6 +26,9 @@ def textos():
     for th, ws in json.load(open(f'{C}/pratica/vocabulario.json')):
         for w in ws: t.add(w[0]); t.add(w[2])
     for p in json.load(open(f'{C}/pratica/sons.json'))['pares']: t.add(p[0]); t.add(p[1])
+    for gr in json.load(open(f'{C}/pratica/sons.json')).get('banco', []):
+        for x in gr['sons']:
+            t.update(e[0] for e in x['ex']); t.add(x['frase'][0])
     ks = set(key(x) for x in t if key(x))
     return ks | set(w for k in ks for w in k.split())
 

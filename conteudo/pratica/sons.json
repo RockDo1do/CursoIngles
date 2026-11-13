@@ -1,40 +1,180 @@
 {
  "pares": [
-  ["think", "sink", "th"],
-  ["three", "tree", "th"],
-  ["thank", "tank", "th"],
-  ["they", "day", "thv"],
-  ["ship", "sheep", "vow"],
-  ["live", "leave", "vow"],
-  ["sit", "seat", "vow"],
-  ["full", "fool", "vow"],
-  ["bed", "bad", "vow"],
-  ["cup", "cap", "vow"],
-  ["very", "berry", "v"],
-  ["vote", "boat", "v"],
-  ["west", "vest", "w"],
-  ["walk", "walked", "ed"],
-  ["play", "played", "ed"],
-  ["light", "right", "lr"],
-  ["glass", "grass", "lr"],
-  ["heat", "eat", "h"],
-  ["hear", "ear", "h"],
-  ["pen", "pens", "s"],
-  ["sing", "sin", "ing"],
-  ["cat", "cut", "vow"],
-  ["hat", "hut", "vow"],
-  ["pen", "pan", "vow"],
-  ["walk", "work", "vow"],
-  ["fan", "van", "v"],
-  ["fine", "vine", "v"],
-  ["best", "vest", "v"],
-  ["rice", "lice", "lr"],
-  ["thin", "tin", "th"],
-  ["thought", "taught", "th"],
-  ["those", "doze", "thv"],
-  ["then", "den", "thv"],
-  ["hill", "heel", "vow"],
-  ["pull", "pool", "vow"]
+  [
+   "think",
+   "sink",
+   "th"
+  ],
+  [
+   "three",
+   "tree",
+   "th"
+  ],
+  [
+   "thank",
+   "tank",
+   "th"
+  ],
+  [
+   "they",
+   "day",
+   "thv"
+  ],
+  [
+   "ship",
+   "sheep",
+   "vow"
+  ],
+  [
+   "live",
+   "leave",
+   "vow"
+  ],
+  [
+   "sit",
+   "seat",
+   "vow"
+  ],
+  [
+   "full",
+   "fool",
+   "vow"
+  ],
+  [
+   "bed",
+   "bad",
+   "vow"
+  ],
+  [
+   "cup",
+   "cap",
+   "vow"
+  ],
+  [
+   "very",
+   "berry",
+   "v"
+  ],
+  [
+   "vote",
+   "boat",
+   "v"
+  ],
+  [
+   "west",
+   "vest",
+   "w"
+  ],
+  [
+   "walk",
+   "walked",
+   "ed"
+  ],
+  [
+   "play",
+   "played",
+   "ed"
+  ],
+  [
+   "light",
+   "right",
+   "lr"
+  ],
+  [
+   "glass",
+   "grass",
+   "lr"
+  ],
+  [
+   "heat",
+   "eat",
+   "h"
+  ],
+  [
+   "hear",
+   "ear",
+   "h"
+  ],
+  [
+   "pen",
+   "pens",
+   "s"
+  ],
+  [
+   "sing",
+   "sin",
+   "ing"
+  ],
+  [
+   "cat",
+   "cut",
+   "vow"
+  ],
+  [
+   "hat",
+   "hut",
+   "vow"
+  ],
+  [
+   "pen",
+   "pan",
+   "vow"
+  ],
+  [
+   "walk",
+   "work",
+   "vow"
+  ],
+  [
+   "fan",
+   "van",
+   "v"
+  ],
+  [
+   "fine",
+   "vine",
+   "v"
+  ],
+  [
+   "best",
+   "vest",
+   "v"
+  ],
+  [
+   "rice",
+   "lice",
+   "lr"
+  ],
+  [
+   "thin",
+   "tin",
+   "th"
+  ],
+  [
+   "thought",
+   "taught",
+   "th"
+  ],
+  [
+   "those",
+   "doze",
+   "thv"
+  ],
+  [
+   "then",
+   "den",
+   "thv"
+  ],
+  [
+   "hill",
+   "heel",
+   "vow"
+  ],
+  [
+   "pull",
+   "pool",
+   "vow"
+  ]
  ],
  "traducao": {
   "think": "pensar",
@@ -104,5 +244,902 @@
   "heel": "calcanhar",
   "pull": "puxar",
   "pool": "piscina"
- }
+ },
+ "banco": [
+  {
+   "grupo": "Vogais",
+   "sons": [
+    {
+     "ipa": "iː",
+     "nome": "I longo",
+     "como": "Sorria, com a língua alta e na frente, e estique o som: é o I de “vi”, só que mais comprido.",
+     "erro": "Ficar curto e virar o I curto: “sheep” (ovelha) soa como “ship” (navio).",
+     "ex": [
+      [
+       "see",
+       "ver"
+      ],
+      [
+       "sheep",
+       "ovelha"
+      ],
+      [
+       "leave",
+       "sair"
+      ]
+     ],
+     "frase": [
+      "Please eat the green peas.",
+      "Por favor, coma as ervilhas verdes."
+     ],
+     "par": "vow"
+    },
+    {
+     "ipa": "ɪ",
+     "nome": "I curto",
+     "como": "Mais curto e relaxado que o I do português, puxando um pouco para o Ê. A boca quase não sorri.",
+     "erro": "Esticar demais e virar o I longo: “live” (viver) soa como “leave” (sair).",
+     "ex": [
+      [
+       "sit",
+       "sentar"
+      ],
+      [
+       "live",
+       "viver"
+      ],
+      [
+       "ship",
+       "navio"
+      ]
+     ],
+     "frase": [
+      "This fish is big.",
+      "Este peixe é grande."
+     ],
+     "par": "vow"
+    },
+    {
+     "ipa": "ɛ",
+     "nome": "É curto",
+     "como": "Como o É de “café”, só que rápido.",
+     "erro": "Abrir demais a boca e virar o A aberto: “bed” (cama) soa como “bad” (ruim).",
+     "ex": [
+      [
+       "bed",
+       "cama"
+      ],
+      [
+       "red",
+       "vermelho"
+      ],
+      [
+       "said",
+       "disse"
+      ]
+     ],
+     "frase": [
+      "Ten men went to bed.",
+      "Dez homens foram para a cama."
+     ],
+     "par": "vow"
+    },
+    {
+     "ipa": "æ",
+     "nome": "A aberto",
+     "como": "Abra bem a boca, como para dizer A, mas diga É. Esse som não existe em português.",
+     "erro": "Falar É e trocar a palavra: “bad” (ruim) vira “bed” (cama).",
+     "ex": [
+      [
+       "cat",
+       "gato"
+      ],
+      [
+       "bad",
+       "ruim"
+      ],
+      [
+       "man",
+       "homem"
+      ]
+     ],
+     "frase": [
+      "The black cat sat on my hat.",
+      "O gato preto sentou no meu chapéu."
+     ],
+     "par": "vow"
+    },
+    {
+     "ipa": "ɑ",
+     "nome": "A fundo",
+     "como": "Um A de boca bem aberta, lá do fundo da garganta, um pouco mais longo que o nosso.",
+     "erro": "Ler a letra O como Ó: “hot” (quente) soa “rót”.",
+     "ex": [
+      [
+       "hot",
+       "quente"
+      ],
+      [
+       "father",
+       "pai"
+      ],
+      [
+       "stop",
+       "parar"
+      ]
+     ],
+     "frase": [
+      "Stop the car, it's hot.",
+      "Pare o carro, está quente."
+     ],
+     "par": null
+    },
+    {
+     "ipa": "ʌ",
+     "nome": "A curto",
+     "como": "Um A rápido e relaxado, com a boca meio aberta, quase o A de “cama”.",
+     "erro": "Ler pela letra: “cup” (xícara) soa “cúp” e “love” (amar) soa “lóv”.",
+     "ex": [
+      [
+       "cup",
+       "xícara"
+      ],
+      [
+       "love",
+       "amar"
+      ],
+      [
+       "much",
+       "muito"
+      ]
+     ],
+     "frase": [
+      "My brother loves the sun.",
+      "Meu irmão adora o sol."
+     ],
+     "par": "vow"
+    },
+    {
+     "ipa": "ɔ",
+     "nome": "Ó longo",
+     "como": "Um Ó aberto e comprido, com os lábios um pouco arredondados.",
+     "erro": "Pronunciar o L de “walk” e “talk”: nessas palavras, ele é mudo.",
+     "ex": [
+      [
+       "law",
+       "lei"
+      ],
+      [
+       "walk",
+       "andar"
+      ],
+      [
+       "saw",
+       "viu"
+      ]
+     ],
+     "frase": [
+      "We walked along the wall.",
+      "Andamos ao longo do muro."
+     ],
+     "par": null
+    },
+    {
+     "ipa": "ʊ",
+     "nome": "U curto",
+     "como": "Mais curto e relaxado que o U do português, com os lábios menos em bico.",
+     "erro": "Esticar e virar o U longo: “full” (cheio) soa como “fool” (tolo).",
+     "ex": [
+      [
+       "book",
+       "livro"
+      ],
+      [
+       "good",
+       "bom"
+      ],
+      [
+       "full",
+       "cheio"
+      ]
+     ],
+     "frase": [
+      "Look at this good book.",
+      "Olhe este livro bom."
+     ],
+     "par": "vow"
+    },
+    {
+     "ipa": "uː",
+     "nome": "U longo",
+     "como": "Um U comprido, com os lábios bem em bico.",
+     "erro": "Ficar curto e virar o U curto: “fool” (tolo) soa como “full” (cheio).",
+     "ex": [
+      [
+       "food",
+       "comida"
+      ],
+      [
+       "blue",
+       "azul"
+      ],
+      [
+       "school",
+       "escola"
+      ]
+     ],
+     "frase": [
+      "Who ate the blue food?",
+      "Quem comeu a comida azul?"
+     ],
+     "par": "vow"
+    },
+    {
+     "ipa": "ɝ",
+     "nome": "ER com R",
+     "como": "Uma vogal já com R: enrole a língua para trás, sem encostar em nada, como o R caipira.",
+     "erro": "Falar “bêrd” com um R batido, ou separar o É do R.",
+     "ex": [
+      [
+       "bird",
+       "pássaro"
+      ],
+      [
+       "work",
+       "trabalho"
+      ],
+      [
+       "learn",
+       "aprender"
+      ]
+     ],
+     "frase": [
+      "Her birthday is on Thursday.",
+      "O aniversário dela é na quinta-feira."
+     ],
+     "par": null
+    },
+    {
+     "ipa": "ə",
+     "nome": "Schwa",
+     "como": "O som mais comum do inglês: um “ã” fraquinho e rápido nas sílabas sem acento.",
+     "erro": "Falar todas as vogais com a mesma força: “banana” com os três A iguais.",
+     "ex": [
+      [
+       "about",
+       "sobre"
+      ],
+      [
+       "banana",
+       "banana"
+      ],
+      [
+       "doctor",
+       "médico"
+      ]
+     ],
+     "frase": [
+      "Can I have a cup of tea?",
+      "Posso tomar uma xícara de chá?"
+     ],
+     "par": null
+    }
+   ]
+  },
+  {
+   "grupo": "Ditongos",
+   "sons": [
+    {
+     "ipa": "eɪ",
+     "nome": "EI",
+     "como": "Comece num É e deslize para um I curto: “ei”.",
+     "erro": "Falar só É: “late” (atrasado) soa “lét”.",
+     "ex": [
+      [
+       "day",
+       "dia"
+      ],
+      [
+       "name",
+       "nome"
+      ],
+      [
+       "wait",
+       "esperar"
+      ]
+     ],
+     "frase": [
+      "Wait, the train is late.",
+      "Espere, o trem está atrasado."
+     ],
+     "par": null
+    },
+    {
+     "ipa": "aɪ",
+     "nome": "AI",
+     "como": "Comece num A aberto e deslize para o I: “ai”.",
+     "erro": "Ler a letra I como I: “time” (tempo) soa “tíme”.",
+     "ex": [
+      [
+       "my",
+       "meu"
+      ],
+      [
+       "time",
+       "tempo"
+      ],
+      [
+       "nice",
+       "legal"
+      ]
+     ],
+     "frase": [
+      "I like my bike.",
+      "Eu gosto da minha bicicleta."
+     ],
+     "par": null
+    },
+    {
+     "ipa": "ɔɪ",
+     "nome": "ÓI",
+     "como": "Comece num Ó e deslize para o I: “ói”, como em “herói”.",
+     "erro": "Quase não acontece. É um som fácil para quem fala português.",
+     "ex": [
+      [
+       "boy",
+       "menino"
+      ],
+      [
+       "enjoy",
+       "curtir"
+      ],
+      [
+       "noise",
+       "barulho"
+      ]
+     ],
+     "frase": [
+      "The boy enjoyed the toy.",
+      "O menino curtiu o brinquedo."
+     ],
+     "par": null
+    },
+    {
+     "ipa": "aʊ",
+     "nome": "AU",
+     "como": "Comece num A aberto e feche os lábios para um U: “au”, como em “mau”.",
+     "erro": "Ler as letras: “house” (casa) soa “rôuse” ou “ouse”.",
+     "ex": [
+      [
+       "now",
+       "agora"
+      ],
+      [
+       "house",
+       "casa"
+      ],
+      [
+       "town",
+       "cidade"
+      ]
+     ],
+     "frase": [
+      "Our house is in town.",
+      "Nossa casa fica na cidade."
+     ],
+     "par": null
+    },
+    {
+     "ipa": "oʊ",
+     "nome": "OU",
+     "como": "Comece num Ô e feche para um U: “ou”, como em “show”.",
+     "erro": "Falar só Ô ou Ó: “go” (ir) soa “gô” e “home” (casa) soa “róme”.",
+     "ex": [
+      [
+       "go",
+       "ir"
+      ],
+      [
+       "home",
+       "casa"
+      ],
+      [
+       "phone",
+       "telefone"
+      ]
+     ],
+     "frase": [
+      "Don't go home alone.",
+      "Não vá para casa sozinho."
+     ],
+     "par": null
+    }
+   ]
+  },
+  {
+   "grupo": "Consoantes",
+   "sons": [
+    {
+     "ipa": "θ",
+     "nome": "TH surdo",
+     "como": "Ponha a ponta da língua entre os dentes e sopre, sem usar a voz.",
+     "erro": "Trocar por S, T ou F: “think” (pensar) soa como “sink” (pia).",
+     "ex": [
+      [
+       "think",
+       "pensar"
+      ],
+      [
+       "three",
+       "três"
+      ],
+      [
+       "mouth",
+       "boca"
+      ]
+     ],
+     "frase": [
+      "I think three is enough.",
+      "Acho que três é suficiente."
+     ],
+     "par": "th"
+    },
+    {
+     "ipa": "ð",
+     "nome": "TH sonoro",
+     "como": "A mesma posição do TH surdo, mas com voz: a garganta vibra.",
+     "erro": "Trocar por D: “they” (eles) soa como “day” (dia).",
+     "ex": [
+      [
+       "this",
+       "isto"
+      ],
+      [
+       "mother",
+       "mãe"
+      ],
+      [
+       "they",
+       "eles"
+      ]
+     ],
+     "frase": [
+      "This is my mother's brother.",
+      "Este é o irmão da minha mãe."
+     ],
+     "par": "thv"
+    },
+    {
+     "ipa": "h",
+     "nome": "H aspirado",
+     "como": "Um sopro leve, como quando você embaça um vidro. É mais suave que o R de “rato”.",
+     "erro": "Calar o H: “hear” (ouvir) soa como “ear” (orelha). Ou falar forte demais, raspando a garganta.",
+     "ex": [
+      [
+       "house",
+       "casa"
+      ],
+      [
+       "hello",
+       "olá"
+      ],
+      [
+       "happy",
+       "feliz"
+      ]
+     ],
+     "frase": [
+      "Hello, how are you, Harry?",
+      "Olá, como vai, Harry?"
+     ],
+     "par": "h"
+    },
+    {
+     "ipa": "ɹ",
+     "nome": "R inglês",
+     "como": "Enrole a língua para trás, sem tocar no céu da boca, com os lábios um pouco em bico. Lembra o R caipira.",
+     "erro": "Usar o R de “rato”, que para o ouvido inglês soa como H: “red” vira “héd”.",
+     "ex": [
+      [
+       "red",
+       "vermelho"
+      ],
+      [
+       "right",
+       "certo"
+      ],
+      [
+       "very",
+       "muito"
+      ]
+     ],
+     "frase": [
+      "The red car is really fast.",
+      "O carro vermelho é muito rápido."
+     ],
+     "par": "lr"
+    },
+    {
+     "ipa": "l",
+     "nome": "L no fim",
+     "como": "No fim da palavra, o L é um L de verdade: a ponta da língua encosta atrás dos dentes de cima.",
+     "erro": "Transformar o L em U: “feel” (sentir) soa “fiu” e “milk” (leite) soa “miuk”.",
+     "ex": [
+      [
+       "feel",
+       "sentir"
+      ],
+      [
+       "milk",
+       "leite"
+      ],
+      [
+       "call",
+       "ligar"
+      ]
+     ],
+     "frase": [
+      "Tell Paul the milk is cold.",
+      "Diga ao Paul que o leite está frio."
+     ],
+     "par": "lr"
+    },
+    {
+     "ipa": "v",
+     "nome": "V",
+     "como": "Os dentes de cima encostam no lábio de baixo, com voz.",
+     "erro": "Trocar por B, que muda a palavra: “very” (muito) soa como “berry” (fruta vermelha).",
+     "ex": [
+      [
+       "very",
+       "muito"
+      ],
+      [
+       "voice",
+       "voz"
+      ],
+      [
+       "love",
+       "amar"
+      ]
+     ],
+     "frase": [
+      "I have a very good voice.",
+      "Tenho uma voz muito boa."
+     ],
+     "par": "v"
+    },
+    {
+     "ipa": "w",
+     "nome": "W",
+     "como": "Faça um bico, como para um U rápido, e abra logo para a vogal.",
+     "erro": "Trocar por V: “west” (oeste) soa como “vest” (colete).",
+     "ex": [
+      [
+       "we",
+       "nós"
+      ],
+      [
+       "water",
+       "água"
+      ],
+      [
+       "window",
+       "janela"
+      ]
+     ],
+     "frase": [
+      "We want warm water.",
+      "Queremos água morna."
+     ],
+     "par": "w"
+    },
+    {
+     "ipa": "ŋ",
+     "nome": "NG",
+     "como": "O fundo da língua encosta no céu da boca, lá atrás, e o som sai pelo nariz, como em “manga” sem o G.",
+     "erro": "Trocar por N ou pôr um G no fim: “sing” (cantar) soa “sin” ou “singui”.",
+     "ex": [
+      [
+       "sing",
+       "cantar"
+      ],
+      [
+       "thing",
+       "coisa"
+      ],
+      [
+       "morning",
+       "manhã"
+      ]
+     ],
+     "frase": [
+      "I'm singing in the morning.",
+      "Estou cantando de manhã."
+     ],
+     "par": "ing"
+    },
+    {
+     "ipa": "ʃ",
+     "nome": "SH",
+     "como": "Como o X de “xícara”.",
+     "erro": "É fácil para nós. O cuidado é não trocar pelo CH de “tchau”: “ship” (navio) e “chip” (chip) são palavras diferentes.",
+     "ex": [
+      [
+       "she",
+       "ela"
+      ],
+      [
+       "shop",
+       "loja"
+      ],
+      [
+       "wash",
+       "lavar"
+      ]
+     ],
+     "frase": [
+      "She washed the dishes.",
+      "Ela lavou a louça."
+     ],
+     "par": null
+    },
+    {
+     "ipa": "tʃ",
+     "nome": "CH",
+     "como": "Como o TCH de “tchau”.",
+     "erro": "Trocar por X: “chair” (cadeira) soa “xér”.",
+     "ex": [
+      [
+       "chair",
+       "cadeira"
+      ],
+      [
+       "watch",
+       "assistir"
+      ],
+      [
+       "teacher",
+       "professor"
+      ]
+     ],
+     "frase": [
+      "The teacher has a new chair.",
+      "A professora tem uma cadeira nova."
+     ],
+     "par": null
+    },
+    {
+     "ipa": "dʒ",
+     "nome": "J com D",
+     "como": "Como o DJ de “Djavan”: um D colado no J.",
+     "erro": "Falar o J de “janela”, sem o D: “job” (emprego) soa “jób”.",
+     "ex": [
+      [
+       "job",
+       "emprego"
+      ],
+      [
+       "juice",
+       "suco"
+      ],
+      [
+       "age",
+       "idade"
+      ]
+     ],
+     "frase": [
+      "John got a job in June.",
+      "John arranjou um emprego em junho."
+     ],
+     "par": null
+    },
+    {
+     "ipa": "ʒ",
+     "nome": "J suave",
+     "como": "Como o J de “janela”. Aparece em poucas palavras, quase sempre escritas com S ou G.",
+     "erro": "Trocar por Z: “usually” (geralmente) soa “iuzuali”.",
+     "ex": [
+      [
+       "usually",
+       "geralmente"
+      ],
+      [
+       "television",
+       "televisão"
+      ],
+      [
+       "measure",
+       "medida"
+      ]
+     ],
+     "frase": [
+      "I usually watch television.",
+      "Eu geralmente assisto televisão."
+     ],
+     "par": null
+    },
+    {
+     "ipa": "z",
+     "nome": "Z",
+     "como": "Um S com voz, como o Z de “zebra”. Muitas palavras escritas com S soam Z.",
+     "erro": "Falar S no fim em vez de Z: “is” (é) soa “iss” e “dogs” (cachorros) soa com S no final.",
+     "ex": [
+      [
+       "zoo",
+       "zoológico"
+      ],
+      [
+       "is",
+       "é"
+      ],
+      [
+       "dogs",
+       "cachorros"
+      ]
+     ],
+     "frase": [
+      "His dogs are lazy.",
+      "Os cachorros dele são preguiçosos."
+     ],
+     "par": "s"
+    },
+    {
+     "ipa": "t",
+     "nome": "T",
+     "como": "Sempre T, nunca TCH, mesmo antes de I. No inglês americano, entre vogais, o T vira um R rápido, como em “water”.",
+     "erro": "Falar TCH antes do I: “tea” (chá) soa “tchi”.",
+     "ex": [
+      [
+       "tea",
+       "chá"
+      ],
+      [
+       "ticket",
+       "bilhete"
+      ],
+      [
+       "water",
+       "água"
+      ]
+     ],
+     "frase": [
+      "Take a ticket to the city.",
+      "Pegue um bilhete para a cidade."
+     ],
+     "par": null
+    },
+    {
+     "ipa": "d",
+     "nome": "D",
+     "como": "Sempre D, nunca DJ, mesmo antes de I.",
+     "erro": "Falar DJ antes do I: “did” (fez) soa “djid”.",
+     "ex": [
+      [
+       "did",
+       "fez"
+      ],
+      [
+       "day",
+       "dia"
+      ],
+      [
+       "idea",
+       "ideia"
+      ]
+     ],
+     "frase": [
+      "Did you do it today?",
+      "Você fez isso hoje?"
+     ],
+     "par": null
+    },
+    {
+     "ipa": "pʰ tʰ kʰ",
+     "nome": "P, T, K com sopro",
+     "como": "No começo da sílaba forte, P, T e K saem com um sopro de ar. Ponha a mão na frente da boca e sinta o ar.",
+     "erro": "Falar sem sopro: para o ouvido inglês, “pen” (caneta) pode soar como “ben”.",
+     "ex": [
+      [
+       "pen",
+       "caneta"
+      ],
+      [
+       "time",
+       "tempo"
+      ],
+      [
+       "cat",
+       "gato"
+      ]
+     ],
+     "frase": [
+      "Put the cat in the car.",
+      "Ponha o gato no carro."
+     ],
+     "par": null
+    }
+   ]
+  },
+  {
+   "grupo": "Padrões que pegam brasileiros",
+   "sons": [
+    {
+     "ipa": "-ed",
+     "nome": "Final -ED",
+     "como": "O -ED do passado tem três sons: T depois de som surdo (worked), D depois de som sonoro (played) e ID só depois de T ou D (wanted).",
+     "erro": "Falar sempre “id”: “worked” soa “uórquid” e “played” soa “plêid”.",
+     "ex": [
+      [
+       "worked",
+       "trabalhou"
+      ],
+      [
+       "played",
+       "jogou"
+      ],
+      [
+       "wanted",
+       "quis"
+      ]
+     ],
+     "frase": [
+      "I worked, played and waited.",
+      "Trabalhei, brinquei e esperei."
+     ],
+     "par": "ed"
+    },
+    {
+     "ipa": "s + consoante",
+     "nome": "S sem I antes",
+     "como": "Palavras com S + consoante começam direto no S: “school”, sem nenhum I antes.",
+     "erro": "Pôr um I antes: “school” (escola) soa “iscúl” e “speak” (falar) soa “ispíc”.",
+     "ex": [
+      [
+       "school",
+       "escola"
+      ],
+      [
+       "speak",
+       "falar"
+      ],
+      [
+       "study",
+       "estudar"
+      ]
+     ],
+     "frase": [
+      "I study at a small school.",
+      "Estudo numa escola pequena."
+     ],
+     "par": null
+    },
+    {
+     "ipa": "consoante final",
+     "nome": "Final sem vogal",
+     "como": "Termine a palavra na consoante: feche a boca e pronto, sem nenhum I depois.",
+     "erro": "Pôr um I no fim: “big” (grande) soa “bigui” e “book” (livro) soa “búqui”.",
+     "ex": [
+      [
+       "big",
+       "grande"
+      ],
+      [
+       "book",
+       "livro"
+      ],
+      [
+       "stop",
+       "parar"
+      ]
+     ],
+     "frase": [
+      "Stop the big bus.",
+      "Pare o ônibus grande."
+     ],
+     "par": null
+    }
+   ]
+  }
+ ]
 }

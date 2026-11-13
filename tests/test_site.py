@@ -16,7 +16,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 VIEWS = ['home()', 'wizard(0)', 'wizard(1)', 'wizard(2)', 'wizard(3)', 'wizard(4)', 'placement()',
          'weekView()', 'collectionView()', 'reviewView()', 'acctView()', 'earView()', 'pronView()',
          'home();openSettings()', 'trainView(12)', 'lsnList()', 'lsnView("l1")', 'readList()', 'readView("r1")',
-         'vocList()', 'vocStart(0)', 'wrtList()', 'wrtView("w1")', 'certView(0)', 'tourStart(false)', 'tourGo(8,1)', 'tourEnd()', 'prodList("escrever")', 'prodView("e5")', 'prodList("mediar")', 'prodView("m1")', 'reviewView(2)']
+         'vocList()', 'vocStart(0)', 'wrtList()', 'wrtView("w1")', 'certView(0)', 'tourStart(false)', 'tourGo(8,1)', 'tourEnd()', 'prodList("escrever")', 'prodView("e5")', 'prodList("mediar")', 'prodView("m1")', 'reviewView(2)', 'sbList()', 'sbView("2.0")', 'earView("th","2.0")', 'simList()', 'simView("s-b1")', 'simStart("s-a2")', 'simStart("s-b2");simNext();simNext();simNext()']
 
 CHECK_DATA = r'''(()=>{
  const P=[], src=HERO_SRC||{ch:CH,bonus:BONUS};
@@ -42,6 +42,8 @@ CHECK_DATA = r'''(()=>{
  WRITE.forEach(W=>{if(!wrtParse(W.text).some(p=>p.a)) P.push(`escrita ${W.id}: sem lacunas`);});
  EAR_PAIRS.forEach(p=>[p[0],p[1]].forEach(w=>{if(REC.man&&!REC.man.w[w]) P.push(`treino de sons: sem áudio: ${w}`);}));
  ['falar','escrever','mediar'].forEach(t=>(PRODUCAO[t]||[]).forEach(x=>{if(!has('narr',x.modelo.replace(/\n/g,' '))) P.push(`produção (${x.capitulo||x.id}): resposta-modelo sem áudio`);}));
+ SIMULADOS.forEach(X=>X.partes.forEach(p=>{(p.lines||[]).forEach(l=>{if(!has(l[0],l[1])) P.push(`simulado ${X.id}: fala sem áudio: ${l[1].slice(0,40)}`);});if(p.tarefa&&!has('narr',p.tarefa.modelo.replace(/\n/g,' '))) P.push(`simulado ${X.id}: resposta-modelo sem áudio`);}));
+ SOM_BANCO.forEach(g=>g.sons.forEach(x=>{x.ex.forEach(e=>{if(!has('narr',e[0])) P.push(`banco de sons: sem áudio: ${e[0]}`);});if(!has('narr',x.frase[0])) P.push(`banco de sons: sem áudio: ${x.frase[0]}`);}));
  if(REC.man&&REC.man.nm) Object.entries(REC.man.nm.names).forEach(([who,ns])=>Object.entries(ns).forEach(([k,e])=>{const f=REC.man.files['nm_'+who+(e[4]?'_'+e[4]:'')];if(!f||!f.n||!f.s) P.push(`nome sem arquivo de áudio: ${who} ${k}`);}));
  return P;})()'''
 
@@ -52,6 +54,7 @@ CHECK_FONEMAS = r'''(async()=>{
  [...src.ch,...src.bonus].forEach(c=>{c.p.forEach(p=>(p.l||[]).forEach(l=>{if(l[1]) T.add(l[1]);}));(c.xs||[]).forEach(x=>T.add(x[0]));});
  LISTEN.forEach(L=>L.lines.forEach(l=>T.add(l[1]))); VOCAB.forEach(([th,ws])=>ws.forEach(w=>{T.add(w[0]);T.add(w[2]);}));
  EAR_PAIRS.forEach(p=>{T.add(p[0]);T.add(p[1]);});
+ SOM_BANCO.forEach(g=>g.sons.forEach(x=>{x.ex.forEach(e=>T.add(e[0]));T.add(x.frase[0]);}));
  const keys=new Set([...T].map(t=>t.toLowerCase().replace(/[’‘]/g,"'").replace(/[^a-z0-9' ]+/g,' ').trim().split(/\s+/).filter(Boolean).join(' ')).filter(Boolean));
  [...keys].forEach(k=>k.split(' ').forEach(w=>keys.add(w)));
  keys.forEach(k=>{if(!D.frases[k]) P.push('sem fonemas (rode tools/fonemas/gerar_frases.py): '+k);});

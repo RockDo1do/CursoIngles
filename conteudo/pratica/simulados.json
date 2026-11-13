@@ -1,0 +1,885 @@
+[
+ {
+  "id": "s-a2",
+  "nivel": "A2",
+  "titulo": "Simulado A2",
+  "tempo": 25,
+  "desc": "Leitura, escuta, gramática, escrita e fala no nível A2, num formato curto inspirado no A2 Key.",
+  "partes": [
+   {
+    "tipo": "leitura",
+    "titulo": "Leitura",
+    "instr": "Leia o e-mail e responda as perguntas.",
+    "texto": {
+     "t": "Email from Sara",
+     "p": [
+      "Hi Leo,",
+      "Thanks for your email! I'm sorry I didn't answer yesterday. I was at my grandmother's house and there was no internet there.",
+      "Yes, I'd love to come to the beach with you on Saturday. But I can't leave before ten o'clock, because I have a swimming lesson at eight. Can we take the 10:30 bus?",
+      "I can bring sandwiches and fruit. Could you bring something to drink? Oh, and don't forget your sun cream. Last time you got really red!",
+      "My brother wants to come too. Is that OK? He's twelve and he's very quiet.",
+      "See you soon,\nSara"
+     ]
+    },
+    "q": [
+     {
+      "q": "Why didn't Sara answer yesterday?",
+      "o": [
+       "She had no internet.",
+       "She was at the beach.",
+       "She was ill."
+      ],
+      "a": 0
+     },
+     {
+      "q": "What does Sara do on Saturday morning?",
+      "o": [
+       "She has a swimming lesson.",
+       "She visits her grandmother.",
+       "She goes to work."
+      ],
+      "a": 0
+     },
+     {
+      "q": "What time does Sara want to take the bus?",
+      "o": [
+       "At 10:30.",
+       "At 8:00.",
+       "At 10:00."
+      ],
+      "a": 0
+     },
+     {
+      "q": "What should Leo bring?",
+      "o": [
+       "Something to drink.",
+       "Sandwiches.",
+       "Fruit."
+      ],
+      "a": 0
+     },
+     {
+      "q": "What do we know about Sara's brother?",
+      "o": [
+       "He is twelve and quiet.",
+       "He is Leo's friend.",
+       "He can't swim."
+      ],
+      "a": 0
+     }
+    ]
+   },
+   {
+    "tipo": "escuta",
+    "titulo": "Escuta",
+    "instr": "Ouça a ligação entre a Mina e o Jin. Como na prova, você pode ouvir duas vezes.",
+    "lines": [
+     [
+      "jin",
+      "Hello?"
+     ],
+     [
+      "mina",
+      "Hi Jin, it's Mina. Are you free on Friday evening?"
+     ],
+     [
+      "jin",
+      "Friday? I work until six. Why?"
+     ],
+     [
+      "mina",
+      "It's Paula's birthday. We're having a party at my flat."
+     ],
+     [
+      "jin",
+      "Great! What time does it start?"
+     ],
+     [
+      "mina",
+      "At half past seven. Can you buy the cake? The bakery near the station is very good."
+     ],
+     [
+      "jin",
+      "Sure. Chocolate or strawberry?"
+     ],
+     [
+      "mina",
+      "Chocolate. Paula doesn't like strawberries."
+     ],
+     [
+      "jin",
+      "OK. How many people are coming?"
+     ],
+     [
+      "mina",
+      "About fifteen. And bring a jacket. We're going to sit on the balcony."
+     ],
+     [
+      "jin",
+      "No problem. See you on Friday!"
+     ]
+    ],
+    "q": [
+     {
+      "q": "When is the party?",
+      "o": [
+       "On Friday evening.",
+       "On Friday afternoon.",
+       "On Saturday evening."
+      ],
+      "a": 0
+     },
+     {
+      "q": "What time does the party start?",
+      "o": [
+       "At 7:30.",
+       "At 6:00.",
+       "At 7:00."
+      ],
+      "a": 0
+     },
+     {
+      "q": "What does Jin have to buy?",
+      "o": [
+       "A chocolate cake.",
+       "A strawberry cake.",
+       "Drinks."
+      ],
+      "a": 0
+     },
+     {
+      "q": "How many people are coming?",
+      "o": [
+       "About fifteen.",
+       "About fifty.",
+       "Five."
+      ],
+      "a": 0
+     },
+     {
+      "q": "Why should Jin bring a jacket?",
+      "o": [
+       "They're going to sit on the balcony.",
+       "It's going to rain.",
+       "The flat is cold."
+      ],
+      "a": 0
+     }
+    ]
+   },
+   {
+    "tipo": "lingua",
+    "titulo": "Gramática e vocabulário",
+    "instr": "Escolha a palavra que completa cada frase.",
+    "q": [
+     {
+      "q": "My sister ___ in a bank.",
+      "o": [
+       "works",
+       "work",
+       "working"
+      ],
+      "a": 0
+     },
+     {
+      "q": "I ___ to the cinema last Sunday.",
+      "o": [
+       "went",
+       "go",
+       "goes"
+      ],
+      "a": 0
+     },
+     {
+      "q": "There aren't ___ apples in the fridge.",
+      "o": [
+       "any",
+       "some",
+       "a"
+      ],
+      "a": 0
+     },
+     {
+      "q": "She is ___ than her brother.",
+      "o": [
+       "taller",
+       "more tall",
+       "tallest"
+      ],
+      "a": 0
+     },
+     {
+      "q": "We're going ___ the museum tomorrow.",
+      "o": [
+       "to visit",
+       "visit",
+       "visited"
+      ],
+      "a": 0
+     },
+     {
+      "q": "How ___ does this T-shirt cost?",
+      "o": [
+       "much",
+       "many",
+       "long"
+      ],
+      "a": 0
+     }
+    ]
+   },
+   {
+    "tipo": "escrita",
+    "titulo": "Escrita",
+    "tarefa": {
+     "id": "s-a2-e",
+     "tipo": "escrever",
+     "titulo": "Mensagem para a Kim",
+     "pedido": "Você não vai poder ir à aula de inglês amanhã. Escreva uma mensagem para a sua colega Kim: diga que não vai, explique por quê e peça para ela mandar a lição de casa.",
+     "min": 25,
+     "precisa": [
+      [
+       "\\b(can'?t|cannot|won'?t|will not|not going to|not be able to)\\b",
+       "que você não vai (I can't come...)"
+      ],
+      [
+       "\\b(because|as|since)\\b|\\bi have to\\b",
+       "o motivo (because...)"
+      ],
+      [
+       "\\b(can|could|would) you\\b|\\bplease\\b",
+       "um pedido (Could you...?)"
+      ],
+      [
+       "\\bhomework\\b",
+       "a lição de casa (homework)"
+      ]
+     ],
+     "modelo": "Hi Kim,\nI can't come to the English class tomorrow because I have to take my grandmother to the doctor. Could you send me the homework, please? I want to do it at the weekend.\nThanks a lot!\nAna"
+    }
+   },
+   {
+    "tipo": "fala",
+    "titulo": "Fala",
+    "tarefa": {
+     "id": "s-a2-f",
+     "tipo": "falar",
+     "titulo": "Sua casa",
+     "pergunta": "Tell me about your home.",
+     "pedido": "Descreva onde você mora: o tipo de casa, os cômodos e do que você mais gosta.",
+     "min": 15,
+     "precisa": [
+      [
+       "\\b(live|living)\\b",
+       "onde você mora (I live in...)"
+      ],
+      [
+       "\\bthere (is|are|'s)\\b|\\bthere's\\b|\\b(has|have)\\b",
+       "o que tem (there is / there are)"
+      ],
+      [
+       "\\b(like|love|favou?rite)\\b",
+       "do que você gosta (my favourite...)"
+      ]
+     ],
+     "modelo": "I live in a small flat in the city centre. There are two bedrooms, a kitchen and a living room. My favourite room is the kitchen because it is sunny."
+    }
+   }
+  ]
+ },
+ {
+  "id": "s-b1",
+  "nivel": "B1",
+  "titulo": "Simulado B1",
+  "tempo": 35,
+  "desc": "Leitura, escuta, gramática, escrita e fala no nível B1, num formato curto inspirado no B1 Preliminary.",
+  "partes": [
+   {
+    "tipo": "leitura",
+    "titulo": "Leitura",
+    "instr": "Leia a reportagem e responda as perguntas.",
+    "texto": {
+     "t": "The Café That Never Throws Food Away",
+     "p": [
+      "When Marta Silva opened her café in Porto five years ago, she noticed something that worried her. Every evening, her staff threw away bags of bread, cakes and salads that nobody had bought.",
+      "\"It felt wrong,\" she says. \"People in our own neighbourhood were going hungry, and we were filling bins.\" So Marta decided to change the way her café worked. Now, any food that hasn't been sold by six o'clock is offered at half price. Anything left after closing time is collected by a local charity, which shares it with families who need it.",
+      "At first, some customers were suspicious. \"They thought half-price food meant old food,\" Marta explains. \"But it's exactly the same food that was on the shelf that morning.\" Today, many people come in especially at six, and the café has become busier than ever.",
+      "The idea has spread. Three other cafés in the same street have started similar schemes, and the city council is planning to support businesses that reduce waste. Marta, however, says the most important change is personal: \"I sleep better now. Nothing we make is wasted.\""
+     ]
+    },
+    "q": [
+     {
+      "q": "What worried Marta when she opened the café?",
+      "o": [
+       "The amount of food that was thrown away.",
+       "The small number of customers.",
+       "The price of bread."
+      ],
+      "a": 0
+     },
+     {
+      "q": "What happens to food that hasn't been sold by six?",
+      "o": [
+       "It is sold for less.",
+       "It is given to the staff.",
+       "It is thrown away."
+      ],
+      "a": 0
+     },
+     {
+      "q": "Who receives the food left after closing time?",
+      "o": [
+       "Families helped by a charity.",
+       "The café's staff.",
+       "Other cafés in the street."
+      ],
+      "a": 0
+     },
+     {
+      "q": "Why were some customers suspicious at first?",
+      "o": [
+       "They thought the cheaper food was old.",
+       "They didn't trust the charity.",
+       "They thought the prices were too high."
+      ],
+      "a": 0
+     },
+     {
+      "q": "What does Marta say is the most important change?",
+      "o": [
+       "She feels better about her work.",
+       "The café makes more money.",
+       "The council supports her."
+      ],
+      "a": 0
+     }
+    ]
+   },
+   {
+    "tipo": "escuta",
+    "titulo": "Escuta",
+    "instr": "Ouça a conversa entre a Mina e o Jin sobre as férias. Você pode ouvir duas vezes.",
+    "lines": [
+     [
+      "mina",
+      "So, have you decided where to go in July?"
+     ],
+     [
+      "jin",
+      "Not yet. I was thinking about Scotland, but flights are really expensive at the moment."
+     ],
+     [
+      "mina",
+      "What about going by train? It takes longer, but you can see the countryside."
+     ],
+     [
+      "jin",
+      "That's true, but I've only got a week off. I don't want to spend two days travelling."
+     ],
+     [
+      "mina",
+      "Fair enough. Have you thought about Lisbon? My cousin went last year and loved it."
+     ],
+     [
+      "jin",
+      "Lisbon? Isn't it very hot in summer?"
+     ],
+     [
+      "mina",
+      "It can be, but there's usually a nice wind from the sea. And it's much cheaper than London."
+     ],
+     [
+      "jin",
+      "Hmm. I'd like to go somewhere with good food and not too many tourists."
+     ],
+     [
+      "mina",
+      "Then avoid the city centre in the afternoon. My cousin stayed in a small guesthouse near the river and walked everywhere."
+     ],
+     [
+      "jin",
+      "That sounds perfect. Could you send me the name of the guesthouse?"
+     ],
+     [
+      "mina",
+      "Of course. I'll ask her tonight."
+     ]
+    ],
+    "q": [
+     {
+      "q": "Why hasn't Jin chosen Scotland?",
+      "o": [
+       "The flights cost too much.",
+       "He doesn't like cold weather.",
+       "He has been there before."
+      ],
+      "a": 0
+     },
+     {
+      "q": "Why doesn't Jin want to go by train?",
+      "o": [
+       "He only has a week of holiday.",
+       "Trains are more expensive.",
+       "He feels sick on trains."
+      ],
+      "a": 0
+     },
+     {
+      "q": "What does Mina say about the weather in Lisbon?",
+      "o": [
+       "The wind from the sea helps.",
+       "It rains a lot in summer.",
+       "It is never hot."
+      ],
+      "a": 0
+     },
+     {
+      "q": "What kind of place does Jin want?",
+      "o": [
+       "Good food and not too many tourists.",
+       "Big hotels and shopping.",
+       "Beaches and nightlife."
+      ],
+      "a": 0
+     },
+     {
+      "q": "What will Mina do tonight?",
+      "o": [
+       "Ask her cousin for the name of the guesthouse.",
+       "Book the guesthouse.",
+       "Buy the tickets."
+      ],
+      "a": 0
+     }
+    ]
+   },
+   {
+    "tipo": "lingua",
+    "titulo": "Gramática e vocabulário",
+    "instr": "Escolha a opção que completa cada frase.",
+    "q": [
+     {
+      "q": "I've lived here ___ 2019.",
+      "o": [
+       "since",
+       "for",
+       "from"
+      ],
+      "a": 0
+     },
+     {
+      "q": "If it rains tomorrow, we ___ at home.",
+      "o": [
+       "will stay",
+       "would stay",
+       "stayed"
+      ],
+      "a": 0
+     },
+     {
+      "q": "The man ___ lives next door is a doctor.",
+      "o": [
+       "who",
+       "which",
+       "what"
+      ],
+      "a": 0
+     },
+     {
+      "q": "She asked me where I ___.",
+      "o": [
+       "lived",
+       "did I live",
+       "do I live"
+      ],
+      "a": 0
+     },
+     {
+      "q": "You ___ wear a uniform here. It's optional.",
+      "o": [
+       "don't have to",
+       "mustn't",
+       "have to"
+      ],
+      "a": 0
+     },
+     {
+      "q": "I'm not used to ___ up so early.",
+      "o": [
+       "getting",
+       "get",
+       "got"
+      ],
+      "a": 0
+     }
+    ]
+   },
+   {
+    "tipo": "escrita",
+    "titulo": "Escrita",
+    "tarefa": {
+     "id": "s-b1-e",
+     "tipo": "escrever",
+     "titulo": "E-mail para a Emma",
+     "pedido": "A Emma, uma amiga inglesa, vai visitar a sua cidade no mês que vem e perguntou o que fazer lá. Responda o e-mail: sugira dois lugares, diga uma comida que ela precisa provar e ofereça ajuda. Cerca de 100 palavras.",
+     "min": 80,
+     "precisa": [
+      [
+       "^\\s*(hi|hello|dear)\\b",
+       "uma saudação (Hi Emma,)"
+      ],
+      [
+       "\\b(you should|why don'?t you|i'?d recommend|i recommend|you could|how about|you must)\\b",
+       "uma sugestão (you should / why don't you)"
+      ],
+      [
+       "\\b(also|another|as well|too)\\b",
+       "uma segunda sugestão (also / another)"
+      ],
+      [
+       "\\b(try|taste)\\b",
+       "uma comida para provar (try...)"
+      ],
+      [
+       "\\b(i can|i could|i'?ll|shall i|i'?d be happy to)\\b",
+       "uma oferta de ajuda (I can / I'll)"
+      ],
+      [
+       "\\b(see you|love|best wishes|take care|bye)\\b",
+       "uma despedida (See you soon / Best wishes)"
+      ]
+     ],
+     "modelo": "Hi Emma,\nIt's great that you're coming next month! You should definitely visit the old town. The streets are narrow and full of small shops, and there's a beautiful view from the castle. Why don't you also take a boat trip on the river? It's the best way to see the bridges.\nYou must try the custard tarts. They're sold everywhere, but the ones near the old market are the best.\nIf you like, I can show you around on Saturday. I'll be free all day, and I know a nice restaurant for lunch.\nSee you soon,\nAna"
+    }
+   },
+   {
+    "tipo": "fala",
+    "titulo": "Fala",
+    "tarefa": {
+     "id": "s-b1-f",
+     "tipo": "falar",
+     "titulo": "Cidade ou campo",
+     "pergunta": "Is it better to live in a city or in the countryside? Why?",
+     "pedido": "Dê a sua opinião, com pelo menos duas razões e um exemplo.",
+     "min": 30,
+     "precisa": [
+      [
+       "\\b(i think|in my opinion|i believe|personally|for me)\\b",
+       "a sua opinião (I think / In my opinion)"
+      ],
+      [
+       "\\b(because|since)\\b",
+       "uma razão (because)"
+      ],
+      [
+       "\\b(also|another|besides|what'?s more|on top of that|secondly)\\b",
+       "uma segunda razão (also / another reason)"
+      ],
+      [
+       "\\b(for example|for instance|such as)\\b",
+       "um exemplo (for example)"
+      ]
+     ],
+     "modelo": "In my opinion, it's better to live in the city, especially when you are young. First, because there are more jobs and more things to do. Another reason is transport: for example, I can go everywhere by bus or metro, so I don't need a car. But I would like to live in the countryside when I'm older."
+    }
+   }
+  ]
+ },
+ {
+  "id": "s-b2",
+  "nivel": "B2",
+  "titulo": "Simulado B2",
+  "tempo": 45,
+  "desc": "Leitura, escuta, gramática, escrita e fala no nível B2, num formato curto inspirado no B2 First.",
+  "partes": [
+   {
+    "tipo": "leitura",
+    "titulo": "Leitura",
+    "instr": "Leia o artigo e responda as perguntas.",
+    "texto": {
+     "t": "Why Boredom Might Be Good for You",
+     "p": [
+      "Most of us go to great lengths to avoid being bored. We check our phones in queues, listen to podcasts while cooking and fill every quiet moment with something to watch. Yet a growing number of psychologists argue that boredom, far from being a waste of time, may serve a useful purpose.",
+      "In one well-known experiment, participants were first given a deliberately dull task: copying numbers from a phone directory. Afterwards, they were asked to think of as many uses as possible for a pair of plastic cups. Those who had done the boring task came up with more ideas, and more original ones, than a group who had skipped it. The researchers concluded that boredom pushes the mind to wander, and that a wandering mind tends to make unexpected connections.",
+      "This does not mean that all boredom is beneficial. When people feel trapped in a situation they cannot change, such as a repetitive job with no prospects, boredom is linked to stress and poor health rather than creativity. The key difference seems to be whether we have the freedom to let our thoughts drift.",
+      "Some schools have begun to take these findings seriously. Rather than filling every minute of the day with activities, teachers are building in short periods of unstructured time. Early reports suggest that children use these moments to invent games and stories, although critics point out that it is too soon to measure any long-term effect.",
+      "For adults, the advice is simple, if not always easy to follow: next time you are waiting for a bus, try leaving your phone in your pocket."
+     ]
+    },
+    "q": [
+     {
+      "q": "According to the first paragraph, what do most people do?",
+      "o": [
+       "They try hard not to feel bored.",
+       "They enjoy quiet moments.",
+       "They spend less time on their phones."
+      ],
+      "a": 0
+     },
+     {
+      "q": "What did the experiment show?",
+      "o": [
+       "People who had been bored had more creative ideas.",
+       "Copying numbers improves memory.",
+       "Plastic cups make people more creative."
+      ],
+      "a": 0
+     },
+     {
+      "q": "When is boredom linked to poor health?",
+      "o": [
+       "When people feel they cannot escape a situation.",
+       "When people have too much free time.",
+       "When people use their phones too much."
+      ],
+      "a": 0
+     },
+     {
+      "q": "What do critics say about the school programmes?",
+      "o": [
+       "It is too early to know the long-term results.",
+       "They waste class time.",
+       "Children don't enjoy them."
+      ],
+      "a": 0
+     },
+     {
+      "q": "What is the writer's final advice?",
+      "o": [
+       "Allow yourself to be bored sometimes.",
+       "Listen to podcasts while you wait.",
+       "Avoid boring jobs."
+      ],
+      "a": 0
+     }
+    ]
+   },
+   {
+    "tipo": "escuta",
+    "titulo": "Escuta",
+    "instr": "Ouça a entrevista de um podcast sobre trabalho em casa. Você pode ouvir duas vezes.",
+    "lines": [
+     [
+      "narr",
+      "Welcome back. Today I'm talking to Jin Park, who has been working from home for three years. Jin, has it been a positive experience?"
+     ],
+     [
+      "jin",
+      "Mostly, yes. I save almost two hours a day that I used to spend commuting, and I'm far more productive in the mornings."
+     ],
+     [
+      "narr",
+      "Are there any downsides?"
+     ],
+     [
+      "jin",
+      "Definitely. The biggest one is that it's hard to switch off. When your office is in your living room, work never really ends."
+     ],
+     [
+      "narr",
+      "How do you deal with that?"
+     ],
+     [
+      "jin",
+      "I've set myself strict rules. I shut the laptop at six, and then I go for a walk, which tricks my brain into thinking I've come home."
+     ],
+     [
+      "narr",
+      "Some managers say remote workers are less creative. Would you agree?"
+     ],
+     [
+      "jin",
+      "I'd say it depends. Formal meetings work fine online, but you lose those random conversations by the coffee machine, which is where a lot of good ideas come from."
+     ],
+     [
+      "narr",
+      "So what would your ideal arrangement be?"
+     ],
+     [
+      "jin",
+      "Probably two days in the office and three at home. That way I'd get the best of both worlds."
+     ]
+    ],
+    "q": [
+     {
+      "q": "What is the main advantage of working from home for Jin?",
+      "o": [
+       "He no longer spends time commuting.",
+       "He earns more money.",
+       "He sleeps more."
+      ],
+      "a": 0
+     },
+     {
+      "q": "What does Jin find most difficult?",
+      "o": [
+       "Stopping work at the end of the day.",
+       "Using the technology.",
+       "Feeling lonely."
+      ],
+      "a": 0
+     },
+     {
+      "q": "Why does Jin go for a walk at six?",
+      "o": [
+       "To feel as if he has come home from work.",
+       "To get some exercise.",
+       "To buy dinner."
+      ],
+      "a": 0
+     },
+     {
+      "q": "What does Jin say about creativity?",
+      "o": [
+       "Informal chats in the office are hard to replace.",
+       "Remote workers are always less creative.",
+       "Online meetings produce the best ideas."
+      ],
+      "a": 0
+     },
+     {
+      "q": "What would Jin prefer?",
+      "o": [
+       "A mix of office and home.",
+       "Working only from home.",
+       "Working only in the office."
+      ],
+      "a": 0
+     }
+    ]
+   },
+   {
+    "tipo": "lingua",
+    "titulo": "Gramática e vocabulário",
+    "instr": "Escolha a opção que completa cada frase.",
+    "q": [
+     {
+      "q": "If I ___ about the traffic, I would have left earlier.",
+      "o": [
+       "had known",
+       "knew",
+       "would know"
+      ],
+      "a": 0
+     },
+     {
+      "q": "By the time we arrived, the film ___.",
+      "o": [
+       "had already started",
+       "already starts",
+       "has already started"
+      ],
+      "a": 0
+     },
+     {
+      "q": "She suggested ___ a taxi.",
+      "o": [
+       "taking",
+       "to take",
+       "take"
+      ],
+      "a": 0
+     },
+     {
+      "q": "Hardly ___ the house when it started to rain.",
+      "o": [
+       "had we left",
+       "we had left",
+       "we left"
+      ],
+      "a": 0
+     },
+     {
+      "q": "The report ___ by Friday.",
+      "o": [
+       "must be finished",
+       "must finish",
+       "must finished"
+      ],
+      "a": 0
+     },
+     {
+      "q": "I wish I ___ more time to travel.",
+      "o": [
+       "had",
+       "have",
+       "will have"
+      ],
+      "a": 0
+     }
+    ]
+   },
+   {
+    "tipo": "escrita",
+    "titulo": "Escrita",
+    "tarefa": {
+     "id": "s-b2-e",
+     "tipo": "escrever",
+     "titulo": "Ensaio: um ano de voluntariado",
+     "pedido": "Escreva um ensaio sobre a frase: “Todo jovem deveria fazer um ano de trabalho voluntário antes da faculdade.” Apresente argumentos dos dois lados e termine com a sua opinião. Entre 140 e 190 palavras.",
+     "min": 120,
+     "precisa": [
+      [
+       "\\b(in my (view|opinion)|i (strongly )?(believe|think)|personally)\\b",
+       "a sua opinião (In my view...)"
+      ],
+      [
+       "\\b(however|on the other hand|although|whereas|nevertheless|despite)\\b",
+       "o outro lado (However / On the other hand)"
+      ],
+      [
+       "\\b(furthermore|moreover|in addition|what is more|besides)\\b",
+       "um conector de adição (Furthermore / Moreover)"
+      ],
+      [
+       "\\b(for example|for instance|such as)\\b",
+       "um exemplo (for example)"
+      ],
+      [
+       "\\b(in conclusion|to sum up|overall|all things considered|to conclude)\\b",
+       "uma conclusão (In conclusion)"
+      ]
+     ],
+     "evitar": [
+      [
+       "\\b(gonna|wanna|gotta)\\b",
+       "Em texto formal, evite gonna, wanna e gotta."
+      ]
+     ],
+     "modelo": "Many people believe that a year of volunteer work would help young people before they start university. In my view, this idea has clear benefits, although it should not be compulsory.\nOn the one hand, volunteering teaches skills that are rarely learned at school. For example, a student who helps in a hospital or an environmental project learns to work in a team, solve real problems and deal with responsibility. Furthermore, many young people are not sure what they want to study, and a year away from books can help them make a better choice.\nOn the other hand, not every family can afford to support a child who is neither earning nor studying. Moreover, some students are highly motivated and would simply lose a year. However, these problems could be reduced if volunteers received a small allowance.\nIn conclusion, I believe a volunteer year is valuable and should be encouraged with financial support, but students should be free to decide for themselves."
+    }
+   },
+   {
+    "tipo": "fala",
+    "titulo": "Fala",
+    "tarefa": {
+     "id": "s-b2-f",
+     "tipo": "falar",
+     "titulo": "Redes sociais",
+     "pergunta": "Some people say social media does more harm than good. What do you think?",
+     "pedido": "Discuta os dois lados, dê exemplos e diga a sua opinião, com alguma ressalva.",
+     "min": 40,
+     "precisa": [
+      [
+       "\\b(i think|in my (view|opinion)|i believe|personally|i'?d say)\\b",
+       "a sua opinião (I'd say / Personally)"
+      ],
+      [
+       "\\b(but|however|on the other hand|although|while)\\b",
+       "o outro lado (on the other hand / however)"
+      ],
+      [
+       "\\b(for example|for instance|such as)\\b",
+       "um exemplo (for example)"
+      ],
+      [
+       "\\b(it depends|tend to|might|can be|to some extent)\\b",
+       "uma ressalva (it depends / to some extent)"
+      ]
+     ],
+     "modelo": "I'd say it depends on how you use it. On the one hand, social media helps people stay in touch: for example, I talk to my cousins in Canada every week. On the other hand, it can be addictive, and some studies suggest that teenagers who spend hours online tend to feel more anxious. Personally, I think the problem isn't the technology itself, but the lack of limits."
+    }
+   }
+  ]
+ }
+]

@@ -16,7 +16,7 @@ import argparse, hashlib, json, os, re, shutil, sys
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 HERE = os.path.dirname(os.path.abspath(__file__))
 C = os.path.join(ROOT, 'conteudo')
-PRATICA = ['escuta', 'leitura', 'vocabulario', 'escrita', 'nivelamento', 'sons', 'confusoes', 'producao']
+PRATICA = ['escuta', 'leitura', 'vocabulario', 'escrita', 'nivelamento', 'sons', 'confusoes', 'producao', 'simulados']
 SITE_ONLY = re.compile(r'<!-- só no site -->.*?<!-- /só no site -->\n?', re.S)
 
 
@@ -88,25 +88,62 @@ def validar():
             elif any(not isinstance(q, int) or not 0 <= q < nq[t] for q in qs):
                 erros.append(f'pratica/confusoes ("{g.get("nome")}"): pergunta fora do capítulo "{t}" (são {nq[t]}, contando do 0)')
     # produção livre: regex válidas e cada resposta-modelo passando nas próprias conferências
+    def tarefa(onde, t):
+        mod = (t.get('modelo') or '').lower().replace('’', "'")
+        for rx, txt in t.get('precisa', []):
+            try:
+                if not re.search(rx, mod, re.I):
+                    erros.append(f'{onde}: a resposta-modelo não tem "{txt}"')
+            except re.error as e:
+                erros.append(f'{onde}: regra inválida em "{txt}" ({e})')
+        for rx, txt in t.get('evitar', []):
+            try:
+                if re.search(rx, mod, re.I):
+                    erros.append(f'{onde}: a resposta-modelo cai em "{txt}"')
+            except re.error as e:
+                erros.append(f'{onde}: regra inválida ({e})')
     pr = load('pratica/producao')
     for tipo in ('falar', 'escrever', 'mediar'):
         for t in pr.get(tipo, []):
             nome = t.get('capitulo') or t.get('id')
             if tipo == 'falar' and nome not in nq:
                 erros.append(f'pratica/producao (falar): não existe capítulo com o título "{nome}"')
-            mod = (t.get('modelo') or '').lower().replace('’', "'")
-            for rx, txt in t.get('precisa', []):
-                try:
-                    if not re.search(rx, mod, re.I):
-                        erros.append(f'pratica/producao ({nome}): a resposta-modelo não tem "{txt}"')
-                except re.error as e:
-                    erros.append(f'pratica/producao ({nome}): regra inválida em "{txt}" ({e})')
-            for rx, txt in t.get('evitar', []):
-                try:
-                    if re.search(rx, mod, re.I):
-                        erros.append(f'pratica/producao ({nome}): a resposta-modelo cai em "{txt}"')
-                except re.error as e:
-                    erros.append(f'pratica/producao ({nome}): regra inválida ({e})')
+            tarefa(f'pratica/producao ({nome})', t)
+    # simulados: perguntas com a resposta certa existente e tarefas de escrita e fala conferidas
+    ids = set()
+    for x in load('pratica/simulados'):
+        sid = x.get('id', '?')
+        if sid in ids or not re.fullmatch(r's-[a-z0-9]{1,4}', sid):
+            erros.append(f'pratica/simulados: id "{sid}" repetido ou fora do formato s-xx')
+        ids.add(sid)
+        for k, p in enumerate(x.get('partes', []), 1):
+            onde = f'pratica/simulados ({sid}, parte {k})'
+            if p.get('tipo') not in ('leitura', 'escuta', 'lingua', 'escrita', 'fala'):
+                erros.append(f'{onde}: tipo desconhecido "{p.get("tipo")}"')
+            for j, pq in enumerate(p.get('q', []), 1):
+                o = pq.get('o', [])
+                if not (isinstance(pq.get('a'), int) and 0 <= pq['a'] < len(o)) or len(set(o)) != len(o):
+                    erros.append(f'{onde}, pergunta {j}: resposta fora das opções ou opção repetida')
+            if p.get('tipo') == 'escuta' and not all(isinstance(l, list) and len(l) == 2 for l in p.get('lines', [])):
+                erros.append(f'{onde}: cada fala precisa ser [personagem, inglês]')
+            if p.get('tipo') in ('escrita', 'fala'):
+                t = p.get('tarefa') or {}
+                if not t.get('id') or not t.get('modelo'):
+                    erros.append(f'{onde}: a tarefa precisa de "id" e "modelo"')
+                tarefa(f'{onde}', t)
+    # banco de sons
+    so = load('pratica/sons')
+    cats = {p[2] for p in so.get('pares', [])}
+    for g in so.get('banco', []):
+        for x in g.get('sons', []):
+            onde = f'pratica/sons (banco, "{x.get("ipa")}")'
+            for k in ('ipa', 'nome', 'como', 'erro'):
+                if not x.get(k):
+                    erros.append(f'{onde}: falta "{k}"')
+            if not (x.get('ex') and all(len(e) == 2 for e in x['ex'])) or len(x.get('frase') or []) != 2:
+                erros.append(f'{onde}: exemplos são [palavra, tradução] e a frase é [inglês, português]')
+            if x.get('par') and x['par'] not in cats:
+                erros.append(f'{onde}: "par" precisa ser um tipo dos pares de sons ({", ".join(sorted(cats))})')
     for n in PRATICA:
         load(f'pratica/{n}')
         files.append(f'pratica/{n}')

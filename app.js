@@ -1401,6 +1401,8 @@ function practiceCard(){
   <button class="prb" data-wrt><b>Escrita guiada</b><span>${wr}/${WRITE.length} textos</span></button>
   <button class="prb" data-plist="escrever"><b>Escrever do zero</b><span>${pe}/${(PRODUCAO.escrever||[]).length} textos</span></button>
   <button class="prb" data-plist="mediar"><b>Mediação</b><span>${pm}/${(PRODUCAO.mediar||[]).length} tarefas</span></button>
+  <button class="prb" data-sims><b>Simulados</b><span>${Object.keys(S.sim||{}).length}/${(SIMULADOS||[]).length} feitos</span></button>
+  <button class="prb" data-sbank><b>Banco de sons</b><span>${Object.keys(S.sb||{}).length}/${sbAll().length} sons</span></button>
  </div></div>`;
 }
 function lvBadge(lv){return `<span class="lvl">${lv}</span>`;}
@@ -1994,7 +1996,8 @@ function prodTask(id){
  const P=prodAll(); if(!id) return null;
  if(id.startsWith('f:')){const t=id.slice(2), f=(P.falar||[]).find(x=>x.capitulo===t);return f?{...f,id,tipo:'falar'}:null;}
  const e=(P.escrever||[]).find(x=>x.id===id); if(e) return {...e,tipo:'escrever'};
- const m=(P.mediar||[]).find(x=>x.id===id); return m?{...m,tipo:'mediar',min:4,evitar:[]}:null;
+ const m=(P.mediar||[]).find(x=>x.id===id); if(m) return {...m,tipo:'mediar',min:4,evitar:[]};
+ return simTarefa(id);
 }
 function prodWords(t){return (String(t).match(/[A-Za-z0-9'’-]+/g)||[]).length;}
 function prodCheck(T,text){
@@ -2039,6 +2042,7 @@ function prodResult(box,T,text,falado){
   ${r.avisos.map(a=>`<p class="paviso">${esc(a)}</p>`).join('')}
   ${r.ok?'':'<p class="set-note">Tente de novo usando o que ficou com ✗. Você pode olhar a resposta-modelo.</p>'}`);
  prodShowModel(box,T);
+ if(SIM&&SIM.task===T.id) simTaskScore(r);
  if(typeof markDay==='function') try{markDay();}catch(e){}
 }
 async function prodListen(box,T){
@@ -2100,6 +2104,128 @@ function prodClick(e){
  if(e.target.closest('[data-pconf]')){const t=box.querySelector('.ptxt').value.trim();if(!t){box.querySelector('.ptxt').focus();return true;}prodResult(box,T,t,false);return true;}
  if(e.target.closest('[data-pmodelo]')){prodShowModel(box,T);return true;}
  return false;
+}
+
+/* ===================== BANCO DE SONS ===================== */
+/* SOM_BANCO vem de conteudo/pratica/sons.json (chave "banco"): grupos de sons com como fazer, erro comum e exemplos */
+function sbAll(){return (typeof SOM_BANCO!=='undefined'&&SOM_BANCO||[]).flatMap((g,gi)=>g.sons.map((s,si)=>({...s,g:g.grupo,id:gi+'.'+si})));}
+function sbList(){
+ stopListening(); cur=null; const vis=S.sb||{};
+ app.innerHTML=`<div class="wrap">${barHTML('Banco de sons','Os sons do inglês, um por um')}
+ <div class="chap-open"><p>Cada som tem o símbolo usado nos dicionários, como fazer, o erro mais comum de quem fala português e palavras para ouvir e repetir.</p></div>
+ ${(SOM_BANCO||[]).map((g,gi)=>`<div class="sysw"><div class="tag">[ ${esc(g.grupo.toUpperCase())} ]</div><div class="sbgrid">${g.sons.map((s,si)=>`<button class="sbb${vis[gi+'.'+si]?' vis':''}" data-sb="${gi}.${si}"><b lang="en">${esc(s.ipa)}</b><span>${esc(s.nome)}</span><small lang="en">${esc(s.ex.map(x=>x[0]).join(', '))}</small></button>`).join('')}</div></div>`).join('')}
+ <div class="row"><button class="btn ghost" data-home>Voltar ao início</button></div></div>`;
+ window.scrollTo(0,0);
+}
+function sbView(id){
+ const L=sbAll(), i=L.findIndex(x=>x.id===id); if(i<0) return sbList(); stopListening(); cur=null;
+ const s=L[i]; S.sb=S.sb||{}; if(!S.sb[id]){S.sb[id]=1;save();}
+ const mic=canTalk()?`<button class="mic" aria-label="Falar e treinar a pronúncia" aria-pressed="false">${ICON.mic}</button>`:'';
+ const bub=(en,pt,who)=>`<div class="bubble l pword" data-who="narr"><span class="who">${who}</span><span class="en" lang="en">${esc(en)}</span>${pt?`<span class="hint">${esc(pt)}</span>`:''}${mic}<button class="say" data-say="${esc(en)}" data-who="narr" aria-label="Ouvir">${ICON.speak}</button><div class="pron" hidden></div></div>`;
+ const prev=L[i-1], next=L[i+1];
+ app.innerHTML=`<div class="wrap">${barHTML('Banco de sons',esc(s.g),'data-sbank')}
+ <div class="chap-open"><div class="no">${esc(s.g.toUpperCase())}</div><h1 class="pq sbipa" lang="en">${esc(s.ipa)}</h1><p><b>${esc(s.nome)}</b></p></div>
+ <div class="sysw"><div class="tag">[ COMO FAZER ]</div><p>${esc(s.como)}</p>
+  <div class="tag" style="margin-top:12px">[ ERRO COMUM ]</div><p>${esc(s.erro)}</p></div>
+ <div class="sysw"><div class="tag">[ OUÇA E REPITA ]</div>${canTalk()?'<p style="margin-bottom:10px">Toque no alto-falante para ouvir e no microfone para falar.</p>':''}
+  <div class="pwlist">${s.ex.map(([w,pt])=>bub(w,pt,'PALAVRA')).join('')}${bub(s.frase[0],s.frase[1],'FRASE')}</div>
+  <div class="row" style="justify-content:flex-start;margin-top:10px"><button class="btn ghost sm" data-sbslow>Ouvir as palavras devagar</button>${s.par&&EAR_PAIRS.some(p=>p[2]===s.par)?`<button class="btn sm" data-ear="${esc(s.par)}" data-earback="${esc(id)}">Treinar a diferença</button>`:''}</div></div>
+ <div class="row" style="justify-content:space-between">${prev?`<button class="btn ghost" data-sb="${prev.id}">‹ ${esc(prev.ipa)}</button>`:'<span></span>'}${next?`<button class="btn ghost" data-sb="${next.id}">${esc(next.ipa)} ›</button>`:`<button class="btn ghost" data-sbank>Todos os sons</button>`}</div></div>`;
+ window.scrollTo(0,0);
+}
+function sbSlow(){
+ const ws=[...document.querySelectorAll('.pword .en')].slice(0,3).map(e=>e.textContent); const o=S.slow; S.slow=true; speakSeq(ws.map(t=>({t,who:'narr'})),null); S.slow=o;}
+
+/* ===================== SIMULADOS ===================== */
+/* SIMULADOS vem de conteudo/pratica/simulados.json. Em cada pergunta, a certa é "a" (o curso embaralha) */
+let SIM=null;
+const SIM_IC={leitura:'¶',escuta:'♪',lingua:'Aa',escrita:'✍',fala:'🎙'}, SIM_PTS=4;
+function simById(id){return (typeof SIMULADOS!=='undefined'&&SIMULADOS||[]).find(x=>x.id===id);}
+function simTarefa(id){for(const X of SIMULADOS||[]) for(const P of X.partes) if(P.tarefa&&P.tarefa.id===id) return {...P.tarefa,titulo:P.tarefa.titulo};return null;}
+function simList(){
+ stopListening(); cur=null; SIM=null; const b=S.sim||{};
+ app.innerHTML=`<div class="wrap">${barHTML('Simulados','Teste o seu nível como numa prova')}
+ <div class="chap-open"><p>Cada simulado tem cinco partes: leitura, escuta, gramática, escrita e fala. O formato é curto e inspirado nas provas de Cambridge, mas não é uma prova oficial.</p></div>
+ <div class="eps">${(SIMULADOS||[]).map(x=>`<button class="ep" data-simid="${x.id}"><div class="thumb pr-ic" aria-hidden="true">${x.nivel}</div><div class="t"><small>Cerca de ${x.tempo} minutos · ${lvBadge(x.nivel)}</small><b>${esc(x.titulo)}</b><span>${esc(x.desc)}</span></div>${b[x.id]?`<span class="st done">${b[x.id].b}%</span>`:'<span class="st new">NOVO</span>'}</button>`).join('')}</div></div>`;
+ window.scrollTo(0,0);
+}
+function simView(id){
+ const X=simById(id); if(!X) return simList(); stopListening(); cur=null; SIM=null; const r=(S.sim||{})[id];
+ app.innerHTML=`<div class="wrap">${barHTML('Simulados',esc(X.titulo),'data-sims')}
+ <div class="chap-open"><div class="no">SIMULADO · ${X.nivel}</div><h1 class="pq">${esc(X.titulo)}</h1><p>${esc(X.desc)}</p></div>
+ <div class="sysw"><div class="tag">[ AS PARTES ]</div><ol class="simpartes">${X.partes.map(P=>`<li><span aria-hidden="true">${SIM_IC[P.tipo]||''}</span> ${esc(P.titulo)}${P.tipo==='escuta'?' <small>(ouve duas vezes)</small>':''}</li>`).join('')}</ol>
+ <p class="set-note">Leva cerca de ${X.tempo} minutos. Não tem cronômetro: faça no seu ritmo. Você vê o resultado de cada parte ao terminar.</p>
+ ${r?`<p style="margin-top:8px">Seu melhor resultado: <b>${r.b}%</b>.</p>`:''}
+ <div class="row" style="margin-top:12px"><button class="btn" data-simgo="${id}">${r?'Fazer de novo':'Começar'}</button></div></div></div>`;
+ window.scrollTo(0,0);
+}
+function simStart(id){SIM={id,k:0,pts:[],max:[],ans:{},plays:0,done:false,task:null};simPart();}
+function simQHTML(qs){
+ return qs.map((q,qi)=>{const o=shuffle(q.o.map((t,k)=>({t,k})));return `<div class="q" data-sqi="${qi}"><div class="qt">${qi+1}. <span lang="en">${esc(q.q)}</span></div><div class="opts">${o.map(x=>`<button class="sopt" data-sqk="${x.k}" aria-pressed="false" lang="en">${esc(x.t)}</button>`).join('')}</div></div>`;}).join('');
+}
+function simPart(){
+ const X=simById(SIM.id), P=X.partes[SIM.k]; if(!P) return simResult(); stopListening();
+ SIM.ans={}; SIM.plays=0; SIM.done=false; SIM.task=P.tarefa?P.tarefa.id:null;
+ const top=`${barHTML(esc(X.titulo),`Parte ${SIM.k+1} de ${X.partes.length}: ${esc(P.titulo)}`,`data-simid="${X.id}"`)}
+ <div class="simprog" aria-hidden="true">${X.partes.map((_,k)=>`<i class="${k<SIM.k?'ok':k===SIM.k?'on':''}"></i>`).join('')}</div>
+ <div class="chap-open"><div class="no">PARTE ${SIM.k+1} · ${esc(P.titulo.toUpperCase())}</div><p>${esc(P.instr||(P.tipo==='escrita'?'Escreva a sua resposta em inglês e toque em Conferir.':'Responda em inglês, falando ou escrevendo.'))}</p></div>`;
+ let corpo='';
+ if(P.tipo==='leitura') corpo=`<div class="sysw"><h3 lang="en">${esc(P.texto.t)}</h3><div class="rtext" lang="en">${P.texto.p.map(p=>`<p>${esc(p).replace(/\n/g,'<br>')}</p>`).join('')}</div></div>`;
+ if(P.tipo==='escuta') corpo=`<div class="sysw"><div class="row" style="justify-content:flex-start"><button class="btn" data-simplay>Ouvir</button><small id="simplays" class="set-note" aria-live="polite">Você pode ouvir 2 vezes.</small></div><div id="simtx" hidden style="margin-top:14px"></div></div>`;
+ if(P.q) corpo+=`<div class="sysw"><div class="tag">[ PERGUNTAS ]</div>${simQHTML(P.q)}<div class="row" style="margin-top:12px"><button class="btn" data-simconf disabled>Confirmar respostas</button></div><div id="simfb"></div></div>`;
+ if(P.tarefa){const T=simTarefa(P.tarefa.id); corpo+=`<div class="sysw">${T.pergunta?`<h3 lang="en">${esc(T.pergunta)}</h3>`:''}${prodBoxHTML(T,P.tipo==='fala'?{fala:true,escrita:true}:{escrita:true,escritaAberta:true,linhas:T.min>=100?10:6})}
+  <div class="row" style="margin-top:12px"><button class="btn" data-simnext>${SIM.k+1<X.partes.length?'Próxima parte':'Ver o resultado'}</button></div><p class="set-note" id="simskip">Se pular sem conferir, esta parte vale zero.</p></div>`;}
+ app.innerHTML=`<div class="wrap">${top}${corpo}</div>`;
+ SIM.max[SIM.k]=P.q?P.q.length:SIM_PTS; SIM.pts[SIM.k]=0;
+ window.scrollTo(0,0);
+}
+function simPick(btn){
+ if(SIM.done) return; const qd=btn.closest('[data-sqi]'); SIM.ans[+qd.dataset.sqi]=+btn.dataset.sqk;
+ qd.querySelectorAll('.sopt').forEach(b=>b.setAttribute('aria-pressed',String(b===btn)));
+ const P=simById(SIM.id).partes[SIM.k], c=document.querySelector('[data-simconf]'); if(c) c.disabled=Object.keys(SIM.ans).length<P.q.length;
+}
+function simConfirm(){
+ const X=simById(SIM.id), P=X.partes[SIM.k]; if(SIM.done) return; SIM.done=true;
+ let sc=0;
+ document.querySelectorAll('[data-sqi]').forEach(qd=>{const qi=+qd.dataset.sqi, q=P.q[qi], k=SIM.ans[qi]; if(k===q.a) sc++;
+  qd.querySelectorAll('.sopt').forEach(b=>{b.disabled=true;const bk=+b.dataset.sqk;if(bk===q.a) b.classList.add('ok');else if(bk===k) b.classList.add('no');});});
+ SIM.pts[SIM.k]=sc;
+ const tx=P.tipo==='escuta'?`<button class="btn ghost" data-simtx>Ver o texto do áudio</button>`:'';
+ document.getElementById('simfb').innerHTML=`<div class="result"><div class="xp">${sc} de ${P.q.length}</div></div><div class="row" style="margin-top:12px">${tx}<button class="btn" data-simnext>${SIM.k+1<X.partes.length?'Próxima parte':'Ver o resultado'}</button></div>`;
+ document.querySelector('[data-simconf]').hidden=true;
+}
+function simTaskScore(r){
+ if(!SIM||!SIM.task) return; const n=r.itens.length+1, ok=r.itens.filter(i=>i.ok).length+(r.minOk?1:0)-r.avisos.length;
+ SIM.pts[SIM.k]=Math.max(SIM.pts[SIM.k]||0,Math.max(0,Math.round(SIM_PTS*ok/n)));
+ const sk=document.getElementById('simskip'); if(sk) sk.textContent=`Nota desta parte: ${SIM.pts[SIM.k]} de ${SIM_PTS}. Pode tentar de novo para melhorar.`;
+}
+function simPlay(){
+ const P=simById(SIM.id).partes[SIM.k]; if(SIM.plays>=2) return; SIM.plays++;
+ const left=2-SIM.plays, el=document.getElementById('simplays'), b=document.querySelector('[data-simplay]');
+ if(el) el.textContent=left?'Você pode ouvir mais 1 vez.':'Você já ouviu as 2 vezes.'; if(b){b.textContent='Ouvir de novo';if(!left) b.disabled=true;}
+ speakSeq(P.lines.map(l=>({t:l[1],who:l[0]})),null);
+}
+function simTranscript(){
+ const P=simById(SIM.id).partes[SIM.k], el=document.getElementById('simtx'); if(!el) return;
+ const nm=w=>w==='narr'?'Apresentadora':w==='mina'?'Mina':w==='jin'?'Jin':esc(w);
+ el.innerHTML=P.lines.map(l=>`<div class="lline"><b>${nm(l[0])}:</b> <span lang="en">${esc(l[1])}</span></div>`).join(''); el.hidden=false;
+ const b=document.querySelector('[data-simtx]'); if(b) b.hidden=true;
+}
+function simNext(){stopListening(); SIM.k++; simPart();}
+function simResult(){
+ const X=simById(SIM.id), tot=SIM.pts.reduce((a,b)=>a+(b||0),0), max=SIM.max.reduce((a,b)=>a+b,0), pct=Math.round(tot/max*100);
+ S.sim=S.sim||{}; const prev=S.sim[X.id], gain=Math.round(Math.max(0,pct-(prev?prev.b:0))/5);
+ S.sim[X.id]={b:Math.max(pct,prev?prev.b:0),u:pct,d:ymd(new Date())}; S.xp+=gain; markDay(); save();
+ const pc=k=>Math.round((SIM.pts[k]||0)/SIM.max[k]*100);
+ const fraca=X.partes.map((P,k)=>({P,k,p:pc(k)})).sort((a,b)=>a.p-b.p)[0];
+ const ir={leitura:['data-read','Praticar leitura'],escuta:['data-lsn','Praticar escuta'],lingua:['data-review','Fazer uma revisão'],escrita:['data-plist="escrever"','Escrever do zero'],fala:['data-pron','Minha pronúncia']}[fraca.P.tipo];
+ const msg=pct>=75?`Ótimo resultado! Você domina o que se espera do ${X.nivel}.`:pct>=50?`Você está perto do ${X.nivel}. Reforce as partes com menos acertos e tente de novo.`:`O ${X.nivel} ainda está um pouco à frente. Siga os capítulos desse nível e volte ao simulado depois.`;
+ app.innerHTML=`<div class="wrap">${barHTML(esc(X.titulo),'Resultado','data-sims')}
+ <div class="sysw"><div class="tag">[ RESULTADO ]</div><div class="place-r"><div class="big">${pct}%</div>${gain?`<div class="result"><div class="xp">+${gain} XP</div></div>`:''}<p>${msg}</p></div>
+ <ul class="simres">${X.partes.map((P,k)=>`<li><span>${SIM_IC[P.tipo]||''} ${esc(P.titulo)}</span><span class="simbar" aria-hidden="true"><i style="width:${pc(k)}%"></i></span><b>${SIM.pts[k]||0}/${SIM.max[k]}</b></li>`).join('')}</ul>
+ ${fraca.p<100?`<p style="margin-top:10px">O que mais vale treinar agora: <b>${esc(fraca.P.titulo.toLowerCase())}</b>.</p>`:''}
+ <div class="row" style="margin-top:12px">${fraca.p<100&&ir?`<button class="btn" ${ir[0]}>${ir[1]}</button>`:''}<button class="btn ghost" data-simgo="${X.id}">Fazer de novo</button><button class="btn ghost" data-sims>Outros simulados</button></div></div></div>`;
+ SIM=null; window.scrollTo(0,0);
 }
 
 /* Revisão rápida e domingo de revisão */
@@ -2249,6 +2375,8 @@ function sanitizeState(o){
  r.placed=o.placed&&typeof o.placed==='object'?{score:clampN(o.placed.score,0,30,0),arc:Math.round(clampN(o.placed.arc,0,8,0)),lv:Math.round(clampN(o.placed.lv,0,5,0))}:null;
  r.lsn={};r.rd={};r.wr={};for(const [src,dst] of [['lsn','lsn'],['rd','rd'],['wr','wr']]) for(const k in (o[src]||{})) if(/^[lrw]\d{1,2}$/.test(k)) r[dst][k]=clampN(o[src][k],0,20,0);
  r.prod={};for(const k in (o.prod||{})){if(typeof k==='string'&&k.length<60&&[1,2].includes(o.prod[k])) r.prod[k]=o.prod[k];}
+ r.sb={};for(const k in (o.sb||{})){if(/^\d{1,2}\.\d{1,2}$/.test(k)&&o.sb[k]===1) r.sb[k]=1;}
+ r.sim={};for(const k in (o.sim||{})){const v=o.sim[k];if(/^s-[a-z0-9]{1,4}$/.test(k)&&v&&typeof v==='object'){const n=x=>Math.max(0,Math.min(100,Math.round(+x||0)));r.sim[k]={b:n(v.b),u:n(v.u),d:typeof v.d==='string'&&/^\d{4}-\d{2}-\d{2}$/.test(v.d)?v.d:''};}}
  r.auto={};for(const k in (o.auto||{})){if(/^\d{1,2}$/.test(k)&&Array.isArray(o.auto[k])) r.auto[k]=o.auto[k].slice(0,20).map(x=>x===1||x===0?x:null);}
  r.voc={};for(const k in (o.voc||{})){const e=o.voc[k];if(typeof k==='string'&&k.length<40&&e&&typeof e==='object'&&/^\d{4}-\d{2}-\d{2}$/.test(e.d||'')) r.voc[k]={b:Math.round(clampN(e.b,0,5,0)),d:e.d};}
  r.goal=[3,4,5].includes(o.goal)?o.goal:4;
@@ -2450,8 +2578,8 @@ function pronView(){
  const hard=Object.keys(P.w).filter(w=>P.w[w][0]>0).sort((a,b)=>{const ra=P.w[a][0]/(P.w[a][0]+P.w[a][1]),rb=P.w[b][0]/(P.w[b][0]+P.w[b][1]);return rb-ra||P.w[b][0]-P.w[a][0];}).slice(0,12);
  const mic=canTalk()?`<button class="mic" aria-label="Falar a palavra" aria-pressed="false">${ICON.mic}</button>`:'';
  app.innerHTML=`<div class="wrap">${barHTML('Minha pronúncia','Seus sons e palavras para treinar')}
- ${!P.n?`<div class="row" style="justify-content:flex-start;margin-bottom:14px"><button class="btn" data-ear>Treino de sons</button></div><div class="sysw"><div class="tag">[ COMO FUNCIONA ]</div><h3>Ainda não há gravações</h3><p>Toque no microfone de qualquer balão e repita a frase. O curso avalia as palavras, a clareza e o ritmo, e mostra aqui os sons que você mais precisa treinar.</p>${canTalk()?'':'<p style="margin-top:8px">Neste navegador o microfone não está disponível. Abra o curso pelo site, no Chrome, Edge, Firefox ou Safari atualizados.</p>'}</div>`:`
- <div class="row" style="justify-content:flex-start;margin-bottom:14px"><button class="btn" data-ear>Treino de sons</button></div>
+ ${!P.n?`<div class="row" style="justify-content:flex-start;margin-bottom:14px"><button class="btn" data-ear>Treino de sons</button><button class="btn ghost" data-sbank>Banco de sons</button></div><div class="sysw"><div class="tag">[ COMO FUNCIONA ]</div><h3>Ainda não há gravações</h3><p>Toque no microfone de qualquer balão e repita a frase. O curso avalia as palavras, a clareza e o ritmo, e mostra aqui os sons que você mais precisa treinar.</p>${canTalk()?'':'<p style="margin-top:8px">Neste navegador o microfone não está disponível. Abra o curso pelo site, no Chrome, Edge, Firefox ou Safari atualizados.</p>'}</div>`:`
+ <div class="row" style="justify-content:flex-start;margin-bottom:14px"><button class="btn" data-ear>Treino de sons</button><button class="btn ghost" data-sbank>Banco de sons</button></div>
  <div class="sysw"><div class="tag">[ RESUMO ]</div><div class="statg"><div><small>FRASES FALADAS</small><b>${P.n}</b></div><div><small>MÉDIA DE ACERTO</small><b>${avg}%</b></div></div>
  <p>${avg>=85?'Sua pronúncia está ótima. Continue treinando frases novas.':avg>=65?'Você está indo bem. Foque nos sons abaixo para subir de nível.':'Comece pelos sons abaixo, ouvindo devagar antes de falar.'}</p></div>
  <div class="sysw"><div class="tag">[ SONS PARA TREINAR ]</div><h3>${tops.length?'Onde você mais tropeça':'Nenhum erro frequente ainda'}</h3>
@@ -2465,15 +2593,18 @@ function pronView(){
 /* ===================== TREINO DE SONS (discriminação auditiva) ===================== */
 /* EAR_PAIRS e EAR_GLOSS vêm de conteudo/pratica/sons.json */
 let EAR=null;
-function earView(){
+function earView(cat,back){
  stopListening(); cur=null;
- EAR={i:0,ok:0,lock:false,items:shuffle(EAR_PAIRS).slice(0,10).map(p=>({p,t:Math.random()<.5?0:1}))};
+ let ps=cat?EAR_PAIRS.filter(p=>p[2]===cat):EAR_PAIRS; if(!ps.length) ps=EAR_PAIRS;
+ /* poucos pares de um som: cada par entra duas vezes, uma com cada palavra */
+ const items=ps.length>=6?shuffle(ps).slice(0,10).map(p=>({p,t:Math.random()<.5?0:1})):shuffle(ps.flatMap(p=>[{p,t:0},{p,t:1}])).slice(0,10);
+ EAR={i:0,ok:0,lock:false,items,back:back?`data-sb="${back}"`:'data-pron'};
  renderEar();
 }
 function renderEar(){
  if(EAR.i>=EAR.items.length){earResult();return;}
  const it=EAR.items[EAR.i], w=it.p[it.t];
- app.innerHTML=`<div class="wrap">${barHTML('Treino de sons',`Rodada ${EAR.i+1} de ${EAR.items.length}`,'data-pron')}
+ app.innerHTML=`<div class="wrap">${barHTML('Treino de sons',`Rodada ${EAR.i+1} de ${EAR.items.length}`,EAR.back||'data-pron')}
  <div class="chap-open"><div class="no">QUAL PALAVRA VOCÊ OUVIU?</div><h1 class="pq">Ouça com atenção</h1><p>As duas palavras são parecidas. Ouça quantas vezes quiser.</p></div>
  <div class="sysw"><div class="row" style="justify-content:flex-start;margin-bottom:14px"><button class="btn" data-esay>Ouvir de novo</button><button class="btn ghost" data-eboth>Ouvir as duas</button></div>
  <div class="opts">${[0,1].map(k=>`<button class="opt big" data-ek="${k}"><b>${it.p[k]}</b><span>${EAR_GLOSS[it.p[k]]||''}</span></button>`).join('')}</div><div id="efb"></div></div></div>`;
@@ -2495,11 +2626,11 @@ function earAnswer(btn){
 function earResult(){
  const sc=EAR.ok, n=EAR.items.length; S.xp+=sc; markDay(); save();
  const E=S.ear||{c:{}}, weak=Object.keys(E.c).filter(k=>E.c[k][1]>0).sort((a,b)=>E.c[b][1]-E.c[a][1]).slice(0,3);
- app.innerHTML=`<div class="wrap">${barHTML('Treino de sons','Resultado','data-pron')}
+ app.innerHTML=`<div class="wrap">${barHTML('Treino de sons','Resultado',EAR.back||'data-pron')}
  <div class="sysw"><div class="tag">[ RESULTADO ]</div><div class="place-r"><div class="big">${sc} de ${n}</div><div class="result"><div class="xp">+${sc} XP</div></div>
  <p>${sc>=9?'Seu ouvido está afiado para esses sons.':sc>=6?'Bom treino. Repetir em dias diferentes ajuda o ouvido a separar os sons.':'Esses sons são difíceis no começo. Treine um pouco todo dia, com calma.'}</p></div>
  ${weak.length?`<small class="lbl">SONS PARA OUVIR COM MAIS ATENÇÃO</small>${weak.map(k=>tipHTML({k,words:[]}).replace('class="ptip"','class="ptip big"')).join('')}`:''}
- <div class="row" style="margin-top:14px"><button class="btn" data-ear>Treinar de novo</button><button class="btn ghost" data-pron>Minha pronúncia</button></div></div></div>`;
+ <div class="row" style="margin-top:14px"><button class="btn" data-ear>Treinar de novo</button><button class="btn ghost" data-sbank>Banco de sons</button><button class="btn ghost" data-pron>Minha pronúncia</button></div></div></div>`;
  window.scrollTo(0,0);
 }
 function accHTML(){
@@ -2706,7 +2837,7 @@ app.addEventListener('click',e=>{
   if(k==='slow') speak(S.slow?'This is the slow voice.':'This is the normal voice.',null,'mina');
   return;}
  if(e.target.closest('button[data-cleardemo]')){speak("Hi! I'm Mina, your guide.",null,'mina');return;}
- if(e.target.closest('button[data-ear]')){earView();return;}
+ {const eb=e.target.closest('button[data-ear]');if(eb){earView(eb.dataset.ear||null,eb.dataset.earback||null);return;}}
  if(e.target.closest('button[data-esay]')){const it=EAR.items[EAR.i];sayWords([it.p[it.t]]);return;}
  if(e.target.closest('button[data-eboth]')){const it=EAR.items[EAR.i];sayWords([it.p[0],it.p[1]]);return;}
  const ekb=e.target.closest('button[data-ek]'); if(ekb){if(!ekb.disabled) earAnswer(ekb);return;}
@@ -2803,6 +2934,17 @@ app.addEventListener('click',e=>{
  if(e.target.closest('[data-home]')){home();return;}
  if(e.target.closest('#tog')){S.showAll=!S.showAll;if(S.showAll)R.usedPT=true;save();document.getElementById('rd').classList.toggle('showall',S.showAll);document.getElementById('tog').setAttribute('aria-pressed',S.showAll);return;}
  if(prodClick(e)) return;
+ if(e.target.closest('[data-sbank]')){sbList();return;}
+ {const sb=e.target.closest('button[data-sb]');if(sb){sbView(sb.dataset.sb);return;}}
+ if(e.target.closest('[data-sbslow]')){sbSlow();return;}
+ if(e.target.closest('[data-sims]')){simList();return;}
+ {const si=e.target.closest('button[data-simid]');if(si){simView(si.dataset.simid);return;}}
+ {const sg=e.target.closest('button[data-simgo]');if(sg){simStart(sg.dataset.simgo);return;}}
+ {const so=e.target.closest('.sopt');if(so){if(!so.disabled) simPick(so);return;}}
+ if(e.target.closest('[data-simconf]')){simConfirm();return;}
+ if(e.target.closest('[data-simnext]')){simNext();return;}
+ if(e.target.closest('[data-simplay]')){simPlay();return;}
+ if(e.target.closest('[data-simtx]')){simTranscript();return;}
  {const pl=e.target.closest('[data-plist]');if(pl){prodList(pl.dataset.plist);return;}}
  {const pi=e.target.closest('button[data-prodid]');if(pi){prodView(pi.dataset.prodid);return;}}
  {const au=e.target.closest('button[data-auto]');if(au){autoSet(+au.dataset.arc,+au.dataset.i,+au.dataset.auto);return;}}
