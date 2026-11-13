@@ -1476,9 +1476,20 @@ function vocList(){
  stopListening();cur=null; const due=vocDue();
  app.innerHTML=`<div class="wrap">${barHTML('Vocabulário','Cartões por tema, com revisão')}
  ${due.length?`<div class="sysw"><div class="tag">[ REVISÃO DE HOJE ]</div><p style="margin:6px 0 10px">${due.length} palavra(s) para revisar hoje.</p><button class="btn" data-vocgo="due">Revisar agora</button></div>`:''}
- <div class="eps">${VOCAB.map(([th,ws],i)=>{const n=ws.filter(w=>S.voc&&S.voc[w[0]]).length;return `<button class="ep" data-vocgo="${i}"><div class="thumb pr-ic" aria-hidden="true">Aa</div><div class="t"><small>${ws.length} palavras</small><b>${esc(th)}</b><span>${ws.slice(0,4).map(w=>w[0]).join(', ')}...</span></div><span class="st ${n===ws.length?'done':'new'}">${n}/${ws.length}</span></button>`;}).join('')}</div>
+ ${vocGrupos().map(([lv,its])=>`<details class="vgrp"${lv===vocNivelAberto()?' open':''}><summary><b>${lv==='Dia a dia'?'Temas do dia a dia':'Nível '+lv}</b><span>${its.reduce((a,[,ws])=>a+ws.length,0)} palavras · ${its.length} temas</span></summary>
+ <div class="eps">${its.map(([th,ws,i])=>{const n=ws.filter(w=>S.voc&&S.voc[w[0]]).length;return `<button class="ep" data-vocgo="${i}"><div class="thumb pr-ic" aria-hidden="true">${lv==='Dia a dia'?'Aa':lv}</div><div class="t"><small>${ws.length} palavras</small><b>${esc(th.replace(/^[ABC][12] · /,''))}</b><span>${ws.slice(0,4).map(w=>w[0]).join(', ')}...</span></div><span class="st ${n===ws.length?'done':'new'}">${n}/${ws.length}</span></button>`;}).join('')}</div></details>`).join('')}
  <p class="foot" style="font-size:13px">Cada palavra volta depois de 1, 3, 7, 14 e 30 dias. Quem acerta várias vezes seguidas para de ver a palavra por mais tempo.</p></div>`;
  window.scrollTo(0,0);
+}
+/* temas agrupados por nível: "B1 · Saúde" vai para o B1; os primeiros temas, sem nível, são do dia a dia */
+function vocGrupos(){
+ const g={}; VOCAB.forEach(([th,ws],i)=>{const m=th.match(/^([ABC][12]) · /);const lv=m?m[1]:'Dia a dia';(g[lv]=g[lv]||[]).push([th,ws,i]);});
+ return ['Dia a dia','A1','A2','B1','B2','C1','C2'].filter(l=>g[l]).map(l=>[l,g[l]]);
+}
+/* abre o nível onde o aluno está estudando agora (pelo capítulo atual), ou o dia a dia */
+function vocNivelAberto(){
+ let lv='Dia a dia'; try{const c=CH[Math.min(CH.length-1,Object.keys(S.done||{}).map(Number).reduce((a,b)=>Math.max(a,b+1),0))];if(c&&c.lv) lv=c.lv;}catch(e){}
+ return vocGrupos().some(([l])=>l===lv)?lv:'Dia a dia';
 }
 function vocStart(k){
  const all=vocAll(); let items;

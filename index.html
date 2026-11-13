@@ -145,6 +145,7 @@ h1,h2{font-family:var(--f-display);font-weight:400;letter-spacing:.01em;text-wra
 .pcheck{list-style:none;padding:0;margin:8px 0}.pcheck li{margin:3px 0}.pcheck li.ok{color:var(--ok,#11744a)}.pcheck li.no{color:var(--no,#c0223e)}
 .paviso{font-weight:700;margin:6px 0}.pouvi{margin:4px 0}.pmod{margin-top:12px;border-top:1px dashed var(--line);padding-top:10px}.pmtxt{font-size:17px;line-height:1.55}
 .auto{list-style:none;padding:0;margin:8px 0}.auto li{display:flex;flex-wrap:wrap;gap:8px;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px solid var(--line)}.auto li>span:first-child{flex:1 1 220px}.auto .segb{white-space:nowrap}
+.vgrp{margin:0 0 10px;border:2px solid var(--line);border-radius:14px;padding:4px 10px;background:var(--ink-2)}.vgrp>summary{cursor:pointer;display:flex;flex-wrap:wrap;justify-content:space-between;gap:6px;align-items:center;padding:10px 4px;min-height:44px;list-style:none}.vgrp>summary::-webkit-details-marker{display:none}.vgrp>summary b{font-size:17px}.vgrp>summary span{font-size:13px;color:var(--muted)}.vgrp>summary::after{content:'▾';font-size:14px;color:var(--muted)}.vgrp[open]>summary::after{content:'▴'}.vgrp .eps{margin-bottom:8px}
 .sbgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(96px,1fr));gap:8px;margin-top:8px}.sbb{display:flex;flex-direction:column;align-items:center;gap:2px;padding:10px 6px;border:2px solid var(--line);border-radius:12px;background:var(--ink-2);color:inherit;font:inherit;cursor:pointer;text-align:center;min-height:44px}.sbb b{font-size:24px;line-height:1.2;font-family:'Atkinson Hyperlegible',system-ui,sans-serif}.sbb span{font-size:13px;font-weight:700}.sbb small{font-size:12px;opacity:.75}.sbb.vis{border-color:var(--good)}
 .sbipa{font-family:'Atkinson Hyperlegible',system-ui,sans-serif;font-size:56px;letter-spacing:.02em}
 .simprog{display:flex;gap:6px;margin:6px 0 2px}.simprog i{flex:1;height:6px;border-radius:3px;background:var(--line)}.simprog i.ok{background:var(--good)}.simprog i.on{background:var(--accent)}
@@ -528,7 +529,7 @@ h1,h2{font-family:var(--f-display);font-weight:400;letter-spacing:.01em;text-wra
 <script>
 /* Carrega a história e as questões (pasta conteudo/) e depois o código do curso (app.js).
    TORRE_V muda sozinho a cada publicação (tools/site/build_site.py), para o aparelho baixar a versão nova. */
-const TORRE_V='7b856bb08c';
+const TORRE_V='968be363cb';
 (async function(){
  const el=document.getElementById('app');
  function falha(e){
@@ -579,7 +580,7 @@ if('serviceWorker' in navigator&&location.protocol==='https:'){
   d.innerHTML='Nova versão do curso disponível. <button style="font:inherit;font-weight:700;padding:8px 12px;border-radius:8px;border:0;background:#ff8a3d;color:#111">Atualizar</button>';
   d.querySelector('button').onclick=()=>location.reload(); document.body.appendChild(d);
  });
- window.addEventListener('load',()=>{navigator.serviceWorker.register('sw.js?v=7b856bb08c').catch(()=>{});});
+ window.addEventListener('load',()=>{navigator.serviceWorker.register('sw.js?v=968be363cb').catch(()=>{});});
 }
 </script>
 <!-- /só no site -->
