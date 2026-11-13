@@ -28,6 +28,8 @@ Mudar o meio da lista faz o curso marcar como feitos os capítulos errados para 
 | `pratica/sons.json` | Pares de palavras do treino de sons e a tradução de cada palavra. |
 | `pratica/confusoes.json` | Assuntos que se confundem, cada um com **dois lados** (ex.: passado simples × present perfect), uma dica que explica a diferença e, em cada lado, as perguntas que são mesmo sobre ele (por capítulo, pela posição contando do 0). Um par sempre junta uma pergunta de cada lado: na revisão, a do lado oposto vem logo depois; no aquecimento do capítulo novo, entra uma do lado oposto. |
 
+| `pratica/producao.json` | Produção livre, com três listas. **`falar`:** uma pergunta por capítulo (pelo título), mostrada no fim do capítulo em "Sua vez de falar". **`escrever`:** mensagens, e-mails e ensaios escritos do zero. **`mediar`:** um texto em português (`texto`) que o aluno repassa em inglês. Cada tarefa tem `pedido` (o que fazer, em português), `min` (mínimo de palavras), `precisa` (lista de `[regra, o que precisa aparecer]`), `evitar` (opcional, `[regra, aviso]`) e `modelo` (uma resposta-modelo). As regras são expressões regulares, conferidas sem diferenciar maiúsculas. O build confere se cada resposta-modelo passa nas próprias regras. A resposta-modelo precisa de áudio na voz `narr`. |
+
 ## Formato de um capítulo (história)
 
 ```json

@@ -1391,6 +1391,7 @@ function placeResult(){
 
 /* ===================== PRÁTICA: ESCUTA, LEITURA, VOCABULÁRIO E ESCRITA ===================== */
 function practiceCard(){
+ const pr=S.prod||{}, pe=(PRODUCAO.escrever||[]).filter(x=>pr[x.id]===2).length, pm=(PRODUCAO.mediar||[]).filter(x=>pr[x.id]===2).length;
  const ln=Object.keys(S.lsn||{}).length, rd=Object.keys(S.rd||{}).length, wr=Object.keys(S.wr||{}).length, vc=Object.keys(S.voc||{}).length, due=vocDue().length;
  return `<div class="sysw" data-tour="pratica"><div class="tag">[ PRÁTICA ]</div><h3>Treine além dos capítulos</h3>
  <div class="prgrid">
@@ -1398,6 +1399,8 @@ function practiceCard(){
   <button class="prb" data-read><b>Leitura</b><span>${rd}/${READ.length} textos</span></button>
   <button class="prb" data-voc><b>Vocabulário</b><span>${vc} palavras${due?` · ${due} para revisar`:''}</span></button>
   <button class="prb" data-wrt><b>Escrita guiada</b><span>${wr}/${WRITE.length} textos</span></button>
+  <button class="prb" data-plist="escrever"><b>Escrever do zero</b><span>${pe}/${(PRODUCAO.escrever||[]).length} textos</span></button>
+  <button class="prb" data-plist="mediar"><b>Mediação</b><span>${pm}/${(PRODUCAO.mediar||[]).length} tarefas</span></button>
  </div></div>`;
 }
 function lvBadge(lv){return `<span class="lvl">${lv}</span>`;}
@@ -1527,9 +1530,18 @@ function certView(ai){
  <p>concluiu o <b>${esc(a.n)}</b>${lv?`, nível <b>${lv}</b> do Quadro Europeu Comum de Referência (CEFR)`:''}, com ${a.to-a.from+1} capítulos.</p>
  <div class="cert-can"><small>AGORA VOCÊ CONSEGUE</small><ul>${(CANDO[ai]||[]).map(c=>`<li>${esc(c)}</li>`).join('')}</ul></div>
  <p class="cert-dt">${dt}</p><p class="cert-note">Certificado de progresso pessoal. Não substitui um exame oficial de proficiência.</p></div></div>
- <div class="row noprint" style="margin-top:14px"><button class="btn" data-print>Imprimir ou salvar em PDF</button><button class="btn ghost" data-home>Voltar</button></div></div>`;
+ <div class="row noprint" style="margin-top:14px"><button class="btn" data-print>Imprimir ou salvar em PDF</button><button class="btn ghost" data-home>Voltar</button></div>
+ <div class="sysw noprint" id="auto">${autoHTML(ai)}</div></div>`;
  window.scrollTo(0,0);
 }
+/* autoavaliação "eu consigo" (descritores do CEFR): o que ficar como "ainda não" vira revisão do arco */
+function autoHTML(ai){
+ const L=CANDO[ai]||[], v=(S.auto&&S.auto[ai])||[], falta=L.filter((_,i)=>v[i]===0).length;
+ return `<div class="tag">[ COMO VOCÊ SE AVALIA? ]</div><p style="font-size:15px">Seja sincero: marque o que você já consegue fazer sem ajuda. O que ficar como "ainda não" vira revisão.</p>
+ <ul class="auto">${L.map((c,i)=>`<li><span>${esc(c)}</span><span class="seg" role="group" aria-label="${esc(c)}"><button class="segb" data-auto="1" data-arc="${ai}" data-i="${i}" aria-pressed="${v[i]===1}">Consigo</button><button class="segb" data-auto="0" data-arc="${ai}" data-i="${i}" aria-pressed="${v[i]===0}">Ainda não</button></span></li>`).join('')}</ul>
+ ${falta?`<div class="row" style="justify-content:flex-start;margin-top:10px"><button class="btn" data-revarc="${ai}">Revisar este arco (${falta} ${falta===1?'ponto':'pontos'} para reforçar)</button></div>`:''}`;
+}
+function autoSet(ai,i,val){S.auto=S.auto||{};const v=S.auto[ai]=(S.auto[ai]||[]).slice();v[i]=val;save();const b=document.getElementById('auto');if(b) b.innerHTML=autoHTML(ai);}
 
 /* ===================== GLOSSÁRIO ===================== */
 function fold(x){return String(x).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'');}
@@ -1973,16 +1985,134 @@ function mixRivals(items){
  return out;
 }
 
+/* ===================== PRODUÇÃO LIVRE: falar, escrever e mediar =====================
+   Tarefas abertas (conteudo/pratica/producao.json): o aluno responde com as próprias palavras, falando ou escrevendo.
+   O curso confere o que precisa aparecer (estruturas do capítulo), o que evitar e o tamanho, e mostra uma resposta-modelo
+   com áudio. Inspirado nas partes de fala e escrita dos exames de Cambridge e nas tarefas de mediação do CEFR. */
+function prodAll(){const P=(typeof PRODUCAO!=='undefined'&&PRODUCAO)||{};return P;}
+function prodTask(id){
+ const P=prodAll(); if(!id) return null;
+ if(id.startsWith('f:')){const t=id.slice(2), f=(P.falar||[]).find(x=>x.capitulo===t);return f?{...f,id,tipo:'falar'}:null;}
+ const e=(P.escrever||[]).find(x=>x.id===id); if(e) return {...e,tipo:'escrever'};
+ const m=(P.mediar||[]).find(x=>x.id===id); return m?{...m,tipo:'mediar',min:4,evitar:[]}:null;
+}
+function prodWords(t){return (String(t).match(/[A-Za-z0-9'’-]+/g)||[]).length;}
+function prodCheck(T,text){
+ const n=String(text).toLowerCase().replace(/[’‘]/g,"'"), wc=prodWords(text);
+ const itens=(T.precisa||[]).map(([rx,txt])=>{let ok=false;try{ok=new RegExp(rx,'i').test(n);}catch(e){}return {txt,ok};});
+ const avisos=(T.evitar||[]).filter(([rx])=>{try{return new RegExp(rx,'i').test(n);}catch(e){return false;}}).map(x=>x[1]);
+ const minOk=wc>=(T.min||1);
+ return {wc,itens,avisos,minOk,ok:minOk&&itens.every(i=>i.ok)&&!avisos.length};
+}
+function prodBoxHTML(T,opt){
+ const fala=opt.fala&&canTalk();
+ return `<div class="prod" data-pid="${esc(T.id)}">
+ ${T.texto?`<div class="ptexto" lang="pt-BR"><small>EM PORTUGUÊS</small><p>${esc(T.texto)}</p></div>`:''}
+ <p class="ppedido">${esc(T.pedido)}${T.min>4&&!/palavras/i.test(T.pedido)?` <span class="pmin">Pelo menos ${T.min} palavras.</span>`:''}</p>
+ <details class="pprec"><summary>O que precisa aparecer</summary><ul>${(T.precisa||[]).map(([,t])=>`<li>${esc(t)}</li>`).join('')}</ul></details>
+ <div class="row" style="justify-content:flex-start">${fala?`<button class="btn" data-pfalar>${ICON.mic||''} Falar</button>`:''}${opt.escrita||!fala?`<button class="btn${fala?' ghost':''}" data-pescrever${opt.escritaAberta?' hidden':''}>${fala?'Prefiro escrever':'Escrever a resposta'}</button>`:''}</div>
+ <div class="pesc"${opt.escritaAberta?'':' hidden'}><label class="lab" for="pt-${esc(T.id)}">Sua resposta em inglês</label>
+  <textarea class="field ptxt" id="pt-${esc(T.id)}" lang="en" rows="${opt.linhas||4}" spellcheck="false" autocapitalize="sentences"></textarea>
+  <div class="row" style="justify-content:space-between;align-items:center"><small class="pcont" aria-live="polite">0 palavras</small><button class="btn" data-pconf>Conferir</button></div></div>
+ <div class="pron" data-pres hidden></div>
+ <div class="row" style="justify-content:flex-start;margin-top:6px"><button class="linkb" data-pmodelo>Ver a resposta-modelo</button></div>
+ <div class="pmod" hidden></div></div>`;
+}
+function prodShowModel(box,T){
+ const m=box.querySelector('.pmod'); m.hidden=false;
+ m.innerHTML=`<div class="tag">[ RESPOSTA-MODELO ]</div><p lang="en" class="pmtxt">${esc(T.modelo).replace(/\n/g,'<br>')}</p>
+ <div class="row" style="justify-content:flex-start"><button class="btn ghost sm" data-say="${esc(T.modelo.replace(/\n/g,' '))}" data-who="narr">Ouvir o modelo</button></div>
+ <p class="set-note">Compare com a sua: não precisa ser igual. O que importa é usar as estruturas e se fazer entender.</p>`;
+ const b=box.querySelector('[data-pmodelo]'); if(b) b.hidden=true;
+}
+function prodResult(box,T,text,falado){
+ const r=prodCheck(T,text), out=box.querySelector('[data-pres]');
+ const S0=(S.prod=S.prod||{}), antes=S0[T.id];
+ S0[T.id]=Math.max(antes||0,r.ok?2:1); let xp=0;
+ if(r.ok&&antes!==2){xp=T.tipo==='escrever'?15:10;S.xp+=xp;}
+ save();
+ showPron(out,r.ok?'ok':r.itens.some(i=>i.ok)?'mid':'no',
+  `<div class="ph"><b>${r.ok?'Muito bem!':'Quase lá.'}</b>${xp?` <span class="xp">+${xp} XP</span>`:''}</div>
+  ${falado?`<p class="pouvi"><small>Ouvi:</small> <span lang="en">${esc(text)}</span></p>`:''}
+  <ul class="pcheck">${r.itens.map(i=>`<li class="${i.ok?'ok':'no'}">${i.ok?'✓':'✗'} ${esc(i.txt)}</li>`).join('')}
+  <li class="${r.minOk?'ok':'no'}">${r.minOk?'✓':'✗'} ${r.wc} palavras${T.min>4?` (mínimo ${T.min})`:''}</li></ul>
+  ${r.avisos.map(a=>`<p class="paviso">${esc(a)}</p>`).join('')}
+  ${r.ok?'':'<p class="set-note">Tente de novo usando o que ficou com ✗. Você pode olhar a resposta-modelo.</p>'}`);
+ prodShowModel(box,T);
+ if(typeof markDay==='function') try{markDay();}catch(e){}
+}
+async function prodListen(box,T){
+ const out=box.querySelector('[data-pres]'), btn=box.querySelector('[data-pfalar]'); stopListening();
+ const useWh=WH.st!=='off'&&WH.st!=='fail'&&whCan();
+ if(useWh){
+  if(WH.st!=='ready'){showPron(out,'info whload','Preparando o reconhecimento de voz no aparelho...');const ok=await whInit();if(!ok){showPron(out,'warn','Não deu para ligar o reconhecimento de voz agora. Escreva a resposta.');box.querySelector('.pesc').hidden=false;return;}}
+  const ctl={}; A.active=box; A.rec={abort:()=>ctl.cancel&&ctl.cancel(),stop:()=>ctl.stop&&ctl.stop()}; if(btn) btn.setAttribute('aria-pressed','true');
+  showPron(out,'info','Ouvindo... responda em inglês. <span class="lvl-m"><i></i></span><br><small>Termina sozinho quando você parar de falar (até 12 segundos).</small>');
+  let cap; try{cap=await whCapture(v=>{const i=out.querySelector('.lvl-m i');if(i) i.style.width=Math.round(v*100)+'%';},ctl);}
+  catch(e){A.active=null;A.rec=null;if(btn) btn.setAttribute('aria-pressed','false');showPron(out,'warn',e&&(e.name==='NotAllowedError'||e.name==='SecurityError')?BLOCKED_MSG:'Nenhum microfone encontrado neste aparelho.');return;}
+  A.active=null; A.rec=null; if(btn) btn.setAttribute('aria-pressed','false');
+  if(!cap) return;
+  if(cap.nospeech){showPron(out,'warn','Não ouvi nada. Toque em Falar e responda logo em seguida.');return;}
+  showPron(out,'info','Entendendo o que você disse...');
+  const sec=cap.pcm.length/16000, r=await whRun(cap.pcm,Math.min(1500,Math.max(384,Math.ceil(sec*50)+96)));
+  const txt=(r.text||'').replace(/\[[^\]]*\]|\([^)]*\)/g,'').trim();
+  if(r.error||!txt){showPron(out,'warn','Não entendi. Fale um pouco mais alto e perto do microfone, ou escreva a resposta.');return;}
+  prodResult(box,T,txt,true); return;
+ }
+ if(SR){
+  let rec; try{rec=new SR();}catch(e){showPron(out,'warn','Não consegui ligar o reconhecimento de voz. Escreva a resposta.');return;}
+  rec.lang='en-US'; rec.interimResults=false; rec.continuous=false; rec.maxAlternatives=1; let txt='';
+  A.active=box; A.rec=rec; showPron(out,'info','Ouvindo... responda em inglês.');
+  rec.onresult=ev=>{txt=[...ev.results].map(x=>x[0].transcript).join(' ');};
+  rec.onerror=ev=>{if(ev.error==='not-allowed'){A.blocked=true;showPron(out,'warn',BLOCKED_MSG);}};
+  rec.onend=()=>{A.active=null;A.rec=null;if(txt.trim()) prodResult(box,T,txt.trim(),true);else if(!out.className.includes('warn')) showPron(out,'warn','Não ouvi nada. Tente de novo ou escreva a resposta.');};
+  try{rec.start();}catch(e){showPron(out,'warn','Não consegui ligar o microfone.');}
+  return;
+ }
+ box.querySelector('.pesc').hidden=false;
+}
+/* cartão no fim do capítulo */
+function falarCardHTML(i){
+ const T=prodTask('f:'+CH[i].t); if(!T) return '';
+ return `<div class="sysw" id="falar"><div class="tag">[ SUA VEZ DE FALAR ]</div><h3 lang="en">${esc(T.pergunta)}</h3>${prodBoxHTML(T,{fala:true,escrita:true})}</div>`;
+}
+/* listas e telas de escrita e mediação */
+function prodList(tipo){
+ stopListening(); cur=null;
+ const P=prodAll(), L=tipo==='mediar'?(P.mediar||[]):(P.escrever||[]);
+ app.innerHTML=prList(tipo==='mediar'?'Mediação':'Escrever do zero',tipo==='mediar'?'Repasse em inglês o que diz um texto em português':'Mensagens, e-mails e ensaios com as suas palavras',
+  L.map(x=>({id:x.id,t:x.titulo,lv:x.nivel,kind:tipo==='mediar'?'Arco '+x.arco:x.tipo,sub:tipo==='mediar'?'Explique em inglês':`Pelo menos ${x.min} palavras`,ic:tipo==='mediar'?'⇄':'✍'})),'data-prodid',Object.fromEntries(Object.entries(S.prod||{}).filter(([k,v])=>v===2)));
+ window.scrollTo(0,0);
+}
+function prodView(id){
+ const T=prodTask(id); if(!T) return home(); stopListening(); cur=null;
+ const med=T.tipo==='mediar';
+ app.innerHTML=`<div class="wrap">${barHTML(med?'Mediação':'Escrever do zero',esc(T.titulo),med?'data-plist="mediar"':'data-plist="escrever"')}
+ <div class="chap-open"><div class="no">${esc((med?'MEDIAÇÃO':T.tipo).toUpperCase())} · ${T.nivel}</div><h1 class="pq">${esc(T.titulo)}</h1></div>
+ <div class="sysw">${prodBoxHTML(T,med?{fala:true,escrita:true}:{escrita:true,escritaAberta:true,linhas:T.min>=100?10:6})}</div></div>`;
+ window.scrollTo(0,0);
+}
+function prodClick(e){
+ const box=e.target.closest('.prod'); if(!box) return false;
+ const T=prodTask(box.dataset.pid); if(!T) return false;
+ if(e.target.closest('[data-pfalar]')){prodListen(box,T);return true;}
+ if(e.target.closest('[data-pescrever]')){box.querySelector('.pesc').hidden=false;e.target.closest('[data-pescrever]').hidden=true;box.querySelector('.ptxt').focus();return true;}
+ if(e.target.closest('[data-pconf]')){const t=box.querySelector('.ptxt').value.trim();if(!t){box.querySelector('.ptxt').focus();return true;}prodResult(box,T,t,false);return true;}
+ if(e.target.closest('[data-pmodelo]')){prodShowModel(box,T);return true;}
+ return false;
+}
+
 /* Revisão rápida e domingo de revisão */
 let RV=null;
-function reviewView(){
+function reviewView(arc){
  stopListening(); cur=null;
+ const A0=ARCS[arc], noArco=c=>A0==null||(c>=A0.from&&c<=A0.to);
  const seen=new Set(), pool=[];
- (S.mistakes||[]).slice().reverse().forEach(m=>{const k=m.c+'-'+m.q;if(!seen.has(k)&&CH[m.c]&&CH[m.c].q[m.q]){seen.add(k);pool.push({c:m.c,q:m.q,mist:true});}});
- const due=dueCards().slice(0,8).map(x=>({c:x.c,q:x.q,srs:true}));
+ (S.mistakes||[]).slice().reverse().forEach(m=>{const k=m.c+'-'+m.q;if(noArco(m.c)&&!seen.has(k)&&CH[m.c]&&CH[m.c].q[m.q]){seen.add(k);pool.push({c:m.c,q:m.q,mist:true});}});
+ const due=dueCards().filter(x=>noArco(x.c)).slice(0,8).map(x=>({c:x.c,q:x.q,srs:true}));
  due.forEach(x=>seen.add(x.c+'-'+x.q));
  const mis=pool.filter(x=>!due.some(d=>d.c===x.c&&d.q===x.q));
- const doneIdx=Object.keys(S.done).map(Number).filter(i=>i<CH.length), src=doneIdx.length?doneIdx:[0,1,2,3,4,5];
+ const doneIdx=Object.keys(S.done).map(Number).filter(i=>i<CH.length&&noArco(i)), src=doneIdx.length?doneIdx:A0?[...Array(A0.to-A0.from+1).keys()].map(k=>A0.from+k):[0,1,2,3,4,5];
  const extra=shuffle(src.flatMap(c=>CH[c].q.map((_,q)=>({c,q})))).filter(x=>!seen.has(x.c+'-'+x.q));
  let items=due.length>=5?due:due.concat(mis,extra).slice(0,5);
  const xw=(S.xmis||[]).slice(-2).map(x=>({w:x})); if(xw.length) items=items.slice(0,5-xw.length).concat(xw);
@@ -2118,6 +2248,8 @@ function sanitizeState(o){
  r.start=Math.round(clampN(o.start,0,CH.length-1,0));
  r.placed=o.placed&&typeof o.placed==='object'?{score:clampN(o.placed.score,0,30,0),arc:Math.round(clampN(o.placed.arc,0,8,0)),lv:Math.round(clampN(o.placed.lv,0,5,0))}:null;
  r.lsn={};r.rd={};r.wr={};for(const [src,dst] of [['lsn','lsn'],['rd','rd'],['wr','wr']]) for(const k in (o[src]||{})) if(/^[lrw]\d{1,2}$/.test(k)) r[dst][k]=clampN(o[src][k],0,20,0);
+ r.prod={};for(const k in (o.prod||{})){if(typeof k==='string'&&k.length<60&&[1,2].includes(o.prod[k])) r.prod[k]=o.prod[k];}
+ r.auto={};for(const k in (o.auto||{})){if(/^\d{1,2}$/.test(k)&&Array.isArray(o.auto[k])) r.auto[k]=o.auto[k].slice(0,20).map(x=>x===1||x===0?x:null);}
  r.voc={};for(const k in (o.voc||{})){const e=o.voc[k];if(typeof k==='string'&&k.length<40&&e&&typeof e==='object'&&/^\d{4}-\d{2}-\d{2}$/.test(e.d||'')) r.voc[k]={b:Math.round(clampN(e.b,0,5,0)),d:e.d};}
  r.goal=[3,4,5].includes(o.goal)?o.goal:4;
  r.streak=Math.round(clampN(o.streak,0,9999,0));
@@ -2430,7 +2562,7 @@ function reader(i){
   const qi=it.mc, q=ch.q[qi], opts=shuffle(q.o.map((t,k)=>({t,k})));
   h+=`<div class="q" data-q="${qi}"><div class="qt">${nq+1}. ${esc(q.q)}</div><div class="opts">${opts.map(o=>`<button class="opt" data-k="${o.k}"${enAttr(o.t)}>${esc(o.t)}</button>`).join('')}</div><div class="why" hidden></div></div>`;
  });
- h+=`<div class="result" id="res" hidden></div></div>
+ h+=`<div class="result" id="res" hidden></div></div>${bonus?'':falarCardHTML(i)}
  <div class="row" style="margin-top:8px"><button class="btn ghost" data-train="${i}">Treino extra</button><button class="btn ghost" ${back}>${bonus?'Voltar para a coleção':'Voltar para a lista'}</button></div>
  <p class="foot" style="font-size:13px;margin-top:14px"><a href="https://github.com/RockDo1do/CursoIngles/issues/new?title=${encodeURIComponent((bonus?'Erro na história extra ':'Erro no capítulo ')+(bonus?i-99:i+1))}&body=${encodeURIComponent('Descreva o erro (frase, tradução, áudio ou questão):\n\n')}" target="_blank" rel="noopener">Achou um erro neste capítulo? Avise aqui</a> (precisa de conta no GitHub)</p></div>`;
  app.innerHTML=h;
@@ -2670,12 +2802,18 @@ app.addEventListener('click',e=>{
  const op=e.target.closest('[data-open]'); if(op){reader(+op.dataset.open);return;}
  if(e.target.closest('[data-home]')){home();return;}
  if(e.target.closest('#tog')){S.showAll=!S.showAll;if(S.showAll)R.usedPT=true;save();document.getElementById('rd').classList.toggle('showall',S.showAll);document.getElementById('tog').setAttribute('aria-pressed',S.showAll);return;}
+ if(prodClick(e)) return;
+ {const pl=e.target.closest('[data-plist]');if(pl){prodList(pl.dataset.plist);return;}}
+ {const pi=e.target.closest('button[data-prodid]');if(pi){prodView(pi.dataset.prodid);return;}}
+ {const au=e.target.closest('button[data-auto]');if(au){autoSet(+au.dataset.arc,+au.dataset.i,+au.dataset.auto);return;}}
+ {const ra=e.target.closest('button[data-revarc]');if(ra){reviewView(+ra.dataset.revarc);return;}}
  {const wo=e.target.closest('#warm .opt');if(wo){if(!wo.disabled) warmAnswer(wo);return;}}
  if(e.target.closest('[data-warmskip]')){document.getElementById('warm')?.remove();return;}
  const opt=e.target.closest('.opt'); if(opt&&!opt.disabled){answer(opt.closest('.q'),+opt.dataset.k);return;}
  const b=e.target.closest('.bubble:not(.thought)'); if(b){b.classList.toggle('open');R.usedPT=true;}
 });
 app.addEventListener('input',e=>{
+ if(e.target.classList&&e.target.classList.contains('ptxt')){const n=prodWords(e.target.value),c=e.target.closest('.prod').querySelector('.pcont');if(c) c.textContent=n+(n===1?' palavra':' palavras');}
  if(e.target.id==='nm'){const cl=e.target.value.replace(/[^\p{L}\p{M}\s'’-]/gu,'').replace(/\s{2,}/g,' ');if(cl!==e.target.value) e.target.value=cl;S.name=cl.slice(0,20);if(!S.avSex) refreshAvatars();save();e.target.classList.remove('need');applyHeroName();}
  if(e.target.id==='gq'){renderGloss(e.target.value);clearTimeout(window.__gq);const v=fold(e.target.value.trim());window.__gq=setTimeout(()=>{if(v.length>=3&&S.week&&!S.week.gq.includes(v)){S.week.gq.push(v);prog('gloss');save();}},1200);}
 });

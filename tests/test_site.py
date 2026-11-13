@@ -16,7 +16,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 VIEWS = ['home()', 'wizard(0)', 'wizard(1)', 'wizard(2)', 'wizard(3)', 'wizard(4)', 'placement()',
          'weekView()', 'collectionView()', 'reviewView()', 'acctView()', 'earView()', 'pronView()',
          'home();openSettings()', 'trainView(12)', 'lsnList()', 'lsnView("l1")', 'readList()', 'readView("r1")',
-         'vocList()', 'vocStart(0)', 'wrtList()', 'wrtView("w1")', 'certView(0)', 'tourStart(false)', 'tourGo(8,1)', 'tourEnd()']
+         'vocList()', 'vocStart(0)', 'wrtList()', 'wrtView("w1")', 'certView(0)', 'tourStart(false)', 'tourGo(8,1)', 'tourEnd()', 'prodList("escrever")', 'prodView("e5")', 'prodList("mediar")', 'prodView("m1")', 'reviewView(2)']
 
 CHECK_DATA = r'''(()=>{
  const P=[], src=HERO_SRC||{ch:CH,bonus:BONUS};
@@ -41,6 +41,7 @@ CHECK_DATA = r'''(()=>{
  VOCAB.forEach(([th,ws])=>ws.forEach(w=>{if(!has('narr',w[0])||!has('narr',w[2])) P.push(`vocabulário: sem áudio: ${w[0]}`);}));
  WRITE.forEach(W=>{if(!wrtParse(W.text).some(p=>p.a)) P.push(`escrita ${W.id}: sem lacunas`);});
  EAR_PAIRS.forEach(p=>[p[0],p[1]].forEach(w=>{if(REC.man&&!REC.man.w[w]) P.push(`treino de sons: sem áudio: ${w}`);}));
+ ['falar','escrever','mediar'].forEach(t=>(PRODUCAO[t]||[]).forEach(x=>{if(!has('narr',x.modelo.replace(/\n/g,' '))) P.push(`produção (${x.capitulo||x.id}): resposta-modelo sem áudio`);}));
  if(REC.man&&REC.man.nm) Object.entries(REC.man.nm.names).forEach(([who,ns])=>Object.entries(ns).forEach(([k,e])=>{const f=REC.man.files['nm_'+who+(e[4]?'_'+e[4]:'')];if(!f||!f.n||!f.s) P.push(`nome sem arquivo de áudio: ${who} ${k}`);}));
  return P;})()'''
 

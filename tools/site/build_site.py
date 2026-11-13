@@ -16,7 +16,7 @@ import argparse, hashlib, json, os, re, shutil, sys
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 HERE = os.path.dirname(os.path.abspath(__file__))
 C = os.path.join(ROOT, 'conteudo')
-PRATICA = ['escuta', 'leitura', 'vocabulario', 'escrita', 'nivelamento', 'sons', 'confusoes']
+PRATICA = ['escuta', 'leitura', 'vocabulario', 'escrita', 'nivelamento', 'sons', 'confusoes', 'producao']
 SITE_ONLY = re.compile(r'<!-- só no site -->.*?<!-- /só no site -->\n?', re.S)
 
 
@@ -87,6 +87,26 @@ def validar():
                 erros.append(f'pratica/confusoes ("{g.get("nome")}"): não existe capítulo com o título "{t}"')
             elif any(not isinstance(q, int) or not 0 <= q < nq[t] for q in qs):
                 erros.append(f'pratica/confusoes ("{g.get("nome")}"): pergunta fora do capítulo "{t}" (são {nq[t]}, contando do 0)')
+    # produção livre: regex válidas e cada resposta-modelo passando nas próprias conferências
+    pr = load('pratica/producao')
+    for tipo in ('falar', 'escrever', 'mediar'):
+        for t in pr.get(tipo, []):
+            nome = t.get('capitulo') or t.get('id')
+            if tipo == 'falar' and nome not in nq:
+                erros.append(f'pratica/producao (falar): não existe capítulo com o título "{nome}"')
+            mod = (t.get('modelo') or '').lower().replace('’', "'")
+            for rx, txt in t.get('precisa', []):
+                try:
+                    if not re.search(rx, mod, re.I):
+                        erros.append(f'pratica/producao ({nome}): a resposta-modelo não tem "{txt}"')
+                except re.error as e:
+                    erros.append(f'pratica/producao ({nome}): regra inválida em "{txt}" ({e})')
+            for rx, txt in t.get('evitar', []):
+                try:
+                    if re.search(rx, mod, re.I):
+                        erros.append(f'pratica/producao ({nome}): a resposta-modelo cai em "{txt}"')
+                except re.error as e:
+                    erros.append(f'pratica/producao ({nome}): regra inválida ({e})')
     for n in PRATICA:
         load(f'pratica/{n}')
         files.append(f'pratica/{n}')
