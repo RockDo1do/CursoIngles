@@ -22,7 +22,7 @@ Mudar o meio da lista faz o curso marcar como feitos os capítulos errados para 
 | `historia/bonus.json` e `questoes/bonus.json` | As histórias bônus, no mesmo formato. |
 | `pratica/escuta.json` | Diálogos da prática de escuta. |
 | `pratica/leitura.json` | Textos da prática de leitura, com glossário. |
-| `pratica/vocabulario.json` | Temas de vocabulário: `[tema, [[palavra, tradução, frase de exemplo], ...]]`. |
+| `pratica/vocabulario.json` | Temas de vocabulário: `[tema, [[palavra, tradução, frase de exemplo], ...]]`. O progresso de cada aluno fica guardado pela palavra, então não repita uma palavra que já existe em outro tema. Para gravar as vozes de um lote novo, envie a mudança numa branch com nome `vocabulario/...`: a tarefa "Vozes do vocabulário" do GitHub grava tudo e envia o áudio para a mesma branch. |
 | `pratica/escrita.json` | Textos com lacunas da prática de escrita. |
 | `pratica/nivelamento.json` | Perguntas do teste de nível. A resposta certa é sempre a **primeira** opção; o curso embaralha na hora de mostrar. |
 | `pratica/sons.json` | Pares de palavras do treino de sons e a tradução de cada palavra. A chave `banco` tem o **banco de sons**: grupos (vogais, ditongos...) e, em cada som, `ipa` (o símbolo), `nome`, `como` (como fazer), `erro` (o erro comum de quem fala português), `ex` (3 exemplos `[palavra, tradução]`), `frase` (`[inglês, português]`) e `par` (opcional: o tipo de par do treino de sons, como `th`, para o botão "Treinar a diferença"). Palavras e frases do banco precisam de áudio na voz `narr`. |

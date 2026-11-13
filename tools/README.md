@@ -9,6 +9,7 @@ Esta pasta guarda os scripts que gravam as vozes e os que preparam o reconhecime
 | `site/` | `build_site.py` (confere o conteúdo e prepara a publicação) e `sw-template.js` (modelo do service worker) |
 | `vozes/` | Geração das falas gravadas com Kokoro-82M |
 | `whisper/` | Conversão do modelo Whisper tiny.en e o código em C que vira `whisper.wasm` |
+| `vozes/vocabulario.py` | Vozes do vocabulário: acha as palavras e frases sem áudio, grava em partes e junta no `audio/index.json`. No GitHub, roda sozinho para branches `vocabulario/...` |
 | `vozes/nomes.py` | Vozes dos nomes dos alunos: grava em grupos de 50 nomes (`audio/nomes/`) e cuida da fila de nomes pedidos (veja "Nomes" abaixo) |
 | `fonemas/` | Pronúncia som por som: o motor wav2vec2 em C, o conversor do modelo, a geração dos fonemas esperados e a calibração (veja `fonemas/LEIA-ME.md`) |
 

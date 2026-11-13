@@ -2,171 +2,2941 @@
  [
   "Casa",
   [
-   ["kitchen", "cozinha", "I'm cooking in the kitchen."],
-   ["bedroom", "quarto", "My bedroom is small but cozy."],
-   ["bathroom", "banheiro", "The bathroom is upstairs."],
-   ["living room", "sala de estar", "We watch TV in the living room."],
-   ["couch", "sofá", "The cat is sleeping on the couch."],
-   ["fridge", "geladeira", "There's milk in the fridge."],
-   ["stairs", "escada", "Be careful on the stairs."],
-   ["window", "janela", "Please open the window."],
-   ["floor", "chão", "Don't leave your shoes on the floor."],
-   ["roof", "telhado", "The roof needs to be fixed."],
-   ["neighbor", "vizinho, vizinha", "My neighbor has a big dog."],
-   ["rent", "aluguel", "The rent is due on Monday."]
+   [
+    "kitchen",
+    "cozinha",
+    "I'm cooking in the kitchen."
+   ],
+   [
+    "bedroom",
+    "quarto",
+    "My bedroom is small but cozy."
+   ],
+   [
+    "bathroom",
+    "banheiro",
+    "The bathroom is upstairs."
+   ],
+   [
+    "living room",
+    "sala de estar",
+    "We watch TV in the living room."
+   ],
+   [
+    "couch",
+    "sofá",
+    "The cat is sleeping on the couch."
+   ],
+   [
+    "fridge",
+    "geladeira",
+    "There's milk in the fridge."
+   ],
+   [
+    "stairs",
+    "escada",
+    "Be careful on the stairs."
+   ],
+   [
+    "window",
+    "janela",
+    "Please open the window."
+   ],
+   [
+    "floor",
+    "chão",
+    "Don't leave your shoes on the floor."
+   ],
+   [
+    "roof",
+    "telhado",
+    "The roof needs to be fixed."
+   ],
+   [
+    "neighbor",
+    "vizinho, vizinha",
+    "My neighbor has a big dog."
+   ],
+   [
+    "rent",
+    "aluguel",
+    "The rent is due on Monday."
+   ]
   ]
  ],
  [
   "Comida",
   [
-   ["breakfast", "café da manhã", "I have breakfast at seven."],
-   ["lunch", "almoço", "Let's have lunch together."],
-   ["dinner", "jantar", "Dinner is ready!"],
-   ["bread", "pão", "I buy fresh bread every morning."],
-   ["cheese", "queijo", "This cheese is delicious."],
-   ["chicken", "frango", "I'd like the chicken, please."],
-   ["rice", "arroz", "I eat rice and beans every day."],
-   ["vegetables", "legumes e verduras", "You should eat more vegetables."],
-   ["spicy", "apimentado", "This soup is too spicy."],
-   ["hungry", "com fome", "I'm hungry. Let's eat."],
-   ["thirsty", "com sede", "Can I have some water? I'm thirsty."],
-   ["recipe", "receita", "My grandmother's recipe is the best."]
+   [
+    "breakfast",
+    "café da manhã",
+    "I have breakfast at seven."
+   ],
+   [
+    "lunch",
+    "almoço",
+    "Let's have lunch together."
+   ],
+   [
+    "dinner",
+    "jantar",
+    "Dinner is ready!"
+   ],
+   [
+    "bread",
+    "pão",
+    "I buy fresh bread every morning."
+   ],
+   [
+    "cheese",
+    "queijo",
+    "This cheese is delicious."
+   ],
+   [
+    "chicken",
+    "frango",
+    "I'd like the chicken, please."
+   ],
+   [
+    "rice",
+    "arroz",
+    "I eat rice and beans every day."
+   ],
+   [
+    "vegetables",
+    "legumes e verduras",
+    "You should eat more vegetables."
+   ],
+   [
+    "spicy",
+    "apimentado",
+    "This soup is too spicy."
+   ],
+   [
+    "hungry",
+    "com fome",
+    "I'm hungry. Let's eat."
+   ],
+   [
+    "thirsty",
+    "com sede",
+    "Can I have some water? I'm thirsty."
+   ],
+   [
+    "recipe",
+    "receita",
+    "My grandmother's recipe is the best."
+   ]
   ]
  ],
  [
   "Trabalho",
   [
-   ["job", "emprego", "She found a new job."],
-   ["boss", "chefe", "My boss is very kind."],
-   ["coworker", "colega de trabalho", "My coworkers are friendly."],
-   ["meeting", "reunião", "The meeting starts at ten."],
-   ["deadline", "prazo", "The deadline is Friday."],
-   ["salary", "salário", "He asked for a higher salary."],
-   ["skills", "habilidades", "What skills do you have?"],
-   ["hire", "contratar", "They want to hire two people."],
-   ["quit", "pedir demissão, largar", "She quit her job last year."],
-   ["schedule", "agenda, horário", "My schedule is very busy."],
-   ["office", "escritório", "I work in an office downtown."],
-   ["remote work", "trabalho remoto", "Remote work saves a lot of time."]
+   [
+    "job",
+    "emprego",
+    "She found a new job."
+   ],
+   [
+    "boss",
+    "chefe",
+    "My boss is very kind."
+   ],
+   [
+    "coworker",
+    "colega de trabalho",
+    "My coworkers are friendly."
+   ],
+   [
+    "meeting",
+    "reunião",
+    "The meeting starts at ten."
+   ],
+   [
+    "deadline",
+    "prazo",
+    "The deadline is Friday."
+   ],
+   [
+    "salary",
+    "salário",
+    "He asked for a higher salary."
+   ],
+   [
+    "skills",
+    "habilidades",
+    "What skills do you have?"
+   ],
+   [
+    "hire",
+    "contratar",
+    "They want to hire two people."
+   ],
+   [
+    "quit",
+    "pedir demissão, largar",
+    "She quit her job last year."
+   ],
+   [
+    "schedule",
+    "agenda, horário",
+    "My schedule is very busy."
+   ],
+   [
+    "office",
+    "escritório",
+    "I work in an office downtown."
+   ],
+   [
+    "remote work",
+    "trabalho remoto",
+    "Remote work saves a lot of time."
+   ]
   ]
  ],
  [
   "Viagem",
   [
-   ["passport", "passaporte", "Don't forget your passport."],
-   ["luggage", "bagagem", "My luggage is too heavy."],
-   ["ticket", "passagem, ingresso", "I bought a ticket to Rome."],
-   ["flight", "voo", "The flight takes six hours."],
-   ["delay", "atraso", "Sorry for the delay."],
-   ["abroad", "no exterior", "Have you ever lived abroad?"],
-   ["sightseeing", "passeio turístico", "We went sightseeing all day."],
-   ["map", "mapa", "Can you show me on the map?"],
-   ["souvenir", "lembrancinha", "I bought a souvenir for my mom."],
-   ["trip", "viagem", "How was your trip?"],
-   ["booking", "reserva", "I have a booking for two nights."],
-   ["currency", "moeda", "What currency do they use here?"]
+   [
+    "passport",
+    "passaporte",
+    "Don't forget your passport."
+   ],
+   [
+    "luggage",
+    "bagagem",
+    "My luggage is too heavy."
+   ],
+   [
+    "ticket",
+    "passagem, ingresso",
+    "I bought a ticket to Rome."
+   ],
+   [
+    "flight",
+    "voo",
+    "The flight takes six hours."
+   ],
+   [
+    "delay",
+    "atraso",
+    "Sorry for the delay."
+   ],
+   [
+    "abroad",
+    "no exterior",
+    "Have you ever lived abroad?"
+   ],
+   [
+    "sightseeing",
+    "passeio turístico",
+    "We went sightseeing all day."
+   ],
+   [
+    "map",
+    "mapa",
+    "Can you show me on the map?"
+   ],
+   [
+    "souvenir",
+    "lembrancinha",
+    "I bought a souvenir for my mom."
+   ],
+   [
+    "trip",
+    "viagem",
+    "How was your trip?"
+   ],
+   [
+    "booking",
+    "reserva",
+    "I have a booking for two nights."
+   ],
+   [
+    "currency",
+    "moeda",
+    "What currency do they use here?"
+   ]
   ]
  ],
  [
   "Saúde",
   [
-   ["headache", "dor de cabeça", "I have a terrible headache."],
-   ["fever", "febre", "She has a high fever."],
-   ["cough", "tosse", "My cough is getting worse."],
-   ["medicine", "remédio", "Take this medicine after meals."],
-   ["pharmacy", "farmácia", "Is there a pharmacy near here?"],
-   ["appointment", "consulta marcada", "I have a doctor's appointment."],
-   ["pain", "dor", "Where is the pain?"],
-   ["sore", "dolorido", "My legs are sore after the run."],
-   ["healthy", "saudável", "Eating well keeps you healthy."],
-   ["rest", "descansar", "You need to rest."],
-   ["injury", "lesão", "He had a knee injury."],
-   ["sneeze", "espirrar", "I can't stop sneezing."]
+   [
+    "headache",
+    "dor de cabeça",
+    "I have a terrible headache."
+   ],
+   [
+    "fever",
+    "febre",
+    "She has a high fever."
+   ],
+   [
+    "cough",
+    "tosse",
+    "My cough is getting worse."
+   ],
+   [
+    "medicine",
+    "remédio",
+    "Take this medicine after meals."
+   ],
+   [
+    "pharmacy",
+    "farmácia",
+    "Is there a pharmacy near here?"
+   ],
+   [
+    "appointment",
+    "consulta marcada",
+    "I have a doctor's appointment."
+   ],
+   [
+    "pain",
+    "dor",
+    "Where is the pain?"
+   ],
+   [
+    "sore",
+    "dolorido",
+    "My legs are sore after the run."
+   ],
+   [
+    "healthy",
+    "saudável",
+    "Eating well keeps you healthy."
+   ],
+   [
+    "rest",
+    "descansar",
+    "You need to rest."
+   ],
+   [
+    "injury",
+    "lesão",
+    "He had a knee injury."
+   ],
+   [
+    "sneeze",
+    "espirrar",
+    "I can't stop sneezing."
+   ]
   ]
  ],
  [
   "Sentimentos",
   [
-   ["happy", "feliz", "I'm happy to see you."],
-   ["sad", "triste", "Why are you sad?"],
-   ["angry", "com raiva", "Please don't be angry with me."],
-   ["scared", "com medo", "I'm scared of the dark."],
-   ["tired", "cansado", "I'm too tired to go out."],
-   ["excited", "animado", "We're excited about the trip."],
-   ["worried", "preocupado", "My mom is worried about me."],
-   ["bored", "entediado", "I'm bored. Let's do something."],
-   ["proud", "orgulhoso", "I'm proud of you."],
-   ["embarrassed", "com vergonha", "I felt embarrassed in class."],
-   ["nervous", "nervoso", "I'm nervous about the interview."],
-   ["relieved", "aliviado", "I'm relieved the test is over."]
+   [
+    "happy",
+    "feliz",
+    "I'm happy to see you."
+   ],
+   [
+    "sad",
+    "triste",
+    "Why are you sad?"
+   ],
+   [
+    "angry",
+    "com raiva",
+    "Please don't be angry with me."
+   ],
+   [
+    "scared",
+    "com medo",
+    "I'm scared of the dark."
+   ],
+   [
+    "tired",
+    "cansado",
+    "I'm too tired to go out."
+   ],
+   [
+    "excited",
+    "animado",
+    "We're excited about the trip."
+   ],
+   [
+    "worried",
+    "preocupado",
+    "My mom is worried about me."
+   ],
+   [
+    "bored",
+    "entediado",
+    "I'm bored. Let's do something."
+   ],
+   [
+    "proud",
+    "orgulhoso",
+    "I'm proud of you."
+   ],
+   [
+    "embarrassed",
+    "com vergonha",
+    "I felt embarrassed in class."
+   ],
+   [
+    "nervous",
+    "nervoso",
+    "I'm nervous about the interview."
+   ],
+   [
+    "relieved",
+    "aliviado",
+    "I'm relieved the test is over."
+   ]
   ]
  ],
  [
   "Cidade",
   [
-   ["downtown", "centro da cidade", "Let's meet downtown."],
-   ["street", "rua", "I live on this street."],
-   ["corner", "esquina", "The bank is on the corner."],
-   ["traffic", "trânsito", "The traffic is terrible today."],
-   ["subway", "metrô", "I take the subway to work."],
-   ["bus stop", "ponto de ônibus", "The bus stop is over there."],
-   ["crosswalk", "faixa de pedestres", "Always use the crosswalk."],
-   ["library", "biblioteca", "The library closes at eight."],
-   ["square", "praça", "There's a market in the square."],
-   ["neighborhood", "bairro", "This neighborhood is quiet."],
-   ["building", "prédio", "My office is in that building."],
-   ["sidewalk", "calçada", "Walk on the sidewalk."]
+   [
+    "downtown",
+    "centro da cidade",
+    "Let's meet downtown."
+   ],
+   [
+    "street",
+    "rua",
+    "I live on this street."
+   ],
+   [
+    "corner",
+    "esquina",
+    "The bank is on the corner."
+   ],
+   [
+    "traffic",
+    "trânsito",
+    "The traffic is terrible today."
+   ],
+   [
+    "subway",
+    "metrô",
+    "I take the subway to work."
+   ],
+   [
+    "bus stop",
+    "ponto de ônibus",
+    "The bus stop is over there."
+   ],
+   [
+    "crosswalk",
+    "faixa de pedestres",
+    "Always use the crosswalk."
+   ],
+   [
+    "library",
+    "biblioteca",
+    "The library closes at eight."
+   ],
+   [
+    "square",
+    "praça",
+    "There's a market in the square."
+   ],
+   [
+    "neighborhood",
+    "bairro",
+    "This neighborhood is quiet."
+   ],
+   [
+    "building",
+    "prédio",
+    "My office is in that building."
+   ],
+   [
+    "sidewalk",
+    "calçada",
+    "Walk on the sidewalk."
+   ]
   ]
  ],
  [
   "Tempo e clima",
   [
-   ["weather", "tempo, clima", "What's the weather like today?"],
-   ["sunny", "ensolarado", "It's sunny and warm."],
-   ["cloudy", "nublado", "It's cloudy, but it isn't raining."],
-   ["rain", "chuva", "Take an umbrella. It might rain."],
-   ["snow", "neve", "We had a lot of snow last winter."],
-   ["wind", "vento", "The wind is very strong today."],
-   ["hot", "quente", "It's too hot to work outside."],
-   ["cold", "frio", "It's cold. Wear a jacket."],
-   ["storm", "tempestade", "A storm is coming."],
-   ["season", "estação do ano", "Summer is my favorite season."],
-   ["forecast", "previsão do tempo", "The forecast says rain tomorrow."],
-   ["umbrella", "guarda-chuva", "I forgot my umbrella."]
+   [
+    "weather",
+    "tempo, clima",
+    "What's the weather like today?"
+   ],
+   [
+    "sunny",
+    "ensolarado",
+    "It's sunny and warm."
+   ],
+   [
+    "cloudy",
+    "nublado",
+    "It's cloudy, but it isn't raining."
+   ],
+   [
+    "rain",
+    "chuva",
+    "Take an umbrella. It might rain."
+   ],
+   [
+    "snow",
+    "neve",
+    "We had a lot of snow last winter."
+   ],
+   [
+    "wind",
+    "vento",
+    "The wind is very strong today."
+   ],
+   [
+    "hot",
+    "quente",
+    "It's too hot to work outside."
+   ],
+   [
+    "cold",
+    "frio",
+    "It's cold. Wear a jacket."
+   ],
+   [
+    "storm",
+    "tempestade",
+    "A storm is coming."
+   ],
+   [
+    "season",
+    "estação do ano",
+    "Summer is my favorite season."
+   ],
+   [
+    "forecast",
+    "previsão do tempo",
+    "The forecast says rain tomorrow."
+   ],
+   [
+    "umbrella",
+    "guarda-chuva",
+    "I forgot my umbrella."
+   ]
   ]
  ],
  [
   "Tecnologia",
   [
-   ["phone", "celular, telefone", "My phone is dead."],
-   ["charger", "carregador", "Can I borrow your charger?"],
-   ["password", "senha", "Don't share your password."],
-   ["download", "baixar", "Download the app for free."],
-   ["screen", "tela", "The screen is broken."],
-   ["battery", "bateria", "My battery is low."],
-   ["laptop", "notebook", "I work on my laptop."],
-   ["email", "e-mail", "I'll send you an email."],
-   ["app", "aplicativo", "This app helps me study."],
-   ["update", "atualizar", "Update your phone tonight."],
-   ["account", "conta", "Create an account first."],
-   ["Wi-Fi", "wi-fi", "What's the Wi-Fi password?"]
+   [
+    "phone",
+    "celular, telefone",
+    "My phone is dead."
+   ],
+   [
+    "charger",
+    "carregador",
+    "Can I borrow your charger?"
+   ],
+   [
+    "password",
+    "senha",
+    "Don't share your password."
+   ],
+   [
+    "download",
+    "baixar",
+    "Download the app for free."
+   ],
+   [
+    "screen",
+    "tela",
+    "The screen is broken."
+   ],
+   [
+    "battery",
+    "bateria",
+    "My battery is low."
+   ],
+   [
+    "laptop",
+    "notebook",
+    "I work on my laptop."
+   ],
+   [
+    "email",
+    "e-mail",
+    "I'll send you an email."
+   ],
+   [
+    "app",
+    "aplicativo",
+    "This app helps me study."
+   ],
+   [
+    "update",
+    "atualizar",
+    "Update your phone tonight."
+   ],
+   [
+    "account",
+    "conta",
+    "Create an account first."
+   ],
+   [
+    "Wi-Fi",
+    "wi-fi",
+    "What's the Wi-Fi password?"
+   ]
   ]
  ],
  [
   "Dinheiro e compras",
   [
-   ["price", "preço", "What's the price of this shirt?"],
-   ["cheap", "barato", "This store is cheap."],
-   ["expensive", "caro", "It's too expensive for me."],
-   ["discount", "desconto", "Is there a discount?"],
-   ["receipt", "recibo, nota fiscal", "Can I have the receipt?"],
-   ["cash", "dinheiro vivo", "Do you accept cash?"],
-   ["card", "cartão", "I'll pay by card."],
-   ["change", "troco", "Here's your change."],
-   ["refund", "reembolso", "I'd like a refund, please."],
-   ["sale", "promoção", "Everything is on sale."],
-   ["budget", "orçamento", "We need a budget for the trip."],
-   ["save money", "economizar", "I'm trying to save money."]
+   [
+    "price",
+    "preço",
+    "What's the price of this shirt?"
+   ],
+   [
+    "cheap",
+    "barato",
+    "This store is cheap."
+   ],
+   [
+    "expensive",
+    "caro",
+    "It's too expensive for me."
+   ],
+   [
+    "discount",
+    "desconto",
+    "Is there a discount?"
+   ],
+   [
+    "receipt",
+    "recibo, nota fiscal",
+    "Can I have the receipt?"
+   ],
+   [
+    "cash",
+    "dinheiro vivo",
+    "Do you accept cash?"
+   ],
+   [
+    "card",
+    "cartão",
+    "I'll pay by card."
+   ],
+   [
+    "change",
+    "troco",
+    "Here's your change."
+   ],
+   [
+    "refund",
+    "reembolso",
+    "I'd like a refund, please."
+   ],
+   [
+    "sale",
+    "promoção",
+    "Everything is on sale."
+   ],
+   [
+    "budget",
+    "orçamento",
+    "We need a budget for the trip."
+   ],
+   [
+    "save money",
+    "economizar",
+    "I'm trying to save money."
+   ]
+  ]
+ ],
+ [
+  "A1 · Corpo",
+  [
+   [
+    "head",
+    "cabeça",
+    "My head hurts a little."
+   ],
+   [
+    "face",
+    "rosto",
+    "She has a beautiful face."
+   ],
+   [
+    "hair",
+    "cabelo",
+    "His hair is very short."
+   ],
+   [
+    "eye",
+    "olho",
+    "I have something in my eye."
+   ],
+   [
+    "ear",
+    "orelha, ouvido",
+    "My ear is cold."
+   ],
+   [
+    "nose",
+    "nariz",
+    "The baby has a small nose."
+   ],
+   [
+    "mouth",
+    "boca",
+    "Open your mouth, please."
+   ],
+   [
+    "tooth",
+    "dente",
+    "I lost a tooth when I was six."
+   ],
+   [
+    "teeth",
+    "dentes",
+    "Brush your teeth every night."
+   ],
+   [
+    "neck",
+    "pescoço",
+    "Giraffes have long necks."
+   ],
+   [
+    "shoulder",
+    "ombro",
+    "My shoulder hurts after the gym."
+   ],
+   [
+    "arm",
+    "braço",
+    "He broke his arm last year."
+   ],
+   [
+    "hand",
+    "mão",
+    "Raise your hand to answer."
+   ],
+   [
+    "finger",
+    "dedo (da mão)",
+    "She has a ring on her finger."
+   ],
+   [
+    "leg",
+    "perna",
+    "My legs are tired after the walk."
+   ],
+   [
+    "knee",
+    "joelho",
+    "He fell and hurt his knee."
+   ],
+   [
+    "foot",
+    "pé",
+    "My left foot is wet."
+   ],
+   [
+    "feet",
+    "pés",
+    "Take your feet off the table!"
+   ],
+   [
+    "toe",
+    "dedo do pé",
+    "I hit my toe on the door."
+   ],
+   [
+    "back",
+    "costas",
+    "Sit up straight to protect your back."
+   ],
+   [
+    "stomach",
+    "estômago, barriga",
+    "My stomach hurts."
+   ],
+   [
+    "heart",
+    "coração",
+    "Exercise is good for your heart."
+   ],
+   [
+    "skin",
+    "pele",
+    "Use sun cream to protect your skin."
+   ],
+   [
+    "blood",
+    "sangue",
+    "The nurse took some blood."
+   ],
+   [
+    "body",
+    "corpo",
+    "Sleep is important for your body."
+   ],
+   [
+    "beard",
+    "barba",
+    "My grandfather has a white beard."
+   ]
+  ]
+ ],
+ [
+  "A1 · Roupas e acessórios",
+  [
+   [
+    "clothes",
+    "roupas",
+    "I need new clothes for work."
+   ],
+   [
+    "shirt",
+    "camisa",
+    "He's wearing a blue shirt."
+   ],
+   [
+    "T-shirt",
+    "camiseta",
+    "This T-shirt is too big."
+   ],
+   [
+    "trousers",
+    "calça (britânico)",
+    "These trousers are too long."
+   ],
+   [
+    "pants",
+    "calça (americano)",
+    "I bought new pants yesterday."
+   ],
+   [
+    "jeans",
+    "calça jeans",
+    "I wear jeans every day."
+   ],
+   [
+    "skirt",
+    "saia",
+    "She's wearing a long skirt."
+   ],
+   [
+    "dress",
+    "vestido",
+    "What a lovely dress!"
+   ],
+   [
+    "jacket",
+    "jaqueta",
+    "Take a jacket. It's cold."
+   ],
+   [
+    "coat",
+    "casaco",
+    "Hang your coat by the door."
+   ],
+   [
+    "sweater",
+    "suéter, blusa de frio",
+    "My grandma made this sweater."
+   ],
+   [
+    "shoes",
+    "sapatos",
+    "These shoes are comfortable."
+   ],
+   [
+    "trainers",
+    "tênis (britânico)",
+    "I run in my old trainers."
+   ],
+   [
+    "sneakers",
+    "tênis (americano)",
+    "I need new sneakers for the gym."
+   ],
+   [
+    "boots",
+    "botas",
+    "Wear boots in the snow."
+   ],
+   [
+    "socks",
+    "meias",
+    "I can't find my socks."
+   ],
+   [
+    "hat",
+    "chapéu",
+    "He always wears a hat."
+   ],
+   [
+    "cap",
+    "boné",
+    "Put on your cap. It's sunny."
+   ],
+   [
+    "scarf",
+    "cachecol",
+    "It's cold, so take a scarf."
+   ],
+   [
+    "gloves",
+    "luvas",
+    "My gloves are in my bag."
+   ],
+   [
+    "belt",
+    "cinto",
+    "These trousers need a belt."
+   ],
+   [
+    "pocket",
+    "bolso",
+    "My phone is in my pocket."
+   ],
+   [
+    "bag",
+    "bolsa, sacola",
+    "Can I put this in your bag?"
+   ],
+   [
+    "watch",
+    "relógio (de pulso)",
+    "My watch is five minutes fast."
+   ],
+   [
+    "glasses",
+    "óculos",
+    "I can't read without my glasses."
+   ],
+   [
+    "pyjamas",
+    "pijama",
+    "The kids are already in their pyjamas."
+   ],
+   [
+    "wear",
+    "usar, vestir",
+    "I wear a uniform at work."
+   ]
+  ]
+ ],
+ [
+  "A1 · Família e pessoas",
+  [
+   [
+    "mother",
+    "mãe",
+    "My mother is a teacher."
+   ],
+   [
+    "father",
+    "pai",
+    "My father cooks very well."
+   ],
+   [
+    "parents",
+    "pais",
+    "My parents live in São Paulo."
+   ],
+   [
+    "brother",
+    "irmão",
+    "My brother is older than me."
+   ],
+   [
+    "sister",
+    "irmã",
+    "I have two sisters."
+   ],
+   [
+    "son",
+    "filho",
+    "Their son is five years old."
+   ],
+   [
+    "daughter",
+    "filha",
+    "My daughter loves drawing."
+   ],
+   [
+    "children",
+    "filhos, crianças",
+    "They have three children."
+   ],
+   [
+    "grandmother",
+    "avó",
+    "My grandmother tells great stories."
+   ],
+   [
+    "grandfather",
+    "avô",
+    "My grandfather was a pilot."
+   ],
+   [
+    "grandparents",
+    "avós",
+    "We visit our grandparents on Sundays."
+   ],
+   [
+    "uncle",
+    "tio",
+    "My uncle lives in Canada."
+   ],
+   [
+    "aunt",
+    "tia",
+    "My aunt makes amazing cakes."
+   ],
+   [
+    "cousin",
+    "primo, prima",
+    "My cousin is my best friend."
+   ],
+   [
+    "husband",
+    "marido",
+    "Her husband works at night."
+   ],
+   [
+    "wife",
+    "esposa",
+    "His wife is a doctor."
+   ],
+   [
+    "baby",
+    "bebê",
+    "The baby is sleeping."
+   ],
+   [
+    "boyfriend",
+    "namorado",
+    "Her boyfriend is from Spain."
+   ],
+   [
+    "girlfriend",
+    "namorada",
+    "His girlfriend plays the guitar."
+   ],
+   [
+    "friend",
+    "amigo, amiga",
+    "She's my oldest friend."
+   ],
+   [
+    "neighbour",
+    "vizinho, vizinha",
+    "Our neighbour has a big dog."
+   ],
+   [
+    "man",
+    "homem",
+    "The man at the door is my uncle."
+   ],
+   [
+    "woman",
+    "mulher",
+    "The woman next to me was very kind."
+   ],
+   [
+    "people",
+    "pessoas",
+    "There are a lot of people here."
+   ],
+   [
+    "kid",
+    "criança (informal)",
+    "The kids are playing outside."
+   ],
+   [
+    "teenager",
+    "adolescente",
+    "My son is a teenager now."
+   ],
+   [
+    "adult",
+    "adulto",
+    "Tickets for adults cost ten pounds."
+   ],
+   [
+    "twins",
+    "gêmeos, gêmeas",
+    "My cousins are twins."
+   ],
+   [
+    "married",
+    "casado",
+    "Are you married?"
+   ],
+   [
+    "single",
+    "solteiro",
+    "He's single and lives alone."
+   ]
+  ]
+ ],
+ [
+  "A1 · Cores, formas e tamanhos",
+  [
+   [
+    "red",
+    "vermelho",
+    "I love your red jacket."
+   ],
+   [
+    "blue",
+    "azul",
+    "The sky is very blue today."
+   ],
+   [
+    "green",
+    "verde",
+    "Green is my favourite colour."
+   ],
+   [
+    "yellow",
+    "amarelo",
+    "The taxis in New York are yellow."
+   ],
+   [
+    "black",
+    "preto",
+    "She has long black hair."
+   ],
+   [
+    "white",
+    "branco",
+    "The walls are white."
+   ],
+   [
+    "grey",
+    "cinza",
+    "London is often grey."
+   ],
+   [
+    "brown",
+    "marrom",
+    "He has brown eyes."
+   ],
+   [
+    "pink",
+    "rosa",
+    "Her room is pink and white."
+   ],
+   [
+    "purple",
+    "roxo",
+    "Purple flowers grow in the garden."
+   ],
+   [
+    "orange",
+    "laranja (cor)",
+    "The sun looks orange tonight."
+   ],
+   [
+    "dark",
+    "escuro",
+    "It gets dark early in winter."
+   ],
+   [
+    "light",
+    "claro",
+    "She's wearing a light blue dress."
+   ],
+   [
+    "colour",
+    "cor",
+    "What colour is your car?"
+   ],
+   [
+    "big",
+    "grande",
+    "They live in a big house."
+   ],
+   [
+    "small",
+    "pequeno",
+    "My flat is small but nice."
+   ],
+   [
+    "long",
+    "comprido, longo",
+    "It's a long way to the station."
+   ],
+   [
+    "short",
+    "curto, baixo",
+    "The film was short."
+   ],
+   [
+    "tall",
+    "alto (pessoa, prédio)",
+    "My brother is very tall."
+   ],
+   [
+    "wide",
+    "largo",
+    "The river is very wide here."
+   ],
+   [
+    "narrow",
+    "estreito",
+    "The streets in the old town are narrow."
+   ],
+   [
+    "round",
+    "redondo",
+    "We have a round table."
+   ],
+   [
+    "heavy",
+    "pesado",
+    "This box is too heavy."
+   ],
+   [
+    "huge",
+    "enorme",
+    "They have a huge garden."
+   ],
+   [
+    "tiny",
+    "minúsculo",
+    "It's a tiny apartment."
+   ]
+  ]
+ ],
+ [
+  "A1 · Animais",
+  [
+   [
+    "dog",
+    "cachorro",
+    "Our dog loves the park."
+   ],
+   [
+    "cat",
+    "gato",
+    "The cat is sleeping on the sofa."
+   ],
+   [
+    "bird",
+    "pássaro",
+    "A bird is singing outside."
+   ],
+   [
+    "fish",
+    "peixe",
+    "We have three fish at home."
+   ],
+   [
+    "horse",
+    "cavalo",
+    "She rides a horse every weekend."
+   ],
+   [
+    "cow",
+    "vaca",
+    "The cows are in the field."
+   ],
+   [
+    "pig",
+    "porco",
+    "Pigs are very clever animals."
+   ],
+   [
+    "sheep",
+    "ovelha",
+    "There are sheep on the hill."
+   ],
+   [
+    "duck",
+    "pato",
+    "Let's feed the ducks."
+   ],
+   [
+    "rabbit",
+    "coelho",
+    "My sister has a white rabbit."
+   ],
+   [
+    "mouse",
+    "rato, camundongo",
+    "I saw a mouse in the kitchen!"
+   ],
+   [
+    "lion",
+    "leão",
+    "The lion is the king of the jungle."
+   ],
+   [
+    "tiger",
+    "tigre",
+    "Tigers are in danger."
+   ],
+   [
+    "elephant",
+    "elefante",
+    "Elephants never forget."
+   ],
+   [
+    "monkey",
+    "macaco",
+    "The monkey stole my banana!"
+   ],
+   [
+    "bear",
+    "urso",
+    "We saw a bear in the forest."
+   ],
+   [
+    "snake",
+    "cobra",
+    "I'm afraid of snakes."
+   ],
+   [
+    "spider",
+    "aranha",
+    "There's a spider in the bath."
+   ],
+   [
+    "insect",
+    "inseto",
+    "This insect can fly very fast."
+   ],
+   [
+    "bee",
+    "abelha",
+    "A bee is on the flower."
+   ],
+   [
+    "butterfly",
+    "borboleta",
+    "What a beautiful butterfly!"
+   ],
+   [
+    "frog",
+    "sapo",
+    "The frog jumped into the water."
+   ],
+   [
+    "shark",
+    "tubarão",
+    "We didn't see any sharks."
+   ],
+   [
+    "whale",
+    "baleia",
+    "Whales are the largest animals."
+   ],
+   [
+    "pet",
+    "animal de estimação",
+    "Do you have any pets?"
+   ],
+   [
+    "wild",
+    "selvagem",
+    "Wild animals live in the forest."
+   ],
+   [
+    "zoo",
+    "zoológico",
+    "We went to the zoo on Saturday."
+   ]
+  ]
+ ],
+ [
+  "A1 · Escola e estudo",
+  [
+   [
+    "school",
+    "escola",
+    "The school is near my house."
+   ],
+   [
+    "class",
+    "turma, aula",
+    "Our class has twenty students."
+   ],
+   [
+    "lesson",
+    "aula, lição",
+    "The English lesson starts at nine."
+   ],
+   [
+    "teacher",
+    "professor, professora",
+    "Our teacher is very patient."
+   ],
+   [
+    "student",
+    "aluno, estudante",
+    "She's a student at the university."
+   ],
+   [
+    "classroom",
+    "sala de aula",
+    "The classroom is on the first floor."
+   ],
+   [
+    "desk",
+    "carteira, escrivaninha",
+    "Put your books on the desk."
+   ],
+   [
+    "board",
+    "quadro, lousa",
+    "Write your name on the board."
+   ],
+   [
+    "book",
+    "livro",
+    "Open your books at page ten."
+   ],
+   [
+    "notebook",
+    "caderno",
+    "I write new words in my notebook."
+   ],
+   [
+    "pen",
+    "caneta",
+    "Can I borrow a pen?"
+   ],
+   [
+    "pencil",
+    "lápis",
+    "Use a pencil for the drawing."
+   ],
+   [
+    "rubber",
+    "borracha (britânico)",
+    "I need a rubber. I made a mistake."
+   ],
+   [
+    "ruler",
+    "régua",
+    "Draw a line with a ruler."
+   ],
+   [
+    "homework",
+    "lição de casa",
+    "I haven't done my homework."
+   ],
+   [
+    "test",
+    "prova, teste",
+    "We have a test on Friday."
+   ],
+   [
+    "question",
+    "pergunta",
+    "Can I ask a question?"
+   ],
+   [
+    "answer",
+    "resposta",
+    "I don't know the answer."
+   ],
+   [
+    "mistake",
+    "erro",
+    "Everybody makes mistakes."
+   ],
+   [
+    "subject",
+    "matéria, disciplina",
+    "My favourite subject is history."
+   ],
+   [
+    "maths",
+    "matemática (britânico)",
+    "Maths is difficult for me."
+   ],
+   [
+    "history",
+    "história (matéria)",
+    "We're studying history this term."
+   ],
+   [
+    "science",
+    "ciências",
+    "Science is my favourite subject."
+   ],
+   [
+    "break",
+    "intervalo",
+    "We play football at break."
+   ],
+   [
+    "learn",
+    "aprender",
+    "I want to learn Spanish too."
+   ],
+   [
+    "study",
+    "estudar",
+    "I study every evening."
+   ],
+   [
+    "read",
+    "ler",
+    "I read before I go to sleep."
+   ],
+   [
+    "write",
+    "escrever",
+    "Write the answers in English."
+   ],
+   [
+    "spell",
+    "soletrar",
+    "How do you spell your name?"
+   ],
+   [
+    "repeat",
+    "repetir",
+    "Can you repeat that, please?"
+   ]
+  ]
+ ],
+ [
+  "A1 · Verbos do dia a dia",
+  [
+   [
+    "eat",
+    "comer",
+    "We eat dinner at eight."
+   ],
+   [
+    "drink",
+    "beber",
+    "Drink more water."
+   ],
+   [
+    "sleep",
+    "dormir",
+    "I sleep eight hours a night."
+   ],
+   [
+    "cook",
+    "cozinhar",
+    "My dad cooks on Sundays."
+   ],
+   [
+    "clean",
+    "limpar",
+    "I clean the house on Saturdays."
+   ],
+   [
+    "wash",
+    "lavar",
+    "Wash your hands before lunch."
+   ],
+   [
+    "open",
+    "abrir",
+    "Can you open the window?"
+   ],
+   [
+    "close",
+    "fechar",
+    "Please close the door."
+   ],
+   [
+    "come",
+    "vir",
+    "Come here, please!"
+   ],
+   [
+    "go",
+    "ir",
+    "I go to work by bus."
+   ],
+   [
+    "walk",
+    "andar, caminhar",
+    "I walk to school."
+   ],
+   [
+    "run",
+    "correr",
+    "He runs every morning."
+   ],
+   [
+    "sit",
+    "sentar",
+    "Sit down, please."
+   ],
+   [
+    "stand",
+    "ficar de pé",
+    "Please stand up."
+   ],
+   [
+    "buy",
+    "comprar",
+    "I need to buy bread."
+   ],
+   [
+    "pay",
+    "pagar",
+    "Can I pay by card?"
+   ],
+   [
+    "sell",
+    "vender",
+    "They sell fresh fruit here."
+   ],
+   [
+    "give",
+    "dar",
+    "Give me your hand."
+   ],
+   [
+    "take",
+    "pegar, levar",
+    "Take an umbrella with you."
+   ],
+   [
+    "bring",
+    "trazer",
+    "Bring your book tomorrow."
+   ],
+   [
+    "send",
+    "enviar",
+    "I'll send you a message."
+   ],
+   [
+    "call",
+    "ligar, chamar",
+    "Call me after work."
+   ],
+   [
+    "listen",
+    "escutar",
+    "Listen to the music."
+   ],
+   [
+    "hear",
+    "ouvir",
+    "I can't hear you."
+   ],
+   [
+    "see",
+    "ver",
+    "I can see the sea from here."
+   ],
+   [
+    "look",
+    "olhar",
+    "Look at that bird!"
+   ],
+   [
+    "speak",
+    "falar (um idioma)",
+    "Do you speak English?"
+   ],
+   [
+    "talk",
+    "conversar",
+    "We talked for hours."
+   ],
+   [
+    "say",
+    "dizer",
+    "What did she say?"
+   ],
+   [
+    "tell",
+    "contar, dizer a alguém",
+    "Tell me a story."
+   ],
+   [
+    "ask",
+    "perguntar, pedir",
+    "Ask the teacher."
+   ],
+   [
+    "know",
+    "saber, conhecer",
+    "I don't know his name."
+   ],
+   [
+    "think",
+    "pensar, achar",
+    "I think it's a good idea."
+   ],
+   [
+    "want",
+    "querer",
+    "I want a glass of water."
+   ],
+   [
+    "need",
+    "precisar",
+    "I need some help."
+   ],
+   [
+    "help",
+    "ajudar",
+    "Can you help me?"
+   ],
+   [
+    "live",
+    "morar, viver",
+    "I live in a small town."
+   ],
+   [
+    "work",
+    "trabalhar",
+    "She works in a hospital."
+   ],
+   [
+    "play",
+    "jogar, brincar, tocar",
+    "The children play in the garden."
+   ],
+   [
+    "like",
+    "gostar",
+    "I like chocolate."
+   ],
+   [
+    "start",
+    "começar",
+    "The film starts at seven."
+   ],
+   [
+    "finish",
+    "terminar",
+    "I finish work at five."
+   ],
+   [
+    "wait",
+    "esperar",
+    "Wait for me!"
+   ]
+  ]
+ ],
+ [
+  "A2 · Adjetivos comuns",
+  [
+   [
+    "busy",
+    "ocupado",
+    "I'm busy right now."
+   ],
+   [
+    "free",
+    "livre; grátis",
+    "Are you free tonight?"
+   ],
+   [
+    "easy",
+    "fácil",
+    "The test was easy."
+   ],
+   [
+    "difficult",
+    "difícil",
+    "This exercise is difficult."
+   ],
+   [
+    "new",
+    "novo",
+    "I have a new phone."
+   ],
+   [
+    "old",
+    "velho, antigo",
+    "This is a very old building."
+   ],
+   [
+    "young",
+    "jovem",
+    "My parents are still young."
+   ],
+   [
+    "good",
+    "bom",
+    "That's a good idea."
+   ],
+   [
+    "bad",
+    "ruim",
+    "The weather is bad today."
+   ],
+   [
+    "fast",
+    "rápido",
+    "This train is very fast."
+   ],
+   [
+    "slow",
+    "lento",
+    "The internet is slow today."
+   ],
+   [
+    "dirty",
+    "sujo",
+    "Your shoes are dirty."
+   ],
+   [
+    "quiet",
+    "quieto, silencioso",
+    "The library is very quiet."
+   ],
+   [
+    "noisy",
+    "barulhento",
+    "Our street is noisy at night."
+   ],
+   [
+    "beautiful",
+    "bonito, lindo",
+    "What a beautiful day!"
+   ],
+   [
+    "ugly",
+    "feio",
+    "That building is a bit ugly."
+   ],
+   [
+    "interesting",
+    "interessante",
+    "The book is really interesting."
+   ],
+   [
+    "boring",
+    "chato, entediante",
+    "The film was boring."
+   ],
+   [
+    "funny",
+    "engraçado",
+    "My uncle is very funny."
+   ],
+   [
+    "kind",
+    "gentil, bondoso",
+    "Thank you, you're very kind."
+   ],
+   [
+    "friendly",
+    "simpático",
+    "The people here are very friendly."
+   ],
+   [
+    "lazy",
+    "preguiçoso",
+    "I'm a bit lazy on Sundays."
+   ],
+   [
+    "strong",
+    "forte",
+    "He's very strong."
+   ],
+   [
+    "weak",
+    "fraco",
+    "I feel weak today."
+   ],
+   [
+    "rich",
+    "rico",
+    "They're rich but they're not happy."
+   ],
+   [
+    "poor",
+    "pobre",
+    "Many poor families live here."
+   ],
+   [
+    "full",
+    "cheio",
+    "The bus is full."
+   ],
+   [
+    "empty",
+    "vazio",
+    "The fridge is empty!"
+   ],
+   [
+    "dangerous",
+    "perigoso",
+    "This road is dangerous at night."
+   ],
+   [
+    "safe",
+    "seguro",
+    "Is this area safe?"
+   ],
+   [
+    "famous",
+    "famoso",
+    "She's a famous singer."
+   ]
+  ]
+ ],
+ [
+  "A2 · Esportes e lazer",
+  [
+   [
+    "football",
+    "futebol",
+    "We play football on Saturdays."
+   ],
+   [
+    "basketball",
+    "basquete",
+    "He's tall, so he plays basketball."
+   ],
+   [
+    "tennis",
+    "tênis (esporte)",
+    "Do you want to play tennis?"
+   ],
+   [
+    "swimming",
+    "natação",
+    "Swimming is good exercise."
+   ],
+   [
+    "cycling",
+    "ciclismo, andar de bicicleta",
+    "Cycling is popular in Amsterdam."
+   ],
+   [
+    "running",
+    "corrida",
+    "Running clears my head."
+   ],
+   [
+    "gym",
+    "academia",
+    "I go to the gym three times a week."
+   ],
+   [
+    "team",
+    "time, equipe",
+    "Which team do you support?"
+   ],
+   [
+    "player",
+    "jogador",
+    "He's the best player on the team."
+   ],
+   [
+    "match",
+    "partida, jogo",
+    "The match starts at eight."
+   ],
+   [
+    "goal",
+    "gol; objetivo",
+    "What a goal!"
+   ],
+   [
+    "win",
+    "ganhar, vencer",
+    "We won the match!"
+   ],
+   [
+    "lose",
+    "perder",
+    "They lost three games in a row."
+   ],
+   [
+    "score",
+    "placar; marcar (ponto)",
+    "What's the score?"
+   ],
+   [
+    "ball",
+    "bola",
+    "Throw me the ball."
+   ],
+   [
+    "race",
+    "corrida (competição)",
+    "She won the race."
+   ],
+   [
+    "hobby",
+    "hobby, passatempo",
+    "My hobby is photography."
+   ],
+   [
+    "game",
+    "jogo",
+    "Let's play a game."
+   ],
+   [
+    "chess",
+    "xadrez",
+    "My grandfather taught me chess."
+   ],
+   [
+    "cards",
+    "cartas, baralho",
+    "We played cards all night."
+   ],
+   [
+    "dance",
+    "dançar; dança",
+    "Do you like to dance?"
+   ],
+   [
+    "sing",
+    "cantar",
+    "She sings in a choir."
+   ],
+   [
+    "draw",
+    "desenhar",
+    "My son loves to draw animals."
+   ],
+   [
+    "paint",
+    "pintar",
+    "I paint at the weekends."
+   ],
+   [
+    "camping",
+    "acampar",
+    "We go camping every summer."
+   ],
+   [
+    "fishing",
+    "pescaria",
+    "My dad goes fishing on Sundays."
+   ],
+   [
+    "concert",
+    "show",
+    "We're going to a concert tonight."
+   ],
+   [
+    "museum",
+    "museu",
+    "The museum is free on Mondays."
+   ],
+   [
+    "party",
+    "festa",
+    "Are you coming to my party?"
+   ],
+   [
+    "holiday",
+    "férias (britânico)",
+    "We're going on holiday in July."
+   ],
+   [
+    "relax",
+    "relaxar",
+    "I relax by reading."
+   ],
+   [
+    "fun",
+    "diversão; divertido",
+    "The trip was really fun."
+   ]
+  ]
+ ],
+ [
+  "A2 · Natureza e paisagem",
+  [
+   [
+    "nature",
+    "natureza",
+    "I love being in nature."
+   ],
+   [
+    "tree",
+    "árvore",
+    "There's a big tree in our garden."
+   ],
+   [
+    "flower",
+    "flor",
+    "These flowers smell lovely."
+   ],
+   [
+    "grass",
+    "grama",
+    "Don't walk on the grass."
+   ],
+   [
+    "leaf",
+    "folha",
+    "The leaves turn red in autumn."
+   ],
+   [
+    "forest",
+    "floresta",
+    "We walked through the forest."
+   ],
+   [
+    "mountain",
+    "montanha",
+    "We climbed the mountain."
+   ],
+   [
+    "hill",
+    "colina, morro",
+    "Our house is on a hill."
+   ],
+   [
+    "river",
+    "rio",
+    "The river is very clean."
+   ],
+   [
+    "lake",
+    "lago",
+    "We swam in the lake."
+   ],
+   [
+    "sea",
+    "mar",
+    "I love swimming in the sea."
+   ],
+   [
+    "ocean",
+    "oceano",
+    "The Atlantic Ocean is huge."
+   ],
+   [
+    "beach",
+    "praia",
+    "Let's go to the beach."
+   ],
+   [
+    "island",
+    "ilha",
+    "They live on a small island."
+   ],
+   [
+    "desert",
+    "deserto",
+    "It's very hot in the desert."
+   ],
+   [
+    "field",
+    "campo",
+    "The cows are in the field."
+   ],
+   [
+    "sky",
+    "céu",
+    "The sky is full of stars."
+   ],
+   [
+    "sun",
+    "sol",
+    "The sun is very strong today."
+   ],
+   [
+    "moon",
+    "lua",
+    "Look at the moon tonight!"
+   ],
+   [
+    "star",
+    "estrela",
+    "I can see a bright star."
+   ],
+   [
+    "cloud",
+    "nuvem",
+    "There isn't a cloud in the sky."
+   ],
+   [
+    "rock",
+    "rocha, pedra",
+    "We sat on a big rock."
+   ],
+   [
+    "sand",
+    "areia",
+    "The sand is very hot."
+   ],
+   [
+    "wave",
+    "onda",
+    "The waves are big today."
+   ],
+   [
+    "earth",
+    "terra, planeta Terra",
+    "The Earth goes around the sun."
+   ],
+   [
+    "countryside",
+    "campo, interior",
+    "I grew up in the countryside."
+   ],
+   [
+    "view",
+    "vista",
+    "What a beautiful view!"
+   ],
+   [
+    "plant",
+    "planta; plantar",
+    "I water my plants every day."
+   ],
+   [
+    "environment",
+    "meio ambiente",
+    "We must protect the environment."
+   ]
+  ]
+ ],
+ [
+  "A2 · Transporte",
+  [
+   [
+    "car",
+    "carro",
+    "My car is in the garage."
+   ],
+   [
+    "bus",
+    "ônibus",
+    "I take the bus to work."
+   ],
+   [
+    "train",
+    "trem",
+    "The train is late again."
+   ],
+   [
+    "plane",
+    "avião",
+    "The plane lands at six."
+   ],
+   [
+    "bike",
+    "bicicleta",
+    "I ride my bike to school."
+   ],
+   [
+    "motorbike",
+    "moto",
+    "He rides a motorbike."
+   ],
+   [
+    "taxi",
+    "táxi",
+    "Let's take a taxi."
+   ],
+   [
+    "underground",
+    "metrô (britânico)",
+    "I take the underground every day."
+   ],
+   [
+    "boat",
+    "barco",
+    "We took a boat to the island."
+   ],
+   [
+    "ship",
+    "navio",
+    "The ship leaves at noon."
+   ],
+   [
+    "station",
+    "estação",
+    "Meet me at the station."
+   ],
+   [
+    "airport",
+    "aeroporto",
+    "The airport is far from the city."
+   ],
+   [
+    "stop",
+    "ponto, parada",
+    "Get off at the next stop."
+   ],
+   [
+    "platform",
+    "plataforma",
+    "The train leaves from platform two."
+   ],
+   [
+    "driver",
+    "motorista",
+    "The bus driver was very kind."
+   ],
+   [
+    "passenger",
+    "passageiro",
+    "All passengers must wear seat belts."
+   ],
+   [
+    "road",
+    "estrada, rua",
+    "This road goes to the beach."
+   ],
+   [
+    "journey",
+    "viagem, trajeto",
+    "How long is the journey?"
+   ],
+   [
+    "miss",
+    "perder (o ônibus, o voo)",
+    "Hurry up, or we'll miss the train!"
+   ],
+   [
+    "catch",
+    "pegar (o ônibus, o trem)",
+    "I need to catch the 8:15 bus."
+   ],
+   [
+    "get on",
+    "entrar, embarcar",
+    "Get on the bus here."
+   ],
+   [
+    "get off",
+    "descer, desembarcar",
+    "Get off at the third stop."
+   ],
+   [
+    "park",
+    "estacionar; parque",
+    "Where can I park the car?"
+   ],
+   [
+    "fly",
+    "voar",
+    "We're flying to Rome tomorrow."
+   ],
+   [
+    "ride",
+    "andar (de bicicleta, cavalo)",
+    "Can you ride a bike?"
+   ],
+   [
+    "seat belt",
+    "cinto de segurança",
+    "Fasten your seat belt, please."
+   ],
+   [
+    "on foot",
+    "a pé",
+    "I go to work on foot."
+   ]
+  ]
+ ],
+ [
+  "A2 · Profissões",
+  [
+   [
+    "doctor",
+    "médico",
+    "You should see a doctor."
+   ],
+   [
+    "nurse",
+    "enfermeiro, enfermeira",
+    "My mum is a nurse."
+   ],
+   [
+    "dentist",
+    "dentista",
+    "I'm going to the dentist tomorrow."
+   ],
+   [
+    "lawyer",
+    "advogado",
+    "Her father is a lawyer."
+   ],
+   [
+    "engineer",
+    "engenheiro",
+    "He's an engineer at a car company."
+   ],
+   [
+    "police officer",
+    "policial",
+    "Ask a police officer for directions."
+   ],
+   [
+    "firefighter",
+    "bombeiro",
+    "Firefighters are very brave."
+   ],
+   [
+    "chef",
+    "chef de cozinha",
+    "The chef made a special dish."
+   ],
+   [
+    "waiter",
+    "garçom",
+    "The waiter brought the menu."
+   ],
+   [
+    "waitress",
+    "garçonete",
+    "The waitress was very friendly."
+   ],
+   [
+    "shop assistant",
+    "vendedor de loja",
+    "The shop assistant helped me find a size."
+   ],
+   [
+    "cashier",
+    "caixa (pessoa)",
+    "Pay the cashier at the front."
+   ],
+   [
+    "farmer",
+    "fazendeiro, agricultor",
+    "The farmer grows vegetables."
+   ],
+   [
+    "pilot",
+    "piloto",
+    "The pilot spoke to the passengers."
+   ],
+   [
+    "mechanic",
+    "mecânico",
+    "The mechanic fixed my car."
+   ],
+   [
+    "builder",
+    "pedreiro, construtor",
+    "The builders start work at seven."
+   ],
+   [
+    "journalist",
+    "jornalista",
+    "Olivia is a journalist."
+   ],
+   [
+    "writer",
+    "escritor",
+    "She's a famous writer."
+   ],
+   [
+    "artist",
+    "artista",
+    "My cousin is an artist."
+   ],
+   [
+    "musician",
+    "músico",
+    "He's a musician in a band."
+   ],
+   [
+    "actor",
+    "ator",
+    "The actor won an award."
+   ],
+   [
+    "scientist",
+    "cientista",
+    "Scientists study the climate."
+   ],
+   [
+    "manager",
+    "gerente",
+    "I'd like to speak to the manager."
+   ],
+   [
+    "receptionist",
+    "recepcionista",
+    "Ask the receptionist for a key."
+   ],
+   [
+    "cleaner",
+    "faxineiro, faxineira",
+    "The cleaner comes on Mondays."
+   ],
+   [
+    "hairdresser",
+    "cabeleireiro",
+    "My hairdresser is very good."
+   ],
+   [
+    "retired",
+    "aposentado",
+    "My grandparents are retired."
+   ]
+  ]
+ ],
+ [
+  "A2 · Comida e cozinha",
+  [
+   [
+    "meal",
+    "refeição",
+    "Breakfast is my favourite meal."
+   ],
+   [
+    "snack",
+    "lanche",
+    "I have a snack at four."
+   ],
+   [
+    "butter",
+    "manteiga",
+    "Can you pass the butter?"
+   ],
+   [
+    "egg",
+    "ovo",
+    "I eat an egg every morning."
+   ],
+   [
+    "beans",
+    "feijão",
+    "My mum makes delicious beans."
+   ],
+   [
+    "pasta",
+    "macarrão, massa",
+    "We're having pasta tonight."
+   ],
+   [
+    "meat",
+    "carne",
+    "I don't eat red meat."
+   ],
+   [
+    "beef",
+    "carne de vaca",
+    "This beef is very tender."
+   ],
+   [
+    "salad",
+    "salada",
+    "I'll have a salad, please."
+   ],
+   [
+    "soup",
+    "sopa",
+    "Soup is perfect on a cold day."
+   ],
+   [
+    "potato",
+    "batata",
+    "Peel the potatoes, please."
+   ],
+   [
+    "tomato",
+    "tomate",
+    "Add some tomato to the salad."
+   ],
+   [
+    "onion",
+    "cebola",
+    "Onions make me cry."
+   ],
+   [
+    "garlic",
+    "alho",
+    "This sauce has a lot of garlic."
+   ],
+   [
+    "fruit",
+    "fruta",
+    "I eat fruit every day."
+   ],
+   [
+    "apple",
+    "maçã",
+    "An apple a day keeps the doctor away."
+   ],
+   [
+    "banana",
+    "banana",
+    "Bananas are good for energy."
+   ],
+   [
+    "lemon",
+    "limão (siciliano)",
+    "Add some lemon to the fish."
+   ],
+   [
+    "strawberry",
+    "morango",
+    "I love strawberry ice cream."
+   ],
+   [
+    "sugar",
+    "açúcar",
+    "No sugar in my coffee, please."
+   ],
+   [
+    "salt",
+    "sal",
+    "Pass the salt, please."
+   ],
+   [
+    "pepper",
+    "pimenta-do-reino",
+    "Add salt and pepper."
+   ],
+   [
+    "oil",
+    "óleo, azeite",
+    "Fry the onions in a little oil."
+   ],
+   [
+    "fry",
+    "fritar",
+    "Fry the eggs for two minutes."
+   ],
+   [
+    "boil",
+    "ferver, cozinhar na água",
+    "Boil the pasta for ten minutes."
+   ],
+   [
+    "bake",
+    "assar (no forno)",
+    "I baked a cake for her birthday."
+   ],
+   [
+    "taste",
+    "gosto; provar",
+    "This soup tastes great."
+   ],
+   [
+    "delicious",
+    "delicioso",
+    "The food was delicious."
+   ],
+   [
+    "sweet",
+    "doce",
+    "This cake is too sweet."
+   ]
+  ]
+ ],
+ [
+  "A2 · Casa: móveis e objetos",
+  [
+   [
+    "dining room",
+    "sala de jantar",
+    "Dinner is in the dining room."
+   ],
+   [
+    "garden",
+    "jardim, quintal",
+    "The children are in the garden."
+   ],
+   [
+    "wall",
+    "parede",
+    "There's a clock on the wall."
+   ],
+   [
+    "door",
+    "porta",
+    "Close the door, please."
+   ],
+   [
+    "sofa",
+    "sofá",
+    "The dog sleeps on the sofa."
+   ],
+   [
+    "armchair",
+    "poltrona",
+    "My dad's armchair is very old."
+   ],
+   [
+    "table",
+    "mesa",
+    "Put the plates on the table."
+   ],
+   [
+    "chair",
+    "cadeira",
+    "Take a chair and sit down."
+   ],
+   [
+    "bed",
+    "cama",
+    "I go to bed at eleven."
+   ],
+   [
+    "pillow",
+    "travesseiro",
+    "I need a soft pillow."
+   ],
+   [
+    "blanket",
+    "cobertor",
+    "It's cold. I need another blanket."
+   ],
+   [
+    "wardrobe",
+    "guarda-roupa",
+    "My clothes are in the wardrobe."
+   ],
+   [
+    "shelf",
+    "prateleira",
+    "The books are on the shelf."
+   ],
+   [
+    "mirror",
+    "espelho",
+    "Look in the mirror."
+   ],
+   [
+    "lamp",
+    "luminária, abajur",
+    "Turn on the lamp, please."
+   ],
+   [
+    "carpet",
+    "carpete, tapete",
+    "We have a red carpet in the hall."
+   ],
+   [
+    "curtains",
+    "cortinas",
+    "Close the curtains, please."
+   ],
+   [
+    "cooker",
+    "fogão (britânico)",
+    "The cooker is new."
+   ],
+   [
+    "oven",
+    "forno",
+    "The cake is in the oven."
+   ],
+   [
+    "sink",
+    "pia",
+    "The dishes are in the sink."
+   ],
+   [
+    "shower",
+    "chuveiro; banho",
+    "I take a shower every morning."
+   ],
+   [
+    "bath",
+    "banheira; banho",
+    "I love a hot bath."
+   ],
+   [
+    "towel",
+    "toalha",
+    "Can I have a clean towel?"
+   ],
+   [
+    "key",
+    "chave",
+    "Don't lose your keys!"
+   ],
+   [
+    "plate",
+    "prato",
+    "Put the plates on the table."
+   ],
+   [
+    "cup",
+    "xícara",
+    "Would you like a cup of coffee?"
+   ],
+   [
+    "glass",
+    "copo; vidro",
+    "Can I have a glass of water?"
+   ],
+   [
+    "knife",
+    "faca",
+    "Be careful with that knife."
+   ],
+   [
+    "fork",
+    "garfo",
+    "I need a fork, please."
+   ],
+   [
+    "spoon",
+    "colher",
+    "Eat your soup with a spoon."
+   ]
+  ]
+ ],
+ [
+  "A2 · Tempo e frequência",
+  [
+   [
+    "always",
+    "sempre",
+    "I always drink coffee in the morning."
+   ],
+   [
+    "usually",
+    "geralmente",
+    "I usually walk to work."
+   ],
+   [
+    "often",
+    "frequentemente",
+    "We often go to the beach."
+   ],
+   [
+    "sometimes",
+    "às vezes",
+    "Sometimes I work at home."
+   ],
+   [
+    "rarely",
+    "raramente",
+    "He rarely eats meat."
+   ],
+   [
+    "never",
+    "nunca",
+    "I never drink coffee at night."
+   ],
+   [
+    "once",
+    "uma vez",
+    "I go swimming once a week."
+   ],
+   [
+    "twice",
+    "duas vezes",
+    "We eat out twice a month."
+   ],
+   [
+    "every day",
+    "todo dia",
+    "I study English every day."
+   ],
+   [
+    "today",
+    "hoje",
+    "It's sunny today."
+   ],
+   [
+    "tomorrow",
+    "amanhã",
+    "See you tomorrow!"
+   ],
+   [
+    "yesterday",
+    "ontem",
+    "I saw her yesterday."
+   ],
+   [
+    "tonight",
+    "hoje à noite",
+    "What are you doing tonight?"
+   ],
+   [
+    "morning",
+    "manhã",
+    "I run in the morning."
+   ],
+   [
+    "afternoon",
+    "tarde",
+    "We have class in the afternoon."
+   ],
+   [
+    "evening",
+    "noite (início)",
+    "Let's meet in the evening."
+   ],
+   [
+    "night",
+    "noite",
+    "I can't sleep at night."
+   ],
+   [
+    "week",
+    "semana",
+    "I work five days a week."
+   ],
+   [
+    "weekend",
+    "fim de semana",
+    "What are you doing this weekend?"
+   ],
+   [
+    "month",
+    "mês",
+    "My birthday is next month."
+   ],
+   [
+    "year",
+    "ano",
+    "I started learning English last year."
+   ],
+   [
+    "early",
+    "cedo",
+    "I get up early."
+   ],
+   [
+    "late",
+    "tarde; atrasado",
+    "Sorry I'm late!"
+   ],
+   [
+    "soon",
+    "logo, em breve",
+    "See you soon!"
+   ],
+   [
+    "now",
+    "agora",
+    "I'm busy now."
+   ],
+   [
+    "later",
+    "mais tarde",
+    "Call me later."
+   ],
+   [
+    "ago",
+    "atrás (tempo)",
+    "I moved here two years ago."
+   ],
+   [
+    "already",
+    "já",
+    "I've already eaten."
+   ],
+   [
+    "still",
+    "ainda",
+    "Are you still at work?"
+   ],
+   [
+    "yet",
+    "ainda (em perguntas e negativas)",
+    "I haven't finished yet."
+   ]
   ]
  ]
 ]
