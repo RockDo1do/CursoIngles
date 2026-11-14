@@ -1745,6 +1745,606 @@
     ]
    ],
    "modelo": "Introduction\nThe purpose of this proposal is to recommend a staff wellbeing programme for the coming year.\nThe problem\nAccording to our recent staff survey, 46% of employees report feeling stressed at least three days a week, and sick leave has risen by 12% since last year. This is affecting both morale and productivity.\nThe proposal\nI propose a programme with three elements: a weekly yoga or stretching session during lunchtime, access to a confidential counselling service, and a clear policy discouraging emails after 7 p.m. Furthermore, managers would receive short training on recognising signs of burnout.\nCosts\nThe total cost is estimated at £18,000 per year, mainly for the counselling service and the instructor. This represents a modest investment compared with the cost of replacing experienced staff.\nExpected benefits\nSimilar programmes in other companies have been shown to reduce sick leave and improve retention. In addition, they would strengthen our reputation as a responsible employer.\nConclusion\nIn conclusion, I recommend approving a six-month pilot, after which its impact can be evaluated through a follow-up survey."
+  },
+  {
+   "id": "e17",
+   "arco": 1,
+   "nivel": "A1",
+   "tipo": "bilhete",
+   "titulo": "Bilhete para o colega de casa",
+   "pedido": "Você vai passar o dia fora. Escreva um bilhete para a pessoa que mora com você: onde você está, a que horas volta e um pedido (por exemplo, dar comida ao gato). Cerca de 30 palavras.",
+   "min": 25,
+   "precisa": [
+    [
+     "\\b(hi|hello|dear)\\b",
+     "uma saudação (Hi...)"
+    ],
+    [
+     "\\bi'?m (at|in)\\b|\\bi am (at|in)\\b",
+     "onde você está (I'm at...)"
+    ],
+    [
+     "\\b(back|home) (at|by|after|before)\\b|\\buntil\\b",
+     "a que horas volta (I'm back at...)"
+    ],
+    [
+     "\\b(can you|could you|please)\\b",
+     "um pedido (Can you...? / Please...)"
+    ]
+   ],
+   "evitar": [],
+   "modelo": "Hi Ana,\nI'm at my mother's house today. I'm back at seven. Can you feed the cat at five, please? Her food is in the kitchen. There's pizza in the fridge for you.\nThanks!\nBia"
+  },
+  {
+   "id": "e18",
+   "arco": 2,
+   "nivel": "A1",
+   "tipo": "mensagem",
+   "titulo": "Meu fim de semana",
+   "pedido": "Escreva uma mensagem para um amigo dizendo o que você normalmente faz no fim de semana e do que você gosta. Use o presente simples. Cerca de 40 palavras.",
+   "min": 35,
+   "precisa": [
+    [
+     "\\bon (saturday|sunday|saturdays|sundays|the weekend)\\b|\\bat the weekend\\b",
+     "quando (on Saturday...)"
+    ],
+    [
+     "\\b(usually|always|often|sometimes|never)\\b",
+     "um advérbio de frequência"
+    ],
+    [
+     "\\b(like|love|enjoy)\\b",
+     "do que você gosta (I like...)"
+    ],
+    [
+     "\\b(and|but)\\b",
+     "and ou but para ligar as ideias"
+    ]
+   ],
+   "evitar": [],
+   "modelo": "Hi Leo! On Saturday I usually get up late and have a big breakfast. In the afternoon I go to the park with my dog. On Sunday I always visit my grandparents. I love Sunday lunch at their house, but I don't like washing the dishes!"
+  },
+  {
+   "id": "e19",
+   "arco": 3,
+   "nivel": "A2",
+   "tipo": "convite",
+   "titulo": "Convite para uma festa",
+   "pedido": "Escreva um e-mail convidando amigos para a sua festa de aniversário: quando e onde vai ser, o que vocês vão fazer e o que cada um deve levar. Cerca de 60 palavras.",
+   "min": 50,
+   "precisa": [
+    [
+     "\\b(hi|hello|dear)\\b",
+     "uma saudação"
+    ],
+    [
+     "\\b(on (monday|tuesday|wednesday|thursday|friday|saturday|sunday)|at \\w+ o'?clock|at \\d)",
+     "quando (on Saturday at...)"
+    ],
+    [
+     "\\bgoing to\\b|\\bwill\\b|'ll\\b",
+     "o futuro (we're going to...)"
+    ],
+    [
+     "\\b(bring|please|can you)\\b",
+     "o que levar (Please bring...)"
+    ],
+    [
+     "\\b(see you|love|bye|cheers)\\b",
+     "uma despedida"
+    ]
+   ],
+   "evitar": [],
+   "modelo": "Hi everyone,\nI'm having a party for my thirtieth birthday on Saturday at eight o'clock. It's at my flat, 24 Park Road. We're going to have pizza, and my brother is going to play the guitar. Please bring something to drink and your favourite music. Can you tell me by Thursday if you can come?\nSee you on Saturday!\nCarla"
+  },
+  {
+   "id": "e20",
+   "arco": 3,
+   "nivel": "A2",
+   "tipo": "mensagem",
+   "titulo": "Desculpe, não posso ir",
+   "pedido": "Um amigo convidou você para jantar, mas você não pode ir. Escreva uma mensagem pedindo desculpas, explicando por quê e sugerindo outro dia. Cerca de 50 palavras.",
+   "min": 40,
+   "precisa": [
+    [
+     "\\b(sorry|i'?m afraid)\\b",
+     "um pedido de desculpas (I'm sorry...)"
+    ],
+    [
+     "\\bbecause\\b|\\bi have to\\b",
+     "o motivo (because / I have to)"
+    ],
+    [
+     "\\b(how about|what about|shall we|could we|can we)\\b",
+     "outra sugestão (How about...?)"
+    ]
+   ],
+   "evitar": [],
+   "modelo": "Hi Tom,\nThanks for the invitation! I'm really sorry, but I can't come to dinner on Friday because I have to work late. My boss needs a report for Monday. How about next Saturday? I can cook for you this time. Let me know!\nPaula"
+  },
+  {
+   "id": "e21",
+   "arco": 7,
+   "nivel": "A2",
+   "tipo": "e-mail",
+   "titulo": "Pedido de informações",
+   "pedido": "Você quer fazer um curso de natação. Escreva um e-mail para o clube perguntando os horários, o preço e se você precisa levar alguma coisa. Cerca de 60 palavras.",
+   "min": 50,
+   "precisa": [
+    [
+     "\\b(dear|hello)\\b",
+     "uma saudação (Dear... / Hello)"
+    ],
+    [
+     "\\bi'?d like\\b|\\bi would like\\b|\\bi want\\b",
+     "o que você quer (I'd like to...)"
+    ],
+    [
+     "\\b(what time|when|how much|do i need|could you)\\b",
+     "as perguntas (What time...? How much...?)"
+    ],
+    [
+     "\\b(thank you|thanks|best wishes|kind regards|regards)\\b",
+     "um agradecimento ou despedida"
+    ]
+   ],
+   "evitar": [],
+   "modelo": "Dear Sir or Madam,\nI'd like to join a swimming course for adults at your club. Could you tell me what time the classes are? I work until six, so evening classes are better for me. How much does the course cost? Also, do I need to bring a towel or a swimming cap?\nThank you,\nMarcos Lima"
+  },
+  {
+   "id": "e22",
+   "arco": 4,
+   "nivel": "B1",
+   "tipo": "artigo",
+   "titulo": "Meu lugar favorito",
+   "pedido": "Uma revista em inglês pede artigos com o título \"Um lugar especial para mim\". Escreva sobre um lugar que você adora: onde fica, como é, por que é especial e uma lembrança que você tem dele. Cerca de 100 palavras, como no B1 Preliminary.",
+   "min": 80,
+   "precisa": [
+    [
+     "\\b(is|are) (in|near|on)\\b|\\bis located\\b",
+     "onde fica (It is in...)"
+    ],
+    [
+     "\\b(because|that's why|the reason)\\b",
+     "por que é especial (because...)"
+    ],
+    [
+     "\\b(remember|when i was|last|ago|went|was)\\b",
+     "uma lembrança no passado"
+    ],
+    [
+     "\\?",
+     "uma pergunta para o leitor (Have you ever...?)"
+    ]
+   ],
+   "evitar": [],
+   "modelo": "Have you ever had a place that makes you feel calm? For me, it's my grandparents' farm. It is in a small town near the mountains, about two hours from my city. There is a big garden with orange trees, and a river where you can swim.\nIt's special because I spent every summer there as a child. I remember waking up early to help my grandfather with the animals, and the smell of my grandmother's bread.\nNow I live in a busy city, but when I feel stressed, I close my eyes and imagine that garden. If you ever visit the region, don't miss it!"
+  },
+  {
+   "id": "e23",
+   "arco": 10,
+   "nivel": "B1",
+   "tipo": "história",
+   "titulo": "Quando abri a porta...",
+   "pedido": "Escreva uma história que comece com a frase \"When I opened the door, I couldn't believe my eyes.\" Use os tempos do passado e um final interessante. Cerca de 100 palavras.",
+   "min": 80,
+   "precisa": [
+    [
+     "when i opened the door",
+     "a frase de abertura"
+    ],
+    [
+     "\\b(was|were) \\w+ing\\b",
+     "o passado contínuo (was waiting...)"
+    ],
+    [
+     "\\b(had|hadn't) \\w+(ed|en|ne|t)\\b",
+     "o past perfect (had organised...)"
+    ],
+    [
+     "\\b(then|after that|suddenly|in the end|finally)\\b",
+     "palavras de sequência"
+    ]
+   ],
+   "evitar": [],
+   "modelo": "When I opened the door, I couldn't believe my eyes. All my friends were standing in my living room, and they were shouting \"Happy birthday!\" I was very surprised, because I thought everyone had forgotten.\nMy sister had organised everything. She had taken my keys that morning and given them to my best friend. While I was working, they were decorating the flat with balloons.\nThen we ate an enormous chocolate cake and danced until midnight. In the end, it was the best birthday of my life, and I still don't know how my sister kept the secret!"
+  },
+  {
+   "id": "e24",
+   "arco": 7,
+   "nivel": "B1",
+   "tipo": "e-mail",
+   "titulo": "Conselhos para um amigo estrangeiro",
+   "pedido": "Um amigo do exterior vai visitar o Brasil pela primeira vez e pediu dicas. Escreva um e-mail com sugestões de lugares, comida e cuidados. Cerca de 100 palavras.",
+   "min": 80,
+   "precisa": [
+    [
+     "\\b(should|shouldn't|must|have to)\\b",
+     "conselhos (you should / you must)"
+    ],
+    [
+     "\\b(if you)\\b",
+     "uma condicional (If you..., you'll...)"
+    ],
+    [
+     "\\b(also|another|as well|too)\\b",
+     "mais de uma dica (also, another)"
+    ],
+    [
+     "\\b(can'?t wait|see you|take care|have a great)\\b",
+     "uma despedida simpática"
+    ]
+   ],
+   "evitar": [],
+   "modelo": "Hi Emma,\nI'm so happy you're coming to Brazil! You should definitely spend a few days in Rio, but you should also visit Salvador, because the food and music there are amazing. If you like nature, you'll love Chapada Diamantina.\nYou must try feijoada and pão de queijo. Another thing: always carry a bottle of water and some sun cream, because it's really hot.\nBe careful with your phone in crowded places, and use apps for taxis instead of stopping cars in the street.\nI can't wait to see you!\nRafaela"
+  },
+  {
+   "id": "e25",
+   "arco": 5,
+   "nivel": "B2",
+   "tipo": "artigo",
+   "titulo": "Uma tecnologia que mudou minha vida",
+   "pedido": "Uma revista pede artigos: \"Que tecnologia mais mudou a sua vida, e foi para melhor?\" Escreva um artigo interessante para o leitor, com um título, exemplos e a sua opinião. Entre 140 e 190 palavras, como no B2 First.",
+   "min": 140,
+   "precisa": [
+    [
+     "^[^\\n]{3,60}\\n",
+     "um título na primeira linha"
+    ],
+    [
+     "\\?",
+     "uma pergunta para envolver o leitor"
+    ],
+    [
+     "\\b(for example|for instance|such as)\\b",
+     "um exemplo concreto"
+    ],
+    [
+     "\\b(however|although|on the other hand|whereas)\\b",
+     "um contraste (however, although)"
+    ],
+    [
+     "\\b(overall|all in all|in conclusion|to sum up)\\b",
+     "uma conclusão"
+    ]
+   ],
+   "evitar": [],
+   "modelo": "The phone that taught me English\nCan a small device change your life? I used to think smartphones were just for social media, but mine became my teacher.\nFive years ago, I could barely understand a film without subtitles. Then I started using my phone differently. For example, I changed the language to English, listened to podcasts on the bus and practised speaking with people from other countries through video calls. Little by little, words I had heard a hundred times started to make sense.\nThe biggest change was confidence. When I travelled to Canada last year, I ordered food, asked for directions and even made friends, all in English.\nHowever, technology is not magic. The same phone that helped me learn also stole hours of my time with endless videos. I had to turn off notifications and set clear goals.\nAll in all, I believe my phone changed my life for the better, but only because I decided how to use it. The technology was the tool; the effort was mine."
+  },
+  {
+   "id": "e26",
+   "arco": 10,
+   "nivel": "B2",
+   "tipo": "resenha",
+   "titulo": "Resenha de uma série ou filme",
+   "pedido": "Um site de cultura pede resenhas. Escreva sobre uma série ou um filme que você viu recentemente: do que se trata (sem contar o final), o que funciona, o que não funciona e para quem você recomenda. Entre 140 e 190 palavras.",
+   "min": 140,
+   "precisa": [
+    [
+     "\\b(is about|tells the story|follows|is set in)\\b",
+     "do que se trata (It tells the story of...)"
+    ],
+    [
+     "\\b(acting|cast|plot|script|soundtrack|performance|characters?)\\b",
+     "vocabulário de resenha (plot, cast, acting)"
+    ],
+    [
+     "\\b(however|although|despite|the only)\\b",
+     "um ponto negativo com contraste"
+    ],
+    [
+     "\\b(recommend|worth|if you (like|enjoy|love))\\b",
+     "a recomendação (I'd recommend it to...)"
+    ]
+   ],
+   "evitar": [],
+   "modelo": "If you enjoy slow, clever mysteries, The Quiet Harbour is worth your time. This six-episode series is set in a small fishing town in Scotland and follows a young police officer who returns home to investigate the disappearance of her childhood friend.\nWhat makes the series special is its atmosphere. The grey sea, the empty streets and the excellent soundtrack create a constant feeling of tension. The cast is also impressive, especially the actor who plays the main character's father, a man who clearly knows more than he says.\nThe plot is complex but never confusing, and each episode ends with a small surprise that makes you want to watch the next one immediately.\nHowever, the series is not perfect. The fourth episode is too slow, and one or two secondary characters are not developed enough. Despite this, the final episode answers almost every question in a satisfying way.\nI would recommend it to anyone who prefers intelligent stories to fast action. Watch it on a rainy weekend, with the lights off."
+  },
+  {
+   "id": "e27",
+   "arco": 5,
+   "nivel": "B2",
+   "tipo": "ensaio",
+   "titulo": "Trabalhar de casa",
+   "pedido": "Escreva um ensaio (140 a 190 palavras): \"Trabalhar de casa é melhor para os funcionários do que trabalhar no escritório?\" Fale da produtividade, da vida social e dê mais uma ideia sua.",
+   "min": 140,
+   "precisa": [
+    [
+     "\\b(in my opinion|i believe|in my view|personally|from my point of view)\\b",
+     "sua opinião"
+    ],
+    [
+     "\\b(firstly|first of all|to begin with)\\b",
+     "a primeira ideia (Firstly...)"
+    ],
+    [
+     "\\b(moreover|furthermore|in addition|what is more)\\b",
+     "mais um argumento (Moreover...)"
+    ],
+    [
+     "\\b(on the other hand|however|although|nevertheless)\\b",
+     "o outro lado"
+    ],
+    [
+     "\\b(in conclusion|to sum up|all things considered|to conclude)\\b",
+     "uma conclusão"
+    ]
+   ],
+   "evitar": [],
+   "modelo": "Since 2020, millions of people have discovered what it is like to work from home. But is it really better than going to the office?\nFirstly, many employees say they are more productive at home. They avoid long commutes, have fewer interruptions and can organise their day around the tasks that need the most concentration. The time saved on travel can also be used for exercise or family.\nMoreover, working from home gives people more freedom to live where they want. Some have left expensive cities and moved to smaller towns, where housing is cheaper.\nOn the other hand, the office offers something a screen cannot: real human contact. Young employees, in particular, learn a lot by watching experienced colleagues, and many remote workers say they feel lonely. In addition, it can be hard to switch off when your home is also your office.\nIn conclusion, I believe a mix of both is the best solution. Two or three days at home allow people to concentrate, while time in the office keeps teams connected."
+  },
+  {
+   "id": "e28",
+   "arco": 7,
+   "nivel": "B2",
+   "tipo": "e-mail informal",
+   "titulo": "Conselho para um amigo indeciso",
+   "pedido": "Um amigo escreveu dizendo que recebeu uma proposta de emprego em outro país, mas está com medo de aceitar. Responda dando a sua opinião, os prós e os contras e um conselho. Entre 140 e 190 palavras.",
+   "min": 140,
+   "precisa": [
+    [
+     "\\b(hi|dear|hey)\\b",
+     "uma saudação informal"
+    ],
+    [
+     "\\bif i were you\\b|\\bi'?d (definitely |probably )?(take|accept|go)\\b",
+     "um conselho (If I were you, I'd...)"
+    ],
+    [
+     "\\b(on the one hand|on the other hand|however|although|then again)\\b",
+     "os prós e os contras"
+    ],
+    [
+     "\\b(might|may|could)\\b",
+     "possibilidades (it might be hard...)"
+    ],
+    [
+     "\\b(let me know|keep me posted|good luck|take care|write soon)\\b",
+     "um encerramento amigável"
+    ]
+   ],
+   "evitar": [],
+   "modelo": "Hi Pedro,\nWhat amazing news! I can understand why you're nervous, though. Moving to another country is a huge decision.\nOn the one hand, this job sounds like a fantastic opportunity. You've always wanted to work for an international company, and the salary is much better than what you earn now. You'd also improve your English every day without even trying.\nOn the other hand, I know how close you are to your family, and the first months might be lonely. The weather in Germany could also be a shock for someone from Fortaleza!\nIf I were you, I'd take the job. You're young, you don't have children, and if it doesn't work out, you can always come back. Very few people regret an adventure, but many regret the chances they didn't take.\nOne more thing: before you decide, ask if you can talk to someone who already works there. They might give you a more realistic picture.\nLet me know what you decide!\nLuísa"
+  },
+  {
+   "id": "e29",
+   "arco": 7,
+   "nivel": "B2",
+   "tipo": "relatório",
+   "titulo": "Relatório sobre o centro esportivo",
+   "pedido": "O diretor do centro esportivo do seu bairro pediu um relatório: o que funciona bem, o que os frequentadores reclamam e suas recomendações. Use títulos. Entre 140 e 190 palavras.",
+   "min": 140,
+   "precisa": [
+    [
+     "\\b(introduction|purpose|aim)\\b",
+     "um título de introdução (Introduction)"
+    ],
+    [
+     "\\b(the majority of|most (users|members|people)|a number of|several)\\b",
+     "quantos pensam assim (the majority of users...)"
+    ],
+    [
+     "\\b(complain|complaint|dissatisfied|criticised)\\b",
+     "as reclamações"
+    ],
+    [
+     "\\b(recommend|recommendation|suggest|it would be)\\b",
+     "as recomendações"
+    ],
+    [
+     "\\b(in conclusion|to conclude|conclusion|overall)\\b",
+     "uma conclusão"
+    ]
+   ],
+   "evitar": [],
+   "modelo": "Introduction\nThe aim of this report is to describe the strengths and weaknesses of the Riverside Sports Centre and to make recommendations, based on conversations with twenty regular users.\nStrengths\nThe majority of users are happy with the swimming pool, which is clean and well maintained. The fitness classes are also popular, and several people praised the friendly, professional instructors.\nProblems\nHowever, a number of users complain about the changing rooms, which are old and often crowded in the evening. Others are dissatisfied with the opening hours at weekends, when the centre closes at four in the afternoon. Finally, the car park is too small, so many people arrive late for their classes.\nRecommendations\nFirstly, I recommend renovating the changing rooms as soon as possible. Secondly, it would be a good idea to stay open until eight on Saturdays. Thirdly, the centre could offer a discount to people who come by bike or bus.\nConclusion\nOverall, users value the centre, but these changes would make it much more comfortable."
+  },
+  {
+   "id": "e30",
+   "arco": 5,
+   "nivel": "B2",
+   "tipo": "ensaio",
+   "titulo": "Turismo: bênção ou problema?",
+   "pedido": "Escreva um ensaio (140 a 190 palavras): \"O turismo traz mais benefícios do que problemas para as cidades?\" Fale da economia, do impacto nos moradores e dê mais uma ideia sua.",
+   "min": 140,
+   "precisa": [
+    [
+     "\\b(in my opinion|i believe|in my view|personally)\\b",
+     "sua opinião"
+    ],
+    [
+     "\\b(economy|economic|jobs|income)\\b",
+     "a ideia da economia"
+    ],
+    [
+     "\\b(residents|locals|local people)\\b",
+     "o impacto nos moradores"
+    ],
+    [
+     "\\b(however|on the other hand|although|whereas)\\b",
+     "um contraste"
+    ],
+    [
+     "\\b(in conclusion|to sum up|all things considered)\\b",
+     "uma conclusão"
+    ]
+   ],
+   "evitar": [],
+   "modelo": "Every year, more than a billion people travel abroad as tourists. For many cities, this is both an opportunity and a challenge.\nThere is no doubt that tourism helps the economy. Hotels, restaurants and shops create thousands of jobs, and the money that visitors spend often pays for the restoration of old buildings and museums. For small towns with few industries, tourists can be the main source of income.\nHowever, too many visitors can make life difficult for local residents. In cities like Lisbon and Barcelona, flats that used to be homes are now rented to tourists, so rents have risen and many families have had to move out. Crowded streets and noise are also common complaints.\nAnother point is the environment. Flights and cruise ships produce large amounts of pollution, and popular natural areas can be damaged by thousands of feet.\nIn conclusion, I believe tourism brings more benefits than problems, but only when it is controlled. Limits on short-term rentals and taxes on visitors can help cities welcome tourists without losing their soul."
+  },
+  {
+   "id": "e31",
+   "arco": 6,
+   "nivel": "C1",
+   "tipo": "ensaio",
+   "titulo": "Onde investir o dinheiro público",
+   "pedido": "A prefeitura da sua cidade tem verba para um só projeto: um novo hospital ou a ampliação do transporte público. Escreva um ensaio comparando as duas opções e defendendo a que você considera mais importante, com justificativa. Entre 220 e 260 palavras, como no C1 Advanced.",
+   "min": 220,
+   "precisa": [
+    [
+     "\\b(whereas|while|by contrast|in contrast)\\b",
+     "uma comparação (whereas, by contrast)"
+    ],
+    [
+     "\\b(admittedly|it could be argued|some would argue|it is true that)\\b",
+     "reconhecer o outro lado (Admittedly...)"
+    ],
+    [
+     "\\b(nevertheless|nonetheless|even so|that said)\\b",
+     "um contraste formal (Nevertheless...)"
+    ],
+    [
+     "\\b(consequently|therefore|as a result|thus)\\b",
+     "consequência (consequently, therefore)"
+    ],
+    [
+     "\\b(on balance|all things considered|in conclusion|ultimately)\\b",
+     "a conclusão (On balance...)"
+    ]
+   ],
+   "evitar": [],
+   "modelo": "When a city can afford only one major project, its choice reveals what it values most. In the case of a new hospital versus an expanded public transport network, both options would clearly benefit residents, but in rather different ways.\nA new hospital offers an immediate and visible advantage. Waiting lists would shrink, fewer patients would need to travel to neighbouring towns, and the project would create hundreds of skilled jobs. Admittedly, it is difficult to argue against anything that saves lives directly.\nBetter public transport, by contrast, produces benefits that are less dramatic but far wider. A reliable network of buses and trams would reduce traffic, cut air pollution and give people without cars access to jobs, schools and, indeed, existing hospitals. Whereas a hospital serves people when they are ill, transport improves the daily lives of almost everyone.\nNevertheless, the decisive factor, in my view, is prevention. Air pollution and inactive lifestyles are major causes of heart and lung disease. Consequently, a city that makes it easy to leave the car at home is, in the long term, also investing in public health. A hospital treats the consequences of problems that better transport could partly prevent.\nOn balance, therefore, I would argue that expanding public transport is the wiser investment. That said, the city should also look for regional or national funding to improve its health services, so that residents do not have to choose between getting to work and getting treatment."
+  },
+  {
+   "id": "e32",
+   "arco": 8,
+   "nivel": "C1",
+   "tipo": "resenha",
+   "titulo": "Resenha de um livro",
+   "pedido": "Uma revista literária pede resenhas de livros que \"mudam a forma como vemos o mundo\". Escreva sobre um livro que você leu: o tema, o estilo do autor, o que ele faz bem, uma limitação e para quem é. Entre 220 e 260 palavras.",
+   "min": 220,
+   "precisa": [
+    [
+     "\\b(explores|examines|deals with|centres on|focuses on)\\b",
+     "o tema (The book explores...)"
+    ],
+    [
+     "\\b(style|prose|tone|writing|narrative)\\b",
+     "o estilo do autor"
+    ],
+    [
+     "\\b(particularly|especially|remarkably|notably)\\b",
+     "um ponto alto com precisão (particularly...)"
+    ],
+    [
+     "\\b(although|while|whereas|admittedly)\\b",
+     "uma limitação com concessão"
+    ],
+    [
+     "\\b(anyone who|readers who|those who)\\b",
+     "o público (anyone who...)"
+    ]
+   ],
+   "evitar": [],
+   "modelo": "Few books manage to make a scientific subject feel like an adventure, but The Hidden Life of Cities does exactly that. In just under three hundred pages, the urban ecologist Maya Okafor explores the surprising ways in which animals, plants and even bacteria have adapted to life among concrete and traffic.\nOkafor's style is one of the book's greatest strengths. Her prose is clear and often funny, and she has a gift for turning research into memorable stories: the foxes of London that have learned to read traffic lights, or the pigeons that use motorways as maps. Each chapter centres on a single species, which makes the book easy to read in short sessions.\nWhat makes it particularly valuable, however, is its argument. Okafor convincingly shows that cities are not the opposite of nature but a new kind of ecosystem, and that small decisions, such as which trees a council plants, can have enormous consequences.\nAdmittedly, the final chapters are weaker. While the early sections are based on detailed fieldwork, the last part offers rather general advice about green cities that many readers will have heard before.\nNevertheless, this is a remarkably engaging book. I would recommend it to anyone who lives in a city and has ever wondered what is happening in the park at night, and especially to readers who believe they are not interested in science. After reading it, you will never look at a pigeon in quite the same way."
+  },
+  {
+   "id": "e33",
+   "arco": 8,
+   "nivel": "C1",
+   "tipo": "relatório",
+   "titulo": "Relatório: satisfação dos funcionários",
+   "pedido": "Você coordenou uma pesquisa de satisfação na sua empresa. Escreva um relatório para a diretoria com os principais resultados, as causas prováveis e as recomendações, usando títulos e linguagem cautelosa. Entre 220 e 260 palavras.",
+   "min": 220,
+   "precisa": [
+    [
+     "\\b(introduction|purpose|aim)\\b",
+     "um título de introdução"
+    ],
+    [
+     "\\d+ ?(per ?cent|%)|\\b(a significant|the vast majority|a minority)\\b",
+     "dados da pesquisa (68 per cent, the vast majority)"
+    ],
+    [
+     "\\b(appears?|seems?|tend to|likely|suggests?)\\b",
+     "linguagem cautelosa (appears, is likely to)"
+    ],
+    [
+     "\\b(recommend|recommendation|it is advisable|should be)\\b",
+     "as recomendações"
+    ],
+    [
+     "\\b(conclusion|to conclude|overall)\\b",
+     "uma conclusão"
+    ]
+   ],
+   "evitar": [],
+   "modelo": "Introduction\nThe purpose of this report is to present the main findings of the staff satisfaction survey carried out in March, to suggest possible causes and to make recommendations. A total of 184 employees, 72 per cent of the workforce, took part.\nMain findings\nOverall, the results are positive. The vast majority of respondents said they enjoy their work and feel respected by their colleagues. Flexible working hours were mentioned as the company's greatest strength.\nHowever, two areas received low scores. Only 41 per cent of staff feel that their efforts are recognised, and a significant number reported that communication between departments is poor.\nPossible causes\nThe lack of recognition appears to be linked to the absence of regular feedback, since annual reviews are the only formal opportunity to discuss performance. Communication problems seem to be most common in departments that moved to the new building last year, which suggests that physical separation may be a factor.\nRecommendations\nIt is advisable to introduce short monthly conversations between managers and their teams, focused on progress rather than evaluation. In addition, I would recommend a monthly meeting in which each department briefly presents its current projects. Finally, a simple internal newsletter should be considered.\nConclusion\nEmployees are generally satisfied, but they would like to feel more valued and better informed. The measures above are inexpensive and are likely to have a noticeable effect on motivation within six months."
+  },
+  {
+   "id": "e34",
+   "arco": 6,
+   "nivel": "C1",
+   "tipo": "carta formal",
+   "titulo": "Carta ao jornal da cidade",
+   "pedido": "O jornal da sua cidade publicou que o único cinema do centro vai fechar para virar um estacionamento. Escreva uma carta ao editor discordando da decisão, com argumentos e uma proposta alternativa, sem contrações. Entre 220 e 260 palavras.",
+   "min": 220,
+   "precisa": [
+    [
+     "\\b(dear (sir|madam|editor)|to the editor)\\b",
+     "uma abertura formal (Dear Editor)"
+    ],
+    [
+     "\\bi am writing\\b",
+     "o motivo da carta (I am writing in response to...)"
+    ],
+    [
+     "\\b(furthermore|moreover|in addition|what is more)\\b",
+     "um conector formal"
+    ],
+    [
+     "\\b(i would (like to )?(propose|suggest|urge)|i propose)\\b",
+     "uma proposta (I would urge...)"
+    ],
+    [
+     "\\b(yours faithfully|yours sincerely)\\b",
+     "um fechamento formal"
+    ]
+   ],
+   "evitar": [
+    [
+     "\\b(don't|can't|won't|isn't|aren't|i'm|it's|doesn't|didn't|wasn't|haven't|i'd|i've|we're|they're)\\b",
+     "Num texto formal, evite contrações: I am, it is, do not."
+    ],
+    [
+     "\\b(gonna|wanna|gotta|kinda|stuff)\\b",
+     "Evite gírias como gonna, wanna e stuff num texto formal."
+    ]
+   ],
+   "modelo": "Dear Editor,\nI am writing in response to your article of 12 May, which reported that the Odeon cinema on Market Street is to be closed and replaced by a car park. As a resident of the town centre for over twenty years, I believe this decision would be a serious mistake.\nFirstly, the Odeon is far more than a business. It is the only cultural venue left in the centre, and on any given evening it brings hundreds of people to the surrounding restaurants and cafés. Without it, these businesses are likely to lose a considerable part of their income.\nFurthermore, replacing a cinema with a car park sends the wrong message. The council has repeatedly stated that it wishes to reduce traffic in the centre, yet this plan would encourage even more cars to enter it.\nI fully understand that the cinema has been losing money. However, closure is not the only solution. I would urge the council to consider transforming the building into a community arts centre, combining film screenings with concerts, workshops and exhibitions. Similar projects in other towns have attracted funding from cultural organisations and are now financially stable.\nI would therefore like to propose that a public meeting be held before any final decision is made, so that residents and local businesses can present alternatives.\nThe Odeon has been part of our town for almost a century. It deserves, at the very least, a proper debate.\nYours faithfully,\nCláudia Ramos"
+  },
+  {
+   "id": "e35",
+   "arco": 8,
+   "nivel": "C1",
+   "tipo": "artigo",
+   "titulo": "O valor de errar",
+   "pedido": "Uma revista sobre educação pede artigos com o título \"Por que precisamos aprender a errar\". Escreva um artigo com um título próprio, uma abertura que prenda o leitor, exemplos e uma conclusão marcante. Entre 220 e 260 palavras.",
+   "min": 220,
+   "precisa": [
+    [
+     "^[^\\n]{3,70}\\n",
+     "um título na primeira linha"
+    ],
+    [
+     "\\?",
+     "uma pergunta retórica"
+    ],
+    [
+     "\\b(take|consider|for instance|for example)\\b",
+     "um exemplo (Take... / Consider...)"
+    ],
+    [
+     "\\b(not only\\b.*\\bbut also|rarely|never before|only when)\\b",
+     "uma estrutura de ênfase (not only... but also, only when)"
+    ],
+    [
+     "\\b(perhaps|ultimately|after all)\\b",
+     "um fecho reflexivo (Perhaps... / Ultimately...)"
+    ]
+   ],
+   "evitar": [],
+   "modelo": "Getting it wrong, getting it right\nWhen did you last make a mistake in public? If the memory makes you uncomfortable, you are not alone. From an early age, most of us learn that errors are something to hide: a red cross on a test, a laugh from the back of the classroom. And yet, rarely do we learn anything important without first getting it wrong.\nConsider the way babies learn to walk. They fall hundreds of times, and nobody thinks of these falls as failures. They are simply part of the process. Somewhere between childhood and adulthood, however, we stop seeing mistakes this way and start avoiding situations in which we might make them.\nThe consequences are easy to see in language learning. Take the student who understands English perfectly but never speaks, because she is afraid of sounding foolish. Her silence not only protects her from embarrassment but also prevents her from improving. Only when she accepts that her first sentences will be imperfect does real progress begin.\nResearch supports this. Studies on memory suggest that information we struggle with, and even get wrong at first, tends to be remembered better than information that comes easily.\nNone of this means that mistakes are always good. A careless error by a surgeon or a pilot is not a learning opportunity. But in classrooms, offices and conversations, a culture that punishes every error produces people who stop trying.\nPerhaps, then, the most useful lesson schools can teach is not how to avoid mistakes, but how to make them well."
   }
  ],
  "mediar": [
