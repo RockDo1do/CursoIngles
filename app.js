@@ -2045,6 +2045,27 @@ function prodErros(text){
  for(const e of (typeof ERROS!=='undefined'&&ERROS)||[]){let m=null;try{m=n.match(new RegExp(e.rx,'i'));}catch(x){}if(m) out.push({viu:m[0].trim(),certo:e.certo,explica:e.explica});}
  return out.slice(0,4);
 }
+/* análise do texto livre: frases, variedade, repetições, conectores e o pronome I. Só dicas, não muda a nota */
+const PA_STOP=new Set('a an the and or but so to of in on at for with from by is are was were be been am i you he she it we they my your his her its our their me him us them this that these those there here not do does did have has had will would can could should very really just also then than as if when what who which where how all some any more most much many one two me too'.split(' '));
+const PA_CON=['because','but','so','however','although','though','also','then','first','finally','for example','for instance','moreover','furthermore','on the other hand','in addition','while','since','unless','therefore','in conclusion','after that','even though','whereas'];
+function prodAnalise(text,falado){
+ const t=String(text).trim(), ws=(t.toLowerCase().replace(/[’‘]/g,"'").match(/[a-z']+/g)||[]), n=ws.length, out=[];
+ if(n<20) return out;
+ const fr=t.split(/[.!?]+(?:\s|$)/).map(x=>x.trim()).filter(x=>x.split(/\s+/).length>=2), med=fr.length?n/fr.length:n;
+ if(!falado){
+  if(med>28) out.push({ok:false,t:`As frases estão longas (média de ${Math.round(med)} palavras). Experimente dividir algumas em duas.`});
+  else if(med<6&&n>=30) out.push({ok:false,t:`As frases estão bem curtas (média de ${Math.round(med)} palavras). Junte algumas com and, but ou because.`});
+  else out.push({ok:true,t:`Tamanho das frases equilibrado (média de ${Math.round(med)} palavras).`});
+ }
+ const cont=ws.filter(w=>!PA_STOP.has(w)&&w.length>2), freq={}; cont.forEach(w=>freq[w]=(freq[w]||0)+1);
+ const rep=Object.entries(freq).filter(([w,c])=>c>=3&&c/n>0.04).sort((a,b)=>b[1]-a[1]).slice(0,2);
+ if(rep.length) out.push({ok:false,t:`Palavra repetida: ${rep.map(([w,c])=>`“${w}” (${c} vezes)`).join(' e ')}. Tente um sinônimo ou um pronome em algumas delas.`});
+ if(n>=40){const v=new Set(cont).size/Math.max(1,cont.length); out.push(v<0.5?{ok:false,t:'Vocabulário pouco variado. Troque algumas palavras repetidas por outras do mesmo sentido.'}:{ok:true,t:'Boa variedade de palavras.'});}
+ const lt=' '+ws.join(' ')+' ', cs=PA_CON.filter(c=>lt.includes(' '+c+' '));
+ out.push(cs.length?{ok:true,t:`Conectores usados: ${cs.slice(0,5).join(', ')}.`}:{ok:false,t:'Nenhum conector. Ligue as ideias com because, but, so ou also.'});
+ if(!falado&&/(^|[\s(“"])i(\s|'m|'ve|'ll|'d)/.test(t)) out.push({ok:false,t:'Em inglês, o pronome I (eu) é sempre maiúsculo.'});
+ return out;
+}
 function prodBoxHTML(T,opt){
  const fala=opt.fala&&canTalk();
  return `<div class="prod" data-pid="${esc(T.id)}">
@@ -2053,7 +2074,7 @@ function prodBoxHTML(T,opt){
  <details class="pprec"><summary>O que precisa aparecer</summary><ul>${(T.precisa||[]).map(([,t])=>`<li>${esc(t)}</li>`).join('')}</ul></details>
  <div class="row" style="justify-content:flex-start">${fala?`<button class="btn" data-pfalar>${ICON.mic||''} Falar</button>`:''}${opt.escrita||!fala?`<button class="btn${fala?' ghost':''}" data-pescrever${opt.escritaAberta?' hidden':''}>${fala?'Prefiro escrever':'Escrever a resposta'}</button>`:''}</div>
  <div class="pesc"${opt.escritaAberta?'':' hidden'}><label class="lab" for="pt-${esc(T.id)}">Sua resposta em inglês</label>
-  <textarea class="field ptxt" id="pt-${esc(T.id)}" lang="en" rows="${opt.linhas||4}" spellcheck="false" autocapitalize="sentences"></textarea>
+  <textarea class="field ptxt" id="pt-${esc(T.id)}" lang="en" rows="${opt.linhas||4}" spellcheck="true" autocapitalize="sentences"></textarea>
   <div class="row" style="justify-content:space-between;align-items:center"><small class="pcont" aria-live="polite">0 palavras</small><button class="btn" data-pconf>Conferir</button></div></div>
  <div class="pron" data-pres hidden></div>
  <div class="row" style="justify-content:flex-start;margin-top:6px"><button class="linkb" data-pmodelo>Ver a resposta-modelo</button></div>
@@ -2078,6 +2099,7 @@ function prodResult(box,T,text,falado){
   <ul class="pcheck">${r.itens.map(i=>`<li class="${i.ok?'ok':'no'}">${i.ok?'✓':'✗'} ${esc(i.txt)}</li>`).join('')}
   <li class="${r.minOk?'ok':'no'}">${r.minOk?'✓':'✗'} ${r.wc} palavras${T.min>4?` (mínimo ${T.min})`:''}</li></ul>
   ${r.avisos.map(a=>`<p class="paviso">${esc(a)}</p>`).join('')}
+  ${(()=>{const an=prodAnalise(text,falado);return an.length?`<details class="panal" open><summary>Análise do texto</summary><ul>${an.map(a=>`<li class="${a.ok?'ok':'dica'}">${a.ok?'✓':'•'} ${esc(a.t)}</li>`).join('')}</ul></details>`:'';})()}
   ${(()=>{const er=prodErros(text);return er.length?`<div class="perros"><b>Pontos de atenção</b><ul>${er.map(x=>`<li><span lang="en"><s>${esc(x.viu)}</s> → <b>${esc(x.certo)}</b></span><small>${esc(x.explica)}</small></li>`).join('')}</ul></div>`:'';})()}
   ${r.ok?'':'<p class="set-note">Tente de novo usando o que ficou com ✗. Você pode olhar a resposta-modelo.</p>'}`);
  prodShowModel(box,T);
