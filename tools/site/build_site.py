@@ -16,7 +16,7 @@ import argparse, hashlib, json, os, re, shutil, sys
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 HERE = os.path.dirname(os.path.abspath(__file__))
 C = os.path.join(ROOT, 'conteudo')
-PRATICA = ['escuta', 'leitura', 'vocabulario', 'escrita', 'nivelamento', 'sons', 'confusoes', 'producao', 'simulados']
+PRATICA = ['escuta', 'leitura', 'vocabulario', 'escrita', 'nivelamento', 'sons', 'confusoes', 'producao', 'simulados', 'imersao']
 SITE_ONLY = re.compile(r'<!-- só no site -->.*?<!-- /só no site -->\n?', re.S)
 
 
@@ -131,6 +131,14 @@ def validar():
                 if not t.get('id') or not t.get('modelo'):
                     erros.append(f'{onde}: a tarefa precisa de "id" e "modelo"')
                 tarefa(f'{onde}', t)
+    # inglês fora do curso: cada fonte com nível conhecido e endereço https
+    im = load('pratica/imersao')
+    for f in im.get('fontes', []):
+        us = f.get('url') if isinstance(f.get('url'), dict) else {lv: f.get('url') for lv in f.get('niveis', [])}
+        if not f.get('niveis') or any(lv not in ('A1', 'A2', 'B1', 'B2', 'C1', 'C2') for lv in f['niveis']):
+            erros.append(f'pratica/imersao ("{f.get("nome")}"): níveis precisam ser A1 a C2')
+        if any(not (u or '').startswith('https://') for u in us.values()):
+            erros.append(f'pratica/imersao ("{f.get("nome")}"): o endereço precisa começar com https://')
     # banco de sons
     so = load('pratica/sons')
     cats = {p[2] for p in so.get('pares', [])}

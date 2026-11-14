@@ -1,0 +1,137 @@
+{
+ "metas": {
+  "A2": [
+   180,
+   200
+  ],
+  "B1": [
+   350,
+   400
+  ],
+  "B2": [
+   500,
+   600
+  ],
+  "C1": [
+   700,
+   800
+  ],
+  "C2": [
+   1000,
+   1200
+  ]
+ },
+ "fonte_metas": "Cambridge English, horas de estudo guiado a partir do zero (referência aproximada)",
+ "fontes": [
+  {
+   "id": "bc-ouvir",
+   "nome": "British Council: escuta por nível",
+   "tipo": "ouvir",
+   "niveis": [
+    "A1",
+    "A2",
+    "B1",
+    "B2",
+    "C1"
+   ],
+   "url": {
+    "A1": "https://learnenglish.britishcouncil.org/free-resources/listening/a1",
+    "A2": "https://learnenglish.britishcouncil.org/free-resources/listening/a2",
+    "B1": "https://learnenglish.britishcouncil.org/free-resources/listening/b1",
+    "B2": "https://learnenglish.britishcouncil.org/free-resources/listening/b2",
+    "C1": "https://learnenglish.britishcouncil.org/free-resources/listening/c1"
+   },
+   "desc": "Diálogos e conversas curtas do dia a dia, separados por nível, com exercícios.",
+   "como": "Ouça uma vez sem ler nada. Faça os exercícios. Depois ouça de novo prestando atenção no que errou."
+  },
+  {
+   "id": "bc-ler",
+   "nome": "British Council: leitura por nível",
+   "tipo": "ler",
+   "niveis": [
+    "A1",
+    "A2",
+    "B1",
+    "B2",
+    "C1"
+   ],
+   "url": {
+    "A1": "https://learnenglish.britishcouncil.org/free-resources/reading/a1",
+    "A2": "https://learnenglish.britishcouncil.org/free-resources/reading/a2",
+    "B1": "https://learnenglish.britishcouncil.org/free-resources/reading/b1",
+    "B2": "https://learnenglish.britishcouncil.org/free-resources/reading/b2",
+    "C1": "https://learnenglish.britishcouncil.org/free-resources/reading/c1"
+   },
+   "desc": "Textos reais (e-mails, anúncios, artigos) com exercícios de compreensão.",
+   "como": "Leia tudo uma vez sem parar no que não entender. Só depois procure as palavras que fizeram falta."
+  },
+  {
+   "id": "nil",
+   "nome": "News in Levels",
+   "tipo": "ouvir",
+   "niveis": [
+    "A1",
+    "A2",
+    "B1"
+   ],
+   "url": "https://www.newsinlevels.com",
+   "desc": "A notícia do dia em 3 níveis (1, 2 e 3), com áudio. Notícias novas todo dia.",
+   "como": "Comece pelo nível 1. Ouça lendo, depois ouça sem ler. Quando o nível ficar fácil, suba para o próximo."
+  },
+  {
+   "id": "bne",
+   "nome": "Breaking News English",
+   "tipo": "ouvir",
+   "niveis": [
+    "A2",
+    "B1",
+    "B2",
+    "C1"
+   ],
+   "url": "https://breakingnewsenglish.com/news_levels.html",
+   "desc": "Notícias em 7 níveis, do A2 ao C1, com áudio em 5 velocidades.",
+   "como": "Escolha o nível e ouça primeiro na velocidade mais lenta. Repita numa velocidade acima."
+  },
+  {
+   "id": "bbc6",
+   "nome": "BBC 6 Minute English",
+   "tipo": "ouvir",
+   "niveis": [
+    "B1",
+    "B2"
+   ],
+   "url": "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english",
+   "desc": "Podcast de 6 minutos, com dois apresentadores britânicos conversando sobre um tema e explicando 6 palavras. Tem transcrição.",
+   "como": "Ouça no caminho ou lavando a louça. Se perder muito, ouça de novo com a transcrição aberta."
+  },
+  {
+   "id": "simplewiki",
+   "nome": "Simple English Wikipedia",
+   "tipo": "ler",
+   "niveis": [
+    "A2",
+    "B1"
+   ],
+   "url": "https://simple.wikipedia.org",
+   "desc": "A Wikipédia escrita com palavras e frases simples.",
+   "como": "Procure um assunto de que você gosta (um time, uma banda, um país) e leia o artigo inteiro."
+  },
+  {
+   "id": "teded",
+   "nome": "TED-Ed",
+   "tipo": "ver",
+   "niveis": [
+    "B2",
+    "C1"
+   ],
+   "url": "https://ed.ted.com",
+   "desc": "Vídeos animados de 4 a 6 minutos sobre ciência, história e ideias. Têm legenda em inglês.",
+   "como": "Assista com legenda em inglês, não em português. Depois, conte em voz alta o que entendeu, em inglês."
+  }
+ ],
+ "dicas": [
+  "Séries e filmes: escolha algo que você já viu em português e assista de novo em inglês, com legenda em inglês. Como você já sabe a história, entende muito mais.",
+  "Pouco todo dia vale mais que muito de vez em quando: 15 minutos por dia são mais de 90 horas por ano.",
+  "Entender 80% já está ótimo. Não pare a cada palavra nova: o sentido geral vem com o tempo."
+ ]
+}

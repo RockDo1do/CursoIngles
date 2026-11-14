@@ -1405,6 +1405,7 @@ function practiceCard(){
   <button class="prb" data-plist="mediar"><b>Mediação</b><span>${pm}/${(PRODUCAO.mediar||[]).length} tarefas</span></button>
   <button class="prb" data-sims><b>Simulados</b><span>${Object.keys(S.sim||{}).length}/${(SIMULADOS||[]).length} feitos</span></button>
   <button class="prb" data-sbank><b>Banco de sons</b><span>${Object.keys(S.sb||{}).length}/${sbAll().length} sons</span></button>
+  <button class="prb" data-imersao><b>Inglês fora do curso</b><span>${fmtH(horas().total)} de inglês</span></button>
  </div></div>`;
 }
 function lvBadge(lv){return `<span class="lvl">${lv}</span>`;}
@@ -1480,7 +1481,7 @@ function vocGrupos(){
 }
 /* abre o nível onde o aluno está estudando agora (pelo capítulo atual), ou o dia a dia */
 function vocNivelAberto(){
- let lv='Dia a dia'; try{const c=CH[Math.min(CH.length-1,Object.keys(S.done||{}).map(Number).reduce((a,b)=>Math.max(a,b+1),0))];if(c&&c.lv) lv=c.lv;}catch(e){}
+ const lv=nivelAtual();
  return vocGrupos().some(([l])=>l===lv)?lv:'Dia a dia';
 }
 function vocStart(k){
@@ -2241,6 +2242,83 @@ function simResult(){
  SIM=null; window.scrollTo(0,0);
 }
 
+/* ===================== INGLÊS FORA DO CURSO ===================== */
+/* IMERSAO vem de conteudo/pratica/imersao.json: fontes gratuitas por nível e a referência de horas (Cambridge).
+   S.tempo = {dia: segundos de estudo ativo no curso}; S.fora = {dia: minutos de inglês fora do curso}; S.antes = horas antes do curso */
+const LV_ORD=['A1','A2','B1','B2','C1','C2'];
+function nivelAtual(){
+ try{const n=Object.keys(S.done||{}).map(Number).filter(i=>i<CH.length).reduce((a,b)=>Math.max(a,b+1),0);const c=CH[Math.min(CH.length-1,n)];if(c&&c.lv) return c.lv;}catch(e){}
+ return 'A1';
+}
+function horas(){
+ const curso=Object.values(S.tempo||{}).reduce((a,b)=>a+b,0)/3600, fora=Object.values(S.fora||{}).reduce((a,b)=>a+b,0)/60, antes=+S.antes||0;
+ return {curso,fora,antes,total:curso+fora+antes};
+}
+function metaHoras(){
+ const lv=nivelAtual(), M=(IMERSAO&&IMERSAO.metas)||{};
+ const prox=LV_ORD.slice(LV_ORD.indexOf(lv)+1).find(l=>M[l])||'C2';
+ return {lv,prox,faixa:M[prox]||[1000,1200]};
+}
+function fmtH(h){return h<1?`${Math.round(h*60)} min`:`${h.toFixed(h<10?1:0).replace('.',',')} h`;}
+function fontesDoNivel(lv){return (IMERSAO.fontes||[]).filter(f=>f.niveis.includes(lv));}
+function fonteUrl(f,lv){return typeof f.url==='string'?f.url:(f.url[lv]||Object.values(f.url)[0]);}
+const IM_IC={ouvir:'♪',ler:'¶',ver:'▶'};
+function fonteHTML(f,lv){
+ return `<div class="fonte"><div class="fonte-t"><span class="fonte-ic" aria-hidden="true">${IM_IC[f.tipo]||'•'}</span><div><b>${esc(f.nome)}</b><small>${f.niveis.join(' · ')}</small></div></div>
+ <p>${esc(f.desc)}</p><p class="fonte-como"><b>Como usar:</b> ${esc(f.como)}</p>
+ <div class="row" style="justify-content:flex-start"><a class="btn sm" href="${esc(fonteUrl(f,lv))}" target="_blank" rel="noopener noreferrer">Abrir ${esc(f.nome.split(':')[0])}</a></div></div>`;
+}
+function registroHTML(){
+ const hoje=(S.fora||{})[ymd(new Date())]||0;
+ return `<div class="imreg"><p>Ouviu, leu ou assistiu algo em inglês fora do curso? Registre aqui:</p>
+ <div class="seg" role="group" aria-label="Registrar minutos">${[10,20,30,60].map(m=>`<button class="segb" data-fora="${m}">+${m} min</button>`).join('')}</div>
+ <p class="set-note" aria-live="polite" id="imhoje">Hoje: ${hoje} min fora do curso.${hoje?' <button class="lnk" data-fora="-10">Desfazer 10 min</button>':''}</p></div>`;
+}
+function metaHTML(){
+ const h=horas(), m=metaHoras(), pct=Math.min(100,Math.round(h.total/m.faixa[0]*100));
+ return `<div class="immeta"><div class="imnum"><b>${fmtH(h.total)}</b><span>de inglês até agora</span></div>
+ <div class="simbar" aria-hidden="true"><i style="width:${pct}%"></i></div>
+ <p>Para o <b>${m.prox}</b>, a Cambridge estima cerca de <b>${m.faixa[0]} a ${m.faixa[1]} horas</b> de estudo, contando do zero. É uma referência, não uma regra: cada pessoa tem o seu ritmo.</p>
+ <ul class="imdiv"><li>No curso: ${fmtH(h.curso)}</li><li>Fora do curso: ${fmtH(h.fora)}</li>${h.antes?`<li>Antes do curso: ${fmtH(h.antes)}</li>`:''}</ul></div>`;
+}
+function imView(){
+ stopListening(); cur=null; const lv=nivelAtual(), fs=fontesDoNivel(lv), out=(IMERSAO.fontes||[]).filter(f=>!fs.includes(f));
+ app.innerHTML=`<div class="wrap">${barHTML('Inglês fora do curso','Ouvir, ler e assistir de verdade')}
+ <div class="chap-open"><p>O curso ensina e faz praticar. Mas para entender inglês de verdade é preciso muito inglês entrando pelos ouvidos e pelos olhos, muito mais do que cabe num aplicativo. Junte 15 a 30 minutos por dia de uma destas fontes ao seu estudo.</p></div>
+ <div class="sysw"><div class="tag">[ SUAS HORAS ]</div>${metaHTML()}${registroHTML()}
+  <details class="imantes"><summary>Já estudou inglês antes do curso?</summary><p>Conte as horas aproximadas (aulas, cursos, intercâmbio). Assim a conta fica mais justa.</p>
+  <div class="row" style="justify-content:flex-start"><input class="field" id="imantes" type="number" min="0" max="5000" step="10" inputmode="numeric" value="${+S.antes||''}" placeholder="Ex.: 120" style="max-width:140px"><button class="btn sm" data-imantes>Salvar</button></div></details></div>
+ <div class="sysw"><div class="tag">[ PARA O SEU NÍVEL: ${lv} ]</div>${fs.map(f=>fonteHTML(f,lv)).join('')}</div>
+ <div class="sysw"><div class="tag">[ DICAS ]</div><ul class="imdicas">${(IMERSAO.dicas||[]).map(d=>`<li>${esc(d)}</li>`).join('')}</ul></div>
+ ${out.length?`<details class="vgrp"><summary><b>Fontes de outros níveis</b><span>${out.length} fontes</span></summary>${out.map(f=>fonteHTML(f,f.niveis[0])).join('')}</details>`:''}
+ <div class="row"><button class="btn ghost" data-home>Voltar ao início</button></div></div>`;
+ window.scrollTo(0,0);
+}
+/* cartão no fim do capítulo: uma fonte do nível do capítulo, trocando a cada capítulo */
+function ouvirHojeHTML(i){
+ const c=CH[i]; if(!c||typeof IMERSAO==='undefined') return ''; const fs=fontesDoNivel(c.lv); if(!fs.length) return '';
+ const f=fs[i%fs.length];
+ return `<div class="sysw" id="ouvirhoje"><div class="tag">[ PARA OUVIR HOJE ]</div><h3>${esc(f.nome)}</h3><p>${esc(f.desc)}</p><p class="fonte-como"><b>Como usar:</b> ${esc(f.como)}</p>
+ <div class="row" style="justify-content:flex-start"><a class="btn sm" href="${esc(fonteUrl(f,c.lv))}" target="_blank" rel="noopener noreferrer">Abrir</a><button class="btn ghost sm" data-fora="15">Já fiz: +15 min</button><button class="btn ghost sm" data-imersao>Todas as fontes</button></div>
+ <p class="set-note" id="imhoje" aria-live="polite"></p></div>`;
+}
+function foraAdd(m){
+ S.fora=S.fora||{}; const k=ymd(new Date()); S.fora[k]=Math.max(0,Math.min(600,(S.fora[k]||0)+m)); if(!S.fora[k]) delete S.fora[k];
+ if(m>0) markDay(); save();
+ const el=document.getElementById('imhoje'), hoje=S.fora[k]||0;
+ if(document.querySelector('.immeta')){const mt=document.querySelector('.immeta');mt.outerHTML=metaHTML();}
+ if(el) el.innerHTML=`Hoje: ${hoje} min fora do curso.${hoje&&document.querySelector('.imreg')?' <button class="lnk" data-fora="-10">Desfazer 10 min</button>':''}`;
+ if(m>0) toast(`+${m} min de inglês registrados`);
+}
+/* tempo de estudo no curso: conta só enquanto a tela está visível e houve toque, tecla ou rolagem no último minuto */
+let imAtivo=Date.now(), imAcum=0;
+['pointerdown','keydown','scroll','touchstart'].forEach(ev=>addEventListener(ev,()=>{imAtivo=Date.now();},{passive:true,capture:true}));
+setInterval(()=>{
+ if(document.visibilityState!=='visible'||Date.now()-imAtivo>60000||!S.welcomed) return;
+ imAcum+=15; if(imAcum<60) return;
+ S.tempo=S.tempo||{}; const k=ymd(new Date()); S.tempo[k]=Math.min(86400,(S.tempo[k]||0)+imAcum); imAcum=0; save();
+},15000);
+
 /* Revisão rápida e domingo de revisão */
 let RV=null;
 function reviewView(arc){
@@ -2390,6 +2468,8 @@ function sanitizeState(o){
  r.prod={};for(const k in (o.prod||{})){if(typeof k==='string'&&k.length<60&&[1,2].includes(o.prod[k])) r.prod[k]=o.prod[k];}
  r.sb={};for(const k in (o.sb||{})){if(/^\d{1,2}\.\d{1,2}$/.test(k)&&o.sb[k]===1) r.sb[k]=1;}
  r.sim={};for(const k in (o.sim||{})){const v=o.sim[k];if(/^s-[a-z0-9]{1,4}$/.test(k)&&v&&typeof v==='object'){const n=x=>Math.max(0,Math.min(100,Math.round(+x||0)));r.sim[k]={b:n(v.b),u:n(v.u),d:typeof v.d==='string'&&/^\d{4}-\d{2}-\d{2}$/.test(v.d)?v.d:''};}}
+ const num=(o,max)=>{const r={};for(const k in (o||{})){const v=Math.round(+o[k]);if(/^\d{4}-\d{2}-\d{2}$/.test(k)&&v>0) r[k]=Math.min(max,v);}return r;};
+ r.tempo=num(o.tempo,86400); r.fora=num(o.fora,600); r.antes=Math.max(0,Math.min(5000,Math.round(+o.antes||0)));
  r.auto={};for(const k in (o.auto||{})){if(/^\d{1,2}$/.test(k)&&Array.isArray(o.auto[k])) r.auto[k]=o.auto[k].slice(0,20).map(x=>x===1||x===0?x:null);}
  r.voc={};for(const k in (o.voc||{})){const e=o.voc[k];if(typeof k==='string'&&k.length<40&&e&&typeof e==='object'&&/^\d{4}-\d{2}-\d{2}$/.test(e.d||'')) r.voc[k]={b:Math.round(clampN(e.b,0,5,0)),d:e.d};}
  r.goal=[3,4,5].includes(o.goal)?o.goal:4;
@@ -2706,7 +2786,7 @@ function reader(i){
   const qi=it.mc, q=ch.q[qi], opts=shuffle(q.o.map((t,k)=>({t,k})));
   h+=`<div class="q" data-q="${qi}"><div class="qt">${nq+1}. ${esc(q.q)}</div><div class="opts">${opts.map(o=>`<button class="opt" data-k="${o.k}"${enAttr(o.t)}>${esc(o.t)}</button>`).join('')}</div><div class="why" hidden></div></div>`;
  });
- h+=`<div class="result" id="res" hidden></div></div>${bonus?'':falarCardHTML(i)}
+ h+=`<div class="result" id="res" hidden></div></div>${bonus?'':falarCardHTML(i)+ouvirHojeHTML(i)}
  <div class="row" style="margin-top:8px"><button class="btn ghost" data-train="${i}">Treino extra</button><button class="btn ghost" ${back}>${bonus?'Voltar para a coleção':'Voltar para a lista'}</button></div>
  <p class="foot" style="font-size:13px;margin-top:14px"><a href="https://github.com/RockDo1do/CursoIngles/issues/new?title=${encodeURIComponent((bonus?'Erro na história extra ':'Erro no capítulo ')+(bonus?i-99:i+1))}&body=${encodeURIComponent('Descreva o erro (frase, tradução, áudio ou questão):\n\n')}" target="_blank" rel="noopener">Achou um erro neste capítulo? Avise aqui</a> (precisa de conta no GitHub)</p></div>`;
  app.innerHTML=h;
@@ -2947,6 +3027,9 @@ app.addEventListener('click',e=>{
  if(e.target.closest('[data-home]')){home();return;}
  if(e.target.closest('#tog')){S.showAll=!S.showAll;if(S.showAll)R.usedPT=true;save();document.getElementById('rd').classList.toggle('showall',S.showAll);document.getElementById('tog').setAttribute('aria-pressed',S.showAll);return;}
  if(prodClick(e)) return;
+ if(e.target.closest('[data-imersao]')){imView();return;}
+ {const fb=e.target.closest('button[data-fora]');if(fb){foraAdd(+fb.dataset.fora);return;}}
+ if(e.target.closest('[data-imantes]')){const v=Math.round(+document.getElementById('imantes').value||0);S.antes=Math.max(0,Math.min(5000,v));save();const mt=document.querySelector('.immeta');if(mt) mt.outerHTML=metaHTML();toast('Horas anteriores salvas');return;}
  if(e.target.closest('[data-sbank]')){sbList();return;}
  {const sb=e.target.closest('button[data-sb]');if(sb){sbView(sb.dataset.sb);return;}}
  if(e.target.closest('[data-sbslow]')){sbSlow();return;}
