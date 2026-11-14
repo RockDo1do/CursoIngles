@@ -3834,5 +3834,775 @@
     "a": 0
    }
   ]
+ },
+ {
+  "id": "l37",
+  "t": "No Aeroporto: Voo Cancelado",
+  "lv": "B1",
+  "arc": 9,
+  "lines": [
+   [
+    "olivia",
+    "Good morning. How can I help you?",
+    "Bom dia. Como posso ajudar?"
+   ],
+   [
+    "jin",
+    "Hi. My flight to Dublin has just been cancelled, and I have an important meeting there this afternoon. What can I do?",
+    "Oi. Meu voo para Dublin acabou de ser cancelado, e tenho uma reunião importante lá hoje à tarde. O que posso fazer?"
+   ],
+   [
+    "olivia",
+    "I'm very sorry about that. The flight was cancelled because of a technical problem with the plane. Can I see your passport and your booking reference, please?",
+    "Sinto muito. O voo foi cancelado por causa de um problema técnico no avião. Posso ver seu passaporte e o código da reserva, por favor?"
+   ],
+   [
+    "jin",
+    "Sure, here you are.",
+    "Claro, aqui está."
+   ],
+   [
+    "olivia",
+    "Thank you. Let me look. The next direct flight leaves at four o'clock, but it's almost full. There's also a flight at half past one that stops in Manchester.",
+    "Obrigada. Deixe-me ver. O próximo voo direto sai às quatro, mas está quase lotado. Também tem um voo à uma e meia que faz escala em Manchester."
+   ],
+   [
+    "jin",
+    "What time does the one via Manchester arrive in Dublin?",
+    "A que horas o que passa por Manchester chega em Dublin?"
+   ],
+   [
+    "olivia",
+    "At ten past five. The direct flight arrives at a quarter past five, so they're almost the same.",
+    "Às cinco e dez. O voo direto chega às cinco e quinze, então são quase iguais."
+   ],
+   [
+    "jin",
+    "My meeting starts at six, so either is fine. I'd prefer the direct one, if there's a seat.",
+    "Minha reunião começa às seis, então qualquer um serve. Eu preferiria o direto, se tiver lugar."
+   ],
+   [
+    "olivia",
+    "There's one seat left, but it's in the middle of a row. Is that all right?",
+    "Sobrou um lugar, mas é no meio da fileira. Tudo bem?"
+   ],
+   [
+    "jin",
+    "That's fine. It's only an hour. Will I get any compensation for the delay?",
+    "Tudo bem. É só uma hora. Vou receber alguma compensação pelo atraso?"
+   ],
+   [
+    "olivia",
+    "Yes. Because you have to wait more than three hours, you can have a free meal in any restaurant in the terminal. Here's a voucher for fifteen pounds. You can also ask for compensation online. The details are on this card.",
+    "Sim. Como o senhor vai esperar mais de três horas, pode fazer uma refeição grátis em qualquer restaurante do terminal. Aqui está um vale de quinze libras. O senhor também pode pedir uma indenização pela internet. Os detalhes estão neste cartão."
+   ],
+   [
+    "jin",
+    "Great. And my suitcase? I've already checked it in.",
+    "Ótimo. E minha mala? Já despachei."
+   ],
+   [
+    "olivia",
+    "Don't worry. We'll move it to the new flight automatically. Your new boarding pass is ready. The gate opens at three.",
+    "Não se preocupe. Vamos transferi-la para o novo voo automaticamente. Seu novo cartão de embarque está pronto. O portão abre às três."
+   ],
+   [
+    "jin",
+    "Thank you so much. You've been really helpful.",
+    "Muito obrigado. Você ajudou muito."
+   ]
+  ],
+  "q": [
+   {
+    "q": "Por que o voo foi cancelado?",
+    "o": [
+     "Por um problema técnico no avião.",
+     "Por causa do mau tempo.",
+     "Porque faltou tripulação."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Que voo o Jin escolhe?",
+    "o": [
+     "O voo direto das quatro.",
+     "O voo da uma e meia por Manchester.",
+     "Um voo no dia seguinte."
+    ],
+    "a": 0
+   },
+   {
+    "q": "A que horas começa a reunião dele?",
+    "o": [
+     "Às seis.",
+     "Às cinco e quinze.",
+     "Às quatro."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Como é o lugar que sobrou?",
+    "o": [
+     "No meio da fileira.",
+     "Na janela.",
+     "No corredor."
+    ],
+    "a": 0
+   },
+   {
+    "q": "O que ele recebe por esperar mais de três horas?",
+    "o": [
+     "Um vale de quinze libras para comer.",
+     "Uma noite de hotel.",
+     "O dinheiro da passagem de volta."
+    ],
+    "a": 0
+   },
+   {
+    "q": "O que acontece com a mala dele?",
+    "o": [
+     "Vai para o novo voo automaticamente.",
+     "Ele precisa buscá-la e despachar de novo.",
+     "Fica no aeroporto até o dia seguinte."
+    ],
+    "a": 0
+   }
+  ]
+ },
+ {
+  "id": "l38",
+  "t": "Podcast: Como Economizar Sem Sofrer",
+  "lv": "B1",
+  "arc": 9,
+  "nomes": {
+   "narr": "Apresentadora"
+  },
+  "lines": [
+   [
+    "narr",
+    "Welcome back to Money Matters, the podcast about everyday money. Today I'm talking to Mina, who saved enough money last year to travel around Asia for a month. Welcome, Mina!",
+    "Bem-vindos de volta ao Money Matters, o podcast sobre o dinheiro do dia a dia. Hoje estou conversando com a Mina, que no ano passado economizou o suficiente para viajar um mês pela Ásia. Bem-vinda, Mina!"
+   ],
+   [
+    "mina",
+    "Thanks for having me!",
+    "Obrigada pelo convite!"
+   ],
+   [
+    "narr",
+    "So, how did you start? Most people say they can't save anything at the end of the month.",
+    "Então, como você começou? A maioria das pessoas diz que não consegue guardar nada no fim do mês."
+   ],
+   [
+    "mina",
+    "That was my problem too. I always waited until the end of the month, and there was nothing left. So I changed the order. Now, on the day I get paid, I move ten percent to a savings account first. Then I live on what's left.",
+    "Esse também era o meu problema. Eu sempre esperava o fim do mês, e não sobrava nada. Então mudei a ordem. Agora, no dia em que recebo o salário, passo dez por cento para uma poupança primeiro. Depois vivo com o que sobra."
+   ],
+   [
+    "narr",
+    "Did you notice the difference?",
+    "Você sentiu a diferença?"
+   ],
+   [
+    "mina",
+    "Honestly, after two months I didn't even miss the money. The second thing I did was to write down everything I spent for a few weeks. I was shocked. I was spending almost a hundred euros a month on coffee and snacks.",
+    "Sinceramente, depois de dois meses eu nem sentia falta do dinheiro. A segunda coisa que fiz foi anotar tudo o que eu gastava por algumas semanas. Levei um susto. Eu gastava quase cem euros por mês com café e lanches."
+   ],
+   [
+    "narr",
+    "A hundred euros! Did you stop buying coffee?",
+    "Cem euros! Você parou de comprar café?"
+   ],
+   [
+    "mina",
+    "No, I didn't want to stop everything, because then you give up quickly. I just bought a good flask and made coffee at home on weekdays. I still go to my favourite café on Saturdays. It's my treat.",
+    "Não, eu não queria cortar tudo, porque aí a gente desiste rápido. Só comprei uma boa garrafa térmica e passei a fazer café em casa nos dias de semana. Ainda vou ao meu café preferido aos sábados. É o meu agrado."
+   ],
+   [
+    "narr",
+    "That's a good point. What about bigger costs?",
+    "Esse é um bom argumento. E os gastos maiores?"
+   ],
+   [
+    "mina",
+    "I looked at my subscriptions. I was paying for three streaming services and a gym I hardly ever used. I cancelled two of the services and started running in the park instead.",
+    "Olhei as minhas assinaturas. Eu pagava três serviços de streaming e uma academia que quase nunca usava. Cancelei dois dos serviços e passei a correr no parque."
+   ],
+   [
+    "narr",
+    "And what would you say to someone who wants to start today?",
+    "E o que você diria para alguém que quer começar hoje?"
+   ],
+   [
+    "mina",
+    "Start small and have a clear goal. Saving is much easier when you know what it's for. For me, it was the trip. I had a photo of a beach in Thailand on my fridge!",
+    "Comece pequeno e tenha um objetivo claro. Economizar é muito mais fácil quando você sabe para quê. Para mim, era a viagem. Eu tinha uma foto de uma praia na Tailândia na geladeira!"
+   ]
+  ],
+  "q": [
+   {
+    "q": "O que a Mina conseguiu fazer com o dinheiro que guardou?",
+    "o": [
+     "Viajar um mês pela Ásia.",
+     "Comprar um carro.",
+     "Pagar um curso."
+    ],
+    "a": 0
+   },
+   {
+    "q": "O que ela faz no dia em que recebe o salário?",
+    "o": [
+     "Passa dez por cento para a poupança.",
+     "Paga todas as contas.",
+     "Anota todos os gastos do mês."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Quanto ela gastava por mês com café e lanches?",
+    "o": [
+     "Quase cem euros.",
+     "Uns dez euros.",
+     "Mais de duzentos euros."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Por que ela não cortou o café de vez?",
+    "o": [
+     "Porque cortar tudo faz a pessoa desistir rápido.",
+     "Porque o café é barato.",
+     "Porque trabalha num café."
+    ],
+    "a": 0
+   },
+   {
+    "q": "O que ela fez com a academia?",
+    "o": [
+     "Cancelou e começou a correr no parque.",
+     "Trocou por uma academia mais barata.",
+     "Passou a ir todos os dias."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Qual é o principal conselho dela?",
+    "o": [
+     "Começar pequeno e ter um objetivo claro.",
+     "Nunca sair de casa.",
+     "Guardar metade do salário."
+    ],
+    "a": 0
+   }
+  ]
+ },
+ {
+  "id": "l39",
+  "t": "Visitando um Apartamento",
+  "lv": "B1",
+  "arc": 9,
+  "lines": [
+   [
+    "harry",
+    "Hello, you must be Mina. I'm Harry from the letting agency. Come in. This is the flat.",
+    "Olá, você deve ser a Mina. Sou o Harry, da imobiliária. Entre. Este é o apartamento."
+   ],
+   [
+    "mina",
+    "Hi, Harry. Oh, it's much brighter than in the photos!",
+    "Oi, Harry. Nossa, é bem mais claro do que nas fotos!"
+   ],
+   [
+    "harry",
+    "Yes, the living room faces south, so you get the sun all afternoon. The kitchen is through here. All the appliances are new, including the washing machine.",
+    "Sim, a sala dá para o sul, então pega sol a tarde toda. A cozinha é por aqui. Todos os eletrodomésticos são novos, incluindo a máquina de lavar."
+   ],
+   [
+    "mina",
+    "It's quite small, though. Is there a dishwasher?",
+    "Mas é bem pequena. Tem lava-louças?"
+   ],
+   [
+    "harry",
+    "I'm afraid not. But there's a lot of storage space in these cupboards. Let me show you the bedroom.",
+    "Infelizmente não. Mas tem muito espaço nestes armários. Deixe-me mostrar o quarto."
+   ],
+   [
+    "mina",
+    "That's a nice size. Is it quiet at night? The street outside looked quite busy.",
+    "É de um bom tamanho. É silencioso à noite? A rua lá fora parecia bem movimentada."
+   ],
+   [
+    "harry",
+    "The bedroom is at the back of the building, so you can't hear the traffic. The windows are new too.",
+    "O quarto fica nos fundos do prédio, então não dá para ouvir o trânsito. As janelas também são novas."
+   ],
+   [
+    "mina",
+    "Good. And how much is the rent? The advert said nine hundred pounds a month.",
+    "Ótimo. E quanto é o aluguel? O anúncio dizia novecentas libras por mês."
+   ],
+   [
+    "harry",
+    "That's right, nine hundred, and that includes water. Electricity and internet are extra. You also need to pay a deposit of one month's rent.",
+    "Isso mesmo, novecentas, e isso inclui a água. Luz e internet são à parte. Você também precisa pagar um depósito de um mês de aluguel."
+   ],
+   [
+    "mina",
+    "Are pets allowed? I have a cat.",
+    "Aceitam animais? Eu tenho uma gata."
+   ],
+   [
+    "harry",
+    "The owner accepts cats, but not dogs. You'd just need to sign an extra form.",
+    "O dono aceita gatos, mas não cachorros. Você só precisaria assinar um formulário a mais."
+   ],
+   [
+    "mina",
+    "Perfect. How far is the nearest station?",
+    "Perfeito. Qual é a distância até a estação mais próxima?"
+   ],
+   [
+    "harry",
+    "It's about a seven-minute walk, and there's a supermarket on the corner. When would you like to move in?",
+    "Fica a uns sete minutos a pé, e tem um supermercado na esquina. Quando você gostaria de se mudar?"
+   ],
+   [
+    "mina",
+    "My current contract ends on the thirtieth, so the first of next month would be ideal. Can I think about it until tomorrow?",
+    "Meu contrato atual termina no dia trinta, então o dia primeiro do mês que vem seria o ideal. Posso pensar até amanhã?"
+   ],
+   [
+    "harry",
+    "Of course. But two other people are visiting today, so don't wait too long!",
+    "Claro. Mas outras duas pessoas vêm visitar hoje, então não demore muito!"
+   ]
+  ],
+  "q": [
+   {
+    "q": "Por que a sala é tão clara?",
+    "o": [
+     "Porque dá para o sul e pega sol a tarde toda.",
+     "Porque tem muitas lâmpadas.",
+     "Porque fica no último andar."
+    ],
+    "a": 0
+   },
+   {
+    "q": "O que a cozinha NÃO tem?",
+    "o": [
+     "Lava-louças.",
+     "Máquina de lavar.",
+     "Armários."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Por que o quarto é silencioso?",
+    "o": [
+     "Porque fica nos fundos do prédio.",
+     "Porque a rua é calma.",
+     "Porque tem cortinas grossas."
+    ],
+    "a": 0
+   },
+   {
+    "q": "O que está incluído nas novecentas libras?",
+    "o": [
+     "A água.",
+     "A luz.",
+     "A internet."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Que animais o dono aceita?",
+    "o": [
+     "Só gatos.",
+     "Gatos e cachorros.",
+     "Nenhum animal."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Por que o Harry diz para a Mina não demorar?",
+    "o": [
+     "Porque outras duas pessoas vão visitar hoje.",
+     "Porque o preço vai subir.",
+     "Porque ele vai viajar."
+    ],
+    "a": 0
+   }
+  ]
+ },
+ {
+  "id": "l40",
+  "t": "Na Rádio: Notícias da Cidade",
+  "lv": "B1",
+  "arc": 9,
+  "nomes": {
+   "narr": "Locutora"
+  },
+  "lines": [
+   [
+    "narr",
+    "Good morning, and welcome to City Radio. It's eight o'clock, and here is the local news.",
+    "Bom dia e bem-vindos à City Radio. São oito horas, e aqui estão as notícias da cidade."
+   ],
+   [
+    "narr",
+    "First, some good news for cyclists. From next Monday, a new bike lane will open along the river, from the train station to the university. The council says the lane will be completely separated from cars, which should make cycling much safer.",
+    "Primeiro, uma boa notícia para os ciclistas. A partir da próxima segunda-feira, uma nova ciclovia vai abrir ao longo do rio, da estação de trem até a universidade. A prefeitura diz que a ciclovia vai ser totalmente separada dos carros, o que deve deixar o ciclismo muito mais seguro."
+   ],
+   [
+    "narr",
+    "However, during the last week of work, River Road will be closed between nine in the morning and four in the afternoon. Drivers are asked to use Park Avenue instead.",
+    "Porém, durante a última semana de obras, a River Road vai ficar fechada entre nove da manhã e quatro da tarde. Os motoristas devem usar a Park Avenue."
+   ],
+   [
+    "narr",
+    "Now, the city library. After eighteen months of repairs, the central library reopened yesterday, and more than two thousand people visited on the first day. The building now has a café, a children's area and a room where people can borrow musical instruments, just like books.",
+    "Agora, a biblioteca da cidade. Depois de dezoito meses de reformas, a biblioteca central reabriu ontem, e mais de duas mil pessoas a visitaram no primeiro dia. O prédio agora tem um café, uma área para crianças e uma sala onde as pessoas podem pegar instrumentos musicais emprestados, igual aos livros."
+   ],
+   [
+    "narr",
+    "We spoke to one visitor this morning.",
+    "Conversamos com uma visitante hoje de manhã."
+   ],
+   [
+    "olivia",
+    "I borrowed a guitar for my son. He wants to learn, but we didn't want to buy one before we knew if he really liked it. It's a brilliant idea.",
+    "Peguei um violão emprestado para o meu filho. Ele quer aprender, mas não queríamos comprar um antes de saber se ele gostava mesmo. É uma ideia excelente."
+   ],
+   [
+    "narr",
+    "The library is open every day except Sunday, from nine until eight.",
+    "A biblioteca abre todos os dias, menos domingo, das nove às oito."
+   ],
+   [
+    "narr",
+    "And finally, the weather. It will be cloudy this morning, with some rain around lunchtime. But the afternoon will be dry and sunny, with temperatures reaching nineteen degrees. The weekend looks warm, so it's a good time to try that new bike lane!",
+    "E, para terminar, o tempo. Vai estar nublado de manhã, com um pouco de chuva perto da hora do almoço. Mas a tarde vai ser seca e ensolarada, com temperaturas chegando a dezenove graus. O fim de semana promete ser quente, então é uma boa hora para experimentar a nova ciclovia!"
+   ],
+   [
+    "narr",
+    "That's all from me. Stay with us for the morning show with Harry, after the break.",
+    "Por mim é só. Fique com a gente para o programa da manhã com o Harry, depois do intervalo."
+   ]
+  ],
+  "q": [
+   {
+    "q": "Por onde vai passar a nova ciclovia?",
+    "o": [
+     "Ao longo do rio, da estação até a universidade.",
+     "Pelo centro, até o parque.",
+     "Da biblioteca até o hospital."
+    ],
+    "a": 0
+   },
+   {
+    "q": "O que os motoristas devem fazer durante a última semana de obras?",
+    "o": [
+     "Usar a Park Avenue.",
+     "Deixar o carro em casa.",
+     "Passar pela River Road à noite."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Quanto tempo duraram as reformas da biblioteca?",
+    "o": [
+     "Dezoito meses.",
+     "Oito meses.",
+     "Dois anos."
+    ],
+    "a": 0
+   },
+   {
+    "q": "O que a biblioteca empresta além de livros?",
+    "o": [
+     "Instrumentos musicais.",
+     "Bicicletas.",
+     "Computadores."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Por que a ouvinte pegou um violão emprestado?",
+    "o": [
+     "Para o filho testar antes de comprar.",
+     "Porque o violão dela quebrou.",
+     "Para tocar numa festa."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Como vai estar o tempo à tarde?",
+    "o": [
+     "Seco e ensolarado.",
+     "Chuvoso.",
+     "Frio e com vento."
+    ],
+    "a": 0
+   }
+  ]
+ },
+ {
+  "id": "l41",
+  "t": "Planejando uma Festa Surpresa",
+  "lv": "B1",
+  "arc": 9,
+  "lines": [
+   [
+    "olivia",
+    "OK, Harry's birthday is next Saturday, and he has no idea. We need to plan everything this week.",
+    "Certo, o aniversário do Harry é no sábado que vem, e ele não faz ideia. Precisamos planejar tudo esta semana."
+   ],
+   [
+    "jin",
+    "Where should we have it? My flat is too small for twenty people.",
+    "Onde vamos fazer? Meu apartamento é pequeno demais para vinte pessoas."
+   ],
+   [
+    "mina",
+    "What about the room above the Italian restaurant on Mill Street? I went to a party there last month. It's big, and they let you bring your own music.",
+    "Que tal o salão em cima do restaurante italiano na Mill Street? Fui a uma festa lá no mês passado. É grande, e eles deixam você levar sua própria música."
+   ],
+   [
+    "olivia",
+    "Good idea. Is it expensive?",
+    "Boa ideia. É caro?"
+   ],
+   [
+    "mina",
+    "The room is free if we order food from the restaurant. They do a pizza menu for about twelve pounds a person.",
+    "O salão é de graça se a gente pedir comida do restaurante. Eles têm um cardápio de pizza por umas doze libras por pessoa."
+   ],
+   [
+    "jin",
+    "That's reasonable. I'll call them this afternoon and book it for seven o'clock.",
+    "É razoável. Vou ligar para eles hoje à tarde e reservar para as sete."
+   ],
+   [
+    "olivia",
+    "Great. Now, the hardest part: how do we get Harry there without him suspecting anything?",
+    "Ótimo. Agora, a parte mais difícil: como levamos o Harry até lá sem ele desconfiar de nada?"
+   ],
+   [
+    "mina",
+    "Olivia, you could invite him for a quiet dinner, just the two of you. Then, when you arrive, we're all upstairs.",
+    "Olivia, você podia convidá-lo para um jantar tranquilo, só vocês dois. Aí, quando vocês chegarem, a gente está todo mundo lá em cima."
+   ],
+   [
+    "olivia",
+    "Perfect. He loves that restaurant, so he won't think it's strange. What about a present?",
+    "Perfeito. Ele adora esse restaurante, então não vai achar estranho. E o presente?"
+   ],
+   [
+    "jin",
+    "He keeps talking about learning to cook Japanese food. We could all pay for a cooking class.",
+    "Ele vive falando que quer aprender a fazer comida japonesa. Podemos todos pagar uma aula de culinária."
+   ],
+   [
+    "mina",
+    "I love that. If everyone gives ten pounds, we'll have enough. I'll create a group chat and collect the money.",
+    "Adorei. Se cada um der dez libras, vai dar. Vou criar um grupo e juntar o dinheiro."
+   ],
+   [
+    "olivia",
+    "But be careful. Don't add Harry to the group by mistake!",
+    "Mas cuidado. Não vá adicionar o Harry no grupo sem querer!"
+   ],
+   [
+    "mina",
+    "Ha! Don't worry. And I'll make the cake. Chocolate, of course.",
+    "Ha! Pode deixar. E eu faço o bolo. De chocolate, claro."
+   ],
+   [
+    "jin",
+    "So, I book the room, Mina organises the money and the cake, and Olivia brings Harry. Let's meet again on Thursday to check everything.",
+    "Então: eu reservo o salão, a Mina cuida do dinheiro e do bolo, e a Olivia leva o Harry. Vamos nos encontrar de novo na quinta para conferir tudo."
+   ]
+  ],
+  "q": [
+   {
+    "q": "Por que não fazem a festa no apartamento do Jin?",
+    "o": [
+     "Porque é pequeno demais para vinte pessoas.",
+     "Porque os vizinhos reclamam.",
+     "Porque ele vai viajar."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Em que condição o salão é de graça?",
+    "o": [
+     "Se pedirem comida do restaurante.",
+     "Se a festa acabar antes das onze.",
+     "Se levarem a própria comida."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Como a Olivia vai levar o Harry sem ele desconfiar?",
+    "o": [
+     "Convidando-o para um jantar só os dois.",
+     "Dizendo que é a festa de outra pessoa.",
+     "Pedindo ajuda para carregar uma coisa."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Qual vai ser o presente?",
+    "o": [
+     "Uma aula de culinária japonesa.",
+     "Um livro de receitas.",
+     "Uma viagem ao Japão."
+    ],
+    "a": 0
+   },
+   {
+    "q": "O que a Mina vai fazer?",
+    "o": [
+     "Juntar o dinheiro e fazer o bolo.",
+     "Reservar o salão.",
+     "Escolher a música."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Quando eles vão se encontrar de novo?",
+    "o": [
+     "Na quinta.",
+     "No sábado de manhã.",
+     "Na segunda."
+    ],
+    "a": 0
+   }
+  ]
+ },
+ {
+  "id": "l42",
+  "t": "Voluntária no Abrigo de Animais",
+  "lv": "B1",
+  "arc": 9,
+  "lines": [
+   [
+    "harry",
+    "Hi, Mina. Thanks for coming. So, you'd like to volunteer at the shelter?",
+    "Oi, Mina. Obrigado por vir. Então, você gostaria de ser voluntária no abrigo?"
+   ],
+   [
+    "mina",
+    "Yes. I've always loved animals, but I can't have a dog in my flat. So I thought this would be a good way to help.",
+    "Sim. Sempre amei animais, mas não posso ter cachorro no meu apartamento. Então pensei que esta seria uma boa forma de ajudar."
+   ],
+   [
+    "harry",
+    "That's what a lot of our volunteers say. Let me tell you how it works. We need help seven days a week, but we ask volunteers to come at least once a week, for about three hours.",
+    "É o que muitos dos nossos voluntários dizem. Deixe-me explicar como funciona. Precisamos de ajuda sete dias por semana, mas pedimos que os voluntários venham pelo menos uma vez por semana, por umas três horas."
+   ],
+   [
+    "mina",
+    "That's fine. I'm free on Saturday mornings. What would I do?",
+    "Tudo bem. Estou livre nos sábados de manhã. O que eu faria?"
+   ],
+   [
+    "harry",
+    "In the beginning, you'd clean the cages, feed the animals and wash the bowls. It isn't glamorous, I'm afraid! After a month, if you want, you can start walking the dogs.",
+    "No começo, você limparia as gaiolas, daria comida para os animais e lavaria as tigelas. Não é nada glamoroso, infelizmente! Depois de um mês, se quiser, pode começar a passear com os cachorros."
+   ],
+   [
+    "mina",
+    "Why do I have to wait a month?",
+    "Por que tenho que esperar um mês?"
+   ],
+   [
+    "harry",
+    "Some of our dogs are nervous, because they had a difficult life before they came here. So first we want you to get to know them, and we give you a short training session.",
+    "Alguns dos nossos cachorros são medrosos, porque tiveram uma vida difícil antes de chegar aqui. Então primeiro queremos que você os conheça, e damos um treinamento curto."
+   ],
+   [
+    "mina",
+    "That makes sense. Do volunteers help with adoptions too?",
+    "Faz sentido. Os voluntários ajudam nas adoções também?"
+   ],
+   [
+    "harry",
+    "Yes, in a way. You'll spend a lot of time with the animals, so you'll know their personalities. When families visit, we often ask volunteers which dog would be best for them. For example, a calm dog for an older couple, or a playful one for a family with kids.",
+    "Sim, de certa forma. Você vai passar muito tempo com os animais, então vai conhecer a personalidade deles. Quando as famílias vêm visitar, muitas vezes perguntamos aos voluntários qual cachorro seria melhor para elas. Por exemplo, um cachorro calmo para um casal mais velho, ou um brincalhão para uma família com crianças."
+   ],
+   [
+    "mina",
+    "I'd love that. Is there anything I need to bring?",
+    "Eu ia adorar. Preciso trazer alguma coisa?"
+   ],
+   [
+    "harry",
+    "Just old clothes and comfortable shoes, because you'll get dirty. And you'll need to fill in this form. Can you start this Saturday at nine?",
+    "Só roupas velhas e sapatos confortáveis, porque você vai se sujar. E precisa preencher este formulário. Pode começar neste sábado às nove?"
+   ],
+   [
+    "mina",
+    "Absolutely. See you on Saturday!",
+    "Com certeza. Até sábado!"
+   ]
+  ],
+  "q": [
+   {
+    "q": "Por que a Mina quer ser voluntária?",
+    "o": [
+     "Ama animais, mas não pode ter cachorro em casa.",
+     "Precisa de experiência para um emprego.",
+     "Uma amiga pediu."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Com que frequência os voluntários precisam ir?",
+    "o": [
+     "Pelo menos uma vez por semana, umas três horas.",
+     "Todos os dias.",
+     "Uma vez por mês."
+    ],
+    "a": 0
+   },
+   {
+    "q": "O que ela vai fazer no começo?",
+    "o": [
+     "Limpar as gaiolas, dar comida e lavar as tigelas.",
+     "Passear com os cachorros.",
+     "Atender as famílias."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Por que ela precisa esperar um mês para passear com os cachorros?",
+    "o": [
+     "Porque alguns são medrosos e ela precisa conhecê-los e fazer um treinamento.",
+     "Porque precisa de uma licença.",
+     "Porque os cachorros estão doentes."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Como os voluntários ajudam nas adoções?",
+    "o": [
+     "Sugerem o cachorro certo para cada família.",
+     "Levam os cachorros até a casa das famílias.",
+     "Cobram a taxa de adoção."
+    ],
+    "a": 0
+   },
+   {
+    "q": "O que ela precisa levar?",
+    "o": [
+     "Roupas velhas e sapatos confortáveis.",
+     "Comida para os animais.",
+     "Uma foto e um documento."
+    ],
+    "a": 0
+   }
+  ]
  }
 ]

@@ -2195,5 +2195,510 @@
     "a": 0
    }
   ]
+ },
+ {
+  "id": "r31",
+  "t": "Blog: Uma Semana em Lisboa Gastando Pouco",
+  "lv": "B1",
+  "kind": "Blog de viagem",
+  "p": [
+   "Last month I spent a week in Lisbon, and I was surprised by how much you can do there without spending a lot of money. Here are my best tips for travellers on a budget.",
+   "First, forget taxis and use the trams and the metro. A day ticket costs less than seven euros, and you can use it on all the buses, trams and metro lines. The famous tram 28 is always full of tourists, so try to catch it early in the morning, before nine. Otherwise, you might wait for an hour.",
+   "Second, walk as much as you can. Lisbon is built on seven hills, so your legs will hurt, but the views are worth it. The best viewpoints, called miradouros, are completely free. My favourite was the one at Senhora do Monte, where I watched the sunset with a group of students playing guitar.",
+   "Food doesn't have to be expensive either. Many small restaurants offer a prato do dia, a dish of the day, at lunchtime. For about ten euros, I usually got soup, a main course, a drink and coffee. And of course, you have to try a pastel de nata, the famous custard tart. They cost around one euro fifty, and I ate one every day!",
+   "If you like museums, check the opening days carefully. Some of them are free on Sunday mornings for residents, and others have cheaper tickets for students and people under twenty-five.",
+   "Finally, a warning: wear comfortable shoes. The pavements are made of small stones, which are beautiful but very slippery when it rains. I almost fell twice!",
+   "Lisbon was one of the best trips I've ever had, and I didn't need a big budget to enjoy it. I'm already planning to go back next spring."
+  ],
+  "g": {
+   "on a budget": "com pouco dinheiro",
+   "day ticket": "bilhete diário",
+   "catch": "pegar (um transporte)",
+   "Otherwise": "senão, caso contrário",
+   "hills": "colinas",
+   "worth it": "vale a pena",
+   "viewpoints": "mirantes",
+   "main course": "prato principal",
+   "custard tart": "torta de creme",
+   "pavements": "calçadas",
+   "slippery": "escorregadio"
+  },
+  "q": [
+   {
+    "q": "Qual é a vantagem do bilhete diário?",
+    "o": [
+     "Vale para ônibus, bondes e metrô.",
+     "Inclui a entrada nos museus.",
+     "É grátis para estudantes."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Por que é melhor pegar o bonde 28 cedo?",
+    "o": [
+     "Porque depois das nove ele vive cheio e a espera pode ser de uma hora.",
+     "Porque ele só funciona de manhã.",
+     "Porque de manhã é mais barato."
+    ],
+    "a": 0
+   },
+   {
+    "q": "O que a autora diz sobre os mirantes?",
+    "o": [
+     "São de graça e têm vistas lindas.",
+     "São caros, mas valem a pena.",
+     "Ficam todos longe do centro."
+    ],
+    "a": 0
+   },
+   {
+    "q": "O que normalmente vem no prato do dia?",
+    "o": [
+     "Sopa, prato principal, bebida e café.",
+     "Só um prato de peixe.",
+     "Um doce e uma bebida."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Por que é preciso usar sapatos confortáveis?",
+    "o": [
+     "Porque as calçadas de pedrinhas escorregam quando chove.",
+     "Porque os bondes não param no centro.",
+     "Porque os museus exigem."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Qual é a opinião geral da autora sobre a viagem?",
+    "o": [
+     "Foi uma das melhores e não precisou de muito dinheiro.",
+     "Foi cara demais.",
+     "Não pretende voltar."
+    ],
+    "a": 0
+   }
+  ]
+ },
+ {
+  "id": "r32",
+  "t": "E-mail: Notícias da Cidade Nova",
+  "lv": "B1",
+  "kind": "E-mail pessoal",
+  "p": [
+   "Hi Sofia,",
+   "Sorry I haven't written for so long! The last few weeks have been really busy, but I finally have a quiet Sunday afternoon, so here's my news.",
+   "As you know, I moved to Manchester at the beginning of September for my new job. The first week was quite hard. I didn't know anybody, it rained every single day, and I got lost twice on my way to the office. I remember sitting in my empty flat one evening and thinking, what have I done?",
+   "Things are much better now. My colleagues are really friendly, and two of them invited me to join their five-a-side football team. We play every Wednesday after work, and then we usually go to the pub. I'm terrible at football, but nobody seems to mind!",
+   "The job itself is interesting, although it's more difficult than I expected. I have to speak English all day, of course, and in meetings people talk very fast and use a lot of expressions I don't know. At first I was too embarrassed to ask, but now I just say, sorry, what does that mean? People are always happy to explain.",
+   "I've also found a lovely flat in a quieter area, close to a big park. I've started running there in the mornings, which helps me feel less stressed.",
+   "What about you? Did you get the place at the university? I really hope so. You worked so hard for it.",
+   "If you have some free days in December, you should come and visit. You can stay with me, and I'll show you the city. I promise it doesn't rain all the time!",
+   "Write soon,",
+   "Laura"
+  ],
+  "g": {
+   "busy": "corrido, ocupado",
+   "got lost": "me perdi",
+   "colleagues": "colegas de trabalho",
+   "five-a-side football": "futebol de cinco (society)",
+   "nobody seems to mind": "ninguém parece se importar",
+   "although": "embora",
+   "expressions": "expressões",
+   "embarrassed": "com vergonha",
+   "lovely": "lindo, ótimo",
+   "stressed": "estressada"
+  },
+  "q": [
+   {
+    "q": "Por que a Laura se mudou para Manchester?",
+    "o": [
+     "Por causa de um emprego novo.",
+     "Para estudar na universidade.",
+     "Para morar com o namorado."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Como foi a primeira semana?",
+    "o": [
+     "Difícil: não conhecia ninguém, choveu e ela se perdeu.",
+     "Ótima, fez muitos amigos.",
+     "Tranquila, porque ficou em casa."
+    ],
+    "a": 0
+   },
+   {
+    "q": "O que ela faz às quartas-feiras?",
+    "o": [
+     "Joga futebol com colegas e depois vai ao pub.",
+     "Faz aula de inglês.",
+     "Corre no parque."
+    ],
+    "a": 0
+   },
+   {
+    "q": "O que mudou na forma como ela lida com as expressões que não conhece?",
+    "o": [
+     "Antes tinha vergonha de perguntar; agora pergunta.",
+     "Agora anota tudo para pesquisar em casa.",
+     "Ela finge que entende."
+    ],
+    "a": 0
+   },
+   {
+    "q": "O que a Laura pergunta à Sofia?",
+    "o": [
+     "Se ela conseguiu a vaga na universidade.",
+     "Se ela arrumou um emprego.",
+     "Se ela vai se mudar."
+    ],
+    "a": 0
+   },
+   {
+    "q": "O que a Laura propõe no fim?",
+    "o": [
+     "Que a Sofia a visite em dezembro.",
+     "Que elas viajem juntas para Londres.",
+     "Que a Sofia arrume um emprego em Manchester."
+    ],
+    "a": 0
+   }
+  ]
+ },
+ {
+  "id": "r33",
+  "t": "A Escola que Começa Mais Tarde",
+  "lv": "B1",
+  "kind": "Reportagem",
+  "p": [
+   "At most secondary schools, the first lesson starts at around eight o'clock. But two years ago, a school in the north of England decided to try something different: lessons now begin at ten.",
+   "The idea came from the head teacher, Mr Daniel Hughes, after he read about teenagers and sleep. Scientists say that during adolescence, the body clock changes. Teenagers naturally feel tired later at night and find it hard to wake up early. So, when they start school at eight, many of them are not really awake.",
+   "At first, some parents were worried. How could they go to work if their children started school so late? To solve the problem, the school opened its library at eight o'clock, with a teacher there to help students who arrive early. Many use the time to do their homework or read.",
+   "The results have been very positive. Students say they feel less tired, and teachers have noticed that they participate more in class, especially in the first lessons. The number of students who arrive late has fallen by half, and exam results have improved slightly.",
+   "Not everyone is convinced, though. The school day now finishes at half past four, which leaves less time for sports, music and part-time jobs. Some students also say they simply go to bed later, so they don't really sleep more.",
+   "Mr Hughes accepts that the change isn't perfect. We're still learning, he says. But when I walk into a classroom at ten o'clock and see thirty students who are actually awake, I know we made the right decision.",
+   "Other schools in the region are now watching the experiment closely, and three of them are planning to try later starts next year."
+  ],
+  "g": {
+   "secondary school": "escola de ensino médio",
+   "head teacher": "diretor da escola",
+   "adolescence": "adolescência",
+   "body clock": "relógio biológico",
+   "awake": "acordado",
+   "worried": "preocupados",
+   "has fallen by half": "caiu pela metade",
+   "slightly": "um pouco",
+   "convinced": "convencido",
+   "part-time jobs": "empregos de meio período"
+  },
+  "q": [
+   {
+    "q": "A que horas começam as aulas nessa escola agora?",
+    "o": [
+     "Às dez.",
+     "Às oito.",
+     "Ao meio-dia."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Por que o diretor decidiu mudar o horário?",
+    "o": [
+     "Porque o relógio biológico dos adolescentes muda e eles acordam tarde.",
+     "Porque os professores pediram.",
+     "Porque o ônibus escolar atrasava."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Como a escola resolveu o problema dos pais que trabalham cedo?",
+    "o": [
+     "Abriu a biblioteca às oito, com um professor.",
+     "Contratou um ônibus mais cedo.",
+     "Liberou os pais mais tarde do trabalho."
+    ],
+    "a": 0
+   },
+   {
+    "q": "O que aconteceu com o número de alunos que chegam atrasados?",
+    "o": [
+     "Caiu pela metade.",
+     "Dobrou.",
+     "Ficou igual."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Qual é uma das críticas ao novo horário?",
+    "o": [
+     "Sobra menos tempo para esporte, música e trabalho depois da aula.",
+     "As provas ficaram mais difíceis.",
+     "Os professores ficaram mais cansados."
+    ],
+    "a": 0
+   },
+   {
+    "q": "O que outras escolas da região estão fazendo?",
+    "o": [
+     "Acompanhando a experiência; três vão testar no ano que vem.",
+     "Já mudaram todas o horário.",
+     "Proibiram a mudança."
+    ],
+    "a": 0
+   }
+  ]
+ },
+ {
+  "id": "r34",
+  "t": "Guia: Entrevista de Emprego por Vídeo",
+  "lv": "B1",
+  "kind": "Guia prático",
+  "p": [
+   "More and more companies now interview candidates online. A video interview can feel strange at first, because you can't shake hands or read the other person's body language easily. But with some preparation, it can go just as well as a face-to-face interview. Here's how.",
+   "Test your technology the day before. Check that your camera, microphone and internet connection work properly, and download the app the company uses, if you need to. Ask a friend to do a short test call with you, so you can see and hear how you look and sound.",
+   "Choose the right place. Find a quiet room with a plain wall or a tidy bookshelf behind you. Sit facing a window, not with your back to it. Otherwise, the interviewer will only see a dark shape! Tell the people you live with about the interview, so they don't come in or make noise.",
+   "Dress as you would for a normal interview, at least from the waist up. It's tempting to wear smart clothes on top and pyjamas below, but if you need to stand up for any reason, you'll regret it.",
+   "During the interview, look at the camera, not at the screen, when you're speaking. This feels unnatural, but for the interviewer it looks like you're making eye contact. Speak a little more slowly than usual, and wait a second before you answer, because there is often a small delay.",
+   "Keep a notebook next to you with a few key points: examples of your experience and two or three questions you want to ask. But don't read from it. Interviewers can tell when your eyes keep going down.",
+   "Finally, if the connection fails, don't panic. Calmly call back or send a message. Technical problems happen to everyone, and the way you deal with them can actually show that you stay calm under pressure."
+  ],
+  "g": {
+   "shake hands": "apertar as mãos",
+   "body language": "linguagem corporal",
+   "face-to-face": "presencial",
+   "properly": "direito, corretamente",
+   "plain wall": "parede lisa",
+   "tidy": "arrumado",
+   "from the waist up": "da cintura para cima",
+   "tempting": "tentador",
+   "regret": "se arrepender",
+   "eye contact": "contato visual",
+   "delay": "atraso, demora"
+  },
+  "q": [
+   {
+    "q": "O que o guia recomenda fazer no dia anterior?",
+    "o": [
+     "Testar câmera, microfone e internet com uma chamada de teste.",
+     "Decorar todas as respostas.",
+     "Ligar para a empresa e confirmar o horário."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Por que não se deve sentar de costas para a janela?",
+    "o": [
+     "Porque o entrevistador só vai ver uma sombra escura.",
+     "Porque o barulho da rua atrapalha.",
+     "Porque fica frio."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Qual é o risco de usar pijama da cintura para baixo?",
+    "o": [
+     "Se tiver que se levantar, vai se arrepender.",
+     "O entrevistador pode pedir para ver.",
+     "Fica desconfortável."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Para onde você deve olhar quando está falando?",
+    "o": [
+     "Para a câmera.",
+     "Para a tela.",
+     "Para as suas anotações."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Por que é bom esperar um segundo antes de responder?",
+    "o": [
+     "Porque costuma haver um pequeno atraso na ligação.",
+     "Para parecer mais inteligente.",
+     "Para o entrevistador anotar."
+    ],
+    "a": 0
+   },
+   {
+    "q": "O que fazer se a conexão cair?",
+    "o": [
+     "Manter a calma e ligar de volta ou mandar mensagem.",
+     "Desistir da entrevista.",
+     "Esperar a empresa ligar no dia seguinte."
+    ],
+    "a": 0
+   }
+  ]
+ },
+ {
+  "id": "r35",
+  "t": "Por que Todo Mundo Está Caminhando",
+  "lv": "B1",
+  "kind": "Artigo de saúde",
+  "p": [
+   "Running marathons and lifting heavy weights get a lot of attention on social media. But according to many doctors, one of the best things you can do for your health is much simpler: walking.",
+   "You've probably heard that we should walk ten thousand steps a day. Interestingly, this number didn't come from science. It came from an advertising campaign for a Japanese step counter in the 1960s. Recent studies suggest that the benefits start much earlier. People who walk about seven thousand steps a day seem to have a lower risk of heart disease than those who walk very little.",
+   "Walking is good for the mind too. Several studies have shown that a short walk can reduce stress and improve your mood, especially if you walk in a park or near trees. Some people also find that walking helps them think. The writer Charles Dickens often walked for hours at night to plan his novels.",
+   "Another advantage is that almost anyone can do it. You don't need expensive equipment, a gym membership or special skills. All you need is a pair of comfortable shoes.",
+   "So how can you walk more if you're busy? Experts suggest small changes. Get off the bus one stop earlier. Take the stairs instead of the lift. Walk while you're talking on the phone. Instead of meeting a friend for coffee, meet for a walk.",
+   "Of course, walking isn't a magic solution. If you want to get much fitter, you will need more intense exercise as well. But if you're doing nothing at the moment, a daily walk is a great place to start.",
+   "And the best part? You can start today. Why not put down this article and go for a walk?"
+  ],
+  "g": {
+   "lifting heavy weights": "levantar pesos",
+   "steps": "passos",
+   "advertising campaign": "campanha publicitária",
+   "step counter": "contador de passos",
+   "lower risk": "risco menor",
+   "heart disease": "doença do coração",
+   "mood": "humor",
+   "novels": "romances",
+   "gym membership": "mensalidade de academia",
+   "lift": "elevador (inglês britânico)",
+   "fitter": "mais em forma"
+  },
+  "q": [
+   {
+    "q": "De onde veio a meta de dez mil passos por dia?",
+    "o": [
+     "De uma campanha publicitária japonesa nos anos 1960.",
+     "De um estudo de médicos americanos.",
+     "De um livro de Charles Dickens."
+    ],
+    "a": 0
+   },
+   {
+    "q": "O que estudos recentes sugerem?",
+    "o": [
+     "Que os benefícios começam com bem menos passos, uns sete mil.",
+     "Que é preciso andar vinte mil passos.",
+     "Que caminhar não faz diferença para o coração."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Onde caminhar parece melhorar mais o humor?",
+    "o": [
+     "Num parque ou perto de árvores.",
+     "Numa esteira de academia.",
+     "No centro da cidade."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Por que o texto cita Charles Dickens?",
+    "o": [
+     "Porque ele caminhava à noite para planejar os romances.",
+     "Porque ele inventou o contador de passos.",
+     "Porque ele era médico."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Qual destas é uma dica para quem é ocupado?",
+    "o": [
+     "Descer do ônibus um ponto antes.",
+     "Acordar duas horas mais cedo.",
+     "Comprar uma esteira."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Qual é o limite da caminhada, segundo o texto?",
+    "o": [
+     "Para ficar muito mais em forma, é preciso exercício mais intenso também.",
+     "Ela faz mal para os joelhos.",
+     "Só funciona para pessoas jovens."
+    ],
+    "a": 0
+   }
+  ]
+ },
+ {
+  "id": "r36",
+  "t": "A Vizinha que Aprendeu a Mandar Mensagens",
+  "lv": "B1",
+  "kind": "História real",
+  "p": [
+   "When I moved into my building three years ago, the first neighbour I met was Mrs Evans, who lives on the ground floor. She was eighty-seven, she always wore a bright red coat, and she told me, within five minutes, that she had never used a computer in her life.",
+   "We became friends slowly. I helped her carry her shopping, and she gave me advice about my plants, which were always dying. One day, she told me she was sad because her granddaughter had moved to Canada. They only spoke on the phone once a month, because international calls were expensive.",
+   "I asked if she had a smartphone. She did. Her son had given her one for her birthday, but it was still in the box. So, every Tuesday afternoon, I went downstairs with a cup of tea and we had a lesson.",
+   "It wasn't easy. The screen was too small, she couldn't remember her passwords, and she often pressed the wrong button and got very frustrated. More than once she said, I'm too old for this. But she never actually gave up. She wrote everything down in a little notebook, step by step, in her beautiful handwriting.",
+   "After two months, she sent her first message to her granddaughter. It just said, Hello darling, this is Grandma. It's raining here. But when the reply arrived with a photo, she cried.",
+   "Now, at ninety, Mrs Evans makes video calls to Canada every Sunday. She sends me funny pictures of her cat, and last week she showed me how to use a feature on my own phone that I didn't know about.",
+   "I started out as the teacher, but I think I've learned more from her than she has from me: about patience, about not giving up, and about how it's never too late to learn something new."
+  ],
+  "g": {
+   "ground floor": "térreo",
+   "within five minutes": "em menos de cinco minutos",
+   "shopping": "compras",
+   "granddaughter": "neta",
+   "passwords": "senhas",
+   "frustrated": "frustrada",
+   "gave up": "desistiu",
+   "handwriting": "letra, caligrafia",
+   "reply": "resposta",
+   "feature": "recurso, função",
+   "patience": "paciência"
+  },
+  "q": [
+   {
+    "q": "O que a Sra. Evans contou logo que conheceu o autor?",
+    "o": [
+     "Que nunca tinha usado um computador.",
+     "Que era professora aposentada.",
+     "Que ia se mudar para o Canadá."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Por que ela estava triste?",
+    "o": [
+     "A neta tinha se mudado para o Canadá e elas pouco se falavam.",
+     "O gato dela tinha sumido.",
+     "O filho não a visitava mais."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Por que as duas só se falavam uma vez por mês?",
+    "o": [
+     "Porque as ligações internacionais eram caras.",
+     "Porque a neta trabalhava muito.",
+     "Por causa do fuso horário."
+    ],
+    "a": 0
+   },
+   {
+    "q": "O que ela fazia para não esquecer o que aprendia?",
+    "o": [
+     "Anotava tudo num caderninho, passo a passo.",
+     "Gravava as aulas.",
+     "Pedia ajuda ao filho."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Como ela reagiu quando chegou a resposta da neta com uma foto?",
+    "o": [
+     "Chorou.",
+     "Desligou o celular.",
+     "Ligou para o filho."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Qual é a lição final do autor?",
+    "o": [
+     "Que aprendeu com ela sobre paciência e que nunca é tarde para aprender.",
+     "Que celulares são difíceis demais para idosos.",
+     "Que ensinar é cansativo."
+    ],
+    "a": 0
+   }
+  ]
  }
 ]
