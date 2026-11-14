@@ -56,7 +56,7 @@ def gerar(voz, vel, saida, chaves=None, grupo=None):
         toks = [K.VOCAB[c] for c in p if c in K.VOCAB][:500]
         st = k.v[VOZES[voz]][min(len(toks), len(k.v[VOZES[voz]])) - 1]
         a = k.s.run(None, {k.tok: np.array([[0, *toks, 0]], dtype=np.int64), 'style': np.asarray(st, dtype=np.float32),
-                           'speed': np.array([VEL[vel] * (K.RITMO.get(VOZES[voz], 1.0) if vel == 'n' else 1.0)], dtype=np.float32)})[0]
+                           'speed': np.array([VEL[vel] * (K.RITMO if vel == 'n' else K.RITMO_S).get(VOZES[voz], 1.0)], dtype=np.float32)})[0]
         return np.clip(np.asarray(a).ravel() * 32767, -32768, 32767).astype(np.int16)
 
     os.makedirs(saida, exist_ok=True)

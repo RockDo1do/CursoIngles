@@ -4,8 +4,9 @@ Cada voz do Kokoro tem um ritmo próprio: algumas falam bem mais rápido que out
 de cada voz (sílabas por segundo nas falas do curso) e acelera ou desacelera cada trecho gravado até um ritmo
 comum, sem mudar o tom da voz (filtro atempo do ffmpeg). Atualiza as posições em audio/index.json.
 
-  python3 tools/vozes/ritmo.py medir                 mostra o ritmo de cada voz no modo normal
-  python3 tools/vozes/ritmo.py igualar [--alvo 4.2]  ajusta os arquivos e o índice (só voz com diferença > 2%)
+  python3 tools/vozes/ritmo.py medir [--modo s]                 mostra o ritmo de cada voz (n = normal, s = devagar)
+  python3 tools/vozes/ritmo.py igualar [--modo n] [--alvo 4.2]  ajusta os arquivos e o índice (só voz com diferença > 2%)
+  python3 tools/vozes/ritmo.py igualar --modo s --alvo 3.2      o devagar fica em cerca de 76% do normal, igual para todas
 
 Gravações novas: depois de gravar, rode "igualar" de novo. Só os trechos fora do ritmo mudam.
 """
@@ -27,13 +28,13 @@ def silabas(t):
     return n
 
 
-def medir(man):
-    """sílabas por segundo de cada voz, no modo normal, nas falas com 6 sílabas ou mais"""
-    r = {}
+def medir(man, modo='n'):
+    """sílabas por segundo de cada voz, no modo pedido, nas falas com 6 sílabas ou mais"""
+    r, o = {}, (2 if modo == 'n' else 4)
     for k, e in man['k'].items():
         who, t = k.split('|', 1)
         s = silabas(t)
-        if s >= 6 and e[2]: r.setdefault(who, []).append(s / e[2])
+        if s >= 6 and e[o]: r.setdefault(who, []).append(s / e[o])
     return {w: (statistics.median(v), len(v)) for w, v in r.items()}
 
 
@@ -54,9 +55,10 @@ def gravar(pcm, path):
                    input=pcm.tobytes(), check=True)
 
 
-def igualar(alvo):
+def igualar(alvo, modo='n'):
+    o = 0 if modo == 'n' else 2        # posição de [início, duração] nos nomes e nos cortes
     man = json.load(open(IDX, encoding='utf-8'))
-    rit = medir(man)
+    rit = medir(man, modo)
     fat = {w: alvo / r for w, (r, n) in rit.items() if n >= 10 and abs(alvo / r - 1) > 0.02}
     for w, (r, n) in sorted(rit.items()):
         print(f'{w:8} {r:.2f} sílabas/s ({n} falas) -> ' + (f'x{fat[w]:.3f}' if w in fat else 'fica como está'))
@@ -68,21 +70,25 @@ def igualar(alvo):
     F = man['files']
     for k, e in man['k'].items():
         voz = k.split('|', 1)[0]
+        if modo == 's':
+            if F[e[0]].get('s') and F[e[0]]['s'] != F[e[0]]['n']:   # arquivo único: já ajustado com o normal
+                ref(F[e[0]]['s'], voz, (lambda e=e: (e[3], e[4])), (lambda st, du, e=e: e.__setitem__(slice(3, 5), [st, du])))
+            continue
         ref(F[e[0]]['n'], voz, (lambda e=e: (e[1], e[2])), (lambda st, du, e=e: e.__setitem__(slice(1, 3), [st, du])))
         if F[e[0]].get('s') == F[e[0]]['n']:   # arquivo único para as duas velocidades
             ref(F[e[0]]['n'], voz, (lambda e=e: (e[3], e[4])), (lambda st, du, e=e: e.__setitem__(slice(3, 5), [st, du])))
     for w, e in man.get('w', {}).items():
-        if len(e) > 2 and e[2]:
+        if modo == 'n' and len(e) > 2 and e[2]:
             ref(F[e[2]]['n'], '_palavra', (lambda e=e: (e[0], e[1])), (lambda st, du, e=e: e.__setitem__(slice(0, 2), [st, du])))
     nm = man.get('nm', {})
     for k, ps in nm.get('parts', {}).items():
         voz = k.split('|', 1)[0]
         for p in ps:
-            if p: ref(F['nm_parts']['n'], voz, (lambda p=p: (p[0], p[1])), (lambda st, du, p=p: p.__setitem__(slice(0, 2), [st, du])))
+            if p: ref(F['nm_parts'][modo], voz, (lambda p=p: (p[o], p[o + 1])), (lambda st, du, p=p: p.__setitem__(slice(o, o + 2), [st, du])))
     for voz, ns in nm.get('names', {}).items():
         for e in ns.values():
             g = f'nm_{voz}_{e[4]}' if len(e) == 5 else f'nm_{voz}'
-            ref(F[g]['n'], voz, (lambda e=e: (e[0], e[1])), (lambda st, du, e=e: e.__setitem__(slice(0, 2), [st, du])))
+            ref(F[g][modo], voz, (lambda e=e: (e[o], e[o + 1])), (lambda st, du, e=e: e.__setitem__(slice(o, o + 2), [st, du])))
     mudou = 0
     for url, rs in sorted(refs.items()):
         if not any(v in fat for v, _, _ in rs): continue
@@ -101,16 +107,16 @@ def igualar(alvo):
         mudou += 1
     json.dump(man, open(IDX, 'w', encoding='utf-8'), ensure_ascii=False, separators=(',', ':'))
     print(f'{mudou} arquivos ajustados')
-    for w, (r, n) in sorted(medir(man).items()):
+    for w, (r, n) in sorted(medir(man, modo).items()):
         print(f'  agora {w:8} {r:.2f} sílabas/s')
 
 
 if __name__ == '__main__':
     ap = argparse.ArgumentParser(); sub = ap.add_subparsers(dest='cmd', required=True)
-    sub.add_parser('medir')
-    a = sub.add_parser('igualar'); a.add_argument('--alvo', type=float, default=4.2)
+    m = sub.add_parser('medir'); m.add_argument('--modo', choices=['n', 's'], default='n')
+    a = sub.add_parser('igualar'); a.add_argument('--alvo', type=float, default=4.2); a.add_argument('--modo', choices=['n', 's'], default='n')
     x = ap.parse_args()
     man = json.load(open(IDX, encoding='utf-8'))
     if x.cmd == 'medir':
-        for w, (r, n) in sorted(medir(man).items()): print(f'{w:8} {r:.2f} sílabas/s ({n} falas)')
-    else: igualar(x.alvo)
+        for w, (r, n) in sorted(medir(man, x.modo).items()): print(f'{w:8} {r:.2f} sílabas/s ({n} falas)')
+    else: igualar(x.alvo, x.modo)

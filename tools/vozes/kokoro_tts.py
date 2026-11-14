@@ -27,6 +27,8 @@ def phonemize(text):
     return ''.join(c for c in res if c in VOCAB).strip()
 SR=24000
 # ajuste de ritmo por voz no modo normal (medido com tools/vozes/ritmo.py medir, alvo 4,2 sílabas por segundo)
+# no modo devagar (velocidade 0.78), medido com: ritmo.py medir --modo s, alvo 3,2
+RITMO_S={'af_heart':0.958,'am_michael':1.060,'af_kore':0.944,'am_puck':0.849,'af_bella':0.912,'am_fenrir':0.901,'bf_emma':0.982,'bm_george':1.077}
 RITMO={'af_heart':0.965,'am_michael':1.051,'af_kore':0.932,'am_puck':0.869,'af_bella':0.905,'am_fenrir':0.925,'bf_emma':0.957,'bm_george':1.062}
 
 
@@ -38,9 +40,10 @@ class Kokoro:
         self.inp={i.name:i.type for i in self.s.get_inputs()}
         self.tok='input_ids' if 'input_ids' in self.inp else 'tokens'
     def synth(self,text,voice,speed=1.0):
-        # na velocidade normal, cada voz leva um ajuste para todas falarem no mesmo ritmo (cerca de 4,2 sílabas
-        # por segundo); os números vêm de tools/vozes/ritmo.py. O modo devagar fica como sempre foi.
+        # cada voz leva um ajuste para todas falarem no mesmo ritmo: cerca de 4,2 sílabas por segundo no normal
+        # e 3,2 no devagar (76% do normal); os números vêm de tools/vozes/ritmo.py.
         if speed==1.0: speed=RITMO.get(voice,1.0)
+        elif speed==0.78: speed=0.78*RITMO_S.get(voice,1.0)
         # vozes britânicas (bf_, bm_) leem com a fonética do inglês britânico
         gb=voice[:1]=='b'
         if gb: LIB.espeak_SetVoiceByName(b'en-gb-x-rp')
