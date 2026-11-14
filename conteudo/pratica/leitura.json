@@ -4,7 +4,12 @@
   "t": "Regras para Novos Membros",
   "lv": "B1",
   "kind": "Aviso do Clube",
-  "p": ["Welcome to the Explorers' Club! We are happy to have you with us. Before your first mission, please read these rules carefully. They have been written to keep everyone safe.", "First, you must always carry your club card. If you lose it, tell the front desk immediately. Second, you mustn't enter a portal alone. Even experienced explorers work in pairs. Third, you should check the weather before every mission, because storms can make portals unstable.", "New members don't have to buy their own equipment. The club lends helmets, maps and radios for free. However, you have to return them within three days. If you damage something, you might have to pay for it.", "Finally, remember that asking for help is not a weakness. Our trainers have helped hundreds of explorers since the club opened in 2010. Good luck, and enjoy the climb!"],
+  "p": [
+   "Welcome to the Explorers' Club! We are happy to have you with us. Before your first mission, please read these rules carefully. They have been written to keep everyone safe.",
+   "First, you must always carry your club card. If you lose it, tell the front desk immediately. Second, you mustn't enter a portal alone. Even experienced explorers work in pairs. Third, you should check the weather before every mission, because storms can make portals unstable.",
+   "New members don't have to buy their own equipment. The club lends helmets, maps and radios for free. However, you have to return them within three days. If you damage something, you might have to pay for it.",
+   "Finally, remember that asking for help is not a weakness. Our trainers have helped hundreds of explorers since the club opened in 2010. Good luck, and enjoy the climb!"
+  ],
   "g": {
    "carefully": "com atenção",
    "front desk": "recepção",
@@ -21,10 +26,42 @@
    "climb": "subida"
   },
   "q": [
-   {"q": "O que fazer se perder o cartão?", "o": ["Avisar a recepção na hora", "Comprar outro", "Esperar três dias"], "a": 0},
-   {"q": "Por que verificar o tempo antes da missão?", "o": ["Tempestades deixam os portais instáveis", "Para escolher a roupa", "Porque é proibido sair com chuva"], "a": 0},
-   {"q": "Os novos membros precisam comprar equipamento?", "o": ["Não, o clube empresta", "Sim, sempre", "Só o capacete"], "a": 0},
-   {"q": "Em quanto tempo é preciso devolver o equipamento?", "o": ["Em até três dias", "Em uma semana", "No fim do mês"], "a": 0}
+   {
+    "q": "O que fazer se perder o cartão?",
+    "o": [
+     "Avisar a recepção na hora",
+     "Comprar outro",
+     "Esperar três dias"
+    ],
+    "a": 0
+   },
+   {
+    "q": "Por que verificar o tempo antes da missão?",
+    "o": [
+     "Tempestades deixam os portais instáveis",
+     "Para escolher a roupa",
+     "Porque é proibido sair com chuva"
+    ],
+    "a": 0
+   },
+   {
+    "q": "Os novos membros precisam comprar equipamento?",
+    "o": [
+     "Não, o clube empresta",
+     "Sim, sempre",
+     "Só o capacete"
+    ],
+    "a": 0
+   },
+   {
+    "q": "Em quanto tempo é preciso devolver o equipamento?",
+    "o": [
+     "Em até três dias",
+     "Em uma semana",
+     "No fim do mês"
+    ],
+    "a": 0
+   }
   ]
  },
  {
@@ -32,7 +69,12 @@
   "t": "Avaliação de Hotel",
   "lv": "B1",
   "kind": "Avaliação na internet",
-  "p": ["I stayed at the Grand River Hotel for five nights last month, and overall I had a great time. The location is excellent: it's a ten-minute walk from Central Park, and there's a subway station right across the street.", "My room was clean and comfortable, but it was smaller than it looked in the photos. On the second night, the air conditioning stopped working. I called the front desk, and they sent someone within fifteen minutes, which I really appreciated.", "Breakfast is included and served from seven to ten. There's a good choice of fresh fruit, eggs and bread, although the coffee could be better. The staff was always friendly and helpful, especially the receptionist, who gave me great tips about the city.", "Would I stay here again? Yes, definitely. Just don't expect a big room."],
+  "p": [
+   "I stayed at the Grand River Hotel for five nights last month, and overall I had a great time. The location is excellent: it's a ten-minute walk from Central Park, and there's a subway station right across the street.",
+   "My room was clean and comfortable, but it was smaller than it looked in the photos. On the second night, the air conditioning stopped working. I called the front desk, and they sent someone within fifteen minutes, which I really appreciated.",
+   "Breakfast is included and served from seven to ten. There's a good choice of fresh fruit, eggs and bread, although the coffee could be better. The staff was always friendly and helpful, especially the receptionist, who gave me great tips about the city.",
+   "Would I stay here again? Yes, definitely. Just don't expect a big room."
+  ],
   "g": {
    "overall": "no geral",
    "location": "localização",
@@ -48,10 +90,42 @@
    "expect": "esperar"
   },
   "q": [
-   {"q": "Por que a localização é boa?", "o": ["Fica perto do Central Park e do metrô", "Tem vista para o rio", "Fica no aeroporto"], "a": 0},
-   {"q": "Qual foi o problema no quarto?", "o": ["O ar-condicionado parou", "O chuveiro quebrou", "Estava sujo"], "a": 0},
-   {"q": "O que não estava tão bom no café da manhã?", "o": ["O café", "As frutas", "O pão"], "a": 0},
-   {"q": "A pessoa voltaria ao hotel?", "o": ["Sim, com certeza", "Não", "Só se o quarto fosse maior"], "a": 0}
+   {
+    "q": "Por que a localização é boa?",
+    "o": [
+     "Fica perto do Central Park e do metrô",
+     "Tem vista para o rio",
+     "Fica no aeroporto"
+    ],
+    "a": 0
+   },
+   {
+    "q": "Qual foi o problema no quarto?",
+    "o": [
+     "O ar-condicionado parou",
+     "O chuveiro quebrou",
+     "Estava sujo"
+    ],
+    "a": 0
+   },
+   {
+    "q": "O que não estava tão bom no café da manhã?",
+    "o": [
+     "O café",
+     "As frutas",
+     "O pão"
+    ],
+    "a": 0
+   },
+   {
+    "q": "A pessoa voltaria ao hotel?",
+    "o": [
+     "Sim, com certeza",
+     "Não",
+     "Só se o quarto fosse maior"
+    ],
+    "a": 0
+   }
   ]
  },
  {
@@ -59,7 +133,12 @@
   "t": "Mistério na Ponte",
   "lv": "B2",
   "kind": "Notícia",
-  "p": ["A strange light was seen under the old bridge last Tuesday night. According to local residents, the light had appeared several times before, but nobody had reported it.", "The Explorers' Club was contacted on Wednesday morning, and a team was sent to investigate. The team leader, Jin, said that the light had been caused by a small, inactive portal. He explained that portals like this are usually harmless, although they should always be checked.", "Residents were told that the area would be closed for two days. Some shop owners complained that they had lost customers, but most people agreed that safety came first.", "The portal was officially closed on Friday. The club has asked residents to report anything unusual as soon as possible, rather than waiting."],
+  "p": [
+   "A strange light was seen under the old bridge last Tuesday night. According to local residents, the light had appeared several times before, but nobody had reported it.",
+   "The Explorers' Club was contacted on Wednesday morning, and a team was sent to investigate. The team leader, Jin, said that the light had been caused by a small, inactive portal. He explained that portals like this are usually harmless, although they should always be checked.",
+   "Residents were told that the area would be closed for two days. Some shop owners complained that they had lost customers, but most people agreed that safety came first.",
+   "The portal was officially closed on Friday. The club has asked residents to report anything unusual as soon as possible, rather than waiting."
+  ],
   "g": {
    "residents": "moradores",
    "several": "várias",
@@ -73,10 +152,42 @@
    "rather than": "em vez de"
   },
   "q": [
-   {"q": "Quando a luz foi vista?", "o": ["Na terça à noite", "Na quarta de manhã", "Na sexta"], "a": 0},
-   {"q": "O que causou a luz?", "o": ["Um portal pequeno e inativo", "Uma lâmpada quebrada", "Um incêndio"], "a": 0},
-   {"q": "Por que alguns comerciantes reclamaram?", "o": ["Perderam clientes", "Não foram avisados", "O portal danificou as lojas"], "a": 0},
-   {"q": "O que o clube pede aos moradores?", "o": ["Que avisem logo sobre algo estranho", "Que não passem pela ponte", "Que fechem as lojas"], "a": 0}
+   {
+    "q": "Quando a luz foi vista?",
+    "o": [
+     "Na terça à noite",
+     "Na quarta de manhã",
+     "Na sexta"
+    ],
+    "a": 0
+   },
+   {
+    "q": "O que causou a luz?",
+    "o": [
+     "Um portal pequeno e inativo",
+     "Uma lâmpada quebrada",
+     "Um incêndio"
+    ],
+    "a": 0
+   },
+   {
+    "q": "Por que alguns comerciantes reclamaram?",
+    "o": [
+     "Perderam clientes",
+     "Não foram avisados",
+     "O portal danificou as lojas"
+    ],
+    "a": 0
+   },
+   {
+    "q": "O que o clube pede aos moradores?",
+    "o": [
+     "Que avisem logo sobre algo estranho",
+     "Que não passem pela ponte",
+     "Que fechem as lojas"
+    ],
+    "a": 0
+   }
   ]
  },
  {
@@ -84,7 +195,12 @@
   "t": "Adultos Aprendem Idiomas?",
   "lv": "C1",
   "kind": "Artigo",
-  "p": ["Many adults believe that they are simply too old to learn a new language. Although it is true that children tend to acquire accents more easily, research suggests that adults have important advantages of their own.", "Adults usually understand grammar faster, since they can compare it with their first language. Moreover, they are often more motivated, because they learn for a clear reason, such as work or travel. What they tend to lack is not ability, but time and consistency.", "Studies indicate that short daily sessions are far more effective than long, occasional ones. In other words, ten minutes a day may well be better than two hours on a Sunday. Not only does regular practice strengthen memory, but it also reduces the anxiety that many learners feel.", "Therefore, the question is not whether adults can learn, but how they can build a habit that fits their lives. As one teacher put it, fluency is not a talent. It's a routine."],
+  "p": [
+   "Many adults believe that they are simply too old to learn a new language. Although it is true that children tend to acquire accents more easily, research suggests that adults have important advantages of their own.",
+   "Adults usually understand grammar faster, since they can compare it with their first language. Moreover, they are often more motivated, because they learn for a clear reason, such as work or travel. What they tend to lack is not ability, but time and consistency.",
+   "Studies indicate that short daily sessions are far more effective than long, occasional ones. In other words, ten minutes a day may well be better than two hours on a Sunday. Not only does regular practice strengthen memory, but it also reduces the anxiety that many learners feel.",
+   "Therefore, the question is not whether adults can learn, but how they can build a habit that fits their lives. As one teacher put it, fluency is not a talent. It's a routine."
+  ],
   "g": {
    "acquire": "adquirir",
    "advantages": "vantagens",
@@ -101,10 +217,42 @@
    "put it": "disse"
   },
   "q": [
-   {"q": "Segundo o texto, em que as crianças levam vantagem?", "o": ["No sotaque", "Na gramática", "Na motivação"], "a": 0},
-   {"q": "O que normalmente falta aos adultos?", "o": ["Tempo e constância", "Capacidade", "Inteligência"], "a": 0},
-   {"q": "O que é mais eficaz, segundo os estudos?", "o": ["Sessões curtas todos os dias", "Duas horas no domingo", "Estudar só gramática"], "a": 0},
-   {"q": "Qual é a ideia da frase final?", "o": ["A fluência vem da rotina", "A fluência é um talento", "A fluência vem só com viagens"], "a": 0}
+   {
+    "q": "Segundo o texto, em que as crianças levam vantagem?",
+    "o": [
+     "No sotaque",
+     "Na gramática",
+     "Na motivação"
+    ],
+    "a": 0
+   },
+   {
+    "q": "O que normalmente falta aos adultos?",
+    "o": [
+     "Tempo e constância",
+     "Capacidade",
+     "Inteligência"
+    ],
+    "a": 0
+   },
+   {
+    "q": "O que é mais eficaz, segundo os estudos?",
+    "o": [
+     "Sessões curtas todos os dias",
+     "Duas horas no domingo",
+     "Estudar só gramática"
+    ],
+    "a": 0
+   },
+   {
+    "q": "Qual é a ideia da frase final?",
+    "o": [
+     "A fluência vem da rotina",
+     "A fluência é um talento",
+     "A fluência vem só com viagens"
+    ],
+    "a": 0
+   }
   ]
  },
  {
@@ -112,7 +260,12 @@
   "t": "Proposta à Diretora",
   "lv": "C1",
   "kind": "E-mail formal",
-  "p": ["Dear Director, I am writing to propose a change to our training schedule. Over the past three months, it has become clear that our current model may not be meeting the needs of new members.", "According to our records, nearly half of new explorers stop attending after the first month. While there could be several reasons for this, the feedback suggests that the sessions are too long and too infrequent.", "I would therefore recommend that we replace the weekly three-hour session with three shorter sessions of one hour. It is essential that each session have a clear goal, so that members can see their progress. If we had adopted this model earlier, I believe we would have kept more members.", "I would be happy to discuss this proposal at your convenience. Thank you for your time and consideration. Kind regards, The Planning Team."],
+  "p": [
+   "Dear Director, I am writing to propose a change to our training schedule. Over the past three months, it has become clear that our current model may not be meeting the needs of new members.",
+   "According to our records, nearly half of new explorers stop attending after the first month. While there could be several reasons for this, the feedback suggests that the sessions are too long and too infrequent.",
+   "I would therefore recommend that we replace the weekly three-hour session with three shorter sessions of one hour. It is essential that each session have a clear goal, so that members can see their progress. If we had adopted this model earlier, I believe we would have kept more members.",
+   "I would be happy to discuss this proposal at your convenience. Thank you for your time and consideration. Kind regards, The Planning Team."
+  ],
   "g": {
    "propose": "propor",
    "schedule": "cronograma",
@@ -129,10 +282,774 @@
    "consideration": "atenção"
   },
   "q": [
-   {"q": "Qual é o objetivo do e-mail?", "o": ["Propor uma mudança nos treinos", "Reclamar de um colega", "Pedir férias"], "a": 0},
-   {"q": "Qual é o problema apontado?", "o": ["Quase metade dos novos membros desiste no primeiro mês", "Os treinos são caros", "Faltam treinadores"], "a": 0},
-   {"q": "O que a equipe recomenda?", "o": ["Três sessões de uma hora por semana", "Uma sessão de três horas", "Treinos só aos domingos"], "a": 0},
-   {"q": "Qual frase usa o subjuntivo?", "o": ["It is essential that each session have a clear goal", "I am writing to propose a change", "Thank you for your time"], "a": 0}
+   {
+    "q": "Qual é o objetivo do e-mail?",
+    "o": [
+     "Propor uma mudança nos treinos",
+     "Reclamar de um colega",
+     "Pedir férias"
+    ],
+    "a": 0
+   },
+   {
+    "q": "Qual é o problema apontado?",
+    "o": [
+     "Quase metade dos novos membros desiste no primeiro mês",
+     "Os treinos são caros",
+     "Faltam treinadores"
+    ],
+    "a": 0
+   },
+   {
+    "q": "O que a equipe recomenda?",
+    "o": [
+     "Três sessões de uma hora por semana",
+     "Uma sessão de três horas",
+     "Treinos só aos domingos"
+    ],
+    "a": 0
+   },
+   {
+    "q": "Qual frase usa o subjuntivo?",
+    "o": [
+     "It is essential that each session have a clear goal",
+     "I am writing to propose a change",
+     "Thank you for your time"
+    ],
+    "a": 0
+   }
+  ]
+ },
+ {
+  "id": "r6",
+  "t": "O Homem que Plantou uma Floresta",
+  "lv": "B1",
+  "kind": "Reportagem",
+  "p": [
+   "In 1979, a teenager named Jadav Payeng found hundreds of dead snakes on a sandbank in the Brahmaputra River in northeast India. A flood had left them there, and there were no trees to give them shade, so they had died in the heat.",
+   "Jadav was shocked. He asked the local forestry department for help, but they told him nothing would grow on the sandbank. So he decided to do it himself. He planted bamboo first, because it grows quickly, and carried water to the young plants every day.",
+   "Year after year, he kept planting. He brought red ants from his village to improve the soil, and slowly other trees began to grow. Birds arrived, then deer, rhinos and even tigers. Decades later, his forest covers more than five hundred hectares, an area larger than New York's Central Park.",
+   "For a long time, almost nobody knew about it. Officials only discovered the forest in 2008, when they followed a group of elephants into it. Since then, Jadav has received national awards, and the forest is known by his nickname: Molai.",
+   "When journalists ask him why he did it, his answer is simple. He says that nature gives us everything, and that each person can give something back. He still lives near the forest with his family and keeps planting trees today."
+  ],
+  "g": {
+   "sandbank": "banco de areia",
+   "flood": "enchente",
+   "shade": "sombra",
+   "forestry department": "departamento florestal",
+   "bamboo": "bambu",
+   "soil": "solo, terra",
+   "rhinos": "rinocerontes",
+   "hectares": "hectares",
+   "officials": "autoridades",
+   "nickname": "apelido"
+  },
+  "q": [
+   {
+    "q": "Ideia geral: sobre o que é o texto?",
+    "o": [
+     "Um homem que plantou uma floresta inteira sozinho.",
+     "A história do rio Brahmaputra.",
+     "Como cuidar de cobras."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Detalhe: o que fez Jadav decidir plantar árvores?",
+    "o": [
+     "Encontrar cobras mortas pelo calor, sem sombra.",
+     "Um pedido do governo.",
+     "Um prêmio que ele queria ganhar."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Detalhe: por que ele plantou bambu primeiro?",
+    "o": [
+     "Porque cresce rápido.",
+     "Porque é barato.",
+     "Porque os elefantes gostam."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Detalhe: como as autoridades descobriram a floresta?",
+    "o": [
+     "Seguindo um grupo de elefantes.",
+     "Por uma foto de satélite.",
+     "Por uma reportagem na TV."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Detalhe: qual é o tamanho da floresta hoje?",
+    "o": [
+     "Mais de 500 hectares.",
+     "Cerca de 50 hectares.",
+     "Do tamanho de uma praça."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Inferência: o que a resposta dele aos jornalistas mostra?",
+    "o": [
+     "Que ele faz isso por gratidão à natureza, não por fama.",
+     "Que ele quer vender madeira.",
+     "Que ele se arrepende."
+    ],
+    "a": 0
+   }
+  ]
+ },
+ {
+  "id": "r7",
+  "t": "Guia: Seu Primeiro Mês num Emprego Novo",
+  "lv": "B1",
+  "kind": "Guia prático",
+  "p": [
+   "Starting a new job is exciting, but the first month can also be stressful. You have to learn new systems, remember dozens of names and show what you can do, all at the same time. Here are five tips to help you settle in.",
+   "1. Listen more than you speak. In the first few weeks, your main goal is to understand how things work. Ask questions, take notes and notice how decisions are made. People will respect you more if you understand the situation before you suggest changes.",
+   "2. Learn names quickly. Write down the names of the people you meet and what they do. Using someone's name the second time you meet them makes a great impression, and it will help you know who to ask when you have a problem.",
+   "3. Ask for feedback early. Don't wait for your first official review. After two or three weeks, ask your manager a simple question: “Is there anything I should be doing differently?” It shows that you care, and it helps you fix small problems before they become big ones.",
+   "4. Don't say yes to everything. New employees often accept every task to look helpful, and then they can't finish anything well. It's fine to say, “I'd be happy to help, but I'm working on the report. Which one is more urgent?”",
+   "5. Be kind to yourself. Everybody makes mistakes at the beginning. What matters is how you deal with them. Admit the mistake, fix it if you can, and learn from it. In a few months, you'll be the one helping the new person."
+  ],
+  "g": {
+   "settle in": "se adaptar",
+   "dozens": "dezenas",
+   "notice": "perceber",
+   "suggest": "sugerir",
+   "impression": "impressão",
+   "feedback": "retorno, avaliação",
+   "official review": "avaliação formal",
+   "urgent": "urgente",
+   "admit": "admitir",
+   "deal with": "lidar com"
+  },
+  "q": [
+   {
+    "q": "Ideia geral: para quem é este guia?",
+    "o": [
+     "Para quem está começando num emprego novo.",
+     "Para gerentes que contratam.",
+     "Para quem quer pedir demissão."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Detalhe: qual é o objetivo principal das primeiras semanas?",
+    "o": [
+     "Entender como as coisas funcionam.",
+     "Sugerir muitas mudanças.",
+     "Trabalhar até tarde."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Detalhe: quando pedir uma avaliação, segundo o texto?",
+    "o": [
+     "Depois de duas ou três semanas.",
+     "Só depois de um ano.",
+     "No primeiro dia."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Detalhe: por que não dizer sim para tudo?",
+    "o": [
+     "Porque você não consegue terminar nada bem.",
+     "Porque o chefe não gosta.",
+     "Porque é proibido."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Inferência: o que a frase “Which one is more urgent?” faz?",
+    "o": [
+     "Recusa com educação e pede ajuda para priorizar.",
+     "Reclama do excesso de trabalho.",
+     "Aceita as duas tarefas."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Opinião: qual é a atitude certa diante de um erro, segundo o texto?",
+    "o": [
+     "Admitir, consertar e aprender.",
+     "Esconder até alguém perceber.",
+     "Culpar o sistema."
+    ],
+    "a": 0
+   }
+  ]
+ },
+ {
+  "id": "r8",
+  "t": "A Volta do Trem Noturno",
+  "lv": "B1",
+  "kind": "Matéria de viagem",
+  "p": [
+   "Twenty years ago, night trains in Europe seemed to be disappearing. Cheap flights had made them look slow and old-fashioned, and many routes were closed. Today, however, they are making a surprising comeback.",
+   "New routes now connect cities such as Paris, Vienna, Berlin, Amsterdam and Prague. Passengers can board in the evening, sleep in a bed and wake up in the centre of another city, without the long queues and security checks of an airport.",
+   "One reason for their return is the climate. A journey by train produces much less carbon than the same trip by plane, and many travellers, especially younger ones, want to reduce their impact. Some governments have also invested money in new carriages and routes.",
+   "But night trains are not perfect. Tickets can be more expensive than a budget flight, especially if you want a private cabin. Trains are sometimes delayed, and sleeping is not always easy when the carriage moves and other passengers snore.",
+   "Still, for many people, the experience is part of the holiday. “On a plane, you just want to arrive,” says one regular traveller. “On a night train, the journey itself is an adventure. You fall asleep in one country and have breakfast in another.”"
+  ],
+  "g": {
+   "disappearing": "desaparecendo",
+   "old-fashioned": "antiquado",
+   "comeback": "volta, retorno",
+   "board": "embarcar",
+   "security checks": "controles de segurança",
+   "carriages": "vagões",
+   "budget flight": "voo de baixo custo",
+   "cabin": "cabine",
+   "snore": "roncam",
+   "journey": "viagem, trajeto"
+  },
+  "q": [
+   {
+    "q": "Ideia geral: qual é a ideia principal do texto?",
+    "o": [
+     "Os trens noturnos estão voltando na Europa.",
+     "Os voos baratos acabaram.",
+     "Viajar de trem é sempre melhor."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Detalhe: por que os trens noturnos quase desapareceram?",
+    "o": [
+     "Por causa dos voos baratos.",
+     "Por causa de acidentes.",
+     "Porque ninguém conseguia dormir."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Detalhe: qual é uma razão para a volta deles?",
+    "o": [
+     "Emitem muito menos carbono que o avião.",
+     "São sempre mais baratos.",
+     "Nunca atrasam."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Detalhe: qual é uma desvantagem citada?",
+    "o": [
+     "As passagens podem custar mais que um voo barato.",
+     "Não há camas.",
+     "Só vão para uma cidade."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Opinião: o que o viajante frequente acha?",
+    "o": [
+     "Que a própria viagem é uma aventura.",
+     "Que o avião é mais divertido.",
+     "Que é difícil demais dormir."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Vocabulário: o que significa “make a comeback”?",
+    "o": [
+     "Voltar a fazer sucesso.",
+     "Voltar para casa.",
+     "Fazer o caminho de volta."
+    ],
+    "a": 0
+   }
+  ]
+ },
+ {
+  "id": "r9",
+  "t": "Por que os Adolescentes Dormem Tarde",
+  "lv": "B2",
+  "kind": "Artigo de ciência",
+  "p": [
+   "Parents often complain that their teenage children stay up until midnight and are impossible to wake in the morning. It is tempting to blame phones, or simple laziness. However, scientists have found that something deeper is going on.",
+   "During adolescence, the body's internal clock shifts. The hormone melatonin, which makes us feel sleepy, is released about two hours later than in children or adults. As a result, a typical teenager is not biologically ready to sleep until around eleven at night, and naturally wants to wake up around eight.",
+   "The problem is that most schools start early. A student who falls asleep at eleven and has to get up at half past six will regularly get far less than the eight to ten hours that teenagers need. Over time, this sleep debt can affect mood, concentration, memory and even physical health.",
+   "Some schools have experimented with later start times, and the results have been encouraging. Studies in several countries have reported better attendance, fewer students falling asleep in class, and in some cases improved grades. Car accidents involving young drivers also fell in one region after schools changed their timetable.",
+   "Not everyone is convinced. Moving the school day affects buses, parents' working hours and after-school activities, and critics argue that teenagers would simply go to bed even later. Yet the evidence suggests that, at least to some extent, teenagers' late nights are not a choice. Expecting them to be alert at eight in the morning may be like expecting adults to be at their best at five."
+  ],
+  "g": {
+   "tempting": "tentador",
+   "laziness": "preguiça",
+   "adolescence": "adolescência",
+   "shifts": "muda, se desloca",
+   "released": "liberado",
+   "sleep debt": "dívida de sono",
+   "attendance": "frequência (escolar)",
+   "timetable": "horário",
+   "convinced": "convencido",
+   "alert": "atento, alerta"
+  },
+  "q": [
+   {
+    "q": "Ideia geral: qual é o argumento principal do texto?",
+    "o": [
+     "O sono tardio dos adolescentes tem uma causa biológica.",
+     "Os celulares são os únicos culpados.",
+     "Os adolescentes dormem demais."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Detalhe: o que acontece com a melatonina na adolescência?",
+    "o": [
+     "É liberada cerca de duas horas mais tarde.",
+     "Para de ser produzida.",
+     "É liberada mais cedo."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Detalhe: quantas horas de sono os adolescentes precisam?",
+    "o": [
+     "De oito a dez horas.",
+     "Cinco horas.",
+     "Doze horas."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Detalhe: qual resultado foi observado em escolas que começaram mais tarde?",
+    "o": [
+     "Melhor frequência e menos alunos dormindo na aula.",
+     "Notas piores.",
+     "Mais acidentes de carro."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Opinião: qual é um argumento dos críticos?",
+    "o": [
+     "Os adolescentes simplesmente iriam dormir ainda mais tarde.",
+     "A melatonina não existe.",
+     "As escolas ficariam vazias."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Inferência: o que a comparação final sugere?",
+    "o": [
+     "Exigir atenção às 8 da manhã é injusto com o relógio biológico deles.",
+     "Os adultos deveriam acordar às 5.",
+     "Os adolescentes são preguiçosos."
+    ],
+    "a": 0
+   }
+  ]
+ },
+ {
+  "id": "r10",
+  "t": "Carta ao Jornal: Salvem a Biblioteca",
+  "lv": "B2",
+  "kind": "Carta de leitor",
+  "p": [
+   "Dear Editor,",
+   "I am writing to express my deep concern about the council's plan to close the Riverside Library and replace it with a small digital kiosk in the shopping centre. According to last week's report, the change would save around £80,000 a year. I would argue that the real cost would be much higher.",
+   "For many residents, the library is far more than a place to borrow books. It is one of the few warm, free public spaces left in our town. Every morning, I see elderly people reading newspapers, parents at the toddlers' story time, and job seekers using the computers to write their CVs. A kiosk in a shopping centre cannot offer any of this.",
+   "The council claims that “people now read online”. While it is true that e-books are popular, a recent national survey found that libraries are used most by those with the least money: exactly the people who may not have a reliable internet connection at home. Closing the library would hit them hardest.",
+   "I appreciate that the council is under serious financial pressure, and I am not suggesting that nothing can change. Opening hours could be adjusted, volunteers could help, and the building could be shared with other services, such as a health clinic. Several towns have done exactly this, with great success.",
+   "I urge the council to consult residents properly before making a decision that cannot easily be reversed. Once a library is gone, it rarely comes back.",
+   "Yours faithfully, Margaret Ellis"
+  ],
+  "g": {
+   "council": "prefeitura, câmara municipal",
+   "kiosk": "quiosque",
+   "residents": "moradores",
+   "elderly": "idosos",
+   "toddlers": "crianças pequenas",
+   "job seekers": "pessoas procurando emprego",
+   "hit them hardest": "atingiria mais a eles",
+   "financial pressure": "pressão financeira",
+   "urge": "peço com insistência",
+   "reversed": "revertida, desfeita"
+  },
+  "q": [
+   {
+    "q": "Ideia geral: qual é o objetivo da carta?",
+    "o": [
+     "Pedir que a biblioteca não seja fechada sem consultar os moradores.",
+     "Elogiar a prefeitura.",
+     "Pedir mais livros digitais."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Detalhe: o que a prefeitura quer pôr no lugar da biblioteca?",
+    "o": [
+     "Um quiosque digital no shopping.",
+     "Uma clínica de saúde.",
+     "Um café."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Detalhe: quem usa a biblioteca, segundo a autora?",
+    "o": [
+     "Idosos, pais com crianças e pessoas procurando emprego.",
+     "Só estudantes.",
+     "Quase ninguém."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Detalhe: o que mostra a pesquisa nacional citada?",
+    "o": [
+     "Quem tem menos dinheiro é quem mais usa bibliotecas.",
+     "Ninguém lê mais livros de papel.",
+     "As bibliotecas dão lucro."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Opinião: a autora aceita alguma mudança?",
+    "o": [
+     "Sim: horários, voluntários e dividir o prédio com outros serviços.",
+     "Não, nenhuma.",
+     "Só fechar nos fins de semana."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Inferência: por que ela diz que o custo real seria “muito maior”?",
+    "o": [
+     "Porque a perda social vale mais que a economia de dinheiro.",
+     "Porque o quiosque é muito caro.",
+     "Porque o prédio vale milhões."
+    ],
+    "a": 0
+   }
+  ]
+ },
+ {
+  "id": "r11",
+  "t": "Inteligência Artificial no Consultório",
+  "lv": "B2",
+  "kind": "Reportagem",
+  "p": [
+   "When Dr Sarah Okafor started using an AI system to analyse X-rays last year, she was sceptical. “I assumed it would either be useless or try to replace me,” she says. Twelve months later, she describes it as “a very fast, very tireless junior colleague who still needs supervision.”",
+   "The system she uses has been trained on millions of images and highlights areas that might show a fracture or an early sign of disease. In tests, similar tools have matched or exceeded the accuracy of experienced doctors at certain narrow tasks, such as spotting some types of cancer on scans.",
+   "The benefits are clear in busy hospitals. Doctors can check urgent cases first, and fewer small problems are missed at the end of a long shift, when tiredness makes mistakes more likely. In regions with few specialists, such tools could give patients access to a faster diagnosis.",
+   "However, the technology has limits. AI systems can perform worse on groups of patients who were under-represented in the data they learned from, and they rarely explain why they reached a conclusion. “If it flags something, I still have to understand the whole patient,” Dr Okafor says. “It doesn't know that the person in front of me fell off a ladder yesterday.”",
+   "There are also difficult questions about responsibility. If an AI tool misses a tumour, who is to blame: the doctor, the hospital or the company that built it? For now, most experts agree that the safest approach is a partnership, in which machines assist and humans decide."
+  ],
+  "g": {
+   "sceptical": "cético",
+   "tireless": "incansável",
+   "supervision": "supervisão",
+   "highlights": "destaca",
+   "fracture": "fratura",
+   "exceeded": "superaram",
+   "spotting": "identificar, detectar",
+   "shift": "plantão, turno",
+   "under-represented": "pouco representados",
+   "flags": "sinaliza"
+  },
+  "q": [
+   {
+    "q": "Ideia geral: qual é o tema do texto?",
+    "o": [
+     "Os benefícios e os limites da IA para analisar exames médicos.",
+     "Como virar médico.",
+     "Um acidente com uma escada."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Opinião: como a Dra. Okafor vê a IA hoje?",
+    "o": [
+     "Como um colega júnior rápido que ainda precisa de supervisão.",
+     "Como uma ameaça ao emprego dela.",
+     "Como algo inútil."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Detalhe: em que tarefa a IA às vezes se iguala a médicos experientes?",
+    "o": [
+     "Detectar certos tipos de câncer em exames.",
+     "Conversar com pacientes.",
+     "Fazer cirurgias."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Detalhe: qual é um limite citado?",
+    "o": [
+     "Pode errar mais com grupos pouco representados nos dados.",
+     "É lenta demais.",
+     "Só funciona à noite."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Inferência: o exemplo da escada mostra que:",
+    "o": [
+     "A IA não conhece o contexto da vida do paciente.",
+     "A IA erra com fraturas.",
+     "O paciente mentiu."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Detalhe: qual abordagem a maioria dos especialistas considera mais segura?",
+    "o": [
+     "Máquinas ajudam e pessoas decidem.",
+     "Deixar a IA decidir sozinha.",
+     "Proibir a IA nos hospitais."
+    ],
+    "a": 0
+   }
+  ]
+ },
+ {
+  "id": "r12",
+  "t": "Os Limites da Produtividade",
+  "lv": "C1",
+  "kind": "Ensaio",
+  "p": [
+   "There has never been more advice on how to get things done. Productivity apps promise to organise our lives, podcasts reveal the morning routines of billionaires, and an entire industry sells the idea that, with the right system, we could accomplish almost anything. Yet surveys consistently suggest that people feel busier and more exhausted than ever.",
+   "Part of the problem, I would argue, lies in what we mean by productivity. The concept was developed for factories, where output could be counted: more cars per hour meant a more productive worker. Applied to knowledge work, or to life in general, the metaphor becomes misleading. Writing a thoughtful report, raising a child or recovering from an illness cannot be meaningfully measured in units per hour.",
+   "Moreover, efficiency tends to generate its own demand. When email made communication faster, we did not finish our work sooner; we simply sent more emails. The time saved by one tool is quickly absorbed by new expectations, so that we run faster merely to stay in the same place.",
+   "None of this is to dismiss the value of planning or focus. Breaking a large task into smaller steps, or protecting a few hours from interruptions, genuinely helps. The difficulty arises when these techniques become ends in themselves, and when every spare moment is treated as an opportunity to optimise rather than to rest.",
+   "Perhaps a more useful question is not “How can I do more?” but “What is actually worth doing?” Answering it requires something that no app can provide: the willingness to accept that our time is finite, that some things will remain undone, and that this is not a personal failure but simply the human condition."
+  ],
+  "g": {
+   "accomplish": "realizar",
+   "exhausted": "exausto",
+   "output": "produção, resultado",
+   "misleading": "enganoso",
+   "meaningfully": "de forma significativa",
+   "generate": "gerar",
+   "absorbed": "absorvido",
+   "dismiss": "descartar, desprezar",
+   "ends in themselves": "fins em si mesmos",
+   "finite": "finito"
+  },
+  "q": [
+   {
+    "q": "Ideia geral: qual é a tese do ensaio?",
+    "o": [
+     "Buscar sempre mais produtividade é limitado e pode ser enganoso.",
+     "Aplicativos de produtividade resolvem tudo.",
+     "Devemos trabalhar menos e não planejar nada."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Detalhe: de onde vem o conceito de produtividade, segundo o autor?",
+    "o": [
+     "Das fábricas, onde a produção podia ser contada.",
+     "Das universidades.",
+     "Dos aplicativos."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Detalhe: o que aconteceu quando o e-mail tornou a comunicação mais rápida?",
+    "o": [
+     "Passamos a mandar mais e-mails.",
+     "Terminamos o trabalho mais cedo.",
+     "Paramos de fazer reuniões."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Opinião: o autor rejeita o planejamento?",
+    "o": [
+     "Não: ele reconhece que planejar e focar ajudam.",
+     "Sim, completamente.",
+     "Ele não fala disso."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Inferência: o que significa “we run faster merely to stay in the same place”?",
+    "o": [
+     "O ganho de tempo é anulado por novas exigências.",
+     "Precisamos fazer mais exercício.",
+     "As cidades estão mais congestionadas."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Detalhe: que pergunta o autor propõe no lugar de “Como faço mais?”",
+    "o": [
+     "O que realmente vale a pena fazer?",
+     "Qual é o melhor aplicativo?",
+     "Como acordo mais cedo?"
+    ],
+    "a": 0
+   }
+  ]
+ },
+ {
+  "id": "r13",
+  "t": "A Língua que Quase Desapareceu",
+  "lv": "C1",
+  "kind": "Artigo de cultura",
+  "p": [
+   "In 1777, a woman named Dolly Pentreath died in a small fishing village in Cornwall, in the far south-west of England. She is often described as the last native speaker of Cornish, a Celtic language closely related to Welsh and Breton. For almost two centuries afterwards, Cornish was regarded as dead.",
+   "Yet the story is more complicated than a single death. Historians have since found evidence that fragments of the language survived in fishing communities, in counting rhymes and in place names, long after 1777. Languages rarely vanish overnight; they retreat gradually, from public life to the home, and finally to a handful of words that people no longer fully understand.",
+   "In the early twentieth century, a small group of enthusiasts began reconstructing Cornish from old manuscripts and dictionaries. Their work was painstaking and, at times, fiercely contested: rival versions of spelling and pronunciation divided the revival movement for decades, until a standard written form was agreed in 2008.",
+   "Today, a few hundred people are thought to speak Cornish fluently, and several thousand have some knowledge of it. There are children's books, radio programmes and a small number of families raising their children with Cornish at home. In 2010, UNESCO changed the language's status from “extinct” to “critically endangered”, a rare reclassification.",
+   "Sceptics question whether a language learned from books can ever be truly alive. Supporters reply that every revived language, including Hebrew, began in exactly this way. Ultimately, perhaps, a language lives not when it is perfectly preserved, but when people choose to use it in their everyday lives, to argue, to joke and to comfort their children."
+  ],
+  "g": {
+   "native speaker": "falante nativo",
+   "regarded": "considerada",
+   "fragments": "fragmentos",
+   "counting rhymes": "versinhos de contar",
+   "vanish overnight": "sumir da noite para o dia",
+   "retreat": "recuam",
+   "painstaking": "minucioso, trabalhoso",
+   "fiercely contested": "muito disputado",
+   "revival": "renascimento",
+   "reclassification": "reclassificação"
+  },
+  "q": [
+   {
+    "q": "Ideia geral: sobre o que é o texto?",
+    "o": [
+     "O quase desaparecimento e o renascimento da língua córnica.",
+     "A vida de Dolly Pentreath.",
+     "Como aprender galês."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Detalhe: o que os historiadores descobriram depois?",
+    "o": [
+     "Que partes da língua sobreviveram depois de 1777.",
+     "Que Dolly não existiu.",
+     "Que a língua nunca foi falada."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Inferência: segundo o texto, como as línguas costumam desaparecer?",
+    "o": [
+     "Aos poucos, da vida pública para dentro de casa.",
+     "De repente, com uma lei.",
+     "Quando morre o último livro."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Detalhe: o que dividiu o movimento de renascimento por décadas?",
+    "o": [
+     "Versões rivais de ortografia e pronúncia.",
+     "A falta de dinheiro.",
+     "A proibição do governo."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Detalhe: o que a UNESCO fez em 2010?",
+    "o": [
+     "Mudou a classificação de “extinta” para “criticamente ameaçada”.",
+     "Declarou a língua oficial.",
+     "Fechou as escolas de córnico."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Opinião: para o autor, quando uma língua está viva?",
+    "o": [
+     "Quando as pessoas escolhem usá-la no dia a dia.",
+     "Quando é perfeitamente preservada em livros.",
+     "Quando tem um dicionário oficial."
+    ],
+    "a": 0
+   }
+  ]
+ },
+ {
+  "id": "r14",
+  "t": "Relatório: Trabalho Híbrido na Empresa",
+  "lv": "C1",
+  "kind": "Relatório interno",
+  "p": [
+   "Purpose. This report summarises the results of the six-month hybrid working pilot, in which staff in three departments worked from the office on Tuesdays, Wednesdays and Thursdays, and remotely on Mondays and Fridays. It concludes with recommendations for the management board.",
+   "Findings. Overall, the pilot was well received. In the final survey, 78% of participants rated the arrangement as positive, citing reduced commuting time and fewer interruptions as the main benefits. Sick leave fell by 14% compared with the same period last year, and staff turnover in the participating departments was the lowest recorded in five years.",
+   "However, several concerns emerged. New employees reported feeling less connected to their teams and found it harder to learn informally from more experienced colleagues. Managers noted that collaboration across departments had decreased, as people tended to communicate only with their immediate team on office days. In addition, demand for meeting rooms on Tuesdays and Wednesdays frequently exceeded supply.",
+   "Recommendations. First, the hybrid model should be extended to all departments, subject to a review after twelve months. Second, new employees should spend their first six weeks primarily in the office, each paired with an experienced mentor. Third, one office day per month should be designated for cross-department projects and social events. Finally, the booking system for meeting rooms should be upgraded, and at least two small rooms converted into spaces for focused individual work.",
+   "Conclusion. The pilot suggests that hybrid working can improve wellbeing and retention without reducing performance, provided that deliberate steps are taken to protect the informal learning and collaboration that tend to happen naturally in a shared workplace."
+  ],
+  "g": {
+   "pilot": "projeto-piloto",
+   "management board": "diretoria",
+   "citing": "citando",
+   "sick leave": "afastamento por doença",
+   "staff turnover": "rotatividade de funcionários",
+   "emerged": "surgiram",
+   "exceeded supply": "superou a oferta",
+   "subject to": "sujeito a",
+   "designated": "reservado, designado",
+   "retention": "retenção (de funcionários)"
+  },
+  "q": [
+   {
+    "q": "Ideia geral: qual é o objetivo do relatório?",
+    "o": [
+     "Apresentar os resultados do piloto de trabalho híbrido e recomendar ações.",
+     "Anunciar demissões.",
+     "Contratar novos gerentes."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Detalhe: o que aconteceu com o afastamento por doença?",
+    "o": [
+     "Caiu 14%.",
+     "Subiu 14%.",
+     "Ficou igual."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Detalhe: que problema os funcionários novos relataram?",
+    "o": [
+     "Sentir-se menos ligados à equipe e aprender menos com os mais experientes.",
+     "Excesso de reuniões.",
+     "Falta de computadores."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Detalhe: o que se recomenda para os funcionários novos?",
+    "o": [
+     "Seis semanas principalmente no escritório, com um mentor.",
+     "Trabalhar só de casa.",
+     "Fazer um curso on-line."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Inferência: por que reservar um dia por mês para projetos entre departamentos?",
+    "o": [
+     "Para recuperar a colaboração que diminuiu.",
+     "Para economizar energia.",
+     "Para fazer avaliações."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Vocabulário: “provided that” na conclusão significa:",
+    "o": [
+     "desde que",
+     "por causa de",
+     "apesar de"
+    ],
+    "a": 0
+   }
   ]
  }
 ]

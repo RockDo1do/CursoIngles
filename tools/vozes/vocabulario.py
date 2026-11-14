@@ -1,5 +1,6 @@
-"""Vozes do vocabulário: grava a palavra e a frase de exemplo (voz narr, normal e devagar) de cada item de
-conteudo/pratica/vocabulario.json que ainda não tem áudio.
+"""Vozes do conteúdo novo: grava, em normal e devagar, tudo da prática que ainda não tem áudio:
+a palavra e a frase de exemplo do vocabulário (voz narr), os parágrafos das leituras (narr) e as falas das escutas
+(na voz de cada personagem; o protagonista é gravado nas duas vozes, rafa e rafa_f).
 
 Comandos (na raiz do repositório; KOKORO_DIR = pasta com kokoro.onnx, voices-v1.0.bin e piper/):
   python3 tools/vozes/vocabulario.py faltando                      mostra quantos textos estão sem áudio
@@ -13,7 +14,8 @@ import argparse, json, os, re, shutil, subprocess, sys
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(os.path.dirname(HERE))
 SR = 24000
-VOZ = 'af_bella'      # narr
+VOZES = {'mina': 'af_heart', 'rafa': 'am_michael', 'rafa_f': 'af_kore', 'jin': 'am_puck', 'narr': 'af_bella',
+         'monster': 'am_fenrir', 'olivia': 'bf_emma', 'harry': 'bm_george'}
 
 
 def tts_text(t):
@@ -36,14 +38,20 @@ def tts_text(t):
 
 
 def faltando():
+    """lista de chaves "voz|texto" sem áudio, na ordem do conteúdo"""
     man = json.load(open(os.path.join(ROOT, 'audio', 'index.json'), encoding='utf-8'))
+    P = os.path.join(ROOT, 'conteudo', 'pratica')
     out, vistos = [], set()
-    for _, ws in json.load(open(os.path.join(ROOT, 'conteudo', 'pratica', 'vocabulario.json'), encoding='utf-8')):
-        for w in ws:
-            for t in (w[0], w[2]):
-                x = tts_text(t)
-                if 'narr|' + x not in man['k'] and x not in vistos:
-                    vistos.add(x); out.append(x)
+    def add(voz, t):
+        k = voz + '|' + tts_text(t)
+        if k not in man['k'] and k not in vistos: vistos.add(k); out.append(k)
+    for _, ws in json.load(open(os.path.join(P, 'vocabulario.json'), encoding='utf-8')):
+        for w in ws: add('narr', w[0]); add('narr', w[2])
+    for r in json.load(open(os.path.join(P, 'leitura.json'), encoding='utf-8')):
+        for t in r['p']: add('narr', t)
+    for e in json.load(open(os.path.join(P, 'escuta.json'), encoding='utf-8')):
+        for l in e['lines']:
+            for voz in (('rafa', 'rafa_f') if l[0] == 'rafa' else (l[0],)): add(voz, l[1])
     return out
 
 
@@ -57,11 +65,12 @@ def gerar(parte, de, grupo, saida):
     os.makedirs(saida, exist_ok=True)
     if not textos:
         json.dump({'k': {}, 'g': g}, open(os.path.join(saida, f'{g}.json'), 'w')); print('nada a gravar'); return
-    k = K.Kokoro(); PAD = int(0.3 * SR); idx = {t: [g, 0, 0, 0, 0, 0, 0] for t in textos}
+    k = K.Kokoro(); PAD = int(0.3 * SR); idx = {t: [g, 0, 0, 0, 0, 0, 0] for t in textos}   # t = "voz|texto"
     for vel, sp, o in (('n', 1.0, 1), ('s', 0.78, 3)):
         parts = [np.zeros(PAD, np.int16)]; pos = PAD
         for i, t in enumerate(textos):
-            a = trim(np.clip(k.synth(t, VOZ, sp)[0] * 32767, -32768, 32767).astype(np.int16))
+            voz, txt = t.split('|', 1)
+            a = trim(np.clip(k.synth(txt, VOZES[voz], sp)[0] * 32767, -32768, 32767).astype(np.int16))
             idx[t][o] = round(pos / SR - 0.04, 3); idx[t][o + 1] = round(len(a) / SR + 0.1, 3)
             parts += [a, np.zeros(PAD, np.int16)]; pos += len(a) + PAD
             if i % 50 == 0: print(f'{vel}: {i}/{len(textos)}', flush=True)
@@ -84,7 +93,7 @@ def juntar(dirs):
                 shutil.copy(os.path.join(d, f'{vel}_{g}.mp3'), os.path.join(ROOT, 'audio', f'{vel}_{g}.mp3'))
             man['files'][g] = {'n': f'audio/n_{g}.mp3', 's': f'audio/s_{g}.mp3'}
             for t, e in j['k'].items():
-                man['k']['narr|' + t] = e; n += 1
+                man['k'][t] = e; n += 1
     json.dump(man, open(p, 'w', encoding='utf-8'), ensure_ascii=False, separators=(',', ':'))
     print(f'{n} textos juntados; faltam {len(faltando())}')
 

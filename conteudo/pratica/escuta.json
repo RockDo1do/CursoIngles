@@ -1109,5 +1109,1123 @@
     "a": 0
    }
   ]
+ },
+ {
+  "id": "l12",
+  "t": "Podcast: Começar do Zero numa Cidade Nova",
+  "lv": "B1",
+  "arc": 9,
+  "lines": [
+   [
+    "narr",
+    "Welcome to Fresh Start, the podcast about people who changed their lives. Today I'm talking to Mina, who moved to Lisbon two years ago without speaking a word of Portuguese.",
+    "Bem-vindos ao Fresh Start, o podcast sobre pessoas que mudaram de vida. Hoje converso com a Mina, que se mudou para Lisboa há dois anos sem falar uma palavra de português."
+   ],
+   [
+    "mina",
+    "Hi! Thanks for having me. And yes, it's true. On my first day, I couldn't even order a coffee.",
+    "Oi! Obrigada pelo convite. E sim, é verdade. No primeiro dia, eu não conseguia nem pedir um café."
+   ],
+   [
+    "narr",
+    "So why Lisbon? Did you have a job there?",
+    "E por que Lisboa? Você tinha um emprego lá?"
+   ],
+   [
+    "mina",
+    "Not at first. I was working online as a designer, so I could live anywhere. A friend sent me photos of the city, and I just fell in love with the light.",
+    "No começo, não. Eu trabalhava on-line como designer, então podia morar em qualquer lugar. Uma amiga me mandou fotos da cidade, e eu me apaixonei pela luz."
+   ],
+   [
+    "narr",
+    "What was the hardest part of the first few months?",
+    "Qual foi a parte mais difícil dos primeiros meses?"
+   ],
+   [
+    "mina",
+    "Honestly, it was feeling lonely. Working from home is great, but you don't meet anyone. Some weeks, the only person I spoke to was the woman at the bakery.",
+    "Sinceramente, foi me sentir sozinha. Trabalhar de casa é ótimo, mas você não conhece ninguém. Em algumas semanas, a única pessoa com quem eu falava era a moça da padaria."
+   ],
+   [
+    "narr",
+    "That sounds tough. How did you change that?",
+    "Parece difícil. Como você mudou isso?"
+   ],
+   [
+    "mina",
+    "I made a rule: one new activity every week. I joined a running club, a cooking class and a language exchange in a bar near my flat.",
+    "Criei uma regra: uma atividade nova por semana. Entrei num grupo de corrida, numa aula de culinária e num intercâmbio de idiomas num bar perto do meu apartamento."
+   ],
+   [
+    "narr",
+    "A language exchange? How does that work?",
+    "Um intercâmbio de idiomas? Como funciona?"
+   ],
+   [
+    "mina",
+    "You sit with someone who wants to learn your language. You speak English for half an hour, then Portuguese for half an hour. It's free, and you make friends at the same time.",
+    "Você senta com alguém que quer aprender a sua língua. Fala inglês por meia hora e depois português por meia hora. É de graça, e você faz amigos ao mesmo tempo."
+   ],
+   [
+    "narr",
+    "And did it help with your Portuguese?",
+    "E isso ajudou com o seu português?"
+   ],
+   [
+    "mina",
+    "Much more than the apps I was using. Apps taught me words, but real conversations taught me how people actually talk. The first time I understood a joke, I nearly cried.",
+    "Muito mais do que os aplicativos que eu usava. Os aplicativos me ensinavam palavras, mas as conversas de verdade me ensinaram como as pessoas falam de fato. Na primeira vez que entendi uma piada, quase chorei."
+   ],
+   [
+    "narr",
+    "What would you say to someone who's thinking about moving abroad?",
+    "O que você diria para alguém que está pensando em morar fora?"
+   ],
+   [
+    "mina",
+    "Don't wait until you feel ready, because you never will. But be patient with yourself. The first year is hard for everyone, even if their photos look perfect.",
+    "Não espere até se sentir preparado, porque esse dia nunca chega. Mas tenha paciência consigo. O primeiro ano é difícil para todo mundo, mesmo que as fotos pareçam perfeitas."
+   ],
+   [
+    "narr",
+    "Mina, thank you. That's great advice.",
+    "Mina, obrigada. Ótimo conselho."
+   ]
+  ],
+  "q": [
+   {
+    "q": "Ideia geral: sobre o que é a entrevista?",
+    "o": [
+     "A experiência da Mina ao se mudar para outro país.",
+     "Como abrir um café em Lisboa.",
+     "As vantagens de trabalhar num escritório."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Detalhe: por que a Mina pôde se mudar sem ter emprego em Lisboa?",
+    "o": [
+     "Ela trabalhava on-line.",
+     "Ela tinha economias.",
+     "A empresa dela pagou a mudança."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Detalhe: qual foi a parte mais difícil no começo?",
+    "o": [
+     "Sentir-se sozinha.",
+     "Encontrar um apartamento.",
+     "O clima."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Detalhe: o que é um intercâmbio de idiomas?",
+    "o": [
+     "Duas pessoas praticam a língua uma da outra.",
+     "Uma aula paga com professor.",
+     "Um aplicativo de tradução."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Opinião: o que a Mina acha dos aplicativos?",
+    "o": [
+     "Ajudam com palavras, mas conversar ensinou mais.",
+     "São a melhor forma de aprender.",
+     "Não servem para nada."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Inferência: o que ela quer dizer com “even if their photos look perfect”?",
+    "o": [
+     "Nas redes, a vida dos outros parece mais fácil do que é.",
+     "As fotos de Lisboa são bonitas.",
+     "Ela é fotógrafa."
+    ],
+    "a": 0
+   }
+  ],
+  "nomes": {
+   "narr": "Apresentadora"
+  }
+ },
+ {
+  "id": "l13",
+  "t": "Na Rádio: Ligações dos Ouvintes sobre Trânsito",
+  "lv": "B1",
+  "arc": 9,
+  "lines": [
+   [
+    "olivia",
+    "Good afternoon, and welcome back to City Talk. Today's question is simple: how do you get to work, and would you change it? Our first caller is Jin. Jin, you're on the air.",
+    "Boa tarde e bem-vindos de volta ao City Talk. A pergunta de hoje é simples: como você vai para o trabalho, e você mudaria isso? Nosso primeiro ouvinte é o Jin. Jin, você está no ar."
+   ],
+   [
+    "jin",
+    "Hi Olivia. I cycle to work every day. It's about eight kilometres, so it takes me twenty-five minutes.",
+    "Oi, Olivia. Eu vou de bicicleta para o trabalho todo dia. São uns oito quilômetros, então levo vinte e cinco minutos."
+   ],
+   [
+    "olivia",
+    "Even in the rain?",
+    "Mesmo na chuva?"
+   ],
+   [
+    "jin",
+    "Even in the rain. I've got good waterproof clothes. The only thing I hate is the traffic on the main road. Some drivers don't see cyclists at all.",
+    "Mesmo na chuva. Tenho boas roupas impermeáveis. A única coisa que eu odeio é o trânsito na avenida principal. Alguns motoristas simplesmente não veem os ciclistas."
+   ],
+   [
+    "olivia",
+    "So what would make it better?",
+    "Então, o que melhoraria isso?"
+   ],
+   [
+    "jin",
+    "Proper bike lanes, separated from the cars. When the city built one near the river, the number of cyclists doubled in a year.",
+    "Ciclovias de verdade, separadas dos carros. Quando a cidade construiu uma perto do rio, o número de ciclistas dobrou em um ano."
+   ],
+   [
+    "olivia",
+    "Interesting. Thanks, Jin. Next we have Harry. Harry, how do you get to work?",
+    "Interessante. Obrigada, Jin. Agora temos o Harry. Harry, como você vai para o trabalho?"
+   ],
+   [
+    "harry",
+    "I drive, I'm afraid. I know it's not the greenest option, but my bookshop is outside the centre, and there's no direct bus.",
+    "Vou de carro, infelizmente. Sei que não é a opção mais ecológica, mas minha livraria fica fora do centro e não tem ônibus direto."
+   ],
+   [
+    "olivia",
+    "How long does it take you?",
+    "Quanto tempo você leva?"
+   ],
+   [
+    "harry",
+    "On a good day, twenty minutes. On a bad day, almost an hour. And parking costs me a fortune.",
+    "Num dia bom, vinte minutos. Num dia ruim, quase uma hora. E o estacionamento me custa uma fortuna."
+   ],
+   [
+    "olivia",
+    "Would you switch to public transport if there were a direct bus?",
+    "Você trocaria pelo transporte público se houvesse um ônibus direto?"
+   ],
+   [
+    "harry",
+    "Tomorrow. I'd much rather read a book on the bus than sit in traffic. I already listen to audiobooks in the car, to stay sane.",
+    "Amanhã mesmo. Eu prefiro mil vezes ler um livro no ônibus a ficar parado no trânsito. Já escuto audiolivros no carro, para não enlouquecer."
+   ],
+   [
+    "olivia",
+    "Our last caller is Mina, who works from home.",
+    "Nossa última ouvinte é a Mina, que trabalha de casa."
+   ],
+   [
+    "mina",
+    "Hi! My commute is from my bed to my desk, so about ten seconds. But I miss the walk, to be honest. So every morning I go round the block before I start work, just to clear my head.",
+    "Oi! Meu trajeto é da cama para a mesa, então uns dez segundos. Mas, para ser sincera, sinto falta da caminhada. Então toda manhã dou uma volta no quarteirão antes de começar a trabalhar, só para clarear a cabeça."
+   ],
+   [
+    "olivia",
+    "A fake commute! I love it. That's all for today. Thanks for calling in.",
+    "Um trajeto de mentira! Adorei. Por hoje é só. Obrigada por ligarem."
+   ]
+  ],
+  "q": [
+   {
+    "q": "Ideia geral: qual é o tema do programa?",
+    "o": [
+     "Como os ouvintes vão para o trabalho.",
+     "O preço da gasolina.",
+     "As melhores bicicletas."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Detalhe: quanto tempo o Jin leva de bicicleta?",
+    "o": [
+     "25 minutos.",
+     "8 minutos.",
+     "Uma hora."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Detalhe: o que aconteceu quando construíram a ciclovia perto do rio?",
+    "o": [
+     "O número de ciclistas dobrou.",
+     "O trânsito piorou.",
+     "Os motoristas reclamaram."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Detalhe: por que o Harry vai de carro?",
+    "o": [
+     "Não há ônibus direto até a livraria.",
+     "Ele adora dirigir.",
+     "Ele mora no centro."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Opinião: o Harry trocaria o carro pelo ônibus?",
+    "o": [
+     "Sim, se houvesse um ônibus direto.",
+     "Não, nunca.",
+     "Só nos fins de semana."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Inferência: o que é o “fake commute” da Mina?",
+    "o": [
+     "Uma caminhada curta antes de começar o trabalho em casa.",
+     "Uma mentira para o chefe.",
+     "Um ônibus que não existe."
+    ],
+    "a": 0
+   }
+  ]
+ },
+ {
+  "id": "l14",
+  "t": "Uma Reclamação no Hotel",
+  "lv": "B1",
+  "arc": 9,
+  "lines": [
+   [
+    "harry",
+    "Good evening. How can I help you?",
+    "Boa noite. Como posso ajudar?"
+   ],
+   [
+    "jin",
+    "Hi. I'm in room 412, and I'm afraid there are a few problems with the room.",
+    "Oi. Estou no quarto 412 e, infelizmente, há alguns problemas com o quarto."
+   ],
+   [
+    "harry",
+    "I'm sorry to hear that. What seems to be the problem?",
+    "Sinto muito. Qual parece ser o problema?"
+   ],
+   [
+    "jin",
+    "First, the air conditioning isn't working. It's really hot in there. And second, I booked a room with a view of the sea, but my window faces the car park.",
+    "Primeiro, o ar-condicionado não está funcionando. Está muito quente lá dentro. E segundo, reservei um quarto com vista para o mar, mas minha janela dá para o estacionamento."
+   ],
+   [
+    "harry",
+    "Let me check your booking. Yes, you're right, you paid for a sea view. I apologise. That was our mistake.",
+    "Deixe-me conferir sua reserva. Sim, o senhor tem razão, pagou por vista para o mar. Peço desculpas. Foi um erro nosso."
+   ],
+   [
+    "jin",
+    "Thank you. Is there another room available?",
+    "Obrigado. Tem outro quarto disponível?"
+   ],
+   [
+    "harry",
+    "Tonight, all our sea view rooms are full, unfortunately. But I can move you tomorrow morning, and I'll refund the difference for tonight.",
+    "Hoje à noite, infelizmente, todos os quartos com vista para o mar estão ocupados. Mas posso trocar o senhor amanhã de manhã e vou reembolsar a diferença desta noite."
+   ],
+   [
+    "jin",
+    "OK, that sounds fair. And the air conditioning?",
+    "Certo, parece justo. E o ar-condicionado?"
+   ],
+   [
+    "harry",
+    "I'll send someone from maintenance in the next fifteen minutes. If they can't fix it, I'll give you a fan and a free breakfast tomorrow.",
+    "Vou mandar alguém da manutenção nos próximos quinze minutos. Se não conseguirem consertar, dou ao senhor um ventilador e o café da manhã de graça amanhã."
+   ],
+   [
+    "jin",
+    "Great. One more thing: could I have a late check-out on Sunday? My flight isn't until eight in the evening.",
+    "Ótimo. Mais uma coisa: eu poderia fazer o check-out mais tarde no domingo? Meu voo é só às oito da noite."
+   ],
+   [
+    "harry",
+    "Normally check-out is at eleven, but I can extend it to two o'clock at no extra cost. After that, you're welcome to leave your luggage with us.",
+    "Normalmente o check-out é às onze, mas posso estender até as duas sem custo extra. Depois disso, o senhor pode deixar a bagagem conosco."
+   ],
+   [
+    "jin",
+    "That's perfect. Thank you for being so helpful.",
+    "Perfeito. Obrigado por ser tão prestativo."
+   ],
+   [
+    "harry",
+    "Not at all. Enjoy the rest of your evening, and again, sorry about the room.",
+    "Imagina. Aproveite o resto da noite e, de novo, desculpe pelo quarto."
+   ]
+  ],
+  "q": [
+   {
+    "q": "Ideia geral: por que o Jin foi à recepção?",
+    "o": [
+     "Para reclamar de problemas no quarto.",
+     "Para fazer o check-in.",
+     "Para pedir um táxi."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Detalhe: quais são os dois problemas?",
+    "o": [
+     "O ar-condicionado e a vista do quarto.",
+     "O barulho e a limpeza.",
+     "O wi-fi e o chuveiro."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Detalhe: quando o Jin vai trocar de quarto?",
+    "o": [
+     "Amanhã de manhã.",
+     "Agora mesmo.",
+     "No domingo."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Detalhe: o que acontece se não consertarem o ar-condicionado?",
+    "o": [
+     "Ele ganha um ventilador e o café da manhã.",
+     "Ele recebe o dinheiro de volta.",
+     "Ele muda de hotel."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Detalhe: até que horas o Jin pode ficar no domingo?",
+    "o": [
+     "Até as duas da tarde.",
+     "Até as onze.",
+     "Até as oito da noite."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Complete: “What seems to be the ___?”",
+    "o": [
+     "problem",
+     "trouble it",
+     "wrong"
+    ],
+    "a": 0
+   }
+  ]
+ },
+ {
+  "id": "l15",
+  "t": "Debate: A Semana de Quatro Dias",
+  "lv": "B2",
+  "arc": 9,
+  "lines": [
+   [
+    "narr",
+    "Tonight's debate: should companies move to a four-day working week? Arguing for it is Olivia, a journalist who has written about the trials. Arguing against is Harry, who runs a small business. Olivia, you first.",
+    "O debate de hoje: as empresas deveriam adotar a semana de quatro dias? A favor, a Olivia, jornalista que escreveu sobre os testes. Contra, o Harry, que tem um pequeno negócio. Olivia, você primeiro."
+   ],
+   [
+    "olivia",
+    "Thank you. In the trials I followed, most companies kept the same salaries but cut one day, and productivity stayed the same or even went up. People were less tired, took fewer sick days, and were far less likely to quit.",
+    "Obrigada. Nos testes que acompanhei, a maioria das empresas manteve os salários, cortou um dia, e a produtividade ficou igual ou até subiu. As pessoas estavam menos cansadas, faltaram menos por doença e tinham muito menos chance de pedir demissão."
+   ],
+   [
+    "narr",
+    "Harry, isn't that convincing?",
+    "Harry, isso não é convincente?"
+   ],
+   [
+    "harry",
+    "It's interesting, but I'd point out that the companies in those trials chose to take part. They were probably the ones most likely to succeed. My bookshop is open six days a week. If my staff work four days, I either close for two more days or hire more people, and I can't afford either.",
+    "É interessante, mas eu observaria que as empresas desses testes escolheram participar. Provavelmente eram as que tinham mais chance de dar certo. Minha livraria abre seis dias por semana. Se meus funcionários trabalharem quatro dias, ou eu fecho mais dois dias, ou contrato mais gente, e não tenho dinheiro para nenhuma das duas coisas."
+   ],
+   [
+    "olivia",
+    "That's a fair point about shops. But the four-day week doesn't mean the shop closes. Staff can work different days, so the shop stays open while each person gets three days off.",
+    "É um argumento justo sobre lojas. Mas a semana de quatro dias não significa que a loja fecha. Os funcionários podem trabalhar em dias diferentes, então a loja continua aberta enquanto cada pessoa tem três dias de folga."
+   ],
+   [
+    "harry",
+    "In a big company, maybe. With three employees, one person off sick and the whole plan falls apart.",
+    "Numa empresa grande, talvez. Com três funcionários, uma pessoa doente e o plano inteiro desmorona."
+   ],
+   [
+    "narr",
+    "What about the argument that people simply cram five days of work into four, and end up more stressed?",
+    "E o argumento de que as pessoas simplesmente espremem cinco dias de trabalho em quatro e acabam mais estressadas?"
+   ],
+   [
+    "olivia",
+    "That does happen when companies just squeeze the same hours into fewer days. The trials that worked cut pointless meetings and distractions instead. It's about working smarter, not longer.",
+    "Isso acontece quando as empresas só apertam as mesmas horas em menos dias. Os testes que deram certo cortaram reuniões inúteis e distrações. A questão é trabalhar de forma mais inteligente, não por mais tempo."
+   ],
+   [
+    "harry",
+    "I'd agree with that, actually. Most meetings could be an email. But I still think it should be an option, not a law.",
+    "Nisso eu até concordo. A maioria das reuniões poderia ser um e-mail. Mas continuo achando que deveria ser uma opção, não uma lei."
+   ],
+   [
+    "olivia",
+    "And I'd agree that it shouldn't be forced on tiny businesses overnight. But governments could help them test it, the way they help with other changes.",
+    "E eu concordo que não deveria ser imposta da noite para o dia aos negócios pequenos. Mas os governos poderiam ajudá-los a testar, como ajudam em outras mudanças."
+   ],
+   [
+    "narr",
+    "So, some common ground at the end. Thank you both.",
+    "Então, algum consenso no final. Obrigado aos dois."
+   ]
+  ],
+  "q": [
+   {
+    "q": "Ideia geral: qual é o tema do debate?",
+    "o": [
+     "Se as empresas deveriam adotar a semana de quatro dias.",
+     "Como abrir uma livraria.",
+     "O salário mínimo."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Detalhe: segundo a Olivia, o que aconteceu com a produtividade nos testes?",
+    "o": [
+     "Ficou igual ou subiu.",
+     "Caiu bastante.",
+     "Ninguém mediu."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Opinião: qual é a crítica do Harry aos testes?",
+    "o": [
+     "As empresas escolheram participar, então tinham mais chance de dar certo.",
+     "Os testes foram curtos demais.",
+     "Os funcionários mentiram."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Detalhe: qual é a resposta da Olivia sobre as lojas?",
+    "o": [
+     "Os funcionários podem folgar em dias diferentes.",
+     "As lojas devem fechar mais dias.",
+     "As lojas não precisam participar."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Inferência: em que os dois concordam no final?",
+    "o": [
+     "Que não deveria ser imposto de repente aos negócios pequenos.",
+     "Que a semana de quatro dias é um erro.",
+     "Que reuniões são essenciais."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Complete: “It's about working smarter, not ___.”",
+    "o": [
+     "longer",
+     "harder",
+     "faster"
+    ],
+    "a": 0
+   }
+  ],
+  "nomes": {
+   "narr": "Mediador"
+  }
+ },
+ {
+  "id": "l16",
+  "t": "Documentário: O Segredo das Abelhas da Cidade",
+  "lv": "B2",
+  "arc": 9,
+  "lines": [
+   [
+    "narr",
+    "On the rooftops of London, far above the traffic, something unusual is happening. Thousands of bees are making honey in the middle of one of the busiest cities in Europe.",
+    "Nos telhados de Londres, bem acima do trânsito, algo incomum está acontecendo. Milhares de abelhas produzem mel no meio de uma das cidades mais movimentadas da Europa."
+   ],
+   [
+    "narr",
+    "Urban beekeeping has become fashionable over the past fifteen years. Hotels, banks and even the opera house now keep hives on their roofs. But is it actually good for the bees?",
+    "A apicultura urbana virou moda nos últimos quinze anos. Hotéis, bancos e até a casa de ópera mantêm colmeias nos telhados. Mas isso é realmente bom para as abelhas?"
+   ],
+   [
+    "harry",
+    "I set up two hives on the roof of my shop five years ago. The honey is amazing, because city bees visit so many different plants: parks, gardens, trees along the streets.",
+    "Instalei duas colmeias no telhado da minha loja há cinco anos. O mel é incrível, porque as abelhas da cidade visitam muitas plantas diferentes: parques, jardins, árvores nas ruas."
+   ],
+   [
+    "narr",
+    "However, some scientists are worried. They argue that the city now has too many hives for the number of flowers available.",
+    "No entanto, alguns cientistas estão preocupados. Eles argumentam que a cidade agora tem colmeias demais para a quantidade de flores disponível."
+   ],
+   [
+    "olivia",
+    "I interviewed a researcher for a story last spring. She explained that honeybees compete with wild bees for food. There are over two hundred species of wild bee in Britain, and many of them are declining. Adding more honeybees can make things harder for them.",
+    "Entrevistei uma pesquisadora para uma matéria na primavera passada. Ela explicou que as abelhas de mel competem com as abelhas silvestres por comida. Há mais de duzentas espécies de abelhas silvestres na Grã-Bretanha, e muitas estão diminuindo. Colocar mais abelhas de mel pode dificultar a vida delas."
+   ],
+   [
+    "narr",
+    "So, if you want to help bees, what should you do?",
+    "Então, se você quer ajudar as abelhas, o que deve fazer?"
+   ],
+   [
+    "olivia",
+    "According to the researchers, the answer is surprisingly simple: plant flowers, not hives. Flowers that bloom at different times of the year, avoid pesticides, and leave a corner of your garden a bit wild.",
+    "Segundo os pesquisadores, a resposta é surpreendentemente simples: plante flores, não colmeias. Flores que florescem em épocas diferentes do ano, evite pesticidas e deixe um canto do jardim um pouco selvagem."
+   ],
+   [
+    "harry",
+    "To be fair, that changed my mind. I'm keeping my two hives, but I've stopped planning a third. Instead, I've covered the roof with lavender and wild flowers.",
+    "Para ser justo, isso me fez mudar de ideia. Vou manter minhas duas colmeias, mas desisti de instalar uma terceira. Em vez disso, cobri o telhado com lavanda e flores silvestres."
+   ],
+   [
+    "narr",
+    "And the bees seem to approve. On a sunny morning, the roof is buzzing, with honeybees and, for the first time in years, several kinds of wild bee as well.",
+    "E as abelhas parecem aprovar. Numa manhã de sol, o telhado fica zumbindo, com abelhas de mel e, pela primeira vez em anos, vários tipos de abelhas silvestres também."
+   ]
+  ],
+  "q": [
+   {
+    "q": "Ideia geral: qual é a pergunta principal do documentário?",
+    "o": [
+     "Se a apicultura na cidade é realmente boa para as abelhas.",
+     "Como fazer mel em casa.",
+     "Por que Londres tem muito trânsito."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Detalhe: por que o mel da cidade é especial, segundo o Harry?",
+    "o": [
+     "As abelhas visitam muitas plantas diferentes.",
+     "Ele usa açúcar especial.",
+     "As abelhas são de outra espécie."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Detalhe: qual é a preocupação dos cientistas?",
+    "o": [
+     "Há colmeias demais para a quantidade de flores.",
+     "As abelhas da cidade são agressivas.",
+     "O mel da cidade é poluído."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Detalhe: qual é o conselho dos pesquisadores?",
+    "o": [
+     "Plantar flores em vez de instalar colmeias.",
+     "Instalar mais colmeias.",
+     "Usar mais pesticidas."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Opinião: o que o Harry decidiu?",
+    "o": [
+     "Manter as duas colmeias, desistir da terceira e plantar flores.",
+     "Vender todas as colmeias.",
+     "Instalar mais cinco colmeias."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Inferência: o que mostra que a mudança no telhado funcionou?",
+    "o": [
+     "Abelhas silvestres voltaram a aparecer.",
+     "Ele vendeu mais mel.",
+     "O telhado ficou mais bonito."
+    ],
+    "a": 0
+   }
+  ],
+  "nomes": {
+   "narr": "Narração"
+  }
+ },
+ {
+  "id": "l17",
+  "t": "Entrevista de Emprego",
+  "lv": "B2",
+  "arc": 9,
+  "lines": [
+   [
+    "olivia",
+    "Thanks for coming in, Jin. Shall we start? Tell me a bit about yourself and why you applied for this role.",
+    "Obrigada por ter vindo, Jin. Vamos começar? Fale um pouco sobre você e por que se candidatou a esta vaga."
+   ],
+   [
+    "jin",
+    "Of course. I've been working as a software developer for four years, mostly on mobile apps. What attracted me to this position is that your team builds tools for schools. I've always been interested in education, and I'd like my work to have a clear social impact.",
+    "Claro. Trabalho como desenvolvedor de software há quatro anos, principalmente com aplicativos para celular. O que me atraiu nesta vaga é que a sua equipe cria ferramentas para escolas. Sempre me interessei por educação e gostaria que o meu trabalho tivesse um impacto social claro."
+   ],
+   [
+    "olivia",
+    "Can you give me an example of a difficult problem you solved at work?",
+    "Pode me dar um exemplo de um problema difícil que você resolveu no trabalho?"
+   ],
+   [
+    "jin",
+    "Sure. Last year our app kept crashing for some users, but we couldn't reproduce the error. I noticed that all the reports came from older phones with very little storage. It turned out the app was saving too many images. Once we fixed that, the crash reports dropped by ninety percent.",
+    "Claro. No ano passado, nosso aplicativo travava para alguns usuários, mas não conseguíamos reproduzir o erro. Percebi que todas as reclamações vinham de celulares antigos, com pouco espaço. No fim, o aplicativo estava salvando imagens demais. Quando corrigimos isso, as reclamações de travamento caíram noventa por cento."
+   ],
+   [
+    "olivia",
+    "Impressive. What would you say is your biggest weakness?",
+    "Impressionante. Qual você diria que é o seu maior ponto fraco?"
+   ],
+   [
+    "jin",
+    "I used to find it hard to say no. I'd accept every request and end up working late. Now I'm better at prioritising: I ask my manager which tasks matter most and I'm honest about deadlines.",
+    "Eu tinha dificuldade em dizer não. Aceitava todos os pedidos e acabava trabalhando até tarde. Agora priorizo melhor: pergunto ao meu gerente quais tarefas importam mais e sou honesto sobre os prazos."
+   ],
+   [
+    "olivia",
+    "How do you handle disagreements with colleagues?",
+    "Como você lida com discordâncias com colegas?"
+   ],
+   [
+    "jin",
+    "I try to focus on the problem, not the person. If we disagree, I suggest we test both ideas quickly and let the data decide. It's hard to argue with results.",
+    "Tento focar no problema, não na pessoa. Se discordamos, sugiro testar as duas ideias rapidamente e deixar os dados decidirem. É difícil discutir com resultados."
+   ],
+   [
+    "olivia",
+    "Good. Do you have any questions for me?",
+    "Ótimo. Você tem alguma pergunta para mim?"
+   ],
+   [
+    "jin",
+    "Yes, two. What does a typical week look like for the team? And how do you measure whether a new tool is actually helping teachers?",
+    "Sim, duas. Como é uma semana típica da equipe? E como vocês medem se uma ferramenta nova está ajudando os professores de verdade?"
+   ],
+   [
+    "olivia",
+    "Great questions. We work in two-week cycles, with one day a month visiting schools. And we measure success by how often teachers keep using a tool after the first month, not just by downloads.",
+    "Ótimas perguntas. Trabalhamos em ciclos de duas semanas, com um dia por mês visitando escolas. E medimos o sucesso pela frequência com que os professores continuam usando a ferramenta depois do primeiro mês, não só pelos downloads."
+   ],
+   [
+    "jin",
+    "That makes a lot of sense. Thank you.",
+    "Faz muito sentido. Obrigado."
+   ],
+   [
+    "olivia",
+    "Thank you, Jin. We'll be in touch by the end of the week.",
+    "Obrigada, Jin. Entraremos em contato até o fim da semana."
+   ]
+  ],
+  "q": [
+   {
+    "q": "Ideia geral: que situação é esta?",
+    "o": [
+     "Uma entrevista de emprego.",
+     "Uma reunião com clientes.",
+     "Uma aula na escola."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Detalhe: por que o Jin se interessou pela vaga?",
+    "o": [
+     "A equipe cria ferramentas para escolas.",
+     "O salário é alto.",
+     "Fica perto da casa dele."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Detalhe: qual era a causa do travamento do aplicativo?",
+    "o": [
+     "O aplicativo salvava imagens demais.",
+     "O servidor estava fora do ar.",
+     "Um vírus."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Detalhe: qual é o ponto fraco que o Jin cita?",
+    "o": [
+     "Tinha dificuldade em dizer não.",
+     "Chega atrasado.",
+     "Não gosta de trabalhar em equipe."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Opinião: como o Jin resolve discordâncias?",
+    "o": [
+     "Testando as duas ideias e deixando os dados decidirem.",
+     "Pedindo ao chefe para decidir.",
+     "Evitando o assunto."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Detalhe: como a empresa mede o sucesso de uma ferramenta?",
+    "o": [
+     "Pelo uso dos professores depois do primeiro mês.",
+     "Pelo número de downloads.",
+     "Pelas avaliações na loja."
+    ],
+    "a": 0
+   }
+  ]
+ },
+ {
+  "id": "l18",
+  "t": "Palestra: Por que Esquecemos",
+  "lv": "C1",
+  "arc": 9,
+  "lines": [
+   [
+    "narr",
+    "Good evening, everyone. Let me begin with a question. How much of what you learned at school do you still remember? If you're like most people, the honest answer is: surprisingly little.",
+    "Boa noite a todos. Vou começar com uma pergunta. Quanto do que vocês aprenderam na escola ainda lembram? Se vocês forem como a maioria das pessoas, a resposta sincera é: surpreendentemente pouco."
+   ],
+   [
+    "narr",
+    "In the 1880s, a German psychologist called Hermann Ebbinghaus spent years memorising lists of nonsense syllables and testing himself. What he found has been confirmed many times since: we forget most new information within days, unless something interrupts the process.",
+    "Na década de 1880, um psicólogo alemão chamado Hermann Ebbinghaus passou anos memorizando listas de sílabas sem sentido e testando a si mesmo. O que ele descobriu foi confirmado muitas vezes desde então: esquecemos a maior parte da informação nova em poucos dias, a menos que algo interrompa esse processo."
+   ],
+   [
+    "narr",
+    "Now, forgetting is not a flaw. Imagine remembering every face you passed on the street and every advert you've ever seen. Your brain filters ruthlessly, keeping what seems useful and discarding the rest.",
+    "Agora, esquecer não é um defeito. Imagine lembrar de cada rosto que você cruzou na rua e de cada anúncio que já viu. O cérebro filtra sem piedade, guardando o que parece útil e descartando o resto."
+   ],
+   [
+    "narr",
+    "The question, then, is how to convince your brain that something is worth keeping. And here, research points to two techniques that work remarkably well, yet are rarely used.",
+    "A questão, então, é como convencer o cérebro de que algo vale a pena ser guardado. E aqui as pesquisas apontam duas técnicas que funcionam muito bem, mas raramente são usadas."
+   ],
+   [
+    "narr",
+    "The first is retrieval practice. Instead of rereading your notes, you close the book and try to recall what you've learned. It feels harder, and that is precisely the point. The effort of pulling information out of memory strengthens it far more than seeing it again.",
+    "A primeira é a prática de recuperação. Em vez de reler as anotações, você fecha o livro e tenta lembrar o que aprendeu. Parece mais difícil, e é exatamente essa a ideia. O esforço de puxar a informação da memória a fortalece muito mais do que vê-la de novo."
+   ],
+   [
+    "narr",
+    "The second is spacing. Rather than studying something five times in one evening, you review it once today, again in a few days, then a week later, and so on. Each review comes just as you're about to forget, which is when it does the most good.",
+    "A segunda é o espaçamento. Em vez de estudar algo cinco vezes numa noite, você revisa hoje, de novo em alguns dias, depois uma semana mais tarde, e assim por diante. Cada revisão chega bem quando você está prestes a esquecer, que é quando ela faz mais efeito."
+   ],
+   [
+    "narr",
+    "Why don't we all study this way? Partly because rereading feels productive. The text looks familiar, so we mistake familiarity for knowledge. Retrieval, by contrast, exposes what we don't know, which is uncomfortable.",
+    "Por que não estudamos todos assim? Em parte porque reler dá a sensação de produtividade. O texto parece conhecido, então confundimos familiaridade com conhecimento. A recuperação, ao contrário, expõe o que não sabemos, o que é desconfortável."
+   ],
+   [
+    "narr",
+    "So here is my challenge for you. Tomorrow, before you look at anything you studied today, spend two minutes writing down everything you can remember. You may be disappointed by how little comes back. But that small, uncomfortable effort is exactly how memories are built.",
+    "Então aqui vai o meu desafio. Amanhã, antes de olhar qualquer coisa que estudaram hoje, passem dois minutos escrevendo tudo o que conseguirem lembrar. Talvez vocês se decepcionem com o pouco que volta. Mas esse pequeno esforço desconfortável é exatamente como as memórias são construídas."
+   ],
+   [
+    "narr",
+    "Thank you.",
+    "Obrigada."
+   ]
+  ],
+  "q": [
+   {
+    "q": "Ideia geral: qual é o tema da palestra?",
+    "o": [
+     "Por que esquecemos e como lembrar melhor.",
+     "A vida de Hermann Ebbinghaus.",
+     "Como funcionam as escolas na Alemanha."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Detalhe: o que Ebbinghaus descobriu?",
+    "o": [
+     "Esquecemos a maior parte da informação nova em poucos dias.",
+     "A memória melhora com a idade.",
+     "Sílabas sem sentido são fáceis de lembrar."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Opinião: segundo a palestrante, esquecer é:",
+    "o": [
+     "Um filtro útil, não um defeito.",
+     "Uma doença.",
+     "Culpa da escola."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Detalhe: o que é a prática de recuperação?",
+    "o": [
+     "Tentar lembrar sem olhar as anotações.",
+     "Reler as anotações várias vezes.",
+     "Copiar o livro à mão."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Inferência: por que as pessoas preferem reler?",
+    "o": [
+     "Porque o texto conhecido dá a falsa sensação de que já sabem.",
+     "Porque reler é mais rápido para memorizar.",
+     "Porque os professores mandam."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Detalhe: qual é o desafio do final?",
+    "o": [
+     "Escrever tudo o que lembrar antes de rever o material.",
+     "Estudar cinco vezes na mesma noite.",
+     "Ler o livro de Ebbinghaus."
+    ],
+    "a": 0
+   }
+  ],
+  "nomes": {
+   "narr": "Palestrante"
+  }
+ },
+ {
+  "id": "l19",
+  "t": "Podcast: O Dilema da Moda Rápida",
+  "lv": "C1",
+  "arc": 9,
+  "lines": [
+   [
+    "olivia",
+    "Welcome to The Long Read Aloud. I'm Olivia, and with me is Harry, who, I'm told, hasn't bought a new piece of clothing in two years.",
+    "Bem-vindos ao The Long Read Aloud. Eu sou a Olivia, e comigo está o Harry, que, me disseram, não compra uma peça de roupa nova há dois anos."
+   ],
+   [
+    "harry",
+    "Guilty as charged. Although, in fairness, I've bought quite a lot second-hand.",
+    "Culpado. Embora, para ser justo, eu tenha comprado bastante coisa de segunda mão."
+   ],
+   [
+    "olivia",
+    "Let's start with the numbers. Global clothing production roughly doubled in the fifteen years after 2000, while the number of times we wear each item fell sharply. Why has fashion become so disposable?",
+    "Vamos começar pelos números. A produção mundial de roupas mais ou menos dobrou nos quinze anos depois de 2000, enquanto o número de vezes que usamos cada peça caiu muito. Por que a moda ficou tão descartável?"
+   ],
+   [
+    "harry",
+    "Because it's cheap, and it's designed to feel urgent. Some brands release new designs every week. If you see a jacket today and come back next month, it's gone. That creates a constant low-level anxiety that you're missing out.",
+    "Porque é barata e foi pensada para parecer urgente. Algumas marcas lançam modelos novos toda semana. Se você vê uma jaqueta hoje e volta no mês que vem, ela já não está lá. Isso cria uma ansiedade constante, de baixa intensidade, de estar perdendo algo."
+   ],
+   [
+    "olivia",
+    "And the cost of that cheapness falls somewhere, doesn't it?",
+    "E o custo dessa barateza cai em algum lugar, não cai?"
+   ],
+   [
+    "harry",
+    "On the environment, certainly: the water used to grow cotton, the dyes released into rivers, the mountains of unsold stock. And on workers, many of whom are paid very little in conditions we wouldn't accept for ourselves.",
+    "No meio ambiente, com certeza: a água usada para plantar algodão, os corantes jogados nos rios, as montanhas de estoque não vendido. E nos trabalhadores, muitos dos quais ganham muito pouco, em condições que não aceitaríamos para nós mesmos."
+   ],
+   [
+    "olivia",
+    "But here's the uncomfortable part. For families on a tight budget, cheap clothes are not a luxury. Telling everyone to buy fewer, better-quality items assumes they can afford the better-quality ones in the first place.",
+    "Mas aqui vem a parte desconfortável. Para famílias com orçamento apertado, roupa barata não é luxo. Dizer a todos para comprar menos peças e de melhor qualidade pressupõe que elas tenham dinheiro para as de melhor qualidade, para começo de conversa."
+   ],
+   [
+    "harry",
+    "That's a fair criticism, and it's why I don't think the solution is to shame individual shoppers. The biggest changes have to come from regulation: making brands responsible for what happens to their products, and for the conditions in their factories.",
+    "É uma crítica justa, e é por isso que não acho que a solução seja envergonhar quem compra. As maiores mudanças têm que vir da regulamentação: tornar as marcas responsáveis pelo que acontece com seus produtos e pelas condições em suas fábricas."
+   ],
+   [
+    "olivia",
+    "So is there anything individuals can do that actually matters?",
+    "Então há algo que as pessoas possam fazer que realmente faça diferença?"
+   ],
+   [
+    "harry",
+    "Wear what you already own for longer. It sounds trivial, but extending the life of clothes by even a year or two significantly reduces their overall impact. Repair things. Swap with friends. And if you buy, ask yourself whether you'll wear it at least thirty times.",
+    "Usar o que já tem por mais tempo. Parece banal, mas prolongar a vida das roupas por um ou dois anos já reduz bastante o impacto total delas. Consertar as coisas. Trocar com amigos. E, se for comprar, perguntar a si mesmo se vai usar a peça pelo menos trinta vezes."
+   ],
+   [
+    "olivia",
+    "The thirty-wears test. I like that. Harry, thank you.",
+    "O teste das trinta vezes. Gostei. Harry, obrigada."
+   ]
+  ],
+  "q": [
+   {
+    "q": "Ideia geral: qual é o tema do episódio?",
+    "o": [
+     "Os problemas da moda rápida e o que fazer a respeito.",
+     "Como abrir uma loja de roupas.",
+     "A história do algodão."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Detalhe: o que aconteceu com a produção de roupas depois de 2000?",
+    "o": [
+     "Mais ou menos dobrou em quinze anos.",
+     "Caiu pela metade.",
+     "Ficou igual."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Inferência: por que lançar modelos toda semana funciona para as marcas?",
+    "o": [
+     "Cria a sensação de que é preciso comprar logo.",
+     "As roupas ficam mais baratas de produzir.",
+     "Os clientes pedem."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Opinião: qual é o ponto “desconfortável” levantado pela Olivia?",
+    "o": [
+     "Nem todo mundo pode pagar por roupas mais caras e melhores.",
+     "Roupas de segunda mão são feias.",
+     "As marcas não poluem."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Opinião: de onde o Harry acha que devem vir as maiores mudanças?",
+    "o": [
+     "Da regulamentação das marcas.",
+     "Da vergonha dos consumidores.",
+     "Das escolas."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Detalhe: o que é o “teste das trinta vezes”?",
+    "o": [
+     "Perguntar se você vai usar a peça pelo menos trinta vezes.",
+     "Lavar a roupa trinta vezes antes de usar.",
+     "Comprar trinta peças por ano."
+    ],
+    "a": 0
+   }
+  ]
+ },
+ {
+  "id": "l20",
+  "t": "Reunião: Um Projeto Atrasado",
+  "lv": "C1",
+  "arc": 9,
+  "lines": [
+   [
+    "olivia",
+    "Right, let's get started. I'll be blunt: the new website was due to launch next Monday, and we're nowhere near ready. I'd like to understand why, and then agree on a realistic plan.",
+    "Muito bem, vamos começar. Vou ser direta: o site novo deveria ser lançado na próxima segunda, e estamos longe de estar prontos. Quero entender por quê e depois combinar um plano realista."
+   ],
+   [
+    "jin",
+    "From the technical side, the main issue is that the requirements kept changing. We were asked to add a booking system three weeks ago, which wasn't in the original brief.",
+    "Do lado técnico, o problema principal é que os requisitos mudaram o tempo todo. Pediram para acrescentarmos um sistema de reservas três semanas atrás, o que não estava no briefing original."
+   ],
+   [
+    "harry",
+    "That's on me, I'm afraid. The client asked for it, and I said yes without checking with the team. In hindsight, I should have pushed back or at least renegotiated the deadline.",
+    "A culpa é minha, infelizmente. O cliente pediu, e eu disse sim sem consultar a equipe. Olhando para trás, eu deveria ter recusado ou pelo menos renegociado o prazo."
+   ],
+   [
+    "olivia",
+    "I appreciate you owning that. So where does that leave us? Jin, how much work is left?",
+    "Agradeço por assumir isso. Então, onde isso nos deixa? Jin, quanto trabalho falta?"
+   ],
+   [
+    "jin",
+    "Without the booking system, we could launch on time with maybe a few minor bugs. With it, realistically, we need another three weeks, including proper testing.",
+    "Sem o sistema de reservas, poderíamos lançar no prazo, talvez com alguns erros pequenos. Com ele, de forma realista, precisamos de mais três semanas, incluindo testes decentes."
+   ],
+   [
+    "olivia",
+    "Is there a middle ground? Could we launch the main site on Monday and add the booking system later?",
+    "Existe um meio-termo? Poderíamos lançar o site principal na segunda e acrescentar o sistema de reservas depois?"
+   ],
+   [
+    "jin",
+    "Technically, yes. We'd add a simple contact form for bookings in the meantime, so customers aren't left with nothing.",
+    "Tecnicamente, sim. Colocaríamos um formulário de contato simples para reservas nesse meio-tempo, para os clientes não ficarem sem nada."
+   ],
+   [
+    "harry",
+    "I'll need to sell that to the client. They're keen on the booking feature, but I suspect they'd rather have a working site on time than a broken one with everything.",
+    "Vou precisar convencer o cliente. Eles estão empolgados com o sistema de reservas, mas desconfio que preferem um site funcionando no prazo a um quebrado com tudo."
+   ],
+   [
+    "olivia",
+    "Agreed. So, to sum up: we launch the core site on Monday with a contact form, the booking system follows in three weeks, and Harry speaks to the client today. And going forward, any new request goes through the whole team before anyone says yes.",
+    "De acordo. Então, resumindo: lançamos o site principal na segunda com um formulário de contato, o sistema de reservas vem em três semanas, e o Harry fala com o cliente hoje. E daqui para a frente, qualquer pedido novo passa pela equipe inteira antes de alguém dizer sim."
+   ],
+   [
+    "harry",
+    "Lesson learned. I'll call them straight after this.",
+    "Lição aprendida. Ligo para eles logo depois desta reunião."
+   ]
+  ],
+  "q": [
+   {
+    "q": "Ideia geral: qual é o objetivo da reunião?",
+    "o": [
+     "Entender o atraso do site e combinar um plano realista.",
+     "Contratar uma pessoa nova.",
+     "Escolher as cores do site."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Detalhe: qual foi a principal causa do atraso?",
+    "o": [
+     "Um sistema de reservas foi acrescentado no meio do projeto.",
+     "Um funcionário ficou doente.",
+     "O servidor caiu."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Opinião: como o Harry reage?",
+    "o": [
+     "Assume a responsabilidade pelo erro.",
+     "Culpa o Jin.",
+     "Diz que o atraso é normal."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Detalhe: qual é o meio-termo combinado?",
+    "o": [
+     "Lançar o site principal na segunda e as reservas depois.",
+     "Adiar tudo por três meses.",
+     "Cancelar o sistema de reservas."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Inferência: o que significa “I'll need to sell that to the client”?",
+    "o": [
+     "Ele vai ter que convencer o cliente da ideia.",
+     "Ele vai vender o site.",
+     "Ele vai cobrar mais do cliente."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Detalhe: que regra nova a Olivia cria?",
+    "o": [
+     "Pedidos novos passam pela equipe antes de alguém aceitar.",
+     "Reuniões todos os dias.",
+     "Ninguém fala com o cliente."
+    ],
+    "a": 0
+   }
+  ]
  }
 ]

@@ -1433,7 +1433,7 @@ function lsnList(){stopListening();cur=null;app.innerHTML=prList('Ouvir e respon
 function lsnView(id){
  const L=LISTEN.find(x=>x.id===id); if(!L) return lsnList(); stopListening(); cur=null;
  PQ={id,qs:L.q,ans:{},store:'lsn',back:'data-lsn'};
- const name=w=>w==='rafa'?esc(heroName()):w==='narr'?'Anúncio':esc(w.charAt(0).toUpperCase()+w.slice(1));
+ const name=w=>w==='rafa'?esc(heroName()):(L.nomes&&L.nomes[w])?esc(L.nomes[w]):w==='narr'?'Anúncio':esc(w.charAt(0).toUpperCase()+w.slice(1));
  app.innerHTML=`<div class="wrap">${barHTML('Ouvir e responder',esc(L.t),'data-lsn')}
  <div class="chap-open"><div class="no">DIÁLOGO · ${L.lv}</div><h1 class="pq">${esc(L.t)}</h1><p>Ouça o diálogo inteiro sem ler. Depois responda. Se precisar, ouça de novo ou veja o texto.</p></div>
  <div class="sysw"><div class="row" style="justify-content:flex-start"><button class="btn" data-lplay>Ouvir o diálogo</button><button class="btn ghost" data-lplay="slow">Ouvir devagar</button><button class="btn ghost" data-ltext aria-expanded="false">Ver o texto</button></div>
