@@ -28,5 +28,15 @@
   5,
   7
  ],
- "caminho_explicacao": "Ordem recomendada dos arcos (posição em 'arcos', contando do 0): os arcos práticos (Missões do Mundo Real, Som e Ritmo e Missão em Londres) entram entre os arcos de nível, para o aluno não chegar ao C1 antes de praticar o A2 e o B1. Os arquivos e o progresso continuam na ordem de 'arcos'."
+ "caminho_explicacao": "Ordem recomendada dos arcos (posição em 'arcos', contando do 0): os arcos práticos (Missões do Mundo Real, Som e Ritmo e Missão em Londres) entram entre os arcos de nível, para o aluno não chegar ao C1 antes de praticar o A2 e o B1. Os arquivos e o progresso continuam na ordem de 'arcos'.",
+ "resultados": {
+  "form": "",
+  "campos": {
+   "tipo": "",
+   "nivel": "",
+   "nota": "",
+   "horas": "",
+   "semanas": ""
+  }
+ }
 }

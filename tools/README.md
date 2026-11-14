@@ -61,3 +61,15 @@ A lista de nomes com voz fica em `vozes/nomes.json`: os 3.000 nomes mais comuns 
 
   Com esses campos vazios, a fila fica desligada e o curso não oferece nada.
 - **Para gravar no computador:** baixe os modelos com `bash tools/vozes/baixar_kokoro.sh PASTA` e rode `KOKORO_DIR=PASTA python3 tools/vozes/nomes.py gerar ...` (veja o começo do arquivo).
+
+
+## Resultados anônimos dos alunos (opcional)
+
+Para saber se o curso está funcionando, os alunos podem escolher enviar, de forma anônima, o resultado de cada medição (teste de nível ou simulado). Fica desligado até você configurar:
+
+1. Crie um Formulário Google com 5 perguntas de resposta curta: Tipo, Nível, Nota, Horas e Semanas.
+2. No formulário, use “Obter link preenchido” para descobrir o código de cada campo (`entry.123...`).
+3. Em `conteudo/indice.json`, preencha `resultados.form` com o endereço que termina em `/formResponse` e `resultados.campos` com os códigos de cada campo.
+4. As respostas aparecem na planilha do formulário. Compare, por exemplo, a nota dos simulados com a faixa de horas: é assim que se vê se mais horas de estudo levam a resultados melhores.
+
+O aluno só envia se ligar a opção em “Inglês fora do curso”. A política de privacidade (`privacy.html`) já descreve exatamente o que é enviado.

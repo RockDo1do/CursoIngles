@@ -58,6 +58,14 @@ def faltando():
                 for l in quadro.get('l') or []:
                     if l[1] and 'Rafa' not in l[1]:
                         for voz in (('rafa', 'rafa_f') if l[0] == 'rafa' else (l[0],)): add(voz, l[1])
+    # respostas-modelo da produção livre e dos simulados (narr) e falas das escutas dos simulados
+    pr = json.load(open(os.path.join(P, 'producao.json'), encoding='utf-8'))
+    for k in ('falar', 'escrever', 'mediar'):
+        for t in pr.get(k, []): add('narr', t['modelo'].replace('\n', ' '))
+    for x in json.load(open(os.path.join(P, 'simulados.json'), encoding='utf-8')):
+        for parte in x['partes']:
+            for l in parte.get('lines', []): add(l[0], l[1])
+            if parte.get('tarefa'): add('narr', parte['tarefa']['modelo'].replace('\n', ' '))
     for e in json.load(open(os.path.join(P, 'escuta.json'), encoding='utf-8')):
         for l in e['lines']:
             for voz in (('rafa', 'rafa_f') if l[0] == 'rafa' else (l[0],)): add(voz, l[1])

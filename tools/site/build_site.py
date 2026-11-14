@@ -16,7 +16,7 @@ import argparse, hashlib, json, os, re, shutil, sys
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 HERE = os.path.dirname(os.path.abspath(__file__))
 C = os.path.join(ROOT, 'conteudo')
-PRATICA = ['escuta', 'leitura', 'vocabulario', 'escrita', 'nivelamento', 'sons', 'confusoes', 'producao', 'simulados', 'imersao', 'conversa']
+PRATICA = ['escuta', 'leitura', 'vocabulario', 'escrita', 'nivelamento', 'sons', 'confusoes', 'producao', 'simulados', 'imersao', 'conversa', 'erros']
 SITE_ONLY = re.compile(r'<!-- só no site -->.*?<!-- /só no site -->\n?', re.S)
 
 
@@ -149,6 +149,16 @@ def validar():
             erros.append(f'pratica/conversa ("{l.get("nome")}"): o endereço precisa começar com https://')
     if cv.get('tema_frases') and cv['tema_frases'] not in [t for t, _ in load('pratica/vocabulario')]:
         erros.append(f'pratica/conversa: o tema "{cv["tema_frases"]}" não existe em pratica/vocabulario.json')
+    # erros comuns: regra válida e nenhuma resposta-modelo caindo nela
+    modelos = [t.get('modelo', '') for k in ('falar', 'escrever', 'mediar') for t in pr.get(k, [])]
+    for e in load('pratica/erros'):
+        try:
+            rx = re.compile(e['rx'], re.I)
+        except (re.error, KeyError) as x:
+            erros.append(f'pratica/erros: regra inválida ({x})'); continue
+        for m in modelos:
+            if rx.search(m.lower().replace('’', "'")):
+                erros.append(f'pratica/erros ("{e.get("certo")}"): acusa erro numa resposta-modelo: {m[:60]}')
     # banco de sons
     so = load('pratica/sons')
     cats = {p[2] for p in so.get('pares', [])}

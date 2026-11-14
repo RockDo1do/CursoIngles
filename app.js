@@ -304,7 +304,7 @@ function nextToast(){
  el.textContent=m; el.hidden=false; TT=setTimeout(nextToast,2800);
 }
 function checkTiers(){const w=S.week;TIERS.forEach(t=>{if(!w.claimed[t.k]&&!w.nt[t.k]&&tierReached(t.k,w)){w.nt[t.k]=1;toast('Baú '+t.n+' liberado! Abra no Baú do Portal.');}});}
-function markDay(){const k=todayKey();if(!S.week.days[k]){S.week.days[k]=1;toast('Dia de treino registrado no Baú do Portal');}checkTiers();}
+function markDay(){if(!S.inicio) S.inicio=ymd(new Date());const k=todayKey();if(!S.week.days[k]){S.week.days[k]=1;toast('Dia de treino registrado no Baú do Portal');}checkTiers();}
 function prog(k){const w=S.week;if(!w.missions.includes(k))return;const b=w.mp[k]||0;w.mp[k]=b+1;if(b<MISSIONS[k].n&&b+1>=MISSIONS[k].n)toast('Missão concluída: '+MISSIONS[k].t);checkTiers();}
 function nextCosmetic(){return COS_ORDER.find(k=>!(S.cos||[]).includes(k))||null;}
 function nextBonus(){for(let i=0;i<BONUS.length;i++) if(!(S.bonus||[]).includes(100+i)) return 100+i; return null;}
@@ -1221,6 +1221,7 @@ function home(){
  h+=nameVoiceCard();
  h+=backupNudge();
  h+=weekCardHTML();
+ h+=retesteHTML();
  arcosNoCaminho().map(ai=>ARCS[ai]).forEach(a=>{
   let dn=0; for(let i=a.from;i<=a.to;i++) if(S.done[i]!=null) dn++;
   const open=n>=a.from&&n<=a.to;
@@ -1419,7 +1420,7 @@ function practiceCard(){
 function lvBadge(lv){return `<span class="lvl">${lv}</span>`;}
 function prList(title,sub,items,attr,doneMap){
  return `<div class="wrap">${barHTML(title,sub)}
- <div class="eps">${items.map(x=>{const d=doneMap&&doneMap[x.id]!=null;return `<button class="ep" ${attr}="${x.id}"><div class="thumb pr-ic" aria-hidden="true">${x.ic||''}</div><div class="t"><small>${esc(x.kind||'')}${x.kind?' · ':''}${lvBadge(x.lv)}</small><b>${esc(x.t)}</b><span>${esc(x.sub||'')}</span></div>${d?`<span class="st done">${doneMap[x.id]}/${x.q.length}</span>`:`<span class="st new">NOVO</span>`}</button>`;}).join('')}</div></div>`;
+ <div class="eps">${items.map(x=>{const d=doneMap&&doneMap[x.id]!=null;return `<button class="ep" ${attr}="${x.id}"><div class="thumb pr-ic" aria-hidden="true">${x.ic||''}</div><div class="t"><small>${esc(x.kind||'')}${x.kind?' · ':''}${lvBadge(x.lv)}</small><b>${esc(x.t)}</b><span>${esc(x.sub||'')}</span></div>${d?`<span class="st done">${x.q?doneMap[x.id]+'/'+x.q.length:'FEITO'}</span>`:`<span class="st new">NOVO</span>`}</button>`;}).join('')}</div></div>`;
 }
 /* perguntas de múltipla escolha usadas na escuta e na leitura */
 let PQ=null;
@@ -2038,6 +2039,12 @@ function prodCheck(T,text){
  const minOk=wc>=(T.min||1);
  return {wc,itens,avisos,minOk,ok:minOk&&itens.every(i=>i.ok)&&!avisos.length};
 }
+/* erros comuns de quem fala português (conteudo/pratica/erros.json): mostrados como pontos de atenção, sem reprovar a resposta */
+function prodErros(text){
+ const n=' '+String(text).toLowerCase().replace(/[’‘]/g,"'")+' ', out=[];
+ for(const e of (typeof ERROS!=='undefined'&&ERROS)||[]){let m=null;try{m=n.match(new RegExp(e.rx,'i'));}catch(x){}if(m) out.push({viu:m[0].trim(),certo:e.certo,explica:e.explica});}
+ return out.slice(0,4);
+}
 function prodBoxHTML(T,opt){
  const fala=opt.fala&&canTalk();
  return `<div class="prod" data-pid="${esc(T.id)}">
@@ -2071,6 +2078,7 @@ function prodResult(box,T,text,falado){
   <ul class="pcheck">${r.itens.map(i=>`<li class="${i.ok?'ok':'no'}">${i.ok?'✓':'✗'} ${esc(i.txt)}</li>`).join('')}
   <li class="${r.minOk?'ok':'no'}">${r.minOk?'✓':'✗'} ${r.wc} palavras${T.min>4?` (mínimo ${T.min})`:''}</li></ul>
   ${r.avisos.map(a=>`<p class="paviso">${esc(a)}</p>`).join('')}
+  ${(()=>{const er=prodErros(text);return er.length?`<div class="perros"><b>Pontos de atenção</b><ul>${er.map(x=>`<li><span lang="en"><s>${esc(x.viu)}</s> → <b>${esc(x.certo)}</b></span><small>${esc(x.explica)}</small></li>`).join('')}</ul></div>`:'';})()}
   ${r.ok?'':'<p class="set-note">Tente de novo usando o que ficou com ✗. Você pode olhar a resposta-modelo.</p>'}`);
  prodShowModel(box,T);
  if(SIM&&SIM.task===T.id) simTaskScore(r);
@@ -2176,7 +2184,7 @@ function simTarefa(id){for(const X of SIMULADOS||[]) for(const P of X.partes) if
 function simList(){
  stopListening(); cur=null; SIM=null; const b=S.sim||{};
  app.innerHTML=`<div class="wrap">${barHTML('Simulados','Teste o seu nível como numa prova')}
- <div class="chap-open"><p>Cada simulado tem cinco partes: leitura, escuta, gramática, escrita e fala. O formato é curto e inspirado nas provas de Cambridge, mas não é uma prova oficial.</p></div>
+ <div class="chap-open"><p>Cada simulado tem leitura, escuta, gramática, escrita e fala, do A1 ao C1. O formato é curto e inspirado nas provas de Cambridge, mas não é uma prova oficial.</p></div>
  <div class="eps">${(SIMULADOS||[]).map(x=>`<button class="ep" data-simid="${x.id}"><div class="thumb pr-ic" aria-hidden="true">${x.nivel}</div><div class="t"><small>Cerca de ${x.tempo} minutos · ${lvBadge(x.nivel)}</small><b>${esc(x.titulo)}</b><span>${esc(x.desc)}</span></div>${b[x.id]?`<span class="st done">${b[x.id].b}%</span>`:'<span class="st new">NOVO</span>'}</button>`).join('')}</div></div>`;
  window.scrollTo(0,0);
 }
@@ -2270,7 +2278,7 @@ function nivelMedido(){
  if(S.placed&&typeof S.placed.lv==='number'){const l=S.placed.lv,lv=l===0?'A1':l===5?'C1':PLACE_LV[l];if(!best||LV_ORD.indexOf(lv)>LV_ORD.indexOf(best.lv)) best={lv,fonte:'teste de nível',d:S.placed.d||''};}
  return best;
 }
-function medir(tipo,lv,pct){S.medidas=(S.medidas||[]).concat([{d:ymd(new Date()),t:tipo,lv,p:Math.round(pct)}]).slice(-30);}
+function medir(tipo,lv,pct){const m={d:ymd(new Date()),t:tipo,lv,p:Math.round(pct),h:Math.round(horas().total*10)/10};S.medidas=(S.medidas||[]).concat([m]).slice(-30);resEnviar(m);}
 function nivelCapitulos(){
  try{const n=Object.keys(S.done||{}).map(Number).filter(i=>i<CH.length).reduce((a,b)=>Math.max(a,b+1),0);const c=CH[Math.min(CH.length-1,n)];if(c&&c.lv) return c.lv;}catch(e){}
  return 'A1';
@@ -2315,7 +2323,8 @@ function imView(){
  <div class="chap-open"><p>O curso ensina e faz praticar. Mas para entender inglês de verdade é preciso muito inglês entrando pelos ouvidos e pelos olhos, muito mais do que cabe num aplicativo. Junte 15 a 30 minutos por dia de uma destas fontes ao seu estudo.</p></div>
  <div class="sysw"><div class="tag">[ SUAS HORAS ]</div>${metaHTML()}${registroHTML()}
   <details class="imantes"><summary>Já estudou inglês antes do curso?</summary><p>Conte as horas aproximadas (aulas, cursos, intercâmbio). Assim a conta fica mais justa.</p>
-  <div class="row" style="justify-content:flex-start"><input class="field" id="imantes" type="number" min="0" max="5000" step="10" inputmode="numeric" value="${+S.antes||''}" placeholder="Ex.: 120" style="max-width:140px"><button class="btn sm" data-imantes>Salvar</button></div></details></div>
+  <div class="row" style="justify-content:flex-start"><input class="field" id="imantes" type="number" min="0" max="5000" step="10" inputmode="numeric" value="${+S.antes||''}" placeholder="Ex.: 120" style="max-width:140px"><button class="btn sm" data-imantes>Salvar</button></div></details>
+  <div class="row" style="justify-content:flex-start;margin-top:12px"><button class="btn ghost sm" data-relatorio>Baixar meu relatório de progresso</button></div>${resHTML()}</div>
  ${(S.medidas||[]).length?`<div class="sysw"><div class="tag">[ SUAS MEDIÇÕES ]</div><ul class="simres">${S.medidas.slice().reverse().map(m=>`<li><span>${esc(m.d.split('-').reverse().join('/'))} · ${m.t==='teste'?'Teste de nível':'Simulado '+esc(m.lv)}</span><span class="simbar" aria-hidden="true"><i style="width:${m.p}%"></i></span><b>${m.t==='teste'?esc(m.lv):m.p+'%'}</b></li>`).join('')}</ul></div>`:''}
  <div class="sysw"><div class="tag">[ PARA O SEU NÍVEL: ${lv} ]</div>${fs.map(f=>fonteHTML(f,lv)).join('')}</div>
  <div class="sysw"><div class="tag">[ DICAS ]</div><ul class="imdicas">${(IMERSAO.dicas||[]).map(d=>`<li>${esc(d)}</li>`).join('')}</ul></div>
@@ -2376,6 +2385,49 @@ function cvCopiar(){
  const t=cvPerguntas().map((f,i)=>`${i+1}. ${f.pergunta}`).join('\n'), m=document.getElementById('cvmsg');
  const ok=()=>{if(m) m.textContent='Perguntas copiadas. É só colar na conversa.';};
  try{navigator.clipboard.writeText(t).then(ok,()=>{if(m) m.textContent='Não deu para copiar aqui. Selecione as perguntas e copie à mão.';});}catch(e){if(m) m.textContent='Não deu para copiar aqui. Selecione as perguntas e copie à mão.';}
+}
+
+/* ===================== MEDIR RESULTADOS ===================== */
+/* Lembrete de nova medição (30 dias ou 20 horas de inglês depois da última), relatório para baixar
+   e envio anônimo e opcional dos resultados (só se conteudo/indice.json tiver "resultados" configurado). */
+function retesteHTML(){
+ const ms=S.medidas||[], h=horas().total, dc=Object.keys(S.done||{}).length;
+ if(!ms.length){ if(dc<6) return '';
+  return `<div class="sysw nudge-b"><div class="tag">[ MEÇA O SEU NÍVEL ]</div><p style="margin:6px 0 10px">Você já fez ${dc} capítulos. Que tal medir o seu nível? Assim dá para ver, daqui a algumas semanas, quanto você evoluiu.</p><div class="row" style="justify-content:flex-start"><button class="btn" data-place>Teste de nível</button><button class="btn ghost" data-sims>Simulados</button></div></div>`;}
+ const u=ms[ms.length-1], dias=Math.floor((Date.now()-new Date(u.d+'T12:00:00').getTime())/864e5), dh=h-(u.h||0);
+ if(dias<30&&dh<20) return '';
+ const md=nivelMedido(), X=(typeof SIMULADOS!=='undefined'?SIMULADOS:[]).find(x=>x.nivel===(md?md.lv:'A1'));
+ return `<div class="sysw nudge-b"><div class="tag">[ HORA DE MEDIR DE NOVO ]</div><p style="margin:6px 0 10px">Desde a sua última medição ${dias>=30?`passaram ${dias} dias`:`você fez mais ${Math.round(dh)} horas de inglês`}. Faça uma nova medição para ver a sua evolução de verdade.</p><div class="row" style="justify-content:flex-start">${X?`<button class="btn" data-simid="${X.id}">${esc(X.titulo)}</button>`:''}<button class="btn ${X?'ghost':''}" data-place>Teste de nível</button></div></div>`;
+}
+function relatorioTxt(){
+ const h=horas(), md=nivelMedido(), dc=Object.keys(S.done||{}).filter(k=>+k<CH.length).length, vc=Object.keys(S.voc||{}).length, d=s=>s?s.split('-').reverse().join('/'):'';
+ const L=[`TORRE DO INGLÊS: RELATÓRIO DE PROGRESSO`,`Aluno(a): ${S.name||'-'}`,`Gerado em: ${new Date().toLocaleDateString('pt-BR')}`,'',
+  `HORAS DE INGLÊS`,`  No curso: ${fmtH(h.curso)}`,`  Fora do curso: ${fmtH(h.fora)}`,`  Antes do curso: ${fmtH(h.antes)}`,`  Total: ${fmtH(h.total)}`,'',
+  `NÍVEL`,`  Nível medido: ${md?md.lv+' ('+md.fonte+')':'ainda não medido'}`,`  Capítulos que está estudando agora: ${nivelCapitulos()}`,'',
+  `ESTUDO`,`  Capítulos feitos: ${dc} de ${CH.length}`,`  Palavras do vocabulário estudadas: ${vc}`,`  Dias de estudo registrados: ${Object.keys((S.week&&S.week.days)||{}).length} nesta semana`,'',
+  `MEDIÇÕES`, ...((S.medidas||[]).length?S.medidas.map(m=>`  ${d(m.d)}  ${m.t==='teste'?'Teste de nível: '+m.lv:'Simulado '+m.lv+': '+m.p+'%'}${m.h!=null?`  (com ${fmtH(m.h)} de inglês)`:''}`):['  Nenhuma medição ainda.']),'',
+  `SIMULADOS (melhor resultado)`, ...((typeof SIMULADOS!=='undefined'?SIMULADOS:[]).map(X=>{const r=(S.sim||{})[X.id];return `  ${X.titulo}: ${r?r.b+'% em '+d(r.d):'não feito'}`;})),'',
+  `Observação: o nível medido vem dos testes do próprio curso, que são curtos. Não substitui um exame oficial.`];
+ return L.join('\n');
+}
+function relatorioBaixar(){
+ const t=relatorioTxt(), nome=`torre-do-ingles-progresso-${ymd(new Date())}.txt`;
+ try{const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([t],{type:'text/plain;charset=utf-8'}));a.download=nome;document.body.appendChild(a);a.click();setTimeout(()=>{URL.revokeObjectURL(a.href);a.remove();},500);toast('Relatório baixado');}
+ catch(e){toast('Não deu para baixar aqui. Tente pelo navegador.');}
+}
+/* resultados anônimos: desligado por padrão; só existe se o projeto configurar o formulário */
+function resCfg(){const r=(typeof RESULTADOS!=='undefined'&&RESULTADOS)||null;return r&&r.form&&r.campos&&/^https:\/\/docs\.google\.com\/forms\//.test(r.form)?r:null;}
+function resEnviar(m){
+ const r=resCfg(); if(!r||S.resAnon!==true) return;
+ const h=horas().total, faixa=h<10?'0-10':h<50?'10-50':h<100?'50-100':h<200?'100-200':h<400?'200-400':'400+';
+ const semanas=S.inicio?Math.max(0,Math.floor((Date.now()-new Date(S.inicio+'T12:00:00').getTime())/(7*864e5))):'';
+ const dados={[r.campos.tipo]:m.t,[r.campos.nivel]:m.lv,[r.campos.nota]:String(m.p),[r.campos.horas]:faixa,[r.campos.semanas]:String(semanas)};
+ try{fetch(r.form,{method:'POST',mode:'no-cors',body:new URLSearchParams(dados)}).catch(()=>{});}catch(e){}
+}
+function resHTML(){
+ if(!resCfg()) return '';
+ return `<details class="imantes"><summary>Ajudar a melhorar o curso (opcional)</summary><p>Se você ativar, cada vez que medir o seu nível o curso envia de forma anônima só: o tipo de teste, o nível, a nota, as horas de inglês arredondadas (por exemplo, “50 a 100”) e há quantas semanas você estuda. Nada de nome, e-mail ou identificação. Serve para saber se o curso está ajudando as pessoas a evoluir.</p>
+ <div class="aud-row"><div><small>ENVIAR RESULTADOS ANÔNIMOS</small></div><button class="tog" data-resanon aria-pressed="${S.resAnon===true}">${S.resAnon===true?'Ligado':'Desligado'}</button></div></details>`;
 }
 
 /* Revisão rápida e domingo de revisão */
@@ -2529,7 +2581,8 @@ function sanitizeState(o){
  r.sim={};for(const k in (o.sim||{})){const v=o.sim[k];if(/^s-[a-z0-9]{1,4}$/.test(k)&&v&&typeof v==='object'){const n=x=>Math.max(0,Math.min(100,Math.round(+x||0)));r.sim[k]={b:n(v.b),u:n(v.u),d:typeof v.d==='string'&&/^\d{4}-\d{2}-\d{2}$/.test(v.d)?v.d:''};}}
  const num=(o,max)=>{const r={};for(const k in (o||{})){const v=Math.round(+o[k]);if(/^\d{4}-\d{2}-\d{2}$/.test(k)&&v>0) r[k]=Math.min(max,v);}return r;};
  r.tempo=num(o.tempo,86400); r.fora=num(o.fora,600); r.antes=Math.max(0,Math.min(5000,Math.round(+o.antes||0)));
- r.medidas=(Array.isArray(o.medidas)?o.medidas:[]).filter(m=>m&&/^\d{4}-\d{2}-\d{2}$/.test(m.d)&&/^(teste|s-[a-z0-9]{1,4})$/.test(m.t)&&/^[ABC][12]$/.test(m.lv)).map(m=>({d:m.d,t:m.t,lv:m.lv,p:Math.max(0,Math.min(100,Math.round(+m.p||0)))})).slice(-30);
+ r.medidas=(Array.isArray(o.medidas)?o.medidas:[]).filter(m=>m&&/^\d{4}-\d{2}-\d{2}$/.test(m.d)&&/^(teste|s-[a-z0-9]{1,4})$/.test(m.t)&&/^[ABC][12]$/.test(m.lv)).map(m=>({d:m.d,t:m.t,lv:m.lv,p:Math.max(0,Math.min(100,Math.round(+m.p||0))),h:m.h==null?null:Math.max(0,Math.min(20000,+m.h||0))})).slice(-30);
+ r.resAnon=o.resAnon===true; r.inicio=typeof o.inicio==='string'&&/^\d{4}-\d{2}-\d{2}$/.test(o.inicio)?o.inicio:'';
  r.auto={};for(const k in (o.auto||{})){if(/^\d{1,2}$/.test(k)&&Array.isArray(o.auto[k])) r.auto[k]=o.auto[k].slice(0,20).map(x=>x===1||x===0?x:null);}
  r.voc={};for(const k in (o.voc||{})){const e=o.voc[k];if(typeof k==='string'&&k.length<40&&e&&typeof e==='object'&&/^\d{4}-\d{2}-\d{2}$/.test(e.d||'')) r.voc[k]={b:Math.round(clampN(e.b,0,5,0)),d:e.d};}
  r.goal=[3,4,5].includes(o.goal)?o.goal:4;
@@ -3089,6 +3142,8 @@ app.addEventListener('click',e=>{
  if(prodClick(e)) return;
  if(e.target.closest('[data-imersao]')){imView();return;}
  if(e.target.closest('[data-conversa]')){cvView();return;}
+ if(e.target.closest('[data-relatorio]')){relatorioBaixar();return;}
+ {const rb=e.target.closest('button[data-resanon]');if(rb){S.resAnon=S.resAnon!==true;save();rb.setAttribute('aria-pressed',String(S.resAnon));rb.textContent=S.resAnon?'Ligado':'Desligado';return;}}
  if(e.target.closest('[data-cvcopiar]')){cvCopiar();return;}
  {const fb=e.target.closest('button[data-fora]');if(fb){foraAdd(+fb.dataset.fora);return;}}
  if(e.target.closest('[data-imantes]')){const v=Math.round(+document.getElementById('imantes').value||0);S.antes=Math.max(0,Math.min(5000,v));save();const mt=document.querySelector('.immeta');if(mt) mt.outerHTML=metaHTML();toast('Horas anteriores salvas');return;}

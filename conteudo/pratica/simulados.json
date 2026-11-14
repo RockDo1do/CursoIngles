@@ -1,5 +1,281 @@
 [
  {
+  "id": "s-a1",
+  "nivel": "A1",
+  "titulo": "Simulado A1",
+  "tempo": 20,
+  "desc": "Leitura, escuta, gramática, escrita e fala no nível A1, num formato curto inspirado nas provas de Cambridge para iniciantes.",
+  "partes": [
+   {
+    "tipo": "leitura",
+    "titulo": "Leitura",
+    "instr": "Leia o anúncio e responda as perguntas.",
+    "texto": {
+     "t": "Room for Rent",
+     "p": [
+      "Room for rent in a quiet house near the city centre.",
+      "The room is big and sunny. It has a bed, a desk and a wardrobe. There is a small garden behind the house.",
+      "The kitchen and bathroom are for two people: you and me. I'm Paula, I'm a teacher and I have a cat.",
+      "The price is £400 a month. The bus stop is two minutes from the house.",
+      "Call me after 6 p.m.: 0161 496 0123."
+     ]
+    },
+    "q": [
+     {
+      "q": "Where is the house?",
+      "o": [
+       "Near the city centre.",
+       "Next to the beach.",
+       "In a small village."
+      ],
+      "a": 0
+     },
+     {
+      "q": "What is in the room?",
+      "o": [
+       "A bed, a desk and a wardrobe.",
+       "A sofa and a TV.",
+       "Two beds."
+      ],
+      "a": 0
+     },
+     {
+      "q": "Who is Paula?",
+      "o": [
+       "A teacher with a cat.",
+       "A student.",
+       "A doctor with a dog."
+      ],
+      "a": 0
+     },
+     {
+      "q": "How much is the room?",
+      "o": [
+       "£400 a month.",
+       "£400 a week.",
+       "£200 a month."
+      ],
+      "a": 0
+     },
+     {
+      "q": "When can you call Paula?",
+      "o": [
+       "After 6 p.m.",
+       "In the morning.",
+       "At lunchtime."
+      ],
+      "a": 0
+     }
+    ]
+   },
+   {
+    "tipo": "escuta",
+    "titulo": "Escuta",
+    "instr": "Ouça a conversa na loja. Você pode ouvir duas vezes.",
+    "lines": [
+     [
+      "mina",
+      "Excuse me, how much is this bag?"
+     ],
+     [
+      "harry",
+      "It's twenty pounds."
+     ],
+     [
+      "mina",
+      "Do you have it in black?"
+     ],
+     [
+      "harry",
+      "Yes, we do. Here you are."
+     ],
+     [
+      "mina",
+      "Great. And how much are these sunglasses?"
+     ],
+     [
+      "harry",
+      "They're fifteen pounds."
+     ],
+     [
+      "mina",
+      "OK, I'll take the bag and the sunglasses."
+     ],
+     [
+      "harry",
+      "That's thirty-five pounds, please."
+     ],
+     [
+      "mina",
+      "Can I pay by card?"
+     ],
+     [
+      "harry",
+      "Of course."
+     ]
+    ],
+    "q": [
+     {
+      "q": "What colour bag does Mina want?",
+      "o": [
+       "Black.",
+       "Brown.",
+       "Red."
+      ],
+      "a": 0
+     },
+     {
+      "q": "How much is the bag?",
+      "o": [
+       "Twenty pounds.",
+       "Fifteen pounds.",
+       "Thirty-five pounds."
+      ],
+      "a": 0
+     },
+     {
+      "q": "What else does Mina buy?",
+      "o": [
+       "Sunglasses.",
+       "A hat.",
+       "Shoes."
+      ],
+      "a": 0
+     },
+     {
+      "q": "How does she pay?",
+      "o": [
+       "By card.",
+       "In cash.",
+       "She doesn't pay."
+      ],
+      "a": 0
+     }
+    ]
+   },
+   {
+    "tipo": "lingua",
+    "titulo": "Gramática e vocabulário",
+    "instr": "Escolha a palavra que completa cada frase.",
+    "q": [
+     {
+      "q": "My name ___ Lucas.",
+      "o": [
+       "is",
+       "are",
+       "am"
+      ],
+      "a": 0
+     },
+     {
+      "q": "She ___ a sister and a brother.",
+      "o": [
+       "has",
+       "have",
+       "is"
+      ],
+      "a": 0
+     },
+     {
+      "q": "We ___ to school by bus.",
+      "o": [
+       "go",
+       "goes",
+       "going"
+      ],
+      "a": 0
+     },
+     {
+      "q": "There ___ two cats in the garden.",
+      "o": [
+       "are",
+       "is",
+       "be"
+      ],
+      "a": 0
+     },
+     {
+      "q": "I ___ swim, but I can't dance.",
+      "o": [
+       "can",
+       "am",
+       "do"
+      ],
+      "a": 0
+     },
+     {
+      "q": "This is ___ apple.",
+      "o": [
+       "an",
+       "a",
+       "the a"
+      ],
+      "a": 0
+     }
+    ]
+   },
+   {
+    "tipo": "escrita",
+    "titulo": "Escrita",
+    "tarefa": {
+     "id": "s-a1-e",
+     "tipo": "escrever",
+     "titulo": "Sobre você",
+     "pedido": "Escreva uma mensagem curta para um novo amigo: seu nome, sua idade, onde você mora e uma coisa de que você gosta.",
+     "min": 20,
+     "precisa": [
+      [
+       "\\bmy name is\\b|\\bi'?m [a-z]+",
+       "seu nome (My name is...)"
+      ],
+      [
+       "\\b\\d+ years old\\b|\\bi'?m (\\d+|[a-z]+-?[a-z]*)\\b",
+       "sua idade (I'm 25)"
+      ],
+      [
+       "\\bi live\\b",
+       "onde você mora (I live in...)"
+      ],
+      [
+       "\\bi (like|love)\\b",
+       "algo de que você gosta (I like...)"
+      ]
+     ],
+     "evitar": [
+      [
+       "\\bi have \\w+ years\\b",
+       "Idade usa TO BE: I'm 25, e não I have 25 years."
+      ]
+     ],
+     "modelo": "Hi! My name is Ana and I'm twenty-five years old. I live in Recife, in Brazil. I like music and I love the beach. Write soon!"
+    }
+   },
+   {
+    "tipo": "fala",
+    "titulo": "Fala",
+    "tarefa": {
+     "id": "s-a1-f",
+     "tipo": "falar",
+     "titulo": "Sua rotina",
+     "pergunta": "What do you do every day?",
+     "pedido": "Conte três coisas que você faz todos os dias.",
+     "min": 12,
+     "precisa": [
+      [
+       "\\bi (get up|wake up|go|eat|have|work|study|watch|read|drink|walk|cook)\\b",
+       "o que você faz (I get up, I go...)"
+      ],
+      [
+       "\\b(at \\w+|in the (morning|afternoon|evening)|every day|then)\\b",
+       "quando (at seven, in the morning)"
+      ]
+     ],
+     "modelo": "I get up at seven every day. I have coffee and bread for breakfast. Then I go to work by bus, and in the evening I watch TV."
+    }
+   }
+  ]
+ },
+ {
   "id": "s-a2",
   "nivel": "A2",
   "titulo": "Simulado A2",
@@ -162,6 +438,63 @@
        "They're going to sit on the balcony.",
        "It's going to rain.",
        "The flat is cold."
+      ],
+      "a": 0
+     }
+    ]
+   },
+   {
+    "tipo": "escuta",
+    "titulo": "Escuta 2",
+    "instr": "Ouça o recado na secretária eletrônica. Você pode ouvir duas vezes.",
+    "lines": [
+     [
+      "olivia",
+      "Hello, this is a message for Mr Jin Park. This is Olivia from City Dental Clinic."
+     ],
+     [
+      "olivia",
+      "Your appointment on Thursday at ten has been moved, because the dentist is ill. We can see you on Friday at half past two, or next Monday at nine."
+     ],
+     [
+      "olivia",
+      "Please call us back before five o'clock today on 0161 496 0456. And please remember to bring your insurance card. Thank you, goodbye."
+     ]
+    ],
+    "q": [
+     {
+      "q": "Why is Olivia calling?",
+      "o": [
+       "To change Jin's appointment.",
+       "To sell him something.",
+       "To invite him to a party."
+      ],
+      "a": 0
+     },
+     {
+      "q": "Why was the appointment moved?",
+      "o": [
+       "The dentist is ill.",
+       "Jin is busy.",
+       "The clinic is closed for holidays."
+      ],
+      "a": 0
+     },
+     {
+      "q": "Which new time is offered?",
+      "o": [
+       "Friday at half past two.",
+       "Thursday at ten.",
+       "Monday at half past two."
+      ],
+      "a": 0
+     },
+     {
+      "q": "What should Jin bring?",
+      "o": [
+       "His insurance card.",
+       "His passport.",
+       "A letter from his doctor."
       ],
       "a": 0
      }
@@ -448,6 +781,67 @@
        "Ask her cousin for the name of the guesthouse.",
        "Book the guesthouse.",
        "Buy the tickets."
+      ],
+      "a": 0
+     }
+    ]
+   },
+   {
+    "tipo": "escuta",
+    "titulo": "Escuta 2",
+    "instr": "Ouça um anúncio no rádio sobre um festival. Você pode ouvir duas vezes.",
+    "lines": [
+     [
+      "narr",
+      "This weekend, the Riverside Food Festival returns for its tenth year, with more than eighty stalls from around the world."
+     ],
+     [
+      "narr",
+      "The festival opens on Saturday at eleven and closes on Sunday at eight in the evening. Entry is free for children under twelve, and five pounds for adults if you buy online. Tickets at the gate cost seven pounds."
+     ],
+     [
+      "narr",
+      "New this year is a cooking stage, where local chefs will give short demonstrations every hour. There will also be live music by the river on Saturday night."
+     ],
+     [
+      "narr",
+      "Parking is very limited, so organisers recommend taking the train. Extra trains will run from the city centre every fifteen minutes."
+     ]
+    ],
+    "q": [
+     {
+      "q": "How long has the festival existed?",
+      "o": [
+       "Ten years.",
+       "Eighty years.",
+       "This is the first year."
+      ],
+      "a": 0
+     },
+     {
+      "q": "How much is an adult ticket online?",
+      "o": [
+       "Five pounds.",
+       "Seven pounds.",
+       "It's free."
+      ],
+      "a": 0
+     },
+     {
+      "q": "What is new this year?",
+      "o": [
+       "A cooking stage with local chefs.",
+       "Live music.",
+       "Stalls from around the world."
+      ],
+      "a": 0
+     },
+     {
+      "q": "What do the organisers recommend?",
+      "o": [
+       "Taking the train.",
+       "Arriving by car early.",
+       "Buying food before you go."
       ],
       "a": 0
      }
@@ -749,6 +1143,75 @@
     ]
    },
    {
+    "tipo": "escuta",
+    "titulo": "Escuta 2",
+    "instr": "Ouça duas pessoas falando sobre um livro. Você pode ouvir duas vezes.",
+    "lines": [
+     [
+      "mina",
+      "Have you finished the book for the club yet?"
+     ],
+     [
+      "harry",
+      "Last night. I have to admit, I was disappointed. Everyone said it was a masterpiece, but I found the main character impossible to care about."
+     ],
+     [
+      "mina",
+      "Really? I thought that was deliberate. She's meant to be cold at first, so that the ending hits harder."
+     ],
+     [
+      "harry",
+      "Maybe, but it took two hundred pages for anything to happen. I nearly gave up halfway through."
+     ],
+     [
+      "mina",
+      "I'll give you that the middle is slow. But the writing is beautiful, and the last chapter completely changed how I saw the whole story."
+     ],
+     [
+      "harry",
+      "I'll admit the ending was clever. I just wish the author had trusted readers to get there a bit faster."
+     ]
+    ],
+    "q": [
+     {
+      "q": "What did Harry think of the book overall?",
+      "o": [
+       "He was disappointed.",
+       "He loved it.",
+       "He didn't finish it."
+      ],
+      "a": 0
+     },
+     {
+      "q": "What was his main problem with it?",
+      "o": [
+       "He couldn't care about the main character.",
+       "The ending was confusing.",
+       "It was too short."
+      ],
+      "a": 0
+     },
+     {
+      "q": "How does Mina explain the character's coldness?",
+      "o": [
+       "It was intentional, to make the ending stronger.",
+       "It was a mistake by the author.",
+       "It was a translation problem."
+      ],
+      "a": 0
+     },
+     {
+      "q": "What do they both agree on?",
+      "o": [
+       "The ending was clever or powerful.",
+       "The middle was exciting.",
+       "The book was too long to read."
+      ],
+      "a": 0
+     }
+    ]
+   },
+   {
     "tipo": "lingua",
     "titulo": "Gramática e vocabulário",
     "instr": "Escolha a opção que completa cada frase.",
@@ -878,6 +1341,291 @@
       ]
      ],
      "modelo": "I'd say it depends on how you use it. On the one hand, social media helps people stay in touch: for example, I talk to my cousins in Canada every week. On the other hand, it can be addictive, and some studies suggest that teenagers who spend hours online tend to feel more anxious. Personally, I think the problem isn't the technology itself, but the lack of limits."
+    }
+   }
+  ]
+ },
+ {
+  "id": "s-c1",
+  "nivel": "C1",
+  "titulo": "Simulado C1",
+  "tempo": 50,
+  "desc": "Leitura, escuta, gramática, escrita e fala no nível C1, num formato curto inspirado no C1 Advanced.",
+  "partes": [
+   {
+    "tipo": "leitura",
+    "titulo": "Leitura",
+    "instr": "Leia o texto e responda as perguntas.",
+    "texto": {
+     "t": "The Overlooked Value of Weak Ties",
+     "p": [
+      "When we think about the people who shape our lives, we tend to picture close friends and family. Yet an influential line of sociological research suggests that some of the most consequential connections are those we barely think about: acquaintances, former colleagues, the friend of a friend we chat to at parties.",
+      "In a classic study of job seekers, researchers found that people were more likely to have found their current job through an acquaintance than through a close friend. The reasoning is elegant. Our close friends tend to move in the same circles as we do, so they largely know what we already know. Acquaintances, by contrast, connect us to different networks, and therefore to information we would not otherwise encounter.",
+      "More recent research using data from professional networking sites has added nuance to this picture. It was not the very weakest ties that proved most useful, but moderately weak ones: people with whom one shares a few mutual contacts, but not many. Ties that were too distant offered little trust; those that were too close offered little new information.",
+      "The implications extend beyond careers. Brief, friendly interactions with acquaintances, such as a chat with a neighbour or a regular at the café, appear to contribute measurably to people's sense of wellbeing and belonging. Paradoxically, these interactions are precisely the ones that tend to disappear when people work remotely or move frequently.",
+      "None of this diminishes the importance of close relationships, which provide support that acquaintances cannot. But it does suggest that a healthy social life may depend not only on the depth of our friendships, but also on their breadth."
+     ]
+    },
+    "q": [
+     {
+      "q": "What is the main argument of the text?",
+      "o": [
+       "Acquaintances can be surprisingly important in our lives.",
+       "Close friends are less important than we think.",
+       "Remote work destroys friendships."
+      ],
+      "a": 0
+     },
+     {
+      "q": "Why are acquaintances useful when looking for a job, according to the study?",
+      "o": [
+       "They connect us to networks and information we don't already have.",
+       "They are more willing to help than friends.",
+       "They usually work in the same company."
+      ],
+      "a": 0
+     },
+     {
+      "q": "What did the more recent research add?",
+      "o": [
+       "Moderately weak ties were more useful than the very weakest ones.",
+       "Weak ties are useless online.",
+       "Close friends find most jobs."
+      ],
+      "a": 0
+     },
+     {
+      "q": "What does the writer imply about remote work?",
+      "o": [
+       "It may reduce the casual contacts that support wellbeing.",
+       "It improves people's sense of belonging.",
+       "It has no social effects."
+      ],
+      "a": 0
+     },
+     {
+      "q": "What is the writer's final position?",
+      "o": [
+       "Both deep and broad social connections matter.",
+       "Only acquaintances matter.",
+       "Social life cannot be studied."
+      ],
+      "a": 0
+     }
+    ]
+   },
+   {
+    "tipo": "escuta",
+    "titulo": "Escuta",
+    "instr": "Ouça um trecho de um programa de rádio sobre o sono. Você pode ouvir duas vezes.",
+    "lines": [
+     [
+      "olivia",
+      "With me is Jin, who has spent the last year researching a book on sleep. Jin, is it true that we're sleeping less than previous generations?"
+     ],
+     [
+      "jin",
+      "That's the common assumption, but the evidence is surprisingly mixed. Some studies suggest average sleep has barely changed in decades. What does seem to have changed is how irregular our sleep has become, and how many of us look at screens right up until we close our eyes."
+     ],
+     [
+      "olivia",
+      "Does irregularity matter as much as the total amount?"
+     ],
+     [
+      "jin",
+      "Increasingly, researchers think it might. Going to bed at very different times disrupts the body clock, rather like having mild jet lag every Monday. Some recent work links irregular sleep to poorer mood and concentration, even when people sleep the recommended number of hours."
+     ],
+     [
+      "olivia",
+      "So what would you advise listeners to do?"
+     ],
+     [
+      "jin",
+      "Rather than obsessing over eight hours, aim for consistency: a similar wake-up time every day, including weekends. Get daylight in the morning. And treat sleep trackers with some caution. For anxious sleepers, constantly checking the data can actually make sleep worse."
+     ]
+    ],
+    "q": [
+     {
+      "q": "What does Jin say about the idea that we sleep less than before?",
+      "o": [
+       "The evidence is mixed.",
+       "It is definitely true.",
+       "We sleep much more than before."
+      ],
+      "a": 0
+     },
+     {
+      "q": "What has clearly changed, according to Jin?",
+      "o": [
+       "How irregular our sleep has become.",
+       "The number of hours people need.",
+       "The age at which people sleep less."
+      ],
+      "a": 0
+     },
+     {
+      "q": "Why does Jin compare irregular sleep to jet lag?",
+      "o": [
+       "It disrupts the body clock.",
+       "It only affects travellers.",
+       "It makes people sleep longer."
+      ],
+      "a": 0
+     },
+     {
+      "q": "What is Jin's main advice?",
+      "o": [
+       "Keep a consistent wake-up time, even at weekends.",
+       "Sleep exactly eight hours.",
+       "Check a sleep tracker every night."
+      ],
+      "a": 0
+     },
+     {
+      "q": "What does he say about sleep trackers?",
+      "o": [
+       "They can make anxious people sleep worse.",
+       "Everybody should use one.",
+       "They are always accurate."
+      ],
+      "a": 0
+     }
+    ]
+   },
+   {
+    "tipo": "lingua",
+    "titulo": "Gramática e vocabulário",
+    "instr": "Escolha a opção que completa cada frase.",
+    "q": [
+     {
+      "q": "Not until the results were published ___ how serious the problem was.",
+      "o": [
+       "did we realise",
+       "we realised",
+       "we did realise"
+      ],
+      "a": 0
+     },
+     {
+      "q": "Had I known about the delay, I ___ a later train.",
+      "o": [
+       "would have taken",
+       "would take",
+       "had taken"
+      ],
+      "a": 0
+     },
+     {
+      "q": "The committee insisted that the report ___ rewritten.",
+      "o": [
+       "be",
+       "is",
+       "will be"
+      ],
+      "a": 0
+     },
+     {
+      "q": "She's highly ___ of handling the pressure.",
+      "o": [
+       "capable",
+       "able",
+       "possible"
+      ],
+      "a": 0
+     },
+     {
+      "q": "The new policy has ___ a great deal of criticism.",
+      "o": [
+       "come in for",
+       "come up with",
+       "come across"
+      ],
+      "a": 0
+     },
+     {
+      "q": "___ the heavy rain, the match went ahead as planned.",
+      "o": [
+       "Notwithstanding",
+       "Although",
+       "Owing to"
+      ],
+      "a": 0
+     }
+    ]
+   },
+   {
+    "tipo": "escrita",
+    "titulo": "Escrita",
+    "tarefa": {
+     "id": "s-c1-e",
+     "tipo": "escrever",
+     "titulo": "Ensaio: cidades e carros",
+     "pedido": "Escreva um ensaio respondendo: “As cidades deveriam proibir os carros no centro?” Discuta duas consequências, considere o outro lado e conclua com a sua posição. Entre 180 e 220 palavras.",
+     "min": 160,
+     "precisa": [
+      [
+       "\\b(in my view|i would argue|i believe|it could be argued)\\b",
+       "a sua posição (In my view / I would argue)"
+      ],
+      [
+       "\\b(however|nevertheless|on the other hand|admittedly|whereas)\\b",
+       "o outro lado (However / Admittedly)"
+      ],
+      [
+       "\\b(furthermore|moreover|in addition)\\b",
+       "um conector formal de adição"
+      ],
+      [
+       "\\b(consequently|as a result|therefore|thus)\\b",
+       "uma consequência (Consequently / As a result)"
+      ],
+      [
+       "\\b(in conclusion|to conclude|on balance|all things considered)\\b",
+       "uma conclusão"
+      ]
+     ],
+     "evitar": [
+      [
+       "\\b(gonna|wanna|gotta|stuff|kinda)\\b",
+       "Num ensaio C1, evite gonna, wanna, stuff e kinda."
+      ],
+      [
+       "\\b(i'm|don't|can't|won't|it's|isn't)\\b",
+       "Num ensaio formal, prefira as formas completas: I am, do not, cannot."
+      ]
+     ],
+     "modelo": "In recent years, a growing number of cities have experimented with restricting cars in their historic centres. In my view, such measures are largely beneficial, provided that they are introduced with care.\nThe first consequence is a marked improvement in air quality and safety. Fewer vehicles mean less pollution and fewer accidents, and streets that were once dominated by traffic can be reclaimed for walking, cycling and social life. Furthermore, several cities have reported that local shops benefit, as pedestrians tend to linger and return more often than drivers.\nA second consequence concerns accessibility. Admittedly, a ban could make the centre harder to reach for elderly or disabled residents, as well as for workers who live in areas poorly served by public transport. Consequently, any restriction must be accompanied by reliable buses, adequate parking on the edge of the zone and exemptions for those with genuine needs.\nOn the other hand, it could be argued that each city is different, and that a policy which succeeds in a compact town may fail in a sprawling metropolis built around the car.\nOn balance, I would argue that the benefits clearly outweigh the drawbacks, as long as cities treat the transition as a gradual process rather than an overnight ban."
+    }
+   },
+   {
+    "tipo": "fala",
+    "titulo": "Fala",
+    "tarefa": {
+     "id": "s-c1-f",
+     "tipo": "falar",
+     "titulo": "Tecnologia e memória",
+     "pergunta": "Some people say that technology has made us worse at remembering things. To what extent do you agree?",
+     "pedido": "Responda com nuance: concorde em parte, dê um exemplo, considere o outro lado e conclua.",
+     "min": 60,
+     "precisa": [
+      [
+       "\\b(to some extent|up to a point|i'?d argue|it depends|i partly agree)\\b",
+       "uma posição com nuance (To some extent...)"
+      ],
+      [
+       "\\b(for example|for instance|such as|take)\\b",
+       "um exemplo (for instance)"
+      ],
+      [
+       "\\b(on the other hand|however|that said|having said that|admittedly)\\b",
+       "o outro lado (That said / On the other hand)"
+      ],
+      [
+       "\\b(overall|on balance|all in all|so|in the end)\\b",
+       "uma conclusão (On balance / Overall)"
+      ]
+     ],
+     "modelo": "I'd agree to some extent. For instance, I no longer remember phone numbers or directions, because my phone does it for me, and I suspect most people are the same. That said, I'm not convinced our memory is actually worse. It may simply be that we choose what to remember more strategically, and use the freed-up attention for other things. Having said that, I do think constant notifications make it harder to concentrate long enough to remember things properly. So, on balance, technology hasn't damaged our memory itself, but it has changed the habits that help us use it well."
     }
    }
   ]

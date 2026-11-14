@@ -1481,6 +1481,270 @@
    ],
    "evitar": [],
    "modelo": "Hi Marcos,\nHere is a quick summary of today's meeting. It was agreed that the launch will be postponed to June, mainly because the new app still needs testing. Carla disagreed and argued that a delay might affect our sales, but most of the team felt it was safer to wait. Jin pointed out that the budget seems to be under control, so the delay is unlikely to cost us more.\nThe next steps are: Carla will update the marketing plan by Friday, Jin will review the budget next week, and we will meet again on 12 May.\nLet me know if you have any questions.\nBest,\nBia"
+  },
+  {
+   "id": "e9",
+   "arco": 3,
+   "nivel": "A2",
+   "tipo": "cartão-postal",
+   "titulo": "Cartão-postal",
+   "pedido": "Você está de férias. Escreva um cartão-postal para um amigo: onde você está, como é o lugar, o que você fez ontem e o que vai fazer amanhã. Cerca de 50 palavras.",
+   "min": 40,
+   "precisa": [
+    [
+     "\\b(i'?m|we'?re|i am|we are) (in|at)\\b",
+     "onde você está (I'm in...)"
+    ],
+    [
+     "\\b(it'?s|it is|the \\w+ (is|are))\\b",
+     "como é o lugar (It's beautiful...)"
+    ],
+    [
+     "\\byesterday\\b",
+     "o que fez ontem (yesterday + passado)"
+    ],
+    [
+     "\\btomorrow\\b|\\bgoing to\\b",
+     "o plano para amanhã (tomorrow / going to)"
+    ]
+   ],
+   "evitar": [],
+   "modelo": "Hi Leo! I'm in Lisbon with my sister. It's a beautiful city with old streets and lots of hills. Yesterday we visited a castle and ate fresh fish by the river. Tomorrow we're going to take a train to the beach. Wish you were here! See you soon, Ana"
+  },
+  {
+   "id": "e10",
+   "arco": 3,
+   "nivel": "A2",
+   "tipo": "descrição",
+   "titulo": "Meu melhor amigo",
+   "pedido": "Descreva o seu melhor amigo ou a sua melhor amiga: como a pessoa é, do que ela gosta e por que vocês são amigos. Cerca de 50 palavras.",
+   "min": 40,
+   "precisa": [
+    [
+     "\\b(he|she) is\\b|\\b(he|she)'s\\b",
+     "como a pessoa é (She is...)"
+    ],
+    [
+     "\\b(likes|loves|enjoys)\\b",
+     "do que ela gosta (She likes...)"
+    ],
+    [
+     "\\bbecause\\b",
+     "por que vocês são amigos (because)"
+    ]
+   ],
+   "evitar": [],
+   "modelo": "My best friend is Carla. She is tall and she has short black hair. She is very funny and kind. She likes music and she loves cooking. We met at school when we were ten. We are best friends because she always listens to me and she makes me laugh."
+  },
+  {
+   "id": "e11",
+   "arco": 4,
+   "nivel": "B1",
+   "tipo": "e-mail de reclamação",
+   "titulo": "Uma compra com problema",
+   "pedido": "Você comprou um fone de ouvido pela internet e ele chegou quebrado. Escreva um e-mail para a loja: explique o problema, diga quando comprou e peça a troca ou o reembolso. Cerca de 80 palavras.",
+   "min": 65,
+   "precisa": [
+    [
+     "^\\s*(dear|hello|hi)\\b",
+     "uma saudação (Dear...)"
+    ],
+    [
+     "\\b(bought|ordered|purchased)\\b",
+     "quando você comprou (I bought... on...)"
+    ],
+    [
+     "\\b(broken|doesn'?t work|isn'?t working|damaged|not working)\\b",
+     "o problema (it's broken / it doesn't work)"
+    ],
+    [
+     "\\b(refund|replace|replacement|exchange|new one)\\b",
+     "o que você quer (a refund / a replacement)"
+    ],
+    [
+     "\\b(regards|sincerely|best wishes|thank you)\\b",
+     "uma despedida educada"
+    ]
+   ],
+   "evitar": [
+    [
+     "\\b(gonna|wanna)\\b",
+     "Num e-mail para uma empresa, evite gonna e wanna."
+    ]
+   ],
+   "modelo": "Dear Sir or Madam,\nI am writing about some headphones that I ordered from your website on 2 March. They arrived yesterday, but unfortunately they are broken: the left side doesn't work at all. I have attached a photo of the problem. Could you please send me a replacement, or give me a full refund? I would prefer a replacement if possible.\nThank you for your help.\nKind regards,\nAna Lima"
+  },
+  {
+   "id": "e12",
+   "arco": 4,
+   "nivel": "B1",
+   "tipo": "história",
+   "titulo": "O dia em que tudo deu errado",
+   "pedido": "Conte a história de um dia em que tudo deu errado (verdadeiro ou inventado). Use sequência e tempos do passado. Cerca de 100 palavras.",
+   "min": 80,
+   "precisa": [
+    [
+     "\\b(first|then|after that|later|next)\\b",
+     "a sequência (first, then, after that)"
+    ],
+    [
+     "\\b(was|were) \\w+ing\\b",
+     "o cenário no passado contínuo (I was walking...)"
+    ],
+    [
+     "\\b(suddenly|all of a sudden)\\b",
+     "um momento inesperado (suddenly)"
+    ],
+    [
+     "\\b(in the end|eventually|finally)\\b",
+     "o final (in the end)"
+    ]
+   ],
+   "evitar": [],
+   "modelo": "Last Monday was a disaster. First, my alarm didn't go off, so I woke up an hour late. Then I couldn't find my keys anywhere. After that, I ran to the bus stop, but the bus had already left. While I was waiting for the next one, it started to rain, and of course I didn't have an umbrella. Suddenly, a car drove through a puddle and soaked my trousers. When I finally arrived at work, I discovered that the meeting had been cancelled. In the end, I laughed about it with my colleagues and went home early."
+  },
+  {
+   "id": "e13",
+   "arco": 10,
+   "nivel": "B1",
+   "tipo": "avaliação",
+   "titulo": "Avaliação de um lugar",
+   "pedido": "Escreva uma avaliação de um restaurante, café ou loja que você conhece: o que é bom, o que poderia melhorar e se você recomenda. Cerca de 80 palavras.",
+   "min": 65,
+   "precisa": [
+    [
+     "\\b(delicious|great|excellent|friendly|amazing|good|lovely)\\b",
+     "o que é bom"
+    ],
+    [
+     "\\b(but|however|although|the only problem)\\b",
+     "o que poderia melhorar (but / however)"
+    ],
+    [
+     "\\b(recommend|worth)\\b",
+     "se você recomenda (I'd recommend / worth)"
+    ]
+   ],
+   "evitar": [],
+   "modelo": "I often go to Café Aurora, a small café near my office. The coffee is excellent and the cakes are home-made, especially the carrot cake, which is delicious. The staff are friendly and always remember my order. However, it can get very crowded at lunchtime, and there aren't many tables, so sometimes I have to take my coffee away. The prices are reasonable for the quality. Overall, I'd definitely recommend it, but go early if you want a seat."
+  },
+  {
+   "id": "e14",
+   "arco": 5,
+   "nivel": "B2",
+   "tipo": "carta de apresentação",
+   "titulo": "Candidatura a uma vaga",
+   "pedido": "Escreva uma carta de apresentação para uma vaga de atendimento num hotel internacional: sua experiência, suas qualidades com exemplo e por que você quer a vaga. Entre 120 e 160 palavras.",
+   "min": 110,
+   "precisa": [
+    [
+     "\\b(dear|to whom it may concern)\\b",
+     "uma abertura formal (Dear...)"
+    ],
+    [
+     "\\b(apply|application|applying)\\b",
+     "que você está se candidatando (I am writing to apply...)"
+    ],
+    [
+     "\\b(experience|worked|have been working)\\b",
+     "a sua experiência"
+    ],
+    [
+     "\\b(for example|for instance|such as)\\b",
+     "um exemplo concreto"
+    ],
+    [
+     "\\b(look forward|hear from you)\\b",
+     "o encerramento (I look forward to hearing from you)"
+    ]
+   ],
+   "evitar": [
+    [
+     "\\b(gonna|wanna|gotta)\\b",
+     "Em carta formal, evite gonna, wanna e gotta."
+    ],
+    [
+     "\\b(i'm|don't|can't|won't|it's|i've)\\b",
+     "Em carta formal, prefira as formas completas: I am, do not, cannot."
+    ]
+   ],
+   "modelo": "Dear Ms Taylor,\nI am writing to apply for the position of receptionist advertised on your website. I have been working in customer service for three years, most recently at a busy hotel in Rio de Janeiro, where I dealt with guests from many different countries.\nI am organised, patient and calm under pressure. For example, during a system failure last summer, I checked in more than forty guests manually and made sure that every one of them received the correct room.\nI would particularly like to work for your hotel because of its reputation for excellent service and its international team. I speak Portuguese, English and some Spanish, and I am keen to continue developing my languages.\nI have attached my CV and would be happy to provide references. I look forward to hearing from you.\nYours sincerely,\nAna Lima"
+  },
+  {
+   "id": "e15",
+   "arco": 5,
+   "nivel": "B2",
+   "tipo": "relatório",
+   "titulo": "Relatório sobre transporte",
+   "pedido": "A prefeitura pediu um relatório curto sobre o transporte público do seu bairro: situação atual, problemas principais e duas recomendações. Use títulos. Entre 120 e 160 palavras.",
+   "min": 110,
+   "precisa": [
+    [
+     "\\b(introduction|purpose|aim)\\b",
+     "um título de introdução (Introduction / Purpose)"
+    ],
+    [
+     "\\b(problem|issue|however)\\b",
+     "os problemas"
+    ],
+    [
+     "\\b(recommend|recommendation|suggest|should)\\b",
+     "as recomendações (I recommend / should)"
+    ],
+    [
+     "\\b(in conclusion|to conclude|overall|conclusion)\\b",
+     "uma conclusão"
+    ]
+   ],
+   "evitar": [
+    [
+     "\\b(gonna|wanna|gotta)\\b",
+     "Em relatório, evite gonna, wanna e gotta."
+    ]
+   ],
+   "modelo": "Introduction\nThe aim of this report is to describe public transport in the Vila Nova area and to make recommendations for improvement.\nCurrent situation\nThe area is served by two bus routes and one metro station. Buses run every twenty minutes during the day, but only once an hour after 10 p.m.\nMain problems\nThe main issue is overcrowding at peak times, when many passengers cannot get on the first bus. In addition, there is no direct route to the hospital, which is a serious problem for elderly residents.\nRecommendations\nFirstly, I recommend increasing the frequency of buses between 7 and 9 a.m. Secondly, the council should consider a new route connecting the station to the hospital.\nConclusion\nOverall, public transport in the area is reasonable, but these two changes would make a significant difference to residents' daily lives."
+  },
+  {
+   "id": "e16",
+   "arco": 8,
+   "nivel": "C1",
+   "tipo": "proposta",
+   "titulo": "Proposta para a empresa",
+   "pedido": "Escreva uma proposta para a diretoria da sua empresa sugerindo um programa de bem-estar para os funcionários: o problema, a proposta, os custos e os benefícios esperados. Entre 160 e 200 palavras.",
+   "min": 150,
+   "precisa": [
+    [
+     "\\b(propose|proposal|recommend)\\b",
+     "a proposta (I propose / This proposal)"
+    ],
+    [
+     "\\b(currently|at present|recent|survey|data)\\b",
+     "o problema com dados ou contexto"
+    ],
+    [
+     "\\b(cost|budget|invest|investment)\\b",
+     "os custos"
+    ],
+    [
+     "\\b(benefit|would lead to|result in|reduce|improve)\\b",
+     "os benefícios esperados"
+    ],
+    [
+     "\\b(furthermore|moreover|in addition)\\b",
+     "um conector formal de adição"
+    ],
+    [
+     "\\b(in conclusion|to conclude|overall)\\b",
+     "uma conclusão"
+    ]
+   ],
+   "evitar": [
+    [
+     "\\b(gonna|wanna|gotta|stuff|kinda)\\b",
+     "Num texto formal, evite gonna, wanna, stuff e kinda."
+    ]
+   ],
+   "modelo": "Introduction\nThe purpose of this proposal is to recommend a staff wellbeing programme for the coming year.\nThe problem\nAccording to our recent staff survey, 46% of employees report feeling stressed at least three days a week, and sick leave has risen by 12% since last year. This is affecting both morale and productivity.\nThe proposal\nI propose a programme with three elements: a weekly yoga or stretching session during lunchtime, access to a confidential counselling service, and a clear policy discouraging emails after 7 p.m. Furthermore, managers would receive short training on recognising signs of burnout.\nCosts\nThe total cost is estimated at £18,000 per year, mainly for the counselling service and the instructor. This represents a modest investment compared with the cost of replacing experienced staff.\nExpected benefits\nSimilar programmes in other companies have been shown to reduce sick leave and improve retention. In addition, they would strengthen our reputation as a responsible employer.\nConclusion\nIn conclusion, I recommend approving a six-month pilot, after which its impact can be evaluated through a follow-up survey."
   }
  ],
  "mediar": [

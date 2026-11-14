@@ -146,6 +146,7 @@ h1,h2{font-family:var(--f-display);font-weight:400;letter-spacing:.01em;text-wra
 .paviso{font-weight:700;margin:6px 0}.pouvi{margin:4px 0}.pmod{margin-top:12px;border-top:1px dashed var(--line);padding-top:10px}.pmtxt{font-size:17px;line-height:1.55}
 .auto{list-style:none;padding:0;margin:8px 0}.auto li{display:flex;flex-wrap:wrap;gap:8px;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px solid var(--line)}.auto li>span:first-child{flex:1 1 220px}.auto .segb{white-space:nowrap}
 .fonte{padding:12px 0;border-bottom:1px solid var(--line)}.fonte:last-child{border-bottom:0}.fonte-t{display:flex;gap:10px;align-items:center;margin-bottom:6px}.fonte-t small{display:block;color:var(--muted);font-size:12px}.fonte-ic{flex:0 0 36px;height:36px;border-radius:10px;display:grid;place-items:center;background:color-mix(in srgb,var(--accent) 15%,transparent);color:var(--accent);font-size:18px}.fonte p{margin:4px 0}.fonte-como{font-size:14px}
+.perros{margin-top:10px;padding:10px 12px;border-radius:10px;border:1px solid color-mix(in srgb,var(--accent) 45%,transparent);background:color-mix(in srgb,var(--accent) 8%,transparent)}.perros ul{list-style:none;padding:0;margin:6px 0 0}.perros li{margin:8px 0}.perros li span{display:block}.perros s{opacity:.75}.perros small{display:block;font-size:13px;color:var(--muted);margin-top:2px}
 .cvperg{padding-left:20px;margin:8px 0}.cvperg li{margin:6px 0}.cvfr{display:grid;gap:8px;margin-top:8px}.cvf{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:10px 12px;border:1px solid var(--line);border-radius:12px}.cvf b{display:block}.cvf span{font-size:14px;color:var(--muted)}.cvf .say{position:static;flex:0 0 auto}
 .imnivel{margin:0 0 12px;padding:10px 12px;border-radius:10px;background:color-mix(in srgb,var(--accent) 10%,transparent);font-size:15px}
 .immeta .imnum{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;margin-bottom:8px}.immeta .imnum b{font-size:30px}.immeta .simbar{height:10px;margin-bottom:10px}.imdiv{margin:8px 0 0;padding-left:20px;font-size:14px}.imreg{margin-top:14px;padding-top:12px;border-top:1px solid var(--line)}.imreg .seg{margin:8px 0}.imantes{margin-top:12px}.imantes summary{cursor:pointer;min-height:44px;display:flex;align-items:center}.imdicas{padding-left:20px;margin:6px 0}.imdicas li{margin:6px 0}.lnk{background:none;border:0;color:var(--accent);text-decoration:underline;font:inherit;cursor:pointer;padding:4px}
@@ -533,7 +534,7 @@ h1,h2{font-family:var(--f-display);font-weight:400;letter-spacing:.01em;text-wra
 <script>
 /* Carrega a história e as questões (pasta conteudo/) e depois o código do curso (app.js).
    TORRE_V muda sozinho a cada publicação (tools/site/build_site.py), para o aparelho baixar a versão nova. */
-const TORRE_V='e653b7b26b';
+const TORRE_V='84f0a44da8';
 (async function(){
  const el=document.getElementById('app');
  function falha(e){
@@ -561,11 +562,11 @@ const TORRE_V='e653b7b26b';
   const [arcos,bonus,pr]=await Promise.all([
    Promise.all(ind.arcos.map(a=>Promise.all([get('historia/'+a),get('questoes/'+a)]).then(([h,q])=>({h,caps:junta(h,q,a)})))),
    Promise.all([get('historia/bonus'),get('questoes/bonus')]).then(([h,q])=>junta(h,q,'bonus')),
-   Promise.all(['escuta','leitura','vocabulario','escrita','nivelamento','sons','confusoes','producao','simulados','imersao','conversa'].map(n=>get('pratica/'+n)))
+   Promise.all(['escuta','leitura','vocabulario','escrita','nivelamento','sons','confusoes','producao','simulados','imersao','conversa','erros'].map(n=>get('pratica/'+n)))
   ]);
   const CH=[],ARCS=[],CANDO=[];
   arcos.forEach(({h,caps})=>{ARCS.push({n:h.nome,d:h.descricao,from:CH.length,to:CH.length+caps.length-1});CANDO.push(h.agora_voce_consegue||[]);CH.push(...caps);});
-  Object.assign(window,{FILA_NOMES:ind.fila_nomes||null,CAMINHO:Array.isArray(ind.caminho)?ind.caminho:null,CH,ARCS,CANDO,BONUS:bonus,LISTEN:pr[0],READ:pr[1],VOCAB:pr[2],WRITE:pr[3],PLACE:pr[4],EAR_PAIRS:pr[5].pares,EAR_GLOSS:pr[5].traducao,CONFUSOES:pr[6],PRODUCAO:pr[7],SIMULADOS:pr[8],IMERSAO:pr[9],CONVERSA:pr[10],SOM_BANCO:pr[5].banco||[]});
+  Object.assign(window,{FILA_NOMES:ind.fila_nomes||null,CAMINHO:Array.isArray(ind.caminho)?ind.caminho:null,RESULTADOS:ind.resultados||null,CH,ARCS,CANDO,BONUS:bonus,LISTEN:pr[0],READ:pr[1],VOCAB:pr[2],WRITE:pr[3],PLACE:pr[4],EAR_PAIRS:pr[5].pares,EAR_GLOSS:pr[5].traducao,CONFUSOES:pr[6],PRODUCAO:pr[7],SIMULADOS:pr[8],IMERSAO:pr[9],CONVERSA:pr[10],ERROS:pr[11],SOM_BANCO:pr[5].banco||[]});
  }catch(e){falha(e);return;}
  const s=document.createElement('script'); s.src='app.js?v='+TORRE_V;
  s.onerror=()=>falha(new Error('app.js não abriu')); document.body.appendChild(s);
@@ -584,7 +585,7 @@ if('serviceWorker' in navigator&&location.protocol==='https:'){
   d.innerHTML='Nova versão do curso disponível. <button style="font:inherit;font-weight:700;padding:8px 12px;border-radius:8px;border:0;background:#ff8a3d;color:#111">Atualizar</button>';
   d.querySelector('button').onclick=()=>location.reload(); document.body.appendChild(d);
  });
- window.addEventListener('load',()=>{navigator.serviceWorker.register('sw.js?v=e653b7b26b').catch(()=>{});});
+ window.addEventListener('load',()=>{navigator.serviceWorker.register('sw.js?v=84f0a44da8').catch(()=>{});});
 }
 </script>
 <!-- /só no site -->

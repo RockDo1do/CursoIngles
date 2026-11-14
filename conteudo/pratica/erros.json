@@ -1,0 +1,162 @@
+[
+ {
+  "rx": "\\bi (have|has) (\\d+|[a-z]+-?[a-z]*) years\\b",
+  "certo": "I'm 25 (years old)",
+  "explica": "Idade em inglês usa o verbo TO BE, não HAVE."
+ },
+ {
+  "rx": "\\bpeople is\\b",
+  "certo": "people are",
+  "explica": "People já é plural: people are."
+ },
+ {
+  "rx": "\\b(he|she|it) don'?t\\b",
+  "certo": "he doesn't / she doesn't",
+  "explica": "Com he, she e it, a negativa usa doesn't."
+ },
+ {
+  "rx": "\\b(he|she) have\\b",
+  "certo": "he has / she has",
+  "explica": "Com he, she e it, o verbo have vira has."
+ },
+ {
+  "rx": "\\bi(?:'m| am) agree\\b",
+  "certo": "I agree",
+  "explica": "Agree já é verbo: I agree. Não existe “I am agree”."
+ },
+ {
+  "rx": "\\bexplain me\\b",
+  "certo": "explain to me",
+  "explica": "Explain pede TO antes da pessoa: explain it to me."
+ },
+ {
+  "rx": "\\bsay me\\b",
+  "certo": "tell me",
+  "explica": "Para dizer algo a alguém, use tell: tell me. Say não pede a pessoa logo depois."
+ },
+ {
+  "rx": "\\bmake (a|the|some|many) questions?\\b",
+  "certo": "ask a question",
+  "explica": "Fazer uma pergunta é ask a question."
+ },
+ {
+  "rx": "\\bdepends? of\\b|\\bdepended of\\b",
+  "certo": "depend on",
+  "explica": "Depender DE é depend ON."
+ },
+ {
+  "rx": "\\bdiscuss(ed|es)? about\\b",
+  "certo": "discuss (sem about)",
+  "explica": "Discuss não leva about: discuss the problem."
+ },
+ {
+  "rx": "\\blisten(s|ed|ing)? (music|songs?|the radio|podcasts?)\\b",
+  "certo": "listen to music",
+  "explica": "Listen pede TO: listen to music."
+ },
+ {
+  "rx": "\\b(informations|advices|furnitures|equipments|researches|homeworks|knowledges|evidences)\\b",
+  "certo": "information, advice, furniture...",
+  "explica": "Estas palavras são incontáveis em inglês: não ganham S."
+ },
+ {
+  "rx": "\\bsince (\\d+|two|three|four|five|six|seven|eight|nine|ten|many|a few|some) (years|months|weeks|days|hours)\\b",
+  "certo": "for 3 years",
+  "explica": "Para a duração, use for (for three years). Since é para o ponto de início (since 2020)."
+ },
+ {
+  "rx": "\\bmore (better|worse|bigger|easier|cheaper|faster|smaller|happier)\\b",
+  "certo": "better / bigger",
+  "explica": "Comparativo com -er ou irregular não leva more: better, não more better."
+ },
+ {
+  "rx": "\\bmore good\\b",
+  "certo": "better",
+  "explica": "Good é irregular: better (e the best)."
+ },
+ {
+  "rx": "\\bthe life is\\b",
+  "certo": "life is",
+  "explica": "Para falar da vida em geral, sem the: life is short."
+ },
+ {
+  "rx": "\\barriv\\w* (at|in|to) home\\b",
+  "certo": "arrive home",
+  "explica": "Com home, não use preposição: arrive home, go home."
+ },
+ {
+  "rx": "\\bgo(es|ing)? to home\\b|\\bwent to home\\b",
+  "certo": "go home",
+  "explica": "Com home, não use to: go home."
+ },
+ {
+  "rx": "\\bi(?:'m| am) boring\\b",
+  "certo": "I'm bored",
+  "explica": "I'm bored = estou entediado(a). I'm boring = eu sou chato(a)."
+ },
+ {
+  "rx": "\\bmarried with\\b",
+  "certo": "married to",
+  "explica": "Casado COM é married TO."
+ },
+ {
+  "rx": "\\bdid(n'?t| not) (went|saw|ate|had|was|were|came|made|took|bought|said|got|did|gave|knew|found)\\b",
+  "certo": "didn't go / didn't see",
+  "explica": "Depois de did ou didn't, o verbo fica na forma básica: didn't go."
+ },
+ {
+  "rx": "\\b(can|must|should|could|might|will) to [a-z]+",
+  "certo": "can go / must go",
+  "explica": "Depois de can, must, should, will e outros, o verbo vem sem to."
+ },
+ {
+  "rx": "\\bwhat means\\b|\\bwhat does it means\\b",
+  "certo": "what does it mean?",
+  "explica": "Pergunta com does: what does it mean? (mean, sem s)."
+ },
+ {
+  "rx": "\\bdo you can\\b",
+  "certo": "can you...?",
+  "explica": "Com can, a pergunta inverte: can you...? Sem do."
+ },
+ {
+  "rx": "\\bassist(ed|ing)? (a|the|to) (film|movie|game|match|tv|series|show)\\b",
+  "certo": "watch a film",
+  "explica": "Assistir a um filme é watch. Assist é ajudar."
+ },
+ {
+  "rx": "\\bpretend(s|ed)? to (go|travel|study|visit|buy|move|live|work|learn)\\b",
+  "certo": "intend to / plan to",
+  "explica": "Pretend é fingir. Para “pretender”, use intend to ou plan to."
+ },
+ {
+  "rx": "\\bin the (monday|tuesday|wednesday|thursday|friday|saturday|sunday)s?\\b|\\bin (monday|tuesday|wednesday|thursday|friday|saturday|sunday)\\b",
+  "certo": "on Monday",
+  "explica": "Dias da semana usam on: on Monday."
+ },
+ {
+  "rx": "\\bin the weekend\\b",
+  "certo": "at the weekend / on the weekend",
+  "explica": "Fim de semana: at the weekend (britânico) ou on the weekend (americano)."
+ },
+ {
+  "rx": "\\bin (my|the|our|this) (city|town|street|country|house|school|neighbou?rhood) (has|have)\\b",
+  "certo": "there is / there are",
+  "explica": "“Na minha cidade tem...” em inglês é there is / there are: in my city, there are many parks."
+ },
+ {
+  "rx": "\\bit has (many|a lot of|some|lots of) (people|cars|shops|parks|restaurants)\\b",
+  "certo": "there are many people",
+  "explica": "Para “tem” no sentido de existir, use there is / there are."
+ },
+ {
+  "rx": "\\bi (?:have|has) (hungry|thirsty|cold|hot|sleepy|afraid)\\b|\\bi have (fear|hunger|thirst)\\b",
+  "certo": "I'm hungry / I'm afraid",
+  "explica": "Fome, sede, frio e medo usam TO BE: I'm hungry, I'm cold."
+ },
+ {
+  "rx": "\\bactually\\b(?=[^.?!]*\\b(today|now|these days|nowadays)\\b)",
+  "certo": "currently / nowadays",
+  "explica": "Cuidado: actually é “na verdade”. Para “atualmente”, use currently ou nowadays."
+ }
+]
