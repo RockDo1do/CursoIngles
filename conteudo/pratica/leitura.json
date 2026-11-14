@@ -2700,5 +2700,655 @@
     "a": 0
    }
   ]
+ },
+ {
+  "id": "r37",
+  "t": "Cartão de Aniversário",
+  "lv": "A1",
+  "kind": "Cartão",
+  "p": [
+   "Dear Grandma,",
+   "Happy birthday! I hope you have a wonderful day.",
+   "Thank you for the lovely scarf at Christmas. I wear it every day. It's very warm!",
+   "I'm sorry I can't come to your party on Sunday. I have an exam on Monday. But I can visit you next Saturday. Can we go to the park and have tea?",
+   "Lots of love,",
+   "Sophie"
+  ],
+  "g": {
+   "wonderful": "maravilhoso",
+   "lovely": "lindo",
+   "scarf": "cachecol",
+   "warm": "quente",
+   "exam": "prova"
+  },
+  "q": [
+   {
+    "q": "Para quem é o cartão?",
+    "o": [
+     "Para a avó da Sophie.",
+     "Para a mãe da Sophie.",
+     "Para uma amiga."
+    ],
+    "a": 0
+   },
+   {
+    "q": "O que a avó deu à Sophie no Natal?",
+    "o": [
+     "Um cachecol.",
+     "Um livro.",
+     "Um bolo."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Por que a Sophie não pode ir à festa?",
+    "o": [
+     "Porque tem prova na segunda.",
+     "Porque está doente.",
+     "Porque vai viajar."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Quando ela pode visitar a avó?",
+    "o": [
+     "No sábado que vem.",
+     "No domingo.",
+     "Na segunda."
+    ],
+    "a": 0
+   }
+  ]
+ },
+ {
+  "id": "r38",
+  "t": "Minha Nova Colega de Apartamento",
+  "lv": "A1",
+  "kind": "Texto pessoal",
+  "p": [
+   "I have a new flatmate. Her name is Lucía, and she's from Mexico. She's twenty-four years old.",
+   "Lucía is a student at the university. She studies art. She's very friendly and she likes cooking. Every Sunday she makes tacos for us!",
+   "She gets up early and goes running in the park. I don't like running. I like sleeping!",
+   "In the evening, we sometimes watch films together. She speaks Spanish and English, and she's teaching me some Spanish words."
+  ],
+  "g": {
+   "flatmate": "colega de apartamento",
+   "friendly": "simpática",
+   "cooking": "cozinhar",
+   "gets up": "se levanta",
+   "together": "juntas"
+  },
+  "q": [
+   {
+    "q": "De onde é a Lucía?",
+    "o": [
+     "Do México.",
+     "Da Espanha.",
+     "Do Brasil."
+    ],
+    "a": 0
+   },
+   {
+    "q": "O que a Lucía estuda?",
+    "o": [
+     "Arte.",
+     "Inglês.",
+     "Medicina."
+    ],
+    "a": 0
+   },
+   {
+    "q": "O que ela faz todo domingo?",
+    "o": [
+     "Tacos.",
+     "Uma corrida longa.",
+     "Uma festa."
+    ],
+    "a": 0
+   },
+   {
+    "q": "O que a autora gosta de fazer de manhã?",
+    "o": [
+     "Dormir.",
+     "Correr.",
+     "Cozinhar."
+    ],
+    "a": 0
+   }
+  ]
+ },
+ {
+  "id": "r39",
+  "t": "Horário da Academia",
+  "lv": "A1",
+  "kind": "Aviso",
+  "p": [
+   "CITY GYM: OPENING HOURS",
+   "Monday to Friday: 6 am to 10 pm. Saturday: 8 am to 8 pm. Sunday: 9 am to 2 pm.",
+   "Yoga classes: Tuesday and Thursday at 7 pm. Swimming pool: every day, but it is closed on Monday mornings for cleaning.",
+   "Please bring a towel. Lockers are free. No food in the gym, please. Water is OK!"
+  ],
+  "g": {
+   "OPENING HOURS": "horário de funcionamento",
+   "classes": "aulas",
+   "Swimming pool": "piscina",
+   "closed": "fechada",
+   "towel": "toalha",
+   "Lockers": "armários com chave"
+  },
+  "q": [
+   {
+    "q": "A que horas a academia abre de segunda a sexta?",
+    "o": [
+     "Às seis da manhã.",
+     "Às oito da manhã.",
+     "Às nove da manhã."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Quando tem aula de ioga?",
+    "o": [
+     "Terça e quinta às sete da noite.",
+     "Todos os dias.",
+     "Sábado de manhã."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Quando a piscina fica fechada?",
+    "o": [
+     "Na segunda de manhã.",
+     "No domingo.",
+     "Toda noite."
+    ],
+    "a": 0
+   },
+   {
+    "q": "O que não é permitido na academia?",
+    "o": [
+     "Comida.",
+     "Água.",
+     "Toalha."
+    ],
+    "a": 0
+   }
+  ]
+ },
+ {
+  "id": "r40",
+  "t": "Mensagens no Celular",
+  "lv": "A1",
+  "kind": "Mensagens",
+  "p": [
+   "Dan: Hi Amy! Where are you? The film starts in ten minutes!",
+   "Amy: Sorry! I'm on the bus. There's a lot of traffic.",
+   "Dan: No problem. I have the tickets. Do you want popcorn?",
+   "Amy: Yes, please! A small one. And a water.",
+   "Dan: OK. I'm at the door of the cinema. I'm wearing a red jacket.",
+   "Amy: Great. I'm here in five minutes. Thanks, Dan!"
+  ],
+  "g": {
+   "starts": "começa",
+   "traffic": "trânsito",
+   "tickets": "ingressos",
+   "popcorn": "pipoca",
+   "wearing": "vestindo"
+  },
+  "q": [
+   {
+    "q": "Onde a Amy está?",
+    "o": [
+     "No ônibus.",
+     "No cinema.",
+     "Em casa."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Por que ela está atrasada?",
+    "o": [
+     "Por causa do trânsito.",
+     "Porque perdeu o ônibus.",
+     "Porque acordou tarde."
+    ],
+    "a": 0
+   },
+   {
+    "q": "O que a Amy quer?",
+    "o": [
+     "Pipoca pequena e água.",
+     "Pipoca grande e refrigerante.",
+     "Só água."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Como a Amy vai reconhecer o Dan?",
+    "o": [
+     "Ele está de jaqueta vermelha.",
+     "Ele está com um boné.",
+     "Ele está com a pipoca."
+    ],
+    "a": 0
+   }
+  ]
+ },
+ {
+  "id": "r41",
+  "t": "Anúncio: Quarto para Alugar",
+  "lv": "A1",
+  "kind": "Anúncio",
+  "p": [
+   "ROOM FOR RENT",
+   "Big room in a quiet flat near the station. The room has a bed, a desk and a big window.",
+   "The kitchen and bathroom are shared with one other person. There's a washing machine and fast wifi.",
+   "Price: 450 pounds a month, with bills. No pets, no smoking.",
+   "Call Sam on 07700 900123, after 6 pm."
+  ],
+  "g": {
+   "FOR RENT": "para alugar",
+   "quiet": "silencioso",
+   "desk": "escrivaninha",
+   "shared": "dividida",
+   "bills": "contas",
+   "pets": "animais de estimação"
+  },
+  "q": [
+   {
+    "q": "Onde fica o apartamento?",
+    "o": [
+     "Perto da estação.",
+     "No centro da cidade.",
+     "Perto da praia."
+    ],
+    "a": 0
+   },
+   {
+    "q": "O que tem no quarto?",
+    "o": [
+     "Uma cama, uma escrivaninha e uma janela grande.",
+     "Uma cama e um sofá.",
+     "Uma cama e uma TV."
+    ],
+    "a": 0
+   },
+   {
+    "q": "O que está incluído nas 450 libras?",
+    "o": [
+     "As contas.",
+     "A comida.",
+     "A limpeza."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Quando é para ligar para o Sam?",
+    "o": [
+     "Depois das seis da tarde.",
+     "De manhã.",
+     "Na hora do almoço."
+    ],
+    "a": 0
+   }
+  ]
+ },
+ {
+  "id": "r42",
+  "t": "Blog: Meu Primeiro Dia no Emprego Novo",
+  "lv": "A2",
+  "kind": "Blog",
+  "p": [
+   "Yesterday was my first day at my new job in a bookshop. I was really nervous, so I woke up at six, two hours before my alarm!",
+   "I arrived at the shop at half past eight. My manager, Kate, was very kind. She showed me the shop and introduced me to the other staff. There are five of us, and everyone was friendly.",
+   "In the morning, I put new books on the shelves and learned how to use the cash register. It was more difficult than I expected, and I made a few mistakes. But Kate said, Don't worry, everybody makes mistakes on the first day.",
+   "At lunchtime, I ate a sandwich in the park with Tom, another new employee. In the afternoon, a lot of customers came in, and I helped an old man find a book about trains. He was very happy, and so was I!",
+   "I got home at six, very tired but happy. I think I'm going to like this job."
+  ],
+  "g": {
+   "bookshop": "livraria",
+   "nervous": "nervosa",
+   "showed": "mostrou",
+   "introduced": "apresentou",
+   "shelves": "prateleiras",
+   "cash register": "caixa registradora",
+   "expected": "esperava",
+   "employee": "funcionário"
+  },
+  "q": [
+   {
+    "q": "Onde é o emprego novo?",
+    "o": [
+     "Numa livraria.",
+     "Num café.",
+     "Num supermercado."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Por que a autora acordou às seis?",
+    "o": [
+     "Porque estava muito nervosa.",
+     "Porque o despertador tocou cedo.",
+     "Porque mora longe."
+    ],
+    "a": 0
+   },
+   {
+    "q": "O que ela achou da caixa registradora?",
+    "o": [
+     "Mais difícil do que esperava.",
+     "Muito fácil.",
+     "Não usou."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Com quem ela almoçou?",
+    "o": [
+     "Com o Tom, outro funcionário novo.",
+     "Com a Kate.",
+     "Sozinha."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Como ela se sentiu no fim do dia?",
+    "o": [
+     "Cansada, mas feliz.",
+     "Triste e cansada.",
+     "Com vontade de sair do emprego."
+    ],
+    "a": 0
+   }
+  ]
+ },
+ {
+  "id": "r43",
+  "t": "Receita: Panquecas Fáceis",
+  "lv": "A2",
+  "kind": "Receita",
+  "p": [
+   "These pancakes are quick, cheap and delicious. You only need four ingredients, and they're ready in twenty minutes.",
+   "Ingredients (for 8 pancakes): 200 grams of flour, 2 eggs, 300 millilitres of milk and a little butter.",
+   "First, put the flour in a big bowl. Then add the eggs and half of the milk, and mix well. Slowly add the rest of the milk and mix again.",
+   "Next, heat a little butter in a frying pan. Pour some of the mixture into the pan and cook for about one minute, until it's golden. Then turn the pancake over and cook the other side.",
+   "You can eat them with lemon and sugar, honey, fruit or chocolate. My favourite is banana and honey!",
+   "Tip: the first pancake is often not perfect. Don't worry, the next ones will be better."
+  ],
+  "g": {
+   "ingredients": "ingredientes",
+   "flour": "farinha",
+   "bowl": "tigela",
+   "mix": "misture",
+   "heat": "aqueça",
+   "frying pan": "frigideira",
+   "Pour": "despeje",
+   "golden": "dourada",
+   "turn the pancake over": "vire a panqueca",
+   "honey": "mel"
+  },
+  "q": [
+   {
+    "q": "Quanto tempo leva a receita?",
+    "o": [
+     "Vinte minutos.",
+     "Uma hora.",
+     "Cinco minutos."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Quantos ovos você precisa?",
+    "o": [
+     "Dois.",
+     "Quatro.",
+     "Um."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Como colocar o leite?",
+    "o": [
+     "Metade primeiro e o resto devagar.",
+     "Tudo de uma vez.",
+     "Só no fim."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Quando virar a panqueca?",
+    "o": [
+     "Quando estiver dourada, depois de um minuto.",
+     "Logo que colocar na frigideira.",
+     "Depois de cinco minutos."
+    ],
+    "a": 0
+   },
+   {
+    "q": "O que a dica diz?",
+    "o": [
+     "A primeira panqueca muitas vezes não fica perfeita.",
+     "Use bastante manteiga.",
+     "Coma as panquecas frias."
+    ],
+    "a": 0
+   }
+  ]
+ },
+ {
+  "id": "r44",
+  "t": "Aviso: Cachorro Perdido",
+  "lv": "A2",
+  "kind": "Aviso",
+  "p": [
+   "LOST DOG! PLEASE HELP!",
+   "Our dog Biscuit went missing on Tuesday evening in Green Park, near the lake. He ran after a bird and didn't come back.",
+   "Biscuit is a small brown dog with white ears and a short tail. He's wearing a blue collar with our phone number on it. He's very friendly, but he's scared of loud noises, so please don't shout or run after him.",
+   "He's three years old and he loves cheese, so you can try to call him with a little piece.",
+   "If you see him, please call Laura on 07700 900456, at any time, day or night. There's a reward of 100 pounds.",
+   "Thank you! Our children miss him very much."
+  ],
+  "g": {
+   "went missing": "desapareceu",
+   "ran after": "correu atrás de",
+   "tail": "rabo",
+   "collar": "coleira",
+   "scared of": "com medo de",
+   "loud noises": "barulhos altos",
+   "reward": "recompensa",
+   "miss": "sentem falta"
+  },
+  "q": [
+   {
+    "q": "Onde o Biscuit desapareceu?",
+    "o": [
+     "No Green Park, perto do lago.",
+     "Na frente de casa.",
+     "Numa loja."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Por que ele fugiu?",
+    "o": [
+     "Correu atrás de um passarinho.",
+     "Ouviu um barulho alto.",
+     "A porta estava aberta."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Como ele é?",
+    "o": [
+     "Pequeno, marrom, com orelhas brancas.",
+     "Grande e preto.",
+     "Branco com rabo comprido."
+    ],
+    "a": 0
+   },
+   {
+    "q": "O que você não deve fazer se o vir?",
+    "o": [
+     "Gritar ou correr atrás dele.",
+     "Chamá-lo pelo nome.",
+     "Dar queijo para ele."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Quando você pode ligar para a Laura?",
+    "o": [
+     "A qualquer hora.",
+     "Só de manhã.",
+     "Só depois das seis."
+    ],
+    "a": 0
+   }
+  ]
+ },
+ {
+  "id": "r45",
+  "t": "A Feira de Sábado",
+  "lv": "A2",
+  "kind": "Texto informativo",
+  "p": [
+   "Every Saturday morning, the main square in our town becomes a busy market. It starts at seven o'clock and finishes at one.",
+   "There are more than forty stalls. Local farmers sell fresh fruit, vegetables, eggs and cheese. Everything is fresher and often cheaper than in the supermarket. There's also a bakery stall with delicious bread and cakes, but you have to arrive early, because it sells out by ten!",
+   "The market isn't only about food. You can find second-hand books, old records, plants and handmade jewellery. In summer, there's live music in the afternoon, and children can have their faces painted.",
+   "Many people bring their own bags, because the market wants to use less plastic. Most stalls accept cards, but some small ones only take cash, so bring some coins.",
+   "For many people here, the market is the best part of the week. It's a great place to shop, but also to meet neighbours and have a coffee in the sun."
+  ],
+  "g": {
+   "main square": "praça principal",
+   "stalls": "barracas",
+   "farmers": "agricultores",
+   "sells out": "esgota",
+   "second-hand": "usados",
+   "records": "discos",
+   "handmade jewellery": "bijuteria artesanal",
+   "live music": "música ao vivo",
+   "coins": "moedas"
+  },
+  "q": [
+   {
+    "q": "Quando a feira funciona?",
+    "o": [
+     "Todo sábado, das sete à uma.",
+     "Todo dia de manhã.",
+     "Só no verão."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Por que é preciso chegar cedo na barraca de pães?",
+    "o": [
+     "Porque tudo esgota até as dez.",
+     "Porque fecha às oito.",
+     "Porque fica longe."
+    ],
+    "a": 0
+   },
+   {
+    "q": "O que mais se encontra além de comida?",
+    "o": [
+     "Livros usados, discos, plantas e bijuteria.",
+     "Roupas novas e celulares.",
+     "Móveis e eletrodomésticos."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Por que as pessoas levam as próprias sacolas?",
+    "o": [
+     "Porque a feira quer usar menos plástico.",
+     "Porque as sacolas são caras.",
+     "Porque é obrigatório por lei."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Por que é bom levar moedas?",
+    "o": [
+     "Algumas barracas pequenas só aceitam dinheiro.",
+     "Para pagar o estacionamento.",
+     "Para dar gorjeta aos músicos."
+    ],
+    "a": 0
+   }
+  ]
+ },
+ {
+  "id": "r46",
+  "t": "E-mail: Reserva no Hotel",
+  "lv": "A2",
+  "kind": "E-mail",
+  "p": [
+   "Dear Sir or Madam,",
+   "I would like to book a double room for two nights, from Friday 12th to Sunday 14th of March. I'm travelling with my husband.",
+   "Could you tell me if breakfast is included in the price? Also, is there a car park at the hotel? We are driving from Manchester, and we will arrive at about eight in the evening.",
+   "If possible, we would like a quiet room, not next to the lift. My husband sleeps very badly when there is noise.",
+   "Finally, is the hotel far from the city centre? We want to visit the castle and the museums on Saturday.",
+   "I look forward to hearing from you.",
+   "Kind regards,",
+   "Helen Carter"
+  ],
+  "g": {
+   "book": "reservar",
+   "double room": "quarto de casal",
+   "included": "incluído",
+   "car park": "estacionamento",
+   "driving": "indo de carro",
+   "lift": "elevador",
+   "badly": "mal",
+   "I look forward to hearing from you": "aguardo sua resposta"
+  },
+  "q": [
+   {
+    "q": "Quantas noites a Helen quer reservar?",
+    "o": [
+     "Duas.",
+     "Uma.",
+     "Três."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Com quem ela vai viajar?",
+    "o": [
+     "Com o marido.",
+     "Com a filha.",
+     "Com uma amiga."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Como eles vão chegar?",
+    "o": [
+     "De carro, vindo de Manchester.",
+     "De trem.",
+     "De avião."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Por que ela pede um quarto silencioso?",
+    "o": [
+     "O marido dorme mal com barulho.",
+     "Ela trabalha à noite.",
+     "Eles têm um bebê."
+    ],
+    "a": 0
+   },
+   {
+    "q": "O que eles querem visitar no sábado?",
+    "o": [
+     "O castelo e os museus.",
+     "A praia.",
+     "Um parque de diversões."
+    ],
+    "a": 0
+   }
+  ]
  }
 ]

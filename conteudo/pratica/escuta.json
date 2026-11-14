@@ -4604,5 +4604,947 @@
     "a": 0
    }
   ]
+ },
+ {
+  "id": "l43",
+  "t": "No Supermercado",
+  "lv": "A1",
+  "arc": 0,
+  "lines": [
+   [
+    "mina",
+    "Excuse me. Where is the milk, please?",
+    "Com licença. Onde fica o leite, por favor?"
+   ],
+   [
+    "harry",
+    "It's in aisle four, next to the cheese.",
+    "Fica no corredor quatro, ao lado do queijo."
+   ],
+   [
+    "mina",
+    "Thank you. And do you have brown bread?",
+    "Obrigada. E vocês têm pão integral?"
+   ],
+   [
+    "harry",
+    "Yes, we do. The bread is near the door.",
+    "Sim, temos. O pão fica perto da porta."
+   ],
+   [
+    "mina",
+    "Great. How much are these apples?",
+    "Ótimo. Quanto custam estas maçãs?"
+   ],
+   [
+    "harry",
+    "They're two pounds a kilo.",
+    "Custam duas libras o quilo."
+   ],
+   [
+    "mina",
+    "OK, one kilo, please. Can I pay by card?",
+    "Certo, um quilo, por favor. Posso pagar com cartão?"
+   ],
+   [
+    "harry",
+    "Of course. That's six pounds fifty, please.",
+    "Claro. São seis libras e cinquenta, por favor."
+   ]
+  ],
+  "q": [
+   {
+    "q": "Onde fica o leite?",
+    "o": [
+     "No corredor quatro.",
+     "Perto da porta.",
+     "No corredor dois."
+    ],
+    "a": 0
+   },
+   {
+    "q": "O que fica ao lado do leite?",
+    "o": [
+     "O queijo.",
+     "O pão.",
+     "As maçãs."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Quanto custa o quilo da maçã?",
+    "o": [
+     "Duas libras.",
+     "Seis libras.",
+     "Quatro libras."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Como a Mina vai pagar?",
+    "o": [
+     "Com cartão.",
+     "Em dinheiro.",
+     "Pelo celular."
+    ],
+    "a": 0
+   }
+  ]
+ },
+ {
+  "id": "l44",
+  "t": "Meu Apartamento",
+  "lv": "A1",
+  "arc": 0,
+  "lines": [
+   [
+    "olivia",
+    "Do you live in a house or a flat, Jin?",
+    "Você mora numa casa ou num apartamento, Jin?"
+   ],
+   [
+    "jin",
+    "I live in a flat. It's small, but I like it.",
+    "Moro num apartamento. É pequeno, mas eu gosto."
+   ],
+   [
+    "olivia",
+    "How many bedrooms are there?",
+    "Quantos quartos tem?"
+   ],
+   [
+    "jin",
+    "There's one bedroom, a living room, a kitchen and a bathroom.",
+    "Tem um quarto, uma sala, uma cozinha e um banheiro."
+   ],
+   [
+    "olivia",
+    "Is there a balcony?",
+    "Tem varanda?"
+   ],
+   [
+    "jin",
+    "Yes, there is. There are lots of plants on it.",
+    "Tem, sim. Tem muitas plantas nela."
+   ],
+   [
+    "olivia",
+    "And where is it?",
+    "E onde fica?"
+   ],
+   [
+    "jin",
+    "It's near the park, on the third floor. There isn't a lift, so I take the stairs every day!",
+    "Fica perto do parque, no terceiro andar. Não tem elevador, então eu subo de escada todo dia!"
+   ]
+  ],
+  "q": [
+   {
+    "q": "Como é o apartamento do Jin?",
+    "o": [
+     "Pequeno, mas ele gosta.",
+     "Grande e novo.",
+     "Velho e escuro."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Quantos quartos tem?",
+    "o": [
+     "Um.",
+     "Dois.",
+     "Três."
+    ],
+    "a": 0
+   },
+   {
+    "q": "O que tem na varanda?",
+    "o": [
+     "Muitas plantas.",
+     "Uma mesa.",
+     "Uma bicicleta."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Por que o Jin sobe de escada todo dia?",
+    "o": [
+     "Porque não tem elevador.",
+     "Porque gosta de exercício.",
+     "Porque o elevador está quebrado."
+    ],
+    "a": 0
+   }
+  ]
+ },
+ {
+  "id": "l45",
+  "t": "Pedindo um Lanche",
+  "lv": "A1",
+  "arc": 1,
+  "lines": [
+   [
+    "olivia",
+    "Hello! What would you like?",
+    "Olá! O que você vai querer?"
+   ],
+   [
+    "jin",
+    "Hi. Can I have a cheese sandwich, please?",
+    "Oi. Pode ser um sanduíche de queijo, por favor?"
+   ],
+   [
+    "olivia",
+    "Sure. White or brown bread?",
+    "Claro. Pão branco ou integral?"
+   ],
+   [
+    "jin",
+    "Brown, please. And an orange juice.",
+    "Integral, por favor. E um suco de laranja."
+   ],
+   [
+    "olivia",
+    "Small or large?",
+    "Pequeno ou grande?"
+   ],
+   [
+    "jin",
+    "Large, please. I'm very thirsty!",
+    "Grande, por favor. Estou com muita sede!"
+   ],
+   [
+    "olivia",
+    "Anything else?",
+    "Mais alguma coisa?"
+   ],
+   [
+    "jin",
+    "No, thanks. How much is it?",
+    "Não, obrigado. Quanto é?"
+   ],
+   [
+    "olivia",
+    "That's five pounds twenty. Eat in or take away?",
+    "São cinco libras e vinte. Para comer aqui ou para levar?"
+   ],
+   [
+    "jin",
+    "Take away, please. I'm late for work.",
+    "Para levar, por favor. Estou atrasado para o trabalho."
+   ]
+  ],
+  "q": [
+   {
+    "q": "Que sanduíche o Jin pede?",
+    "o": [
+     "De queijo.",
+     "De frango.",
+     "De presunto."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Que suco ele pede?",
+    "o": [
+     "Um suco de laranja grande.",
+     "Um suco de maçã pequeno.",
+     "Um suco de laranja pequeno."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Quanto custa tudo?",
+    "o": [
+     "Cinco libras e vinte.",
+     "Duas libras e cinquenta.",
+     "Seis libras."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Por que ele pede para levar?",
+    "o": [
+     "Porque está atrasado para o trabalho.",
+     "Porque o café está cheio.",
+     "Porque vai comer no parque."
+    ],
+    "a": 0
+   }
+  ]
+ },
+ {
+  "id": "l46",
+  "t": "Uma Nova Colega",
+  "lv": "A1",
+  "arc": 0,
+  "lines": [
+   [
+    "harry",
+    "Hi, are you the new student?",
+    "Oi, você é a aluna nova?"
+   ],
+   [
+    "mina",
+    "Yes, I am. I'm Mina. Nice to meet you.",
+    "Sou, sim. Sou a Mina. Prazer em conhecer."
+   ],
+   [
+    "harry",
+    "Nice to meet you too. I'm Harry. Where are you from?",
+    "O prazer é meu. Sou o Harry. De onde você é?"
+   ],
+   [
+    "mina",
+    "I'm from Korea, from Busan. And you?",
+    "Sou da Coreia, de Busan. E você?"
+   ],
+   [
+    "harry",
+    "I'm from London. What do you do?",
+    "Sou de Londres. O que você faz?"
+   ],
+   [
+    "mina",
+    "I'm a nurse, but now I'm a student here. I study English in the morning.",
+    "Sou enfermeira, mas agora sou aluna aqui. Estudo inglês de manhã."
+   ],
+   [
+    "harry",
+    "Cool. I'm a teacher. I teach music on Fridays.",
+    "Legal. Sou professor. Dou aula de música às sextas."
+   ],
+   [
+    "mina",
+    "Music? I love music! I play the piano.",
+    "Música? Eu amo música! Toco piano."
+   ]
+  ],
+  "q": [
+   {
+    "q": "De onde a Mina é?",
+    "o": [
+     "De Busan, na Coreia.",
+     "De Londres.",
+     "De Seul."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Qual é a profissão da Mina?",
+    "o": [
+     "Enfermeira.",
+     "Professora.",
+     "Médica."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Quando ela estuda inglês?",
+    "o": [
+     "De manhã.",
+     "À noite.",
+     "Às sextas."
+    ],
+    "a": 0
+   },
+   {
+    "q": "O que o Harry ensina?",
+    "o": [
+     "Música.",
+     "Inglês.",
+     "Piano."
+    ],
+    "a": 0
+   }
+  ]
+ },
+ {
+  "id": "l47",
+  "t": "Previsão do Tempo",
+  "lv": "A1",
+  "arc": 1,
+  "nomes": {
+   "narr": "Locutora"
+  },
+  "lines": [
+   [
+    "narr",
+    "Good morning! Here is the weather for today.",
+    "Bom dia! Aqui está a previsão do tempo para hoje."
+   ],
+   [
+    "narr",
+    "In the north, it's cold and rainy. It's eight degrees. Take your umbrella!",
+    "No norte, está frio e chuvoso. Faz oito graus. Leve o guarda-chuva!"
+   ],
+   [
+    "narr",
+    "In London, it's cloudy in the morning, but sunny in the afternoon. It's fifteen degrees.",
+    "Em Londres, está nublado de manhã, mas ensolarado à tarde. Faz quinze graus."
+   ],
+   [
+    "narr",
+    "In the south, it's hot and sunny. It's twenty-two degrees. It's a great day for the beach.",
+    "No sul, está quente e ensolarado. Faz vinte e dois graus. É um ótimo dia para a praia."
+   ],
+   [
+    "narr",
+    "And tomorrow? It's windy everywhere. Have a nice day!",
+    "E amanhã? Vai ventar em todo lugar. Tenha um bom dia!"
+   ]
+  ],
+  "q": [
+   {
+    "q": "Como está o tempo no norte?",
+    "o": [
+     "Frio e chuvoso.",
+     "Quente e ensolarado.",
+     "Nublado e com vento."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Quantos graus faz em Londres?",
+    "o": [
+     "Quinze.",
+     "Oito.",
+     "Vinte e dois."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Onde é um bom dia para a praia?",
+    "o": [
+     "No sul.",
+     "No norte.",
+     "Em Londres."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Como vai estar amanhã?",
+    "o": [
+     "Com vento em todo lugar.",
+     "Com neve.",
+     "Quente em todo lugar."
+    ],
+    "a": 0
+   }
+  ]
+ },
+ {
+  "id": "l48",
+  "t": "Comprando uma Passagem de Trem",
+  "lv": "A2",
+  "arc": 2,
+  "lines": [
+   [
+    "jin",
+    "Hello. I'd like a ticket to Oxford, please.",
+    "Olá. Eu queria uma passagem para Oxford, por favor."
+   ],
+   [
+    "harry",
+    "Single or return?",
+    "Só ida ou ida e volta?"
+   ],
+   [
+    "jin",
+    "Return, please. I'm coming back this evening.",
+    "Ida e volta, por favor. Volto hoje à noite."
+   ],
+   [
+    "harry",
+    "OK. The next train leaves at ten fifteen from platform six. Or there's a cheaper one at eleven.",
+    "Certo. O próximo trem sai às dez e quinze da plataforma seis. Ou tem um mais barato às onze."
+   ],
+   [
+    "jin",
+    "How much is the ten fifteen?",
+    "Quanto custa o das dez e quinze?"
+   ],
+   [
+    "harry",
+    "Thirty-two pounds. The eleven o'clock is twenty-five.",
+    "Trinta e duas libras. O das onze custa vinte e cinco."
+   ],
+   [
+    "jin",
+    "I'll take the cheaper one. I'm not in a hurry. How long does the journey take?",
+    "Vou pegar o mais barato. Não estou com pressa. Quanto tempo dura a viagem?"
+   ],
+   [
+    "harry",
+    "About an hour. You have to change at Reading.",
+    "Mais ou menos uma hora. Você precisa trocar de trem em Reading."
+   ],
+   [
+    "jin",
+    "Is there a café on the train?",
+    "Tem café no trem?"
+   ],
+   [
+    "harry",
+    "No, there isn't, but there's one here in the station, next to the ticket office.",
+    "Não tem, mas tem um aqui na estação, ao lado da bilheteria."
+   ]
+  ],
+  "q": [
+   {
+    "q": "Que passagem o Jin compra?",
+    "o": [
+     "Ida e volta para Oxford.",
+     "Só ida para Oxford.",
+     "Ida e volta para Reading."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Por que ele escolhe o trem das onze?",
+    "o": [
+     "Porque é mais barato e ele não tem pressa.",
+     "Porque o das dez e quinze está lotado.",
+     "Porque é direto."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Quanto custa a passagem que ele compra?",
+    "o": [
+     "Vinte e cinco libras.",
+     "Trinta e duas libras.",
+     "Quinze libras."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Onde ele precisa trocar de trem?",
+    "o": [
+     "Em Reading.",
+     "Em Oxford.",
+     "Em Londres."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Onde fica o café?",
+    "o": [
+     "Na estação, ao lado da bilheteria.",
+     "Dentro do trem.",
+     "Na plataforma seis."
+    ],
+    "a": 0
+   }
+  ]
+ },
+ {
+  "id": "l49",
+  "t": "O Que Você Fez no Fim de Semana?",
+  "lv": "A2",
+  "arc": 2,
+  "lines": [
+   [
+    "olivia",
+    "Hi, Mina! How was your weekend?",
+    "Oi, Mina! Como foi o seu fim de semana?"
+   ],
+   [
+    "mina",
+    "It was great, thanks. On Saturday I went to the beach with my sister.",
+    "Foi ótimo, obrigada. No sábado fui à praia com a minha irmã."
+   ],
+   [
+    "olivia",
+    "Lucky you! Was it hot?",
+    "Que sorte! Estava quente?"
+   ],
+   [
+    "mina",
+    "Yes, it was really hot, so we swam in the sea and had lunch in a fish restaurant. What about you?",
+    "Sim, estava muito quente, então nadamos no mar e almoçamos num restaurante de peixe. E você?"
+   ],
+   [
+    "olivia",
+    "Oh, my weekend was quiet. I stayed at home on Saturday because I had a cold.",
+    "Ah, o meu fim de semana foi tranquilo. Fiquei em casa no sábado porque estava resfriada."
+   ],
+   [
+    "mina",
+    "Oh no! Are you better now?",
+    "Ah, não! Já está melhor?"
+   ],
+   [
+    "olivia",
+    "Yes, much better. On Sunday I felt OK, so I visited my parents. My dad made a big roast dinner.",
+    "Sim, bem melhor. No domingo eu estava bem, então visitei meus pais. Meu pai fez um assado enorme."
+   ],
+   [
+    "mina",
+    "That sounds nice. Did you watch the football match on Sunday evening?",
+    "Que legal. Você viu o jogo de futebol no domingo à noite?"
+   ],
+   [
+    "olivia",
+    "No, I didn't. I was too tired. I went to bed at nine!",
+    "Não, não vi. Estava cansada demais. Fui dormir às nove!"
+   ]
+  ],
+  "q": [
+   {
+    "q": "Com quem a Mina foi à praia?",
+    "o": [
+     "Com a irmã.",
+     "Com a Olivia.",
+     "Com os pais."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Onde elas almoçaram?",
+    "o": [
+     "Num restaurante de peixe.",
+     "Em casa.",
+     "Na praia, com sanduíches."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Por que a Olivia ficou em casa no sábado?",
+    "o": [
+     "Porque estava resfriada.",
+     "Porque estava chovendo.",
+     "Porque tinha que trabalhar."
+    ],
+    "a": 0
+   },
+   {
+    "q": "O que o pai da Olivia fez no domingo?",
+    "o": [
+     "Um assado enorme.",
+     "Um bolo.",
+     "Uma pizza."
+    ],
+    "a": 0
+   },
+   {
+    "q": "A que horas a Olivia foi dormir no domingo?",
+    "o": [
+     "Às nove.",
+     "À meia-noite.",
+     "Às onze."
+    ],
+    "a": 0
+   }
+  ]
+ },
+ {
+  "id": "l50",
+  "t": "Na Loja de Roupas",
+  "lv": "A2",
+  "arc": 2,
+  "lines": [
+   [
+    "olivia",
+    "Hello, can I help you?",
+    "Olá, posso ajudar?"
+   ],
+   [
+    "jin",
+    "Yes, please. I'm looking for a jacket for the winter.",
+    "Sim, por favor. Estou procurando uma jaqueta para o inverno."
+   ],
+   [
+    "olivia",
+    "What size are you?",
+    "Qual é o seu tamanho?"
+   ],
+   [
+    "jin",
+    "Medium, I think.",
+    "Médio, eu acho."
+   ],
+   [
+    "olivia",
+    "We have this black one, or this one in dark blue. They're both very warm.",
+    "Temos esta preta, ou esta azul-escura. As duas são bem quentes."
+   ],
+   [
+    "jin",
+    "I like the blue one. Can I try it on?",
+    "Gostei da azul. Posso experimentar?"
+   ],
+   [
+    "olivia",
+    "Of course. The changing rooms are over there.",
+    "Claro. Os provadores ficam ali."
+   ],
+   [
+    "jin",
+    "Hmm, it's a bit too small. Do you have a large?",
+    "Hum, está um pouco pequena. Vocês têm o grande?"
+   ],
+   [
+    "olivia",
+    "Let me check. Yes, here you are.",
+    "Deixe-me ver. Sim, aqui está."
+   ],
+   [
+    "jin",
+    "Perfect, this one fits. How much is it?",
+    "Perfeito, esta serve. Quanto custa?"
+   ],
+   [
+    "olivia",
+    "It's eighty pounds, but it's twenty percent off this week, so it's sixty-four.",
+    "Custa oitenta libras, mas está com vinte por cento de desconto esta semana, então sai por sessenta e quatro."
+   ],
+   [
+    "jin",
+    "Great! I'll take it.",
+    "Ótimo! Vou levar."
+   ]
+  ],
+  "q": [
+   {
+    "q": "O que o Jin está procurando?",
+    "o": [
+     "Uma jaqueta para o inverno.",
+     "Um suéter.",
+     "Uma calça."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Que cor ele escolhe?",
+    "o": [
+     "Azul-escura.",
+     "Preta.",
+     "Cinza."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Qual é o problema com o tamanho médio?",
+    "o": [
+     "Está um pouco pequeno.",
+     "Está grande demais.",
+     "Não tem na loja."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Quanto ele paga no fim?",
+    "o": [
+     "Sessenta e quatro libras.",
+     "Oitenta libras.",
+     "Vinte libras."
+    ],
+    "a": 0
+   }
+  ]
+ },
+ {
+  "id": "l51",
+  "t": "Combinando um Cinema",
+  "lv": "A2",
+  "arc": 2,
+  "lines": [
+   [
+    "jin",
+    "Hi, Mina. Are you free on Friday evening?",
+    "Oi, Mina. Você está livre na sexta à noite?"
+   ],
+   [
+    "mina",
+    "I think so. Why?",
+    "Acho que sim. Por quê?"
+   ],
+   [
+    "jin",
+    "There's a new film at the cinema. It's a comedy. Do you want to come?",
+    "Tem um filme novo no cinema. É uma comédia. Quer ir?"
+   ],
+   [
+    "mina",
+    "I'd love to! What time does it start?",
+    "Eu adoraria! A que horas começa?"
+   ],
+   [
+    "jin",
+    "There are two sessions, at six thirty and at nine.",
+    "Tem duas sessões, às seis e meia e às nove."
+   ],
+   [
+    "mina",
+    "Six thirty is too early. I finish work at six. Let's go at nine.",
+    "Seis e meia é cedo demais. Saio do trabalho às seis. Vamos às nove."
+   ],
+   [
+    "jin",
+    "OK. Shall we have dinner before the film?",
+    "Tá bom. Vamos jantar antes do filme?"
+   ],
+   [
+    "mina",
+    "Good idea. What about the Mexican restaurant next to the cinema?",
+    "Boa ideia. Que tal o restaurante mexicano ao lado do cinema?"
+   ],
+   [
+    "jin",
+    "Perfect. Let's meet there at seven thirty. I'll buy the tickets online.",
+    "Perfeito. Vamos nos encontrar lá às sete e meia. Eu compro os ingressos pela internet."
+   ],
+   [
+    "mina",
+    "Great. See you on Friday!",
+    "Ótimo. Até sexta!"
+   ]
+  ],
+  "q": [
+   {
+    "q": "Que tipo de filme é?",
+    "o": [
+     "Uma comédia.",
+     "Um filme de terror.",
+     "Um filme de ação."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Por que a Mina não pode ir às seis e meia?",
+    "o": [
+     "Porque sai do trabalho às seis.",
+     "Porque tem aula.",
+     "Porque vai jantar com a família."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Onde eles vão jantar?",
+    "o": [
+     "No restaurante mexicano ao lado do cinema.",
+     "Na casa do Jin.",
+     "Num restaurante italiano."
+    ],
+    "a": 0
+   },
+   {
+    "q": "A que horas eles vão se encontrar?",
+    "o": [
+     "Às sete e meia.",
+     "Às nove.",
+     "Às seis."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Quem vai comprar os ingressos?",
+    "o": [
+     "O Jin, pela internet.",
+     "A Mina, no cinema.",
+     "Os dois, na hora."
+    ],
+    "a": 0
+   }
+  ]
+ },
+ {
+  "id": "l52",
+  "t": "Aviso no Aeroporto",
+  "lv": "A2",
+  "arc": 2,
+  "nomes": {
+   "narr": "Aviso"
+  },
+  "lines": [
+   [
+    "narr",
+    "Good afternoon. This is an announcement for passengers on flight BA two-four-seven to Lisbon.",
+    "Boa tarde. Este é um aviso para os passageiros do voo BA dois-quatro-sete para Lisboa."
+   ],
+   [
+    "narr",
+    "Your flight is now boarding from gate eighteen, not gate twelve. Please go to gate eighteen now.",
+    "O embarque do seu voo agora é pelo portão dezoito, não pelo portão doze. Por favor, dirijam-se ao portão dezoito agora."
+   ],
+   [
+    "narr",
+    "Please have your passport and boarding pass ready. Thank you.",
+    "Por favor, tenham em mãos o passaporte e o cartão de embarque. Obrigado."
+   ],
+   [
+    "mina",
+    "Did you hear that? Our gate changed!",
+    "Você ouviu isso? Nosso portão mudou!"
+   ],
+   [
+    "jin",
+    "Gate eighteen? Where is that?",
+    "Portão dezoito? Onde fica isso?"
+   ],
+   [
+    "mina",
+    "Look at the sign. It's that way, about ten minutes on foot.",
+    "Olha a placa. É para lá, uns dez minutos a pé."
+   ],
+   [
+    "jin",
+    "Ten minutes! We need to hurry. I still want to buy some water.",
+    "Dez minutos! Precisamos correr. Ainda quero comprar água."
+   ],
+   [
+    "mina",
+    "Buy it at the gate. There's always a shop there. Come on!",
+    "Compra no portão. Sempre tem uma loja lá. Vamos!"
+   ]
+  ],
+  "q": [
+   {
+    "q": "Para onde vai o voo?",
+    "o": [
+     "Para Lisboa.",
+     "Para Londres.",
+     "Para Madri."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Qual é o portão novo?",
+    "o": [
+     "O dezoito.",
+     "O doze.",
+     "O vinte e quatro."
+    ],
+    "a": 0
+   },
+   {
+    "q": "O que os passageiros devem ter em mãos?",
+    "o": [
+     "Passaporte e cartão de embarque.",
+     "A mala e a passagem.",
+     "Só o passaporte."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Quanto tempo leva para chegar ao portão?",
+    "o": [
+     "Uns dez minutos a pé.",
+     "Dois minutos.",
+     "Meia hora."
+    ],
+    "a": 0
+   },
+   {
+    "q": "O que o Jin quer comprar?",
+    "o": [
+     "Água.",
+     "Um livro.",
+     "Um café."
+    ],
+    "a": 0
+   }
+  ]
  }
 ]
