@@ -3161,5 +3161,678 @@
     "a": 0
    }
   ]
+ },
+ {
+  "id": "l29",
+  "t": "No Café",
+  "lv": "A1",
+  "arc": 0,
+  "lines": [
+   [
+    "harry",
+    "Good morning! What would you like?",
+    "Bom dia! O que você gostaria?"
+   ],
+   [
+    "mina",
+    "Good morning. A coffee, please.",
+    "Bom dia. Um café, por favor."
+   ],
+   [
+    "harry",
+    "Small or large?",
+    "Pequeno ou grande?"
+   ],
+   [
+    "mina",
+    "Large, please. With milk.",
+    "Grande, por favor. Com leite."
+   ],
+   [
+    "harry",
+    "Anything to eat?",
+    "Algo para comer?"
+   ],
+   [
+    "mina",
+    "Yes. A cheese sandwich, please.",
+    "Sim. Um sanduíche de queijo, por favor."
+   ],
+   [
+    "harry",
+    "OK. That's six pounds fifty.",
+    "Certo. São seis libras e cinquenta."
+   ],
+   [
+    "mina",
+    "Here you are.",
+    "Aqui está."
+   ],
+   [
+    "harry",
+    "Thank you. Have a nice day!",
+    "Obrigado. Tenha um bom dia!"
+   ]
+  ],
+  "q": [
+   {
+    "q": "Onde elas estão?",
+    "o": [
+     "Num café.",
+     "Numa escola.",
+     "Num hospital."
+    ],
+    "a": 0
+   },
+   {
+    "q": "O que a Mina pede para beber?",
+    "o": [
+     "Um café grande com leite.",
+     "Um chá pequeno.",
+     "Um suco."
+    ],
+    "a": 0
+   },
+   {
+    "q": "O que ela pede para comer?",
+    "o": [
+     "Um sanduíche de queijo.",
+     "Um bolo.",
+     "Uma salada."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Quanto custa tudo?",
+    "o": [
+     "Seis libras e cinquenta.",
+     "Sete libras.",
+     "Cinco libras e cinquenta."
+    ],
+    "a": 0
+   }
+  ]
+ },
+ {
+  "id": "l30",
+  "t": "Minha Família",
+  "lv": "A1",
+  "arc": 0,
+  "lines": [
+   [
+    "olivia",
+    "Is this a photo of your family?",
+    "Esta é uma foto da sua família?"
+   ],
+   [
+    "jin",
+    "Yes. This is my mother. She's a teacher.",
+    "Sim. Esta é a minha mãe. Ela é professora."
+   ],
+   [
+    "olivia",
+    "And who's this man?",
+    "E quem é este homem?"
+   ],
+   [
+    "jin",
+    "That's my father. He's a cook in a restaurant.",
+    "É o meu pai. Ele é cozinheiro num restaurante."
+   ],
+   [
+    "olivia",
+    "Do you have any brothers or sisters?",
+    "Você tem irmãos ou irmãs?"
+   ],
+   [
+    "jin",
+    "I have one sister. Her name is Sara. She's twelve.",
+    "Tenho uma irmã. O nome dela é Sara. Ela tem doze anos."
+   ],
+   [
+    "olivia",
+    "And the dog?",
+    "E o cachorro?"
+   ],
+   [
+    "jin",
+    "That's Max. He's old, but he's very friendly.",
+    "É o Max. Ele é velho, mas é muito simpático."
+   ]
+  ],
+  "q": [
+   {
+    "q": "O que a mãe do Jin faz?",
+    "o": [
+     "É professora.",
+     "É cozinheira.",
+     "É médica."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Onde o pai dele trabalha?",
+    "o": [
+     "Num restaurante.",
+     "Numa escola.",
+     "Numa loja."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Quantos anos tem a irmã dele?",
+    "o": [
+     "Doze.",
+     "Dez.",
+     "Vinte."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Como é o cachorro Max?",
+    "o": [
+     "Velho e muito simpático.",
+     "Novo e bravo.",
+     "Pequeno e preguiçoso."
+    ],
+    "a": 0
+   }
+  ]
+ },
+ {
+  "id": "l31",
+  "t": "Que Horas São?",
+  "lv": "A1",
+  "arc": 0,
+  "lines": [
+   [
+    "mina",
+    "Excuse me, what time is it?",
+    "Com licença, que horas são?"
+   ],
+   [
+    "harry",
+    "It's ten past nine.",
+    "São nove e dez."
+   ],
+   [
+    "mina",
+    "Oh no! My bus leaves at quarter past nine.",
+    "Ah, não! Meu ônibus sai às nove e quinze."
+   ],
+   [
+    "harry",
+    "Where is the bus stop?",
+    "Onde fica o ponto de ônibus?"
+   ],
+   [
+    "mina",
+    "It's next to the bank, on Green Street.",
+    "Fica ao lado do banco, na Green Street."
+   ],
+   [
+    "harry",
+    "That's very near. Go straight on and turn left.",
+    "É bem perto. Siga em frente e vire à esquerda."
+   ],
+   [
+    "mina",
+    "Thank you so much!",
+    "Muito obrigada!"
+   ],
+   [
+    "harry",
+    "You're welcome. Run!",
+    "De nada. Corre!"
+   ]
+  ],
+  "q": [
+   {
+    "q": "Que horas são?",
+    "o": [
+     "Nove e dez.",
+     "Nove e quinze.",
+     "Dez para as nove."
+    ],
+    "a": 0
+   },
+   {
+    "q": "A que horas sai o ônibus da Mina?",
+    "o": [
+     "Às nove e quinze.",
+     "Às nove e dez.",
+     "Às dez."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Onde fica o ponto de ônibus?",
+    "o": [
+     "Ao lado do banco.",
+     "Na frente da escola.",
+     "Atrás do mercado."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Para que lado ela deve virar?",
+    "o": [
+     "Para a esquerda.",
+     "Para a direita.",
+     "Não precisa virar."
+    ],
+    "a": 0
+   }
+  ]
+ },
+ {
+  "id": "l32",
+  "t": "No Fim de Semana",
+  "lv": "A1",
+  "arc": 0,
+  "lines": [
+   [
+    "olivia",
+    "What do you do at the weekend?",
+    "O que você faz no fim de semana?"
+   ],
+   [
+    "jin",
+    "On Saturday morning, I play football with my friends.",
+    "No sábado de manhã, jogo futebol com meus amigos."
+   ],
+   [
+    "olivia",
+    "And in the afternoon?",
+    "E à tarde?"
+   ],
+   [
+    "jin",
+    "I clean my flat and I go to the supermarket. What about you?",
+    "Limpo meu apartamento e vou ao supermercado. E você?"
+   ],
+   [
+    "olivia",
+    "I usually visit my parents on Sunday. We have lunch together.",
+    "Normalmente visito meus pais no domingo. Almoçamos juntos."
+   ],
+   [
+    "jin",
+    "That's nice. Do they live near you?",
+    "Que legal. Eles moram perto de você?"
+   ],
+   [
+    "olivia",
+    "No, they live in a small town. It's one hour by train.",
+    "Não, moram numa cidade pequena. Fica a uma hora de trem."
+   ]
+  ],
+  "q": [
+   {
+    "q": "O que o Jin faz no sábado de manhã?",
+    "o": [
+     "Joga futebol com os amigos.",
+     "Visita os pais.",
+     "Vai ao supermercado."
+    ],
+    "a": 0
+   },
+   {
+    "q": "O que ele faz à tarde?",
+    "o": [
+     "Limpa o apartamento e vai ao supermercado.",
+     "Dorme.",
+     "Trabalha."
+    ],
+    "a": 0
+   },
+   {
+    "q": "O que a Olivia faz no domingo?",
+    "o": [
+     "Almoça com os pais.",
+     "Joga futebol.",
+     "Vai ao cinema."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Como ela vai até a cidade dos pais?",
+    "o": [
+     "De trem, em uma hora.",
+     "De carro, em duas horas.",
+     "A pé."
+    ],
+    "a": 0
+   }
+  ]
+ },
+ {
+  "id": "l33",
+  "t": "Comprando um Presente",
+  "lv": "A2",
+  "arc": 2,
+  "lines": [
+   [
+    "mina",
+    "Hi. I'm looking for a present for my brother. It's his birthday tomorrow.",
+    "Oi. Estou procurando um presente para o meu irmão. O aniversário dele é amanhã."
+   ],
+   [
+    "harry",
+    "How old is he?",
+    "Quantos anos ele vai fazer?"
+   ],
+   [
+    "mina",
+    "Twenty-five. He loves music and cooking.",
+    "Vinte e cinco. Ele adora música e cozinhar."
+   ],
+   [
+    "harry",
+    "We have this cookbook. It's very popular. It's eighteen pounds.",
+    "Temos este livro de receitas. É muito procurado. Custa dezoito libras."
+   ],
+   [
+    "mina",
+    "Hmm, he already has a lot of cookbooks. Do you have anything about music?",
+    "Hum, ele já tem muitos livros de receitas. Vocês têm algo sobre música?"
+   ],
+   [
+    "harry",
+    "Yes, this book is about the history of rock. It's a bit cheaper, fifteen pounds.",
+    "Sim, este livro é sobre a história do rock. É um pouco mais barato, quinze libras."
+   ],
+   [
+    "mina",
+    "Perfect. I'll take it. Can you wrap it, please?",
+    "Perfeito. Vou levar. Você pode embrulhar, por favor?"
+   ],
+   [
+    "harry",
+    "Of course. Would you like a card too?",
+    "Claro. Quer um cartão também?"
+   ],
+   [
+    "mina",
+    "Yes, please. Thank you!",
+    "Sim, por favor. Obrigada!"
+   ]
+  ],
+  "q": [
+   {
+    "q": "Para quem é o presente?",
+    "o": [
+     "Para o irmão da Mina.",
+     "Para a mãe dela.",
+     "Para uma amiga."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Por que ela não compra o livro de receitas?",
+    "o": [
+     "O irmão já tem muitos.",
+     "É caro demais.",
+     "Ele não gosta de cozinhar."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Quanto custa o livro que ela compra?",
+    "o": [
+     "Quinze libras.",
+     "Dezoito libras.",
+     "Vinte e cinco libras."
+    ],
+    "a": 0
+   },
+   {
+    "q": "O que ela pede no final?",
+    "o": [
+     "Que embrulhem o presente.",
+     "Um desconto.",
+     "Uma sacola grande."
+    ],
+    "a": 0
+   }
+  ]
+ },
+ {
+  "id": "l34",
+  "t": "No Médico",
+  "lv": "A2",
+  "arc": 2,
+  "lines": [
+   [
+    "olivia",
+    "Hello, Jin. How can I help you today?",
+    "Olá, Jin. Como posso ajudar hoje?"
+   ],
+   [
+    "jin",
+    "I've had a headache for three days, and I feel very tired.",
+    "Estou com dor de cabeça há três dias e me sinto muito cansado."
+   ],
+   [
+    "olivia",
+    "Do you have a temperature?",
+    "Você está com febre?"
+   ],
+   [
+    "jin",
+    "No, I don't think so. But I'm not sleeping well.",
+    "Acho que não. Mas não estou dormindo bem."
+   ],
+   [
+    "olivia",
+    "How many hours do you sleep?",
+    "Quantas horas você dorme?"
+   ],
+   [
+    "jin",
+    "About five. I work late on my computer.",
+    "Umas cinco. Trabalho até tarde no computador."
+   ],
+   [
+    "olivia",
+    "That's probably the problem. Try to stop using screens an hour before bed, and drink more water.",
+    "Provavelmente esse é o problema. Tente parar de usar telas uma hora antes de dormir e beba mais água."
+   ],
+   [
+    "jin",
+    "Should I take any medicine?",
+    "Devo tomar algum remédio?"
+   ],
+   [
+    "olivia",
+    "You can take a painkiller if it hurts, but come back next week if it doesn't get better.",
+    "Pode tomar um analgésico se doer, mas volte na semana que vem se não melhorar."
+   ]
+  ],
+  "q": [
+   {
+    "q": "Qual é o problema do Jin?",
+    "o": [
+     "Dor de cabeça e cansaço.",
+     "Dor de barriga.",
+     "Febre alta."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Há quanto tempo ele está assim?",
+    "o": [
+     "Três dias.",
+     "Uma semana.",
+     "Um dia."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Quantas horas ele dorme?",
+    "o": [
+     "Umas cinco.",
+     "Oito.",
+     "Dez."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Qual é o conselho da médica?",
+    "o": [
+     "Parar de usar telas antes de dormir e beber mais água.",
+     "Trabalhar mais.",
+     "Tomar café à noite."
+    ],
+    "a": 0
+   }
+  ]
+ },
+ {
+  "id": "l35",
+  "t": "Planos para as Férias",
+  "lv": "A2",
+  "arc": 2,
+  "lines": [
+   [
+    "jin",
+    "Are you going anywhere this summer?",
+    "Você vai viajar neste verão?"
+   ],
+   [
+    "mina",
+    "Yes! I'm going to Portugal with my sister. We're going to stay in Porto for a week.",
+    "Sim! Vou a Portugal com a minha irmã. Vamos ficar uma semana no Porto."
+   ],
+   [
+    "jin",
+    "Lucky you! Are you going to fly?",
+    "Que sorte! Vocês vão de avião?"
+   ],
+   [
+    "mina",
+    "No, we're going to take the train. It's slower, but it's more fun.",
+    "Não, vamos de trem. É mais lento, mas é mais divertido."
+   ],
+   [
+    "jin",
+    "What are you going to do there?",
+    "O que vocês vão fazer lá?"
+   ],
+   [
+    "mina",
+    "Walk around the old town, eat a lot of fish and visit the beach. What about you?",
+    "Passear pelo centro antigo, comer muito peixe e ir à praia. E você?"
+   ],
+   [
+    "jin",
+    "I'm not going away. I'm going to paint my flat.",
+    "Não vou viajar. Vou pintar meu apartamento."
+   ],
+   [
+    "mina",
+    "Well, that's useful too!",
+    "Bom, isso também é útil!"
+   ]
+  ],
+  "q": [
+   {
+    "q": "Para onde a Mina vai?",
+    "o": [
+     "Para o Porto, em Portugal.",
+     "Para Londres.",
+     "Para a praia no Brasil."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Com quem ela vai?",
+    "o": [
+     "Com a irmã.",
+     "Com o Jin.",
+     "Sozinha."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Como elas vão viajar?",
+    "o": [
+     "De trem.",
+     "De avião.",
+     "De carro."
+    ],
+    "a": 0
+   },
+   {
+    "q": "O que o Jin vai fazer nas férias?",
+    "o": [
+     "Pintar o apartamento.",
+     "Ir a Portugal.",
+     "Trabalhar num hotel."
+    ],
+    "a": 0
+   }
+  ]
+ },
+ {
+  "id": "l36",
+  "t": "Mensagem de Voz",
+  "lv": "A2",
+  "arc": 2,
+  "lines": [
+   [
+    "olivia",
+    "Hi Harry, it's Olivia. I'm calling about dinner on Friday. I'm afraid I can't come at seven, because I have a meeting at work.",
+    "Oi, Harry, é a Olivia. Estou ligando por causa do jantar de sexta. Infelizmente não consigo ir às sete, porque tenho uma reunião no trabalho."
+   ],
+   [
+    "olivia",
+    "Could we meet at half past eight instead? I'll bring dessert. I made a chocolate cake yesterday.",
+    "Podemos nos encontrar às oito e meia? Eu levo a sobremesa. Fiz um bolo de chocolate ontem."
+   ],
+   [
+    "olivia",
+    "Oh, and Mina wants to come too. Is that OK? Call me back when you can. Bye!",
+    "Ah, e a Mina também quer ir. Tudo bem? Me liga quando puder. Tchau!"
+   ]
+  ],
+  "q": [
+   {
+    "q": "Por que a Olivia não pode ir às sete?",
+    "o": [
+     "Tem uma reunião no trabalho.",
+     "Está doente.",
+     "Vai viajar."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Que horário ela sugere?",
+    "o": [
+     "Oito e meia.",
+     "Sete e meia.",
+     "Oito."
+    ],
+    "a": 0
+   },
+   {
+    "q": "O que ela vai levar?",
+    "o": [
+     "Um bolo de chocolate.",
+     "Vinho.",
+     "Pão."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Quem mais quer ir ao jantar?",
+    "o": [
+     "A Mina.",
+     "O Jin.",
+     "A irmã da Olivia."
+    ],
+    "a": 0
+   }
+  ]
  }
 ]

@@ -75,6 +75,9 @@ def validar():
             for f in x.get('frases_extras', []) or []:
                 if not (isinstance(f, list) and len(f) == 2):
                     erros.append(f'{onde}: frase extra fora do formato [inglês, português]: {f}')
+    cam = ind.get('caminho')
+    if cam is not None and sorted(cam) != list(range(len(ind['arcos']))):
+        erros.append(f'indice.json: "caminho" precisa ter cada arco uma vez só, de 0 a {len(ind["arcos"]) - 1}')
     nq = {}
     for a in ind['arcos']:
         for c, x in zip(load(f'historia/{a}').get('capitulos', []), load(f'questoes/{a}')):

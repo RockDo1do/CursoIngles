@@ -349,7 +349,14 @@ function save(){S._ts=Date.now();try{localStorage.setItem('torre-ingles-v2',JSON
 const doneCount=()=>Object.keys(S.done).length;
 const level=()=>1+Math.floor(S.xp/80);
 function rank(){const f=doneCount()/CH.length;return f>=1?'Lenda':f>=.85?'Mestre':f>=.68?'Experiente':f>=.5?'Avançado':f>=.33?'Intermediário':f>=.16?'Aprendiz':'Iniciante';}
-function nextIdx(){const st=S.start||0;for(let i=st;i<CH.length;i++) if(!S.done[i]) return i;for(let i=0;i<st;i++) if(!S.done[i]) return i;return CH.length-1;}
+/* caminho recomendado: a ordem dos arcos vem de conteudo/indice.json ("caminho"); os capítulos continuam com o mesmo número */
+function arcosNoCaminho(){
+ const c=(typeof CAMINHO!=='undefined'&&CAMINHO)||[], ok=c.filter(i=>Number.isInteger(i)&&ARCS[i]);
+ return ok.concat(ARCS.map((_,i)=>i).filter(i=>!ok.includes(i)));
+}
+function ordemCaps(){const o=[];arcosNoCaminho().forEach(ai=>{for(let i=ARCS[ai].from;i<=ARCS[ai].to;i++) o.push(i);});return o;}
+function proximoNoCaminho(i){const o=ordemCaps(),k=o.indexOf(i);return k>=0&&k+1<o.length?o[k+1]:null;}
+function nextIdx(){const o=ordemCaps(),st=Math.max(0,o.indexOf(S.start||0));for(let k=st;k<o.length;k++) if(!S.done[o[k]]) return o[k];for(let k=0;k<st;k++) if(!S.done[o[k]]) return o[k];return o[o.length-1];}
 const ZOOMS=[[.9,'A-'],[1,'A'],[1.15,'A+'],[1.3,'A++']];
 function applyLook(){
  const r=document.documentElement;
@@ -1214,7 +1221,7 @@ function home(){
  h+=nameVoiceCard();
  h+=backupNudge();
  h+=weekCardHTML();
- ARCS.forEach(a=>{
+ arcosNoCaminho().map(ai=>ARCS[ai]).forEach(a=>{
   let dn=0; for(let i=a.from;i<=a.to;i++) if(S.done[i]!=null) dn++;
   const open=n>=a.from&&n<=a.to;
   h+=`<details class="arc"${open?' open':''}><summary><div class="arc-h"><h2>${a.n}</h2><p>${a.d}</p></div><span class="arc-c">${dn}/${a.to-a.from+1}</span></summary><div class="eps">`;
@@ -1707,7 +1714,7 @@ function trainCheck(){
 function trainResult(){
  const sc=TR.score, n=TR.items.length, i=TR.i;
  S.xp+=sc*2; markDay(); prog('train'); save();
- const next=i<100&&i+1<CH.length?`<button class="btn ghost" data-open="${i+1}">Próximo capítulo</button>`:'';
+ const pn=i<100?proximoNoCaminho(i):null, next=pn!=null?`<button class="btn ghost" data-open="${pn}">Próximo capítulo</button>`:'';
  app.innerHTML=`<div class="wrap">${barHTML('Treino extra','Resultado',`data-open="${i}"`)}
  <div class="sysw"><div class="tag">[ TREINO CONCLUÍDO ]</div><div class="place-r"><div class="big">${sc} de ${n}</div><div class="result"><div class="xp">+${sc*2} XP</div></div>
  <p>${sc===n?'Perfeito! Essas frases estão ficando suas.':sc>=n/2?'Bom treino. Repetir amanhã fixa ainda mais.':'Tudo bem errar no treino. É aqui que o cérebro aprende.'}</p>
@@ -2951,9 +2958,9 @@ function finish(){
  let card=false;
  if(!bonus&&ch.boss&&ratio>=.6){S.cards=S.cards||{};if(!S.cards['b'+cur]){S.cards['b'+cur]=1;card=true;S.week.stats.boss++;}}
  save();
- const up=level()>lvBefore, last=!bonus&&cur===CH.length-1;
+ const up=level()>lvBefore, pnx=bonus?null:proximoNoCaminho(cur), last=!bonus&&pnx==null;
  const r=document.getElementById('res'); r.hidden=false;
- const next=bonus?`<button class="btn" data-coll>Ver histórias extras</button>`:last?`<button class="btn" data-home>Ver meu status final</button>`:`<button class="btn" data-open="${cur+1}">Próximo: ${CH[cur+1].t}</button>`;
+ const next=bonus?`<button class="btn" data-coll>Ver histórias extras</button>`:last?`<button class="btn" data-home>Ver meu status final</button>`:`<button class="btn" data-open="${pnx}">Próximo: ${CH[pnx].t}</button>`;
  r.innerHTML=`<div class="big">${score}/${tot} · ${ratio===1?'ANDAR LIMPO':ratio>=.6?'BOM TRABALHO':'REVEJA AS REGRAS E TENTE DE NOVO'}</div>
  <div class="xp">+${gain} XP${up?` · NÍVEL ${level()}!`:''}</div>
  ${card?`<div class="newcard">Nova carta no álbum: <b>${esc(ch.mon)}</b><button class="btn ghost" data-coll>Ver álbum</button></div>`:''}

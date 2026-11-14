@@ -16,7 +16,7 @@ Mudar o meio da lista faz o curso marcar como feitos os capítulos errados para 
 
 | Arquivo | O que tem |
 |---|---|
-| `indice.json` | A ordem dos arcos. Para criar um arco, acrescente o nome dele no fim da lista. |
+| `indice.json` | A ordem dos arcos (`arcos`). Para criar um arco, acrescente o nome dele no fim da lista. `caminho` é a ordem em que os arcos aparecem para o aluno (posições em `arcos`, contando do 0); ao criar um arco, coloque o número dele no ponto do caminho que fizer sentido. |
 | `historia/arco-NN.json` | Nome e descrição do arco, a lista "agora você consegue" do certificado e os capítulos com os quadros da história. |
 | `questoes/arco-NN.json` | As perguntas e as frases extras de cada capítulo, na mesma ordem dos capítulos da história. |
 | `historia/bonus.json` e `questoes/bonus.json` | As histórias bônus, no mesmo formato. |

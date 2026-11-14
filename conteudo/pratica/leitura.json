@@ -1707,5 +1707,493 @@
     "a": 0
    }
   ]
+ },
+ {
+  "id": "r23",
+  "t": "Um Recado na Geladeira",
+  "lv": "A1",
+  "kind": "Bilhete",
+  "p": [
+   "Hi Tom,",
+   "I'm at work until six. There's pasta in the fridge for lunch. Please feed the cat at five. Her food is in the cupboard next to the sink.",
+   "Your grandmother is coming for dinner at seven. Can you clean your room before she arrives? Thanks!",
+   "Love, Mum"
+  ],
+  "g": {
+   "fridge": "geladeira",
+   "feed": "dar comida",
+   "cupboard": "armário",
+   "sink": "pia",
+   "arrives": "chega"
+  },
+  "q": [
+   {
+    "q": "Até que horas a mãe trabalha?",
+    "o": [
+     "Até as seis.",
+     "Até as cinco.",
+     "Até as sete."
+    ],
+    "a": 0
+   },
+   {
+    "q": "O que tem na geladeira?",
+    "o": [
+     "Macarrão.",
+     "Pizza.",
+     "Sopa."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Onde está a comida da gata?",
+    "o": [
+     "No armário ao lado da pia.",
+     "Na geladeira.",
+     "Na mesa."
+    ],
+    "a": 0
+   },
+   {
+    "q": "O que o Tom precisa fazer antes do jantar?",
+    "o": [
+     "Arrumar o quarto.",
+     "Cozinhar.",
+     "Ir ao mercado."
+    ],
+    "a": 0
+   }
+  ]
+ },
+ {
+  "id": "r24",
+  "t": "Anúncio: Aulas de Natação",
+  "lv": "A1",
+  "kind": "Anúncio",
+  "p": [
+   "Swimming lessons at City Pool!",
+   "Lessons for children (6 to 12 years old): Monday and Wednesday, 4 p.m. to 5 p.m.",
+   "Lessons for adults: Tuesday and Thursday, 7 p.m. to 8 p.m.",
+   "Price: £5 per lesson. The first lesson is free!",
+   "Bring a towel and a swimming cap. Call 0161 496 0000 or visit our website to book."
+  ],
+  "g": {
+   "swimming": "natação",
+   "pool": "piscina",
+   "towel": "toalha",
+   "swimming cap": "touca de natação",
+   "book": "reservar"
+  },
+  "q": [
+   {
+    "q": "Em que dias são as aulas das crianças?",
+    "o": [
+     "Segunda e quarta.",
+     "Terça e quinta.",
+     "Sábado."
+    ],
+    "a": 0
+   },
+   {
+    "q": "A que horas são as aulas dos adultos?",
+    "o": [
+     "Das 7 às 8 da noite.",
+     "Das 4 às 5 da tarde.",
+     "Das 8 às 9 da manhã."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Quanto custa a primeira aula?",
+    "o": [
+     "Nada, é grátis.",
+     "Cinco libras.",
+     "Dez libras."
+    ],
+    "a": 0
+   },
+   {
+    "q": "O que é preciso levar?",
+    "o": [
+     "Uma toalha e uma touca.",
+     "Um livro.",
+     "Comida."
+    ],
+    "a": 0
+   }
+  ]
+ },
+ {
+  "id": "r25",
+  "t": "Meu Dia",
+  "lv": "A1",
+  "kind": "Texto pessoal",
+  "p": [
+   "My name is Lucas and I'm a nurse. I work in a big hospital in the city centre.",
+   "I get up at six o'clock every day. I have a shower and I eat bread and fruit for breakfast. I go to work by bike. It takes twenty minutes.",
+   "I start work at seven and I finish at three. After work, I go to the park with my dog, Bolt. In the evening, I cook dinner and I watch TV.",
+   "I go to bed at ten o'clock. I'm always tired, but I love my job!"
+  ],
+  "g": {
+   "nurse": "enfermeiro",
+   "get up": "levanto",
+   "shower": "banho (de chuveiro)",
+   "by bike": "de bicicleta",
+   "takes": "leva (tempo)"
+  },
+  "q": [
+   {
+    "q": "Qual é a profissão do Lucas?",
+    "o": [
+     "Enfermeiro.",
+     "Professor.",
+     "Cozinheiro."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Como ele vai para o trabalho?",
+    "o": [
+     "De bicicleta.",
+     "De ônibus.",
+     "De carro."
+    ],
+    "a": 0
+   },
+   {
+    "q": "O que ele faz depois do trabalho?",
+    "o": [
+     "Vai ao parque com o cachorro.",
+     "Vai à academia.",
+     "Dorme."
+    ],
+    "a": 0
+   },
+   {
+    "q": "A que horas ele vai dormir?",
+    "o": [
+     "Às dez.",
+     "Às seis.",
+     "Às três."
+    ],
+    "a": 0
+   }
+  ]
+ },
+ {
+  "id": "r26",
+  "t": "Cardápio do Café da Esquina",
+  "lv": "A1",
+  "kind": "Cardápio",
+  "p": [
+   "Corner Café: breakfast from 7 to 11 a.m.",
+   "Toast with butter and jam: £2.50. Eggs on toast: £4. Fruit salad: £3.50. Pancakes with honey: £5.",
+   "Drinks: tea £1.80, coffee £2.20, orange juice £2.50, hot chocolate £2.80.",
+   "Special offer: any breakfast and any hot drink for £6. Free Wi-Fi for customers."
+  ],
+  "g": {
+   "toast": "torrada",
+   "jam": "geleia",
+   "pancakes": "panquecas",
+   "honey": "mel",
+   "special offer": "promoção"
+  },
+  "q": [
+   {
+    "q": "Até que horas servem o café da manhã?",
+    "o": [
+     "Até as 11.",
+     "Até as 7.",
+     "Até o meio-dia."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Quanto custam as panquecas?",
+    "o": [
+     "Cinco libras.",
+     "Quatro libras.",
+     "Três libras e cinquenta."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Qual é a bebida mais cara?",
+    "o": [
+     "O chocolate quente.",
+     "O chá.",
+     "O café."
+    ],
+    "a": 0
+   },
+   {
+    "q": "O que é a promoção?",
+    "o": [
+     "Qualquer café da manhã e bebida quente por 6 libras.",
+     "Wi-Fi pago.",
+     "Suco grátis."
+    ],
+    "a": 0
+   }
+  ]
+ },
+ {
+  "id": "r27",
+  "t": "E-mail para uma Nova Amiga",
+  "lv": "A2",
+  "kind": "E-mail",
+  "p": [
+   "Hi Ana,",
+   "Thanks for your email! It was great to meet you at the language exchange last week. You speak English really well!",
+   "You asked about my city. I live in Manchester, in the north of England. It's a big city with lots of museums, parks and good restaurants. The weather isn't great, it rains a lot, but people are very friendly. I think you'd like it here.",
+   "Next month I'm going to visit Brazil for the first time! I'm flying to São Paulo on the 10th, and then I'm going to travel to Rio for a few days. Can you recommend anything I should see or eat?",
+   "I'm studying Portuguese now, but it's difficult. The pronunciation is very different from Spanish!",
+   "Write soon,",
+   "Emily"
+  ],
+  "g": {
+   "language exchange": "intercâmbio de idiomas",
+   "north": "norte",
+   "weather": "tempo, clima",
+   "flying": "indo de avião",
+   "recommend": "recomendar",
+   "pronunciation": "pronúncia"
+  },
+  "q": [
+   {
+    "q": "Onde a Emily e a Ana se conheceram?",
+    "o": [
+     "Num intercâmbio de idiomas.",
+     "Na escola.",
+     "Numa viagem."
+    ],
+    "a": 0
+   },
+   {
+    "q": "O que a Emily diz sobre o tempo em Manchester?",
+    "o": [
+     "Chove muito.",
+     "É sempre quente.",
+     "Neva todo dia."
+    ],
+    "a": 0
+   },
+   {
+    "q": "O que a Emily vai fazer no mês que vem?",
+    "o": [
+     "Visitar o Brasil pela primeira vez.",
+     "Mudar para Manchester.",
+     "Estudar espanhol."
+    ],
+    "a": 0
+   },
+   {
+    "q": "O que ela pede à Ana?",
+    "o": [
+     "Dicas do que ver e comer.",
+     "Um lugar para ficar.",
+     "Aulas de inglês."
+    ],
+    "a": 0
+   },
+   {
+    "q": "O que ela acha do português?",
+    "o": [
+     "Difícil, principalmente a pronúncia.",
+     "Fácil.",
+     "Igual ao espanhol."
+    ],
+    "a": 0
+   }
+  ]
+ },
+ {
+  "id": "r28",
+  "t": "Aviso do Prédio",
+  "lv": "A2",
+  "kind": "Aviso",
+  "p": [
+   "Notice to all residents",
+   "The lift will be closed for repairs from Monday 12th to Wednesday 14th. Please use the stairs during this time. We are sorry for the inconvenience.",
+   "If you need help with heavy shopping or have problems with the stairs, please contact the building manager, Mr Patel, in flat 1. He can help between 9 a.m. and 5 p.m.",
+   "Also, please remember that the recycling bins are collected on Thursday mornings. Put paper and plastic in the blue bin, and glass in the green bin. Please don't leave bags next to the bins.",
+   "Thank you for your help."
+  ],
+  "g": {
+   "residents": "moradores",
+   "lift": "elevador",
+   "repairs": "consertos",
+   "inconvenience": "transtorno",
+   "building manager": "síndico, administrador do prédio",
+   "bins": "lixeiras",
+   "collected": "recolhidas"
+  },
+  "q": [
+   {
+    "q": "Por que o elevador vai fechar?",
+    "o": [
+     "Para consertos.",
+     "Para limpeza.",
+     "Porque é feriado."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Por quantos dias ele fica fechado?",
+    "o": [
+     "Três dias, de segunda a quarta.",
+     "Uma semana.",
+     "Um dia."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Quem pode ajudar com compras pesadas?",
+    "o": [
+     "O Sr. Patel, do apartamento 1.",
+     "O carteiro.",
+     "Os vizinhos do último andar."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Onde se coloca o vidro?",
+    "o": [
+     "Na lixeira verde.",
+     "Na lixeira azul.",
+     "Ao lado das lixeiras."
+    ],
+    "a": 0
+   }
+  ]
+ },
+ {
+  "id": "r29",
+  "t": "Resenha: Um Restaurante Novo",
+  "lv": "A2",
+  "kind": "Avaliação na internet",
+  "p": [
+   "★★★★☆ Great food, slow service",
+   "I went to Luna, the new Italian restaurant on High Street, with my husband last Saturday. We didn't book a table, but they found one for us near the window.",
+   "The food was excellent. I had a mushroom pizza, and my husband had pasta with tomato and fresh basil. Both were delicious, and the portions were big. For dessert, we shared a tiramisu. It was the best I've ever eaten!",
+   "The only problem was the service. We waited almost forty minutes for our food, and the waiter forgot our drinks. But it was very busy, and the staff were friendly and said sorry.",
+   "Prices are reasonable: we paid £48 for two people. I'd definitely go back, but next time I'll go on a quieter day."
+  ],
+  "g": {
+   "service": "atendimento",
+   "book": "reservar",
+   "mushroom": "cogumelo",
+   "basil": "manjericão",
+   "portions": "porções",
+   "shared": "dividimos",
+   "reasonable": "razoáveis",
+   "quieter": "mais tranquilo"
+  },
+  "q": [
+   {
+    "q": "Que tipo de restaurante é o Luna?",
+    "o": [
+     "Italiano.",
+     "Japonês.",
+     "Brasileiro."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Do que ela mais gostou?",
+    "o": [
+     "Da comida, principalmente da sobremesa.",
+     "Do atendimento.",
+     "Da música."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Qual foi o problema?",
+    "o": [
+     "O atendimento foi lento.",
+     "A comida estava fria.",
+     "Era muito caro."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Quanto eles pagaram?",
+    "o": [
+     "48 libras pelos dois.",
+     "48 libras cada um.",
+     "40 libras."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Ela voltaria ao restaurante?",
+    "o": [
+     "Sim, num dia mais tranquilo.",
+     "Não.",
+     "Só para pedir pizza."
+    ],
+    "a": 0
+   }
+  ]
+ },
+ {
+  "id": "r30",
+  "t": "A História do Sanduíche",
+  "lv": "A2",
+  "kind": "Curiosidade",
+  "p": [
+   "Do you know why a sandwich is called a sandwich? The story begins in England in the 18th century.",
+   "John Montagu was the fourth Earl of Sandwich, a town in the south-east of England. According to the story, he loved playing cards and didn't want to stop for meals. So he asked for some meat between two pieces of bread. That way, he could eat with one hand and keep playing with the other.",
+   "His friends started to ask for “the same as Sandwich”, and the name stayed. Some historians say he actually ate this way because he was busy working, not playing cards. We will probably never know the truth.",
+   "Of course, people ate bread with food inside long before the Earl was born. But today, thanks to him, millions of people around the world eat a “sandwich” every day."
+  ],
+  "g": {
+   "century": "século",
+   "Earl": "conde",
+   "meals": "refeições",
+   "keep playing": "continuar jogando",
+   "stayed": "ficou, pegou",
+   "historians": "historiadores",
+   "long before": "muito antes"
+  },
+  "q": [
+   {
+    "q": "De onde vem o nome sanduíche?",
+    "o": [
+     "De um conde inglês chamado Earl of Sandwich.",
+     "De uma padaria.",
+     "De uma palavra italiana."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Por que, segundo a história, ele comia assim?",
+    "o": [
+     "Para continuar jogando cartas.",
+     "Porque não tinha prato.",
+     "Porque estava doente."
+    ],
+    "a": 0
+   },
+   {
+    "q": "O que alguns historiadores dizem?",
+    "o": [
+     "Que ele comia assim porque estava trabalhando.",
+     "Que ele nunca existiu.",
+     "Que ele inventou o pão."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Ele foi a primeira pessoa a comer pão com recheio?",
+    "o": [
+     "Não, as pessoas já faziam isso antes.",
+     "Sim.",
+     "O texto não diz."
+    ],
+    "a": 0
+   }
+  ]
  }
 ]
