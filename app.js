@@ -1374,7 +1374,7 @@ function placeLevel(){
 }
 function placeResult(){
  const l=placeLevel(), ARC_OF=[0,2,3,4,5,7], ai=ARC_OF[l], A0=ARCS[ai], score=P.stat.reduce((a,s)=>a+s.ok,0), n=P.stat.reduce((a,s)=>a+s.n,0);
- S.placed={score,arc:ai,lv:l}; S.start=A0.from; save();
+ S.placed={score,arc:ai,lv:l,d:ymd(new Date())}; S.start=A0.from; medir('teste',l===0?'A1':l===5?'C1':PLACE_LV[l],n?score/n*100:0); save();
  const lvTxt=l===0?'começando no A1':l===5?'C1, com segurança':PLACE_LV[l];
  app.innerHTML=`<div class="wrap"><div class="bar"><button class="back" data-home aria-label="Voltar">${ICON.back}</button><div class="ti"><b>Nivelamento</b><span>Resultado</span></div></div>
  <div class="panel bg-gate has-chr" style="min-height:240px"><div class="chr l">${av('me','happy')}</div><div class="chr r">${av('mina','happy')}</div>
@@ -1543,12 +1543,21 @@ function certView(ai){
  app.innerHTML=`<div class="wrap">${barHTML('Certificado',esc(a.n))}
  <div class="cert" id="cert"><div class="cert-in"><small>TORRE DO INGLÊS</small><h1>Certificado de conclusão</h1>
  <p>Certificamos que</p><div class="cert-name">${esc(S.name||'Explorador(a)')}</div>
- <p>concluiu o <b>${esc(a.n)}</b>${lv?`, nível <b>${lv}</b> do Quadro Europeu Comum de Referência (CEFR)`:''}, com ${a.to-a.from+1} capítulos.</p>
- <div class="cert-can"><small>AGORA VOCÊ CONSEGUE</small><ul>${(CANDO[ai]||[]).map(c=>`<li>${esc(c)}</li>`).join('')}</ul></div>
+ <p>concluiu o <b>${esc(a.n)}</b>, com ${a.to-a.from+1} capítulos${lv?`, que trabalham assuntos do nível <b>${lv}</b> do Quadro Europeu Comum de Referência (CEFR)`:''}.</p>
+ ${(()=>{const md=nivelMedido();return md?`<p>Nível medido no curso: <b>${md.lv}</b> (${esc(md.fonte)}).</p>`:'';})()}
+ <div class="cert-can"><small>O QUE VOCÊ PRATICOU NESTE ARCO</small><ul>${(CANDO[ai]||[]).map(c=>`<li>${esc(c)}</li>`).join('')}</ul></div>
  <p class="cert-dt">${dt}</p><p class="cert-note">Certificado de progresso pessoal. Não substitui um exame oficial de proficiência.</p></div></div>
  <div class="row noprint" style="margin-top:14px"><button class="btn" data-print>Imprimir ou salvar em PDF</button><button class="btn ghost" data-home>Voltar</button></div>
- <div class="sysw noprint" id="auto">${autoHTML(ai)}</div></div>`;
+ <div class="sysw noprint" id="auto">${autoHTML(ai)}</div>
+ ${medirArcoHTML(lv)}</div>`;
  window.scrollTo(0,0);
+}
+/* no certificado: concluir os capítulos não prova o nível; o convite é para medir com o simulado do nível do arco */
+function medirArcoHTML(lv){
+ const lvs=(lv||'').split('–'), alvo=lvs[lvs.length-1], X=(typeof SIMULADOS!=='undefined'?SIMULADOS:[]).find(x=>x.nivel===alvo)||null;
+ return `<div class="sysw noprint"><div class="tag">[ MEÇA O SEU NÍVEL ]</div><h3>Terminar os capítulos não é o mesmo que dominar o nível</h3>
+ <p>Os capítulos apresentam os assuntos e fazem você praticar. Para saber se você já entende e usa esse inglês, faça ${X?`o <b>${esc(X.titulo)}</b> ou `:''}o teste de nível. O resultado fica guardado em Inglês fora do curso, para você ver a sua evolução.</p>
+ <div class="row">${X?`<button class="btn" data-simid="${X.id}">${esc(X.titulo)}</button>`:''}<button class="btn ${X?'ghost':''}" data-place>Teste de nível</button></div></div>`;
 }
 /* autoavaliação "eu consigo" (descritores do CEFR): o que ficar como "ainda não" vira revisão do arco */
 function autoHTML(ai){
@@ -2229,7 +2238,7 @@ function simNext(){stopListening(); SIM.k++; simPart();}
 function simResult(){
  const X=simById(SIM.id), tot=SIM.pts.reduce((a,b)=>a+(b||0),0), max=SIM.max.reduce((a,b)=>a+b,0), pct=Math.round(tot/max*100);
  S.sim=S.sim||{}; const prev=S.sim[X.id], gain=Math.round(Math.max(0,pct-(prev?prev.b:0))/5);
- S.sim[X.id]={b:Math.max(pct,prev?prev.b:0),u:pct,d:ymd(new Date())}; S.xp+=gain; markDay(); save();
+ S.sim[X.id]={b:Math.max(pct,prev?prev.b:0),u:pct,d:ymd(new Date())}; medir(X.id,X.nivel,pct); S.xp+=gain; markDay(); save();
  const pc=k=>Math.round((SIM.pts[k]||0)/SIM.max[k]*100);
  const fraca=X.partes.map((P,k)=>({P,k,p:pc(k)})).sort((a,b)=>a.p-b.p)[0];
  const ir={leitura:['data-read','Praticar leitura'],escuta:['data-lsn','Praticar escuta'],lingua:['data-review','Fazer uma revisão'],escrita:['data-plist="escrever"','Escrever do zero'],fala:['data-pron','Minha pronúncia']}[fraca.P.tipo];
@@ -2246,7 +2255,15 @@ function simResult(){
 /* IMERSAO vem de conteudo/pratica/imersao.json: fontes gratuitas por nível e a referência de horas (Cambridge).
    S.tempo = {dia: segundos de estudo ativo no curso}; S.fora = {dia: minutos de inglês fora do curso}; S.antes = horas antes do curso */
 const LV_ORD=['A1','A2','B1','B2','C1','C2'];
-function nivelAtual(){
+/* nível medido: o maior simulado com 70% ou mais, ou o teste de nível; S.medidas guarda o histórico */
+function nivelMedido(){
+ let best=null;
+ for(const X of (typeof SIMULADOS!=='undefined'?SIMULADOS:[])){const r=(S.sim||{})[X.id];if(r&&r.b>=70&&(!best||LV_ORD.indexOf(X.nivel)>LV_ORD.indexOf(best.lv))) best={lv:X.nivel,fonte:`simulado ${X.nivel}, ${r.b}%`,d:r.d};}
+ if(S.placed&&typeof S.placed.lv==='number'){const l=S.placed.lv,lv=l===0?'A1':l===5?'C1':PLACE_LV[l];if(!best||LV_ORD.indexOf(lv)>LV_ORD.indexOf(best.lv)) best={lv,fonte:'teste de nível',d:S.placed.d||''};}
+ return best;
+}
+function medir(tipo,lv,pct){S.medidas=(S.medidas||[]).concat([{d:ymd(new Date()),t:tipo,lv,p:Math.round(pct)}]).slice(-30);}
+function nivelCapitulos(){
  try{const n=Object.keys(S.done||{}).map(Number).filter(i=>i<CH.length).reduce((a,b)=>Math.max(a,b+1),0);const c=CH[Math.min(CH.length-1,n)];if(c&&c.lv) return c.lv;}catch(e){}
  return 'A1';
 }
@@ -2254,6 +2271,7 @@ function horas(){
  const curso=Object.values(S.tempo||{}).reduce((a,b)=>a+b,0)/3600, fora=Object.values(S.fora||{}).reduce((a,b)=>a+b,0)/60, antes=+S.antes||0;
  return {curso,fora,antes,total:curso+fora+antes};
 }
+function nivelAtual(){const m=nivelMedido();return m?m.lv:nivelCapitulos();}
 function metaHoras(){
  const lv=nivelAtual(), M=(IMERSAO&&IMERSAO.metas)||{};
  const prox=LV_ORD.slice(LV_ORD.indexOf(lv)+1).find(l=>M[l])||'C2';
@@ -2276,7 +2294,9 @@ function registroHTML(){
 }
 function metaHTML(){
  const h=horas(), m=metaHoras(), pct=Math.min(100,Math.round(h.total/m.faixa[0]*100));
- return `<div class="immeta"><div class="imnum"><b>${fmtH(h.total)}</b><span>de inglês até agora</span></div>
+ const md=nivelMedido();
+ return `<div class="immeta"><p class="imnivel">${md?`Seu nível medido: <b>${md.lv}</b> (${esc(md.fonte)}${md.d?', em '+esc(md.d.split('-').reverse().join('/')):''}).`:`Você ainda não mediu o seu nível. Os capítulos que você estuda agora são do <b>${nivelCapitulos()}</b>, mas isso não é o mesmo que saber esse nível.`} <button class="lnk" data-place>${md?'Medir de novo':'Fazer o teste de nível'}</button></p>
+ <div class="imnum"><b>${fmtH(h.total)}</b><span>de inglês até agora</span></div>
  <div class="simbar" aria-hidden="true"><i style="width:${pct}%"></i></div>
  <p>Para o <b>${m.prox}</b>, a Cambridge estima cerca de <b>${m.faixa[0]} a ${m.faixa[1]} horas</b> de estudo, contando do zero. É uma referência, não uma regra: cada pessoa tem o seu ritmo.</p>
  <ul class="imdiv"><li>No curso: ${fmtH(h.curso)}</li><li>Fora do curso: ${fmtH(h.fora)}</li>${h.antes?`<li>Antes do curso: ${fmtH(h.antes)}</li>`:''}</ul></div>`;
@@ -2288,6 +2308,7 @@ function imView(){
  <div class="sysw"><div class="tag">[ SUAS HORAS ]</div>${metaHTML()}${registroHTML()}
   <details class="imantes"><summary>Já estudou inglês antes do curso?</summary><p>Conte as horas aproximadas (aulas, cursos, intercâmbio). Assim a conta fica mais justa.</p>
   <div class="row" style="justify-content:flex-start"><input class="field" id="imantes" type="number" min="0" max="5000" step="10" inputmode="numeric" value="${+S.antes||''}" placeholder="Ex.: 120" style="max-width:140px"><button class="btn sm" data-imantes>Salvar</button></div></details></div>
+ ${(S.medidas||[]).length?`<div class="sysw"><div class="tag">[ SUAS MEDIÇÕES ]</div><ul class="simres">${S.medidas.slice().reverse().map(m=>`<li><span>${esc(m.d.split('-').reverse().join('/'))} · ${m.t==='teste'?'Teste de nível':'Simulado '+esc(m.lv)}</span><span class="simbar" aria-hidden="true"><i style="width:${m.p}%"></i></span><b>${m.t==='teste'?esc(m.lv):m.p+'%'}</b></li>`).join('')}</ul></div>`:''}
  <div class="sysw"><div class="tag">[ PARA O SEU NÍVEL: ${lv} ]</div>${fs.map(f=>fonteHTML(f,lv)).join('')}</div>
  <div class="sysw"><div class="tag">[ DICAS ]</div><ul class="imdicas">${(IMERSAO.dicas||[]).map(d=>`<li>${esc(d)}</li>`).join('')}</ul></div>
  ${out.length?`<details class="vgrp"><summary><b>Fontes de outros níveis</b><span>${out.length} fontes</span></summary>${out.map(f=>fonteHTML(f,f.niveis[0])).join('')}</details>`:''}
@@ -2463,13 +2484,14 @@ function sanitizeState(o){
  r.zoom=ZOOMS.some(z=>z[0]===o.zoom)?o.zoom:1;
  r.look=['auto','light','dark'].includes(o.look)?o.look:'auto';
  r.start=Math.round(clampN(o.start,0,CH.length-1,0));
- r.placed=o.placed&&typeof o.placed==='object'?{score:clampN(o.placed.score,0,30,0),arc:Math.round(clampN(o.placed.arc,0,8,0)),lv:Math.round(clampN(o.placed.lv,0,5,0))}:null;
+ r.placed=o.placed&&typeof o.placed==='object'?{score:clampN(o.placed.score,0,30,0),arc:Math.round(clampN(o.placed.arc,0,8,0)),lv:Math.round(clampN(o.placed.lv,0,5,0)),d:typeof o.placed.d==='string'&&/^\d{4}-\d{2}-\d{2}$/.test(o.placed.d)?o.placed.d:''}:null;
  r.lsn={};r.rd={};r.wr={};for(const [src,dst] of [['lsn','lsn'],['rd','rd'],['wr','wr']]) for(const k in (o[src]||{})) if(/^[lrw]\d{1,2}$/.test(k)) r[dst][k]=clampN(o[src][k],0,20,0);
  r.prod={};for(const k in (o.prod||{})){if(typeof k==='string'&&k.length<60&&[1,2].includes(o.prod[k])) r.prod[k]=o.prod[k];}
  r.sb={};for(const k in (o.sb||{})){if(/^\d{1,2}\.\d{1,2}$/.test(k)&&o.sb[k]===1) r.sb[k]=1;}
  r.sim={};for(const k in (o.sim||{})){const v=o.sim[k];if(/^s-[a-z0-9]{1,4}$/.test(k)&&v&&typeof v==='object'){const n=x=>Math.max(0,Math.min(100,Math.round(+x||0)));r.sim[k]={b:n(v.b),u:n(v.u),d:typeof v.d==='string'&&/^\d{4}-\d{2}-\d{2}$/.test(v.d)?v.d:''};}}
  const num=(o,max)=>{const r={};for(const k in (o||{})){const v=Math.round(+o[k]);if(/^\d{4}-\d{2}-\d{2}$/.test(k)&&v>0) r[k]=Math.min(max,v);}return r;};
  r.tempo=num(o.tempo,86400); r.fora=num(o.fora,600); r.antes=Math.max(0,Math.min(5000,Math.round(+o.antes||0)));
+ r.medidas=(Array.isArray(o.medidas)?o.medidas:[]).filter(m=>m&&/^\d{4}-\d{2}-\d{2}$/.test(m.d)&&/^(teste|s-[a-z0-9]{1,4})$/.test(m.t)&&/^[ABC][12]$/.test(m.lv)).map(m=>({d:m.d,t:m.t,lv:m.lv,p:Math.max(0,Math.min(100,Math.round(+m.p||0)))})).slice(-30);
  r.auto={};for(const k in (o.auto||{})){if(/^\d{1,2}$/.test(k)&&Array.isArray(o.auto[k])) r.auto[k]=o.auto[k].slice(0,20).map(x=>x===1||x===0?x:null);}
  r.voc={};for(const k in (o.voc||{})){const e=o.voc[k];if(typeof k==='string'&&k.length<40&&e&&typeof e==='object'&&/^\d{4}-\d{2}-\d{2}$/.test(e.d||'')) r.voc[k]={b:Math.round(clampN(e.b,0,5,0)),d:e.d};}
  r.goal=[3,4,5].includes(o.goal)?o.goal:4;
