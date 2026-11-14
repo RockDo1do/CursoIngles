@@ -2460,11 +2460,47 @@ function renderReview(){
   RV.lock=false; window.scrollTo(0,0); return;
  }
  const q=CH[it.c].q[it.q], opts=shuffle(q.o.map((t,k)=>({t,k})));
+ /* pergunta de completar já acertada antes: volta sem opções, para escrever a resposta */
+ const card=(S.srs||{})[it.c+'-'+it.q];
+ if(!it.rival&&!it.verOpcoes&&card&&card.b>=1&&digitavel(q)){
+  app.innerHTML=`<div class="wrap">${barHTML(RV.sunday?'Domingo de revisão':'Revisão rápida',`Pergunta ${RV.i+1} de ${RV.items.length}`,'data-week')}
+  <div class="chap-open"><div class="no">CAP. ${it.c+1} · ${CH[it.c].lv} · ESCREVA A RESPOSTA</div><h1 class="pq">${esc(q.q)}</h1></div>
+  <div class="sysw"><p class="set-note" style="margin-bottom:8px">Você já acertou esta com opções. Agora escreva o que falta, sem ver as alternativas.</p>
+  <div class="qwrite"><input class="field" id="rtin" type="text" lang="en" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="O que completa a frase"><button class="btn" data-rtcheck>Conferir</button></div>
+  <div class="row" style="justify-content:flex-start;margin-top:8px"><button class="btn ghost sm" data-rtopts>Não lembro: mostrar opções</button></div>
+  <div class="why" id="rwhy" hidden></div>
+  <div class="row" id="rnext" hidden style="margin-top:14px"><button class="btn" data-rnext>${RV.i+1<RV.items.length?'Próxima':'Ver resultado'}</button></div></div></div>`;
+  RV.lock=false; window.scrollTo(0,0); setTimeout(()=>{const i=document.getElementById('rtin');if(i) i.focus();},50); return;
+ }
  app.innerHTML=`<div class="wrap">${barHTML(RV.sunday?'Domingo de revisão':'Revisão rápida',`Pergunta ${RV.i+1} de ${RV.items.length}`,'data-week')}
  <div class="chap-open"><div class="no">CAP. ${it.c+1} · ${CH[it.c].lv}${it.rival?' · ASSUNTO PARECIDO, NÃO CONFUNDA':it.srs?' · REVISÃO ESPAÇADA':it.mist?' · VOCÊ ERROU ESTA ANTES':''}</div><h1 class="pq">${esc(q.q)}</h1></div>
  <div class="sysw"><div class="opts">${opts.map(o=>`<button class="opt" data-rk="${o.k}"${enAttr(o.t)}>${esc(o.t)}</button>`).join('')}</div><div class="why" id="rwhy" hidden></div>
  <div class="row" id="rnext" hidden style="margin-top:14px"><button class="btn" data-rnext>${RV.i+1<RV.items.length?'Próxima':'Ver resultado'}</button></div></div></div>`;
  RV.lock=false; window.scrollTo(0,0);
+}
+/* resposta digitada: comparação exata (sem tolerância a erro, porque é gramática), com contrações nas duas formas */
+function normResp(t){
+ return String(t).toLowerCase().replace(/[’‘]/g,"'").replace(/won't/g,'will not').replace(/can't/g,'cannot').replace(/n't\b/g,' not')
+  .replace(/'m\b/g,' am').replace(/'re\b/g,' are').replace(/'ll\b/g,' will').replace(/'ve\b/g,' have').replace(/can not/g,'cannot')
+  .replace(/[^a-z' -]/g,' ').replace(/\s+/g,' ').trim();
+}
+function digitavel(q){
+ if(!/_{2,}/.test(q.q)) return false;
+ const c=q.o[q.a]; if(!c||!/^[A-Za-z' -]+$/.test(c)||c.trim().split(/\s+/).length>4) return false;
+ const ns=q.o.map(normResp); return new Set(ns).size===ns.length;
+}
+function reviewTyped(){
+ if(RV.lock) return; const it=RV.items[RV.i], inp=document.getElementById('rtin'); if(!it||!inp) return;
+ const v=inp.value.trim(); if(!v){inp.focus();return;} RV.lock=true;
+ const q=CH[it.c].q[it.q], alvo=normResp(q.o[q.a]), nv=normResp(v), ok=[nv,nv.replace(/'s\b/g,' is'),nv.replace(/'s\b/g,' has')].includes(alvo)||[alvo.replace(/'s\b/g,' is'),alvo.replace(/'s\b/g,' has')].includes(nv); inp.disabled=true;
+ srsUpdate(it.c,it.q,ok);
+ if(ok){RV.score++; S.mistakes=(S.mistakes||[]).filter(m=>!(m.c===it.c&&m.q===it.q));}
+ else{S.mistakes=(S.mistakes||[]).filter(m=>!(m.c===it.c&&m.q===it.q)).concat([{c:it.c,q:it.q}]).slice(-40);}
+ save();
+ const w=document.getElementById('rwhy'); w.hidden=false;
+ w.innerHTML=`<b class="${ok?'':'no'}">${ok?'Certo!':'Quase.'}</b> Resposta: <span lang="en"><b>${esc(q.o[q.a])}</b></span>. ${esc(q.why)}`;
+ const ob=document.querySelector('[data-rtopts]'); if(ob) ob.hidden=true;
+ document.getElementById('rnext').hidden=false;
 }
 function reviewWrite(){
  if(RV.lock) return; const it=RV.items[RV.i], inp=document.getElementById('rwin'); if(!it||!it.w||!inp) return;
@@ -3118,6 +3154,8 @@ app.addEventListener('click',e=>{
  const pk=e.target.closest('button[data-pk]'); if(pk){if(!pk.disabled) placeAnswer(pk);return;}
  if(e.target.closest('button[data-fromzero]')){S.start=0;save();reader(0);return;}
  if(e.target.closest('[data-rwcheck]')){reviewWrite();return;}
+ if(e.target.closest('[data-rtcheck]')){reviewTyped();return;}
+ if(e.target.closest('[data-rtopts]')){const it=RV.items[RV.i];if(it&&!RV.lock){it.verOpcoes=true;renderReview();}return;}
  const qck=e.target.closest('[data-qcheck]'); if(qck){qxCheck(qck.closest('.qx'));return;}
  const qsk=e.target.closest('[data-qskip]'); if(qsk){stopListening();document.querySelectorAll('#quiz .qx[data-qx=s]').forEach(el=>{if(answers[el.dataset.id]!=null) return;el.querySelectorAll('[data-qskip]').forEach(b=>b.disabled=true);qxSet(el.dataset.id,'skip',el,'<b>Tudo bem.</b> As questões de fala deste teste não contam na nota. Treine quando puder.');});return;}
  const qsy=e.target.closest('[data-qsay]'); if(qsy){e.stopPropagation();const o=S.slow;if(qsy.dataset.slow) S.slow=true;speak(qsy.dataset.qsay,qsy,qsy.dataset.who);S.slow=o;return;}
@@ -3178,6 +3216,7 @@ app.addEventListener('change',e=>{
 });
 app.addEventListener('keydown',e=>{
  if(e.key==='Enter'&&e.target.id==='rwin'){e.preventDefault();reviewWrite();return;}
+ if(e.key==='Enter'&&e.target.id==='rtin'){e.preventDefault();reviewTyped();return;}
  if(e.key==='Enter'&&e.target.closest&&e.target.closest('.qwrite')){e.preventDefault();qxCheck(e.target.closest('.qx'));return;}
  if(e.key==='Enter'&&e.target.id==='clz'){e.preventDefault();trainCheck();return;}
  if(e.key==='Enter'&&e.target.id==='nm'&&document.querySelector('[data-wnext]')){e.preventDefault();document.querySelector('[data-wnext]').click();return;}
