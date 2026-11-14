@@ -1051,5 +1051,661 @@
     "a": 0
    }
   ]
+ },
+ {
+  "id": "r15",
+  "t": "Como os Pombos Voltam para Casa",
+  "lv": "B2",
+  "kind": "Artigo de ciência",
+  "p": [
+   "For thousands of years, people have used pigeons to carry messages. Release a homing pigeon hundreds of kilometres from its loft, in a place it has never seen, and it will usually find its way back within a day. Yet scientists still do not fully understand how they do it.",
+   "Part of the answer appears to be the sun. Experiments in the 1950s showed that pigeons use the position of the sun as a compass, adjusting for the time of day with their internal clock. When researchers shifted the birds' body clocks by keeping them in artificial light, the pigeons flew off in predictably wrong directions.",
+   "But a compass alone is not enough. To get home, you need to know not only which way is north, but also where you are. Pigeons released on cloudy days, when the sun is hidden, still find their way, which suggests that they have other tools as well.",
+   "One possibility is the Earth's magnetic field. Some studies have found that strong magnets attached to pigeons confuse them, especially under cloudy skies. Another is smell: pigeons whose sense of smell has been blocked often struggle to navigate from unfamiliar places, which has led some researchers to propose that they build a kind of map from the scents carried by the wind.",
+   "There is also evidence that experienced pigeons memorise landmarks. GPS tracking has shown birds following motorways, rivers and railway lines, sometimes even turning at the same junctions as cars. Rather than a single magical sense, it seems likely that pigeons combine several sources of information, relying more on one or another depending on the conditions.",
+   "This flexibility is perhaps the most impressive part of the story. Like an experienced traveller who uses a map, road signs and the position of the sun, pigeons seem to use whatever information is available. After more than half a century of research, the humble pigeon remains one of nature's most remarkable navigators."
+  ],
+  "g": {
+   "homing pigeon": "pombo-correio",
+   "loft": "pombal",
+   "adjusting": "ajustando",
+   "body clocks": "relógios biológicos",
+   "predictably": "de forma previsível",
+   "magnetic field": "campo magnético",
+   "scents": "cheiros",
+   "landmarks": "pontos de referência",
+   "junctions": "cruzamentos, entroncamentos",
+   "humble": "humilde, simples"
+  },
+  "q": [
+   {
+    "q": "Ideia geral: qual é a pergunta central do texto?",
+    "o": [
+     "Como os pombos encontram o caminho de volta para casa.",
+     "Por que os pombos vivem nas cidades.",
+     "Como treinar pombos."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Detalhe: o que mostraram os experimentos dos anos 1950?",
+    "o": [
+     "Os pombos usam o sol como bússola.",
+     "Os pombos enxergam no escuro.",
+     "Os pombos seguem os carros."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Inferência: por que o sol não pode ser a única explicação?",
+    "o": [
+     "Os pombos também voltam em dias nublados.",
+     "O sol muda de cor.",
+     "Os pombos voam à noite."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Detalhe: o que acontece quando o olfato dos pombos é bloqueado?",
+    "o": [
+     "Eles têm dificuldade em lugares desconhecidos.",
+     "Voam mais rápido.",
+     "Param de comer."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Detalhe: o que o rastreamento por GPS mostrou?",
+    "o": [
+     "Alguns pombos seguem estradas, rios e trilhos.",
+     "Os pombos sempre voam em linha reta.",
+     "Os pombos se perdem com frequência."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Opinião: qual é a conclusão do texto?",
+    "o": [
+     "Os pombos combinam várias fontes de informação, conforme as condições.",
+     "Existe um único sentido mágico.",
+     "Os cientistas já entenderam tudo."
+    ],
+    "a": 0
+   }
+  ]
+ },
+ {
+  "id": "r16",
+  "t": "Coluna: Em Defesa do Tédio no Trabalho",
+  "lv": "B2",
+  "kind": "Coluna de opinião",
+  "p": [
+   "Every few months, a new study reveals that office workers spend an alarming amount of their day in meetings, answering emails or switching between tasks. The usual response is a fresh round of advice on how to cut meetings and get more done. I would like to suggest something slightly different.",
+   "Most of us have experienced a strange phenomenon: our best ideas rarely arrive at our desks. They come in the shower, on a walk, or while doing the washing-up. This is not a coincidence. When the mind is not focused on a specific task, it begins to wander, connecting memories and ideas in unexpected ways.",
+   "The modern workplace leaves almost no room for this. Every gap in the day is filled with a notification, a quick message or another meeting. Even our breaks are spent scrolling through our phones. We have become extremely efficient at being busy, and surprisingly bad at thinking.",
+   "Some companies have started to experiment. One software firm introduced a rule that Wednesday afternoons are free of meetings and messages. Staff can do what they like, as long as it is not routine work. Many reported that this quiet time produced their most creative work of the week.",
+   "I am not suggesting that we should all spend our working hours staring out of the window. Deadlines are real, and some jobs leave very little flexibility. But managers who measure productivity only by visible activity may be missing something important. The employee who appears to be doing nothing might, in fact, be solving the problem that everyone else is too busy to notice.",
+   "So the next time you catch yourself gazing into space at work, don't feel guilty. You might be doing the most valuable thing you'll do all day."
+  ],
+  "g": {
+   "alarming": "alarmante",
+   "switching": "alternando",
+   "fresh round": "nova rodada",
+   "phenomenon": "fenômeno",
+   "washing-up": "lavar a louça",
+   "wander": "vagar",
+   "routine work": "trabalho de rotina",
+   "flexibility": "flexibilidade",
+   "visible activity": "atividade visível",
+   "gazing into space": "olhando para o nada"
+  },
+  "q": [
+   {
+    "q": "Ideia geral: qual é a opinião do autor?",
+    "o": [
+     "Momentos sem tarefa no trabalho podem gerar boas ideias.",
+     "Devemos ter mais reuniões.",
+     "Celulares deveriam ser proibidos."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Detalhe: onde costumam surgir as melhores ideias, segundo o texto?",
+    "o": [
+     "No banho, numa caminhada, lavando a louça.",
+     "Em reuniões.",
+     "Respondendo e-mails."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Detalhe: o que uma empresa de software fez?",
+    "o": [
+     "Liberou as tardes de quarta de reuniões e mensagens.",
+     "Proibiu os celulares.",
+     "Aumentou a jornada."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Opinião: o autor acha que devemos passar o dia olhando pela janela?",
+    "o": [
+     "Não: ele reconhece que há prazos e pouca flexibilidade.",
+     "Sim, sempre.",
+     "Ele não comenta."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Inferência: qual é o erro de alguns gerentes, segundo o autor?",
+    "o": [
+     "Medir a produtividade só pela atividade que aparece.",
+     "Fazer reuniões curtas.",
+     "Dar folga às quartas."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Vocabulário: o que significa “we have become extremely efficient at being busy”?",
+    "o": [
+     "Ficamos ótimos em parecer ocupados, não em pensar.",
+     "Trabalhamos muito bem.",
+     "Temos pouco trabalho."
+    ],
+    "a": 0
+   }
+  ]
+ },
+ {
+  "id": "r17",
+  "t": "Guia: Como Ler uma Notícia Científica",
+  "lv": "B2",
+  "kind": "Guia prático",
+  "p": [
+   "“Coffee prevents cancer.” “Chocolate helps you lose weight.” Headlines like these appear every week, often contradicting the ones from the week before. How can a non-scientist tell which claims deserve attention? Here are five questions worth asking.",
+   "1. Who was studied? Many exciting results come from experiments on mice or cells in a laboratory. These are important first steps, but what works in a mouse frequently fails in humans. If the headline doesn't mention it, check whether the study involved people at all.",
+   "2. How many people took part? A study of twenty volunteers can suggest an idea, but it can easily produce a result by chance. Larger studies, involving thousands of participants, are generally more reliable, especially when their findings are repeated by other teams.",
+   "3. Does it show cause, or just a link? Suppose researchers find that people who drink more coffee live longer. That does not prove coffee is responsible. Coffee drinkers might also be wealthier, or more active. Only carefully designed experiments, in which people are randomly assigned to different groups, can show that one thing actually causes another.",
+   "4. How big is the effect? A headline might say that something “doubles your risk” of a disease. That sounds frightening, but if the original risk was one in a million, doubling it means two in a million: still extremely small. Always look for the actual numbers.",
+   "5. Who paid for it? Funding from a company does not automatically make research wrong, but it is worth knowing. A study on the benefits of a drink paid for by the company that sells it deserves a little extra scepticism.",
+   "None of these questions requires a science degree. They simply ask you to slow down before sharing a headline, which is, perhaps, the most scientific habit of all."
+  ],
+  "g": {
+   "contradicting": "contradizendo",
+   "deserve": "merecem",
+   "by chance": "por acaso",
+   "reliable": "confiáveis",
+   "link": "relação, ligação",
+   "wealthier": "mais ricos",
+   "randomly assigned": "distribuídos ao acaso",
+   "frightening": "assustador",
+   "funding": "financiamento",
+   "scepticism": "ceticismo"
+  },
+  "q": [
+   {
+    "q": "Ideia geral: para que serve este guia?",
+    "o": [
+     "Ajudar a avaliar notícias sobre descobertas científicas.",
+     "Ensinar a fazer experimentos.",
+     "Recomendar comidas saudáveis."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Detalhe: por que um resultado em camundongos não basta?",
+    "o": [
+     "O que funciona em camundongos muitas vezes falha em humanos.",
+     "Os camundongos mentem.",
+     "É proibido estudar pessoas."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Detalhe: por que estudos com poucas pessoas são arriscados?",
+    "o": [
+     "O resultado pode aparecer por acaso.",
+     "São mais caros.",
+     "Demoram mais."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Inferência: o exemplo do café mostra que:",
+    "o": [
+     "Uma relação entre duas coisas não prova que uma causa a outra.",
+     "O café faz viver mais.",
+     "Quem bebe café é sempre rico."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Detalhe: por que “dobra o risco” pode enganar?",
+    "o": [
+     "Se o risco inicial é minúsculo, o dobro continua minúsculo.",
+     "Porque o risco sempre triplica.",
+     "Porque os números são inventados."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Opinião: qual é o hábito “mais científico de todos”, segundo o texto?",
+    "o": [
+     "Ir com calma antes de compartilhar uma manchete.",
+     "Fazer faculdade de ciências.",
+     "Ler só revistas científicas."
+    ],
+    "a": 0
+   }
+  ]
+ },
+ {
+  "id": "r18",
+  "t": "Perfil: A Mulher que Contava Estrelas",
+  "lv": "B2",
+  "kind": "Perfil biográfico",
+  "p": [
+   "In the 1890s, the Harvard College Observatory employed a group of women to examine photographs of the night sky. They were paid less than the men who operated the telescopes, and their job was described as “computing”. Among them was Henrietta Swan Leavitt, whose discovery would change our understanding of the size of the universe.",
+   "Leavitt was studying a type of star called a Cepheid, whose brightness rises and falls in a regular cycle. Working through thousands of photographic plates, she noticed something remarkable: the brighter the star, the longer its cycle. In 1912, she published this relationship, which became known as Leavitt's law.",
+   "Its importance was not immediately obvious, but astronomers soon realised what it meant. If you know how bright a star really is, and you measure how bright it appears from Earth, you can calculate how far away it is. Cepheids became a kind of measuring tape for the universe.",
+   "Within a decade, Edwin Hubble used Cepheids to show that some fuzzy patches in the sky were not clouds within our galaxy, but entire galaxies of their own, millions of light years away. The universe, it turned out, was vastly larger than anyone had imagined. Hubble himself acknowledged that Leavitt's work had made his findings possible.",
+   "Leavitt did not live to see much of this. She died of cancer in 1921, aged fifty-three. A few years later, a Swedish mathematician wrote to Harvard to say he wished to nominate her for the Nobel Prize, unaware that she had already died. The prize cannot be awarded after death.",
+   "Today, her name is attached to a crater on the Moon and an asteroid, and her law remains one of the foundations of modern astronomy. Her story is also a reminder of how many important contributions have been made by people whose work was considered routine."
+  ],
+  "g": {
+   "observatory": "observatório",
+   "brightness": "brilho",
+   "cycle": "ciclo",
+   "photographic plates": "chapas fotográficas",
+   "measuring tape": "fita métrica",
+   "fuzzy patches": "manchas borradas",
+   "light years": "anos-luz",
+   "acknowledged": "reconheceu",
+   "nominate": "indicar",
+   "crater": "cratera"
+  },
+  "q": [
+   {
+    "q": "Ideia geral: quem é o foco do texto?",
+    "o": [
+     "Henrietta Leavitt e sua descoberta sobre as estrelas.",
+     "Edwin Hubble e seu telescópio.",
+     "A história de Harvard."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Detalhe: o que as mulheres faziam no observatório?",
+    "o": [
+     "Examinavam fotografias do céu, ganhando menos que os homens.",
+     "Operavam os telescópios.",
+     "Davam aulas de matemática."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Detalhe: o que é a lei de Leavitt?",
+    "o": [
+     "Quanto mais brilhante a estrela, mais longo o seu ciclo.",
+     "Toda estrela tem o mesmo brilho.",
+     "As estrelas mais próximas piscam mais."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Inferência: por que as Cefeidas viraram uma “fita métrica” do universo?",
+    "o": [
+     "Permitem calcular a que distância as estrelas estão.",
+     "São as estrelas mais próximas.",
+     "Têm o formato de uma régua."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Detalhe: o que Hubble mostrou usando o trabalho dela?",
+    "o": [
+     "Que algumas manchas no céu eram outras galáxias.",
+     "Que a Lua tem crateras.",
+     "Que o Sol é uma Cefeida."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Detalhe: por que ela não recebeu o Nobel?",
+    "o": [
+     "Já tinha morrido quando quiseram indicá-la.",
+     "Recusou o prêmio.",
+     "Mulheres eram proibidas de concorrer."
+    ],
+    "a": 0
+   }
+  ]
+ },
+ {
+  "id": "r19",
+  "t": "Ensaio: O Paradoxo da Escolha",
+  "lv": "C1",
+  "kind": "Ensaio",
+  "p": [
+   "It seems self-evident that more choice is better. If one supermarket offers five kinds of jam and another offers fifty, the second surely serves its customers better: whatever your taste, you are more likely to find exactly what you want. Freedom, after all, is largely the freedom to choose.",
+   "Yet a well-known experiment complicated this assumption. Shoppers who were offered a tasting table with twenty-four varieties of jam were more likely to stop and look, but far less likely to buy anything than those offered just six. Faced with an abundance of options, many people simply walked away.",
+   "Psychologists have proposed several reasons for this. Comparing many alternatives is mentally exhausting, and the effort can outweigh the pleasure of the eventual choice. Moreover, the more options we reject, the more we are likely to wonder whether one of them would have been better, so that even a good decision can leave us dissatisfied. Abundant choice also raises our expectations: with so much available, surely the perfect option exists, and settling for anything less feels like a failure.",
+   "It would be a mistake, however, to conclude that choice is simply harmful. Later attempts to replicate the jam study produced mixed results, and the effect appears to depend heavily on context. When people know exactly what they want, or when options are clearly organised, a wide selection rarely causes paralysis. For complex decisions such as pensions or medical treatments, however, an overwhelming range of options can lead people to avoid deciding at all, sometimes to their considerable cost.",
+   "Perhaps the most practical lesson concerns not how many options exist, but how we approach them. Some researchers distinguish between “maximisers”, who seek the best possible option, and “satisficers”, who are content with one that is good enough. Intriguingly, maximisers often make objectively better choices, yet feel worse about them. In a world that offers almost limitless variety, the ability to decide when something is good enough may be one of the more underrated skills."
+  ],
+  "g": {
+   "self-evident": "evidente por si só",
+   "complicated this assumption": "pôs em dúvida esse pressuposto",
+   "abundance": "abundância",
+   "outweigh": "superar, pesar mais que",
+   "dissatisfied": "insatisfeito",
+   "settling for": "contentar-se com",
+   "replicate": "reproduzir, repetir",
+   "paralysis": "paralisia",
+   "overwhelming": "esmagador, excessivo",
+   "underrated": "subestimado"
+  },
+  "q": [
+   {
+    "q": "Ideia geral: qual é a tese do ensaio?",
+    "o": [
+     "Mais opções nem sempre trazem mais satisfação, dependendo do contexto.",
+     "Escolher é sempre ruim.",
+     "Os supermercados deveriam vender menos geleias."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Detalhe: o que aconteceu no experimento das geleias?",
+    "o": [
+     "Com 24 sabores, mais gente parou, mas menos gente comprou.",
+     "Com 24 sabores, todos compraram mais.",
+     "Ninguém experimentou."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Detalhe: qual é uma razão psicológica citada?",
+    "o": [
+     "Comparar muitas opções cansa e aumenta o arrependimento.",
+     "As pessoas não gostam de geleia.",
+     "Os preços eram altos."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Opinião: o autor conclui que escolha é simplesmente prejudicial?",
+    "o": [
+     "Não: os resultados variam e dependem do contexto.",
+     "Sim, sempre.",
+     "Ele não discute isso."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Detalhe: qual é a diferença entre maximizers e satisficers?",
+    "o": [
+     "Uns buscam o melhor possível; os outros se contentam com o bom o bastante.",
+     "Uns compram mais; os outros, menos.",
+     "Uns são ricos; os outros, pobres."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Inferência: o que o autor quer dizer com a “habilidade subestimada” do final?",
+    "o": [
+     "Saber decidir quando algo já é bom o suficiente.",
+     "Saber comparar preços.",
+     "Saber cozinhar geleia."
+    ],
+    "a": 0
+   }
+  ]
+ },
+ {
+  "id": "r20",
+  "t": "Reportagem: A Cidade que Proibiu os Carros no Centro",
+  "lv": "C1",
+  "kind": "Reportagem",
+  "p": [
+   "When the Spanish city of Pontevedra banned most cars from its historic centre in 1999, local shopkeepers predicted disaster. Without customers able to park outside their doors, they argued, businesses would collapse and the old town would be left to decay. Two decades later, the reality has turned out rather differently.",
+   "The change was introduced by a newly elected mayor who argued that the city belonged to its residents rather than to their vehicles. Streets in the centre were turned over to pedestrians, with access for cars limited to deliveries, emergency services and residents' garages. Underground and free surface car parks were provided on the edges of the zone, within a short walk of the centre.",
+   "The effects went well beyond reduced traffic. Air pollution fell substantially, and road deaths in the city dropped dramatically over the following years. Perhaps more strikingly, the population of the centre, which had been declining, began to grow again as families returned to streets that were now quiet and safe enough for children to play in.",
+   "The predicted collapse of local businesses did not materialise. Although some shops closed, others opened, attracted by the steady flow of people on foot. Pedestrians, it turns out, tend to linger, browse and return more often than drivers, who visit a single shop and leave.",
+   "Critics point out that Pontevedra is a relatively small city, and that what works in a compact historic centre may be much harder to achieve in a sprawling metropolis built around the car. Others note that the transition required years of patient negotiation, and that some residents, particularly elderly people living outside the centre, initially found access more difficult.",
+   "Nevertheless, delegations from cities across Europe and beyond have visited to study the model. The lesson they tend to take away is not that cars should be banned everywhere, but that the default assumption, that streets exist primarily for traffic, is a choice rather than a law of nature, and one that can be reversed."
+  ],
+  "g": {
+   "historic centre": "centro histórico",
+   "decay": "deteriorar-se, decair",
+   "turned over to": "entregues a",
+   "substantially": "consideravelmente",
+   "strikingly": "de forma impressionante",
+   "materialise": "concretizar-se",
+   "linger": "demorar-se",
+   "browse": "olhar as vitrines",
+   "sprawling metropolis": "metrópole espalhada",
+   "default assumption": "pressuposto padrão"
+  },
+  "q": [
+   {
+    "q": "Ideia geral: sobre o que é a reportagem?",
+    "o": [
+     "O que aconteceu quando Pontevedra tirou os carros do centro.",
+     "Como estacionar na Espanha.",
+     "A história de um prefeito."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Detalhe: o que os comerciantes previram em 1999?",
+    "o": [
+     "Que os negócios iriam quebrar.",
+     "Que as vendas iam dobrar.",
+     "Que o turismo ia acabar."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Detalhe: o que aconteceu com a população do centro?",
+    "o": [
+     "Voltou a crescer, com famílias retornando.",
+     "Caiu pela metade.",
+     "Ficou igual."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Inferência: por que pedestres podem ser bons para o comércio?",
+    "o": [
+     "Eles se demoram, olham vitrines e voltam mais.",
+     "Eles gastam mais em cada loja.",
+     "Eles não usam cartão."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Opinião: qual é uma crítica ao modelo?",
+    "o": [
+     "Pode ser muito mais difícil numa metrópole feita para carros.",
+     "Aumentou a poluição.",
+     "Os carros ficaram mais caros."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Detalhe: qual é a lição que outras cidades costumam tirar?",
+    "o": [
+     "Que ruas feitas para o trânsito são uma escolha que pode mudar.",
+     "Que os carros devem ser proibidos em todo lugar.",
+     "Que cidades pequenas são melhores."
+    ],
+    "a": 0
+   }
+  ]
+ },
+ {
+  "id": "r21",
+  "t": "Carta Formal: Contestação de uma Multa",
+  "lv": "C1",
+  "kind": "Carta formal",
+  "p": [
+   "Dear Sir or Madam,",
+   "I am writing to appeal against the parking penalty notice issued to my vehicle on 3 October at 14:20 on Wilton Road. I believe the penalty was issued in error, for the reasons set out below, and I would respectfully request that it be cancelled.",
+   "According to the notice, my car was parked in a restricted bay without a valid permit. However, I had purchased a two-hour ticket through the council's parking app at 13:05, a copy of which I have attached, together with the confirmation email. The ticket was therefore valid until 15:05, well beyond the time at which the penalty was issued.",
+   "I appreciate that the civil enforcement officer may not have been able to see the electronic ticket, as the app does not always update the council's system immediately. I understand that this is a known issue, as several residents have reported similar problems on the local community forum in recent weeks. I would suggest that this may warrant further investigation, so that other drivers are not penalised unfairly.",
+   "I have also attached two photographs, taken when I returned to my vehicle, showing the signs in the bay. These indicate that the bay is available to permit holders and to drivers with a valid ticket, which is consistent with my understanding of the rules.",
+   "In light of the above, I trust that you will agree that the penalty should not stand. I would be grateful if you could confirm the cancellation in writing at your earliest convenience. Should you require any further information, please do not hesitate to contact me.",
+   "Yours faithfully, Beatriz Souza"
+  ],
+  "g": {
+   "appeal against": "recorrer de, contestar",
+   "penalty notice": "notificação de multa",
+   "issued in error": "emitida por engano",
+   "set out below": "expostos abaixo",
+   "restricted bay": "vaga restrita",
+   "permit": "autorização",
+   "civil enforcement officer": "agente de trânsito",
+   "warrant": "justificar",
+   "In light of the above": "diante do exposto",
+   "should not stand": "não deve ser mantida"
+  },
+  "q": [
+   {
+    "q": "Ideia geral: qual é o objetivo da carta?",
+    "o": [
+     "Contestar uma multa de estacionamento.",
+     "Pedir uma autorização de estacionamento.",
+     "Reclamar de um vizinho."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Detalhe: por que a autora acha que a multa é injusta?",
+    "o": [
+     "Ela tinha comprado um bilhete válido pelo aplicativo.",
+     "Ela estava doente.",
+     "A placa estava escondida."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Detalhe: até que horas o bilhete era válido?",
+    "o": [
+     "Até 15h05.",
+     "Até 14h20.",
+     "Até 13h05."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Inferência: por que o agente pode não ter visto o bilhete?",
+    "o": [
+     "O aplicativo nem sempre atualiza o sistema na hora.",
+     "O bilhete era falso.",
+     "O agente estava distraído."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Detalhe: o que ela anexou à carta?",
+    "o": [
+     "O bilhete, o e-mail de confirmação e duas fotos das placas.",
+     "Só uma foto do carro.",
+     "Uma carta do advogado."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Vocabulário: o que significa “at your earliest convenience”?",
+    "o": [
+     "o quanto antes, quando for possível",
+     "nunca",
+     "só no fim do mês"
+    ],
+    "a": 0
+   }
+  ]
+ },
+ {
+  "id": "r22",
+  "t": "Artigo: Por que Ainda Escrevemos à Mão",
+  "lv": "C1",
+  "kind": "Artigo",
+  "p": [
+   "In many classrooms, the pen is quietly giving way to the keyboard. Students take notes on laptops, submit essays online and, increasingly, sit exams on screens. Typing is faster, easier to edit and, for many, more legible than their handwriting. So why do some researchers argue that handwriting still deserves a place in education?",
+   "One widely cited study compared students who took lecture notes by hand with those who used laptops. Those typing wrote considerably more, often recording the lecture almost word for word. Yet when tested on the material, the handwriting group tended to perform better on conceptual questions. The researchers suggested that because writing by hand is slower, it forces students to summarise and rephrase, processing the ideas rather than transcribing them.",
+   "Subsequent attempts to replicate this finding have produced mixed results, and the advantage may be smaller than first reported. Nevertheless, the underlying principle, that deeper processing leads to better learning, is well supported. A laptop user who deliberately summarises rather than transcribes may gain much of the same benefit.",
+   "For young children, the case for handwriting appears stronger. Forming letters by hand seems to help children recognise them, and some brain-imaging studies have found greater activity in reading-related areas after children practised writing letters compared with typing them. Handwriting, in this view, is not merely a way of recording language but part of the process of learning it.",
+   "None of this amounts to an argument against technology. Typing is an essential skill, and for students with certain learning difficulties, keyboards and speech-to-text tools can be genuinely liberating. The more nuanced conclusion is that tools shape thinking in different ways, and that the most effective choice depends on the task. Taking notes in a lecture, drafting a novel and filling in a form are different activities, and there is no reason to assume a single tool suits them all."
+  ],
+  "g": {
+   "giving way to": "cedendo lugar a",
+   "legible": "legível",
+   "widely cited": "muito citado",
+   "word for word": "palavra por palavra",
+   "conceptual": "conceitual",
+   "rephrase": "reformular",
+   "transcribing": "transcrevendo",
+   "underlying principle": "princípio de fundo",
+   "brain-imaging": "imagens do cérebro",
+   "liberating": "libertador"
+  },
+  "q": [
+   {
+    "q": "Ideia geral: qual é a pergunta do artigo?",
+    "o": [
+     "Se escrever à mão ainda tem valor na educação.",
+     "Qual é o melhor notebook para estudar.",
+     "Como melhorar a letra."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Detalhe: o que mostrou o estudo das anotações?",
+    "o": [
+     "Quem escreveu à mão foi melhor nas perguntas conceituais.",
+     "Quem digitou foi melhor em tudo.",
+     "Não houve diferença."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Inferência: por que escrever à mão ajudaria?",
+    "o": [
+     "Por ser mais lento, obriga a resumir e reformular as ideias.",
+     "Porque o papel é mais barato.",
+     "Porque cansa a mão."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Opinião: o resultado foi confirmado depois?",
+    "o": [
+     "Os resultados foram mistos; a vantagem pode ser menor.",
+     "Sim, sempre.",
+     "Foi totalmente desmentido."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Detalhe: para quem o argumento a favor da escrita à mão parece mais forte?",
+    "o": [
+     "Para crianças pequenas que estão aprendendo as letras.",
+     "Para universitários.",
+     "Para escritores profissionais."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Detalhe: qual é a conclusão do artigo?",
+    "o": [
+     "A melhor ferramenta depende da tarefa.",
+     "Devemos abandonar os teclados.",
+     "Devemos abandonar o papel."
+    ],
+    "a": 0
+   }
+  ]
  }
 ]

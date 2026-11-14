@@ -2227,5 +2227,939 @@
     "a": 0
    }
   ]
+ },
+ {
+  "id": "l21",
+  "t": "Podcast: Viver sem Carro",
+  "lv": "B2",
+  "arc": 9,
+  "nomes": {
+   "narr": "Apresentadora"
+  },
+  "lines": [
+   [
+    "narr",
+    "Welcome back to Small Changes, the show about everyday decisions that add up. Today's guest is Harry, who sold his car eighteen months ago. Harry, what made you do it?",
+    "Bem-vindos de volta ao Small Changes, o programa sobre decisões do dia a dia que fazem diferença. O convidado de hoje é o Harry, que vendeu o carro há dezoito meses. Harry, o que fez você tomar essa decisão?"
+   ],
+   [
+    "harry",
+    "Honestly, it started with money rather than the environment. I sat down one evening and added up everything the car was costing me: insurance, fuel, parking, repairs. It came to almost four hundred pounds a month, and I was using it maybe three times a week.",
+    "Sinceramente, começou pelo dinheiro, não pelo meio ambiente. Uma noite sentei e somei tudo o que o carro me custava: seguro, combustível, estacionamento, consertos. Dava quase quatrocentas libras por mês, e eu usava talvez três vezes por semana."
+   ],
+   [
+    "narr",
+    "That's a lot. But surely there were things you worried about giving up?",
+    "É bastante. Mas com certeza havia coisas que você tinha medo de perder, não?"
+   ],
+   [
+    "harry",
+    "Absolutely. My biggest fear was the weekly shop. I used to fill the boot with enough food for a fortnight. Now I order the heavy things online and pick up fresh stuff on my way home. It turned out to be easier than I expected, and I waste less food, because I only buy what I need for a few days.",
+    "Com certeza. Meu maior medo eram as compras da semana. Eu enchia o porta-malas com comida para quinze dias. Agora peço as coisas pesadas pela internet e compro os frescos no caminho de casa. Acabou sendo mais fácil do que eu esperava, e desperdiço menos comida, porque só compro o que preciso para poucos dias."
+   ],
+   [
+    "narr",
+    "What about visiting family, or going on holiday?",
+    "E para visitar a família ou viajar nas férias?"
+   ],
+   [
+    "harry",
+    "That's where it gets trickier. My parents live in a village with two buses a day, so I hire a car when I visit them, maybe once a month. Even with the rental, I'm still saving about two hundred pounds a month.",
+    "Aí fica mais complicado. Meus pais moram num vilarejo com dois ônibus por dia, então alugo um carro quando vou visitá-los, talvez uma vez por mês. Mesmo com o aluguel, ainda economizo umas duzentas libras por mês."
+   ],
+   [
+    "narr",
+    "Has it changed your daily life in other ways?",
+    "Isso mudou a sua vida em outros aspectos?"
+   ],
+   [
+    "harry",
+    "More than I imagined. I cycle to work now, which means I get exercise without having to find time for the gym. I know the people in my street much better, because I walk past their houses instead of driving. And on the train, I read. I've read more books this year than in the previous five.",
+    "Mais do que eu imaginava. Agora vou de bicicleta para o trabalho, o que significa que faço exercício sem precisar arranjar tempo para a academia. Conheço muito melhor as pessoas da minha rua, porque passo a pé na frente das casas em vez de passar de carro. E no trem, eu leio. Li mais livros este ano do que nos cinco anteriores."
+   ],
+   [
+    "narr",
+    "Would you recommend it to everyone?",
+    "Você recomendaria isso para todo mundo?"
+   ],
+   [
+    "harry",
+    "No, and I think it's important to say that. I live in a city with decent public transport and I don't have children. For a nurse working night shifts in a rural area, or a parent with three kids and no bus stop nearby, a car isn't a luxury, it's a necessity. My advice is just to do the maths. Many people would be surprised by how much they spend on a car they barely use.",
+    "Não, e acho importante dizer isso. Moro numa cidade com transporte público razoável e não tenho filhos. Para uma enfermeira que trabalha à noite numa área rural, ou para quem tem três filhos e nenhum ponto de ônibus por perto, carro não é luxo, é necessidade. Meu conselho é só fazer as contas. Muita gente se surpreenderia com quanto gasta num carro que quase não usa."
+   ],
+   [
+    "narr",
+    "Do the maths. Good advice. Harry, thank you.",
+    "Fazer as contas. Bom conselho. Harry, obrigada."
+   ]
+  ],
+  "q": [
+   {
+    "q": "Ideia geral: sobre o que é a conversa?",
+    "o": [
+     "A experiência do Harry depois de vender o carro.",
+     "Como escolher um carro novo.",
+     "O transporte público de Londres."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Detalhe: qual foi o motivo inicial para vender o carro?",
+    "o": [
+     "O dinheiro que o carro custava.",
+     "Um acidente.",
+     "A poluição da cidade."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Detalhe: como o Harry resolveu as compras da semana?",
+    "o": [
+     "Pede o que é pesado pela internet e compra os frescos no caminho.",
+     "Pede tudo para um vizinho.",
+     "Vai de táxi ao supermercado."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Detalhe: o que ele faz para visitar os pais?",
+    "o": [
+     "Aluga um carro, mais ou menos uma vez por mês.",
+     "Pega o ônibus.",
+     "Os pais vêm até ele."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Opinião: o Harry recomenda viver sem carro para todos?",
+    "o": [
+     "Não: depende de onde a pessoa mora e da família.",
+     "Sim, para todos.",
+     "Só para quem tem filhos."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Inferência: o que ele quer dizer com “do the maths”?",
+    "o": [
+     "Calcular quanto o carro realmente custa.",
+     "Estudar matemática.",
+     "Contar os dias sem carro."
+    ],
+    "a": 0
+   }
+  ]
+ },
+ {
+  "id": "l22",
+  "t": "No Rádio: O Cérebro Bilíngue",
+  "lv": "B2",
+  "arc": 9,
+  "lines": [
+   [
+    "olivia",
+    "Good evening. On tonight's programme we're asking whether speaking two languages actually changes the brain. My guest is Mina, who works with researchers studying bilingual children. Mina, let's start with the big claim: are bilingual people smarter?",
+    "Boa noite. No programa de hoje vamos perguntar se falar duas línguas realmente muda o cérebro. Minha convidada é a Mina, que trabalha com pesquisadores que estudam crianças bilíngues. Mina, vamos começar pela grande afirmação: pessoas bilíngues são mais inteligentes?"
+   ],
+   [
+    "mina",
+    "That's the headline people love, but it's not quite what the research shows. Bilingual people aren't generally more intelligent. What some studies suggest is that they may be slightly better at certain tasks, such as switching between activities or ignoring distractions.",
+    "Essa é a manchete que as pessoas adoram, mas não é bem o que as pesquisas mostram. Pessoas bilíngues não são, em geral, mais inteligentes. O que alguns estudos sugerem é que elas podem ser um pouco melhores em certas tarefas, como alternar entre atividades ou ignorar distrações."
+   ],
+   [
+    "olivia",
+    "Why would that be?",
+    "Por que isso aconteceria?"
+   ],
+   [
+    "mina",
+    "The idea is that both languages are always active in the brain, even when you're only using one. So you're constantly choosing one and suppressing the other. That's a kind of daily exercise for the parts of the brain that control attention.",
+    "A ideia é que as duas línguas estão sempre ativas no cérebro, mesmo quando você usa só uma. Então você está o tempo todo escolhendo uma e segurando a outra. Isso é uma espécie de exercício diário para as partes do cérebro que controlam a atenção."
+   ],
+   [
+    "olivia",
+    "You said “some studies”. Is there disagreement?",
+    "Você disse “alguns estudos”. Há discordância?"
+   ],
+   [
+    "mina",
+    "Quite a lot, actually. Early studies found big advantages, but many larger studies since then have found small effects, or none at all. Part of the problem is that bilingual and monolingual groups often differ in other ways too, like income or education, which makes comparisons difficult.",
+    "Bastante, na verdade. Os primeiros estudos encontraram grandes vantagens, mas muitos estudos maiores feitos depois encontraram efeitos pequenos, ou nenhum. Parte do problema é que os grupos bilíngues e monolíngues costumam ser diferentes em outras coisas também, como renda ou escolaridade, o que dificulta as comparações."
+   ],
+   [
+    "olivia",
+    "What about the claim that bilingualism delays dementia?",
+    "E a afirmação de que o bilinguismo atrasa a demência?"
+   ],
+   [
+    "mina",
+    "That's one of the more interesting findings. Several studies have found that bilingual patients developed symptoms a few years later than monolingual patients. But again, not every study agrees, so I'd call it promising rather than proven.",
+    "Esse é um dos resultados mais interessantes. Vários estudos encontraram pacientes bilíngues que desenvolveram sintomas alguns anos mais tarde que os monolíngues. Mas, de novo, nem todo estudo concorda, então eu chamaria de promissor, não de comprovado."
+   ],
+   [
+    "olivia",
+    "So should parents worry if their child mixes the two languages?",
+    "Então os pais devem se preocupar se o filho mistura as duas línguas?"
+   ],
+   [
+    "mina",
+    "Not at all. Mixing languages is completely normal, and it's often a sign of skill, not confusion. Children quickly learn which language to use with which person. The one thing that really matters is how much they hear each language. If a language is only spoken at home for ten minutes a day, it will struggle to develop.",
+    "De jeito nenhum. Misturar as línguas é totalmente normal e muitas vezes é sinal de habilidade, não de confusão. As crianças aprendem rápido qual língua usar com cada pessoa. O que realmente importa é quanto elas ouvem cada língua. Se uma língua só é falada em casa dez minutos por dia, ela vai ter dificuldade para se desenvolver."
+   ],
+   [
+    "olivia",
+    "Which, I suppose, applies to adult learners too.",
+    "O que, imagino, vale para quem aprende adulto também."
+   ],
+   [
+    "mina",
+    "Exactly. Whatever your age, the amount of language you hear makes a huge difference.",
+    "Exatamente. Seja qual for a sua idade, a quantidade de língua que você ouve faz uma enorme diferença."
+   ]
+  ],
+  "q": [
+   {
+    "q": "Ideia geral: qual é o tema do programa?",
+    "o": [
+     "O que a ciência diz sobre o cérebro de quem fala duas línguas.",
+     "Como criar filhos.",
+     "Os melhores cursos de idiomas."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Opinião: segundo a Mina, bilíngues são mais inteligentes?",
+    "o": [
+     "Não em geral; talvez sejam um pouco melhores em algumas tarefas.",
+     "Sim, sempre.",
+     "Não, são menos inteligentes."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Detalhe: qual é a explicação para essa possível vantagem?",
+    "o": [
+     "O cérebro escolhe uma língua e segura a outra o tempo todo.",
+     "Bilíngues dormem mais.",
+     "Bilíngues estudam mais horas."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Detalhe: por que é difícil comparar os grupos?",
+    "o": [
+     "Eles também diferem em renda e escolaridade.",
+     "Não existem pessoas monolíngues.",
+     "Os testes são em outra língua."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Opinião: como a Mina descreve a relação com a demência?",
+    "o": [
+     "Promissora, mas não comprovada.",
+     "Totalmente comprovada.",
+     "Totalmente falsa."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Inferência: qual é a lição final para quem aprende inglês?",
+    "o": [
+     "Ouvir muito a língua faz grande diferença.",
+     "Só crianças aprendem línguas.",
+     "Misturar línguas atrapalha."
+    ],
+    "a": 0
+   }
+  ]
+ },
+ {
+  "id": "l23",
+  "t": "Reunião de Condomínio: O Jardim do Prédio",
+  "lv": "B2",
+  "arc": 9,
+  "lines": [
+   [
+    "olivia",
+    "Thanks for coming, everyone. As you know, we've got some money left in the building fund, and we need to decide what to do with the empty space behind the building. Jin, you've suggested a car park, haven't you?",
+    "Obrigada por virem, pessoal. Como vocês sabem, sobrou um dinheiro no fundo do prédio, e precisamos decidir o que fazer com o espaço vazio atrás do edifício. Jin, você sugeriu um estacionamento, não foi?"
+   ],
+   [
+    "jin",
+    "Yes. There are twenty flats and only eight parking spaces on the street. People drive round for twenty minutes every evening looking for somewhere to park. Six extra spaces would make a real difference.",
+    "Sim. São vinte apartamentos e só oito vagas na rua. Todo fim de tarde as pessoas rodam vinte minutos procurando onde estacionar. Seis vagas a mais fariam uma diferença real."
+   ],
+   [
+    "mina",
+    "I understand the problem, but I'd much prefer a garden. There are lots of children in the building and nowhere safe for them to play. A garden with a few benches would also give older residents somewhere to sit outside.",
+    "Entendo o problema, mas eu preferiria muito mais um jardim. Tem muitas crianças no prédio e nenhum lugar seguro para elas brincarem. Um jardim com alguns bancos também daria aos moradores mais velhos um lugar para sentar ao ar livre."
+   ],
+   [
+    "harry",
+    "Can I add something? I looked into the costs. A car park needs drainage and a proper surface, which comes to about twelve thousand pounds. A simple garden would be around five thousand, depending on the plants.",
+    "Posso acrescentar uma coisa? Pesquisei os custos. Um estacionamento precisa de drenagem e de um piso adequado, o que dá umas doze mil libras. Um jardim simples sairia por volta de cinco mil, dependendo das plantas."
+   ],
+   [
+    "jin",
+    "We have nine thousand in the fund, so the car park would mean asking everyone for more money.",
+    "Temos nove mil no fundo, então o estacionamento significaria pedir mais dinheiro a todos."
+   ],
+   [
+    "olivia",
+    "Which not everyone can afford at the moment. Is there a way to meet both needs?",
+    "O que nem todo mundo pode pagar agora. Há como atender às duas necessidades?"
+   ],
+   [
+    "mina",
+    "What if we did a garden on most of the space, and kept a small area for bikes and maybe two parking spaces for people with disabilities?",
+    "E se fizéssemos um jardim na maior parte do espaço e deixássemos uma área pequena para bicicletas e talvez duas vagas para pessoas com deficiência?"
+   ],
+   [
+    "jin",
+    "Honestly, that's better than nothing. Two of our neighbours do have mobility problems, and parking is hardest for them.",
+    "Sinceramente, é melhor que nada. Dois vizinhos nossos têm mesmo problemas de mobilidade, e estacionar é mais difícil para eles."
+   ],
+   [
+    "harry",
+    "And if people had a safe place to lock their bikes, some might use the car less. That would free up spaces on the street too.",
+    "E se as pessoas tivessem um lugar seguro para prender a bicicleta, algumas talvez usassem menos o carro. Isso também liberaria vagas na rua."
+   ],
+   [
+    "olivia",
+    "Right, so the proposal is: a garden with benches, a covered bike shelter and two accessible parking spaces, staying within the nine thousand we already have. Shall we vote on it next week, so that people who aren't here tonight can have their say?",
+    "Muito bem, então a proposta é: um jardim com bancos, um bicicletário coberto e duas vagas acessíveis, sem passar dos nove mil que já temos. Vamos votar na semana que vem, para que quem não veio hoje também possa opinar?"
+   ],
+   [
+    "jin",
+    "Agreed. I'll put a notice in the lift.",
+    "De acordo. Vou colocar um aviso no elevador."
+   ]
+  ],
+  "q": [
+   {
+    "q": "Ideia geral: o que a reunião precisa decidir?",
+    "o": [
+     "O que fazer com o espaço vazio atrás do prédio.",
+     "Quem vai ser o síndico.",
+     "Quanto cobrar de aluguel."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Detalhe: por que o Jin quer um estacionamento?",
+    "o": [
+     "Há poucas vagas na rua para vinte apartamentos.",
+     "Ele tem três carros.",
+     "O jardim seria caro demais."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Detalhe: quanto custaria o estacionamento, segundo o Harry?",
+    "o": [
+     "Cerca de doze mil libras.",
+     "Cerca de cinco mil.",
+     "Nove mil."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Inferência: por que o estacionamento é difícil de aprovar?",
+    "o": [
+     "Exigiria pedir mais dinheiro aos moradores.",
+     "É proibido por lei.",
+     "As crianças não gostam."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Detalhe: qual é a proposta final?",
+    "o": [
+     "Jardim, bicicletário e duas vagas acessíveis.",
+     "Só o estacionamento.",
+     "Vender o terreno."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Detalhe: por que a votação fica para a semana seguinte?",
+    "o": [
+     "Para quem não veio também poder opinar.",
+     "Porque falta dinheiro.",
+     "Porque o Harry vai viajar."
+    ],
+    "a": 0
+   }
+  ]
+ },
+ {
+  "id": "l24",
+  "t": "Entrevista: A Arqueóloga do Lixo",
+  "lv": "B2",
+  "arc": 9,
+  "nomes": {
+   "narr": "Entrevistador"
+  },
+  "lines": [
+   [
+    "narr",
+    "My guest today has an unusual job. Olivia is writing a book about what archaeologists learn from rubbish. Olivia, why rubbish?",
+    "Minha convidada de hoje tem um trabalho incomum. A Olivia está escrevendo um livro sobre o que os arqueólogos aprendem com o lixo. Olivia, por que lixo?"
+   ],
+   [
+    "olivia",
+    "Because rubbish is honest. People write diaries and letters to present themselves in a certain way, but what they throw away tells you how they actually lived. Archaeologists have learned an enormous amount from ancient rubbish heaps.",
+    "Porque o lixo é honesto. As pessoas escrevem diários e cartas para se apresentar de um certo jeito, mas o que elas jogam fora mostra como realmente viviam. Os arqueólogos aprenderam muitíssimo com antigos montes de lixo."
+   ],
+   [
+    "narr",
+    "Can you give us an example?",
+    "Pode dar um exemplo?"
+   ],
+   [
+    "olivia",
+    "In Roman Britain, soldiers' letters were found in a rubbish pit near a fort. They'd been thrown away, but the wet ground preserved them. One is an invitation to a birthday party, written by one officer's wife to another. It's nearly two thousand years old, and it reads like a message you could send today.",
+    "Na Britânia romana, encontraram cartas de soldados num buraco de lixo perto de um forte. Tinham sido jogadas fora, mas o solo úmido as preservou. Uma delas é um convite para uma festa de aniversário, escrito pela mulher de um oficial para outra. Tem quase dois mil anos e parece uma mensagem que você poderia mandar hoje."
+   ],
+   [
+    "narr",
+    "That's lovely. Are modern rubbish tips studied too?",
+    "Que lindo. Os lixões modernos também são estudados?"
+   ],
+   [
+    "olivia",
+    "Yes, and that's the part people find surprising. In the 1970s, researchers in the United States started digging into landfill sites. They expected food and paper to rot quickly, but they found newspapers from decades earlier that were still readable, and hot dogs that looked almost new.",
+    "Sim, e essa é a parte que surpreende as pessoas. Nos anos 1970, pesquisadores nos Estados Unidos começaram a escavar aterros. Eles esperavam que comida e papel apodrecessem rápido, mas encontraram jornais de décadas antes ainda legíveis e salsichas com aparência quase nova."
+   ],
+   [
+    "narr",
+    "Why didn't they decompose?",
+    "Por que não se decompuseram?"
+   ],
+   [
+    "olivia",
+    "Because landfills are tightly packed and have very little air or water, so the bacteria that normally break things down can't work properly. It overturned the idea that throwing away paper is harmless because it simply disappears.",
+    "Porque os aterros são muito compactados e têm pouquíssimo ar e água, então as bactérias que normalmente decompõem as coisas não conseguem trabalhar direito. Isso derrubou a ideia de que jogar papel fora é inofensivo porque ele simplesmente desaparece."
+   ],
+   [
+    "narr",
+    "And what will future archaeologists learn from our rubbish?",
+    "E o que os arqueólogos do futuro vão aprender com o nosso lixo?"
+   ],
+   [
+    "olivia",
+    "I think they'll be struck by how much of it was hardly used. Packaging that existed for a few minutes, clothes worn twice, phones that still worked. They'll probably conclude that we were a very wealthy society that didn't value objects very much.",
+    "Acho que eles vão se impressionar com quanto dele quase não foi usado. Embalagens que existiram por alguns minutos, roupas usadas duas vezes, celulares que ainda funcionavam. Provavelmente vão concluir que éramos uma sociedade muito rica que não dava muito valor aos objetos."
+   ],
+   [
+    "narr",
+    "A slightly uncomfortable thought to end on. Olivia, thank you.",
+    "Uma ideia um pouco desconfortável para terminar. Olivia, obrigado."
+   ]
+  ],
+  "q": [
+   {
+    "q": "Ideia geral: qual é o tema da entrevista?",
+    "o": [
+     "O que o lixo revela sobre como as pessoas vivem.",
+     "Como reciclar em casa.",
+     "A história do exército romano."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Opinião: por que a Olivia diz que o lixo é “honesto”?",
+    "o": [
+     "Mostra como as pessoas viviam de verdade, não como queriam parecer.",
+     "Porque ninguém mexe no lixo.",
+     "Porque é barato estudá-lo."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Detalhe: o que é a carta romana citada?",
+    "o": [
+     "Um convite para uma festa de aniversário.",
+     "Uma ordem de batalha.",
+     "Uma conta de restaurante."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Detalhe: o que os pesquisadores encontraram nos aterros americanos?",
+    "o": [
+     "Jornais antigos ainda legíveis e comida quase intacta.",
+     "Ouro e joias.",
+     "Nada além de plástico."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Detalhe: por que as coisas não se decompõem nos aterros?",
+    "o": [
+     "Há pouco ar e pouca água para as bactérias.",
+     "Por causa do frio.",
+     "Porque tudo é queimado."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Inferência: o que os arqueólogos do futuro devem concluir sobre nós?",
+    "o": [
+     "Que éramos ricos e dávamos pouco valor aos objetos.",
+     "Que éramos pobres.",
+     "Que reciclávamos tudo."
+    ],
+    "a": 0
+   }
+  ]
+ },
+ {
+  "id": "l25",
+  "t": "Palestra: A Economia da Atenção",
+  "lv": "C1",
+  "arc": 9,
+  "nomes": {
+   "narr": "Palestrante"
+  },
+  "lines": [
+   [
+    "narr",
+    "Let me start with a simple observation. Most of the apps on your phone are free. Yet the companies behind them are among the most valuable in the world. So, if you are not paying, how exactly are they making money?",
+    "Vou começar com uma observação simples. A maioria dos aplicativos do seu celular é gratuita. No entanto, as empresas por trás deles estão entre as mais valiosas do mundo. Então, se você não está pagando, como exatamente elas ganham dinheiro?"
+   ],
+   [
+    "narr",
+    "The answer, broadly speaking, is that they are selling your attention. Advertisers pay to reach you, and the longer you stay on a platform, the more adverts you can be shown. Your time, in other words, is the product.",
+    "A resposta, de modo geral, é que elas estão vendendo a sua atenção. Os anunciantes pagam para alcançar você, e quanto mais tempo você fica numa plataforma, mais anúncios podem lhe ser mostrados. O seu tempo, em outras palavras, é o produto."
+   ],
+   [
+    "narr",
+    "This creates a powerful incentive to design products that are hard to put down. Consider infinite scrolling: there is never a natural place to stop. Or notifications, which are often timed and worded to pull you back at moments when you might otherwise drift away. None of this is accidental. These features are tested on millions of users and refined according to what keeps people engaged.",
+    "Isso cria um forte incentivo para criar produtos difíceis de largar. Pense na rolagem infinita: nunca há um ponto natural para parar. Ou nas notificações, muitas vezes enviadas e redigidas para puxar você de volta nos momentos em que, de outro modo, você se afastaria. Nada disso é por acaso. Esses recursos são testados em milhões de usuários e aperfeiçoados conforme o que mantém as pessoas envolvidas."
+   ],
+   [
+    "narr",
+    "Now, I want to be careful here. It would be easy to conclude that technology is simply bad for us, and that is not my argument. The same tools help people keep in touch with distant family, learn new skills and organise their lives. The problem is not technology itself, but a business model in which the company's success depends on you spending more time than you would otherwise choose to.",
+    "Agora, quero ter cuidado aqui. Seria fácil concluir que a tecnologia simplesmente faz mal, e esse não é o meu argumento. As mesmas ferramentas ajudam as pessoas a manter contato com a família distante, aprender coisas novas e organizar a vida. O problema não é a tecnologia em si, mas um modelo de negócio em que o sucesso da empresa depende de você passar mais tempo do que escolheria passar."
+   ],
+   [
+    "narr",
+    "What can we do about it? On an individual level, small changes in the environment tend to work better than willpower. Turning off non-essential notifications, keeping the phone out of the bedroom, or moving distracting apps off the home screen all reduce the number of decisions you have to make. Willpower is limited; design is not.",
+    "O que podemos fazer? No plano individual, pequenas mudanças no ambiente costumam funcionar melhor do que a força de vontade. Desligar as notificações que não são essenciais, deixar o celular fora do quarto ou tirar os aplicativos que distraem da tela inicial reduzem o número de decisões que você precisa tomar. A força de vontade é limitada; o design não."
+   ],
+   [
+    "narr",
+    "At a broader level, some researchers argue that regulation should treat certain design features the way we treat other products that can cause harm, particularly for children. Others favour alternative business models, such as subscriptions, in which the company profits from being useful rather than from being addictive.",
+    "Num nível mais amplo, alguns pesquisadores defendem que a regulamentação trate certos recursos de design como tratamos outros produtos que podem causar dano, principalmente para crianças. Outros preferem modelos de negócio alternativos, como assinaturas, em que a empresa lucra por ser útil e não por viciar."
+   ],
+   [
+    "narr",
+    "I'll leave you with a question. The next time you pick up your phone, ask yourself: did I decide to do this, or was it decided for me? Thank you.",
+    "Deixo vocês com uma pergunta. Da próxima vez que pegarem o celular, perguntem a si mesmos: eu decidi fazer isso, ou decidiram por mim? Obrigado."
+   ]
+  ],
+  "q": [
+   {
+    "q": "Ideia geral: qual é o argumento central da palestra?",
+    "o": [
+     "Muitos aplicativos lucram com o tempo e a atenção dos usuários.",
+     "A tecnologia é sempre prejudicial.",
+     "Os aplicativos deveriam ser todos pagos."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Detalhe: como os aplicativos gratuitos ganham dinheiro, segundo o palestrante?",
+    "o": [
+     "Vendendo a atenção dos usuários aos anunciantes.",
+     "Vendendo celulares.",
+     "Com doações."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Detalhe: qual exemplo de design pensado para prender a atenção é citado?",
+    "o": [
+     "A rolagem infinita.",
+     "O modo escuro.",
+     "O tamanho da letra."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Opinião: o palestrante acha que a tecnologia em si é o problema?",
+    "o": [
+     "Não: o problema é o modelo de negócio.",
+     "Sim, completamente.",
+     "Ele não diz."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Inferência: o que significa “Willpower is limited; design is not”?",
+    "o": [
+     "Mudar o ambiente funciona melhor do que contar só com a força de vontade.",
+     "Os designers têm mais força de vontade.",
+     "Devemos desenhar mais."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Detalhe: qual alternativa de modelo de negócio é citada?",
+    "o": [
+     "Assinaturas, em que a empresa lucra por ser útil.",
+     "Mais anúncios.",
+     "Aplicativos do governo."
+    ],
+    "a": 0
+   }
+  ]
+ },
+ {
+  "id": "l26",
+  "t": "Debate: Pagar por Notas Boas",
+  "lv": "C1",
+  "arc": 9,
+  "nomes": {
+   "narr": "Mediador"
+  },
+  "lines": [
+   [
+    "narr",
+    "Our motion tonight: schools should pay students for good grades. Speaking in favour is Jin; speaking against is Olivia. Jin, the floor is yours.",
+    "Nossa proposta desta noite: as escolas deveriam pagar os alunos por notas boas. A favor, o Jin; contra, a Olivia. Jin, a palavra é sua."
+   ],
+   [
+    "jin",
+    "Thank you. Adults are paid to work, and we accept that money motivates effort. Why should students be any different? Several experiments have offered small cash rewards, and in some of them, particularly when students were paid for specific actions like reading books, the results were genuinely positive. For students from poorer families, the money can also make a real difference at home.",
+    "Obrigado. Adultos são pagos para trabalhar, e aceitamos que o dinheiro motiva o esforço. Por que com os alunos seria diferente? Vários experimentos ofereceram pequenas recompensas em dinheiro e, em alguns deles, principalmente quando os alunos eram pagos por ações específicas, como ler livros, os resultados foram realmente positivos. Para alunos de famílias mais pobres, o dinheiro também pode fazer uma diferença real em casa."
+   ],
+   [
+    "narr",
+    "Olivia?",
+    "Olivia?"
+   ],
+   [
+    "olivia",
+    "I'd like to pick up on a detail Jin mentioned, because it's crucial. The programmes that showed some benefit mostly rewarded inputs, things students could control, like reading or attending. Programmes that paid for outputs, meaning the grades themselves, largely failed. Many students simply didn't know how to get better grades, so offering money didn't help them.",
+    "Quero retomar um detalhe que o Jin mencionou, porque é crucial. Os programas que mostraram algum benefício recompensavam sobretudo esforços, coisas que os alunos controlavam, como ler ou frequentar as aulas. Os programas que pagavam pelos resultados, ou seja, pelas próprias notas, em grande parte fracassaram. Muitos alunos simplesmente não sabiam como tirar notas melhores, então oferecer dinheiro não os ajudava."
+   ],
+   [
+    "jin",
+    "That's a fair distinction, and I'd happily accept a scheme that rewards effort rather than results.",
+    "É uma distinção justa, e eu aceitaria de bom grado um programa que recompensasse o esforço em vez dos resultados."
+   ],
+   [
+    "olivia",
+    "Then we're already closer than the motion suggests. My deeper concern, though, is what happens when the payments stop. There's some evidence that external rewards can reduce interest in activities people previously enjoyed for their own sake. If a child learns to read because reading is paid, what happens the year the money runs out?",
+    "Então já estamos mais próximos do que a proposta sugere. Mas a minha preocupação mais profunda é o que acontece quando os pagamentos param. Há alguns indícios de que recompensas externas podem reduzir o interesse em atividades que as pessoas antes faziam por prazer. Se uma criança aprende a ler porque ler é pago, o que acontece no ano em que o dinheiro acaba?"
+   ],
+   [
+    "jin",
+    "I'd argue that for many of these students, reading wasn't something they enjoyed in the first place. If money gets them through the first difficult books, they may discover that they like it. A reward can be a bridge, not a replacement.",
+    "Eu diria que, para muitos desses alunos, ler nem era algo de que gostavam, para começo de conversa. Se o dinheiro os ajuda a passar pelos primeiros livros difíceis, eles podem descobrir que gostam. Uma recompensa pode ser uma ponte, não um substituto."
+   ],
+   [
+    "olivia",
+    "That's possible, and I wouldn't rule it out. But if we have limited money, I'd rather spend it on smaller classes or tutoring, which have stronger evidence behind them.",
+    "É possível, e eu não descartaria. Mas, se temos pouco dinheiro, eu preferiria gastá-lo com turmas menores ou aulas de reforço, que têm evidências mais fortes a seu favor."
+   ],
+   [
+    "narr",
+    "So we have agreement that rewarding effort beats rewarding grades, and disagreement about whether money is the best use of limited funds. Thank you both.",
+    "Então temos concordância de que recompensar o esforço é melhor que recompensar as notas, e discordância sobre se o dinheiro é o melhor uso de recursos limitados. Obrigado aos dois."
+   ]
+  ],
+  "q": [
+   {
+    "q": "Ideia geral: qual é a proposta debatida?",
+    "o": [
+     "Se as escolas deveriam pagar os alunos por notas boas.",
+     "Se os professores deveriam ganhar mais.",
+     "Se as provas deveriam acabar."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Detalhe: qual é o principal argumento do Jin no começo?",
+    "o": [
+     "O dinheiro motiva o esforço, como acontece com os adultos.",
+     "As notas não importam.",
+     "As escolas têm dinheiro sobrando."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Detalhe: que tipo de programa funcionou melhor, segundo a Olivia?",
+    "o": [
+     "Os que recompensavam ações que o aluno controla, como ler.",
+     "Os que pagavam pelas notas.",
+     "Os que não pagavam nada."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Opinião: qual é a preocupação mais profunda da Olivia?",
+    "o": [
+     "O interesse pode cair quando o pagamento parar.",
+     "Os alunos vão gastar mal o dinheiro.",
+     "Os pais vão reclamar."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Inferência: o que o Jin quer dizer com “a bridge, not a replacement”?",
+    "o": [
+     "A recompensa ajuda no começo até o aluno gostar da atividade.",
+     "O dinheiro deve pagar uma ponte.",
+     "Os alunos devem trocar de escola."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Detalhe: em que os dois concordam no fim?",
+    "o": [
+     "Recompensar o esforço é melhor que recompensar as notas.",
+     "Pagar por notas é a melhor ideia.",
+     "Turmas menores não funcionam."
+    ],
+    "a": 0
+   }
+  ]
+ },
+ {
+  "id": "l27",
+  "t": "Documentário: Os Mapas que Mentem",
+  "lv": "C1",
+  "arc": 9,
+  "lines": [
+   [
+    "narr",
+    "Look at a typical world map, the kind that hangs in classrooms. Greenland appears roughly the same size as Africa. In reality, Africa is about fourteen times larger. How did a mistake this large become so familiar?",
+    "Olhe para um mapa-múndi típico, desses que ficam pendurados nas salas de aula. A Groenlândia aparece mais ou menos do tamanho da África. Na realidade, a África é cerca de catorze vezes maior. Como um erro tão grande ficou tão familiar?"
+   ],
+   [
+    "harry",
+    "The short answer is that it isn't really a mistake. It's a trade-off. You simply cannot flatten a sphere onto a sheet of paper without distorting something. Every map chooses what to get wrong.",
+    "A resposta curta é que não é bem um erro. É uma escolha entre perdas. Simplesmente não dá para achatar uma esfera numa folha de papel sem distorcer alguma coisa. Todo mapa escolhe no que errar."
+   ],
+   [
+    "narr",
+    "The familiar map is based on a projection designed by Gerardus Mercator in 1569, for a very specific purpose: navigation at sea.",
+    "O mapa conhecido se baseia numa projeção criada por Gerardus Mercator em 1569, com um objetivo muito específico: a navegação no mar."
+   ],
+   [
+    "harry",
+    "On Mercator's map, a straight line represents a constant compass direction. For a sailor, that was invaluable. You could draw a line from one port to another and follow a single bearing. The price was that areas get dramatically stretched as you move away from the equator. That's why Greenland, Canada and Russia look enormous.",
+    "No mapa de Mercator, uma linha reta representa uma direção constante da bússola. Para um navegador, isso era valiosíssimo. Dava para traçar uma linha de um porto a outro e seguir um único rumo. O preço era que as áreas ficam muito esticadas à medida que você se afasta da linha do equador. É por isso que a Groenlândia, o Canadá e a Rússia parecem enormes."
+   ],
+   [
+    "narr",
+    "The problem arose when a map designed for sailors became the default image of the world for everyone else, including generations of schoolchildren.",
+    "O problema surgiu quando um mapa feito para navegadores virou a imagem padrão do mundo para todo mundo, inclusive para gerações de crianças nas escolas."
+   ],
+   [
+    "olivia",
+    "And that matters more than it might seem. When I was researching an article on this, I spoke to teachers who said that students were genuinely shocked to learn how big Africa and South America really are. If a continent looks small on every map you've ever seen, it's hard not to think of it as less important.",
+    "E isso importa mais do que parece. Quando eu pesquisava uma matéria sobre isso, conversei com professores que disseram que os alunos ficavam realmente chocados ao saber o tamanho real da África e da América do Sul. Se um continente parece pequeno em todo mapa que você já viu, é difícil não pensar nele como menos importante."
+   ],
+   [
+    "narr",
+    "Alternative projections exist. Some preserve the relative size of countries, at the cost of distorting their shapes. Others compromise, getting both size and shape slightly wrong, but neither badly.",
+    "Existem projeções alternativas. Algumas preservam o tamanho relativo dos países, à custa de distorcer o formato deles. Outras ficam no meio-termo, errando um pouco no tamanho e no formato, mas nada de forma grave."
+   ],
+   [
+    "harry",
+    "My advice is simple: there's no perfect map, so use the right one for the job. For navigation, Mercator is still excellent. For understanding how the world's land is actually distributed, choose an equal-area map. And if you really want the truth, look at a globe.",
+    "Meu conselho é simples: não existe mapa perfeito, então use o certo para cada objetivo. Para navegar, o de Mercator ainda é excelente. Para entender como as terras do mundo estão realmente distribuídas, escolha um mapa de áreas iguais. E se quiser mesmo a verdade, olhe para um globo."
+   ],
+   [
+    "narr",
+    "Maps, it turns out, are not neutral pictures of the world. They are arguments about what matters.",
+    "Os mapas, no fim das contas, não são retratos neutros do mundo. São argumentos sobre o que importa."
+   ]
+  ],
+  "q": [
+   {
+    "q": "Ideia geral: qual é o tema do documentário?",
+    "o": [
+     "Por que os mapas distorcem o mundo e o que isso causa.",
+     "A vida dos navegadores.",
+     "Como desenhar um mapa."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Detalhe: qual é o tamanho real da África comparada à Groenlândia?",
+    "o": [
+     "Cerca de catorze vezes maior.",
+     "Do mesmo tamanho.",
+     "Duas vezes maior."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Detalhe: para que o mapa de Mercator foi criado?",
+    "o": [
+     "Para a navegação no mar.",
+     "Para as escolas.",
+     "Para medir países."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Inferência: por que o Harry diz que “não é bem um erro”?",
+    "o": [
+     "Todo mapa precisa distorcer algo; é uma escolha entre perdas.",
+     "Porque Mercator não errava.",
+     "Porque a Groenlândia é mesmo enorme."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Opinião: por que a Olivia acha que isso importa?",
+    "o": [
+     "Um continente que parece pequeno pode parecer menos importante.",
+     "Porque os mapas são caros.",
+     "Porque os alunos não gostam de geografia."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Detalhe: qual é o conselho final do Harry?",
+    "o": [
+     "Usar o mapa certo para cada objetivo, ou um globo.",
+     "Nunca usar o mapa de Mercator.",
+     "Desenhar o próprio mapa."
+    ],
+    "a": 0
+   }
+  ]
+ },
+ {
+  "id": "l28",
+  "t": "Conversa: Mudar de Carreira aos 40",
+  "lv": "C1",
+  "arc": 9,
+  "lines": [
+   [
+    "mina",
+    "Can I ask your advice about something? I'm seriously thinking about leaving design and retraining as a nurse.",
+    "Posso pedir um conselho? Estou pensando seriamente em largar o design e me formar de novo, como enfermeira."
+   ],
+   [
+    "olivia",
+    "Wow, that's quite a leap. What's brought this on?",
+    "Nossa, que salto. O que te levou a isso?"
+   ],
+   [
+    "mina",
+    "It's been building for a while. I'm good at my job, but I spend my days making adverts for products nobody needs. When my dad was in hospital last year, I watched the nurses and thought: that's work that actually matters.",
+    "Isso vem crescendo há algum tempo. Sou boa no que faço, mas passo os dias fazendo anúncios de produtos de que ninguém precisa. Quando meu pai ficou internado no ano passado, eu olhava as enfermeiras e pensava: isso é um trabalho que realmente importa."
+   ],
+   [
+    "olivia",
+    "I can see why that would stay with you. Have you spoken to any nurses about what the job is really like, though? I imagine it's very different from what you see as a visitor.",
+    "Entendo por que isso ficaria na sua cabeça. Mas você já conversou com enfermeiras sobre como o trabalho é de verdade? Imagino que seja bem diferente do que se vê como visita."
+   ],
+   [
+    "mina",
+    "That's exactly what I've been doing. I've spoken to four of them. They were brutally honest: the shifts are exhausting, the pay isn't great, and the emotional side can be very hard. But every single one said they wouldn't do anything else.",
+    "É exatamente o que tenho feito. Conversei com quatro. Elas foram brutalmente sinceras: os plantões são exaustivos, o salário não é ótimo e o lado emocional pode ser muito difícil. Mas todas disseram que não fariam outra coisa."
+   ],
+   [
+    "olivia",
+    "And the practical side? Retraining takes years, doesn't it?",
+    "E a parte prática? Formar-se de novo leva anos, não leva?"
+   ],
+   [
+    "mina",
+    "Three years full-time. I've worked out that if I keep doing some freelance design at weekends, and we cut back on a few things, we could just about manage. It wouldn't be comfortable, but it's doable.",
+    "Três anos em tempo integral. Calculei que, se eu continuar fazendo uns trabalhos de design nos fins de semana e a gente cortar algumas coisas, dá para se virar. Não seria confortável, mas é possível."
+   ],
+   [
+    "olivia",
+    "Then it sounds like you've thought it through far more carefully than most people do. Is anything still holding you back?",
+    "Então parece que você pensou nisso com muito mais cuidado do que a maioria das pessoas. Ainda tem alguma coisa te segurando?"
+   ],
+   [
+    "mina",
+    "Mostly fear, if I'm honest. I'll be forty when I start, surrounded by twenty-year-olds. What if I'm not good enough, or I hate it, and I've thrown away a career for nothing?",
+    "Principalmente medo, para ser sincera. Vou ter quarenta anos quando começar, cercada de gente de vinte. E se eu não for boa o suficiente, ou detestar, e tiver jogado fora uma carreira por nada?"
+   ],
+   [
+    "olivia",
+    "Can I offer a different way of looking at it? You wouldn't be throwing anything away. Your design skills don't disappear. If nursing really didn't work out, you could go back, perhaps with a better sense of what you want. Whereas if you never try, you might spend the next twenty years wondering.",
+    "Posso sugerir outro jeito de ver? Você não estaria jogando nada fora. Suas habilidades de design não desaparecem. Se a enfermagem realmente não desse certo, você poderia voltar, talvez sabendo melhor o que quer. Já se você nunca tentar, pode passar os próximos vinte anos se perguntando."
+   ],
+   [
+    "mina",
+    "That's a much kinder way to frame it. Maybe I could start with a short course or some volunteering at the hospital first, just to test it.",
+    "Esse é um jeito bem mais gentil de ver a situação. Talvez eu pudesse começar com um curso curto ou um trabalho voluntário no hospital, só para testar."
+   ],
+   [
+    "olivia",
+    "That sounds like a very sensible first step.",
+    "Parece um primeiro passo muito sensato."
+   ]
+  ],
+  "q": [
+   {
+    "q": "Ideia geral: sobre o que é a conversa?",
+    "o": [
+     "A Mina pensando em mudar de carreira para a enfermagem.",
+     "Um problema de saúde da Mina.",
+     "Uma briga entre amigas."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Detalhe: o que fez a Mina pensar em virar enfermeira?",
+    "o": [
+     "Ver o trabalho das enfermeiras quando o pai ficou internado.",
+     "Um salário melhor.",
+     "Ter perdido o emprego."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Detalhe: o que as enfermeiras disseram à Mina?",
+    "o": [
+     "O trabalho é duro, mas nenhuma faria outra coisa.",
+     "Que ela não deveria mudar.",
+     "Que o salário é ótimo."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Detalhe: como a Mina pretende se manter durante o curso?",
+    "o": [
+     "Fazendo trabalhos de design nos fins de semana e cortando gastos.",
+     "Com uma bolsa integral.",
+     "Com a ajuda do pai."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Opinião: como a Olivia muda o jeito de ver o medo da Mina?",
+    "o": [
+     "Diz que ela não perde as habilidades e pode voltar se não der certo.",
+     "Diz que ela é velha demais.",
+     "Diz que design é mais importante."
+    ],
+    "a": 0
+   },
+   {
+    "q": "Inferência: qual é o “primeiro passo sensato” no fim?",
+    "o": [
+     "Testar com um curso curto ou trabalho voluntário.",
+     "Pedir demissão no dia seguinte.",
+     "Desistir da ideia."
+    ],
+    "a": 0
+   }
+  ]
  }
 ]
