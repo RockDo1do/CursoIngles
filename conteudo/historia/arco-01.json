@@ -1,7 +1,11 @@
 {
  "nome": "Arco 1 · O Despertar",
  "descricao": "Básico · A1 · apresentar-se, to be, números, onde fica",
- "agora_voce_consegue": ["Apresentar-se e falar de onde vem", "Usar o verbo to be, números e possessivos", "Dizer onde as coisas estão"],
+ "agora_voce_consegue": [
+  "Apresentar-se e falar de onde vem",
+  "Usar o verbo to be, números e possessivos",
+  "Dizer onde as coisas estão"
+ ],
  "capitulos": [
   {
    "t": "O Despertar",
@@ -12,59 +16,186 @@
    "p": [
     {
      "bg": "room",
-     "m": {"rafa": "sad"},
+     "m": {
+      "rafa": "sad"
+     },
      "l": [
-      ["rafa", null, "Livro de gramática de novo... minha cabeça já foi embora na página 2."]
-     ]
-    },
-    {"sys": "Você foi escolhido(a).", "text": "Missão principal: subir a Torre do Inglês. Cada andar dura poucos minutos. Toque nos balões para ver a tradução. Toque no alto-falante para ouvir."},
-    {
-     "bg": "street",
-     "m": {"mina": "happy", "rafa": "shock"},
-     "l": [
-      ["mina", "Hi! I'm Mina. I'm your guide.", "Oi! Eu sou a Mina. Eu sou sua guia."],
-      ["rafa", "Uh... hi?", "Hã... oi?"]
+      [
+       "rafa",
+       null,
+       "Livro de gramática de novo... minha cabeça já foi embora na página 2."
+      ]
      ]
     },
     {
+     "sys": "Você foi escolhido(a).",
+     "text": "Missão principal: subir a Torre do Inglês. Cada andar dura poucos minutos. Toque nos balões para ver a tradução. Toque no alto-falante para ouvir."
+    },
+    {
      "bg": "street",
-     "m": {"mina": "normal"},
+     "m": {
+      "mina": "happy",
+      "rafa": "shock"
+     },
      "l": [
-      ["mina", "What's your name?", "Qual é o seu nome?"],
-      ["rafa", "My name is Rafa.", "Meu nome é Rafa."]
+      [
+       "mina",
+       "Hi! I'm Mina. I'm your guide.",
+       "Oi! Eu sou a Mina. Eu sou sua guia."
+      ],
+      [
+       "rafa",
+       "Uh... hi?",
+       "Hã... oi?"
+      ]
      ]
     },
     {
      "bg": "street",
-     "m": {"mina": "happy", "rafa": "happy"},
+     "m": {
+      "mina": "normal"
+     },
      "l": [
-      ["mina", "Nice to meet you, Rafa!", "Prazer em te conhecer, Rafa!"],
-      ["rafa", "Nice to meet you too.", "Prazer também."],
-      ["mina", "Where are you from?", "De onde você é?"],
-      ["rafa", "I'm from Brazil.", "Eu sou do Brasil."]
+      [
+       "mina",
+       "What's your name?",
+       "Qual é o seu nome?"
+      ],
+      [
+       "rafa",
+       "My name is Rafa.",
+       "Meu nome é Rafa."
+      ]
+     ]
+    },
+    {
+     "bg": "street",
+     "m": {
+      "mina": "happy",
+      "rafa": "happy"
+     },
+     "l": [
+      [
+       "mina",
+       "Nice to meet you, Rafa!",
+       "Prazer em te conhecer, Rafa!"
+      ],
+      [
+       "rafa",
+       "Nice to meet you too.",
+       "Prazer também."
+      ],
+      [
+       "mina",
+       "Where are you from?",
+       "De onde você é?"
+      ],
+      [
+       "rafa",
+       "I'm from Brazil.",
+       "Eu sou do Brasil."
+      ]
      ]
     },
     {
      "sys": "Habilidades aprendidas",
      "r": [
-      ["Hi / Hello", "Oi / Olá"],
-      ["I'm Mina. (I am)", "Eu sou a Mina."],
-      ["What's your name?", "Qual é o seu nome?"],
-      ["My name is Rafa.", "Meu nome é Rafa."],
-      ["Nice to meet you.", "Prazer em te conhecer."],
-      ["Where are you from?", "De onde você é?"],
-      ["I'm from Brazil.", "Eu sou do Brasil."],
-      ["How are you? / I'm fine, thanks.", "Como vai? / Estou bem, obrigado."],
-      ["Goodbye! / See you!", "Tchau! / Até mais!"]
+      [
+       "Hi / Hello",
+       "Oi / Olá"
+      ],
+      [
+       "I'm Mina. (I am)",
+       "Eu sou a Mina."
+      ],
+      [
+       "What's your name?",
+       "Qual é o seu nome?"
+      ],
+      [
+       "My name is Rafa.",
+       "Meu nome é Rafa."
+      ],
+      [
+       "Nice to meet you.",
+       "Prazer em te conhecer."
+      ],
+      [
+       "Where are you from?",
+       "De onde você é?"
+      ],
+      [
+       "I'm from Brazil.",
+       "Eu sou do Brasil."
+      ],
+      [
+       "How are you? / I'm fine, thanks.",
+       "Como vai? / Estou bem, obrigado."
+      ],
+      [
+       "Goodbye! / See you!",
+       "Tchau! / Até mais!"
+      ]
      ],
      "tip": "\"I'm\" é a forma curta de \"I am\". Na fala, quase todo mundo usa a forma curta."
     },
     {
      "bg": "gate",
-     "m": {"mina": "det", "rafa": "det"},
+     "m": {
+      "mina": "det",
+      "rafa": "det"
+     },
      "l": [
-      ["mina", "Your first quest starts now. Ready?", "Sua primeira missão começa agora. Pront{o|a}?"],
-      ["rafa", "Ready!", "Pront{o|a}!"]
+      [
+       "mina",
+       "Your first quest starts now. Ready?",
+       "Sua primeira missão começa agora. Pront{o|a}?"
+      ],
+      [
+       "rafa",
+       "Ready!",
+       "Pront{o|a}!"
+      ]
+     ]
+    },
+    {
+     "bg": "street",
+     "m": {
+      "mina": "happy",
+      "rafa": "normal"
+     },
+     "c": "Cena extra",
+     "l": [
+      [
+       "mina",
+       "Good evening! How are you?",
+       "Boa noite! Como você está?"
+      ],
+      [
+       "rafa",
+       "I'm fine, thanks. And you?",
+       "Estou bem, obrigad{o|a}. E você?"
+      ],
+      [
+       "mina",
+       "I'm great. This is my friend, Jin.",
+       "Estou ótima. Este é o meu amigo, Jin."
+      ],
+      [
+       "rafa",
+       "Nice to meet you, Jin.",
+       "Prazer em te conhecer, Jin."
+      ],
+      [
+       "mina",
+       "Jin is from Chicago. Where are you from?",
+       "O Jin é de Chicago. De onde você é?"
+      ],
+      [
+       "rafa",
+       "I'm from Brazil. Goodbye for now!",
+       "Sou do Brasil. Tchau por enquanto!"
+      ]
      ]
     }
    ]
@@ -79,50 +210,152 @@
    "p": [
     {
      "bg": "dungeon",
-     "m": {"rafa": "shock"},
+     "m": {
+      "rafa": "shock"
+     },
      "c": "Andar 1 da Torre. Um monstro bloqueia o caminho.",
      "l": [
-      ["monster", "You are weak!", "Você é frac{o|a}!"],
-      ["rafa", "I am not weak!", "Eu não sou frac{o|a}!"]
+      [
+       "monster",
+       "You are weak!",
+       "Você é frac{o|a}!"
+      ],
+      [
+       "rafa",
+       "I am not weak!",
+       "Eu não sou frac{o|a}!"
+      ]
      ]
     },
     {
      "bg": "dungeon",
-     "m": {"mina": "det"},
+     "m": {
+      "mina": "det"
+     },
      "l": [
-      ["mina", "Use the legendary verb: TO BE.", "Use o verbo lendário: TO BE (ser / estar)."]
+      [
+       "mina",
+       "Use the legendary verb: TO BE.",
+       "Use o verbo lendário: TO BE (ser / estar)."
+      ]
      ]
     },
     {
      "sys": "Verbo lendário: TO BE",
      "r": [
-      ["I am (I'm)", "Eu sou / estou"],
-      ["You are (you're)", "Você é / está"],
-      ["He / She / It is", "Ele / Ela / Isso é, está"],
-      ["We are", "Nós somos / estamos"],
-      ["They are", "Eles / Elas são, estão"],
-      ["I'm not / isn't / aren't", "Negativo: põe NOT depois"],
-      ["Are you ready? / Is she here?", "Pergunta: o verbo vai para a frente"]
+      [
+       "I am (I'm)",
+       "Eu sou / estou"
+      ],
+      [
+       "You are (you're)",
+       "Você é / está"
+      ],
+      [
+       "He / She / It is",
+       "Ele / Ela / Isso é, está"
+      ],
+      [
+       "We are",
+       "Nós somos / estamos"
+      ],
+      [
+       "They are",
+       "Eles / Elas são, estão"
+      ],
+      [
+       "I'm not / isn't / aren't",
+       "Negativo: põe NOT depois"
+      ],
+      [
+       "Are you ready? / Is she here?",
+       "Pergunta: o verbo vai para a frente"
+      ]
      ],
      "tip": "Em português temos \"ser\" e \"estar\". Em inglês, os dois são o mesmo verbo: TO BE."
     },
     {
      "bg": "dungeon",
-     "m": {"mina": "normal", "rafa": "det"},
+     "m": {
+      "mina": "normal",
+      "rafa": "det"
+     },
      "l": [
-      ["mina", "Is he dangerous?", "Ele é perigoso?"],
-      ["rafa", "No, he isn't. He is just loud!", "Não, não é. Ele só é barulhento!"]
+      [
+       "mina",
+       "Is he dangerous?",
+       "Ele é perigoso?"
+      ],
+      [
+       "rafa",
+       "No, he isn't. He is just loud!",
+       "Não, não é. Ele só é barulhento!"
+      ]
      ]
     },
     {
      "bg": "action",
-     "m": {"rafa": "det"},
+     "m": {
+      "rafa": "det"
+     },
      "l": [
-      ["monster", "We are many! They are everywhere!", "Nós somos muitos! Eles estão em todo lugar!"],
-      ["rafa", "And I am ready.", "E eu estou pront{o|a}."]
+      [
+       "monster",
+       "We are many! They are everywhere!",
+       "Nós somos muitos! Eles estão em todo lugar!"
+      ],
+      [
+       "rafa",
+       "And I am ready.",
+       "E eu estou pront{o|a}."
+      ]
      ]
     },
-    {"bg": "action", "c": "CRACK! O primeiro monstro se desfaz. +1 andar.", "l": []}
+    {
+     "bg": "action",
+     "c": "CRACK! O primeiro monstro se desfaz. +1 andar.",
+     "l": []
+    },
+    {
+     "bg": "street",
+     "m": {
+      "mina": "normal",
+      "rafa": "happy"
+     },
+     "c": "Cena extra",
+     "l": [
+      [
+       "mina",
+       "Are you tired?",
+       "Você está cansad{o|a}?"
+      ],
+      [
+       "rafa",
+       "No, I'm not. I'm happy!",
+       "Não, não estou. Estou feliz!"
+      ],
+      [
+       "mina",
+       "Is your bag heavy?",
+       "Sua bolsa está pesada?"
+      ],
+      [
+       "rafa",
+       "Yes, it is. My books are in it.",
+       "Sim, está. Meus livros estão nela."
+      ],
+      [
+       "mina",
+       "We are a good team.",
+       "Nós somos uma boa equipe."
+      ],
+      [
+       "rafa",
+       "Yes, we are!",
+       "Sim, somos!"
+      ]
+     ]
+    }
    ]
   },
   {
@@ -132,52 +365,166 @@
    "bg": "street",
    "hero": "rafa",
    "p": [
-    {"sys": "Nova janela: STATUS", "text": "Nível 1 · HP 100 · Força 7. Os números da Torre estão em inglês. Hora de aprender a ler."},
+    {
+     "sys": "Nova janela: STATUS",
+     "text": "Nível 1 · HP 100 · Força 7. Os números da Torre estão em inglês. Hora de aprender a ler."
+    },
     {
      "bg": "street",
-     "m": {"mina": "happy", "rafa": "normal"},
+     "m": {
+      "mina": "happy",
+      "rafa": "normal"
+     },
      "l": [
-      ["rafa", "How old are you, Mina?", "Quantos anos você tem, Mina?"],
-      ["mina", "I'm twenty-two.", "Tenho vinte e dois."]
+      [
+       "rafa",
+       "How old are you, Mina?",
+       "Quantos anos você tem, Mina?"
+      ],
+      [
+       "mina",
+       "I'm twenty-two.",
+       "Tenho vinte e dois."
+      ]
      ]
     },
     {
      "bg": "street",
-     "m": {"mina": "happy", "rafa": "shock"},
+     "m": {
+      "mina": "happy",
+      "rafa": "shock"
+     },
      "l": [
-      ["mina", "My phone number is nine-one-two, three-four-five, six-seven-eight.", "Meu número de telefone é 912 345 678."],
-      ["rafa", "Wait! Slowly, please.", "Espera! Devagar, por favor."]
+      [
+       "mina",
+       "My phone number is nine-one-two, three-four-five, six-seven-eight.",
+       "Meu número de telefone é 912 345 678."
+      ],
+      [
+       "rafa",
+       "Wait! Slowly, please.",
+       "Espera! Devagar, por favor."
+      ]
      ]
     },
     {
      "sys": "Números",
      "r": [
-      ["one, two, three, four, five", "1 a 5"],
-      ["six, seven, eight, nine, ten", "6 a 10"],
-      ["eleven, twelve", "11, 12"],
-      ["thirteen, fourteen ... nineteen", "13 a 19 (terminam em -teen)"],
-      ["twenty, thirty, forty, fifty", "20, 30, 40, 50 (terminam em -ty)"],
-      ["twenty-two, ninety-nine", "21 a 99: com hífen"],
-      ["one hundred, one thousand", "100, 1.000"],
-      ["How old are you? / I'm 22.", "Idade usa TO BE, não \"have\""],
-      ["How much is it? / It's ten dollars.", "Quanto custa? / Custa dez dólares."]
+      [
+       "one, two, three, four, five",
+       "1 a 5"
+      ],
+      [
+       "six, seven, eight, nine, ten",
+       "6 a 10"
+      ],
+      [
+       "eleven, twelve",
+       "11, 12"
+      ],
+      [
+       "thirteen, fourteen ... nineteen",
+       "13 a 19 (terminam em -teen)"
+      ],
+      [
+       "twenty, thirty, forty, fifty",
+       "20, 30, 40, 50 (terminam em -ty)"
+      ],
+      [
+       "twenty-two, ninety-nine",
+       "21 a 99: com hífen"
+      ],
+      [
+       "one hundred, one thousand",
+       "100, 1.000"
+      ],
+      [
+       "How old are you? / I'm 22.",
+       "Idade usa TO BE, não \"have\""
+      ],
+      [
+       "How much is it? / It's ten dollars.",
+       "Quanto custa? / Custa dez dólares."
+      ]
      ],
      "tip": "Thirteen (13) e thirty (30) soam parecidos. Em -teen, a força vai no fim: thir-TEEN. Em -ty, vai no começo: THIR-ty."
     },
     {
      "bg": "street",
-     "m": {"rafa": "normal", "mina": "normal"},
+     "m": {
+      "rafa": "normal",
+      "mina": "normal"
+     },
      "l": [
-      ["rafa", "How much is this potion?", "Quanto custa esta poção?"],
-      ["mina", "It's fifteen coins.", "Custa quinze moedas."]
+      [
+       "rafa",
+       "How much is this potion?",
+       "Quanto custa esta poção?"
+      ],
+      [
+       "mina",
+       "It's fifteen coins.",
+       "Custa quinze moedas."
+      ]
      ]
     },
     {
      "bg": "street",
-     "m": {"rafa": "shock", "mina": "happy"},
+     "m": {
+      "rafa": "shock",
+      "mina": "happy"
+     },
      "l": [
-      ["rafa", "Fifty?!", "Cinquenta?!"],
-      ["mina", "No! Fif-TEEN. One, five.", "Não! Quinze. Um, cinco."]
+      [
+       "rafa",
+       "Fifty?!",
+       "Cinquenta?!"
+      ],
+      [
+       "mina",
+       "No! Fif-TEEN. One, five.",
+       "Não! Quinze. Um, cinco."
+      ]
+     ]
+    },
+    {
+     "bg": "street",
+     "m": {
+      "mina": "normal",
+      "rafa": "normal"
+     },
+     "c": "Cena extra",
+     "l": [
+      [
+       "mina",
+       "How much is this map?",
+       "Quanto custa este mapa?"
+      ],
+      [
+       "rafa",
+       "It's twelve pounds.",
+       "Custa doze libras."
+      ],
+      [
+       "mina",
+       "And the water?",
+       "E a água?"
+      ],
+      [
+       "rafa",
+       "Two pounds fifty.",
+       "Duas libras e cinquenta."
+      ],
+      [
+       "mina",
+       "How old is this shop?",
+       "Quantos anos tem esta loja?"
+      ],
+      [
+       "rafa",
+       "Ninety years old! It's very old.",
+       "Noventa anos! É muito antiga."
+      ]
      ]
     }
    ]
@@ -189,49 +536,150 @@
    "bg": "room",
    "hero": "mina",
    "p": [
-    {"sys": "Inventário aberto", "text": "Antes de subir mais, verifique seus itens."},
+    {
+     "sys": "Inventário aberto",
+     "text": "Antes de subir mais, verifique seus itens."
+    },
     {
      "bg": "room",
-     "m": {"mina": "normal", "rafa": "happy"},
+     "m": {
+      "mina": "normal",
+      "rafa": "happy"
+     },
      "l": [
-      ["mina", "What do you have?", "O que você tem?"],
-      ["rafa", "I have a sword and an apple.", "Eu tenho uma espada e uma maçã."]
+      [
+       "mina",
+       "What do you have?",
+       "O que você tem?"
+      ],
+      [
+       "rafa",
+       "I have a sword and an apple.",
+       "Eu tenho uma espada e uma maçã."
+      ]
      ]
     },
     {
      "bg": "room",
-     "m": {"mina": "happy"},
+     "m": {
+      "mina": "happy"
+     },
      "l": [
-      ["mina", "\"An apple.\" Good! Vowel sound, so AN.", "\"An apple\". Boa! Som de vogal, então AN."]
+      [
+       "mina",
+       "\"An apple.\" Good! Vowel sound, so AN.",
+       "\"An apple\". Boa! Som de vogal, então AN."
+      ]
      ]
     },
     {
      "bg": "room",
-     "m": {"rafa": "shock", "mina": "happy"},
+     "m": {
+      "rafa": "shock",
+      "mina": "happy"
+     },
      "l": [
-      ["rafa", "She has two potions!", "Ela tem duas poções!"],
-      ["mina", "Yes. This potion is red. That potion is blue.", "Sim. Esta poção é vermelha. Aquela poção é azul."]
+      [
+       "rafa",
+       "She has two potions!",
+       "Ela tem duas poções!"
+      ],
+      [
+       "mina",
+       "Yes. This potion is red. That potion is blue.",
+       "Sim. Esta poção é vermelha. Aquela poção é azul."
+      ]
      ]
     },
     {
      "sys": "Regras do inventário",
      "r": [
-      ["I / you / we / they HAVE", "Eu tenho / você tem / nós temos / eles têm"],
-      ["He / she / it HAS", "Ele / ela tem (muda!)"],
-      ["a sword, a book", "A + som de consoante"],
-      ["an apple, an hour", "AN + som de vogal (o h de hour é mudo)"],
-      ["potion → potions, box → boxes", "Plural: +s ou +es"],
-      ["man → men, child → children", "Plural irregular"],
-      ["this / these", "este(s): perto"],
-      ["that / those", "aquele(s): longe"]
+      [
+       "I / you / we / they HAVE",
+       "Eu tenho / você tem / nós temos / eles têm"
+      ],
+      [
+       "He / she / it HAS",
+       "Ele / ela tem (muda!)"
+      ],
+      [
+       "a sword, a book",
+       "A + som de consoante"
+      ],
+      [
+       "an apple, an hour",
+       "AN + som de vogal (o h de hour é mudo)"
+      ],
+      [
+       "potion → potions, box → boxes",
+       "Plural: +s ou +es"
+      ],
+      [
+       "man → men, child → children",
+       "Plural irregular"
+      ],
+      [
+       "this / these",
+       "este(s): perto"
+      ],
+      [
+       "that / those",
+       "aquele(s): longe"
+      ]
      ]
     },
     {
      "bg": "street",
-     "m": {"rafa": "normal", "mina": "normal"},
+     "m": {
+      "rafa": "normal",
+      "mina": "normal"
+     },
      "l": [
-      ["rafa", "How much are these boots?", "Quanto custam estas botas?"],
-      ["mina", "Those boots? Ten coins.", "Aquelas botas? Dez moedas."]
+      [
+       "rafa",
+       "How much are these boots?",
+       "Quanto custam estas botas?"
+      ],
+      [
+       "mina",
+       "Those boots? Ten coins.",
+       "Aquelas botas? Dez moedas."
+      ]
+     ]
+    },
+    {
+     "bg": "room",
+     "m": {
+      "mina": "happy",
+      "rafa": "normal"
+     },
+     "c": "Cena extra",
+     "l": [
+      [
+       "mina",
+       "What is that?",
+       "O que é aquilo?"
+      ],
+      [
+       "rafa",
+       "That's an old key. And this is a map.",
+       "Aquilo é uma chave antiga. E isto é um mapa."
+      ],
+      [
+       "mina",
+       "Do you have a torch?",
+       "Você tem uma lanterna?"
+      ],
+      [
+       "rafa",
+       "Yes, I have two torches and three apples.",
+       "Sim, tenho duas lanternas e três maçãs."
+      ],
+      [
+       "mina",
+       "Great. I have an umbrella.",
+       "Ótimo. Eu tenho um guarda-chuva."
+      ]
      ]
     }
    ]
@@ -245,51 +693,160 @@
    "p": [
     {
      "bg": "cafe",
-     "m": {"mina": "happy", "jin": "normal"},
+     "m": {
+      "mina": "happy",
+      "jin": "normal"
+     },
      "c": "Mina leva {o|a} Rafa até o Clube dos Exploradores.",
      "l": [
-      ["mina", "This is Jin. He is my teammate.", "Este é o Jin. Ele é meu colega de equipe."],
-      ["jin", "Hey. Is this your new student?", "E aí. {Esse é seu novo aluno|Essa é sua nova aluna}?"]
+      [
+       "mina",
+       "This is Jin. He is my teammate.",
+       "Este é o Jin. Ele é meu colega de equipe."
+      ],
+      [
+       "jin",
+       "Hey. Is this your new student?",
+       "E aí. {Esse é seu novo aluno|Essa é sua nova aluna}?"
+      ]
      ]
     },
     {
      "bg": "cafe",
-     "m": {"jin": "normal", "rafa": "happy"},
+     "m": {
+      "jin": "normal",
+      "rafa": "happy"
+     },
      "l": [
-      ["jin", "Do you have brothers or sisters?", "Você tem irmãos ou irmãs?"],
-      ["rafa", "I have one sister. Her name is Bia.", "Tenho uma irmã. O nome dela é Bia."]
+      [
+       "jin",
+       "Do you have brothers or sisters?",
+       "Você tem irmãos ou irmãs?"
+      ],
+      [
+       "rafa",
+       "I have one sister. Her name is Bia.",
+       "Tenho uma irmã. O nome dela é Bia."
+      ]
      ]
     },
     {
      "bg": "cafe",
-     "m": {"jin": "happy", "rafa": "shock"},
+     "m": {
+      "jin": "happy",
+      "rafa": "shock"
+     },
      "l": [
-      ["jin", "My brother is an explorer too. His sword is huge.", "Meu irmão também é explorador. A espada dele é enorme."],
-      ["rafa", "Our family is... normal.", "Nossa família é... normal."]
+      [
+       "jin",
+       "My brother is an explorer too. His sword is huge.",
+       "Meu irmão também é explorador. A espada dele é enorme."
+      ],
+      [
+       "rafa",
+       "Our family is... normal.",
+       "Nossa família é... normal."
+      ]
      ]
     },
     {
      "sys": "Possessivos e família",
      "r": [
-      ["I → my", "eu → meu / minha"],
-      ["you → your", "você → seu / sua"],
-      ["he → his", "ele → dele"],
-      ["she → her", "ela → dela"],
-      ["we → our", "nós → nosso / nossa"],
-      ["they → their", "eles → deles"],
-      ["Jin's sword", "a espada do Jin ('s = de)"],
-      ["mother, father, sister, brother", "mãe, pai, irmã, irmão"],
-      ["son, daughter, grandmother", "filho, filha, avó"],
-      ["parents", "pais (pai e mãe). Não é \"parentes\"!"]
+      [
+       "I → my",
+       "eu → meu / minha"
+      ],
+      [
+       "you → your",
+       "você → seu / sua"
+      ],
+      [
+       "he → his",
+       "ele → dele"
+      ],
+      [
+       "she → her",
+       "ela → dela"
+      ],
+      [
+       "we → our",
+       "nós → nosso / nossa"
+      ],
+      [
+       "they → their",
+       "eles → deles"
+      ],
+      [
+       "Jin's sword",
+       "a espada do Jin ('s = de)"
+      ],
+      [
+       "mother, father, sister, brother",
+       "mãe, pai, irmã, irmão"
+      ],
+      [
+       "son, daughter, grandmother",
+       "filho, filha, avó"
+      ],
+      [
+       "parents",
+       "pais (pai e mãe). Não é \"parentes\"!"
+      ]
      ],
      "tip": "O possessivo combina com o DONO: \"his sister\" (a irmã dele), \"her brother\" (o irmão dela)."
     },
     {
      "bg": "cafe",
-     "m": {"jin": "happy", "rafa": "sad"},
+     "m": {
+      "jin": "happy",
+      "rafa": "sad"
+     },
      "l": [
-      ["jin", "Mina's club card is gold. Mine is silver.", "O cartão da Mina é dourado. O meu é prata."],
-      ["rafa", "And mine is... paper.", "E o meu é... de papel."]
+      [
+       "jin",
+       "Mina's club card is gold. Mine is silver.",
+       "O cartão da Mina é dourado. O meu é prata."
+      ],
+      [
+       "rafa",
+       "And mine is... paper.",
+       "E o meu é... de papel."
+      ]
+     ]
+    },
+    {
+     "bg": "cafe",
+     "m": {
+      "jin": "happy",
+      "rafa": "normal"
+     },
+     "c": "Cena extra",
+     "l": [
+      [
+       "jin",
+       "Is this your brother?",
+       "Este é o seu irmão?"
+      ],
+      [
+       "rafa",
+       "No, he's my cousin. His name is Leo.",
+       "Não, é o meu primo. O nome dele é Leo."
+      ],
+      [
+       "jin",
+       "And who is she?",
+       "E quem é ela?"
+      ],
+      [
+       "rafa",
+       "She's my aunt. Her house is near the club.",
+       "É a minha tia. A casa dela fica perto do clube."
+      ],
+      [
+       "jin",
+       "My family is in Chicago. Our house is small.",
+       "Minha família está em Chicago. A nossa casa é pequena."
+      ]
      ]
     }
    ]
@@ -302,67 +859,202 @@
    "hero": "mina",
    "boss": true,
    "p": [
-    {"sys": "Chefe do Arco 1", "text": "Missão: encontrar o portal escondido na cidade e vencer o que estiver lá dentro."},
+    {
+     "sys": "Chefe do Arco 1",
+     "text": "Missão: encontrar o portal escondido na cidade e vencer o que estiver lá dentro."
+    },
     {
      "bg": "street",
-     "m": {"rafa": "normal", "mina": "normal"},
+     "m": {
+      "rafa": "normal",
+      "mina": "normal"
+     },
      "l": [
-      ["rafa", "Is there a portal near here?", "Tem um portal aqui perto?"],
-      ["mina", "Yes, there is. There are two portals in this city.", "Sim, tem. Tem dois portais nesta cidade."]
+      [
+       "rafa",
+       "Is there a portal near here?",
+       "Tem um portal aqui perto?"
+      ],
+      [
+       "mina",
+       "Yes, there is. There are two portals in this city.",
+       "Sim, tem. Tem dois portais nesta cidade."
+      ]
      ]
     },
     {
      "bg": "street",
-     "m": {"mina": "det", "rafa": "normal"},
+     "m": {
+      "mina": "det",
+      "rafa": "normal"
+     },
      "l": [
-      ["mina", "The first one is next to the bank.", "O primeiro fica ao lado do banco."],
-      ["rafa", "And the second?", "E o segundo?"],
-      ["mina", "It's under the bridge, between the park and the school.", "Fica embaixo da ponte, entre o parque e a escola."]
+      [
+       "mina",
+       "The first one is next to the bank.",
+       "O primeiro fica ao lado do banco."
+      ],
+      [
+       "rafa",
+       "And the second?",
+       "E o segundo?"
+      ],
+      [
+       "mina",
+       "It's under the bridge, between the park and the school.",
+       "Fica embaixo da ponte, entre o parque e a escola."
+      ]
      ]
     },
     {
      "sys": "Onde está?",
      "r": [
-      ["There is a portal.", "Há / tem um portal (singular)"],
-      ["There are two portals.", "Há / tem dois portais (plural)"],
-      ["Is there...? / Are there...?", "Pergunta"],
-      ["There isn't / There aren't", "Negativo"],
-      ["in the box", "dentro de"],
-      ["on the table", "em cima de (tocando)"],
-      ["under the bridge", "embaixo de"],
-      ["next to the bank", "ao lado de"],
-      ["between A and B", "entre"],
-      ["in front of / behind", "na frente de / atrás de"]
+      [
+       "There is a portal.",
+       "Há / tem um portal (singular)"
+      ],
+      [
+       "There are two portals.",
+       "Há / tem dois portais (plural)"
+      ],
+      [
+       "Is there...? / Are there...?",
+       "Pergunta"
+      ],
+      [
+       "There isn't / There aren't",
+       "Negativo"
+      ],
+      [
+       "in the box",
+       "dentro de"
+      ],
+      [
+       "on the table",
+       "em cima de (tocando)"
+      ],
+      [
+       "under the bridge",
+       "embaixo de"
+      ],
+      [
+       "next to the bank",
+       "ao lado de"
+      ],
+      [
+       "between A and B",
+       "entre"
+      ],
+      [
+       "in front of / behind",
+       "na frente de / atrás de"
+      ]
      ],
      "tip": "Para dizer \"tem\" no sentido de \"existe\", use THERE IS / THERE ARE, e não \"have\"."
     },
     {
      "bg": "dungeon",
-     "m": {"rafa": "shock", "mina": "det"},
+     "m": {
+      "rafa": "shock",
+      "mina": "det"
+     },
      "c": "Embaixo da ponte...",
      "l": [
-      ["rafa", "There's something behind me, isn't there?", "Tem alguma coisa atrás de mim, né?"],
-      ["mina", "Yes. Don't move.", "Tem. Não se mexa."]
+      [
+       "rafa",
+       "There's something behind me, isn't there?",
+       "Tem alguma coisa atrás de mim, né?"
+      ],
+      [
+       "mina",
+       "Yes. Don't move.",
+       "Tem. Não se mexa."
+      ]
      ]
     },
     {
      "bg": "action",
-     "m": {"rafa": "det"},
+     "m": {
+      "rafa": "det"
+     },
      "l": [
-      ["monster", "There are no heroes in this city!", "Não há heróis nesta cidade!"],
-      ["rafa", "There is one now. Me!", "Agora tem um. Eu!"]
+      [
+       "monster",
+       "There are no heroes in this city!",
+       "Não há heróis nesta cidade!"
+      ],
+      [
+       "rafa",
+       "There is one now. Me!",
+       "Agora tem um. Eu!"
+      ]
      ]
     },
-    {"sys": "Arco 1 completo", "text": "Você sabe se apresentar, usar TO BE, números, possessivos e dizer onde as coisas estão. Categoria aumentada."},
+    {
+     "sys": "Arco 1 completo",
+     "text": "Você sabe se apresentar, usar TO BE, números, possessivos e dizer onde as coisas estão. Categoria aumentada."
+    },
     {
      "sys": "Inglês americano x britânico",
      "r": [
-      ["color / colour", "cor (EUA / Reino Unido)"],
-      ["apartment / flat", "apartamento"],
-      ["zee / zed", "a letra Z"],
-      ["Hi! / Hiya!", "oi (informal)"]
+      [
+       "color / colour",
+       "cor (EUA / Reino Unido)"
+      ],
+      [
+       "apartment / flat",
+       "apartamento"
+      ],
+      [
+       "zee / zed",
+       "a letra Z"
+      ],
+      [
+       "Hi! / Hiya!",
+       "oi (informal)"
+      ]
      ],
      "tip": "Este curso usa o inglês americano. Os dois são corretos: o importante é ser consistente e reconhecer as diferenças."
+    },
+    {
+     "bg": "street",
+     "m": {
+      "mina": "normal",
+      "rafa": "normal"
+     },
+     "c": "Cena extra",
+     "l": [
+      [
+       "mina",
+       "Is there a bank near here?",
+       "Tem um banco aqui perto?"
+      ],
+      [
+       "rafa",
+       "Yes, there is. It's next to the café.",
+       "Sim, tem. Fica ao lado do café."
+      ],
+      [
+       "mina",
+       "Are there any shops?",
+       "Tem alguma loja?"
+      ],
+      [
+       "rafa",
+       "There are two shops opposite the park.",
+       "Tem duas lojas em frente ao parque."
+      ],
+      [
+       "mina",
+       "And the station?",
+       "E a estação?"
+      ],
+      [
+       "rafa",
+       "It's behind the hospital.",
+       "Fica atrás do hospital."
+      ]
+     ]
     }
    ],
    "mon": "SOMBRA DA PONTE"

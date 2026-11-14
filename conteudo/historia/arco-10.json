@@ -149,6 +149,46 @@
        "Ótima ideia! Vamos."
       ]
      ]
+    },
+    {
+     "bg": "street",
+     "m": {
+      "olivia": "happy",
+      "rafa": "normal"
+     },
+     "c": "Cena extra",
+     "l": [
+      [
+       "olivia",
+       "Shall we take the bus to the market?",
+       "Vamos de ônibus até o mercado?"
+      ],
+      [
+       "rafa",
+       "How about walking? It's a sunny day.",
+       "Que tal irmos a pé? O dia está ensolarado."
+      ],
+      [
+       "olivia",
+       "Good idea. Would you like to try fish and chips there?",
+       "Boa ideia. Você quer experimentar fish and chips lá?"
+      ],
+      [
+       "rafa",
+       "I'd love to! Shall I bring my camera?",
+       "Eu adoraria! Quer que eu leve a minha câmera?"
+      ],
+      [
+       "olivia",
+       "Definitely. Why don't we invite Harry too?",
+       "Com certeza. Por que não convidamos o Harry também?"
+      ],
+      [
+       "rafa",
+       "Let's call him now.",
+       "Vamos ligar para ele agora."
+      ]
+     ]
     }
    ]
   },
@@ -277,6 +317,41 @@
        "Sim. Fui eu."
       ]
      ]
+    },
+    {
+     "bg": "room",
+     "m": {
+      "harry": "normal",
+      "rafa": "normal"
+     },
+     "c": "Cena extra",
+     "l": [
+      [
+       "harry",
+       "Could you turn on the lights? It's getting dark.",
+       "Você pode acender as luzes? Está escurecendo."
+      ],
+      [
+       "rafa",
+       "Sure. Are you looking for something?",
+       "Claro. Você está procurando alguma coisa?"
+      ],
+      [
+       "harry",
+       "My glasses. I put them down somewhere and now I can't find them.",
+       "Meus óculos. Deixei em algum lugar e agora não consigo achar."
+      ],
+      [
+       "rafa",
+       "Maybe you took them off when you picked up the boxes.",
+       "Talvez você tenha tirado quando pegou as caixas."
+      ],
+      [
+       "harry",
+       "You're right! Here they are, on top of the boxes.",
+       "Você tem razão! Aqui estão, em cima das caixas."
+      ]
+     ]
     }
    ]
   },
@@ -400,6 +475,41 @@
        "Falou como um verdadeiro dono de livraria."
       ]
      ]
+    },
+    {
+     "bg": "cafe",
+     "m": {
+      "olivia": "normal",
+      "rafa": "normal"
+     },
+     "c": "Cena extra",
+     "l": [
+      [
+       "olivia",
+       "In my opinion, the city should have more cycle lanes.",
+       "Na minha opinião, a cidade devia ter mais ciclovias."
+      ],
+      [
+       "rafa",
+       "I totally agree. Cycling is cheaper and healthier.",
+       "Concordo totalmente. Andar de bicicleta é mais barato e mais saudável."
+      ],
+      [
+       "olivia",
+       "Harry thinks they would make traffic worse.",
+       "O Harry acha que elas piorariam o trânsito."
+      ],
+      [
+       "rafa",
+       "That's a good point, but more bikes would also mean fewer cars.",
+       "É um bom argumento, mas mais bicicletas também significariam menos carros."
+      ],
+      [
+       "olivia",
+       "Exactly. I reckon he'll change his mind when he tries it.",
+       "Exatamente. Acho que ele vai mudar de ideia quando experimentar."
+      ]
+     ]
     }
    ]
   },
@@ -518,6 +628,51 @@
        "No fim, descobri que a Olivia tinha planejado tudo!"
       ]
      ]
+    },
+    {
+     "bg": "cafe",
+     "m": {
+      "harry": "happy",
+      "rafa": "normal"
+     },
+     "c": "Cena extra",
+     "l": [
+      [
+       "harry",
+       "Have I told you about my first day at the shop?",
+       "Já te contei do meu primeiro dia na loja?"
+      ],
+      [
+       "rafa",
+       "No! What happened?",
+       "Não! O que aconteceu?"
+      ],
+      [
+       "harry",
+       "I was putting books on a shelf when the whole thing fell down.",
+       "Eu estava colocando livros numa prateleira quando ela inteira caiu."
+      ],
+      [
+       "rafa",
+       "Oh no! Were there any customers?",
+       "Ah, não! Tinha algum cliente?"
+      ],
+      [
+       "harry",
+       "Just one. She had been waiting for me to help her, and suddenly she was helping me!",
+       "Só uma. Ela estava esperando eu atendê-la e, de repente, era ela que estava me ajudando!"
+      ],
+      [
+       "rafa",
+       "In the end, did she buy anything?",
+       "No final, ela comprou alguma coisa?"
+      ],
+      [
+       "harry",
+       "Three books. And she still comes in every week.",
+       "Três livros. E ela ainda vem toda semana."
+      ]
+     ]
     }
    ]
   },
@@ -634,6 +789,41 @@
        "rafa",
        "Me neither! But I love the little cat.",
        "Nem eu! Mas adoro o gatinho."
+      ]
+     ]
+    },
+    {
+     "bg": "room",
+     "m": {
+      "olivia": "happy",
+      "rafa": "normal"
+     },
+     "c": "Cena extra",
+     "l": [
+      [
+       "olivia",
+       "Look at this message from my editor: “Pls send the article ASAP. Thx.”",
+       "Olha esta mensagem da minha editora: “Pls send the article ASAP. Thx.”"
+      ],
+      [
+       "rafa",
+       "That's quite informal for a boss.",
+       "É bem informal para uma chefe."
+      ],
+      [
+       "olivia",
+       "She's always like that. But I always reply formally, just in case.",
+       "Ela é sempre assim. Mas eu sempre respondo de forma formal, só por precaução."
+      ],
+      [
+       "rafa",
+       "What will you write?",
+       "O que você vai escrever?"
+      ],
+      [
+       "olivia",
+       "“Dear Jane, please find the article attached. Best wishes, Olivia.”",
+       "“Dear Jane, segue o artigo em anexo. Abraços, Olivia.”"
       ]
      ]
     }
@@ -759,6 +949,46 @@
        "Boa escolha. Mas não leia a última página primeiro!"
       ]
      ]
+    },
+    {
+     "bg": "room",
+     "m": {
+      "harry": "happy",
+      "rafa": "normal"
+     },
+     "c": "Cena extra",
+     "l": [
+      [
+       "harry",
+       "Have you seen that new series about the detective in Edinburgh?",
+       "Você viu aquela série nova sobre o detetive em Edimburgo?"
+      ],
+      [
+       "rafa",
+       "Not yet. Is it worth watching?",
+       "Ainda não. Vale a pena assistir?"
+      ],
+      [
+       "harry",
+       "Definitely. It's based on a novel, and the cast is excellent.",
+       "Com certeza. É baseada num romance, e o elenco é excelente."
+      ],
+      [
+       "rafa",
+       "What's it about, without spoilers?",
+       "É sobre o quê, sem spoilers?"
+      ],
+      [
+       "harry",
+       "A detective who's afraid of the dark has to solve a crime in an old tunnel.",
+       "Um detetive que tem medo do escuro precisa resolver um crime num túnel antigo."
+      ],
+      [
+       "rafa",
+       "That sounds gripping. I'll start it tonight.",
+       "Parece envolvente. Vou começar hoje à noite."
+      ]
+     ]
     }
    ]
   },
@@ -863,6 +1093,41 @@
        "harry",
        "And I used to hate reading. Now I sell books!",
        "E eu odiava ler. Agora vendo livros!"
+      ]
+     ]
+    },
+    {
+     "bg": "street",
+     "m": {
+      "olivia": "happy",
+      "rafa": "normal"
+     },
+     "c": "Cena extra",
+     "l": [
+      [
+       "olivia",
+       "When I was little, my mum would read to me every night.",
+       "Quando eu era pequena, minha mãe lia para mim toda noite."
+      ],
+      [
+       "rafa",
+       "That's lovely. My grandfather used to tell me stories about the sea.",
+       "Que lindo. Meu avô me contava histórias sobre o mar."
+      ],
+      [
+       "olivia",
+       "Did he use to be a sailor?",
+       "Ele era marinheiro?"
+      ],
+      [
+       "rafa",
+       "Yes. He would always bring us shells from every port.",
+       "Sim. Ele sempre trazia conchas de cada porto para nós."
+      ],
+      [
+       "olivia",
+       "I used to have a box of shells too. I wonder where it is now.",
+       "Eu também tinha uma caixa de conchas. Onde será que ela está agora?"
       ]
      ]
     }
@@ -974,6 +1239,46 @@
        "E você nem precisou de uma pedra mágica."
       ]
      ]
+    },
+    {
+     "bg": "gate",
+     "m": {
+      "olivia": "normal",
+      "rafa": "normal"
+     },
+     "c": "Cena extra",
+     "l": [
+      [
+       "olivia",
+       "This statue, which is over two hundred years old, was found in a garden.",
+       "Esta estátua, que tem mais de duzentos anos, foi encontrada num jardim."
+      ],
+      [
+       "rafa",
+       "Who found it?",
+       "Quem a encontrou?"
+      ],
+      [
+       "olivia",
+       "A young gardener, whose name was Thomas Bell, saw it in the mud.",
+       "Um jovem jardineiro, cujo nome era Thomas Bell, a viu na lama."
+      ],
+      [
+       "rafa",
+       "And where is the garden?",
+       "E onde fica o jardim?"
+      ],
+      [
+       "olivia",
+       "In Oxford, where my grandmother lived for many years.",
+       "Em Oxford, onde a minha avó morou por muitos anos."
+      ],
+      [
+       "rafa",
+       "Your family appears in every story, which I love!",
+       "A sua família aparece em toda história, o que eu adoro!"
+      ]
+     ]
     }
    ]
   },
@@ -1081,6 +1386,41 @@
        "mina",
        "Welcome to British weather. It'll rain in an hour or so.",
        "Bem-vind{o|a} ao clima britânico. Vai chover daqui a uma hora, mais ou menos."
+      ]
+     ]
+    },
+    {
+     "bg": "street",
+     "m": {
+      "harry": "happy",
+      "rafa": "sad"
+     },
+     "c": "Cena extra",
+     "l": [
+      [
+       "harry",
+       "Why are you carrying three bottles of water?",
+       "Por que você está carregando três garrafas de água?"
+      ],
+      [
+       "rafa",
+       "I thought there were no shops here. I needn't have brought them.",
+       "Achei que não tinha lojas aqui. Não precisava ter trazido."
+      ],
+      [
+       "harry",
+       "Well, there are about twenty cafés in this street, give or take.",
+       "Bom, tem uns vinte cafés nesta rua, mais ou menos."
+      ],
+      [
+       "rafa",
+       "Sort of embarrassing, really.",
+       "Meio constrangedor, na verdade."
+      ],
+      [
+       "harry",
+       "Don't worry. I didn't need to bring my umbrella either, and here it is!",
+       "Não se preocupe. Eu também não precisava ter trazido o guarda-chuva, e aqui está ele!"
       ]
      ]
     }
@@ -1199,6 +1539,46 @@
        "jin",
        "Then download the notes and get some sleep. Research says sleep helps memory.",
        "Então baixe as anotações e durma bem. As pesquisas dizem que o sono ajuda a memória."
+      ]
+     ]
+    },
+    {
+     "bg": "room",
+     "m": {
+      "olivia": "normal",
+      "rafa": "normal"
+     },
+     "c": "Cena extra",
+     "l": [
+      [
+       "olivia",
+       "I'm writing an article about online learning. Did you do your degree online?",
+       "Estou escrevendo um artigo sobre ensino on-line. Você fez sua faculdade on-line?"
+      ],
+      [
+       "rafa",
+       "Partly. Most lectures were online, but the exams were in person.",
+       "Em parte. A maioria das aulas era on-line, mas as provas eram presenciais."
+      ],
+      [
+       "olivia",
+       "Did you find it harder to stay motivated?",
+       "Você achou mais difícil se manter motivad{o|a}?"
+      ],
+      [
+       "rafa",
+       "Sometimes. But I could watch the lectures again before the exams, which really helped.",
+       "Às vezes. Mas eu podia rever as aulas antes das provas, o que ajudava muito."
+      ],
+      [
+       "olivia",
+       "Research suggests that's one of the main advantages.",
+       "As pesquisas sugerem que essa é uma das principais vantagens."
+      ],
+      [
+       "rafa",
+       "And the main disadvantage is that you miss your classmates.",
+       "E a principal desvantagem é que você sente falta dos colegas."
       ]
      ]
     }
@@ -1324,6 +1704,46 @@
        "olivia",
        "Brilliant work, everyone. Would you like to stay for one more cup of tea?",
        "Trabalho brilhante, pessoal. Querem ficar para mais uma xícara de chá?"
+      ]
+     ]
+    },
+    {
+     "bg": "street",
+     "m": {
+      "harry": "happy",
+      "rafa": "happy"
+     },
+     "c": "Cena extra",
+     "l": [
+      [
+       "harry",
+       "Shall I show you one last place before you go?",
+       "Quer que eu te mostre um último lugar antes de você ir?"
+      ],
+      [
+       "rafa",
+       "I'd love that. Where is it?",
+       "Eu adoraria. Onde é?"
+      ],
+      [
+       "harry",
+       "A little bookshop, which my grandfather opened in 1960.",
+       "Uma livrariazinha, que meu avô abriu em 1960."
+      ],
+      [
+       "rafa",
+       "I needn't have bought so many souvenirs. I'd rather have a book from there.",
+       "Eu não precisava ter comprado tantas lembrancinhas. Prefiro um livro de lá."
+      ],
+      [
+       "harry",
+       "In my opinion, a book is the best souvenir anyway.",
+       "Na minha opinião, livro é a melhor lembrança de qualquer jeito."
+      ],
+      [
+       "rafa",
+       "I totally agree. Let's go!",
+       "Concordo totalmente. Vamos!"
       ]
      ]
     }

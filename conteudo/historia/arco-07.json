@@ -1,7 +1,11 @@
 {
  "nome": "Arco 7 · Missões do Mundo Real",
  "descricao": "Prático · A2–B2 · viagem, compras, saúde, telefone e trabalho",
- "agora_voce_consegue": ["Resolver situações de viagem e de hotel", "Ir ao médico, fazer compras e falar ao telefone", "Participar de uma entrevista de emprego"],
+ "agora_voce_consegue": [
+  "Resolver situações de viagem e de hotel",
+  "Ir ao médico, fazer compras e falar ao telefone",
+  "Participar de uma entrevista de emprego"
+ ],
  "capitulos": [
   {
    "t": "Rumo a Nova York",
@@ -10,55 +14,168 @@
    "bg": "sky",
    "hero": "jin",
    "p": [
-    {"sys": "Missão do Mundo Real", "text": "O Clube convidou Rafa e Mina para uma convenção em Nova York. Para treinar, Mina liga o Simulador do Clube. Jin vai fazer todos os papéis."},
+    {
+     "sys": "Missão do Mundo Real",
+     "text": "O Clube convidou Rafa e Mina para uma convenção em Nova York. Para treinar, Mina liga o Simulador do Clube. Jin vai fazer todos os papéis."
+    },
     {
      "bg": "cafe",
-     "m": {"jin": "normal", "rafa": "normal"},
+     "m": {
+      "jin": "normal",
+      "rafa": "normal"
+     },
      "l": [
-      ["jin", "Good morning. Can I see your passport, please?", "Bom dia. Posso ver seu passaporte, por favor?"],
-      ["rafa", "Sure. Here you are.", "Claro. Aqui está."]
+      [
+       "jin",
+       "Good morning. Can I see your passport, please?",
+       "Bom dia. Posso ver seu passaporte, por favor?"
+      ],
+      [
+       "rafa",
+       "Sure. Here you are.",
+       "Claro. Aqui está."
+      ]
      ],
      "c": "Simulador: balcão de check-in."
     },
     {
      "bg": "cafe",
-     "m": {"jin": "det", "rafa": "normal"},
+     "m": {
+      "jin": "det",
+      "rafa": "normal"
+     },
      "l": [
-      ["jin", "Do you have any bags to check?", "Você tem malas para despachar?"],
-      ["rafa", "Just one. And this is my carry-on.", "Só uma. E esta é minha bagagem de mão."]
+      [
+       "jin",
+       "Do you have any bags to check?",
+       "Você tem malas para despachar?"
+      ],
+      [
+       "rafa",
+       "Just one. And this is my carry-on.",
+       "Só uma. E esta é minha bagagem de mão."
+      ]
      ]
     },
     {
      "bg": "cafe",
-     "m": {"jin": "happy"},
+     "m": {
+      "jin": "happy"
+     },
      "l": [
-      ["jin", "Here is your boarding pass. Your gate is B12, and boarding starts at 9:40.", "Aqui está seu cartão de embarque. Seu portão é o B12, e o embarque começa às 9:40."]
+      [
+       "jin",
+       "Here is your boarding pass. Your gate is B12, and boarding starts at 9:40.",
+       "Aqui está seu cartão de embarque. Seu portão é o B12, e o embarque começa às 9:40."
+      ]
      ]
     },
     {
      "sys": "No aeroporto",
      "r": [
-      ["Can I see your passport?", "Posso ver seu passaporte?"],
-      ["Here you are.", "Aqui está (ao entregar algo)"],
-      ["bags to check / carry-on", "malas para despachar / bagagem de mão"],
-      ["boarding pass", "cartão de embarque"],
-      ["gate", "portão"],
-      ["My flight is delayed.", "Meu voo está atrasado"],
-      ["window seat / aisle seat", "assento na janela / no corredor"],
-      ["What's the purpose of your visit?", "Qual é o motivo da sua visita?"],
-      ["I'm here on vacation.", "Estou aqui de férias"]
+      [
+       "Can I see your passport?",
+       "Posso ver seu passaporte?"
+      ],
+      [
+       "Here you are.",
+       "Aqui está (ao entregar algo)"
+      ],
+      [
+       "bags to check / carry-on",
+       "malas para despachar / bagagem de mão"
+      ],
+      [
+       "boarding pass",
+       "cartão de embarque"
+      ],
+      [
+       "gate",
+       "portão"
+      ],
+      [
+       "My flight is delayed.",
+       "Meu voo está atrasado"
+      ],
+      [
+       "window seat / aisle seat",
+       "assento na janela / no corredor"
+      ],
+      [
+       "What's the purpose of your visit?",
+       "Qual é o motivo da sua visita?"
+      ],
+      [
+       "I'm here on vacation.",
+       "Estou aqui de férias"
+      ]
      ],
      "tip": "No painel do aeroporto, fique de olho em duas palavras: delayed (atrasado) e canceled (cancelado)."
     },
     {
      "bg": "sky",
-     "m": {"mina": "det", "rafa": "shock"},
+     "m": {
+      "mina": "det",
+      "rafa": "shock"
+     },
      "l": [
-      ["mina", "What's the purpose of your visit?", "Qual é o motivo da sua visita?"],
-      ["rafa", "I'm here for an explorer convention. For five days.", "Estou aqui para uma convenção de exploradores. Por cinco dias."],
-      ["mina", "Welcome to the United States!", "Bem-vind{o|a} aos Estados Unidos!"]
+      [
+       "mina",
+       "What's the purpose of your visit?",
+       "Qual é o motivo da sua visita?"
+      ],
+      [
+       "rafa",
+       "I'm here for an explorer convention. For five days.",
+       "Estou aqui para uma convenção de exploradores. Por cinco dias."
+      ],
+      [
+       "mina",
+       "Welcome to the United States!",
+       "Bem-vind{o|a} aos Estados Unidos!"
+      ]
      ],
      "c": "Imigração, já em Nova York."
+    },
+    {
+     "bg": "sky",
+     "m": {
+      "jin": "normal",
+      "rafa": "normal"
+     },
+     "c": "Cena extra",
+     "l": [
+      [
+       "jin",
+       "Excuse me, is this the gate for New York?",
+       "Com licença, este é o portão para Nova York?"
+      ],
+      [
+       "rafa",
+       "Yes, gate twelve. Boarding starts at ten fifteen.",
+       "Sim, portão doze. O embarque começa às dez e quinze."
+      ],
+      [
+       "jin",
+       "Do you know if the flight is on time?",
+       "Você sabe se o voo está no horário?"
+      ],
+      [
+       "rafa",
+       "The screen says it's delayed by twenty minutes.",
+       "A tela diz que está atrasado vinte minutos."
+      ],
+      [
+       "jin",
+       "Good, I have time to buy a sandwich. Can you watch my bag?",
+       "Ótimo, dá tempo de comprar um sanduíche. Você pode olhar minha mala?"
+      ],
+      [
+       "rafa",
+       "Sure, but don't be long!",
+       "Claro, mas não demore!"
+      ]
+     ]
     }
    ]
   },
@@ -71,50 +188,157 @@
    "p": [
     {
      "bg": "cafe",
-     "m": {"rafa": "normal", "jin": "happy"},
+     "m": {
+      "rafa": "normal",
+      "jin": "happy"
+     },
      "l": [
-      ["rafa", "Hi. I have a reservation under the name Rafa.", "Oi. Tenho uma reserva no nome de Rafa."],
-      ["jin", "Welcome! Let me check. Yes, a single room for five nights.", "Bem-vind{o|a}! Deixe-me ver. Sim, um quarto de solteiro por cinco noites."]
+      [
+       "rafa",
+       "Hi. I have a reservation under the name Rafa.",
+       "Oi. Tenho uma reserva no nome de Rafa."
+      ],
+      [
+       "jin",
+       "Welcome! Let me check. Yes, a single room for five nights.",
+       "Bem-vind{o|a}! Deixe-me ver. Sim, um quarto de solteiro por cinco noites."
+      ]
      ],
      "c": "Simulador: recepção do hotel."
     },
     {
      "bg": "cafe",
-     "m": {"rafa": "happy", "jin": "normal"},
+     "m": {
+      "rafa": "happy",
+      "jin": "normal"
+     },
      "l": [
-      ["rafa", "Is breakfast included?", "O café da manhã está incluído?"],
-      ["jin", "Yes, it's served from seven to ten. Here's your key card.", "Sim, é servido das sete às dez. Aqui está seu cartão-chave."]
+      [
+       "rafa",
+       "Is breakfast included?",
+       "O café da manhã está incluído?"
+      ],
+      [
+       "jin",
+       "Yes, it's served from seven to ten. Here's your key card.",
+       "Sim, é servido das sete às dez. Aqui está seu cartão-chave."
+      ]
      ]
     },
     {
      "bg": "room",
-     "m": {"rafa": "sad"},
+     "m": {
+      "rafa": "sad"
+     },
      "l": [
-      ["rafa", "Hello, reception? I'm afraid the air conditioning isn't working.", "Alô, recepção? Infelizmente o ar-condicionado não está funcionando."],
-      ["jin", "I'm sorry about that. I'll send someone right away.", "Sinto muito. Vou mandar alguém agora mesmo."]
+      [
+       "rafa",
+       "Hello, reception? I'm afraid the air conditioning isn't working.",
+       "Alô, recepção? Infelizmente o ar-condicionado não está funcionando."
+      ],
+      [
+       "jin",
+       "I'm sorry about that. I'll send someone right away.",
+       "Sinto muito. Vou mandar alguém agora mesmo."
+      ]
      ],
      "c": "Mais tarde, no quarto."
     },
     {
      "sys": "No hotel",
      "r": [
-      ["I have a reservation under...", "Tenho uma reserva no nome de..."],
-      ["single room / double room", "quarto de solteiro / de casal"],
-      ["Is breakfast included?", "O café está incluído?"],
-      ["key card", "cartão-chave"],
-      ["check-in time / check-out time", "horário de entrada / de saída"],
-      ["The shower isn't working.", "O chuveiro não está funcionando"],
-      ["Could I have an extra towel?", "Poderia me dar uma toalha extra?"],
-      ["I'd like to check out, please.", "Gostaria de fazer o check-out"]
+      [
+       "I have a reservation under...",
+       "Tenho uma reserva no nome de..."
+      ],
+      [
+       "single room / double room",
+       "quarto de solteiro / de casal"
+      ],
+      [
+       "Is breakfast included?",
+       "O café está incluído?"
+      ],
+      [
+       "key card",
+       "cartão-chave"
+      ],
+      [
+       "check-in time / check-out time",
+       "horário de entrada / de saída"
+      ],
+      [
+       "The shower isn't working.",
+       "O chuveiro não está funcionando"
+      ],
+      [
+       "Could I have an extra towel?",
+       "Poderia me dar uma toalha extra?"
+      ],
+      [
+       "I'd like to check out, please.",
+       "Gostaria de fazer o check-out"
+      ]
      ],
      "tip": "Para reclamar com educação, comece com 'I'm afraid...': 'I'm afraid the shower isn't working.' A frase fica mais suave."
     },
     {
      "bg": "cafe",
-     "m": {"mina": "happy", "rafa": "happy"},
+     "m": {
+      "mina": "happy",
+      "rafa": "happy"
+     },
      "l": [
-      ["mina", "How was your stay?", "Como foi sua estadia?"],
-      ["rafa", "Great! The staff was very helpful.", "Ótima! A equipe foi muito prestativa."]
+      [
+       "mina",
+       "How was your stay?",
+       "Como foi sua estadia?"
+      ],
+      [
+       "rafa",
+       "Great! The staff was very helpful.",
+       "Ótima! A equipe foi muito prestativa."
+      ]
+     ]
+    },
+    {
+     "bg": "room",
+     "m": {
+      "mina": "sad",
+      "rafa": "normal"
+     },
+     "c": "Cena extra",
+     "l": [
+      [
+       "mina",
+       "Excuse me, the shower in my room isn't working.",
+       "Com licença, o chuveiro do meu quarto não está funcionando."
+      ],
+      [
+       "rafa",
+       "I'm sorry about that. What's your room number?",
+       "Sinto muito. Qual é o número do seu quarto?"
+      ],
+      [
+       "mina",
+       "It's room 508. Also, could I have an extra pillow?",
+       "É o quarto 508. Também, eu poderia ter um travesseiro extra?"
+      ],
+      [
+       "rafa",
+       "Of course. I'll send someone up in ten minutes.",
+       "Claro. Vou mandar alguém subir em dez minutos."
+      ],
+      [
+       "mina",
+       "Thank you. And what time is breakfast?",
+       "Obrigada. E a que horas é o café da manhã?"
+      ],
+      [
+       "rafa",
+       "From seven to ten, on the first floor.",
+       "Das sete às dez, no primeiro andar."
+      ]
      ]
     }
    ]
@@ -128,49 +352,155 @@
    "p": [
     {
      "bg": "street",
-     "m": {"rafa": "shock", "jin": "normal"},
+     "m": {
+      "rafa": "shock",
+      "jin": "normal"
+     },
      "l": [
-      ["rafa", "Excuse me, how do I get to Central Park?", "Com licença, como eu chego ao Central Park?"],
-      ["jin", "Go straight for two blocks, then turn left.", "Siga reto por dois quarteirões e depois vire à esquerda."]
+      [
+       "rafa",
+       "Excuse me, how do I get to Central Park?",
+       "Com licença, como eu chego ao Central Park?"
+      ],
+      [
+       "jin",
+       "Go straight for two blocks, then turn left.",
+       "Siga reto por dois quarteirões e depois vire à esquerda."
+      ]
      ],
      "c": "O celular d{o|a} Rafa descarregou."
     },
     {
      "bg": "street",
-     "m": {"jin": "happy"},
+     "m": {
+      "jin": "happy"
+     },
      "l": [
-      ["jin", "It's across from the museum. You can't miss it.", "Fica em frente ao museu. Não tem como errar."]
+      [
+       "jin",
+       "It's across from the museum. You can't miss it.",
+       "Fica em frente ao museu. Não tem como errar."
+      ]
      ]
     },
     {
      "bg": "street",
-     "m": {"rafa": "normal", "jin": "normal"},
+     "m": {
+      "rafa": "normal",
+      "jin": "normal"
+     },
      "l": [
-      ["rafa", "Is it far from here?", "É longe daqui?"],
-      ["jin", "No, it's about a ten-minute walk.", "Não, uns dez minutos a pé."]
+      [
+       "rafa",
+       "Is it far from here?",
+       "É longe daqui?"
+      ],
+      [
+       "jin",
+       "No, it's about a ten-minute walk.",
+       "Não, uns dez minutos a pé."
+      ]
      ]
     },
     {
      "sys": "Direções",
      "r": [
-      ["Excuse me, how do I get to...?", "Com licença, como chego a...?"],
-      ["Go straight.", "Siga reto"],
-      ["Turn left. / Turn right.", "Vire à esquerda / à direita"],
-      ["at the corner", "na esquina"],
-      ["two blocks", "dois quarteirões"],
-      ["across from", "em frente a (do outro lado)"],
-      ["It's a ten-minute walk.", "São dez minutos a pé"],
-      ["You can't miss it.", "Não tem como errar"],
-      ["Is it far from here?", "É longe daqui?"]
+      [
+       "Excuse me, how do I get to...?",
+       "Com licença, como chego a...?"
+      ],
+      [
+       "Go straight.",
+       "Siga reto"
+      ],
+      [
+       "Turn left. / Turn right.",
+       "Vire à esquerda / à direita"
+      ],
+      [
+       "at the corner",
+       "na esquina"
+      ],
+      [
+       "two blocks",
+       "dois quarteirões"
+      ],
+      [
+       "across from",
+       "em frente a (do outro lado)"
+      ],
+      [
+       "It's a ten-minute walk.",
+       "São dez minutos a pé"
+      ],
+      [
+       "You can't miss it.",
+       "Não tem como errar"
+      ],
+      [
+       "Is it far from here?",
+       "É longe daqui?"
+      ]
      ],
      "tip": "'Excuse me' serve para chamar a atenção de um desconhecido. 'Sorry' é para pedir desculpas."
     },
     {
      "bg": "street",
-     "m": {"mina": "det", "rafa": "happy"},
+     "m": {
+      "mina": "det",
+      "rafa": "happy"
+     },
      "l": [
-      ["mina", "Turn right at the corner. Then it's on your left.", "Vire à direita na esquina. Aí fica à sua esquerda."],
-      ["rafa", "Got it! Thanks a lot!", "Entendi! Muito obrigad{o|a}!"]
+      [
+       "mina",
+       "Turn right at the corner. Then it's on your left.",
+       "Vire à direita na esquina. Aí fica à sua esquerda."
+      ],
+      [
+       "rafa",
+       "Got it! Thanks a lot!",
+       "Entendi! Muito obrigad{o|a}!"
+      ]
+     ]
+    },
+    {
+     "bg": "street",
+     "m": {
+      "jin": "normal",
+      "rafa": "normal"
+     },
+     "c": "Cena extra",
+     "l": [
+      [
+       "jin",
+       "Excuse me, how do I get to the museum?",
+       "Com licença, como chego ao museu?"
+      ],
+      [
+       "rafa",
+       "Go straight on for two blocks, then turn right at the traffic lights.",
+       "Siga em frente por dois quarteirões e depois vire à direita no semáforo."
+      ],
+      [
+       "jin",
+       "Is it far?",
+       "É longe?"
+      ],
+      [
+       "rafa",
+       "No, it's about ten minutes on foot. It's opposite a big park.",
+       "Não, uns dez minutos a pé. Fica em frente a um parque grande."
+      ],
+      [
+       "jin",
+       "Great. Is there a place to eat nearby?",
+       "Ótimo. Tem algum lugar para comer por perto?"
+      ],
+      [
+       "rafa",
+       "Yes, there's a nice café on the corner.",
+       "Sim, tem um café legal na esquina."
+      ]
      ]
     }
    ]
@@ -184,49 +514,155 @@
    "p": [
     {
      "bg": "street",
-     "m": {"mina": "happy", "jin": "normal"},
+     "m": {
+      "mina": "happy",
+      "jin": "normal"
+     },
      "l": [
-      ["mina", "Can I try this jacket on?", "Posso experimentar esta jaqueta?"],
-      ["jin", "Of course. The fitting room is over there.", "Claro. O provador é ali."]
+      [
+       "mina",
+       "Can I try this jacket on?",
+       "Posso experimentar esta jaqueta?"
+      ],
+      [
+       "jin",
+       "Of course. The fitting room is over there.",
+       "Claro. O provador é ali."
+      ]
      ],
      "c": "Simulador: loja de roupas."
     },
     {
      "bg": "room",
-     "m": {"mina": "sad"},
+     "m": {
+      "mina": "sad"
+     },
      "l": [
-      ["mina", "It's too small. Do you have it in a medium?", "Está pequena demais. Vocês têm no tamanho M?"]
+      [
+       "mina",
+       "It's too small. Do you have it in a medium?",
+       "Está pequena demais. Vocês têm no tamanho M?"
+      ]
      ]
     },
     {
      "bg": "street",
-     "m": {"rafa": "shock", "jin": "normal"},
+     "m": {
+      "rafa": "shock",
+      "jin": "normal"
+     },
      "l": [
-      ["rafa", "Two hundred dollars? It's too expensive!", "Duzentos dólares? É caro demais!"],
-      ["jin", "It's on sale today. Twenty percent off.", "Está em promoção hoje. Vinte por cento de desconto."]
+      [
+       "rafa",
+       "Two hundred dollars? It's too expensive!",
+       "Duzentos dólares? É caro demais!"
+      ],
+      [
+       "jin",
+       "It's on sale today. Twenty percent off.",
+       "Está em promoção hoje. Vinte por cento de desconto."
+      ]
      ]
     },
     {
      "sys": "Too e enough",
      "r": [
-      ["too small / too expensive", "pequeno demais / caro demais"],
-      ["big enough / old enough", "grande o suficiente / com idade suficiente"],
-      ["I don't have enough money.", "Não tenho dinheiro suficiente"],
-      ["Can I try it on?", "Posso experimentar?"],
-      ["fitting room", "provador"],
-      ["small / medium / large", "P / M / G"],
-      ["It's on sale.", "Está em promoção"],
-      ["Can I pay by card?", "Posso pagar com cartão?"],
-      ["I'm just looking, thanks.", "Só estou olhando, obrigado"]
+      [
+       "too small / too expensive",
+       "pequeno demais / caro demais"
+      ],
+      [
+       "big enough / old enough",
+       "grande o suficiente / com idade suficiente"
+      ],
+      [
+       "I don't have enough money.",
+       "Não tenho dinheiro suficiente"
+      ],
+      [
+       "Can I try it on?",
+       "Posso experimentar?"
+      ],
+      [
+       "fitting room",
+       "provador"
+      ],
+      [
+       "small / medium / large",
+       "P / M / G"
+      ],
+      [
+       "It's on sale.",
+       "Está em promoção"
+      ],
+      [
+       "Can I pay by card?",
+       "Posso pagar com cartão?"
+      ],
+      [
+       "I'm just looking, thanks.",
+       "Só estou olhando, obrigado"
+      ]
      ],
      "tip": "TOO vem antes do adjetivo (too big). ENOUGH vem depois do adjetivo (big enough), mas antes do substantivo (enough money)."
     },
     {
      "bg": "street",
-     "m": {"mina": "happy", "rafa": "happy"},
+     "m": {
+      "mina": "happy",
+      "rafa": "happy"
+     },
      "l": [
-      ["mina", "This one fits perfectly. Can I pay by card?", "Esta serviu perfeitamente. Posso pagar com cartão?"],
-      ["rafa", "And I'm just looking, thanks.", "E eu só estou olhando, obrigad{o|a}."]
+      [
+       "mina",
+       "This one fits perfectly. Can I pay by card?",
+       "Esta serviu perfeitamente. Posso pagar com cartão?"
+      ],
+      [
+       "rafa",
+       "And I'm just looking, thanks.",
+       "E eu só estou olhando, obrigad{o|a}."
+      ]
+     ]
+    },
+    {
+     "bg": "room",
+     "m": {
+      "mina": "happy",
+      "rafa": "normal"
+     },
+     "c": "Cena extra",
+     "l": [
+      [
+       "mina",
+       "How does this jacket look?",
+       "Como ficou esta jaqueta?"
+      ],
+      [
+       "rafa",
+       "The colour suits you, but it's too big.",
+       "A cor fica bem em você, mas está grande demais."
+      ],
+      [
+       "mina",
+       "Do you think the small one is big enough?",
+       "Você acha que a pequena é grande o bastante?"
+      ],
+      [
+       "rafa",
+       "Try it on. The changing rooms are over there.",
+       "Experimente. Os provadores ficam ali."
+      ],
+      [
+       "mina",
+       "It fits perfectly! But it's too expensive.",
+       "Serviu perfeitamente! Mas é cara demais."
+      ],
+      [
+       "rafa",
+       "Wait for the sale. It starts next week.",
+       "Espere a liquidação. Começa na semana que vem."
+      ]
      ]
     }
    ]
@@ -240,49 +676,150 @@
    "p": [
     {
      "bg": "room",
-     "m": {"rafa": "sad"},
+     "m": {
+      "rafa": "sad"
+     },
      "l": [
-      ["rafa", "I don't feel well. I have a headache and a sore throat.", "Não estou me sentindo bem. Estou com dor de cabeça e dor de garganta."]
+      [
+       "rafa",
+       "I don't feel well. I have a headache and a sore throat.",
+       "Não estou me sentindo bem. Estou com dor de cabeça e dor de garganta."
+      ]
      ],
      "c": "Depois de um treino pesado."
     },
     {
      "bg": "cafe",
-     "m": {"jin": "det", "rafa": "sad"},
+     "m": {
+      "jin": "det",
+      "rafa": "sad"
+     },
      "l": [
-      ["jin", "How long have you had these symptoms?", "Há quanto tempo você tem esses sintomas?"],
-      ["rafa", "Since yesterday. I also have a fever.", "Desde ontem. Também estou com febre."]
+      [
+       "jin",
+       "How long have you had these symptoms?",
+       "Há quanto tempo você tem esses sintomas?"
+      ],
+      [
+       "rafa",
+       "Since yesterday. I also have a fever.",
+       "Desde ontem. Também estou com febre."
+      ]
      ],
      "c": "Simulador: consultório do Dr. Jin."
     },
     {
      "bg": "cafe",
-     "m": {"jin": "normal"},
+     "m": {
+      "jin": "normal"
+     },
      "l": [
-      ["jin", "You should rest and drink plenty of water. Take this medicine twice a day.", "Você deveria descansar e beber bastante água. Tome este remédio duas vezes por dia."]
+      [
+       "jin",
+       "You should rest and drink plenty of water. Take this medicine twice a day.",
+       "Você deveria descansar e beber bastante água. Tome este remédio duas vezes por dia."
+      ]
      ]
     },
     {
      "sys": "Saúde",
      "r": [
-      ["I don't feel well.", "Não estou me sentindo bem"],
-      ["I have a headache. / I have a stomachache.", "Estou com dor de cabeça / de estômago"],
-      ["sore throat", "dor de garganta"],
-      ["fever / cough / cold", "febre / tosse / resfriado"],
-      ["My back hurts.", "Minhas costas doem"],
-      ["How long have you had...?", "Há quanto tempo você tem...?"],
-      ["twice a day", "duas vezes por dia"],
-      ["You should rest.", "Você deveria descansar"],
-      ["prescription / pharmacy", "receita / farmácia"]
+      [
+       "I don't feel well.",
+       "Não estou me sentindo bem"
+      ],
+      [
+       "I have a headache. / I have a stomachache.",
+       "Estou com dor de cabeça / de estômago"
+      ],
+      [
+       "sore throat",
+       "dor de garganta"
+      ],
+      [
+       "fever / cough / cold",
+       "febre / tosse / resfriado"
+      ],
+      [
+       "My back hurts.",
+       "Minhas costas doem"
+      ],
+      [
+       "How long have you had...?",
+       "Há quanto tempo você tem...?"
+      ],
+      [
+       "twice a day",
+       "duas vezes por dia"
+      ],
+      [
+       "You should rest.",
+       "Você deveria descansar"
+      ],
+      [
+       "prescription / pharmacy",
+       "receita / farmácia"
+      ]
      ],
      "tip": "Para dor em uma parte do corpo, use HAVE + ache (headache, toothache, earache) ou diga 'my ... hurts'."
     },
     {
      "bg": "room",
-     "m": {"mina": "happy", "rafa": "normal"},
+     "m": {
+      "mina": "happy",
+      "rafa": "normal"
+     },
      "l": [
-      ["mina", "Get well soon! I brought you some soup.", "Melhoras! Trouxe uma sopa para você."],
-      ["rafa", "Thanks. I already feel better.", "Valeu. Já me sinto melhor."]
+      [
+       "mina",
+       "Get well soon! I brought you some soup.",
+       "Melhoras! Trouxe uma sopa para você."
+      ],
+      [
+       "rafa",
+       "Thanks. I already feel better.",
+       "Valeu. Já me sinto melhor."
+      ]
+     ]
+    },
+    {
+     "bg": "room",
+     "m": {
+      "jin": "sad",
+      "rafa": "normal"
+     },
+     "c": "Cena extra",
+     "l": [
+      [
+       "jin",
+       "I've had a sore throat since Monday, and now I've got a cough too.",
+       "Estou com dor de garganta desde segunda e agora estou com tosse também."
+      ],
+      [
+       "rafa",
+       "Have you got a temperature?",
+       "Você está com febre?"
+      ],
+      [
+       "jin",
+       "A little. I feel cold and tired all the time.",
+       "Um pouco. Sinto frio e cansaço o tempo todo."
+      ],
+      [
+       "rafa",
+       "You should stay in bed and drink plenty of water. If it gets worse, you'd better see a doctor.",
+       "Você devia ficar na cama e beber bastante água. Se piorar, é melhor ir ao médico."
+      ],
+      [
+       "jin",
+       "Should I take something for the pain?",
+       "Devo tomar algo para a dor?"
+      ],
+      [
+       "rafa",
+       "Ask the pharmacist. They can recommend something.",
+       "Pergunte ao farmacêutico. Ele pode recomendar algo."
+      ]
      ]
     }
    ]
@@ -296,51 +833,157 @@
    "p": [
     {
      "bg": "room",
-     "m": {"jin": "normal", "rafa": "normal"},
+     "m": {
+      "jin": "normal",
+      "rafa": "normal"
+     },
      "l": [
-      ["jin", "Explorers' Club, Jin speaking. How can I help you?", "Clube dos Exploradores, aqui é o Jin. Como posso ajudar?"],
-      ["rafa", "Hi, could I speak to Mina, please?", "Oi, eu poderia falar com a Mina, por favor?"]
+      [
+       "jin",
+       "Explorers' Club, Jin speaking. How can I help you?",
+       "Clube dos Exploradores, aqui é o Jin. Como posso ajudar?"
+      ],
+      [
+       "rafa",
+       "Hi, could I speak to Mina, please?",
+       "Oi, eu poderia falar com a Mina, por favor?"
+      ]
      ],
      "c": "O telefone do Clube toca."
     },
     {
      "bg": "room",
-     "m": {"jin": "det"},
+     "m": {
+      "jin": "det"
+     },
      "l": [
-      ["jin", "Hold on a second, please. I'm sorry, she's not available right now.", "Aguarde um segundo, por favor. Sinto muito, ela não está disponível agora."]
+      [
+       "jin",
+       "Hold on a second, please. I'm sorry, she's not available right now.",
+       "Aguarde um segundo, por favor. Sinto muito, ela não está disponível agora."
+      ]
      ]
     },
     {
      "bg": "room",
-     "m": {"jin": "happy", "rafa": "normal"},
+     "m": {
+      "jin": "happy",
+      "rafa": "normal"
+     },
      "l": [
-      ["jin", "Would you like to leave a message?", "Gostaria de deixar um recado?"],
-      ["rafa", "Yes, please ask her to call me back.", "Sim, por favor peça para ela me ligar de volta."]
+      [
+       "jin",
+       "Would you like to leave a message?",
+       "Gostaria de deixar um recado?"
+      ],
+      [
+       "rafa",
+       "Yes, please ask her to call me back.",
+       "Sim, por favor peça para ela me ligar de volta."
+      ]
      ]
     },
     {
      "sys": "Ao telefone",
      "r": [
-      ["Jin speaking.", "Aqui é o Jin (quem atende)"],
-      ["Could I speak to...?", "Poderia falar com...?"],
-      ["Hold on, please.", "Aguarde, por favor"],
-      ["She's not available right now.", "Ela não está disponível agora"],
-      ["Can I take a message?", "Posso anotar um recado?"],
-      ["Please ask her to call me back.", "Peça para ela me ligar de volta"],
-      ["Sorry, you're breaking up.", "Desculpe, está cortando"],
-      ["Could you speak up, please?", "Pode falar mais alto?"],
-      ["I'll put you through.", "Vou transferir a ligação"]
+      [
+       "Jin speaking.",
+       "Aqui é o Jin (quem atende)"
+      ],
+      [
+       "Could I speak to...?",
+       "Poderia falar com...?"
+      ],
+      [
+       "Hold on, please.",
+       "Aguarde, por favor"
+      ],
+      [
+       "She's not available right now.",
+       "Ela não está disponível agora"
+      ],
+      [
+       "Can I take a message?",
+       "Posso anotar um recado?"
+      ],
+      [
+       "Please ask her to call me back.",
+       "Peça para ela me ligar de volta"
+      ],
+      [
+       "Sorry, you're breaking up.",
+       "Desculpe, está cortando"
+      ],
+      [
+       "Could you speak up, please?",
+       "Pode falar mais alto?"
+      ],
+      [
+       "I'll put you through.",
+       "Vou transferir a ligação"
+      ]
      ],
      "tip": "Ao atender, diga seu nome com 'speaking': 'Rafa speaking'. Evite 'Here is Rafa', que soa estranho em inglês."
     },
     {
      "bg": "sky",
-     "m": {"mina": "shock", "rafa": "happy"},
+     "m": {
+      "mina": "shock",
+      "rafa": "happy"
+     },
      "l": [
-      ["mina", "Rafa? Sorry, you're breaking up! Could you speak up?", "Rafa? Desculpa, está cortando! Pode falar mais alto?"],
-      ["rafa", "I said: dinner tonight at eight!", "Eu disse: jantar hoje às oito!"]
+      [
+       "mina",
+       "Rafa? Sorry, you're breaking up! Could you speak up?",
+       "Rafa? Desculpa, está cortando! Pode falar mais alto?"
+      ],
+      [
+       "rafa",
+       "I said: dinner tonight at eight!",
+       "Eu disse: jantar hoje às oito!"
+      ]
      ],
      "c": "Uma hora depois."
+    },
+    {
+     "bg": "room",
+     "m": {
+      "mina": "normal",
+      "rafa": "normal"
+     },
+     "c": "Cena extra",
+     "l": [
+      [
+       "mina",
+       "Hello, could I speak to Mr Lee, please?",
+       "Alô, eu poderia falar com o Sr. Lee, por favor?"
+      ],
+      [
+       "rafa",
+       "I'm afraid he's in a meeting. Can I take a message?",
+       "Infelizmente ele está numa reunião. Posso anotar um recado?"
+      ],
+      [
+       "mina",
+       "Yes, please. This is Mina Park from the design team.",
+       "Sim, por favor. Aqui é a Mina Park, da equipe de design."
+      ],
+      [
+       "rafa",
+       "Sorry, could you spell your surname?",
+       "Desculpe, você pode soletrar o seu sobrenome?"
+      ],
+      [
+       "mina",
+       "P-A-R-K. Could you ask him to call me back this afternoon?",
+       "P-A-R-K. Você pode pedir para ele me ligar de volta hoje à tarde?"
+      ],
+      [
+       "rafa",
+       "Of course. I'll pass on the message.",
+       "Claro. Vou passar o recado."
+      ]
+     ]
     }
    ]
   },
@@ -353,48 +996,151 @@
    "p": [
     {
      "bg": "cafe",
-     "m": {"mina": "happy", "rafa": "shock"},
+     "m": {
+      "mina": "happy",
+      "rafa": "shock"
+     },
      "l": [
-      ["mina", "Small talk is easy. Just talk about the weather.", "Conversa fiada é fácil. Fale do tempo."],
-      ["rafa", "The weather? Really?", "Do tempo? Sério?"]
+      [
+       "mina",
+       "Small talk is easy. Just talk about the weather.",
+       "Conversa fiada é fácil. Fale do tempo."
+      ],
+      [
+       "rafa",
+       "The weather? Really?",
+       "Do tempo? Sério?"
+      ]
      ],
      "c": "Convenção de exploradores. Hora do intervalo."
     },
     {
      "bg": "cafe",
-     "m": {"jin": "happy", "rafa": "normal"},
+     "m": {
+      "jin": "happy",
+      "rafa": "normal"
+     },
      "l": [
-      ["jin", "Nice day, isn't it?", "Dia bonito, né?"],
-      ["rafa", "Yes, it's so sunny! You're from Chicago, aren't you?", "Sim, está tão ensolarado! Você é de Chicago, não é?"]
+      [
+       "jin",
+       "Nice day, isn't it?",
+       "Dia bonito, né?"
+      ],
+      [
+       "rafa",
+       "Yes, it's so sunny! You're from Chicago, aren't you?",
+       "Sim, está tão ensolarado! Você é de Chicago, não é?"
+      ]
      ]
     },
     {
      "bg": "cafe",
-     "m": {"jin": "normal"},
+     "m": {
+      "jin": "normal"
+     },
      "l": [
-      ["jin", "I am. It was such a long flight, wasn't it?", "Sou. Foi um voo tão longo, não foi?"]
+      [
+       "jin",
+       "I am. It was such a long flight, wasn't it?",
+       "Sou. Foi um voo tão longo, não foi?"
+      ]
      ]
     },
     {
      "sys": "Small talk",
      "r": [
-      ["Nice day, isn't it?", "Dia bonito, né?"],
-      ["You're from Chicago, aren't you?", "Você é de Chicago, não é?"],
-      ["She can swim, can't she?", "Ela sabe nadar, não sabe?"],
-      ["so sunny", "tão ensolarado (so + adjetivo)"],
-      ["such a long day", "um dia tão longo (such + a + adjetivo + nome)"],
-      ["How's it going?", "Como vão as coisas?"],
-      ["What do you do?", "O que você faz (profissão)?"],
-      ["Have a good one!", "Tenha um bom dia! (informal)"]
+      [
+       "Nice day, isn't it?",
+       "Dia bonito, né?"
+      ],
+      [
+       "You're from Chicago, aren't you?",
+       "Você é de Chicago, não é?"
+      ],
+      [
+       "She can swim, can't she?",
+       "Ela sabe nadar, não sabe?"
+      ],
+      [
+       "so sunny",
+       "tão ensolarado (so + adjetivo)"
+      ],
+      [
+       "such a long day",
+       "um dia tão longo (such + a + adjetivo + nome)"
+      ],
+      [
+       "How's it going?",
+       "Como vão as coisas?"
+      ],
+      [
+       "What do you do?",
+       "O que você faz (profissão)?"
+      ],
+      [
+       "Have a good one!",
+       "Tenha um bom dia! (informal)"
+      ]
      ],
      "tip": "Na question tag, frase positiva leva tag negativa (It's nice, isn't it?) e frase negativa leva tag positiva (You aren't tired, are you?)."
     },
     {
      "bg": "cafe",
-     "m": {"mina": "happy", "rafa": "happy"},
+     "m": {
+      "mina": "happy",
+      "rafa": "happy"
+     },
      "l": [
-      ["rafa", "So, what do you do?", "Então, o que você faz?"],
-      ["mina", "I'm a teacher. And you're doing great, aren't you?", "Sou professora. E você está indo muito bem, né?"]
+      [
+       "rafa",
+       "So, what do you do?",
+       "Então, o que você faz?"
+      ],
+      [
+       "mina",
+       "I'm a teacher. And you're doing great, aren't you?",
+       "Sou professora. E você está indo muito bem, né?"
+      ]
+     ]
+    },
+    {
+     "bg": "cafe",
+     "m": {
+      "jin": "happy",
+      "rafa": "normal"
+     },
+     "c": "Cena extra",
+     "l": [
+      [
+       "jin",
+       "Lovely weather today, isn't it?",
+       "Que tempo bonito hoje, não é?"
+      ],
+      [
+       "rafa",
+       "It is! It's such a nice change after all that rain.",
+       "É mesmo! É uma mudança tão boa depois de toda aquela chuva."
+      ],
+      [
+       "jin",
+       "You're new in the office, aren't you?",
+       "Você é nov{o|a} no escritório, não é?"
+      ],
+      [
+       "rafa",
+       "Yes, I started on Monday. Everyone is so friendly.",
+       "Sim, comecei na segunda. Todo mundo é tão simpático."
+      ],
+      [
+       "jin",
+       "You haven't tried the café downstairs yet, have you?",
+       "Você ainda não experimentou o café lá de baixo, né?"
+      ],
+      [
+       "rafa",
+       "No, I haven't. Shall we go at lunchtime?",
+       "Não. Vamos na hora do almoço?"
+      ]
      ]
     }
    ]
@@ -408,42 +1154,129 @@
    "p": [
     {
      "bg": "room",
-     "m": {"rafa": "shock", "mina": "normal"},
+     "m": {
+      "rafa": "shock",
+      "mina": "normal"
+     },
      "l": [
-      ["rafa", "There's a map in this envelope!", "Tem um mapa neste envelope!"],
-      ["mina", "Let me see the map.", "Deixa eu ver o mapa."]
+      [
+       "rafa",
+       "There's a map in this envelope!",
+       "Tem um mapa neste envelope!"
+      ],
+      [
+       "mina",
+       "Let me see the map.",
+       "Deixa eu ver o mapa."
+      ]
      ],
      "c": "Rafa encontra um envelope no quarto do hotel."
     },
     {
      "bg": "room",
-     "m": {"mina": "det"},
+     "m": {
+      "mina": "det"
+     },
      "l": [
-      ["mina", "The map shows a door. The door is under the Brooklyn Bridge.", "O mapa mostra uma porta. A porta fica embaixo da Ponte do Brooklyn."]
+      [
+       "mina",
+       "The map shows a door. The door is under the Brooklyn Bridge.",
+       "O mapa mostra uma porta. A porta fica embaixo da Ponte do Brooklyn."
+      ]
      ]
     },
     {
      "sys": "Artigos",
      "r": [
-      ["a / an", "um / uma (algo novo na conversa)"],
-      ["the", "o / a (algo já conhecido ou único)"],
-      ["I saw a dog. The dog was big.", "Primeiro 'a', depois 'the'"],
-      ["the sun, the moon, the internet", "Coisas únicas levam 'the'"],
-      ["I love music. Dogs are smart.", "Falando em geral: sem artigo"],
-      ["Brazil, Lisbon, Mina", "Países, cidades e pessoas: sem artigo"],
-      ["the United States, the UK", "Exceções que levam 'the'"],
-      ["at home, at school, by bus", "Expressões fixas sem artigo"]
+      [
+       "a / an",
+       "um / uma (algo novo na conversa)"
+      ],
+      [
+       "the",
+       "o / a (algo já conhecido ou único)"
+      ],
+      [
+       "I saw a dog. The dog was big.",
+       "Primeiro 'a', depois 'the'"
+      ],
+      [
+       "the sun, the moon, the internet",
+       "Coisas únicas levam 'the'"
+      ],
+      [
+       "I love music. Dogs are smart.",
+       "Falando em geral: sem artigo"
+      ],
+      [
+       "Brazil, Lisbon, Mina",
+       "Países, cidades e pessoas: sem artigo"
+      ],
+      [
+       "the United States, the UK",
+       "Exceções que levam 'the'"
+      ],
+      [
+       "at home, at school, by bus",
+       "Expressões fixas sem artigo"
+      ]
      ],
      "tip": "Em português dizemos 'A vida é bela'. Em inglês, falando em geral, não se usa artigo: 'Life is beautiful'."
     },
     {
      "bg": "dungeon",
-     "m": {"rafa": "det", "mina": "normal"},
+     "m": {
+      "rafa": "det",
+      "mina": "normal"
+     },
      "l": [
-      ["rafa", "Life is full of surprises.", "A vida é cheia de surpresas."],
-      ["mina", "And behind this door, there are monsters everywhere. Let's go home.", "E atrás desta porta tem monstros por todo lado. Vamos pra casa."]
+      [
+       "rafa",
+       "Life is full of surprises.",
+       "A vida é cheia de surpresas."
+      ],
+      [
+       "mina",
+       "And behind this door, there are monsters everywhere. Let's go home.",
+       "E atrás desta porta tem monstros por todo lado. Vamos pra casa."
+      ]
      ],
      "c": "Embaixo da ponte."
+    },
+    {
+     "bg": "room",
+     "m": {
+      "mina": "det",
+      "rafa": "normal"
+     },
+     "c": "Cena extra",
+     "l": [
+      [
+       "mina",
+       "There's a map on the table. Is it the map we found yesterday?",
+       "Tem um mapa na mesa. É o mapa que encontramos ontem?"
+      ],
+      [
+       "rafa",
+       "No, the map from yesterday is in my bag. This is a new one.",
+       "Não, o mapa de ontem está na minha bolsa. Este é um novo."
+      ],
+      [
+       "mina",
+       "Look, there's an X near the river.",
+       "Olha, tem um X perto do rio."
+      ],
+      [
+       "rafa",
+       "The river or the lake? I think it's the Thames.",
+       "O rio ou o lago? Acho que é o Tâmisa."
+      ],
+      [
+       "mina",
+       "Then we're going to London. I love travelling!",
+       "Então vamos para Londres. Adoro viajar!"
+      ]
+     ]
     }
    ]
   },
@@ -456,50 +1289,162 @@
    "p": [
     {
      "bg": "cafe",
-     "m": {"jin": "det", "rafa": "normal"},
+     "m": {
+      "jin": "det",
+      "rafa": "normal"
+     },
      "l": [
-      ["jin", "Tell me about yourself.", "Fale um pouco sobre você."],
-      ["rafa", "I'm an explorer from Brazil. I've been training for two years.", "Sou {um explorador|uma exploradora} do Brasil. Treino há dois anos."]
+      [
+       "jin",
+       "Tell me about yourself.",
+       "Fale um pouco sobre você."
+      ],
+      [
+       "rafa",
+       "I'm an explorer from Brazil. I've been training for two years.",
+       "Sou {um explorador|uma exploradora} do Brasil. Treino há dois anos."
+      ]
      ],
      "c": "O Clube de Nova York está contratando."
     },
     {
      "bg": "cafe",
-     "m": {"jin": "normal", "rafa": "det"},
+     "m": {
+      "jin": "normal",
+      "rafa": "det"
+     },
      "l": [
-      ["jin", "What are your strengths?", "Quais são seus pontos fortes?"],
-      ["rafa", "I'm good at working in a team, and I never give up.", "Sou {bom|boa} em trabalhar em equipe e nunca desisto."]
+      [
+       "jin",
+       "What are your strengths?",
+       "Quais são seus pontos fortes?"
+      ],
+      [
+       "rafa",
+       "I'm good at working in a team, and I never give up.",
+       "Sou {bom|boa} em trabalhar em equipe e nunca desisto."
+      ]
      ]
     },
     {
      "bg": "cafe",
-     "m": {"jin": "det", "rafa": "sad"},
+     "m": {
+      "jin": "det",
+      "rafa": "sad"
+     },
      "l": [
-      ["jin", "And your weaknesses?", "E seus pontos fracos?"],
-      ["rafa", "I'm not very good at waking up early. But I'm working on it.", "Não sou muito {bom|boa} em acordar cedo. Mas estou melhorando nisso."]
+      [
+       "jin",
+       "And your weaknesses?",
+       "E seus pontos fracos?"
+      ],
+      [
+       "rafa",
+       "I'm not very good at waking up early. But I'm working on it.",
+       "Não sou muito {bom|boa} em acordar cedo. Mas estou melhorando nisso."
+      ]
      ]
     },
     {
      "sys": "Na entrevista",
      "r": [
-      ["Tell me about yourself.", "Fale sobre você"],
-      ["I've been working as an explorer for two years.", "Trabalho como explorador há dois anos"],
-      ["strengths / weaknesses", "pontos fortes / pontos fracos"],
-      ["I'm good at solving problems.", "Sou bom em resolver problemas"],
-      ["I'm working on it.", "Estou melhorando nisso"],
-      ["Why do you want this job?", "Por que você quer esta vaga?"],
-      ["I'm a fast learner.", "Aprendo rápido"],
-      ["When can you start?", "Quando pode começar?"]
+      [
+       "Tell me about yourself.",
+       "Fale sobre você"
+      ],
+      [
+       "I've been working as an explorer for two years.",
+       "Trabalho como explorador há dois anos"
+      ],
+      [
+       "strengths / weaknesses",
+       "pontos fortes / pontos fracos"
+      ],
+      [
+       "I'm good at solving problems.",
+       "Sou bom em resolver problemas"
+      ],
+      [
+       "I'm working on it.",
+       "Estou melhorando nisso"
+      ],
+      [
+       "Why do you want this job?",
+       "Por que você quer esta vaga?"
+      ],
+      [
+       "I'm a fast learner.",
+       "Aprendo rápido"
+      ],
+      [
+       "When can you start?",
+       "Quando pode começar?"
+      ]
      ],
      "tip": "Use o present perfect para experiência ('I've worked in a team for three years') e o passado quando houver data ('In 2023, I joined the Explorers' Club')."
     },
     {
      "bg": "cafe",
-     "m": {"jin": "happy", "rafa": "happy"},
+     "m": {
+      "jin": "happy",
+      "rafa": "happy"
+     },
      "l": [
-      ["jin", "When can you start?", "Quando você pode começar?"],
-      ["rafa", "Right away!", "Agora mesmo!"],
-      ["jin", "You're hired.", "Você está contratad{o|a}."]
+      [
+       "jin",
+       "When can you start?",
+       "Quando você pode começar?"
+      ],
+      [
+       "rafa",
+       "Right away!",
+       "Agora mesmo!"
+      ],
+      [
+       "jin",
+       "You're hired.",
+       "Você está contratad{o|a}."
+      ]
+     ]
+    },
+    {
+     "bg": "cafe",
+     "m": {
+      "jin": "normal",
+      "rafa": "normal"
+     },
+     "c": "Cena extra",
+     "l": [
+      [
+       "jin",
+       "So, why do you want to work for us?",
+       "Então, por que você quer trabalhar conosco?"
+      ],
+      [
+       "rafa",
+       "I've always admired your projects, and I'd like to work in a creative team.",
+       "Sempre admirei os projetos de vocês e gostaria de trabalhar numa equipe criativa."
+      ],
+      [
+       "jin",
+       "What are your strengths?",
+       "Quais são os seus pontos fortes?"
+      ],
+      [
+       "rafa",
+       "I'm organised and I learn quickly. In my last job, I was in charge of three projects at once.",
+       "Sou organizad{o|a} e aprendo rápido. No meu último emprego, eu cuidava de três projetos ao mesmo tempo."
+      ],
+      [
+       "jin",
+       "And where do you see yourself in five years?",
+       "E onde você se vê daqui a cinco anos?"
+      ],
+      [
+       "rafa",
+       "Leading a team, I hope.",
+       "Liderando uma equipe, espero."
+      ]
      ]
     }
    ]
@@ -513,40 +1458,121 @@
    "p": [
     {
      "bg": "street",
-     "m": {"rafa": "sad", "mina": "normal"},
+     "m": {
+      "rafa": "sad",
+      "mina": "normal"
+     },
      "l": [
-      ["rafa", "My sword is broken. I need to fix it.", "Minha espada quebrou. Preciso consertar."],
-      ["mina", "You don't have to fix it yourself. Have it fixed by a blacksmith.", "Você não precisa consertar sozinh{o|a}. Mande consertar com um ferreiro."]
+      [
+       "rafa",
+       "My sword is broken. I need to fix it.",
+       "Minha espada quebrou. Preciso consertar."
+      ],
+      [
+       "mina",
+       "You don't have to fix it yourself. Have it fixed by a blacksmith.",
+       "Você não precisa consertar sozinh{o|a}. Mande consertar com um ferreiro."
+      ]
      ],
      "c": "A espada d{o|a} Rafa quebrou na última missão."
     },
     {
      "bg": "street",
-     "m": {"jin": "happy"},
+     "m": {
+      "jin": "happy"
+     },
      "l": [
-      ["jin", "I had my armor repaired here last month. They're the best.", "Mandei consertar minha armadura aqui no mês passado. Eles são os melhores."]
+      [
+       "jin",
+       "I had my armor repaired here last month. They're the best.",
+       "Mandei consertar minha armadura aqui no mês passado. Eles são os melhores."
+      ]
      ]
     },
     {
      "bg": "cafe",
-     "m": {"rafa": "happy", "mina": "shock"},
+     "m": {
+      "rafa": "happy",
+      "mina": "shock"
+     },
      "l": [
-      ["rafa", "I had my sword fixed, and I got my hair cut!", "Mandei consertar minha espada e cortei o cabelo!"],
-      ["mina", "You look like a new explorer.", "Você parece {um novo explorador|uma nova exploradora}."]
+      [
+       "rafa",
+       "I had my sword fixed, and I got my hair cut!",
+       "Mandei consertar minha espada e cortei o cabelo!"
+      ],
+      [
+       "mina",
+       "You look like a new explorer.",
+       "Você parece {um novo explorador|uma nova exploradora}."
+      ]
      ],
      "c": "No dia seguinte."
     },
     {
      "sys": "Have something done",
      "r": [
-      ["I had my sword fixed.", "Mandei consertar minha espada"],
-      ["She's having her car washed.", "Ela está mandando lavar o carro"],
-      ["I got my hair cut.", "Cortei o cabelo (no cabeleireiro)"],
-      ["We need to have the roof repaired.", "Precisamos mandar consertar o telhado"],
-      ["have + objeto + particípio", "A estrutura (get também serve)"],
-      ["I cut my hair. / I had my hair cut.", "Eu mesmo cortei / alguém cortou para mim"]
+      [
+       "I had my sword fixed.",
+       "Mandei consertar minha espada"
+      ],
+      [
+       "She's having her car washed.",
+       "Ela está mandando lavar o carro"
+      ],
+      [
+       "I got my hair cut.",
+       "Cortei o cabelo (no cabeleireiro)"
+      ],
+      [
+       "We need to have the roof repaired.",
+       "Precisamos mandar consertar o telhado"
+      ],
+      [
+       "have + objeto + particípio",
+       "A estrutura (get também serve)"
+      ],
+      [
+       "I cut my hair. / I had my hair cut.",
+       "Eu mesmo cortei / alguém cortou para mim"
+      ]
      ],
      "tip": "Em português dizemos 'cortei o cabelo' mesmo quando foi o cabeleireiro. Em inglês, 'I cut my hair' quer dizer que você mesmo cortou."
+    },
+    {
+     "bg": "street",
+     "m": {
+      "mina": "happy",
+      "rafa": "normal"
+     },
+     "c": "Cena extra",
+     "l": [
+      [
+       "mina",
+       "Your hair looks great! Did you cut it yourself?",
+       "Seu cabelo está ótimo! Você mesm{o|a} cortou?"
+      ],
+      [
+       "rafa",
+       "No way! I had it cut at the new place on the corner.",
+       "De jeito nenhum! Mandei cortar no lugar novo da esquina."
+      ],
+      [
+       "mina",
+       "I need to get my bike repaired. Do you know a good shop?",
+       "Preciso mandar consertar minha bicicleta. Você conhece uma boa loja?"
+      ],
+      [
+       "rafa",
+       "I get mine serviced at the shop next to the station.",
+       "Eu mando revisar a minha na loja ao lado da estação."
+      ],
+      [
+       "mina",
+       "Great. And I should get my eyes tested too. Everything looks blurry!",
+       "Ótimo. E eu devia fazer exame de vista também. Está tudo embaçado!"
+      ]
+     ]
     }
    ]
   },
@@ -559,39 +1585,125 @@
    "p": [
     {
      "bg": "sky",
-     "m": {"mina": "normal", "rafa": "happy"},
+     "m": {
+      "mina": "normal",
+      "rafa": "happy"
+     },
      "l": [
-      ["mina", "What will you be doing this time next year?", "O que você vai estar fazendo nesta época do ano que vem?"],
-      ["rafa", "I'll be living in Seoul and working for the Explorers' Club.", "Vou estar morando em Seul e trabalhando para o Clube."]
+      [
+       "mina",
+       "What will you be doing this time next year?",
+       "O que você vai estar fazendo nesta época do ano que vem?"
+      ],
+      [
+       "rafa",
+       "I'll be living in Seoul and working for the Explorers' Club.",
+       "Vou estar morando em Seul e trabalhando para o Clube."
+      ]
      ],
      "c": "Última noite em Nova York. Terraço do hotel."
     },
     {
      "bg": "sky",
-     "m": {"mina": "happy", "rafa": "det"},
+     "m": {
+      "mina": "happy",
+      "rafa": "det"
+     },
      "l": [
-      ["mina", "By next year, you'll have finished the whole course.", "Até o ano que vem, você vai ter terminado o curso todo."],
-      ["rafa", "And I'll have read a hundred manhwa in English!", "E vou ter lido cem manhwas em inglês!"]
+      [
+       "mina",
+       "By next year, you'll have finished the whole course.",
+       "Até o ano que vem, você vai ter terminado o curso todo."
+      ],
+      [
+       "rafa",
+       "And I'll have read a hundred manhwa in English!",
+       "E vou ter lido cem manhwas em inglês!"
+      ]
      ]
     },
     {
      "sys": "Futuro avançado",
      "r": [
-      ["will be + ING", "vai estar fazendo (em andamento no futuro)"],
-      ["This time tomorrow, I'll be flying.", "Amanhã a esta hora, estarei voando"],
-      ["will have + particípio", "vai ter feito (terminado até um momento)"],
-      ["By 2027, I'll have graduated.", "Até 2027, terei me formado"],
-      ["by Friday", "até sexta, no máximo"],
-      ["Will you be using the car tonight?", "Você vai usar o carro hoje à noite? (educado)"]
+      [
+       "will be + ING",
+       "vai estar fazendo (em andamento no futuro)"
+      ],
+      [
+       "This time tomorrow, I'll be flying.",
+       "Amanhã a esta hora, estarei voando"
+      ],
+      [
+       "will have + particípio",
+       "vai ter feito (terminado até um momento)"
+      ],
+      [
+       "By 2027, I'll have graduated.",
+       "Até 2027, terei me formado"
+      ],
+      [
+       "by Friday",
+       "até sexta, no máximo"
+      ],
+      [
+       "Will you be using the car tonight?",
+       "Você vai usar o carro hoje à noite? (educado)"
+      ]
      ],
      "tip": "'Will you be using...?' é um jeito educado de perguntar os planos de alguém antes de pedir algo emprestado."
     },
     {
      "bg": "sky",
-     "m": {"rafa": "sad", "mina": "happy"},
+     "m": {
+      "rafa": "sad",
+      "mina": "happy"
+     },
      "l": [
-      ["rafa", "This time tomorrow, we'll be flying home.", "Amanhã a esta hora, estaremos voando pra casa."],
-      ["mina", "And you'll have completed your first real-world mission.", "E você vai ter completado sua primeira missão no mundo real."]
+      [
+       "rafa",
+       "This time tomorrow, we'll be flying home.",
+       "Amanhã a esta hora, estaremos voando pra casa."
+      ],
+      [
+       "mina",
+       "And you'll have completed your first real-world mission.",
+       "E você vai ter completado sua primeira missão no mundo real."
+      ]
+     ]
+    },
+    {
+     "bg": "street",
+     "m": {
+      "mina": "normal",
+      "rafa": "happy"
+     },
+     "c": "Cena extra",
+     "l": [
+      [
+       "mina",
+       "This time next year, what will you be doing?",
+       "A esta altura no ano que vem, o que você vai estar fazendo?"
+      ],
+      [
+       "rafa",
+       "I'll be living in London, I hope, and I'll be working at a design studio.",
+       "Vou estar morando em Londres, espero, e trabalhando num estúdio de design."
+      ],
+      [
+       "mina",
+       "Will you have finished your course by then?",
+       "Você já vai ter terminado o seu curso até lá?"
+      ],
+      [
+       "rafa",
+       "Yes, I'll have finished it by June.",
+       "Sim, vou ter terminado até junho."
+      ],
+      [
+       "mina",
+       "And by the time you leave, I'll have learned to cook your favourite dish!",
+       "E até você ir embora, eu vou ter aprendido a fazer o seu prato favorito!"
+      ]
      ]
     }
    ]
@@ -605,52 +1717,149 @@
    "mon": "ECO",
    "boss": true,
    "p": [
-    {"sys": "Chefe do Arco 7", "text": "Na volta para casa, o avião atravessa um portal. Lá dentro, um monstro repete tudo com a pronúncia errada."},
+    {
+     "sys": "Chefe do Arco 7",
+     "text": "Na volta para casa, o avião atravessa um portal. Lá dentro, um monstro repete tudo com a pronúncia errada."
+    },
     {
      "bg": "dungeon",
-     "m": {"rafa": "shock"},
+     "m": {
+      "rafa": "shock"
+     },
      "l": [
-      ["monster", "I tink you are tree years late!", "(O Eco fala errado de propósito: 'tink' e 'tree' no lugar de 'think' e 'three')"],
-      ["rafa", "It's think and three! Tongue between the teeth!", "É think e three! Língua entre os dentes!"]
+      [
+       "monster",
+       "I tink you are tree years late!",
+       "(O Eco fala errado de propósito: 'tink' e 'tree' no lugar de 'think' e 'three')"
+      ],
+      [
+       "rafa",
+       "It's think and three! Tongue between the teeth!",
+       "É think e three! Língua entre os dentes!"
+      ]
      ]
     },
     {
      "bg": "dungeon",
-     "m": {"mina": "det"},
+     "m": {
+      "mina": "det"
+     },
      "l": [
-      ["mina", "Careful with the endings too. Walked, played, wanted.", "Cuidado também com as terminações. Walked, played, wanted."]
+      [
+       "mina",
+       "Careful with the endings too. Walked, played, wanted.",
+       "Cuidado também com as terminações. Walked, played, wanted."
+      ]
      ]
     },
     {
      "sys": "Pronúncia",
      "r": [
-      ["think, three, thanks", "TH sem voz: língua entre os dentes, solte o ar"],
-      ["this, that, mother", "TH com voz: mesma posição, com vibração"],
-      ["walked, helped, watched", "-ED soa como /t/ depois de k, p, f, s, x, ch, sh"],
-      ["played, cleaned, lived", "-ED soa como /d/"],
-      ["wanted, needed, started", "-ED vira sílaba /id/ só depois de t ou d"],
-      ["comfortable", "Fala-se COMF-ta-ble: algumas palavras perdem sílabas"]
+      [
+       "think, three, thanks",
+       "TH sem voz: língua entre os dentes, solte o ar"
+      ],
+      [
+       "this, that, mother",
+       "TH com voz: mesma posição, com vibração"
+      ],
+      [
+       "walked, helped, watched",
+       "-ED soa como /t/ depois de k, p, f, s, x, ch, sh"
+      ],
+      [
+       "played, cleaned, lived",
+       "-ED soa como /d/"
+      ],
+      [
+       "wanted, needed, started",
+       "-ED vira sílaba /id/ só depois de t ou d"
+      ],
+      [
+       "comfortable",
+       "Fala-se COMF-ta-ble: algumas palavras perdem sílabas"
+      ]
      ],
      "tip": "Erro comum de quem fala português: dizer 'walk-ED' com uma sílaba a mais. 'Walked' tem uma sílaba só."
     },
     {
      "bg": "action",
-     "m": {"rafa": "det"},
+     "m": {
+      "rafa": "det"
+     },
      "l": [
-      ["monster", "You can't defeat me!", "Você não pode me derrotar!"],
-      ["rafa", "I've already thought about it. Three, two, one. Thanks for the practice!", "Já pensei nisso. Três, dois, um. Valeu pelo treino!"]
+      [
+       "monster",
+       "You can't defeat me!",
+       "Você não pode me derrotar!"
+      ],
+      [
+       "rafa",
+       "I've already thought about it. Three, two, one. Thanks for the practice!",
+       "Já pensei nisso. Três, dois, um. Valeu pelo treino!"
+      ]
      ]
     },
-    {"sys": "Arco 7 completo", "text": "Você sobreviveu ao mundo real: aeroporto, hotel, compras, médico, telefone e entrevista. Agora é hora de usar o inglês fora da Torre."},
+    {
+     "sys": "Arco 7 completo",
+     "text": "Você sobreviveu ao mundo real: aeroporto, hotel, compras, médico, telefone e entrevista. Agora é hora de usar o inglês fora da Torre."
+    },
     {
      "sys": "Inglês americano x britânico",
      "r": [
-      ["elevator / lift", "elevador"],
-      ["subway / underground", "metrô (em Londres: the Tube)"],
-      ["first floor / ground floor", "o térreo (EUA / Reino Unido)"],
-      ["cell phone / mobile", "celular"]
+      [
+       "elevator / lift",
+       "elevador"
+      ],
+      [
+       "subway / underground",
+       "metrô (em Londres: the Tube)"
+      ],
+      [
+       "first floor / ground floor",
+       "o térreo (EUA / Reino Unido)"
+      ],
+      [
+       "cell phone / mobile",
+       "celular"
+      ]
      ],
      "tip": "Este curso usa o inglês americano. Os dois são corretos: o importante é ser consistente e reconhecer as diferenças."
+    },
+    {
+     "bg": "street",
+     "m": {
+      "mina": "happy",
+      "rafa": "normal"
+     },
+     "c": "Cena extra",
+     "l": [
+      [
+       "mina",
+       "Say this: I think three thin things are thrilling.",
+       "Diga isto: I think three thin things are thrilling."
+      ],
+      [
+       "rafa",
+       "I think three thin things are thrilling. Was it OK?",
+       "I think three thin things are thrilling. Ficou bom?"
+      ],
+      [
+       "mina",
+       "Much better! Now the -ed endings: I walked, I played, I wanted.",
+       "Muito melhor! Agora os finais em -ed: I walked, I played, I wanted."
+      ],
+      [
+       "rafa",
+       "Walked with a T, played with a D, and wanted with I-D.",
+       "Walked com T, played com D e wanted com I-D."
+      ],
+      [
+       "mina",
+       "Exactly. You've improved a lot since we left New York.",
+       "Exatamente. Você melhorou muito desde que saímos de Nova York."
+      ]
+     ]
     }
    ]
   }

@@ -1,7 +1,11 @@
 {
  "nome": "Arco 3 · A Ascensão",
  "descricao": "Pré-intermediário · A2 · agora, passado, quantidades, futuro",
- "agora_voce_consegue": ["Contar o que aconteceu no passado", "Falar de planos e do futuro", "Comparar pessoas e coisas"],
+ "agora_voce_consegue": [
+  "Contar o que aconteceu no passado",
+  "Falar de planos e do futuro",
+  "Comparar pessoas e coisas"
+ ],
  "capitulos": [
   {
    "t": "Agora Mesmo",
@@ -10,48 +14,145 @@
    "bg": "street",
    "hero": "rafa",
    "p": [
-    {"sys": "ALERTA", "text": "Portal fácil detectado no centro da cidade."},
+    {
+     "sys": "ALERTA",
+     "text": "Portal fácil detectado no centro da cidade."
+    },
     {
      "bg": "cafe",
-     "m": {"rafa": "happy"},
+     "m": {
+      "rafa": "happy"
+     },
      "l": [
-      ["mina", "Where are you? What are you doing?", "Onde você está? O que você está fazendo?"],
-      ["rafa", "I'm eating ramen.", "Estou comendo lámen."]
+      [
+       "mina",
+       "Where are you? What are you doing?",
+       "Onde você está? O que você está fazendo?"
+      ],
+      [
+       "rafa",
+       "I'm eating ramen.",
+       "Estou comendo lámen."
+      ]
      ]
     },
     {
      "bg": "cafe",
-     "m": {"mina": "shock", "rafa": "shock"},
+     "m": {
+      "mina": "shock",
+      "rafa": "shock"
+     },
      "l": [
-      ["mina", "Stop eating! The monsters are coming!", "Pare de comer! Os monstros estão vindo!"]
+      [
+       "mina",
+       "Stop eating! The monsters are coming!",
+       "Pare de comer! Os monstros estão vindo!"
+      ]
      ]
     },
     {
      "bg": "action",
-     "m": {"rafa": "shock"},
+     "m": {
+      "rafa": "shock"
+     },
      "l": [
-      ["rafa", "I'm running! I'm running!", "Estou correndo! Estou correndo!"]
+      [
+       "rafa",
+       "I'm running! I'm running!",
+       "Estou correndo! Estou correndo!"
+      ]
      ]
     },
     {
      "sys": "Presente contínuo",
      "r": [
-      ["am / is / are + verbo-ING", "Ação acontecendo AGORA"],
-      ["I'm eating. They're coming.", "Estou comendo. Eles estão vindo."],
-      ["run → running, swim → swimming", "Dobra a consoante final (consoante + vogal + consoante, sílaba forte)"],
-      ["make → making", "Tira o \"e\" final"],
-      ["I eat ramen every day.", "Hábito (presente simples)"],
-      ["I'm eating ramen now.", "Agora (contínuo)"],
-      ["now, right now, at the moment, Look!", "Palavras que pedem -ING"]
+      [
+       "am / is / are + verbo-ING",
+       "Ação acontecendo AGORA"
+      ],
+      [
+       "I'm eating. They're coming.",
+       "Estou comendo. Eles estão vindo."
+      ],
+      [
+       "run → running, swim → swimming",
+       "Dobra a consoante final (consoante + vogal + consoante, sílaba forte)"
+      ],
+      [
+       "make → making",
+       "Tira o \"e\" final"
+      ],
+      [
+       "I eat ramen every day.",
+       "Hábito (presente simples)"
+      ],
+      [
+       "I'm eating ramen now.",
+       "Agora (contínuo)"
+      ],
+      [
+       "now, right now, at the moment, Look!",
+       "Palavras que pedem -ING"
+      ]
      ]
     },
     {
      "bg": "street",
-     "m": {"mina": "det", "rafa": "shock"},
+     "m": {
+      "mina": "det",
+      "rafa": "shock"
+     },
      "l": [
-      ["mina", "Look! It's getting bigger!", "Olha! Está ficando maior!"],
-      ["rafa", "Is it looking at me?", "Ele está olhando pra mim?"],
-      ["mina", "Yes. It is.", "Sim. Está."]
+      [
+       "mina",
+       "Look! It's getting bigger!",
+       "Olha! Está ficando maior!"
+      ],
+      [
+       "rafa",
+       "Is it looking at me?",
+       "Ele está olhando pra mim?"
+      ],
+      [
+       "mina",
+       "Yes. It is.",
+       "Sim. Está."
+      ]
+     ]
+    },
+    {
+     "bg": "street",
+     "m": {
+      "mina": "normal",
+      "rafa": "shock"
+     },
+     "c": "Cena extra",
+     "l": [
+      [
+       "mina",
+       "What are you doing?",
+       "O que você está fazendo?"
+      ],
+      [
+       "rafa",
+       "I'm looking for my keys. Are you going home?",
+       "Estou procurando minhas chaves. Você está indo para casa?"
+      ],
+      [
+       "mina",
+       "Not yet. I'm waiting for Jin. He's buying some water.",
+       "Ainda não. Estou esperando o Jin. Ele está comprando água."
+      ],
+      [
+       "rafa",
+       "Look! It's raining now.",
+       "Olha! Está chovendo agora."
+      ],
+      [
+       "mina",
+       "And you're standing under a tree with no umbrella!",
+       "E você está parad{o|a} embaixo de uma árvore sem guarda-chuva!"
+      ]
      ]
     }
    ]
@@ -65,54 +166,159 @@
    "p": [
     {
      "bg": "cafe",
-     "m": {"mina": "normal"},
+     "m": {
+      "mina": "normal"
+     },
      "c": "Depois da batalha. Rafa e Mina numa cafeteria.",
      "l": [
-      ["mina", "What happened yesterday? You disappeared.", "O que aconteceu ontem? Você sumiu."],
-      ["rafa", "I went home. I slept for twelve hours.", "Eu fui pra casa. Dormi doze horas."]
+      [
+       "mina",
+       "What happened yesterday? You disappeared.",
+       "O que aconteceu ontem? Você sumiu."
+      ],
+      [
+       "rafa",
+       "I went home. I slept for twelve hours.",
+       "Eu fui pra casa. Dormi doze horas."
+      ]
      ]
     },
     {
      "bg": "cafe",
-     "m": {"mina": "normal", "rafa": "happy"},
+     "m": {
+      "mina": "normal",
+      "rafa": "happy"
+     },
      "l": [
-      ["mina", "Did you study?", "Você estudou?"],
-      ["rafa", "Yes, I did! I watched a series in English.", "Sim! Assisti a uma série em inglês."]
+      [
+       "mina",
+       "Did you study?",
+       "Você estudou?"
+      ],
+      [
+       "rafa",
+       "Yes, I did! I watched a series in English.",
+       "Sim! Assisti a uma série em inglês."
+      ]
      ]
     },
     {
      "bg": "cafe",
-     "m": {"mina": "happy", "rafa": "normal"},
+     "m": {
+      "mina": "happy",
+      "rafa": "normal"
+     },
      "l": [
-      ["mina", "Did you understand it?", "Você entendeu?"],
-      ["rafa", "I didn't understand everything... but I understood a lot!", "Não entendi tudo... mas entendi muito!"]
+      [
+       "mina",
+       "Did you understand it?",
+       "Você entendeu?"
+      ],
+      [
+       "rafa",
+       "I didn't understand everything... but I understood a lot!",
+       "Não entendi tudo... mas entendi muito!"
+      ]
      ]
     },
     {
      "sys": "Passado simples",
      "r": [
-      ["watch → watched, play → played", "Regulares: +ED"],
-      ["study → studied", "consoante + y vira -ied"],
-      ["go → went, eat → ate, see → saw", "Irregulares (aprenda aos poucos)"],
-      ["sleep → slept, have → had, make → made", "Mais irregulares comuns"],
-      ["I didn't go.", "Negativo: didn't + verbo normal"],
-      ["Did you go?", "Pergunta: did + verbo normal"],
-      ["I was / they were", "TO BE no passado"]
+      [
+       "watch → watched, play → played",
+       "Regulares: +ED"
+      ],
+      [
+       "study → studied",
+       "consoante + y vira -ied"
+      ],
+      [
+       "go → went, eat → ate, see → saw",
+       "Irregulares (aprenda aos poucos)"
+      ],
+      [
+       "sleep → slept, have → had, make → made",
+       "Mais irregulares comuns"
+      ],
+      [
+       "I didn't go.",
+       "Negativo: didn't + verbo normal"
+      ],
+      [
+       "Did you go?",
+       "Pergunta: did + verbo normal"
+      ],
+      [
+       "I was / they were",
+       "TO BE no passado"
+      ]
      ]
     },
     {
      "bg": "sky",
-     "m": {"mina": "sad", "rafa": "shock"},
+     "m": {
+      "mina": "sad",
+      "rafa": "shock"
+     },
      "l": [
-      ["mina", "When I was a kid, I was terrible at English.", "Quando eu era criança, eu era péssima em inglês."],
-      ["rafa", "You? Really?", "Você? Sério?"]
+      [
+       "mina",
+       "When I was a kid, I was terrible at English.",
+       "Quando eu era criança, eu era péssima em inglês."
+      ],
+      [
+       "rafa",
+       "You? Really?",
+       "Você? Sério?"
+      ]
      ]
     },
     {
      "bg": "sky",
-     "m": {"mina": "happy"},
+     "m": {
+      "mina": "happy"
+     },
      "l": [
-      ["mina", "Really. I didn't give up. That's the only difference.", "Sério. Eu não desisti. Essa é a única diferença."]
+      [
+       "mina",
+       "Really. I didn't give up. That's the only difference.",
+       "Sério. Eu não desisti. Essa é a única diferença."
+      ]
+     ]
+    },
+    {
+     "bg": "cafe",
+     "m": {
+      "mina": "happy",
+      "rafa": "normal"
+     },
+     "c": "Cena extra",
+     "l": [
+      [
+       "mina",
+       "What did you do yesterday?",
+       "O que você fez ontem?"
+      ],
+      [
+       "rafa",
+       "I visited my grandmother. We made a cake together.",
+       "Visitei minha avó. Fizemos um bolo junt{o|a}s."
+      ],
+      [
+       "mina",
+       "Did you eat it all?",
+       "Vocês comeram tudo?"
+      ],
+      [
+       "rafa",
+       "No, we didn't. I brought you a piece!",
+       "Não. Eu trouxe um pedaço para você!"
+      ],
+      [
+       "mina",
+       "Thank you! I went to the cinema, but the film was boring.",
+       "Obrigada! Eu fui ao cinema, mas o filme estava chato."
+      ]
      ]
     }
    ]
@@ -126,41 +332,138 @@
    "p": [
     {
      "bg": "street",
-     "m": {"jin": "normal", "rafa": "normal"},
+     "m": {
+      "jin": "normal",
+      "rafa": "normal"
+     },
      "c": "Mercado de itens do Clube.",
      "l": [
-      ["jin", "We need some potions and some water.", "Precisamos de algumas poções e de água."],
-      ["rafa", "How many potions?", "Quantas poções?"]
+      [
+       "jin",
+       "We need some potions and some water.",
+       "Precisamos de algumas poções e de água."
+      ],
+      [
+       "rafa",
+       "How many potions?",
+       "Quantas poções?"
+      ]
      ]
     },
     {
      "bg": "street",
-     "m": {"jin": "det", "rafa": "sad"},
+     "m": {
+      "jin": "det",
+      "rafa": "sad"
+     },
      "l": [
-      ["jin", "A lot of potions. How much money do you have?", "Muitas poções. Quanto dinheiro você tem?"],
-      ["rafa", "Not much. I don't have any gold.", "Não muito. Não tenho nenhum ouro."]
+      [
+       "jin",
+       "A lot of potions. How much money do you have?",
+       "Muitas poções. Quanto dinheiro você tem?"
+      ],
+      [
+       "rafa",
+       "Not much. I don't have any gold.",
+       "Não muito. Não tenho nenhum ouro."
+      ]
      ]
     },
     {
      "sys": "Quantidades",
      "r": [
-      ["a potion, two potions", "Contáveis: têm plural"],
-      ["water, money, gold, information", "Incontáveis: sem plural"],
-      ["How many potions?", "HOW MANY + contável"],
-      ["How much money?", "HOW MUCH + incontável"],
-      ["some", "alguns / um pouco (frases afirmativas)"],
-      ["any", "nenhum / algum (negativas e perguntas)"],
-      ["a lot of", "muito / muitos (serve pros dois)"],
-      ["a few / a little", "alguns, uns poucos (contável) / um pouco (incontável)"]
+      [
+       "a potion, two potions",
+       "Contáveis: têm plural"
+      ],
+      [
+       "water, money, gold, information",
+       "Incontáveis: sem plural"
+      ],
+      [
+       "How many potions?",
+       "HOW MANY + contável"
+      ],
+      [
+       "How much money?",
+       "HOW MUCH + incontável"
+      ],
+      [
+       "some",
+       "alguns / um pouco (frases afirmativas)"
+      ],
+      [
+       "any",
+       "nenhum / algum (negativas e perguntas)"
+      ],
+      [
+       "a lot of",
+       "muito / muitos (serve pros dois)"
+      ],
+      [
+       "a few / a little",
+       "alguns, uns poucos (contável) / um pouco (incontável)"
+      ]
      ],
      "tip": "\"Information\" e \"advice\" não têm plural em inglês: some information, some advice."
     },
     {
      "bg": "street",
-     "m": {"rafa": "normal", "jin": "happy"},
+     "m": {
+      "rafa": "normal",
+      "jin": "happy"
+     },
      "l": [
-      ["rafa", "Can you give me some advice?", "Pode me dar um conselho?"],
-      ["jin", "Buy a few cheap items. Save a little money.", "Compre alguns itens baratos. Guarde um pouco de dinheiro."]
+      [
+       "rafa",
+       "Can you give me some advice?",
+       "Pode me dar um conselho?"
+      ],
+      [
+       "jin",
+       "Buy a few cheap items. Save a little money.",
+       "Compre alguns itens baratos. Guarde um pouco de dinheiro."
+      ]
+     ]
+    },
+    {
+     "bg": "street",
+     "m": {
+      "jin": "normal",
+      "rafa": "normal"
+     },
+     "c": "Cena extra",
+     "l": [
+      [
+       "jin",
+       "How much rice do we need?",
+       "Quanto arroz precisamos?"
+      ],
+      [
+       "rafa",
+       "Not much. One bag. But we need some eggs.",
+       "Não muito. Um pacote. Mas precisamos de alguns ovos."
+      ],
+      [
+       "jin",
+       "How many eggs?",
+       "Quantos ovos?"
+      ],
+      [
+       "rafa",
+       "Six. Is there any milk at home?",
+       "Seis. Tem leite em casa?"
+      ],
+      [
+       "jin",
+       "No, there isn't any. And we don't have much money!",
+       "Não, não tem nada. E não temos muito dinheiro!"
+      ],
+      [
+       "rafa",
+       "Then let's buy only a few things.",
+       "Então vamos comprar só algumas coisas."
+      ]
      ]
     }
    ]
@@ -174,38 +477,119 @@
    "p": [
     {
      "bg": "cafe",
-     "m": {"mina": "det", "rafa": "happy"},
+     "m": {
+      "mina": "det",
+      "rafa": "happy"
+     },
      "c": "Na manhã seguinte.",
      "l": [
-      ["mina", "What were you doing at ten last night?", "O que você estava fazendo às dez ontem à noite?"],
-      ["rafa", "I was studying. Really!", "Eu estava estudando. Sério!"]
+      [
+       "mina",
+       "What were you doing at ten last night?",
+       "O que você estava fazendo às dez ontem à noite?"
+      ],
+      [
+       "rafa",
+       "I was studying. Really!",
+       "Eu estava estudando. Sério!"
+      ]
      ]
     },
     {
      "bg": "cafe",
-     "m": {"mina": "det", "rafa": "sad"},
+     "m": {
+      "mina": "det",
+      "rafa": "sad"
+     },
      "l": [
-      ["mina", "I called you. You didn't answer.", "Eu te liguei. Você não atendeu."],
-      ["rafa", "I was sleeping on my book when you called.", "Eu estava dormindo em cima do livro quando você ligou."]
+      [
+       "mina",
+       "I called you. You didn't answer.",
+       "Eu te liguei. Você não atendeu."
+      ],
+      [
+       "rafa",
+       "I was sleeping on my book when you called.",
+       "Eu estava dormindo em cima do livro quando você ligou."
+      ]
      ]
     },
     {
      "sys": "Passado contínuo",
      "r": [
-      ["was / were + verbo-ING", "Ação em andamento no passado"],
-      ["I was studying at 10 p.m.", "Eu estava estudando às 22h"],
-      ["I was sleeping when you called.", "Ação longa + ação curta que interrompe"],
-      ["While I was walking, it started to rain.", "While = enquanto"],
-      ["They weren't listening.", "Negativo"],
-      ["What were you doing?", "Pergunta"]
+      [
+       "was / were + verbo-ING",
+       "Ação em andamento no passado"
+      ],
+      [
+       "I was studying at 10 p.m.",
+       "Eu estava estudando às 22h"
+      ],
+      [
+       "I was sleeping when you called.",
+       "Ação longa + ação curta que interrompe"
+      ],
+      [
+       "While I was walking, it started to rain.",
+       "While = enquanto"
+      ],
+      [
+       "They weren't listening.",
+       "Negativo"
+      ],
+      [
+       "What were you doing?",
+       "Pergunta"
+      ]
      ]
     },
     {
      "bg": "action",
-     "m": {"rafa": "shock"},
+     "m": {
+      "rafa": "shock"
+     },
      "c": "Flashback: o dia em que {o|a} Rafa encontrou a Torre.",
      "l": [
-      ["rafa", "I was walking home when a blue light appeared.", "Eu estava andando pra casa quando apareceu uma luz azul."]
+      [
+       "rafa",
+       "I was walking home when a blue light appeared.",
+       "Eu estava andando pra casa quando apareceu uma luz azul."
+      ]
+     ]
+    },
+    {
+     "bg": "cafe",
+     "m": {
+      "mina": "shock",
+      "rafa": "normal"
+     },
+     "c": "Cena extra",
+     "l": [
+      [
+       "mina",
+       "What were you doing when the lights went out?",
+       "O que você estava fazendo quando as luzes apagaram?"
+      ],
+      [
+       "rafa",
+       "I was having a shower! What about you?",
+       "Eu estava tomando banho! E você?"
+      ],
+      [
+       "mina",
+       "I was reading a book, and Jin was cooking.",
+       "Eu estava lendo um livro, e o Jin estava cozinhando."
+      ],
+      [
+       "rafa",
+       "Was the dinner OK?",
+       "O jantar ficou bom?"
+      ],
+      [
+       "mina",
+       "No. It was burning while we were looking for a torch!",
+       "Não. Ele estava queimando enquanto procurávamos uma lanterna!"
+      ]
      ]
     }
    ]
@@ -219,52 +603,150 @@
    "p": [
     {
      "bg": "gate",
-     "m": {"mina": "normal", "rafa": "det"},
+     "m": {
+      "mina": "normal",
+      "rafa": "det"
+     },
      "c": "A Torre anuncia: o próximo andar abre amanhã.",
      "l": [
-      ["mina", "What are you going to do tomorrow?", "O que você vai fazer amanhã?"],
-      ["rafa", "I'm going to enter the Tower.", "Vou entrar na Torre."]
+      [
+       "mina",
+       "What are you going to do tomorrow?",
+       "O que você vai fazer amanhã?"
+      ],
+      [
+       "rafa",
+       "I'm going to enter the Tower.",
+       "Vou entrar na Torre."
+      ]
      ]
     },
     {
      "bg": "gate",
-     "m": {"mina": "shock", "rafa": "sad"},
+     "m": {
+      "mina": "shock",
+      "rafa": "sad"
+     },
      "l": [
-      ["mina", "Alone?", "Sozinh{o|a}?"],
-      ["rafa", "...Will you come with me?", "...Você vem comigo?"]
+      [
+       "mina",
+       "Alone?",
+       "Sozinh{o|a}?"
+      ],
+      [
+       "rafa",
+       "...Will you come with me?",
+       "...Você vem comigo?"
+      ]
      ]
     },
     {
      "bg": "gate",
-     "m": {"mina": "happy"},
+     "m": {
+      "mina": "happy"
+     },
      "l": [
-      ["mina", "Fine. I'll come.", "Tá bom. Eu vou."]
+      [
+       "mina",
+       "Fine. I'll come.",
+       "Tá bom. Eu vou."
+      ]
      ]
     },
     {
      "sys": "Duas formas de futuro",
      "r": [
-      ["I'm going to travel next week.", "GOING TO: plano já decidido"],
-      ["I'll help you!", "WILL: decisão na hora, promessa, oferta"],
-      ["Look at the clouds! It's going to rain.", "Previsão com evidência → going to"],
-      ["I think you will pass.", "Opinião sobre o futuro → will"],
-      ["won't = will not", "Negativo de will"],
-      ["tomorrow, next week, soon", "Palavras de futuro"]
+      [
+       "I'm going to travel next week.",
+       "GOING TO: plano já decidido"
+      ],
+      [
+       "I'll help you!",
+       "WILL: decisão na hora, promessa, oferta"
+      ],
+      [
+       "Look at the clouds! It's going to rain.",
+       "Previsão com evidência → going to"
+      ],
+      [
+       "I think you will pass.",
+       "Opinião sobre o futuro → will"
+      ],
+      [
+       "won't = will not",
+       "Negativo de will"
+      ],
+      [
+       "tomorrow, next week, soon",
+       "Palavras de futuro"
+      ]
      ]
     },
     {
      "bg": "sky",
-     "m": {"rafa": "det", "mina": "happy"},
+     "m": {
+      "rafa": "det",
+      "mina": "happy"
+     },
      "l": [
-      ["rafa", "I promise I won't give up this time.", "Prometo que não vou desistir desta vez."],
-      ["mina", "I think you will be great.", "Acho que você vai ser ótim{o|a}."]
+      [
+       "rafa",
+       "I promise I won't give up this time.",
+       "Prometo que não vou desistir desta vez."
+      ],
+      [
+       "mina",
+       "I think you will be great.",
+       "Acho que você vai ser ótim{o|a}."
+      ]
      ]
     },
     {
      "bg": "sky",
-     "m": {"mina": "det"},
+     "m": {
+      "mina": "det"
+     },
      "l": [
-      ["mina", "Look at that sky. It's going to storm.", "Olha esse céu. Vai cair uma tempestade."]
+      [
+       "mina",
+       "Look at that sky. It's going to storm.",
+       "Olha esse céu. Vai cair uma tempestade."
+      ]
+     ]
+    },
+    {
+     "bg": "street",
+     "m": {
+      "mina": "happy",
+      "rafa": "normal"
+     },
+     "c": "Cena extra",
+     "l": [
+      [
+       "mina",
+       "What are you going to do this weekend?",
+       "O que você vai fazer neste fim de semana?"
+      ],
+      [
+       "rafa",
+       "I'm going to visit my cousins. They live by the sea.",
+       "Vou visitar meus primos. Eles moram perto do mar."
+      ],
+      [
+       "mina",
+       "Look at those clouds. I think it'll rain.",
+       "Olha aquelas nuvens. Acho que vai chover."
+      ],
+      [
+       "rafa",
+       "Then I'll take an umbrella. Will you come with me?",
+       "Então vou levar um guarda-chuva. Você vem comigo?"
+      ],
+      [
+       "mina",
+       "I'd love to, but I'm going to work on Saturday.",
+       "Eu adoraria, mas vou trabalhar no sábado."
+      ]
      ]
     }
    ]
@@ -280,51 +762,153 @@
    "p": [
     {
      "bg": "dungeon",
-     "m": {"rafa": "det"},
+     "m": {
+      "rafa": "det"
+     },
      "c": "Chefe do Arco 3. O Golem de Pedra acorda.",
      "l": [
-      ["monster", "I am stronger than you!", "Eu sou mais forte que você!"],
-      ["rafa", "Maybe. But I'm faster!", "Talvez. Mas eu sou mais rápid{o|a}!"]
+      [
+       "monster",
+       "I am stronger than you!",
+       "Eu sou mais forte que você!"
+      ],
+      [
+       "rafa",
+       "Maybe. But I'm faster!",
+       "Talvez. Mas eu sou mais rápid{o|a}!"
+      ]
      ]
     },
     {
      "bg": "dungeon",
-     "m": {"mina": "normal", "rafa": "sad"},
+     "m": {
+      "mina": "normal",
+      "rafa": "sad"
+     },
      "l": [
-      ["mina", "And this is the biggest monster on this floor.", "E esse é o maior monstro deste andar."],
-      ["rafa", "Great. Just great.", "Ótimo. Simplesmente ótimo."]
+      [
+       "mina",
+       "And this is the biggest monster on this floor.",
+       "E esse é o maior monstro deste andar."
+      ],
+      [
+       "rafa",
+       "Great. Just great.",
+       "Ótimo. Simplesmente ótimo."
+      ]
      ]
     },
     {
      "sys": "Comparar e superar",
      "r": [
-      ["fast → faster → the fastest", "Curtos: +ER / the +EST"],
-      ["big → bigger → the biggest", "Dobra a consoante"],
-      ["more dangerous / the most beautiful", "Longos: more / the most"],
-      ["good → better → the best", "Irregular"],
-      ["bad → worse → the worst", "Irregular"],
-      ["as strong as you", "Igualdade: tão forte quanto"],
-      ["stronger than you", "\"than\" = do que"]
+      [
+       "fast → faster → the fastest",
+       "Curtos: +ER / the +EST"
+      ],
+      [
+       "big → bigger → the biggest",
+       "Dobra a consoante"
+      ],
+      [
+       "more dangerous / the most beautiful",
+       "Longos: more / the most"
+      ],
+      [
+       "good → better → the best",
+       "Irregular"
+      ],
+      [
+       "bad → worse → the worst",
+       "Irregular"
+      ],
+      [
+       "as strong as you",
+       "Igualdade: tão forte quanto"
+      ],
+      [
+       "stronger than you",
+       "\"than\" = do que"
+      ]
      ]
     },
     {
      "bg": "action",
-     "m": {"rafa": "det"},
+     "m": {
+      "rafa": "det"
+     },
      "l": [
-      ["monster", "Your English is worse than mine!", "Seu inglês é pior que o meu!"],
-      ["rafa", "My English gets better every day. That's the point!", "Meu inglês fica melhor todo dia. É isso que importa!"]
+      [
+       "monster",
+       "Your English is worse than mine!",
+       "Seu inglês é pior que o meu!"
+      ],
+      [
+       "rafa",
+       "My English gets better every day. That's the point!",
+       "Meu inglês fica melhor todo dia. É isso que importa!"
+      ]
      ]
     },
-    {"sys": "Arco 3 completo", "text": "Você fala do agora, do passado e do futuro, e compara coisas. Nível básico concluído: agora começa o intermediário."},
+    {
+     "sys": "Arco 3 completo",
+     "text": "Você fala do agora, do passado e do futuro, e compara coisas. Nível básico concluído: agora começa o intermediário."
+    },
     {
      "sys": "Inglês americano x britânico",
      "r": [
-      ["I just ate. / I've just eaten.", "acabei de comer (nos EUA o passado simples também serve)"],
-      ["gotten / got", "particípio de get"],
-      ["store / shop", "loja"],
-      ["cookie / biscuit", "biscoito doce"]
+      [
+       "I just ate. / I've just eaten.",
+       "acabei de comer (nos EUA o passado simples também serve)"
+      ],
+      [
+       "gotten / got",
+       "particípio de get"
+      ],
+      [
+       "store / shop",
+       "loja"
+      ],
+      [
+       "cookie / biscuit",
+       "biscoito doce"
+      ]
      ],
      "tip": "Este curso usa o inglês americano. Os dois são corretos: o importante é ser consistente e reconhecer as diferenças."
+    },
+    {
+     "bg": "street",
+     "m": {
+      "mina": "happy",
+      "rafa": "happy"
+     },
+     "c": "Cena extra",
+     "l": [
+      [
+       "mina",
+       "This tower is taller than the old one.",
+       "Esta torre é mais alta que a antiga."
+      ],
+      [
+       "rafa",
+       "Yes, and it's the tallest building in the city.",
+       "Sim, e é o prédio mais alto da cidade."
+      ],
+      [
+       "mina",
+       "Is the new lift faster?",
+       "O elevador novo é mais rápido?"
+      ],
+      [
+       "rafa",
+       "Much faster. But the stairs are better for your health!",
+       "Muito mais rápido. Mas a escada é melhor para a saúde!"
+      ],
+      [
+       "mina",
+       "You're the most energetic person I know.",
+       "Você é a pessoa mais animada que eu conheço."
+      ]
+     ]
     }
    ]
   }

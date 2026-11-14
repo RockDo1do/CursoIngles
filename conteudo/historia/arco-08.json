@@ -1,7 +1,11 @@
 {
  "nome": "Arco 8 · Vozes da Cidade",
  "descricao": "Avançado · C1 · condicionais mistas, subjuntivo, reuniões e apresentações",
- "agora_voce_consegue": ["Usar condicionais mistas e o subjuntivo", "Falar com cautela em contextos profissionais", "Apresentar ideias e participar de reuniões"],
+ "agora_voce_consegue": [
+  "Usar condicionais mistas e o subjuntivo",
+  "Falar com cautela em contextos profissionais",
+  "Apresentar ideias e participar de reuniões"
+ ],
  "capitulos": [
   {
    "t": "Se Eu Tivesse...",
@@ -10,41 +14,135 @@
    "bg": "room",
    "hero": "mina",
    "p": [
-    {"sys": "Arco 8 · Vozes da Cidade", "text": "De volta a Seul, o Clube dá a você um cargo novo: ajudar a planejar as missões em inglês. Agora o desafio é falar como profissional."},
+    {
+     "sys": "Arco 8 · Vozes da Cidade",
+     "text": "De volta a Seul, o Clube dá a você um cargo novo: ajudar a planejar as missões em inglês. Agora o desafio é falar como profissional."
+    },
     {
      "bg": "room",
-     "m": {"mina": "happy", "rafa": "normal"},
+     "m": {
+      "mina": "happy",
+      "rafa": "normal"
+     },
      "l": [
-      ["mina", "If you hadn't come back, we wouldn't have anyone to plan our missions now.", "Se você não tivesse voltado, não teríamos ninguém para planejar as missões agora."],
-      ["rafa", "And if I were more organized, I would have finished the plan yesterday.", "E se eu fosse mais organizad{o|a}, teria terminado o plano ontem."]
+      [
+       "mina",
+       "If you hadn't come back, we wouldn't have anyone to plan our missions now.",
+       "Se você não tivesse voltado, não teríamos ninguém para planejar as missões agora."
+      ],
+      [
+       "rafa",
+       "And if I were more organized, I would have finished the plan yesterday.",
+       "E se eu fosse mais organizad{o|a}, teria terminado o plano ontem."
+      ]
      ]
     },
     {
      "bg": "cafe",
-     "m": {"jin": "sad", "mina": "det"},
+     "m": {
+      "jin": "sad",
+      "mina": "det"
+     },
      "l": [
-      ["jin", "If I had slept more last night, I wouldn't be so tired now.", "Se eu tivesse dormido mais ontem à noite, não estaria tão cansado agora."],
-      ["mina", "If you weren't so stubborn, you would have listened to me.", "Se você não fosse tão teimoso, teria me escutado."]
+      [
+       "jin",
+       "If I had slept more last night, I wouldn't be so tired now.",
+       "Se eu tivesse dormido mais ontem à noite, não estaria tão cansado agora."
+      ],
+      [
+       "mina",
+       "If you weren't so stubborn, you would have listened to me.",
+       "Se você não fosse tão teimoso, teria me escutado."
+      ]
      ]
     },
     {
      "sys": "Condicionais mistas",
      "r": [
-      ["If I had studied, I would be fluent now.", "Passado imaginário → resultado no presente"],
-      ["If I were braver, I would have said yes.", "Presente imaginário → resultado no passado"],
-      ["if + had + particípio … would + verbo", "Tipo 1: o passado muda o agora"],
-      ["if + passado simples … would have + particípio", "Tipo 2: algo permanente muda o passado"],
-      ["If I hadn't missed the bus, I'd be home now.", "Se eu não tivesse perdido o ônibus, estaria em casa agora"],
-      ["If she spoke English, she would have gotten the job.", "Se ela falasse inglês, teria conseguido a vaga"]
+      [
+       "If I had studied, I would be fluent now.",
+       "Passado imaginário → resultado no presente"
+      ],
+      [
+       "If I were braver, I would have said yes.",
+       "Presente imaginário → resultado no passado"
+      ],
+      [
+       "if + had + particípio … would + verbo",
+       "Tipo 1: o passado muda o agora"
+      ],
+      [
+       "if + passado simples … would have + particípio",
+       "Tipo 2: algo permanente muda o passado"
+      ],
+      [
+       "If I hadn't missed the bus, I'd be home now.",
+       "Se eu não tivesse perdido o ônibus, estaria em casa agora"
+      ],
+      [
+       "If she spoke English, she would have gotten the job.",
+       "Se ela falasse inglês, teria conseguido a vaga"
+      ]
      ],
      "tip": "Pense no tempo de cada metade da frase: a condição pode estar no passado e o resultado no agora, ou o contrário."
     },
     {
      "bg": "room",
-     "m": {"rafa": "happy", "mina": "happy"},
+     "m": {
+      "rafa": "happy",
+      "mina": "happy"
+     },
      "l": [
-      ["rafa", "If I hadn't started this course, I wouldn't understand this meeting.", "Se eu não tivesse começado este curso, não entenderia esta reunião."],
-      ["mina", "Exactly. Small choices in the past change who you are today.", "Exatamente. Pequenas escolhas no passado mudam quem você é hoje."]
+      [
+       "rafa",
+       "If I hadn't started this course, I wouldn't understand this meeting.",
+       "Se eu não tivesse começado este curso, não entenderia esta reunião."
+      ],
+      [
+       "mina",
+       "Exactly. Small choices in the past change who you are today.",
+       "Exatamente. Pequenas escolhas no passado mudam quem você é hoje."
+      ]
+     ]
+    },
+    {
+     "bg": "room",
+     "m": {
+      "jin": "normal",
+      "rafa": "normal"
+     },
+     "c": "Cena extra",
+     "l": [
+      [
+       "jin",
+       "If I had accepted that job in Tokyo, I would be living in Japan now.",
+       "Se eu tivesse aceitado aquele emprego em Tóquio, estaria morando no Japão agora."
+      ],
+      [
+       "rafa",
+       "Do you regret it?",
+       "Você se arrepende?"
+      ],
+      [
+       "jin",
+       "Sometimes. But if I were living there, I wouldn't have met you two.",
+       "Às vezes. Mas, se eu morasse lá, não teria conhecido vocês {dois|duas}."
+      ],
+      [
+       "rafa",
+       "And if I hadn't joined the club, I wouldn't be speaking English like this today.",
+       "E se eu não tivesse entrado no clube, não estaria falando inglês assim hoje."
+      ],
+      [
+       "jin",
+       "So, in a way, it all worked out for the best.",
+       "Então, de certa forma, tudo acabou dando certo."
+      ],
+      [
+       "rafa",
+       "It certainly did.",
+       "Com certeza."
+      ]
      ]
     }
    ]
@@ -59,39 +157,128 @@
     {
      "bg": "room",
      "c": "Reunião com a Diretora do Clube.",
-     "m": {"jin": "det", "rafa": "shock"},
+     "m": {
+      "jin": "det",
+      "rafa": "shock"
+     },
      "l": [
-      ["jin", "The Director suggested that we change the plan.", "A Diretora sugeriu que mudássemos o plano."],
-      ["rafa", "She insists that every team be ready by Friday?", "Ela insiste que todas as equipes estejam prontas até sexta?"]
+      [
+       "jin",
+       "The Director suggested that we change the plan.",
+       "A Diretora sugeriu que mudássemos o plano."
+      ],
+      [
+       "rafa",
+       "She insists that every team be ready by Friday?",
+       "Ela insiste que todas as equipes estejam prontas até sexta?"
+      ]
      ]
     },
     {
      "bg": "room",
-     "m": {"mina": "det", "jin": "sad"},
+     "m": {
+      "mina": "det",
+      "jin": "sad"
+     },
      "l": [
-      ["mina", "Yes. It's essential that everyone understand the risks.", "Sim. É essencial que todos entendam os riscos."],
-      ["jin", "I'd rather we waited one more week.", "Eu preferiria que esperássemos mais uma semana."]
+      [
+       "mina",
+       "Yes. It's essential that everyone understand the risks.",
+       "Sim. É essencial que todos entendam os riscos."
+      ],
+      [
+       "jin",
+       "I'd rather we waited one more week.",
+       "Eu preferiria que esperássemos mais uma semana."
+      ]
      ]
     },
     {
      "sys": "Subjuntivo e pedidos formais",
      "r": [
-      ["I suggest that he study more.", "Sugiro que ele estude mais (verbo sem S)"],
-      ["She insisted that we be on time.", "Ela insistiu que chegássemos na hora (be para todos)"],
-      ["It's essential that everyone arrive early.", "É essencial que todos cheguem cedo"],
-      ["recommend, demand, request that + verbo puro", "Verbos que pedem o subjuntivo"],
-      ["I'd rather you didn't tell her.", "Eu preferiria que você não contasse a ela"],
-      ["It's time we left.", "Já está na hora de irmos"],
-      ["If I were you...", "Também é subjuntivo: were para todos"]
+      [
+       "I suggest that he study more.",
+       "Sugiro que ele estude mais (verbo sem S)"
+      ],
+      [
+       "She insisted that we be on time.",
+       "Ela insistiu que chegássemos na hora (be para todos)"
+      ],
+      [
+       "It's essential that everyone arrive early.",
+       "É essencial que todos cheguem cedo"
+      ],
+      [
+       "recommend, demand, request that + verbo puro",
+       "Verbos que pedem o subjuntivo"
+      ],
+      [
+       "I'd rather you didn't tell her.",
+       "Eu preferiria que você não contasse a ela"
+      ],
+      [
+       "It's time we left.",
+       "Já está na hora de irmos"
+      ],
+      [
+       "If I were you...",
+       "Também é subjuntivo: were para todos"
+      ]
      ],
      "tip": "No subjuntivo, o verbo fica na forma pura para todas as pessoas: “that he go”, “that she be”. Muita gente também usa should: “I suggest that he should study”."
     },
     {
      "bg": "room",
-     "m": {"rafa": "happy", "mina": "happy"},
+     "m": {
+      "rafa": "happy",
+      "mina": "happy"
+     },
      "l": [
-      ["rafa", "I recommend that we start with the easy portals.", "Recomendo que comecemos pelos portais fáceis."],
-      ["mina", "Good. It's time we made a decision.", "Boa. Já está na hora de tomarmos uma decisão."]
+      [
+       "rafa",
+       "I recommend that we start with the easy portals.",
+       "Recomendo que comecemos pelos portais fáceis."
+      ],
+      [
+       "mina",
+       "Good. It's time we made a decision.",
+       "Boa. Já está na hora de tomarmos uma decisão."
+      ]
+     ]
+    },
+    {
+     "bg": "room",
+     "m": {
+      "mina": "det",
+      "rafa": "normal"
+     },
+     "c": "Cena extra",
+     "l": [
+      [
+       "mina",
+       "The director has proposed that the office be closed on Fridays.",
+       "A diretora propôs que o escritório fique fechado às sextas."
+      ],
+      [
+       "rafa",
+       "Really? Then it's essential that everyone be informed as soon as possible.",
+       "Sério? Então é essencial que todos sejam informados o quanto antes."
+      ],
+      [
+       "mina",
+       "She also recommended that each team appoint a contact person.",
+       "Ela também recomendou que cada equipe nomeie uma pessoa de contato."
+      ],
+      [
+       "rafa",
+       "I suggest that we discuss it at Monday's meeting.",
+       "Sugiro que a gente discuta isso na reunião de segunda."
+      ],
+      [
+       "mina",
+       "Agreed. I'll ask that it be added to the agenda.",
+       "De acordo. Vou pedir que isso seja incluído na pauta."
+      ]
      ]
     }
    ]
@@ -106,39 +293,133 @@
     {
      "bg": "cafe",
      "c": "Relatório sobre um portal estranho.",
-     "m": {"jin": "det", "mina": "normal"},
+     "m": {
+      "jin": "det",
+      "mina": "normal"
+     },
      "l": [
-      ["jin", "This portal is dangerous. Period.", "Este portal é perigoso. Ponto final."],
-      ["mina", "We don't know that yet. It seems that it might be unstable.", "Ainda não sabemos. Parece que ele pode estar instável."]
+      [
+       "jin",
+       "This portal is dangerous. Period.",
+       "Este portal é perigoso. Ponto final."
+      ],
+      [
+       "mina",
+       "We don't know that yet. It seems that it might be unstable.",
+       "Ainda não sabemos. Parece que ele pode estar instável."
+      ]
      ]
     },
     {
      "bg": "cafe",
-     "m": {"rafa": "normal", "mina": "happy"},
+     "m": {
+      "rafa": "normal",
+      "mina": "happy"
+     },
      "l": [
-      ["rafa", "The data suggests that monsters tend to appear at night.", "Os dados sugerem que os monstros costumam aparecer à noite."],
-      ["mina", "Good. That's a careful way to say it.", "Boa. Esse é um jeito cuidadoso de dizer."]
+      [
+       "rafa",
+       "The data suggests that monsters tend to appear at night.",
+       "Os dados sugerem que os monstros costumam aparecer à noite."
+      ],
+      [
+       "mina",
+       "Good. That's a careful way to say it.",
+       "Boa. Esse é um jeito cuidadoso de dizer."
+      ]
      ]
     },
     {
      "sys": "Falar com cautela",
      "r": [
-      ["It seems that... / It appears that...", "Parece que..."],
-      ["tend to + verbo", "costumar, ter tendência a"],
-      ["It's likely / unlikely that...", "É provável / improvável que..."],
-      ["might, may, could", "pode ser que, talvez"],
-      ["I'd say that...", "Eu diria que..."],
-      ["to some extent", "até certo ponto"],
-      ["The results suggest that...", "Os resultados sugerem que..."]
+      [
+       "It seems that... / It appears that...",
+       "Parece que..."
+      ],
+      [
+       "tend to + verbo",
+       "costumar, ter tendência a"
+      ],
+      [
+       "It's likely / unlikely that...",
+       "É provável / improvável que..."
+      ],
+      [
+       "might, may, could",
+       "pode ser que, talvez"
+      ],
+      [
+       "I'd say that...",
+       "Eu diria que..."
+      ],
+      [
+       "to some extent",
+       "até certo ponto"
+      ],
+      [
+       "The results suggest that...",
+       "Os resultados sugerem que..."
+      ]
      ],
      "tip": "Em relatórios, e-mails de trabalho e discussões, frases cautelosas soam mais profissionais e evitam afirmar o que você não sabe com certeza."
     },
     {
      "bg": "cafe",
-     "m": {"jin": "happy", "mina": "happy"},
+     "m": {
+      "jin": "happy",
+      "mina": "happy"
+     },
      "l": [
-      ["jin", "Fine. I'd say the portal is probably dangerous.", "Tá bom. Eu diria que o portal provavelmente é perigoso."],
-      ["mina", "Much better. You might become a diplomat one day.", "Muito melhor. Pode ser que você vire diplomata um dia."]
+      [
+       "jin",
+       "Fine. I'd say the portal is probably dangerous.",
+       "Tá bom. Eu diria que o portal provavelmente é perigoso."
+      ],
+      [
+       "mina",
+       "Much better. You might become a diplomat one day.",
+       "Muito melhor. Pode ser que você vire diplomata um dia."
+      ]
+     ]
+    },
+    {
+     "bg": "cafe",
+     "m": {
+      "jin": "normal",
+      "rafa": "normal"
+     },
+     "c": "Cena extra",
+     "l": [
+      [
+       "jin",
+       "It seems that the new app is not as popular as expected.",
+       "Parece que o aplicativo novo não está tão popular quanto se esperava."
+      ],
+      [
+       "rafa",
+       "Users tend to delete apps that ask for too much information.",
+       "Os usuários tendem a apagar aplicativos que pedem informações demais."
+      ],
+      [
+       "jin",
+       "That's likely to be part of the problem.",
+       "Isso provavelmente é parte do problema."
+      ],
+      [
+       "rafa",
+       "It might also be the price. Arguably, it's a bit too expensive.",
+       "Também pode ser o preço. Pode-se dizer que é um pouco caro demais."
+      ],
+      [
+       "jin",
+       "To some extent, yes. We should probably test a free version.",
+       "Até certo ponto, sim. Provavelmente devíamos testar uma versão gratuita."
+      ],
+      [
+       "rafa",
+       "That would appear to be the safest option.",
+       "Essa parece ser a opção mais segura."
+      ]
      ]
     }
    ]
@@ -153,39 +434,132 @@
     {
      "bg": "gate",
      "c": "Você vai apresentar o plano para todo o Clube.",
-     "m": {"rafa": "det"},
+     "m": {
+      "rafa": "det"
+     },
      "l": [
-      ["rafa", "Good morning, everyone. Today I'd like to talk about our new plan.", "Bom dia a todos. Hoje eu gostaria de falar sobre o nosso novo plano."],
-      ["rafa", "First, I'll explain the problem. Then, I'll show you our solution.", "Primeiro, vou explicar o problema. Depois, vou mostrar a nossa solução."]
+      [
+       "rafa",
+       "Good morning, everyone. Today I'd like to talk about our new plan.",
+       "Bom dia a todos. Hoje eu gostaria de falar sobre o nosso novo plano."
+      ],
+      [
+       "rafa",
+       "First, I'll explain the problem. Then, I'll show you our solution.",
+       "Primeiro, vou explicar o problema. Depois, vou mostrar a nossa solução."
+      ]
      ]
     },
     {
      "bg": "gate",
-     "m": {"rafa": "normal", "jin": "normal"},
+     "m": {
+      "rafa": "normal",
+      "jin": "normal"
+     },
      "l": [
-      ["rafa", "Moving on to the next point, let's look at this chart.", "Passando para o próximo ponto, vamos olhar este gráfico."],
-      ["jin", "Sorry, could you go back to the last slide?", "Desculpe, você poderia voltar ao último slide?"]
+      [
+       "rafa",
+       "Moving on to the next point, let's look at this chart.",
+       "Passando para o próximo ponto, vamos olhar este gráfico."
+      ],
+      [
+       "jin",
+       "Sorry, could you go back to the last slide?",
+       "Desculpe, você poderia voltar ao último slide?"
+      ]
      ]
     },
     {
      "sys": "Organizando uma apresentação",
      "r": [
-      ["Today I'd like to talk about...", "Hoje eu gostaria de falar sobre..."],
-      ["First... Then... Finally...", "Primeiro... Depois... Por fim..."],
-      ["Moving on to...", "Passando para..."],
-      ["As you can see in this chart...", "Como vocês podem ver neste gráfico..."],
-      ["Let me give you an example.", "Vou dar um exemplo."],
-      ["To sum up...", "Resumindo..."],
-      ["Are there any questions?", "Alguém tem alguma pergunta?"]
+      [
+       "Today I'd like to talk about...",
+       "Hoje eu gostaria de falar sobre..."
+      ],
+      [
+       "First... Then... Finally...",
+       "Primeiro... Depois... Por fim..."
+      ],
+      [
+       "Moving on to...",
+       "Passando para..."
+      ],
+      [
+       "As you can see in this chart...",
+       "Como vocês podem ver neste gráfico..."
+      ],
+      [
+       "Let me give you an example.",
+       "Vou dar um exemplo."
+      ],
+      [
+       "To sum up...",
+       "Resumindo..."
+      ],
+      [
+       "Are there any questions?",
+       "Alguém tem alguma pergunta?"
+      ]
      ],
      "tip": "Diga no começo o que vai apresentar e, no fim, resuma. O público acompanha melhor quando sabe em que parte você está."
     },
     {
      "bg": "gate",
-     "m": {"rafa": "happy", "mina": "happy"},
+     "m": {
+      "rafa": "happy",
+      "mina": "happy"
+     },
      "l": [
-      ["rafa", "To sum up, this plan is faster and safer. Are there any questions?", "Resumindo, este plano é mais rápido e mais seguro. Alguém tem alguma pergunta?"],
-      ["mina", "No questions. Just applause.", "Nenhuma pergunta. Só aplausos."]
+      [
+       "rafa",
+       "To sum up, this plan is faster and safer. Are there any questions?",
+       "Resumindo, este plano é mais rápido e mais seguro. Alguém tem alguma pergunta?"
+      ],
+      [
+       "mina",
+       "No questions. Just applause.",
+       "Nenhuma pergunta. Só aplausos."
+      ]
+     ]
+    },
+    {
+     "bg": "gate",
+     "m": {
+      "mina": "happy",
+      "rafa": "det"
+     },
+     "c": "Cena extra",
+     "l": [
+      [
+       "mina",
+       "How do I end my presentation?",
+       "Como eu termino a minha apresentação?"
+      ],
+      [
+       "rafa",
+       "First, summarise your three main points. Say: “To sum up, we've looked at costs, timing and risks.”",
+       "Primeiro, resuma os seus três pontos principais. Diga: “To sum up, we've looked at costs, timing and risks.”"
+      ],
+      [
+       "mina",
+       "And then?",
+       "E depois?"
+      ],
+      [
+       "rafa",
+       "Finish with a clear message. For example: “The key takeaway is that we should start now.”",
+       "Termine com uma mensagem clara. Por exemplo: “The key takeaway is that we should start now.”"
+      ],
+      [
+       "mina",
+       "And questions?",
+       "E as perguntas?"
+      ],
+      [
+       "rafa",
+       "Say: “Thank you for listening. I'd be happy to take any questions.”",
+       "Diga: “Thank you for listening. I'd be happy to take any questions.”"
+      ]
      ]
     }
    ]
@@ -200,39 +574,133 @@
     {
      "bg": "room",
      "c": "Reunião de equipe. Jin e Mina discordam.",
-     "m": {"jin": "det", "mina": "sad"},
+     "m": {
+      "jin": "det",
+      "mina": "sad"
+     },
      "l": [
-      ["jin", "I think we should attack the portal tonight.", "Acho que deveríamos atacar o portal hoje à noite."],
-      ["mina", "I see your point, but I'm not sure that's a good idea.", "Entendo seu ponto, mas não tenho certeza de que é uma boa ideia."]
+      [
+       "jin",
+       "I think we should attack the portal tonight.",
+       "Acho que deveríamos atacar o portal hoje à noite."
+      ],
+      [
+       "mina",
+       "I see your point, but I'm not sure that's a good idea.",
+       "Entendo seu ponto, mas não tenho certeza de que é uma boa ideia."
+      ]
      ]
     },
     {
      "bg": "room",
-     "m": {"rafa": "det", "jin": "normal"},
+     "m": {
+      "rafa": "det",
+      "jin": "normal"
+     },
      "l": [
-      ["rafa", "Sorry to interrupt, but could I add something?", "Desculpe interromper, mas posso acrescentar algo?"],
-      ["rafa", "What if we wait until morning? Then we can see the area.", "E se esperarmos até de manhã? Assim conseguimos ver a área."]
+      [
+       "rafa",
+       "Sorry to interrupt, but could I add something?",
+       "Desculpe interromper, mas posso acrescentar algo?"
+      ],
+      [
+       "rafa",
+       "What if we wait until morning? Then we can see the area.",
+       "E se esperarmos até de manhã? Assim conseguimos ver a área."
+      ]
      ]
     },
     {
      "sys": "Em reuniões",
      "r": [
-      ["I agree with you. / Exactly.", "Concordo com você. / Exatamente."],
-      ["I see your point, but...", "Entendo seu ponto, mas..."],
-      ["I'm not sure that's a good idea.", "Não tenho certeza de que é uma boa ideia"],
-      ["Sorry to interrupt, but...", "Desculpe interromper, mas..."],
-      ["What do you mean by...?", "O que você quer dizer com...?"],
-      ["So, what you're saying is...", "Então, o que você está dizendo é..."],
-      ["What if we...?", "E se nós...?"]
+      [
+       "I agree with you. / Exactly.",
+       "Concordo com você. / Exatamente."
+      ],
+      [
+       "I see your point, but...",
+       "Entendo seu ponto, mas..."
+      ],
+      [
+       "I'm not sure that's a good idea.",
+       "Não tenho certeza de que é uma boa ideia"
+      ],
+      [
+       "Sorry to interrupt, but...",
+       "Desculpe interromper, mas..."
+      ],
+      [
+       "What do you mean by...?",
+       "O que você quer dizer com...?"
+      ],
+      [
+       "So, what you're saying is...",
+       "Então, o que você está dizendo é..."
+      ],
+      [
+       "What if we...?",
+       "E se nós...?"
+      ]
      ],
      "tip": "Para discordar com educação, reconheça a ideia do outro antes de dar a sua: “I see your point, but...”."
     },
     {
      "bg": "room",
-     "m": {"jin": "normal", "mina": "happy"},
+     "m": {
+      "jin": "normal",
+      "mina": "happy"
+     },
      "l": [
-      ["jin", "So, what you're saying is that waiting is safer?", "Então, o que você está dizendo é que esperar é mais seguro?"],
-      ["mina", "Exactly. Let's take a vote.", "Exatamente. Vamos votar."]
+      [
+       "jin",
+       "So, what you're saying is that waiting is safer?",
+       "Então, o que você está dizendo é que esperar é mais seguro?"
+      ],
+      [
+       "mina",
+       "Exactly. Let's take a vote.",
+       "Exatamente. Vamos votar."
+      ]
+     ]
+    },
+    {
+     "bg": "room",
+     "m": {
+      "jin": "det",
+      "rafa": "normal"
+     },
+     "c": "Cena extra",
+     "l": [
+      [
+       "jin",
+       "I think we should launch the product in March.",
+       "Acho que deveríamos lançar o produto em março."
+      ],
+      [
+       "rafa",
+       "I see your point, but I'm not sure we'll be ready by then.",
+       "Entendo o seu ponto, mas não tenho certeza se estaremos prontos até lá."
+      ],
+      [
+       "jin",
+       "Could you clarify what you mean by “ready”?",
+       "Você poderia esclarecer o que quer dizer com “prontos”?"
+      ],
+      [
+       "rafa",
+       "What I mean is that the testing won't be finished until April.",
+       "O que eu quero dizer é que os testes só vão terminar em abril."
+      ],
+      [
+       "jin",
+       "Fair enough. So, are we agreed on a launch in May?",
+       "Justo. Então, estamos de acordo com um lançamento em maio?"
+      ],
+      [
+       "rafa",
+       "Yes, I'm happy with that.",
+       "Sim, por mim tudo bem."
+      ]
      ]
     }
    ]
@@ -246,52 +714,158 @@
    "mon": "SILÊNCIO",
    "boss": true,
    "p": [
-    {"sys": "Chefe do Arco 8", "text": "Um monstro que se alimenta de hesitação bloqueia a porta do Clube. Ele só desaparece quando alguém fala com clareza e confiança."},
+    {
+     "sys": "Chefe do Arco 8",
+     "text": "Um monstro que se alimenta de hesitação bloqueia a porta do Clube. Ele só desaparece quando alguém fala com clareza e confiança."
+    },
     {
      "bg": "dungeon",
-     "m": {"monster": "det", "rafa": "shock"},
+     "m": {
+      "monster": "det",
+      "rafa": "shock"
+     },
      "l": [
-      ["monster", "If you had any talent, you would have spoken already.", "Se você tivesse algum talento, já teria falado."],
-      ["rafa", "I see your point, but I disagree. I'm speaking now.", "Entendo seu ponto, mas discordo. Estou falando agora."]
+      [
+       "monster",
+       "If you had any talent, you would have spoken already.",
+       "Se você tivesse algum talento, já teria falado."
+      ],
+      [
+       "rafa",
+       "I see your point, but I disagree. I'm speaking now.",
+       "Entendo seu ponto, mas discordo. Estou falando agora."
+      ]
      ]
     },
     {
      "bg": "dungeon",
-     "m": {"monster": "det", "rafa": "det"},
+     "m": {
+      "monster": "det",
+      "rafa": "det"
+     },
      "l": [
-      ["monster", "It seems that you are afraid.", "Parece que você está com medo."],
-      ["rafa", "It's likely that I'm nervous. But it's essential that I continue.", "É provável que eu esteja nervos{o|a}. Mas é essencial que eu continue."]
+      [
+       "monster",
+       "It seems that you are afraid.",
+       "Parece que você está com medo."
+      ],
+      [
+       "rafa",
+       "It's likely that I'm nervous. But it's essential that I continue.",
+       "É provável que eu esteja nervos{o|a}. Mas é essencial que eu continue."
+      ]
      ]
     },
     {
      "sys": "Revisão do Arco 8",
      "r": [
-      ["If I had practiced, I would be calmer now.", "Condicional mista"],
-      ["It's essential that he be ready.", "Subjuntivo"],
-      ["It seems that... / tend to...", "Linguagem cautelosa"],
-      ["Moving on to... / To sum up...", "Apresentações"],
-      ["I see your point, but...", "Discordar com educação"]
+      [
+       "If I had practiced, I would be calmer now.",
+       "Condicional mista"
+      ],
+      [
+       "It's essential that he be ready.",
+       "Subjuntivo"
+      ],
+      [
+       "It seems that... / tend to...",
+       "Linguagem cautelosa"
+      ],
+      [
+       "Moving on to... / To sum up...",
+       "Apresentações"
+      ],
+      [
+       "I see your point, but...",
+       "Discordar com educação"
+      ]
      ],
      "tip": "Falar bem não é falar sem errar. É falar com clareza, mesmo com medo."
     },
     {
      "bg": "gate",
-     "m": {"mina": "happy", "rafa": "happy"},
+     "m": {
+      "mina": "happy",
+      "rafa": "happy"
+     },
      "l": [
-      ["mina", "To sum up: you're ready.", "Resumindo: você está pront{o|a}."],
-      ["rafa", "If I hadn't climbed this tower, I wouldn't be the person I am today.", "Se eu não tivesse subido esta torre, não seria quem sou hoje."]
+      [
+       "mina",
+       "To sum up: you're ready.",
+       "Resumindo: você está pront{o|a}."
+      ],
+      [
+       "rafa",
+       "If I hadn't climbed this tower, I wouldn't be the person I am today.",
+       "Se eu não tivesse subido esta torre, não seria quem sou hoje."
+      ]
      ]
     },
-    {"sys": "Arco 8 completo", "text": "Nível C1 concluído. Você planeja, apresenta, discute e escreve em inglês com nuance. Categoria aumentada."},
+    {
+     "sys": "Arco 8 completo",
+     "text": "Nível C1 concluído. Você planeja, apresenta, discute e escreve em inglês com nuance. Categoria aumentada."
+    },
     {
      "sys": "Inglês americano x britânico",
      "r": [
-      ["schedule", "EUA: SKED-jool · Reino Unido: SHED-jool"],
-      ["fill out / fill in a form", "preencher um formulário"],
-      ["résumé / CV", "currículo"],
-      ["I suggest he go / I suggest he should go", "o subjuntivo é mais comum nos EUA"]
+      [
+       "schedule",
+       "EUA: SKED-jool · Reino Unido: SHED-jool"
+      ],
+      [
+       "fill out / fill in a form",
+       "preencher um formulário"
+      ],
+      [
+       "résumé / CV",
+       "currículo"
+      ],
+      [
+       "I suggest he go / I suggest he should go",
+       "o subjuntivo é mais comum nos EUA"
+      ]
      ],
      "tip": "Este curso usa o inglês americano. Os dois são corretos: o importante é ser consistente e reconhecer as diferenças."
+    },
+    {
+     "bg": "gate",
+     "m": {
+      "mina": "happy",
+      "rafa": "happy"
+     },
+     "c": "Cena extra",
+     "l": [
+      [
+       "mina",
+       "If we hadn't practised every day, we wouldn't be standing here now.",
+       "Se não tivéssemos praticado todo dia, não estaríamos aqui agora."
+      ],
+      [
+       "rafa",
+       "It's essential that we keep practising, though. Languages fade if you don't use them.",
+       "Mas é essencial que a gente continue praticando. As línguas se perdem se você não as usa."
+      ],
+      [
+       "mina",
+       "It would appear that you've become quite a philosopher.",
+       "Parece que você virou um{|a} filósof{o|a} e tanto."
+      ],
+      [
+       "rafa",
+       "To sum up: we came, we struggled, and we learned.",
+       "Resumindo: viemos, lutamos e aprendemos."
+      ],
+      [
+       "mina",
+       "Not bad. Shall we celebrate?",
+       "Nada mal. Vamos comemorar?"
+      ],
+      [
+       "rafa",
+       "Absolutely. The next round is on me.",
+       "Com certeza. A próxima rodada é por minha conta."
+      ]
+     ]
     }
    ]
   }

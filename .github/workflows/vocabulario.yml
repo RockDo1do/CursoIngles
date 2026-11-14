@@ -5,7 +5,7 @@ name: Vozes do conteúdo novo
 on:
   push:
     branches: ['vocabulario/**', 'conteudo/**']
-    paths: ['conteudo/pratica/vocabulario.json', 'conteudo/pratica/leitura.json', 'conteudo/pratica/escuta.json']
+    paths: ['conteudo/pratica/vocabulario.json', 'conteudo/pratica/leitura.json', 'conteudo/pratica/escuta.json', 'conteudo/historia/**']
   workflow_dispatch:
 permissions:
   contents: write

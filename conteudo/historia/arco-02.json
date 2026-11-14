@@ -1,7 +1,11 @@
 {
  "nome": "Arco 2 · Primeiros Andares",
  "descricao": "Básico · A1 · rotina, horas, perguntas e habilidades",
- "agora_voce_consegue": ["Descrever a rotina e falar as horas", "Fazer perguntas simples", "Dizer o que sabe e gosta de fazer"],
+ "agora_voce_consegue": [
+  "Descrever a rotina e falar as horas",
+  "Fazer perguntas simples",
+  "Dizer o que sabe e gosta de fazer"
+ ],
  "capitulos": [
   {
    "t": "Rotina do Explorador",
@@ -12,50 +16,153 @@
    "p": [
     {
      "bg": "room",
-     "m": {"mina": "det"},
+     "m": {
+      "mina": "det"
+     },
      "c": "Mina explica: exploradores fortes têm rotina.",
      "l": [
-      ["mina", "I wake up at six every day.", "Eu acordo às seis todo dia."],
-      ["rafa", "I wake up at ten...", "Eu acordo às dez..."]
+      [
+       "mina",
+       "I wake up at six every day.",
+       "Eu acordo às seis todo dia."
+      ],
+      [
+       "rafa",
+       "I wake up at ten...",
+       "Eu acordo às dez..."
+      ]
      ]
     },
     {
      "bg": "room",
-     "m": {"mina": "normal", "rafa": "sad"},
+     "m": {
+      "mina": "normal",
+      "rafa": "sad"
+     },
      "l": [
-      ["mina", "I train in the morning. I study English at night.", "Eu treino de manhã. Estudo inglês à noite."],
-      ["rafa", "Does she ever rest?", "Ela descansa alguma vez?"],
-      ["mina", "I heard that. I rest on Sundays.", "Eu ouvi isso. Eu descanso aos domingos."]
+      [
+       "mina",
+       "I train in the morning. I study English at night.",
+       "Eu treino de manhã. Estudo inglês à noite."
+      ],
+      [
+       "rafa",
+       "Does she ever rest?",
+       "Ela descansa alguma vez?"
+      ],
+      [
+       "mina",
+       "I heard that. I rest on Sundays.",
+       "Eu ouvi isso. Eu descanso aos domingos."
+      ]
      ]
     },
     {
      "sys": "Presente simples",
      "r": [
-      ["I train / you train", "Hábitos e verdades"],
-      ["She trains, he studies", "He / She / It: +S (consoante + y vira -ies)"],
-      ["she goes, he does, it watches", "+ES depois de s, sh, ch, x, z e o"],
-      ["I don't / she doesn't rest", "Negativo + verbo sem S"],
-      ["Do you...? / Does she...?", "Pergunta com do / does"],
-      ["always, usually, sometimes, never", "Frequência: antes do verbo (mas depois de TO BE: I'm always late)"]
+      [
+       "I train / you train",
+       "Hábitos e verdades"
+      ],
+      [
+       "She trains, he studies",
+       "He / She / It: +S (consoante + y vira -ies)"
+      ],
+      [
+       "she goes, he does, it watches",
+       "+ES depois de s, sh, ch, x, z e o"
+      ],
+      [
+       "I don't / she doesn't rest",
+       "Negativo + verbo sem S"
+      ],
+      [
+       "Do you...? / Does she...?",
+       "Pergunta com do / does"
+      ],
+      [
+       "always, usually, sometimes, never",
+       "Frequência: antes do verbo (mas depois de TO BE: I'm always late)"
+      ]
      ]
     },
     {
      "bg": "room",
-     "m": {"rafa": "happy", "mina": "det"},
+     "m": {
+      "rafa": "happy",
+      "mina": "det"
+     },
      "l": [
-      ["rafa", "I usually play games. I never study.", "Eu geralmente jogo. Eu nunca estudo."],
-      ["mina", "Not anymore. Now you study every day. Ten minutes.", "Não mais. Agora você estuda todo dia. Dez minutos."]
+      [
+       "rafa",
+       "I usually play games. I never study.",
+       "Eu geralmente jogo. Eu nunca estudo."
+      ],
+      [
+       "mina",
+       "Not anymore. Now you study every day. Ten minutes.",
+       "Não mais. Agora você estuda todo dia. Dez minutos."
+      ]
      ]
     },
     {
      "bg": "room",
-     "m": {"rafa": "shock", "mina": "happy"},
+     "m": {
+      "rafa": "shock",
+      "mina": "happy"
+     },
      "l": [
-      ["rafa", "Only ten?", "Só dez?"],
-      ["mina", "Small steps. Every day.", "Passos pequenos. Todo dia."]
+      [
+       "rafa",
+       "Only ten?",
+       "Só dez?"
+      ],
+      [
+       "mina",
+       "Small steps. Every day.",
+       "Passos pequenos. Todo dia."
+      ]
      ]
     },
-    {"sys": "Dica da Torre", "text": "Dez minutos todo dia vencem duas horas uma vez por semana. Um capítulo daqui = uma sessão completa."}
+    {
+     "sys": "Dica da Torre",
+     "text": "Dez minutos todo dia vencem duas horas uma vez por semana. Um capítulo daqui = uma sessão completa."
+    },
+    {
+     "bg": "room",
+     "m": {
+      "mina": "normal",
+      "rafa": "happy"
+     },
+     "c": "Cena extra",
+     "l": [
+      [
+       "mina",
+       "What do you do on Sundays?",
+       "O que você faz aos domingos?"
+      ],
+      [
+       "rafa",
+       "I get up late and I cook lunch.",
+       "Eu acordo tarde e faço o almoço."
+      ],
+      [
+       "mina",
+       "Do you watch TV?",
+       "Você vê TV?"
+      ],
+      [
+       "rafa",
+       "No, I don't. I read books.",
+       "Não. Eu leio livros."
+      ],
+      [
+       "mina",
+       "My brother watches TV all day!",
+       "Meu irmão vê TV o dia inteiro!"
+      ]
+     ]
+    }
    ]
   },
   {
@@ -67,50 +174,155 @@
    "p": [
     {
      "bg": "room",
-     "m": {"rafa": "shock"},
+     "m": {
+      "rafa": "shock"
+     },
      "c": "Sete da manhã. O despertador toca.",
      "l": [
-      ["rafa", "What time is it?!", "Que horas são?!"],
-      ["mina", "It's seven o'clock. You're late!", "São sete horas. Você está atrasad{o|a}!"]
+      [
+       "rafa",
+       "What time is it?!",
+       "Que horas são?!"
+      ],
+      [
+       "mina",
+       "It's seven o'clock. You're late!",
+       "São sete horas. Você está atrasad{o|a}!"
+      ]
      ]
     },
     {
      "bg": "room",
-     "m": {"rafa": "normal", "mina": "det"},
+     "m": {
+      "rafa": "normal",
+      "mina": "det"
+     },
      "l": [
-      ["rafa", "Training is at eight, right?", "O treino é às oito, né?"],
-      ["mina", "No! It's at half past seven. On Mondays it's at eight.", "Não! É às sete e meia. Às segundas é às oito."]
+      [
+       "rafa",
+       "Training is at eight, right?",
+       "O treino é às oito, né?"
+      ],
+      [
+       "mina",
+       "No! It's at half past seven. On Mondays it's at eight.",
+       "Não! É às sete e meia. Às segundas é às oito."
+      ]
      ]
     },
     {
      "sys": "O relógio",
      "r": [
-      ["It's seven o'clock.", "São 7 em ponto"],
-      ["half past seven", "7:30"],
-      ["quarter past seven / quarter to eight", "7:15 / 7:45"],
-      ["at 8:00, at night, at noon", "AT: horas e momentos exatos"],
-      ["on Monday, on May 5th", "ON: dias e datas"],
-      ["in May, in 2026, in the morning", "IN: meses, anos, partes do dia"],
-      ["Monday, Tuesday, Wednesday, Thursday", "segunda, terça, quarta, quinta"],
-      ["Friday, Saturday, Sunday", "sexta, sábado, domingo"],
-      ["January, February, March... December", "meses e dias da semana: sempre com maiúscula"]
+      [
+       "It's seven o'clock.",
+       "São 7 em ponto"
+      ],
+      [
+       "half past seven",
+       "7:30"
+      ],
+      [
+       "quarter past seven / quarter to eight",
+       "7:15 / 7:45"
+      ],
+      [
+       "at 8:00, at night, at noon",
+       "AT: horas e momentos exatos"
+      ],
+      [
+       "on Monday, on May 5th",
+       "ON: dias e datas"
+      ],
+      [
+       "in May, in 2026, in the morning",
+       "IN: meses, anos, partes do dia"
+      ],
+      [
+       "Monday, Tuesday, Wednesday, Thursday",
+       "segunda, terça, quarta, quinta"
+      ],
+      [
+       "Friday, Saturday, Sunday",
+       "sexta, sábado, domingo"
+      ],
+      [
+       "January, February, March... December",
+       "meses e dias da semana: sempre com maiúscula"
+      ]
      ],
      "tip": "Dá pra falar as horas só com números também: 7:30 = \"seven thirty\"."
     },
     {
      "bg": "street",
-     "m": {"mina": "normal", "rafa": "normal"},
+     "m": {
+      "mina": "normal",
+      "rafa": "normal"
+     },
      "l": [
-      ["mina", "Our big mission is in December. On the twentieth.", "Nossa grande missão é em dezembro. No dia 20."],
-      ["rafa", "At what time?", "A que horas?"]
+      [
+       "mina",
+       "Our big mission is in December. On the twentieth.",
+       "Nossa grande missão é em dezembro. No dia 20."
+      ],
+      [
+       "rafa",
+       "At what time?",
+       "A que horas?"
+      ]
      ]
     },
     {
      "bg": "street",
-     "m": {"mina": "happy", "rafa": "shock"},
+     "m": {
+      "mina": "happy",
+      "rafa": "shock"
+     },
      "l": [
-      ["mina", "At midnight.", "À meia-noite."],
-      ["rafa", "Of course it is.", "Claro que é."]
+      [
+       "mina",
+       "At midnight.",
+       "À meia-noite."
+      ],
+      [
+       "rafa",
+       "Of course it is.",
+       "Claro que é."
+      ]
+     ]
+    },
+    {
+     "bg": "street",
+     "m": {
+      "mina": "normal",
+      "rafa": "normal"
+     },
+     "c": "Cena extra",
+     "l": [
+      [
+       "mina",
+       "When is your birthday?",
+       "Quando é o seu aniversário?"
+      ],
+      [
+       "rafa",
+       "It's in May, on the twelfth.",
+       "É em maio, no dia doze."
+      ],
+      [
+       "mina",
+       "What time is the party?",
+       "A que horas é a festa?"
+      ],
+      [
+       "rafa",
+       "At seven o'clock, on Saturday.",
+       "Às sete horas, no sábado."
+      ],
+      [
+       "mina",
+       "Perfect. I'm free at the weekend.",
+       "Perfeito. Estou livre no fim de semana."
+      ]
      ]
     }
    ]
@@ -124,51 +336,166 @@
    "p": [
     {
      "bg": "cafe",
-     "m": {"jin": "det", "rafa": "normal"},
+     "m": {
+      "jin": "det",
+      "rafa": "normal"
+     },
      "c": "Jin desafia {o|a} Rafa: perguntas rápidas.",
      "l": [
-      ["jin", "Who is your favorite explorer?", "Quem é seu explorador favorito?"],
-      ["rafa", "Mina, of course.", "A Mina, claro."]
+      [
+       "jin",
+       "Who is your favorite explorer?",
+       "Quem é seu explorador favorito?"
+      ],
+      [
+       "rafa",
+       "Mina, of course.",
+       "A Mina, claro."
+      ]
      ]
     },
     {
      "bg": "cafe",
-     "m": {"jin": "normal", "rafa": "happy"},
+     "m": {
+      "jin": "normal",
+      "rafa": "happy"
+     },
      "l": [
-      ["jin", "Why do you want to learn English?", "Por que você quer aprender inglês?"],
-      ["rafa", "Because I want to travel and read manhwa without subtitles.", "Porque quero viajar e ler manhwa sem legenda."]
+      [
+       "jin",
+       "Why do you want to learn English?",
+       "Por que você quer aprender inglês?"
+      ],
+      [
+       "rafa",
+       "Because I want to travel and read manhwa without subtitles.",
+       "Porque quero viajar e ler manhwa sem legenda."
+      ]
      ]
     },
     {
      "bg": "cafe",
-     "m": {"jin": "happy", "rafa": "det"},
+     "m": {
+      "jin": "happy",
+      "rafa": "det"
+     },
      "l": [
-      ["jin", "How often do you study?", "Com que frequência você estuda?"],
-      ["rafa", "Every day. Ten minutes.", "Todo dia. Dez minutos."],
-      ["jin", "Not bad.", "Nada mal."]
+      [
+       "jin",
+       "How often do you study?",
+       "Com que frequência você estuda?"
+      ],
+      [
+       "rafa",
+       "Every day. Ten minutes.",
+       "Todo dia. Dez minutos."
+      ],
+      [
+       "jin",
+       "Not bad.",
+       "Nada mal."
+      ]
      ]
     },
     {
      "sys": "Palavras de pergunta",
      "r": [
-      ["What?", "O que? / Qual?"],
-      ["Where?", "Onde?"],
-      ["When?", "Quando?"],
-      ["Who?", "Quem?"],
-      ["Why? / Because...", "Por quê? / Porque..."],
-      ["How?", "Como?"],
-      ["Which?", "Qual? (entre opções)"],
-      ["How much? / How many?", "Quanto? / Quantos?"],
-      ["How often? / How long?", "Com que frequência? / Quanto tempo?"]
+      [
+       "What?",
+       "O que? / Qual?"
+      ],
+      [
+       "Where?",
+       "Onde?"
+      ],
+      [
+       "When?",
+       "Quando?"
+      ],
+      [
+       "Who?",
+       "Quem?"
+      ],
+      [
+       "Why? / Because...",
+       "Por quê? / Porque..."
+      ],
+      [
+       "How?",
+       "Como?"
+      ],
+      [
+       "Which?",
+       "Qual? (entre opções)"
+      ],
+      [
+       "How much? / How many?",
+       "Quanto? / Quantos?"
+      ],
+      [
+       "How often? / How long?",
+       "Com que frequência? / Quanto tempo?"
+      ]
      ],
      "tip": "Ordem: PALAVRA + do/does/is/are + pessoa + verbo. Ex.: Where do you live?"
     },
     {
      "bg": "cafe",
-     "m": {"rafa": "normal", "jin": "happy"},
+     "m": {
+      "rafa": "normal",
+      "jin": "happy"
+     },
      "l": [
-      ["rafa", "Where do you live, Jin?", "Onde você mora, Jin?"],
-      ["jin", "In Seoul. But I'm from Chicago.", "Em Seul. Mas sou de Chicago."]
+      [
+       "rafa",
+       "Where do you live, Jin?",
+       "Onde você mora, Jin?"
+      ],
+      [
+       "jin",
+       "In Seoul. But I'm from Chicago.",
+       "Em Seul. Mas sou de Chicago."
+      ]
+     ]
+    },
+    {
+     "bg": "cafe",
+     "m": {
+      "jin": "normal",
+      "rafa": "normal"
+     },
+     "c": "Cena extra",
+     "l": [
+      [
+       "jin",
+       "Where do you live?",
+       "Onde você mora?"
+      ],
+      [
+       "rafa",
+       "I live near the river.",
+       "Moro perto do rio."
+      ],
+      [
+       "jin",
+       "How do you go to work?",
+       "Como você vai para o trabalho?"
+      ],
+      [
+       "rafa",
+       "By bus. Why?",
+       "De ônibus. Por quê?"
+      ],
+      [
+       "jin",
+       "Because I live near the river too! Who is your neighbour?",
+       "Porque eu também moro perto do rio! Quem é o seu vizinho?"
+      ],
+      [
+       "rafa",
+       "A woman with a big dog.",
+       "Uma mulher com um cachorro grande."
+      ]
      ]
     }
    ]
@@ -180,42 +507,135 @@
    "bg": "dungeon",
    "hero": "rafa",
    "p": [
-    {"sys": "Teste de habilidades", "text": "A Torre quer saber o que você consegue fazer."},
+    {
+     "sys": "Teste de habilidades",
+     "text": "A Torre quer saber o que você consegue fazer."
+    },
     {
      "bg": "dungeon",
-     "m": {"mina": "normal", "rafa": "det"},
+     "m": {
+      "mina": "normal",
+      "rafa": "det"
+     },
      "l": [
-      ["mina", "Can you fight with a sword?", "Você sabe lutar com espada?"],
-      ["rafa", "Yes, I can. But I can't swim.", "Sei. Mas não sei nadar."]
+      [
+       "mina",
+       "Can you fight with a sword?",
+       "Você sabe lutar com espada?"
+      ],
+      [
+       "rafa",
+       "Yes, I can. But I can't swim.",
+       "Sei. Mas não sei nadar."
+      ]
      ]
     },
     {
      "bg": "dungeon",
-     "m": {"mina": "happy", "rafa": "normal"},
+     "m": {
+      "mina": "happy",
+      "rafa": "normal"
+     },
      "l": [
-      ["mina", "Can you speak English?", "Você sabe falar inglês?"],
-      ["rafa", "I can speak a little.", "Sei falar um pouco."],
-      ["mina", "Great! Can you help me with this door?", "Ótimo! Pode me ajudar com esta porta?"]
+      [
+       "mina",
+       "Can you speak English?",
+       "Você sabe falar inglês?"
+      ],
+      [
+       "rafa",
+       "I can speak a little.",
+       "Sei falar um pouco."
+      ],
+      [
+       "mina",
+       "Great! Can you help me with this door?",
+       "Ótimo! Pode me ajudar com esta porta?"
+      ]
      ]
     },
     {
      "sys": "CAN",
      "r": [
-      ["I can swim.", "Sei / consigo nadar"],
-      ["I can't swim. (cannot)", "Não sei / não consigo"],
-      ["Can you...?", "Sabe? Consegue? Pode?"],
-      ["Can you help me?", "Pedido: pode me ajudar?"],
-      ["Can I go?", "Permissão: posso ir?"],
-      ["I could swim when I was five.", "COULD: passado de can"]
+      [
+       "I can swim.",
+       "Sei / consigo nadar"
+      ],
+      [
+       "I can't swim. (cannot)",
+       "Não sei / não consigo"
+      ],
+      [
+       "Can you...?",
+       "Sabe? Consegue? Pode?"
+      ],
+      [
+       "Can you help me?",
+       "Pedido: pode me ajudar?"
+      ],
+      [
+       "Can I go?",
+       "Permissão: posso ir?"
+      ],
+      [
+       "I could swim when I was five.",
+       "COULD: passado de can"
+      ]
      ],
      "tip": "Depois de CAN, o verbo vem puro, sem \"to\" e sem S: She can swim (nunca \"she can swims\")."
     },
     {
      "bg": "action",
-     "m": {"rafa": "shock", "mina": "det"},
+     "m": {
+      "rafa": "shock",
+      "mina": "det"
+     },
      "l": [
-      ["rafa", "I can't open it! It's too heavy!", "Não consigo abrir! É pesada demais!"],
-      ["mina", "Together, we can.", "Juntos, a gente consegue."]
+      [
+       "rafa",
+       "I can't open it! It's too heavy!",
+       "Não consigo abrir! É pesada demais!"
+      ],
+      [
+       "mina",
+       "Together, we can.",
+       "Juntos, a gente consegue."
+      ]
+     ]
+    },
+    {
+     "bg": "street",
+     "m": {
+      "mina": "happy",
+      "rafa": "normal"
+     },
+     "c": "Cena extra",
+     "l": [
+      [
+       "mina",
+       "Can you swim?",
+       "Você sabe nadar?"
+      ],
+      [
+       "rafa",
+       "Yes, I can, but I can't dive.",
+       "Sim, sei, mas não sei mergulhar."
+      ],
+      [
+       "mina",
+       "Can you play the guitar?",
+       "Você sabe tocar violão?"
+      ],
+      [
+       "rafa",
+       "No, I can't. Can you?",
+       "Não, não sei. E você?"
+      ],
+      [
+       "mina",
+       "Yes! I can teach you.",
+       "Sim! Posso te ensinar."
+      ]
      ]
     }
    ]
@@ -229,38 +649,125 @@
    "p": [
     {
      "bg": "cafe",
-     "m": {"mina": "normal", "rafa": "happy"},
+     "m": {
+      "mina": "normal",
+      "rafa": "happy"
+     },
      "l": [
-      ["mina", "What do you like doing in your free time?", "O que você gosta de fazer no tempo livre?"],
-      ["rafa", "I love reading manhwa and I like playing games.", "Amo ler manhwa e gosto de jogar."]
+      [
+       "mina",
+       "What do you like doing in your free time?",
+       "O que você gosta de fazer no tempo livre?"
+      ],
+      [
+       "rafa",
+       "I love reading manhwa and I like playing games.",
+       "Amo ler manhwa e gosto de jogar."
+      ]
      ]
     },
     {
      "bg": "cafe",
-     "m": {"mina": "sad", "rafa": "shock"},
+     "m": {
+      "mina": "sad",
+      "rafa": "shock"
+     },
      "l": [
-      ["mina", "I hate waking up early.", "Eu odeio acordar cedo."],
-      ["rafa", "But you wake up at six!", "Mas você acorda às seis!"],
-      ["mina", "Yes. I hate it. But I do it.", "Sim. Odeio. Mas faço."]
+      [
+       "mina",
+       "I hate waking up early.",
+       "Eu odeio acordar cedo."
+      ],
+      [
+       "rafa",
+       "But you wake up at six!",
+       "Mas você acorda às seis!"
+      ],
+      [
+       "mina",
+       "Yes. I hate it. But I do it.",
+       "Sim. Odeio. Mas faço."
+      ]
      ]
     },
     {
      "sys": "Gostos e pronomes",
      "r": [
-      ["I like / love / hate + verbo-ING", "gostar / amar / odiar fazer algo"],
-      ["I don't mind waiting.", "Não me importo de esperar."],
-      ["me, you, him, her, it, us, them", "me, te, o (ele), a (ela), o / a (coisa), nos, os / as (eles / elas)"],
-      ["Help me! / I like him.", "Me ajuda! / Eu gosto dele."],
-      ["Jin? I don't know him.", "Jin? Não o conheço."]
+      [
+       "I like / love / hate + verbo-ING",
+       "gostar / amar / odiar fazer algo"
+      ],
+      [
+       "I don't mind waiting.",
+       "Não me importo de esperar."
+      ],
+      [
+       "me, you, him, her, it, us, them",
+       "me, te, o (ele), a (ela), o / a (coisa), nos, os / as (eles / elas)"
+      ],
+      [
+       "Help me! / I like him.",
+       "Me ajuda! / Eu gosto dele."
+      ],
+      [
+       "Jin? I don't know him.",
+       "Jin? Não o conheço."
+      ]
      ],
      "tip": "Depois de verbo e de preposição, use me / him / her / us / them, nunca I / he / she: \"with me\", \"for her\"."
     },
     {
      "bg": "cafe",
-     "m": {"jin": "happy", "rafa": "shock"},
+     "m": {
+      "jin": "happy",
+      "rafa": "shock"
+     },
      "l": [
-      ["jin", "Do you like Mina?", "Você gosta da Mina?"],
-      ["rafa", "Of course I like her. She is my teacher!", "Claro que gosto dela. Ela é minha professora!"]
+      [
+       "jin",
+       "Do you like Mina?",
+       "Você gosta da Mina?"
+      ],
+      [
+       "rafa",
+       "Of course I like her. She is my teacher!",
+       "Claro que gosto dela. Ela é minha professora!"
+      ]
+     ]
+    },
+    {
+     "bg": "cafe",
+     "m": {
+      "jin": "happy",
+      "rafa": "normal"
+     },
+     "c": "Cena extra",
+     "l": [
+      [
+       "jin",
+       "Do you like cooking?",
+       "Você gosta de cozinhar?"
+      ],
+      [
+       "rafa",
+       "I love cooking, but I hate washing the dishes.",
+       "Adoro cozinhar, mas odeio lavar a louça."
+      ],
+      [
+       "jin",
+       "Me too! Do you like Mina's cake?",
+       "Eu também! Você gosta do bolo da Mina?"
+      ],
+      [
+       "rafa",
+       "Yes, I like it a lot. Tell her, please!",
+       "Sim, gosto muito. Diga a ela, por favor!"
+      ],
+      [
+       "jin",
+       "OK, I'll tell her now.",
+       "Certo, vou dizer a ela agora."
+      ]
      ]
     }
    ]
@@ -276,49 +783,143 @@
    "p": [
     {
      "bg": "dungeon",
-     "m": {"rafa": "det"},
+     "m": {
+      "rafa": "det"
+     },
      "c": "Chefe do Arco 2. O Capitão Sombrio bloqueia a saída.",
      "l": [
-      ["monster", "Kneel! Give me your sword!", "Ajoelhe-se! Dê-me sua espada!"],
-      ["rafa", "No. I don't take orders from you.", "Não. Eu não recebo ordens de você."]
+      [
+       "monster",
+       "Kneel! Give me your sword!",
+       "Ajoelhe-se! Dê-me sua espada!"
+      ],
+      [
+       "rafa",
+       "No. I don't take orders from you.",
+       "Não. Eu não recebo ordens de você."
+      ]
      ]
     },
     {
      "bg": "dungeon",
-     "m": {"mina": "det", "rafa": "shock"},
+     "m": {
+      "mina": "det",
+      "rafa": "shock"
+     },
      "l": [
-      ["mina", "Don't look into his eyes! Listen to me.", "Não olhe nos olhos dele! Escute-me."],
-      ["rafa", "Okay. Tell me what to do.", "Tá. Me diz o que fazer."]
+      [
+       "mina",
+       "Don't look into his eyes! Listen to me.",
+       "Não olhe nos olhos dele! Escute-me."
+      ],
+      [
+       "rafa",
+       "Okay. Tell me what to do.",
+       "Tá. Me diz o que fazer."
+      ]
      ]
     },
     {
      "sys": "Imperativo",
      "r": [
-      ["Open the door. / Sit down.", "Verbo puro = ordem ou instrução"],
-      ["Don't run! / Don't look!", "Negativo: DON'T + verbo"],
-      ["Let's go! / Let's study.", "Vamos! (inclui você)"],
-      ["Please, help me.", "Com please fica educado"]
+      [
+       "Open the door. / Sit down.",
+       "Verbo puro = ordem ou instrução"
+      ],
+      [
+       "Don't run! / Don't look!",
+       "Negativo: DON'T + verbo"
+      ],
+      [
+       "Let's go! / Let's study.",
+       "Vamos! (inclui você)"
+      ],
+      [
+       "Please, help me.",
+       "Com please fica educado"
+      ]
      ],
      "tip": "Revisão do arco: presente simples (she trains), at / on / in, palavras de pergunta, can e like + ING aparecem no teste final."
     },
     {
      "bg": "action",
-     "m": {"mina": "det", "rafa": "det"},
+     "m": {
+      "mina": "det",
+      "rafa": "det"
+     },
      "l": [
-      ["mina", "Now! Jump and attack!", "Agora! Pula e ataca!"],
-      ["rafa", "Let's finish this!", "Vamos acabar com isso!"]
+      [
+       "mina",
+       "Now! Jump and attack!",
+       "Agora! Pula e ataca!"
+      ],
+      [
+       "rafa",
+       "Let's finish this!",
+       "Vamos acabar com isso!"
+      ]
      ]
     },
-    {"sys": "Arco 2 completo", "text": "Você já descreve sua rotina, fala horas, faz perguntas e diz o que sabe fazer. Categoria aumentada."},
+    {
+     "sys": "Arco 2 completo",
+     "text": "Você já descreve sua rotina, fala horas, faz perguntas e diz o que sabe fazer. Categoria aumentada."
+    },
     {
      "sys": "Inglês americano x britânico",
      "r": [
-      ["vacation / holiday", "férias"],
-      ["fall / autumn", "outono"],
-      ["on the weekend / at the weekend", "no fim de semana"],
-      ["soccer / football", "futebol"]
+      [
+       "vacation / holiday",
+       "férias"
+      ],
+      [
+       "fall / autumn",
+       "outono"
+      ],
+      [
+       "on the weekend / at the weekend",
+       "no fim de semana"
+      ],
+      [
+       "soccer / football",
+       "futebol"
+      ]
      ],
      "tip": "Este curso usa o inglês americano. Os dois são corretos: o importante é ser consistente e reconhecer as diferenças."
+    },
+    {
+     "bg": "street",
+     "m": {
+      "mina": "happy",
+      "rafa": "happy"
+     },
+     "c": "Cena extra",
+     "l": [
+      [
+       "mina",
+       "Open the gate, please.",
+       "Abra o portão, por favor."
+      ],
+      [
+       "rafa",
+       "OK. Now what?",
+       "Pronto. E agora?"
+      ],
+      [
+       "mina",
+       "Turn left and walk to the tower. Don't run!",
+       "Vire à esquerda e ande até a torre. Não corra!"
+      ],
+      [
+       "rafa",
+       "Wait for me!",
+       "Me espere!"
+      ],
+      [
+       "mina",
+       "Come on! Be quick, but be careful.",
+       "Vamos! Seja rápid{o|a}, mas tome cuidado."
+      ]
+     ]
     }
    ]
   }

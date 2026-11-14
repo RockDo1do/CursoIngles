@@ -1,5 +1,5 @@
 """Vozes do conteúdo novo: grava, em normal e devagar, tudo da prática que ainda não tem áudio:
-a palavra e a frase de exemplo do vocabulário (voz narr), os parágrafos das leituras (narr) e as falas das escutas
+a palavra e a frase de exemplo do vocabulário (voz narr), os parágrafos das leituras (narr), as falas da história e as falas das escutas
 (na voz de cada personagem; o protagonista é gravado nas duas vozes, rafa e rafa_f).
 
 Comandos (na raiz do repositório; KOKORO_DIR = pasta com kokoro.onnx, voices-v1.0.bin e piper/):
@@ -49,6 +49,15 @@ def faltando():
         for w in ws: add('narr', w[0]); add('narr', w[2])
     for r in json.load(open(os.path.join(P, 'leitura.json'), encoding='utf-8')):
         for t in r['p']: add('narr', t)
+    # falas da história (capítulos e histórias extras); o protagonista nas duas vozes
+    C = os.path.join(ROOT, 'conteudo')
+    arcos = json.load(open(os.path.join(C, 'indice.json'), encoding='utf-8'))['arcos'] + ['bonus']
+    for a in arcos:
+        for cap in json.load(open(os.path.join(C, 'historia', a + '.json'), encoding='utf-8'))['capitulos']:
+            for quadro in cap['p']:
+                for l in quadro.get('l') or []:
+                    if l[1] and 'Rafa' not in l[1]:
+                        for voz in (('rafa', 'rafa_f') if l[0] == 'rafa' else (l[0],)): add(voz, l[1])
     for e in json.load(open(os.path.join(P, 'escuta.json'), encoding='utf-8')):
         for l in e['lines']:
             for voz in (('rafa', 'rafa_f') if l[0] == 'rafa' else (l[0],)): add(voz, l[1])

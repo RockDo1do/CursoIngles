@@ -1,7 +1,11 @@
 {
  "nome": "Arco 9 · Som e Ritmo",
  "descricao": "Pronúncia · B1 · vogais, sílaba forte e fala ligada",
- "agora_voce_consegue": ["Diferenciar vogais curtas e longas", "Usar a sílaba forte certa", "Entender a fala ligada e a entonação"],
+ "agora_voce_consegue": [
+  "Diferenciar vogais curtas e longas",
+  "Usar a sílaba forte certa",
+  "Entender a fala ligada e a entonação"
+ ],
  "capitulos": [
   {
    "t": "Vogais e Sílaba Forte",
@@ -10,42 +14,134 @@
    "bg": "street",
    "hero": "mina",
    "p": [
-    {"sys": "Arco 9 · Som e Ritmo", "text": "Antes da próxima missão, Mina organiza um treino de sons no parque. Ouvir bem é metade da conversa."},
+    {
+     "sys": "Arco 9 · Som e Ritmo",
+     "text": "Antes da próxima missão, Mina organiza um treino de sons no parque. Ouvir bem é metade da conversa."
+    },
     {
      "bg": "street",
-     "m": {"mina": "happy", "rafa": "normal"},
+     "m": {
+      "mina": "happy",
+      "rafa": "normal"
+     },
      "l": [
-      ["mina", "Listen: ship, sheep. Live, leave. Can you hear the difference?", "Ouça: ship, sheep. Live, leave. Consegue ouvir a diferença?"],
-      ["rafa", "Sheep is longer. Ship is short and quick.", "Sheep é mais longo. Ship é curto e rápido."]
+      [
+       "mina",
+       "Listen: ship, sheep. Live, leave. Can you hear the difference?",
+       "Ouça: ship, sheep. Live, leave. Consegue ouvir a diferença?"
+      ],
+      [
+       "rafa",
+       "Sheep is longer. Ship is short and quick.",
+       "Sheep é mais longo. Ship é curto e rápido."
+      ]
      ]
     },
     {
      "bg": "street",
-     "m": {"jin": "normal", "rafa": "shock"},
+     "m": {
+      "jin": "normal",
+      "rafa": "shock"
+     },
      "l": [
-      ["jin", "And stress changes the meaning. A present is a gift.", "E a sílaba forte muda o sentido. Present, com força no começo, é um presente."],
-      ["jin", "But to present is to show something to people.", "Mas present, com força no fim, é apresentar algo às pessoas."]
+      [
+       "jin",
+       "And stress changes the meaning. A present is a gift.",
+       "E a sílaba forte muda o sentido. Present, com força no começo, é um presente."
+      ],
+      [
+       "jin",
+       "But to present is to show something to people.",
+       "Mas present, com força no fim, é apresentar algo às pessoas."
+      ]
      ]
     },
     {
      "sys": "Vogais e sílaba forte",
      "r": [
-      ["ship / sheep", "i curto e rápido / i longo"],
-      ["full / fool", "u curto / u longo"],
-      ["cat / cut", "a bem aberto / som parecido com â rápido"],
-      ["photograph / photography", "PHO-to-graph / pho-TOG-ra-phy: a força muda de lugar"],
-      ["record (nome) / record (verbo)", "REC-ord: um registro / re-CORD: gravar"],
-      ["banana, computer, tomorrow", "ba-NA-na, com-PU-ter, to-MOR-row"],
-      ["chocolate", "No dia a dia: CHOC-lit, com duas sílabas"]
+      [
+       "ship / sheep",
+       "i curto e rápido / i longo"
+      ],
+      [
+       "full / fool",
+       "u curto / u longo"
+      ],
+      [
+       "cat / cut",
+       "a bem aberto / som parecido com â rápido"
+      ],
+      [
+       "photograph / photography",
+       "PHO-to-graph / pho-TOG-ra-phy: a força muda de lugar"
+      ],
+      [
+       "record (nome) / record (verbo)",
+       "REC-ord: um registro / re-CORD: gravar"
+      ],
+      [
+       "banana, computer, tomorrow",
+       "ba-NA-na, com-PU-ter, to-MOR-row"
+      ],
+      [
+       "chocolate",
+       "No dia a dia: CHOC-lit, com duas sílabas"
+      ]
      ],
      "tip": "Em inglês, a sílaba forte é mais longa, mais alta e mais clara, e as outras ficam curtas e fracas. Acertar a sílaba forte ajuda você a ser entendido mais do que acertar cada som."
     },
     {
      "bg": "street",
-     "m": {"rafa": "happy", "mina": "happy"},
+     "m": {
+      "rafa": "happy",
+      "mina": "happy"
+     },
      "l": [
-      ["rafa", "I'd like to present my project. And this present is for you!", "Eu gostaria de apresentar meu projeto. E este presente é para você!"],
-      ["mina", "Perfect stress. Two different words!", "Sílaba forte perfeita. Duas palavras diferentes!"]
+      [
+       "rafa",
+       "I'd like to present my project. And this present is for you!",
+       "Eu gostaria de apresentar meu projeto. E este presente é para você!"
+      ],
+      [
+       "mina",
+       "Perfect stress. Two different words!",
+       "Sílaba forte perfeita. Duas palavras diferentes!"
+      ]
+     ]
+    },
+    {
+     "bg": "street",
+     "m": {
+      "jin": "happy",
+      "rafa": "normal"
+     },
+     "c": "Cena extra",
+     "l": [
+      [
+       "jin",
+       "Listen: ship, sheep. Can you hear the difference?",
+       "Escute: ship, sheep. Você ouve a diferença?"
+      ],
+      [
+       "rafa",
+       "Ship is short, and sheep is long.",
+       "Ship é curto, e sheep é longo."
+      ],
+      [
+       "jin",
+       "Exactly. Now, where's the stress in photograph?",
+       "Exatamente. Agora, onde fica a sílaba forte em photograph?"
+      ],
+      [
+       "rafa",
+       "PHO-to-graph. And in photographer, it moves: pho-TO-gra-pher.",
+       "PHO-to-graph. E em photographer, ela muda: pho-TO-gra-pher."
+      ],
+      [
+       "jin",
+       "Perfect. Your pronunciation is getting much clearer.",
+       "Perfeito. A sua pronúncia está ficando bem mais clara."
+      ]
      ]
     }
    ]
@@ -59,51 +155,155 @@
    "p": [
     {
      "bg": "cafe",
-     "m": {"jin": "happy", "rafa": "shock"},
+     "m": {
+      "jin": "happy",
+      "rafa": "shock"
+     },
      "l": [
-      ["jin", "Do you want to grab a bite?", "Você quer comer alguma coisa?"],
-      ["rafa", "Sorry? Could you say that again, slowly?", "Desculpe? Pode repetir devagar?"]
+      [
+       "jin",
+       "Do you want to grab a bite?",
+       "Você quer comer alguma coisa?"
+      ],
+      [
+       "rafa",
+       "Sorry? Could you say that again, slowly?",
+       "Desculpe? Pode repetir devagar?"
+      ]
      ]
     },
     {
      "bg": "cafe",
-     "m": {"mina": "normal", "rafa": "normal"},
+     "m": {
+      "mina": "normal",
+      "rafa": "normal"
+     },
      "l": [
-      ["mina", "In fast speech, words join together. Want to sounds like wanna.", "Na fala rápida, as palavras se juntam. Want to soa como wanna."],
-      ["mina", "And an apple sounds like a napple.", "E an apple soa como a napple."]
+      [
+       "mina",
+       "In fast speech, words join together. Want to sounds like wanna.",
+       "Na fala rápida, as palavras se juntam. Want to soa como wanna."
+      ],
+      [
+       "mina",
+       "And an apple sounds like a napple.",
+       "E an apple soa como a napple."
+      ]
      ]
     },
     {
      "sys": "Fala ligada e entonação",
      "r": [
-      ["want to, going to", "Na fala rápida: wanna, gonna"],
-      ["an apple, turn off", "A consoante final se liga à vogal: a-napple, tur-noff"],
-      ["What do you want?", "Na fala rápida: whaddaya want?"],
-      ["Did you see it? Don't you know?", "Na fala rápida: didja, donchu"],
-      ["You're coming?", "Pergunta de sim ou não: a voz sobe no fim"],
-      ["Where are you going?", "Pergunta com where, what, why: a voz desce no fim"],
-      ["I'm so tired.", "A palavra mais importante ganha mais força: SO"]
+      [
+       "want to, going to",
+       "Na fala rápida: wanna, gonna"
+      ],
+      [
+       "an apple, turn off",
+       "A consoante final se liga à vogal: a-napple, tur-noff"
+      ],
+      [
+       "What do you want?",
+       "Na fala rápida: whaddaya want?"
+      ],
+      [
+       "Did you see it? Don't you know?",
+       "Na fala rápida: didja, donchu"
+      ],
+      [
+       "You're coming?",
+       "Pergunta de sim ou não: a voz sobe no fim"
+      ],
+      [
+       "Where are you going?",
+       "Pergunta com where, what, why: a voz desce no fim"
+      ],
+      [
+       "I'm so tired.",
+       "A palavra mais importante ganha mais força: SO"
+      ]
      ],
      "tip": "Você não precisa falar assim para ser entendido. Mas reconhecer essas formas ajuda muito a entender filmes, séries e conversas reais."
     },
     {
      "bg": "cafe",
-     "m": {"jin": "happy", "rafa": "happy"},
+     "m": {
+      "jin": "happy",
+      "rafa": "happy"
+     },
      "l": [
-      ["jin", "So... do you want to grab a bite?", "Então... você quer comer alguma coisa?"],
-      ["rafa", "Yes! I'm so hungry.", "Sim! Estou com muita fome."]
+      [
+       "jin",
+       "So... do you want to grab a bite?",
+       "Então... você quer comer alguma coisa?"
+      ],
+      [
+       "rafa",
+       "Yes! I'm so hungry.",
+       "Sim! Estou com muita fome."
+      ]
      ]
     },
-    {"sys": "Arco 9 completo", "text": "Você reconhece vogais curtas e longas, a sílaba forte e a fala ligada. Seu ouvido está pronto para o inglês de verdade."},
+    {
+     "sys": "Arco 9 completo",
+     "text": "Você reconhece vogais curtas e longas, a sílaba forte e a fala ligada. Seu ouvido está pronto para o inglês de verdade."
+    },
     {
      "sys": "Inglês americano x britânico",
      "r": [
-      ["water", "EUA: o t soa como um d rápido (WAH-der)"],
-      ["can't", "EUA: vogal de cat · Reino Unido: vogal de car"],
-      ["car, park, hard", "EUA: o r é pronunciado · Reino Unido: quase mudo"],
-      ["tomato", "EUA: to-MAY-to · Reino Unido: to-MAH-to"]
+      [
+       "water",
+       "EUA: o t soa como um d rápido (WAH-der)"
+      ],
+      [
+       "can't",
+       "EUA: vogal de cat · Reino Unido: vogal de car"
+      ],
+      [
+       "car, park, hard",
+       "EUA: o r é pronunciado · Reino Unido: quase mudo"
+      ],
+      [
+       "tomato",
+       "EUA: to-MAY-to · Reino Unido: to-MAH-to"
+      ]
      ],
      "tip": "Este curso usa o inglês americano. Os dois são corretos: o importante é ser consistente e reconhecer as diferenças."
+    },
+    {
+     "bg": "cafe",
+     "m": {
+      "mina": "happy",
+      "rafa": "normal"
+     },
+     "c": "Cena extra",
+     "l": [
+      [
+       "mina",
+       "Listen to how people really say it: “Whaddaya wanna do tonight?”",
+       "Escute como as pessoas falam de verdade: “Whaddaya wanna do tonight?”"
+      ],
+      [
+       "rafa",
+       "That's “What do you want to do tonight?”, right?",
+       "Isso é “What do you want to do tonight?”, certo?"
+      ],
+      [
+       "mina",
+       "Yes. And “I'm gonna get a cuppa” means “I'm going to get a cup of tea”.",
+       "Sim. E “I'm gonna get a cuppa” quer dizer “I'm going to get a cup of tea”."
+      ],
+      [
+       "rafa",
+       "So I should speak like that too?",
+       "Então eu devia falar assim também?"
+      ],
+      [
+       "mina",
+       "You don't have to. But understanding it helps a lot when you listen to natives.",
+       "Não precisa. Mas entender isso ajuda muito quando você ouve nativos."
+      ]
+     ]
     }
    ]
   }
