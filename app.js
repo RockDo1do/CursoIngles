@@ -1183,13 +1183,6 @@ let cur=null;
 
 /* ===================== HOME ===================== */
 function zoomSeg(){return `<div class="seg" role="group" aria-label="Tamanho do texto">${ZOOMS.map(([z,l])=>`<button class="segb" data-zoom="${z}" aria-pressed="${(S.zoom||1)===z}">${l}</button>`).join('')}</div>`;}
-function comfortHTML(){
- return `<div class="sysw" id="comfort"><div class="tag">[ CONFORTO ]</div><h3>Leitura do seu jeito</h3><div class="aud">
-  <div><small>TAMANHO DO TEXTO</small><div style="margin-top:6px">${zoomSeg()}</div></div>
-  <div><small>TEMA</small><div class="seg" role="group" aria-label="Tema" style="margin-top:6px">${[['auto','Automático'],['light','Claro'],['dark','Escuro']].map(([v,l])=>`<button class="segb" data-look="${v}" aria-pressed="${(S.look||'auto')===v}">${l}</button>`).join('')}</div></div>
-  <div class="aud-row"><div><small>MODO CALMO</small><p>Sem animações e com cenas de ação mais suaves.</p></div><button class="tog" data-calm aria-pressed="${!!S.calm}">${S.calm?'Ligado':'Desligado'}</button></div>
- </div></div>`;
-}
 
 /* ===================== INÍCIO ===================== */
 function home(){
@@ -1273,7 +1266,7 @@ function wizard(n){
   <h1 class="wz-h">Inglês do básico ao avançado, em formato de manhwa</h1>
   <p class="wz-intro">Um curso de inglês contado como um manhwa: você sobe a torre com a Mina, aprende com diálogos do dia a dia e ouve cada fala em voz natural. Feito para quem tem pouco tempo ou dificuldade de foco.</p>
   <div class="wz-chips"><span><b>${ARCS.length}</b> arcos</span><span><b>${CH.length}</b> capítulos</span><span>Áudio em inglês</span><span>Treino de fala</span></div>
-  <div class="wz-box"><small class="lbl" style="margin-top:0">TAMANHO DO TEXTO</small>${zoomSeg()}</div>`;
+  <p class="set-note" style="margin-top:12px">Tamanho do texto, tema e vozes: depois de entrar, use o botão Ajustes, no topo da tela.</p>`;
  } else if(step==='name'){
   next='Continuar';
   body=`<div class="wz-chr">${av('mina','happy')}</div>
@@ -1313,7 +1306,7 @@ function welcome(edit){
  if(!edit){wizard(0);return;}
  const hi='Hi! Welcome to the English Tower.';
  app.innerHTML=`<div class="wrap">
- ${edit?`<div class="bar"><button class="back" data-home aria-label="Voltar">${ICON.back}</button><div class="ti"><b>Seu perfil</b><span>Nome, avatar e tamanho do texto</span></div></div>`:''}
+ ${edit?`<div class="bar"><button class="back" data-home aria-label="Voltar">${ICON.back}</button><div class="ti"><b>Seu perfil</b><span>Nome e avatar</span></div></div>`:''}
  <div class="panel bg-gate has-chr hero">
   <div class="ttl">TORRE<br>DO INGLÊS</div>
   <div class="bubble l" tabindex="0" role="button" aria-label="Mostrar tradução"><span class="who">MINA</span><span class="en" lang="en">${hi}</span><span class="hint">toque para traduzir</span><span class="pt">Oi! Boas-vindas à Torre do Inglês.</span>${canSpeak?`<button class="say" data-say="${hi}" data-who="mina" aria-label="Ouvir em inglês">${ICON.speak}</button>`:''}</div>
@@ -1329,8 +1322,7 @@ function welcome(edit){
   <small class="lbl">ESCOLHA SEU AVATAR</small>
   <div id="avsex">${avSexSeg()}</div><div class="avs" id="avgrid" role="group" aria-label="Avatar">${avGridHTML()}</div>
   <p style="font-size:13px;margin-top:8px">Você é o(a) protagonista da história. Seu avatar aparece nos quadrinhos, e a voz segue o avatar: masculina ou feminina.</p>
-  <small class="lbl">TAMANHO DO TEXTO</small>
-  ${zoomSeg()}
+
  </div>
  <div class="sysw"><div class="tag">[ DO SEU JEITO ]</div><h3>Quer ajustar o curso para você?</h3>
   <div class="profs" data-profrow>${profilesHTML()}</div><p class="set-note">Dá para mudar tudo depois, no botão Ajustes.</p></div>
