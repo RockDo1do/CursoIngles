@@ -1,0 +1,62 @@
+{
+ "lugares": [
+  {
+   "nome": "Tandem",
+   "tipo": "grátis",
+   "url": "https://www.tandem.net",
+   "desc": "Aplicativo de intercâmbio: você ensina português e a outra pessoa ensina inglês. O básico é gratuito, com conversa por texto, áudio e vídeo.",
+   "como": "Procure parceiros que querem aprender português. Comece por mensagens e, quando se sentir à vontade, marque uma chamada."
+  },
+  {
+   "nome": "HelloTalk",
+   "tipo": "grátis",
+   "url": "https://www.hellotalk.com",
+   "desc": "Aplicativo de intercâmbio com correção de mensagens: o parceiro pode corrigir o que você escreveu, frase por frase.",
+   "como": "Escreva sobre o seu dia em inglês e peça correções. Bom para quem ainda tem vergonha de falar."
+  },
+  {
+   "nome": "Conversation Exchange",
+   "tipo": "grátis",
+   "url": "https://www.conversationexchange.com",
+   "desc": "Site gratuito para achar parceiros de conversa por vídeo ou, se houver, na sua cidade.",
+   "como": "Preencha o perfil dizendo seu nível e o que você quer praticar."
+  },
+  {
+   "nome": "Grupos na sua cidade",
+   "tipo": "grátis",
+   "url": "",
+   "desc": "Muitas cidades têm encontros de intercâmbio de idiomas em bares, cafés, bibliotecas ou universidades.",
+   "como": "Pesquise “language exchange” mais o nome da sua cidade, ou pergunte na biblioteca e nas universidades."
+  },
+  {
+   "nome": "italki",
+   "tipo": "pago",
+   "url": "https://www.italki.com",
+   "desc": "Professores e tutores de conversa com aula avulsa, sem mensalidade. O preço varia muito: há aulas de 30 minutos por poucos dólares.",
+   "como": "Uma aula de conversa por semana já faz diferença. Avise o professor do seu nível e peça para ele corrigir os erros que se repetem."
+  },
+  {
+   "nome": "Preply",
+   "tipo": "pago",
+   "url": "https://preply.com",
+   "desc": "Plataforma de professores particulares, com aulas de 50 minutos. Também há opções baratas, mas a média é mais alta.",
+   "como": "Faça a aula experimental antes de comprar um pacote."
+  }
+ ],
+ "passos": [
+  "Combine 30 minutos: 15 em inglês e 15 em português. Assim os dois ganham.",
+  "Leve 3 perguntas prontas (use o roteiro abaixo). Ter assunto tira a ansiedade do começo.",
+  "Peça para a pessoa corrigir só uma coisa por vez, por exemplo: “Please correct my verbs”.",
+  "Anote as palavras novas no fim e revise no dia seguinte.",
+  "Errar faz parte. A outra pessoa também está aprendendo e também vai errar."
+ ],
+ "seguranca": [
+  "Não passe endereço, documentos, dados de banco nem o nome da sua escola ou trabalho.",
+  "Prefira conversar dentro do aplicativo. Desconfie de quem quer levar a conversa logo para outro lugar.",
+  "Ninguém precisa de dinheiro para praticar com você. Pedido de dinheiro ou presente é golpe.",
+  "Se for encontrar alguém pessoalmente, escolha um lugar público e avise alguém de confiança.",
+  "Menores de idade: converse só com a ajuda e o conhecimento de um adulto responsável, e veja a idade mínima de cada aplicativo.",
+  "Se algo parecer estranho, bloqueie e denuncie no próprio aplicativo."
+ ],
+ "tema_frases": "A2 · Frases para conversar"
+}

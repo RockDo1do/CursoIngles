@@ -1405,6 +1405,7 @@ function practiceCard(){
   <button class="prb" data-plist="mediar"><b>Mediação</b><span>${pm}/${(PRODUCAO.mediar||[]).length} tarefas</span></button>
   <button class="prb" data-sims><b>Simulados</b><span>${Object.keys(S.sim||{}).length}/${(SIMULADOS||[]).length} feitos</span></button>
   <button class="prb" data-sbank><b>Banco de sons</b><span>${Object.keys(S.sb||{}).length}/${sbAll().length} sons</span></button>
+  <button class="prb" data-conversa><b>Conversar com pessoas</b><span>Onde e como praticar</span></button>
   <button class="prb" data-imersao><b>Inglês fora do curso</b><span>${fmtH(horas().total)} de inglês</span></button>
  </div></div>`;
 }
@@ -2340,6 +2341,36 @@ setInterval(()=>{
  S.tempo=S.tempo||{}; const k=ymd(new Date()); S.tempo[k]=Math.min(86400,(S.tempo[k]||0)+imAcum); imAcum=0; save();
 },15000);
 
+/* ===================== CONVERSAR COM PESSOAS ===================== */
+/* CONVERSA vem de conteudo/pratica/conversa.json: onde praticar, como conduzir a conversa e segurança.
+   As frases de apoio são um tema do vocabulário (com áudio); o roteiro usa as perguntas de "Sua vez de falar" dos capítulos feitos. */
+function cvPerguntas(){
+ const feitos=new Set(Object.keys(S.done||{}).map(Number).filter(i=>i<CH.length).map(i=>CH[i].t));
+ const all=(PRODUCAO.falar||[]), fs=all.filter(f=>feitos.has(f.capitulo));
+ return (fs.length?fs:all.slice(0,6)).slice(-12).reverse();
+}
+function cvView(){
+ stopListening(); cur=null; const C=CONVERSA, fr=((VOCAB.find(([t])=>t===C.tema_frases)||[])[1])||[], ps=cvPerguntas();
+ const lugar=l=>`<div class="fonte"><div class="fonte-t"><span class="fonte-ic" aria-hidden="true">${l.tipo==='pago'?'$':'☺'}</span><div><b>${esc(l.nome)}</b><small>${l.tipo==='pago'?'Pago':'Gratuito'}</small></div></div><p>${esc(l.desc)}</p><p class="fonte-como"><b>Como usar:</b> ${esc(l.como)}</p>${l.url?`<div class="row" style="justify-content:flex-start"><a class="btn sm" href="${esc(l.url)}" target="_blank" rel="noopener noreferrer">Abrir ${esc(l.nome)}</a></div>`:''}</div>`;
+ app.innerHTML=`<div class="wrap">${barHTML('Conversar com pessoas','Onde e como praticar a fala')}
+ <div class="chap-open"><p>Nenhum aplicativo substitui conversar com gente de verdade. É na conversa que você aprende a entender sotaques, a se virar quando falta uma palavra e a perder o medo de falar. Do B1 em diante, isso faz toda a diferença.</p></div>
+ <div class="sysw"><div class="tag">[ ONDE PRATICAR ]</div>${C.lugares.filter(l=>l.tipo!=='pago').map(lugar).join('')}
+  <details class="vgrp" style="margin-top:10px"><summary><b>Com professor (pago)</b><span>${C.lugares.filter(l=>l.tipo==='pago').length} opções</span></summary>${C.lugares.filter(l=>l.tipo==='pago').map(lugar).join('')}</details></div>
+ <div class="sysw"><div class="tag">[ COMO FAZER UMA BOA CONVERSA ]</div><ol class="imdicas">${C.passos.map(p=>`<li>${esc(p)}</li>`).join('')}</ol></div>
+ <div class="sysw"><div class="tag">[ ROTEIRO PARA LEVAR ]</div><p>Perguntas dos capítulos que você já fez. Use para puxar assunto, ou mande para o seu parceiro antes da conversa.</p>
+  <ul class="cvperg">${ps.map(f=>`<li lang="en">${esc(f.pergunta)}</li>`).join('')}</ul>
+  <div class="row" style="justify-content:flex-start"><button class="btn sm" data-cvcopiar>Copiar as perguntas</button></div><p class="set-note" id="cvmsg" aria-live="polite"></p></div>
+ ${fr.length?`<div class="sysw"><div class="tag">[ FRASES PARA A CONVERSA ]</div><p>Toque no alto-falante para ouvir.</p><div class="cvfr">${fr.map(([en,pt])=>`<div class="cvf"><div><b lang="en">${esc(en)}</b><span>${esc(pt)}</span></div><button class="say" data-say="${esc(en)}" data-who="narr" aria-label="Ouvir">${ICON.speak}</button></div>`).join('')}</div></div>`:''}
+ <div class="sysw"><div class="tag">[ SEGURANÇA ]</div><ul class="imdicas">${C.seguranca.map(p=>`<li>${esc(p)}</li>`).join('')}</ul></div>
+ <div class="row"><button class="btn ghost" data-home>Voltar ao início</button></div></div>`;
+ window.scrollTo(0,0);
+}
+function cvCopiar(){
+ const t=cvPerguntas().map((f,i)=>`${i+1}. ${f.pergunta}`).join('\n'), m=document.getElementById('cvmsg');
+ const ok=()=>{if(m) m.textContent='Perguntas copiadas. É só colar na conversa.';};
+ try{navigator.clipboard.writeText(t).then(ok,()=>{if(m) m.textContent='Não deu para copiar aqui. Selecione as perguntas e copie à mão.';});}catch(e){if(m) m.textContent='Não deu para copiar aqui. Selecione as perguntas e copie à mão.';}
+}
+
 /* Revisão rápida e domingo de revisão */
 let RV=null;
 function reviewView(arc){
@@ -3050,6 +3081,8 @@ app.addEventListener('click',e=>{
  if(e.target.closest('#tog')){S.showAll=!S.showAll;if(S.showAll)R.usedPT=true;save();document.getElementById('rd').classList.toggle('showall',S.showAll);document.getElementById('tog').setAttribute('aria-pressed',S.showAll);return;}
  if(prodClick(e)) return;
  if(e.target.closest('[data-imersao]')){imView();return;}
+ if(e.target.closest('[data-conversa]')){cvView();return;}
+ if(e.target.closest('[data-cvcopiar]')){cvCopiar();return;}
  {const fb=e.target.closest('button[data-fora]');if(fb){foraAdd(+fb.dataset.fora);return;}}
  if(e.target.closest('[data-imantes]')){const v=Math.round(+document.getElementById('imantes').value||0);S.antes=Math.max(0,Math.min(5000,v));save();const mt=document.querySelector('.immeta');if(mt) mt.outerHTML=metaHTML();toast('Horas anteriores salvas');return;}
  if(e.target.closest('[data-sbank]')){sbList();return;}

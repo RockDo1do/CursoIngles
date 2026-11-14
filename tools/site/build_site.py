@@ -16,7 +16,7 @@ import argparse, hashlib, json, os, re, shutil, sys
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 HERE = os.path.dirname(os.path.abspath(__file__))
 C = os.path.join(ROOT, 'conteudo')
-PRATICA = ['escuta', 'leitura', 'vocabulario', 'escrita', 'nivelamento', 'sons', 'confusoes', 'producao', 'simulados', 'imersao']
+PRATICA = ['escuta', 'leitura', 'vocabulario', 'escrita', 'nivelamento', 'sons', 'confusoes', 'producao', 'simulados', 'imersao', 'conversa']
 SITE_ONLY = re.compile(r'<!-- só no site -->.*?<!-- /só no site -->\n?', re.S)
 
 
@@ -139,6 +139,13 @@ def validar():
             erros.append(f'pratica/imersao ("{f.get("nome")}"): níveis precisam ser A1 a C2')
         if any(not (u or '').startswith('https://') for u in us.values()):
             erros.append(f'pratica/imersao ("{f.get("nome")}"): o endereço precisa começar com https://')
+    # conversar com pessoas: endereços https e o tema de frases existente no vocabulário
+    cv = load('pratica/conversa')
+    for l in cv.get('lugares', []):
+        if l.get('url') and not l['url'].startswith('https://'):
+            erros.append(f'pratica/conversa ("{l.get("nome")}"): o endereço precisa começar com https://')
+    if cv.get('tema_frases') and cv['tema_frases'] not in [t for t, _ in load('pratica/vocabulario')]:
+        erros.append(f'pratica/conversa: o tema "{cv["tema_frases"]}" não existe em pratica/vocabulario.json')
     # banco de sons
     so = load('pratica/sons')
     cats = {p[2] for p in so.get('pares', [])}
