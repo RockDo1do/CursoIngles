@@ -2602,6 +2602,489 @@
     ]
    ],
    "modelo": "In English, ship has a short I sound and sheep has a long one. If you mix them up, you say a different word."
+  },
+  {
+   "id": "m10",
+   "arco": 1,
+   "nivel": "A1",
+   "titulo": "A placa do parque",
+   "texto": "Proibido nadar no lago. Cachorros só com coleira.",
+   "pedido": "Um turista quer saber o que diz a placa. Explique em inglês.",
+   "precisa": [
+    [
+     "\\bswim(ming)?\\b",
+     "nadar (swim)"
+    ],
+    [
+     "\\blake\\b",
+     "o lago (lake)"
+    ],
+    [
+     "\\b(can'?t|cannot|not allowed|no|don'?t)\\b",
+     "a proibição (you can't)"
+    ],
+    [
+     "\\bdogs?\\b",
+     "os cachorros (dogs)"
+    ],
+    [
+     "\\b(lead|leash|collar)\\b",
+     "a coleira (lead / leash)"
+    ]
+   ],
+   "modelo": "You can't swim in the lake. Dogs must be on a lead."
+  },
+  {
+   "id": "m11",
+   "arco": 2,
+   "nivel": "A1",
+   "titulo": "Mensagem do professor",
+   "texto": "A aula de amanhã é às 10h, na sala 5. Tragam o dicionário.",
+   "pedido": "A Olivia faltou e não fala português. Passe o recado do professor para ela, em inglês.",
+   "precisa": [
+    [
+     "\\btomorrow\\b",
+     "amanhã (tomorrow)"
+    ],
+    [
+     "\\b(10|ten)\\b",
+     "a hora (ten)"
+    ],
+    [
+     "\\broom\\b",
+     "a sala (room)"
+    ],
+    [
+     "\\b(5|five)\\b",
+     "o número da sala (five)"
+    ],
+    [
+     "\\bdictionar(y|ies)\\b",
+     "o dicionário (dictionary)"
+    ]
+   ],
+   "modelo": "The class tomorrow is at ten, in room five. Bring your dictionary."
+  },
+  {
+   "id": "m12",
+   "arco": 3,
+   "nivel": "A2",
+   "titulo": "Bilhete da vizinha",
+   "texto": "Vou viajar na sexta e volto no domingo. Você pode regar minhas plantas no sábado? A chave está com o porteiro.",
+   "pedido": "Seu colega de apartamento, o Harry, vai cuidar disso. Explique a ele, em inglês, o que a vizinha pediu.",
+   "precisa": [
+    [
+     "\\bfriday\\b",
+     "quando ela viaja (Friday)"
+    ],
+    [
+     "\\bsunday\\b",
+     "quando volta (Sunday)"
+    ],
+    [
+     "\\bwater\\b",
+     "regar (water)"
+    ],
+    [
+     "\\bplants?\\b",
+     "as plantas (plants)"
+    ],
+    [
+     "\\bsaturday\\b",
+     "o dia (Saturday)"
+    ],
+    [
+     "\\bkeys?\\b",
+     "a chave (key)"
+    ]
+   ],
+   "modelo": "Our neighbour is going away on Friday and she's coming back on Sunday. She wants us to water her plants on Saturday. The doorman has the key."
+  },
+  {
+   "id": "m13",
+   "arco": 7,
+   "nivel": "A2",
+   "titulo": "A bula do remédio",
+   "texto": "Tomar 1 comprimido 3 vezes ao dia, depois das refeições. Não tomar com álcool.",
+   "pedido": "Uma amiga estrangeira comprou este remédio e não entende a receita. Explique em inglês.",
+   "precisa": [
+    [
+     "\\b(tablet|pill)s?\\b",
+     "o comprimido (tablet)"
+    ],
+    [
+     "\\b(three|3) times\\b",
+     "três vezes (three times)"
+    ],
+    [
+     "\\bafter\\b",
+     "depois (after)"
+    ],
+    [
+     "\\bmeals?\\b",
+     "as refeições (meals)"
+    ],
+    [
+     "\\balcohol\\b",
+     "o álcool (alcohol)"
+    ],
+    [
+     "\\b(don'?t|do not|shouldn'?t|can'?t|mustn'?t|never)\\b",
+     "a proibição (don't drink)"
+    ]
+   ],
+   "modelo": "Take one tablet three times a day, after meals. Don't drink alcohol with this medicine."
+  },
+  {
+   "id": "m14",
+   "arco": 4,
+   "nivel": "B1",
+   "titulo": "Mudança nos trens",
+   "texto": "Devido a obras, de 1 a 15 de agosto os trens não vão parar na estação Central. Os passageiros devem usar os ônibus gratuitos que saem da praça.",
+   "pedido": "Um turista na estação pergunta o que diz o aviso. Explique em inglês, com suas palavras.",
+   "precisa": [
+    [
+     "\\b(works|repairs|construction|building work|engineering)\\b",
+     "o motivo (works / repairs)"
+    ],
+    [
+     "\\baugust\\b",
+     "o período (August)"
+    ],
+    [
+     "\\bcentral\\b",
+     "a estação (Central)"
+    ],
+    [
+     "\\b(won'?t|will not|aren'?t going to|don'?t|do not) stop\\b",
+     "os trens não vão parar (won't stop)"
+    ],
+    [
+     "\\bfree\\b",
+     "que é grátis (free)"
+    ],
+    [
+     "\\bbus(es)?\\b",
+     "o ônibus (bus)"
+    ],
+    [
+     "\\bsquare\\b",
+     "de onde sai (the square)"
+    ]
+   ],
+   "modelo": "Because of engineering works, trains won't stop at Central Station from the first to the fifteenth of August. Passengers have to take the free buses, which leave from the square."
+  },
+  {
+   "id": "m15",
+   "arco": 10,
+   "nivel": "B1",
+   "titulo": "Indicação de restaurante",
+   "texto": "A comida é ótima e o preço é justo, mas o atendimento é lento e o lugar é barulhento. Vale a pena ir no almoço, quando é mais tranquilo.",
+   "pedido": "Um amigo inglês quer saber o que você leu nas avaliações deste restaurante. Resuma em inglês.",
+   "precisa": [
+    [
+     "\\bfood\\b",
+     "a comida (food)"
+    ],
+    [
+     "\\b(prices?|reasonable|fair|cheap|value)\\b",
+     "o preço (reasonable prices)"
+    ],
+    [
+     "\\b(but|however|although)\\b",
+     "o contraste (but)"
+    ],
+    [
+     "\\bslow\\b",
+     "o atendimento lento (slow)"
+    ],
+    [
+     "\\b(noisy|loud)\\b",
+     "o barulho (noisy)"
+    ],
+    [
+     "\\blunch(time)?\\b",
+     "a dica do almoço (lunch)"
+    ]
+   ],
+   "modelo": "The reviews say the food is great and the prices are fair, but the service is slow and it's quite noisy. It's worth going at lunchtime, when it's quieter."
+  },
+  {
+   "id": "m16",
+   "arco": 7,
+   "nivel": "B1",
+   "titulo": "Recado na recepção",
+   "texto": "O médico está atrasado uns 30 minutos. Se a senhora preferir, pode remarcar para amanhã às 8h, sem custo nenhum.",
+   "pedido": "Você está ajudando uma paciente estrangeira no consultório. Repasse em inglês o que a recepcionista disse.",
+   "precisa": [
+    [
+     "\\bdoctor\\b",
+     "o médico (doctor)"
+    ],
+    [
+     "\\b(late|delayed|running behind)\\b",
+     "o atraso (running late)"
+    ],
+    [
+     "\\b(30|thirty)\\b",
+     "quanto tempo (thirty minutes)"
+    ],
+    [
+     "\\btomorrow\\b",
+     "amanhã (tomorrow)"
+    ],
+    [
+     "\\b(8|eight)\\b",
+     "a hora (eight)"
+    ],
+    [
+     "\\b(free|no charge|no cost|without paying|won'?t pay|don'?t have to pay)\\b",
+     "sem custo (free of charge)"
+    ],
+    [
+     "\\b(if you|you can|you could)\\b",
+     "a opção (if you prefer, you can...)"
+    ]
+   ],
+   "modelo": "The doctor is running about thirty minutes late. If you prefer, you can change your appointment to tomorrow at eight, and it's free of charge."
+  },
+  {
+   "id": "m17",
+   "arco": 5,
+   "nivel": "B2",
+   "titulo": "Resumo de uma pesquisa",
+   "texto": "Um estudo com 2 mil adolescentes mostrou que quem usa o celular mais de 4 horas por dia dorme, em média, uma hora a menos. Os pesquisadores recomendam desligar as telas uma hora antes de dormir. Porém, eles ressaltam que o estudo mostra uma relação, não uma causa.",
+   "pedido": "Resuma a pesquisa em inglês, em duas ou três frases, para uma colega estrangeira. Não esqueça a ressalva do final.",
+   "precisa": [
+    [
+     "\\b(study|research|survey)\\b",
+     "o estudo (study)"
+    ],
+    [
+     "\\b(teenagers|adolescents|young people|teens)\\b",
+     "quem participou (teenagers)"
+    ],
+    [
+     "\\b(4|four) hours\\b",
+     "as 4 horas (four hours)"
+    ],
+    [
+     "\\b(less|fewer)\\b",
+     "dormir menos (less sleep)"
+    ],
+    [
+     "\\b(recommend|suggest|advise)\\b",
+     "a recomendação (recommend)"
+    ],
+    [
+     "\\b(correlation|link|relationship|association|connection)\\b",
+     "a ressalva: é uma relação (a link, not a cause)"
+    ],
+    [
+     "\\b(however|although|but)\\b",
+     "o contraste da ressalva (however)"
+    ]
+   ],
+   "modelo": "A study of two thousand teenagers found that those who use their phones for more than four hours a day sleep, on average, an hour less. The researchers recommend switching off screens an hour before bed. However, they point out that the study only shows a link, not that phones are the cause."
+  },
+  {
+   "id": "m18",
+   "arco": 7,
+   "nivel": "B2",
+   "titulo": "Explicando um gráfico",
+   "texto": "Funcionários que trabalham de casa: 2015: 20%. 2020: 60%. 2024: 35%.",
+   "pedido": "Numa reunião, explique este gráfico em inglês para os colegas estrangeiros, descrevendo a tendência.",
+   "precisa": [
+    [
+     "\\b2015\\b",
+     "o primeiro ano (2015)"
+    ],
+    [
+     "\\b(20|twenty) ?(%|per ?cent|percent)",
+     "o ponto de partida (20 per cent)"
+    ],
+    [
+     "\\b(rose|increased|went up|jumped|soared|tripled)\\b",
+     "a subida (rose / tripled)"
+    ],
+    [
+     "\\b(fell|fallen|dropped|decreased|went down|declined|gone down)\\b",
+     "a queda (fell)"
+    ],
+    [
+     "\\b(35|thirty-five)\\b",
+     "o valor atual (35 per cent)"
+    ],
+    [
+     "\\b(however|since then|but|whereas)\\b",
+     "a mudança de direção (since then / however)"
+    ]
+   ],
+   "modelo": "In 2015, only twenty per cent of employees worked from home. By 2020, the figure had tripled to sixty per cent. Since then, however, it has fallen, and in 2024 it was thirty-five per cent, which is still much higher than before."
+  },
+  {
+   "id": "m19",
+   "arco": 10,
+   "nivel": "B2",
+   "titulo": "Regras do prédio",
+   "texto": "Obras só de segunda a sexta, das 9h às 17h. O lixo reciclável deve ser deixado na garagem às terças. Animais são permitidos, mas devem usar o elevador de serviço.",
+   "pedido": "Um novo morador estrangeiro chegou ao prédio. Explique as regras em inglês, de forma clara e simpática.",
+   "precisa": [
+    [
+     "\\b(works|building work|renovations?|repairs|drilling|noise)\\b",
+     "as obras (building work)"
+    ],
+    [
+     "\\b(monday|weekdays)\\b",
+     "os dias (Monday to Friday)"
+    ],
+    [
+     "\\b(9|nine)\\b",
+     "o horário de início (nine)"
+    ],
+    [
+     "\\b(recycling|recyclable)\\b",
+     "o lixo reciclável (recycling)"
+    ],
+    [
+     "\\btuesdays?\\b",
+     "o dia do lixo (Tuesday)"
+    ],
+    [
+     "\\b(pets|animals|dogs)\\b",
+     "os animais (pets)"
+    ],
+    [
+     "\\b(service|goods) (lift|elevator)\\b",
+     "o elevador de serviço (service lift)"
+    ]
+   ],
+   "modelo": "Welcome to the building! Just a few rules: building work is only allowed from Monday to Friday, between nine and five. Please leave your recycling in the garage on Tuesdays. Pets are welcome, but they have to use the service lift."
+  },
+  {
+   "id": "m20",
+   "arco": 5,
+   "nivel": "B2",
+   "titulo": "Duas opiniões para a chefe",
+   "texto": "A Paula diz que o projeto deve ser adiado porque a equipe está sobrecarregada. O Marcos acha que adiar vai fazer a empresa perder o cliente. Os dois concordam que precisam de mais uma pessoa na equipe.",
+   "pedido": "A gerente só fala inglês e pediu um resumo neutro, sem tomar partido. Explique as duas posições e o ponto em comum.",
+   "precisa": [
+    [
+     "\\bpaula\\b",
+     "a posição da Paula"
+    ],
+    [
+     "\\b(postpone|delay|put off|push back)",
+     "o adiamento (postpone)"
+    ],
+    [
+     "\\b(overloaded|overworked|too much work|workload|overwhelmed)\\b",
+     "o motivo dela (overworked team)"
+    ],
+    [
+     "\\bmarcos\\b",
+     "a posição do Marcos"
+    ],
+    [
+     "\\blos(e|ing) the client\\b",
+     "o risco que ele vê (lose the client)"
+    ],
+    [
+     "\\b(both|agree)\\b",
+     "o ponto em comum (they both agree)"
+    ],
+    [
+     "\\b(whereas|while|on the other hand|however)\\b",
+     "o contraste entre as duas posições"
+    ]
+   ],
+   "modelo": "Paula thinks we should postpone the project because the team is overworked. Marcos, on the other hand, believes that a delay would mean losing the client. However, they both agree that the team needs one more person."
+  },
+  {
+   "id": "m21",
+   "arco": 8,
+   "nivel": "C1",
+   "titulo": "A decisão do conselho",
+   "texto": "O conselho municipal aprovou, por 7 votos a 2, a proibição de carros no centro histórico aos domingos. A medida entra em vigor em janeiro, em caráter experimental, por seis meses. Comerciantes temem queda nas vendas; já os moradores elogiaram a redução do barulho.",
+   "pedido": "Escreva um resumo formal em inglês para um boletim internacional, com as duas reações. Duas ou três frases.",
+   "precisa": [
+    [
+     "\\bcouncil\\b",
+     "quem decidiu (the council)"
+    ],
+    [
+     "\\b(7|seven) (votes )?to (2|two)\\b",
+     "o placar (seven votes to two)"
+    ],
+    [
+     "\\b(ban|banning|prohibit)",
+     "a proibição (ban)"
+    ],
+    [
+     "\\bjanuary\\b",
+     "quando começa (January)"
+    ],
+    [
+     "\\b(trial|pilot|experimental)\\b",
+     "o caráter experimental (on a trial basis)"
+    ],
+    [
+     "\\b(six|6)[- ]months?\\b",
+     "a duração (six months)"
+    ],
+    [
+     "\\b(shopkeepers|retailers|business owners|merchants|traders)\\b",
+     "os comerciantes"
+    ],
+    [
+     "\\bresidents\\b",
+     "os moradores (residents)"
+    ],
+    [
+     "\\b(whereas|while|meanwhile|by contrast|on the other hand)\\b",
+     "o contraste formal (whereas)"
+    ]
+   ],
+   "modelo": "The city council has voted seven to two to ban cars from the historic centre on Sundays. The measure will come into force in January on a six-month trial basis. Shopkeepers fear a fall in sales, whereas residents have welcomed the reduction in noise."
+  },
+  {
+   "id": "m22",
+   "arco": 6,
+   "nivel": "C1",
+   "titulo": "Recado com tato para o fornecedor",
+   "texto": "O produto é bom, mas as entregas atrasaram três vezes este mês. Se isso continuar, vamos procurar outro fornecedor.",
+   "pedido": "Seu chefe pediu que você passe esta mensagem ao fornecedor inglês por e-mail, com tom formal e diplomático, sem soar como ameaça.",
+   "precisa": [
+    [
+     "\\b(quality|product)\\b",
+     "o elogio ao produto"
+    ],
+    [
+     "\\b(however|although|while|that said|unfortunately)\\b",
+     "a transição educada (however)"
+    ],
+    [
+     "\\b(delayed|late|delays)\\b",
+     "os atrasos (delays)"
+    ],
+    [
+     "\\b(three times|on three occasions|three deliveries)\\b",
+     "quantas vezes (on three occasions)"
+    ],
+    [
+     "\\bif (this|these|the delays?) (continues?|persists?|happens? again|continue)\\b",
+     "a condição (if this continues)"
+    ],
+    [
+     "\\b(alternative|another|other) suppliers?\\b",
+     "a consequência (an alternative supplier)"
+    ],
+    [
+     "\\b(would|may|might|unfortunately|we would appreciate)\\b",
+     "linguagem diplomática (we would have to)"
+    ]
+   ],
+   "modelo": "We are very satisfied with the quality of your products. However, our deliveries were delayed on three occasions this month. We would appreciate it if this could be resolved, as, if the delays continue, we may unfortunately have to consider an alternative supplier."
   }
  ]
 }
